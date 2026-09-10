@@ -103,7 +103,7 @@ meta:
   modo: relatar                      # relatar (v0.1/v1) | propor (v2) — nunca "agir"
   alertas:
     ciclos_sem_promocao: 5           # ⇒ sugerir reduzir cadência / custo
-    taxa_veto_guardiao: 0.5          # ⇒ Otimizador está desalinhado com guarda-corpos
+    taxa_veto_guardiao: 0.5          # ⇒ Otimizador desalinhado com guarda-corpos (conta hipóteses DISTINTAS, não reapresentações)
 ```
 
 ---

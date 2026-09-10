@@ -44,7 +44,7 @@ Começa pelo gargalo ([06 §8](./06-critica-e-viabilidade.md)): dados e mediçã
 |---|---|---|
 | 1 | CLI Python `loopr` (mesmos comandos, mesmo yaml, API Anthropic) | — |
 | 2 | Modelos por agente (leitura pequeno / raciocínio grande) | CLI |
-| 3 | Cron / agendamento do ciclo | CLI |
+| 3 | Cron / agendamento do ciclo + gatilho "rodar Avaliador quando N ≥ mínimo por variante" (sugestão do meta-agente no exemplo, ciclo 0002: 5 de 12 semanas foram espera sem veredito) | CLI |
 | 4 | Conector 1: Google Sheets → CSV | um usuário piloto com dados reais |
 | 5 | Conector 2: exportação do WhatsApp Business → CSV | idem |
 | 6 | L2: auto-promoção + rollback automático | ≥5 promoções corretas em L1 no piloto |

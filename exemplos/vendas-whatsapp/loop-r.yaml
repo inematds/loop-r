@@ -56,8 +56,8 @@ metrica_sinal:
 experimento:
   confianca: 0.95
   poder: 0.80
-  amostra_minima_por_variante: 166   # redimensionado no ciclo 0001 (17%→30%, decisao-experimento.md)
-  duracao_estimada_semanas: 7
+  amostra_minima_por_variante: 212   # E0002 (ciclo 0003): 18,4%→30%
+  duracao_estimada_semanas: 9
   n_minimo_para_padrao: 30
 
 eval_artefato:
@@ -83,11 +83,11 @@ meta:
   modo: relatar
   alertas:
     ciclos_sem_promocao: 5
-    taxa_veto_guardiao: 0.5
+    taxa_veto_guardiao: 0.5   # sobre hipóteses distintas, não reapresentações
 
 meta_info:
   criado_em: 2026-02-02
   versao_spec: 0.1
   versao_atual: v1
-  ciclos_rodados: 2
+  ciclos_rodados: 3
   ultima_promocao: null

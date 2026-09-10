@@ -40,3 +40,33 @@ Desenho anterior (mesmo dia, substituído por `ciclos/0001/decisao-experimento.m
 Notas:
 - O `metrica_sinal.atual: 0.20` do yaml está desatualizado; o observado no ciclo 0001 é 0,17 (34/200). Os valores desatualizados do yaml (`amostra_minima_por_variante: 300`, `duracao_estimada_semanas: 12`) não foram alterados aqui — não é atribuição do Experimentador.
 - Cada variante recebe 25/semana (alocação 50/50 sobre 50/semana), daí a duração = n × 2 / 50.
+
+---
+
+## Conta do experimento E0002 (H3) — `taxa_resposta` 0,1836 → 0,30 (base: `metrica_sinal.alvo`)
+
+Calculado em 2026-05-04 (ciclo 0003) pelo Experimentador. Mesma fórmula e parâmetros acima. Taxa atual = v1/A em **todo o período** (pré + E0001-A + pós), 101/550 = 0,18364 (`ciclos/0003/evidencia.md` §b).
+
+```python
+from math import sqrt, ceil
+from statistics import NormalDist
+p1, p2 = 101/550, 0.30                  # 0.18364 -> alvo do yaml
+za = NormalDist().inv_cdf(1 - 0.05/2)   # 1.9600
+zb = NormalDist().inv_cdf(0.80)         # 0.8416
+pbar = (p1 + p2) / 2                    # 0.24182
+n = ((za*sqrt(2*pbar*(1-pbar)) + zb*sqrt(p1*(1-p1) + p2*(1-p2)))**2) / (p2-p1)**2
+# √(2·p̄·(1−p̄)) = 0.6055 ; √(p₁(1−p₁)+p₂(1−p₂)) = 0.5999
+# numerador = (1.9600·0.6055 + 0.8416·0.5999)² = 1.6918² = 2.8621 ; denominador = 0.11636² = 0.013540
+# n bruto = 211.37  ->  212 por variante
+# duração = 212 × 2 / 50 = 8.48  ->  9 semanas
+```
+
+| p₁ → p₂ | métrica | n / variante | total (A+B) | semanas a 50/sem | observação |
+|---|---|---|---|---|---|
+| **0,1836 → 0,30** | `taxa_resposta` (alvo do yaml — **E0002 vigente**) | **212** | 424 | **9** | base v1/A todo o período (101/550) |
+| 0,1836 → 0,2662 | `taxa_resposta` (MDE que cabe em 16 sem) | 400 | 800 | 16 | efeito mínimo detectável com o teto de 16 semanas |
+| 0,0418 → 0,05 | `conversao` (métrica alvo, 23/550) | 10.271 | 20.542 | 411 | não testável — segue vigiada |
+
+Notas:
+- 212 > 166 (E0001) porque a base subiu de 0,17 para 0,1836 e o alvo ficou em 0,30: diferença menor (11,64 pp vs 13 pp) exige mais amostra.
+- O `experimento.amostra_minima_por_variante: 166` e `duracao_estimada_semanas: 7` do yaml correspondem a E0001; para E0002 são 212 / 9. Não alterados aqui — fora da atribuição do Experimentador.

@@ -1,19 +1,17 @@
-# candidata-vB — H2: Teto de 80 palavras na mensagem
-- 2026-02-02 · derivada de `versoes/atual` (v1) com **apenas** a MUDANÇA de H2 (ciclo 0001, APROVADA pelo Guardião, FORÇA FORTE). Nada de H3.
+# candidata-vB — H3: Abrir com algo específico da avaliação
+- 2026-05-04 · derivada de `versoes/atual` (v1) com **apenas** a MUDANÇA de H3 (ciclo 0003, APROVADA pelo Guardião, FORÇA MODERADA). Substitui a candidata-vB anterior (H2 / E0001, encerrada com `A_SEGUE` no ciclo 0002). Nada de H4 (vetada).
 
-## Hipótese testada (H2)
-SE       for acrescentada em Regras a exigência de no máximo 80 palavras no total (e, no item 2 da Estrutura, "2–3 frases" virar "1 frase")
-ENTÃO    `taxa_resposta` deve ir de 17,00% (N=200) para ≥ 22%
-PORQUE   83% das propostas não geram resposta e o grosso do custo/tempo (≈ 205,7 para 5 conversões; 5,465 min por proposta) é gasto em mensagens sem retorno — FORTE. A estrutura v1 em 5 blocos produz uma mensagem longa para WhatsApp; encurtar reduz o custo de leitura antes do preço e da resposta. Efeito secundário esperado: queda em `custo` e `tempo_min`.
-MUDANÇA  Em "Estrutura da mensagem", item 2, trocar "(2–3 frases)" por "(1 frase)". Em "Regras", acrescentar a linha `- Máximo de 80 palavras no total da mensagem.`
-FORÇA    FORTE
+## Hipótese testada (H3)
+SE       o item 1 da Estrutura ("Saudação pelo nome e agradecimento pela visita") for substituído por uma abertura que, já na primeira frase, cite um ponto específico das observações da avaliação daquela cliente
+ENTÃO    `taxa_resposta` deve ir de 18,36% (101/550, v1/A todo o período) para ≥ 30% (alvo do yaml)
+PORQUE   81,6% das propostas v1/A não geram resposta em 48h, em todas as janelas — FORTE. A abertura v1 é idêntica para todas as clientes e não sinaliza que a proposta foi feita para ela. E0001 mostrou que uma mudança só de forma move `taxa_resposta` em +10 pp com significância — a métrica é sensível ao roteiro. Elo causal específico ainda indireto → MODERADA.
+MUDANÇA  Substituir o item 1 da seção "Estrutura da mensagem" pelo texto abaixo (diff).
+FORÇA    MODERADA
 
-## Diff contra v1 (2 hunks, nada mais)
+## Diff contra v1 (1 hunk, nada mais)
 ```
-10c10
-< 2. Resumo do que foi avaliado e do procedimento indicado (2–3 frases).
+9c9
+< 1. Saudação pelo nome e agradecimento pela visita.
 ---
-> 2. Resumo do que foi avaliado e do procedimento indicado (1 frase).
-20a21
-> - Máximo de 80 palavras no total da mensagem.
+> 1. Saudação pelo nome; a primeira frase já cita um ponto específico das observações da avaliação desta cliente (ex.: a queixa que ela trouxe ou a região avaliada). Sem agradecimento genérico pela visita.
 ```
