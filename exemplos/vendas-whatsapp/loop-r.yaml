@@ -29,7 +29,7 @@ guarda_corpos:
       tolerancia: 0.01
     - nome: "reclamacoes"
       coluna_csv: "reclamou"
-      tolerancia: 0.0
+      tolerancia: 0.01            # era 0.0 — ajustado no ciclo 0002: evento raro, piso de ruído (~2 e.p. a 1%, N=300)
     - nome: "optout"
       coluna_csv: "optout"
       tolerancia: 0.005
@@ -89,5 +89,5 @@ meta_info:
   criado_em: 2026-02-02
   versao_spec: 0.1
   versao_atual: v1
-  ciclos_rodados: 1
+  ciclos_rodados: 2
   ultima_promocao: null

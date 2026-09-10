@@ -56,13 +56,13 @@ dados/               execucoes.csv (adaptador universal) + esquema
 evals/               rubrica sim/não, amostra mínima, casos
 ciclos/NNNN/         manifesto + saída de cada agente + decisão
 memoria/             ledger, aprendizados, descartados, observado-não-testado
-exemplos/vendas-whatsapp/   loop completo de referência (3 ciclos rodados)
+exemplos/vendas-whatsapp/   loop completo de referência (4 ciclos rodados)
 docs/                visão, crítica, arquitetura, spec, agentes, medição, roadmap, curso
 ```
 
 ## Exemplo que já rodou
 
-[`exemplos/vendas-whatsapp/`](exemplos/vendas-whatsapp/) — clínica de estética, propostas por WhatsApp, 1.500 linhas sintéticas, 3 ciclos: uma hipótese promovida (v2), uma descartada, uma com amostra insuficiente. Leia `memoria/ledger.md` e os `ciclos/*/manifesto.md`.
+[`exemplos/vendas-whatsapp/`](exemplos/vendas-whatsapp/) — clínica de estética, propostas por WhatsApp, 1.500 linhas sintéticas, 4 ciclos rodados de verdade pelos agentes: amostra insuficiente (0001), descarte por guarda-corpo — e a correção da tolerância que isso ensinou (0002), novo experimento (0003), promoção para v2 (0004). Leia `memoria/ledger.md` e os `ciclos/*/manifesto.md`.
 
 ## Documentação
 

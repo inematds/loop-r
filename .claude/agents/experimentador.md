@@ -13,7 +13,7 @@ Se não houver hipótese APROVADA, escreva em `experimento.md` só `SEM EXPERIME
 
 ## O que fazer para a hipótese APROVADA de maior força
 
-1. **Amostra mínima por variante** para detectar `atual → esperado` com `confianca` e `poder` do yaml. Use a fórmula do teste z para duas proporções e **mostre a conta** (Python via Bash). Grave a tabela também em `LOOP_DIR/evals/amostra-minima.md`.
+1. **Amostra mínima por variante** para detectar o **efeito mínimo que vale detectar**: da taxa observada (evidência) até o `alvo` da métrica no yaml (`metrica_sinal.alvo` ou `metrica_alvo.alvo`) — **não** até a expectativa do Otimizador (ela é palpite; o alvo é a decisão de negócio). Se a hipótese prevê menos que o alvo, diga isso: o teste vai detectar só efeitos ≥ alvo, e efeito menor dá `A_SEGUE`. Use a fórmula do teste z para duas proporções com `confianca` e `poder` do yaml e **mostre a conta** (Python via Bash). Grave a tabela também em `LOOP_DIR/evals/amostra-minima.md`.
 2. **Duração** = amostra × 2 / `volume_estimado_por_semana`, arredondada para cima.
 3. Se duração > 16 semanas: refaça o teste sobre `metrica_sinal` e mova a métrica original para "vigiada"; recalcule e diga isso explicitamente.
 4. **Alocação** 50/50 alternada por ordem de chegada (id ímpar → A, par → B) — nunca por escolha do Executor.

@@ -2,3 +2,5 @@
 
 - 2026-02-02 · ciclo 0001 · H1 — Encerrar com uma única pergunta de fechamento ("Prefere começar ainda esta semana ou na próxima?") — VETADA pelo Guardião: a instrução pedia pergunta "neutra e sem urgência", mas o exemplo literal imposto é fechamento por escolha forçada que presume a compra e fixa prazo — pressão previsível sobre `reclamacoes` (tolerância 0,0) e `optout` (tolerância 0,005). Não re-testar nesta formulação.
 
+- 2026-04-27 · ciclo 0002 · H2 (teto de 80 palavras, `versoes/candidata-vB`) — E0001, A_SEGUE. B elevou `taxa_resposta` de 19,33% (58/300) para 29,67% (89/300) — z=2,9426, p=0,0033, significativo — mas rompeu o guarda-corpo `reclamacoes` (tolerância 0,0): B 2,00% (6/300) vs A 0,33% (1/300), Δ=+1,67 pp. Guarda-corpos `margem_media` (Δ=−0,0020, tol 0,01) e `optout` (Δ=+0,0033, tol 0,005) ficaram dentro da tolerância. O ganho de resposta não converteu: `resultado` B 4,67% (14/300) vs A 5,00% (15/300), sem diferença significativa. Decisão humana (2026-04-27): aceito o veredito, H2 descartada nesta formulação — não re-testar o teto de 80 palavras como está. Não se reavalia E0001 com a tolerância nova (ver aprendizados.md, seção Processo).
+

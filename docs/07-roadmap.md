@@ -19,7 +19,7 @@ Começa pelo gargalo ([06 §8](./06-critica-e-viabilidade.md)): dados e mediçã
 | 7 | Promover / reverter via git | `/loop-r promover`, `/loop-r reverter` | `versoes/atual` muda + commit + ledger |
 | 8 | Memória (ledger + 3 arquivos) | Memória | nunca apaga; 1 linha por evento |
 | 9 | Meta-agente em modo `relatar` | `relatorio-meta.md` | ≤10 linhas, zero ação |
-| 10 | Exemplo completo rodando: vendas WhatsApp com CSV sintético de ~1.500 linhas (2 testes completos a 300/variante + 1 parcial) | `exemplos/vendas-whatsapp/` | 3 ciclos gravados, 1 promoção, 1 descarte, 1 amostra insuficiente |
+| 10 | Exemplo completo rodando: vendas WhatsApp com CSV sintético de ~1.500 linhas (2 testes completos a 300/variante + 1 parcial) | `exemplos/vendas-whatsapp/` | 4 ciclos gravados: 1 amostra insuficiente, 1 descarte por guarda-corpo, 1 desenho de experimento, 1 promoção |
 | 11 | README + `guia/index.html` (skill `projetos-landing-guia`) | raiz, `guia/` | página no GitHub Pages |
 
 **Fora do v0.1:** cron, conectores, CLI Python, L2, juiz calibrado (só rubrica simples).

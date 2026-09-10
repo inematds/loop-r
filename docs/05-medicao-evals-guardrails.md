@@ -29,6 +29,8 @@ Toda métrica-alvo vem acompanhada de pelo menos uma `sem_piorar`. Sugestões po
 
 **Como o Avaliador aplica:** B só ganha se melhora X **e** nenhuma `sem_piorar` cai além da `tolerancia`. Se X sobe 40% e a margem cai 1% com tolerância 0 → `A_SEGUE`. Sem exceção.
 
+**Tolerância em evento raro (aprendido no exemplo, ciclo 0002):** `tolerancia: 0` só faz sentido para métricas contínuas com N grande. Para eventos raros (reclamação ~1%, opt-out ~0,5%), com N=300 por variante, 6 vs 1 ocorrências **não é diferença** (p≈0,12) — é ruído, e tolerância zero descarta hipóteses boas por acaso. Regra do gerador: tolerância de evento raro ≥ **2 erros-padrão da taxa-base na amostra planejada** — `2·√(p(1−p)/N)`; a 1% e N=300 dá ≈0,011 → `tolerancia: 0.01`. Alternativa mais rigorosa (v0.2): o Avaliador testa "B não é significativamente pior" em vez de comparar com um número fixo.
+
 ---
 
 ## 3. Amostra mínima — a conta que o Experimentador mostra

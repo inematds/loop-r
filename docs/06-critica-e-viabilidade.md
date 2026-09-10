@@ -64,6 +64,10 @@ O último exemplo da tabela mostra um risco extra: **a métrica pode ser mal def
 
 ---
 
+### 4.1 O guarda-corpo também pode ser ruído (achado do dogfooding)
+
+No exemplo `vendas-whatsapp`, ciclo 0002: a hipótese "≤80 palavras" subiu a taxa de resposta de 19% para 30% (N=300/300, significativo) e foi **descartada** porque `reclamacoes` marcou 6/300 contra 1/300 com tolerância 0. A regra foi aplicada como escrita — e a regra estava errada: 6 vs 1 em 300 é ruído. O framework fez o que devia (não promoveu, registrou, o humano ajustou a tolerância para os próximos testes, e a hipótese descartada ficou na memória). Lição: **tolerância de guarda-corpo é uma decisão estatística, não um desejo** — ver [05 §2](./05-medicao-evals-guardrails.md).
+
 ## 5. O juiz de IA deriva
 
 Quando a métrica é subjetiva (qualidade de proposta, tom, clareza), o Avaliador usa um modelo como juiz com rubrica. Problemas conhecidos:
