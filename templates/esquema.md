@@ -8,6 +8,7 @@ Uma linha por execução do processo. Separador vírgula, codificação UTF-8, c
 | `data` | AAAA-MM-DD | sim | data da execução |
 | `versao` | `v1`, `v2`… | sim | versão do roteiro do Executor usada |
 | `variante` | `A` \| `B` | sim | `A` = versão atual; `B` = candidata em teste. Fora de experimento, `A` |
+| `experimento` | texto | sim quando `variante=B` | id do experimento (`E0001`, `E0002`…). Sem isto, linhas `B` de testes diferentes se misturam (achado do exemplo, ciclo 0004) |
 | `segmento` | texto | não | recorte útil (porte, canal, origem…) — só é analisado com N ≥ `n_minimo_para_padrao` |
 | `{{COLUNA_SINAL}}` | `sim` \| `não` | sim | **métrica de sinal** — `{{DEF_SINAL}}` |
 | `{{COLUNA_ALVO}}` | `sim` \| `não` | sim | **métrica-alvo** — `{{DEF_ALVO}}` |

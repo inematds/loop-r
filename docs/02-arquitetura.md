@@ -160,6 +160,7 @@ id              texto      sim           identificador único da execução
 data            AAAA-MM-DD sim
 versao          v1|v2...   sim           qual versão do Executor gerou
 variante        A|B        sim           quando em experimento
+experimento     E0001…     sim se B      qual teste gerou a linha (B de testes diferentes nunca se misturam)
 segmento        texto      não           ex.: porte do cliente, canal
 resultado       sim|não    sim           métrica-alvo (definida no yaml — ex.: "fechou proposta")
 resposta        sim|não    não           métrica de sinal forte (ex.: "cliente respondeu")

@@ -62,7 +62,7 @@ docs/                visão, crítica, arquitetura, spec, agentes, medição, ro
 
 ## Exemplo que já rodou
 
-[`exemplos/vendas-whatsapp/`](exemplos/vendas-whatsapp/) — clínica de estética, propostas por WhatsApp, 1.500 linhas sintéticas, 4 ciclos rodados de verdade pelos agentes: amostra insuficiente (0001), descarte por guarda-corpo — e a correção da tolerância que isso ensinou (0002), novo experimento (0003), promoção para v2 (0004). Leia `memoria/ledger.md` e os `ciclos/*/manifesto.md`.
+[`exemplos/vendas-whatsapp/`](exemplos/vendas-whatsapp/) — clínica de estética, propostas por WhatsApp, 1.500 linhas sintéticas, 4 ciclos rodados de verdade pelos agentes: amostra insuficiente (0001), descarte por guarda-corpo — e a correção da tolerância que isso ensinou (0002), novo experimento (0003), promoção para v2 (0004). **Leia primeiro o [README do exemplo](exemplos/vendas-whatsapp/README.md)** — diz o que é real (os agentes) e o que é simulado (dados e decisões). Depois `memoria/ledger.md` e os `ciclos/*/manifesto.md`.
 
 ## Documentação
 
