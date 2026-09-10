@@ -1,0 +1,93 @@
+# LOOP-R — ficha do loop (gerada por /loop-r iniciar a partir de 5 respostas)
+# Exemplo de referência: clínica de estética, propostas por WhatsApp. Dados sintéticos.
+
+objetivo:
+  processo: "Proposta comercial por WhatsApp (clínica de estética)"
+  metrica_alvo:
+    nome: "conversao"
+    definicao: "proposta enviada que virou pacote pago em até 15 dias"
+    coluna_csv: "resultado"
+    atual: 0.03
+    alvo: 0.05
+    direcao: maximizar
+
+evidencia:
+  fonte: csv
+  arquivo: dados/execucoes.csv
+  unidade: "uma linha por proposta enviada"
+  volume_estimado_por_semana: 50
+
+guarda_corpos:
+  invariaveis:
+    - "desconto acima de 10%"
+    - "prometer resultado clínico ou prazo de resultado"
+    - "contatar quem pediu para não receber mensagens"
+    - "mencionar concorrentes pelo nome"
+  sem_piorar:
+    - nome: "margem_media"
+      coluna_csv: "margem"
+      tolerancia: 0.01
+    - nome: "reclamacoes"
+      coluna_csv: "reclamou"
+      tolerancia: 0.0
+    - nome: "optout"
+      coluna_csv: "optout"
+      tolerancia: 0.005
+
+teto:
+  custo_por_ciclo_brl: 50
+  ciclo: semanal
+  max_hipoteses_por_ciclo: 3
+  max_testes_simultaneos: 1
+
+autonomia:
+  nivel: L1
+  aprovador: "Nei"
+  prazo_decisao_dias: 7
+
+# ── inferidos (propostos pelo gerador, confirmados) ──────────────────
+metrica_sinal:
+  nome: "taxa_resposta"
+  definicao: "cliente respondeu em 48h com algo que não seja recusa"
+  coluna_csv: "resposta"
+  atual: 0.20
+  alvo: 0.30
+
+experimento:
+  confianca: 0.95
+  poder: 0.80
+  amostra_minima_por_variante: 166   # redimensionado no ciclo 0001 (17%→30%, decisao-experimento.md)
+  duracao_estimada_semanas: 7
+  n_minimo_para_padrao: 30
+
+eval_artefato:
+  rubrica: evals/rubrica.md
+  casos: evals/casos/
+  juiz:
+    modo: pares_embaralhados
+    repeticoes: 3
+    calibracao: dados/calibracao.csv
+    concordancia_minima: 0.80
+
+rollback:
+  gatilho: "metrica do teste ou qualquer sem_piorar abaixo da versão anterior além da tolerância, no 1º ciclo após promoção"
+  acao: "atual → versão anterior; commit; linha no ledger"
+  automatico: false
+
+modelos:
+  leitura:    { agentes: [observador, memoria], modelo: pequeno }
+  raciocinio: { agentes: [critico, otimizador, experimentador, avaliador, meta-agente], modelo: grande }
+  guardiao:   { modelo: grande, temperatura: 0 }
+
+meta:
+  modo: relatar
+  alertas:
+    ciclos_sem_promocao: 5
+    taxa_veto_guardiao: 0.5
+
+meta_info:
+  criado_em: 2026-02-02
+  versao_spec: 0.1
+  versao_atual: v1
+  ciclos_rodados: 1
+  ultima_promocao: null
