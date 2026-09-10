@@ -1,0 +1,985 @@
+<!doctype html>
+<!-- LOOP-R · Trilha 1 — Por que sua empresa não melhora (diagnóstico). Gerado no formato-curso-v5 (INEMA). -->
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="curso" content="loop-r-trilha-1">
+<title>LOOP-R · Trilha 1 — Por que sua empresa não melhora · INEMA.CLUB PRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/aula.css">
+<script>(function(){try{var m=document.querySelector('meta[name=curso]');var CK=(m&&m.content)||'v5:curso';var s=JSON.parse(localStorage.getItem(CK));if(s&&s.prefs&&s.prefs.theme)document.documentElement.setAttribute('data-theme',s.prefs.theme);}catch(e){}})();</script>
+<!--
+  PROTOCOLO DE DESCOBERTA (SKILL.md, Passo 0 — respondido no plano do curso, §0):
+  - Público específico: donos e gestores de negócios pequenos/médios, 40+, que já usam IA para "fazer coisas" (propostas, respostas, posts) e sentem que nada melhora com o tempo.
+  - Profissões-alvo (3): dona de clínica de estética (Regina — propostas por WhatsApp) · corretor de imóveis (Marcos — leads de portal) · gestor de suporte de empresa de software pequena (Paulo — 10.000 chamados/ano).
+  - Familiaridade com tecnologia: WhatsApp, planilha e um chat de IA. Sem terminal, sem programação, nunca ouviu "Git".
+  - Resultado prático esperado (curso inteiro): um loop montado no próprio negócio — 5 respostas, planilha de registro, 1 experimento, 1 decisão com o cartão. Nesta trilha: diagnóstico — apontar onde a IA "termina ali", contar o retrabalho, marcar o nível (1–5) e reescrever uma instrução vaga.
+  - Tempo por sessão: 20 min.
+  Números usados (fonte: docs/05, docs/06, exemplos/vendas-whatsapp/README.md): 19,3% → 29,7% descartada (reclamações 6 vs 1, tolerância 0); 19,3% → 29,3% promovida (N=300/300); conversão 3,7% vs 3,0% n.s.; ~1.500/versão para 3%→5%; 15 meses a 200/mês; ~300/versão para 20%→30%; 37% dos 10.000 chamados; R$ 41 (teto R$ 50); padrão só com N ≥ 30.
+  Anti-clone (último curso gerado: arquiteto-agentes-saude — aula 1: quiz → qbefore-after → qanchor, prática tarefa; aula 2: qerr → qsteps, análise; aula 3: qapply → qsteps, prompt).
+  Esta trilha: aula 1: qbefore-after(s1) → quiz(s2) → qanchor(s4), análise; aula 2: qanchor(s2) → quiz(s3) → qbefore-after(s4), tarefa; aula 3: qanchor(s1) → quiz(s2) → qbefore-after(s3), análise; aula 4: qanchor(s1) → qbefore-after(s3) → quiz(s4) → qerr(s5), prompt.
+-->
+<style>
+  .view{display:none}.view.active{display:block}
+  .lnav{max-width:1160px;margin:0 auto 5vh;padding:0 clamp(24px,5vw,60px);display:flex;justify-content:space-between;gap:12px}
+  .lnav a{font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line2);border-radius:12px;padding:12px 16px}
+  .lnav a:hover{border-color:var(--accent);color:var(--ink)}
+  #v-trilha .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(24px,5vw,60px)}
+  #v-trilha .t-hero{position:relative;overflow:hidden;padding:20vh 0 8vh;border-bottom:1px solid var(--line)}
+  #v-trilha h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,6.4vw,72px);line-height:1;letter-spacing:-.025em;margin:0 0 22px}
+  #v-trilha h1 em{font-style:italic;color:var(--accent)}
+  #v-trilha .lead{font-family:var(--serif);font-size:clamp(19px,2.1vw,24px);line-height:1.5;color:var(--ink-soft);max-width:46ch;margin:0 0 30px}
+  #v-trilha section{padding:8vh 0}
+  #v-trilha .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  #v-trilha h2{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.6vw,38px);margin:0 0 28px}
+  #v-trilha .aulas{display:grid;gap:14px}
+  #v-trilha .au{display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:center;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+  #v-trilha .au .num{font-family:var(--serif);font-size:30px;color:var(--accent);text-align:center}
+  #v-trilha .au h3{font-family:var(--serif);font-weight:500;font-size:21px;margin:0 0 5px}
+  #v-trilha .au p{margin:0;color:var(--muted);font-size:14.5px}
+  #v-trilha .au .meta{font-family:var(--mono);font-size:11px;color:var(--accent);white-space:nowrap;text-align:right}
+  #v-trilha .au .prog{position:static;margin-top:10px;height:5px;border-radius:99px;background:var(--line);overflow:hidden;max-width:220px;width:auto}
+  #v-trilha .au .prog i{display:block;height:100%;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+  #v-trilha footer{max-width:1080px;margin:0 auto;padding:6vh clamp(24px,5vw,60px) 12vh;color:var(--faint);text-align:center;font-family:var(--serif);font-style:italic;border-top:1px solid var(--line)}
+  @media(max-width:720px){#v-trilha .au{grid-template-columns:44px 1fr}#v-trilha .au .meta{grid-column:2;text-align:left}}
+  /* tabela leve de garantias / sinais (só tipografia, sem cor nova) */
+  .tbl{width:100%;border-collapse:collapse;margin:18px 0 0;font-size:14.5px;line-height:1.5}
+  .tbl th,.tbl td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
+  .tbl th{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:400}
+  .tbl td b{color:var(--ink)}
+  .sinais{list-style:none;padding:0;margin:12px 0 0}
+  .sinais li{padding:6px 0 6px 28px;position:relative;font-size:15px;line-height:1.5;color:var(--ink-soft)}
+  .sinais li::before{content:attr(data-k);position:absolute;left:0;top:7px;font-family:var(--mono);font-size:11px;color:var(--accent)}
+  svg text{font-family:'Space Mono',monospace}
+</style>
+</head>
+<body>
+<div class="bar"><div class="bar-inner">
+  <span class="brand"><a class="mark" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a><a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a><a class="course" href="../index.html">LOOP-R</a></span>
+  <a class="back" href="#trilha" style="display:none">← trilha</a>
+  <button id="pill" class="pill" style="display:none">0 lido</button>
+  <button id="revbtn">revisar <span id="revn">0</span></button>
+  <button id="exbtn">exercícios</button>
+  <button id="jorbtn">jornada</button>
+  <button id="helpbtn" aria-label="Como funciona">?</button>
+  <button id="prefsbtn" aria-label="Preferências de leitura">Aa</button>
+  <button id="themebtn">tema: escuro</button>
+</div></div>
+
+<!-- ===== TRILHA ===== -->
+<section class="view" id="v-trilha">
+  <header class="t-hero"><div class="wrap">
+    <p class="kicker">LOOP-R · Trilha 01 · Diagnóstico</p>
+    <h1>Por que sua empresa <em>não melhora</em></h1>
+    <p class="lead">Saia sabendo apontar, no seu próprio negócio, onde a IA trabalha e nada aprende — com um número de retrabalho na mão, o seu nível de maturidade marcado e uma instrução vaga reescrita para dar para medir.</p>
+  </div></header>
+  <section><div class="wrap">
+    <div class="statcards"></div>
+    <p class="eyebrow">Aulas</p>
+    <h2>Quatro diagnósticos, um por sessão</h2>
+    <div class="aulas">
+      <a class="au on" data-aula="1" href="#aula-1">
+        <div class="num">1</div>
+        <div><h3>A IA que termina ali</h3><p>Saia sabendo dizer, em uma frase, por que cada tarefa que a IA faz para você hoje começa do zero na próxima vez — e o que faltaria para não começar.</p><div class="prog"><i></i></div></div>
+        <div class="meta">20min · abrir →</div>
+      </a>
+      <a class="au on" data-aula="2" href="#aula-2">
+        <div class="num">2</div>
+        <div><h3>Dez mil execuções e nenhum aprendizado</h3><p>Saia com um número seu: quantas vezes por mês a mesma tarefa é refeita do zero — e quantas dessas poderiam virar uma linha de registro.</p><div class="prog"><i></i></div></div>
+        <div class="meta">18min · abrir →</div>
+      </a>
+      <a class="au on" data-aula="3" href="#aula-3">
+        <div class="num">3</div>
+        <div><h3>Os cinco níveis: de "responde" a empresa que aprende</h3><p>Saia com o seu nível (1 a 5) marcado por sinais observáveis, com gabarito — e o único degrau seguinte que faz sentido.</p><div class="prog"><i></i></div></div>
+        <div class="meta">23min · abrir →</div>
+      </a>
+      <a class="au on" data-aula="4" href="#aula-4">
+        <div class="num">4</div>
+        <div><h3>"IA, fique melhor" — o erro que parece inteligente</h3><p>Saia com uma instrução vaga sua reescrita com evidência, meta com "sem piorar" e uma hipótese testável — feita em qualquer chat de IA.</p><div class="prog"><i></i></div></div>
+        <div class="meta">22min · abrir →</div>
+      </a>
+    </div>
+  </div></section>
+  <footer><div class="wrap">LOOP-R · Trilha 1 · INEMA.CLUB PRO</div></footer>
+</section>
+
+<!-- ===== AULA 1 — FUNDAMENTO ===== -->
+<section class="view" id="v-aula-1" data-aula="1" data-tempo="20min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 01 · Aula 1 · fundamento</p>
+    <h1>A IA que<br><em>termina ali</em></h1>
+    <p class="promise">Ao fim desta aula você consegue olhar uma tarefa que sua IA faz hoje e dizer, em uma frase, por que ela termina ali — e o que faltaria para a próxima vez começar melhor que a anterior.</p>
+    <p class="why">Você já pediu centenas de propostas, respostas e textos para a IA. Cada um saiu bom o bastante. E mesmo assim a proposta de hoje começa exatamente do mesmo lugar que a primeira: nada do que deu certo ficou guardado. Esta aula dá nome a esse problema — porque, sem nome, ele parece normal.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <!-- herofig: metáfora do mundo real — a pilha de propostas da clínica, todas começando da mesma folha em branco -->
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <rect x="22" y="150" width="256" height="70" rx="8" style="fill:var(--panel);stroke:var(--muted)" stroke-width="2"/>
+    <rect x="60" y="112" width="120" height="60" rx="3" style="fill:var(--panel2);stroke:var(--muted)" stroke-width="2"/>
+    <rect x="66" y="100" width="120" height="60" rx="3" style="fill:var(--panel2);stroke:var(--muted)" stroke-width="2"/>
+    <rect x="72" y="88" width="120" height="60" rx="3" style="fill:var(--panel2);stroke:var(--muted)" stroke-width="2"/>
+    <rect x="78" y="76" width="120" height="60" rx="3" style="fill:var(--panel);stroke:var(--ink)" stroke-width="2"/>
+    <rect x="86" y="84" width="60" height="8" rx="2" style="fill:var(--accent)" opacity=".9"/>
+    <path d="M86 102 h100 M86 112 h100 M86 122 h64" style="stroke:var(--line2)" stroke-width="2" stroke-dasharray="3 4"/>
+    <rect x="212" y="60" width="52" height="98" rx="8" style="fill:var(--panel2);stroke:var(--muted)" stroke-width="2"/>
+    <rect x="218" y="70" width="40" height="70" rx="3" style="fill:var(--panel)"/>
+    <rect x="222" y="76" width="26" height="10" rx="4" style="fill:var(--accent)" opacity=".8"/>
+    <rect x="228" y="92" width="26" height="10" rx="4" style="fill:var(--warm)" opacity=".8"/>
+    <rect x="222" y="108" width="26" height="10" rx="4" style="fill:var(--accent)" opacity=".8"/>
+    <circle cx="238" cy="150" r="3" style="fill:var(--muted)"/>
+    <circle cx="44" cy="96" r="12" style="fill:var(--muted)"/><path d="M28 116 q16 -10 32 0 v26 h-32z" style="fill:var(--muted)"/>
+    <text x="90" y="205" font-size="9" style="fill:var(--faint)">proposta 201 — folha em branco</text>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> Humano, pedido, resposta, fim — e amanhã tudo de novo</h2>
+      <p>Hoje, na maioria dos negócios, a IA trabalha em linha reta. Alguém escreve um pedido — quem trabalha com isso chama de <span class="gterm" tabindex="0" data-def="O texto que você escreve para a IA pedindo alguma coisa. Neste curso, chamamos de pedido.">prompt</span> —, a IA devolve uma resposta, a pessoa ajusta o que precisa e manda. Acabou. A próxima vez começa do mesmo ponto: um pedido novo, uma folha em branco, nenhuma lembrança da anterior.</p>
+      <p>Regina, dona de uma clínica de estética, manda cerca de 200 propostas por mês pelo WhatsApp. Para cada uma, escreve algo como "faça uma proposta de pacote de limpeza de pele para a cliente que perguntou preço". A proposta sai, ela troca duas frases, envia. A cliente responde ou some. A proposta número 201 nasce sem saber nada sobre as 200 que vieram antes — nem quais foram respondidas, nem quais fecharam.</p>
+      <p>Não é que a IA tenha feito um trabalho ruim. Cada proposta ficou boa. O problema é outro: o caminho tem quatro paradas e nenhuma volta.</p>
+      <div class="qbefore-after">
+        <div class="qba-col qba-before"><p class="qba-lbl">Hoje, na clínica</p><p class="qba-txt">200 propostas por mês, cada uma do zero. Regina não sabe qual das 200 funcionou nem por quê — e a de amanhã não vai saber também.</p></div>
+        <div class="qba-col qba-depois"><p class="qba-lbl">Com um loop</p><p class="qba-txt">As mesmas 200 propostas, cada uma virando uma linha de registro. Uma decisão por semana, num cartão de cinco linhas.</p></div>
+        <p class="qba-saldo"><b>Saldo no exemplo de referência do LOOP-R</b> (dados simulados, clínica fictícia): em 4 ciclos, 1 mudança comprovada com 300 envios por versão, 1 descartada por regra, 0 versões piores no ar.</p>
+      </div>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> A IA não guarda nada entre um pedido e outro — e isso não é defeito</h2>
+      <p>Um chat de IA funciona como um atendente temporário excelente que chega novo a cada turno: escreve muito bem, conhece o assunto, mas não esteve aqui ontem. Ele não viu se a cliente respondeu, se o lead agendou, se o chamado voltou. Tudo o que acontece <em>depois</em> da resposta fica do lado de fora da conversa.</p>
+      <p>Marcos, corretor de imóveis, recebe uns 40 leads por semana pelo portal — um <span class="gterm" tabindex="0" data-def="Pessoa que pediu informação sobre um imóvel pelo portal ou pelo anúncio e ainda não decidiu nada.">lead</span> é quem pediu informação e ainda não decidiu. Ele responde cada um com ajuda da IA. Quando um lead responde bem porque Marcos citou a metragem da varanda, isso ensinou alguma coisa — mas só a Marcos, se ele reparou. Para a IA, o lead seguinte é o primeiro da vida dela.</p>
+      <p>Por isso "usar muito" não vira "aprender". A quantidade de uso não muda nada enquanto ninguém registra o resultado e o leva de volta ao pedido seguinte. Esse "levar de volta" é o que o resto do curso monta.</p>
+      <div class="quiz" data-answer="b">
+        <p class="qk">Teste-se</p><p class="q">Marcos usou a IA 160 vezes este mês para responder leads. O que ela sabe hoje sobre quais respostas funcionaram?</p>
+        <button class="opt" data-k="a" data-fb="Não. Cada pedido começa do zero; ela nunca vê o que aconteceu depois da resposta — se o lead agendou ou sumiu.">Tudo — ela aprende com o uso</button>
+        <button class="opt" data-k="b" data-fb="Isso. Sem alguém registrar o resultado de cada resposta e levar isso de volta ao próximo pedido, o uso número 160 é tão novo quanto o primeiro.">Nada, a menos que alguém registre o resultado e leve de volta</button>
+        <button class="opt" data-k="c" data-fb="Elogiar dentro da conversa não fica guardado para a próxima — e 'gostei' não é o mesmo que 'o lead agendou'.">Só o que Marcos elogiou na conversa</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> Melhorar de verdade exige seis coisas — e nenhuma delas é "esforço"</h2>
+      <p>Quando alguém diz "quero que a IA melhore", quase sempre está pensando em pedir melhor. Mas melhoria real não vem do pedido. Vem de seis ingredientes ligados em círculo: <b>evidência</b> (o que aconteceu, anotado), <b>métrica</b> (um número que diz se foi bom), <b>memória</b> (onde fica guardado o que já se tentou), <b>hipótese</b> (uma ideia de mudança, com motivo), <b>experimento</b> (a ideia testada contra a versão atual) e <b>avaliação</b> (alguém diz qual ganhou, pelo número).</p>
+      <p>Paulo é gestor de suporte numa empresa de software pequena: 10.000 chamados por ano. Para o time dele, os seis ingredientes ficam assim. Evidência: cada chamado com "sobre o quê" anotado. Métrica: resolvido no primeiro contato, sim ou não. Memória: um lugar onde está escrito o que o time já tentou nas respostas prontas. Hipótese: "se a resposta sobre senha tiver o link direto, menos gente volta". Experimento: metade dos chamados de senha com a resposta nova, metade com a antiga. Avaliação: quem diz qual ganhou é a contagem de "voltou em 7 dias", não a opinião de quem escreveu a resposta.</p>
+      <p>Repare: nenhum dos seis é "pedir com mais força". E se faltar um, o círculo não fecha — hipótese sem experimento é palpite, experimento sem memória é descoberta que se perde na semana seguinte.</p>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="fundamento">
+      <h2><span class="n">04</span> O que um loop garante — e o que ele não promete</h2>
+      <p>Antes de seguir, a antipromessa, dita logo na primeira aula para não ficar escondida: <b>nenhum loop de melhoria garante que o número sobe.</b> Quem promete isso está vendendo sorte com cara de método. O que um loop bem montado garante é outra coisa, mais modesta e mais valiosa:</p>
+      <table class="tbl">
+        <tr><th>Garante</th><th>Não garante</th></tr>
+        <tr><td><b>Que uma versão pior não substitui a atual</b> sozinha.</td><td>Que a próxima versão será melhor.</td></tr>
+        <tr><td><b>Que toda mudança fica registrada</b> e tem botão de voltar atrás.</td><td>Que o registro terá algo útil toda semana.</td></tr>
+        <tr><td><b>Que o ciclo roda toda semana</b>, do mesmo jeito.</td><td>Que cada ciclo produz uma boa ideia.</td></tr>
+        <tr><td><b>Que o custo não passa do teto</b>.</td><td>Que o custo compensa.</td></tr>
+      </table>
+      <p>Repare que as quatro garantias falam de processo, não de resultado. Parece pouco. É exatamente o que nenhuma promessa de "IA que melhora sozinha" consegue entregar com honestidade — e é o que deixa você dormir enquanto o ciclo roda: nada entra sem prova, e tudo o que entrou pode sair.</p>
+      <p>No exemplo de referência do LOOP-R — uma clínica fictícia como a de Regina, com dados simulados —, a taxa de resposta às propostas foi de 19,3% para 29,3% numa versão testada com 300 envios de cada lado. E a conversão em venda não se mexeu: 3,7% contra 3,0%, diferença que pode ser acaso. O loop não escondeu isso. Registrou, e a pessoa decidiu com o número na frente. Para Regina, esse é o negócio real: não um número prometido, mas um número que ela consegue conferir.</p>
+      <div class="qanchor"><p>Nenhum loop garante que o número sobe. Garante que uma versão pior não entra sozinha — e que sempre dá para voltar.</p></div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p1" data-mode="analise">
+      <p class="pk">Pratique agora <span class="pcount">0/3 feito</span></p>
+      <h3 class="ph">Aponte as tarefas que terminam ali — no caso de Regina e no seu negócio</h3>
+      <p class="pgoal">Ler um caso curto, responder três perguntas e comparar com o gabarito; depois, listar as suas cinco. ~10 min.</p>
+      <p class="psafe">É só leitura e anotação — nada muda no seu negócio até você aprovar, e nenhuma cliente recebe nada. Se uma resposta sua ficar diferente do gabarito, anote a diferença: é exatamente o tipo de coisa que vale discutir com o sócio.</p>
+      <p><b>O caso.</b> Regina, dona de uma clínica de estética, usa a IA para cinco coisas por semana: (1) escrever propostas de pacote no WhatsApp; (2) responder "qual o valor?" de quem chega pelo Instagram; (3) montar a legenda do post de segunda; (4) resumir as avaliações das clientes no Google; (5) escrever a mensagem de lembrete de sessão. Nenhuma das cinco tem registro do que aconteceu depois. Regina acha que a número 4 "já é aprendizado", porque ali a IA lê o que as clientes disseram.</p>
+      <p><b>Responda no papel ou no celular:</b></p>
+      <ol>
+        <li>Quais das cinco tarefas terminam ali?</li>
+        <li>A tarefa 4 é um loop, como Regina pensa? Por quê?</li>
+        <li>Se você fosse Regina, qual das cinco escolheria para começar a registrar — e o que anotaria em cada linha?</li>
+      </ol>
+      <details><summary>Gabarito comentado (abra só depois de responder)</summary>
+        <p><b>1.</b> As cinco. Todas seguem o caminho pedido → resposta → fim: nenhuma tem uma linha dizendo o que aconteceu depois (a proposta foi respondida? o post trouxe agendamento? a cliente do lembrete apareceu?).</p>
+        <p><b>2.</b> Não. Ler avaliações é um pedido que termina ali como os outros. Viraria loop se o que a IA leu virasse uma hipótese ("clientes reclamam de espera: se a proposta disser o tempo de sessão, respondem mais?"), fosse testado contra a versão atual e o resultado ficasse registrado. Ler não é aprender; mudar com prova é.</p>
+        <p><b>3.</b> A melhor escolha é a mais frequente e com resultado fácil de ver: a proposta (1), com 200 por mês e a resposta chegando em horas. Por linha: data, versão da proposta, tipo de pacote, respondeu (sim/não), agendou (sim/não), reclamou (sim/não). A tarefa 3 (post) também vale, mas o resultado demora mais e é mais difícil de ligar ao texto.</p>
+      </details>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Respondi as três perguntas antes de abrir o gabarito.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Comparei minhas respostas com o gabarito e anotei onde diferi.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Escrevi as cinco tarefas que a IA faz no meu negócio e que terminam ali — com a frase "termina ali porque ninguém registra ___".</span></label></li>
+      </ol>
+      <p class="pdone">Você acabou de conseguir apontar, com uma frase cada, as tarefas que terminam ali — no caso de Regina e no seu negócio.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> O caminho tem quatro paradas e nenhuma volta: o que aconteceu depois da resposta não retorna ao pedido seguinte. A seta pontilhada, vazia, é o que falta."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="10" y="40" width="44" height="28" rx="5" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="16" y="58" font-size="8" style="fill:var(--ink)">humano</text>
+        <path d="M54 54 h12" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <rect x="66" y="40" width="40" height="28" rx="5" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="72" y="58" font-size="8" style="fill:var(--ink)">pedido</text>
+        <path d="M106 54 h12" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <rect x="118" y="40" width="50" height="28" rx="5" style="fill:var(--panel);stroke:var(--accent)" stroke-width="1.5"/><text x="122" y="58" font-size="8" style="fill:var(--ink)">resposta</text>
+        <path d="M168 54 h12" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <rect x="180" y="40" width="30" height="28" rx="5" style="fill:var(--panel);stroke:var(--warm)" stroke-width="2"/><text x="187" y="58" font-size="8" style="fill:var(--warm)">fim</text>
+        <path d="M195 68 v40 h-163 v-14" style="stroke:var(--faint)" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <path d="M28 98 l4 -6 l4 6" style="stroke:var(--faint)" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <text x="60" y="122" font-size="7.5" style="fill:var(--faint)">o que aconteceu depois? — não volta</text>
+        <text x="14" y="160" font-size="8" style="fill:var(--muted)">proposta 1 · 2 · 3 … 200 · 201</text>
+        <text x="14" y="174" font-size="8" style="fill:var(--muted)">cada uma começa aqui →</text><rect x="118" y="164" width="14" height="12" rx="2" style="stroke:var(--muted)" stroke-width="1.2"/>
+      </svg></div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> Entre um pedido e o próximo há uma parede. O que aconteceu depois da resposta (respondeu? agendou? sumiu?) fica do lado de fora — e nunca entra na conversa seguinte."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="14" y="50" width="80" height="60" rx="8" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="22" y="72" font-size="8" style="fill:var(--ink)">pedido 1</text><text x="22" y="88" font-size="7.5" style="fill:var(--muted)">resposta 1</text>
+        <rect x="126" y="50" width="80" height="60" rx="8" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="134" y="72" font-size="8" style="fill:var(--ink)">pedido 2</text><text x="134" y="88" font-size="7.5" style="fill:var(--muted)">resposta 2</text>
+        <rect x="104" y="30" width="12" height="100" style="fill:var(--line2)"/><path d="M104 30 v100 M116 30 v100" style="stroke:var(--warm)" stroke-width="1.5"/>
+        <text x="30" y="150" font-size="7.5" style="fill:var(--accent)">lead agendou</text><rect x="14" y="140" width="6" height="6" style="fill:var(--accent)"/>
+        <text x="30" y="166" font-size="7.5" style="fill:var(--accent)">cliente sumiu</text><rect x="14" y="156" width="6" height="6" style="fill:var(--accent)"/>
+        <path d="M96 150 q10 -20 8 -40" style="stroke:var(--faint)" stroke-width="1.2" stroke-dasharray="3 3"/><text x="70" y="186" font-size="7.5" style="fill:var(--faint)">fica do lado de fora</text>
+      </svg></div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> Os seis ingredientes formam um circuito, não uma lista: a avaliação de hoje vira memória, e a memória alimenta a próxima hipótese. Se um elo falta, o círculo abre."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <circle cx="110" cy="100" r="66" style="stroke:var(--line2)" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <g font-size="7.5">
+          <rect x="82" y="22" width="56" height="20" rx="10" style="fill:var(--panel);stroke:var(--accent)" stroke-width="1.5"/><text x="90" y="35" style="fill:var(--ink)">evidência</text>
+          <rect x="150" y="56" width="52" height="20" rx="10" style="fill:var(--panel);stroke:var(--accent)" stroke-width="1.5"/><text x="160" y="69" style="fill:var(--ink)">métrica</text>
+          <rect x="150" y="124" width="52" height="20" rx="10" style="fill:var(--panel);stroke:var(--accent)" stroke-width="1.5"/><text x="156" y="137" style="fill:var(--ink)">hipótese</text>
+          <rect x="82" y="158" width="56" height="20" rx="10" style="fill:var(--panel);stroke:var(--accent)" stroke-width="1.5"/><text x="86" y="171" style="fill:var(--ink)">experimento</text>
+          <rect x="18" y="124" width="52" height="20" rx="10" style="fill:var(--panel);stroke:var(--accent)" stroke-width="1.5"/><text x="24" y="137" style="fill:var(--ink)">avaliação</text>
+          <rect x="18" y="56" width="52" height="20" rx="10" style="fill:var(--panel);stroke:var(--warm)" stroke-width="1.5"/><text x="26" y="69" style="fill:var(--ink)">memória</text>
+        </g>
+        <path d="M140 40 l8 8" style="stroke:var(--muted)" stroke-width="1.5"/><path d="M176 78 v44" style="stroke:var(--muted)" stroke-width="1.5"/><path d="M148 152 l-10 8" style="stroke:var(--muted)" stroke-width="1.5"/><path d="M80 166 l-10 -12" style="stroke:var(--muted)" stroke-width="1.5"/><path d="M44 122 v-44" style="stroke:var(--muted)" stroke-width="1.5"/><path d="M62 54 l14 -10" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <text x="86" y="104" font-size="7.5" style="fill:var(--muted)">gira toda</text><text x="90" y="114" font-size="7.5" style="fill:var(--muted)">semana</text>
+      </svg></div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> O portão só abre com prova, e a seta de volta existe sempre. O que o loop garante está no portão e na seta — não no tamanho do número."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="14" y="70" width="70" height="40" rx="6" style="fill:var(--panel);stroke:var(--accent)" stroke-width="2"/><text x="22" y="88" font-size="8" style="fill:var(--ink)">versão</text><text x="22" y="100" font-size="8" style="fill:var(--ink)">oficial</text>
+        <rect x="136" y="70" width="70" height="40" rx="6" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5" stroke-dasharray="4 3"/><text x="144" y="88" font-size="8" style="fill:var(--ink)">versão</text><text x="144" y="100" font-size="8" style="fill:var(--ink)">nova</text>
+        <path d="M136 90 h-20" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <rect x="96" y="60" width="20" height="60" rx="3" style="fill:var(--panel2);stroke:var(--warm)" stroke-width="2"/><text x="99" y="96" font-size="7" style="fill:var(--warm)">?</text>
+        <text x="60" y="48" font-size="7.5" style="fill:var(--warm)">só entra com prova</text>
+        <path d="M40 110 q0 40 60 40 q60 0 60 -40" style="stroke:var(--accent)" stroke-width="1.5"/><path d="M156 116 l4 -6 l4 6" style="stroke:var(--accent)" stroke-width="1.5"/>
+        <text x="66" y="168" font-size="7.5" style="fill:var(--accent)">voltar atrás: sempre</text>
+        <text x="14" y="190" font-size="7.5" style="fill:var(--faint)">garantido: portão + seta · não garantido: o número</text>
+      </svg></div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>Hoje a IA trabalha em linha reta: alguém pede, ela responde, acabou. A vez seguinte começa do mesmo ponto.</li>
+    <li>Isso não é defeito dela; é ausência de registro do que aconteceu depois da resposta.</li>
+    <li>Melhorar exige seis ingredientes fechados em círculo — e nenhum deles é "pedir com mais força".</li>
+    <li>Um loop honesto não promete número maior; promete não piorar sem você saber, com botão de voltar.</li>
+  </ul>
+</div>
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir separar "usa IA" de "aprende com a IA" — e viu que quase tudo hoje é o primeiro.</p>
+  <p class="na-action">Nos próximos 15 minutos, abra o WhatsApp ou o e-mail de ontem e marque três respostas que a IA ajudou a escrever. Ao lado de cada uma, anote: "sei o que aconteceu depois? sim / não".</p>
+  <p class="na-hook">Na próxima aula, você faz a conta de quanto custa refazer do zero — e descobre por que 10.000 chamados atendidos podem não ensinar nada.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#trilha">← trilha</a><a href="#aula-2">próxima: dez mil execuções e nenhum aprendizado →</a></nav>
+<footer>Aula 1 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-1">
+[
+  {"front":"Sua IA respondeu 80 leads este mês e o sócio pergunta: \"ela já aprendeu o que funciona?\". O que você responde — e o que precisaria existir para a resposta virar \"sim\"?","back":"Não. Ela não vê o que acontece depois da resposta. Para virar \"sim\": registrar, por lead, o que aconteceu (respondeu? agendou?) e levar isso de volta ao próximo pedido."},
+  {"front":"Uma clínica ajusta a proposta \"na mão\" toda vez e sente que está melhorando — mas não consegue dizer qual mudança ajudou. Qual dos seis ingredientes está faltando primeiro?","back":"Evidência com métrica: sem uma linha por envio e um número (respondeu ou não), qualquer \"melhorou\" é impressão. Sem esse elo, os outros cinco não têm onde se apoiar."},
+  {"front":"Qual a diferença entre \"a IA lê as avaliações das clientes\" e \"a IA aprende com as avaliações\"?","back":"Ler é um pedido que termina ali. Aprender exige que o que ela leu vire hipótese, seja testado contra a versão atual e a mudança fique registrada na próxima versão."},
+  {"front":"Um fornecedor diz: \"garanto que sua taxa de resposta sobe\". Qual das quatro garantias honestas ele deveria ter oferecido no lugar?","back":"Nenhuma delas é \"sobe\". As honestas: versão pior não entra por decisão do sistema; tudo registrado com volta; ciclo constante; custo dentro do teto."},
+  {"front":"Você tem 20 minutos com um gestor de suporte. Que pergunta faz para descobrir se os chamados dele \"terminam ali\"?","back":"\"Depois de responder um chamado, alguém anota sobre o que era e se ele voltou?\" Se a resposta é não, cada chamado é o primeiro — 10.000 vezes."}
+]
+</script>
+
+<!-- COMPLETUDE aula-1 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Regina clínica · Marcos corretor · Paulo suporte · clínica do exemplo de referência)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-1"> presente (5 cartões: decisão · diagnóstico · contraste · pergunta · aplicação)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb)
+-->
+</section>
+
+<!-- ===== AULA 2 — FUNDAMENTO ===== -->
+<section class="view" id="v-aula-2" data-aula="2" data-tempo="18min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 01 · Aula 2 · fundamento</p>
+    <h1>Dez mil execuções e<br><em>nenhum aprendizado</em></h1>
+    <p class="promise">Ao fim desta aula você consegue dizer, com um número seu, quantas vezes por mês a mesma tarefa é refeita do zero no seu negócio — e quantas dessas poderiam virar uma linha de registro.</p>
+    <p class="why">Volume dá sensação de experiência. Dez mil chamados atendidos parecem dez mil lições. Mas se ninguém anotou sobre o que eram, os dez mil valem o mesmo que o primeiro. Você paga o custo de repetir sem receber o ganho de aprender — e essa conta não aparece em fatura nenhuma.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <!-- herofig: metáfora do mundo real — o mural de cortiça do suporte, cheio de papéis; um em cada três é o mesmo assunto -->
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <rect x="20" y="24" width="260" height="176" rx="6" style="fill:var(--panel2);stroke:var(--muted)" stroke-width="3"/>
+    <g style="fill:var(--panel);stroke:var(--line2)" stroke-width="1.5">
+      <rect x="34" y="40" width="40" height="30" rx="2"/><rect x="82" y="44" width="40" height="30" rx="2"/><rect x="178" y="40" width="40" height="30" rx="2"/><rect x="226" y="46" width="40" height="30" rx="2"/>
+      <rect x="36" y="86" width="40" height="30" rx="2"/><rect x="132" y="88" width="40" height="30" rx="2"/><rect x="180" y="90" width="40" height="30" rx="2"/>
+      <rect x="84" y="134" width="40" height="30" rx="2"/><rect x="132" y="136" width="40" height="30" rx="2"/><rect x="228" y="138" width="40" height="30" rx="2"/>
+    </g>
+    <g style="fill:var(--warm)" opacity=".9">
+      <rect x="130" y="42" width="40" height="30" rx="2"/><rect x="84" y="90" width="40" height="30" rx="2"/><rect x="228" y="92" width="40" height="30" rx="2"/><rect x="36" y="134" width="40" height="30" rx="2"/><rect x="180" y="140" width="40" height="30" rx="2"/>
+    </g>
+    <g style="fill:var(--accent)"><circle cx="54" cy="40" r="2.5"/><circle cx="102" cy="44" r="2.5"/><circle cx="150" cy="42" r="2.5"/><circle cx="198" cy="40" r="2.5"/><circle cx="246" cy="46" r="2.5"/><circle cx="56" cy="86" r="2.5"/><circle cx="104" cy="90" r="2.5"/><circle cx="152" cy="88" r="2.5"/><circle cx="200" cy="90" r="2.5"/><circle cx="248" cy="92" r="2.5"/><circle cx="56" cy="134" r="2.5"/><circle cx="104" cy="134" r="2.5"/><circle cx="152" cy="136" r="2.5"/><circle cx="200" cy="140" r="2.5"/><circle cx="248" cy="138" r="2.5"/></g>
+    <circle cx="150" cy="214" r="10" style="fill:var(--muted)"/><path d="M136 230 q14 -8 28 0 v10 h-28z" style="fill:var(--muted)"/>
+    <text x="196" y="190" font-size="9" style="fill:var(--faint)">um em cada três: o mesmo</text>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> Dez mil chamados, um problema em cada três — e ninguém viu</h2>
+      <p>Paulo, gestor de suporte de uma empresa de software pequena, fecha o ano com 10.000 chamados atendidos. Cada um foi bem resolvido, um de cada vez, com a IA ajudando a escrever a resposta. O time é elogiado. E ninguém sabe que 37% desses chamados — 3.700 — são sobre o mesmo problema: uma tela de senha que confunde todo mundo.</p>
+      <p>Por que ninguém viu? Porque cada chamado é um pedido que termina ali. De dentro de um chamado, não dá para enxergar a pilha. Só quem olha o conjunto — e para isso precisa de uma coluna "sobre o quê" preenchida em cada um — percebe que um em cada três aponta para a mesma coisa.</p>
+      <p>Aqui está a diferença entre "atendemos muito" e "aprendemos muito". Os 10.000 chamados resolvidos deixaram 10.000 clientes atendidos e zero mudanças no produto. Um único conserto naquela tela teria evitado 3.700 conversas. A informação estava lá o ano inteiro; só não estava anotada.</p>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> Refazer do zero tem um custo que não aparece na fatura</h2>
+      <p>Marcos, o corretor, responde uns 40 leads por semana — cerca de 160 por mês. Cada resposta leva uns seis minutos entre pedir, ajustar e enviar. São 16 horas por mês. Ele não acha caro, porque a IA "faz rápido". Mas as 16 horas do mês que vem vão comprar exatamente a mesma coisa que as deste mês: 160 respostas isoladas, nenhuma mais esperta que a anterior.</p>
+      <p>Compare com outro cenário, com o mesmo tempo gasto: as mesmas 160 respostas, mas cada uma deixa uma linha — data, tipo de imóvel, qual abertura usou, o lead respondeu, agendou visita. O esforço por resposta é igual. A diferença é o rastro. Num caso sobra cansaço; no outro sobra material para uma pergunta que hoje Marcos não consegue responder: "qual abertura faz mais gente agendar?".</p>
+      <p>O custo de refazer do zero não é o tempo — o tempo você gastaria de qualquer jeito. É o aprendizado que passou pela sua mão e não ficou.</p>
+      <div class="qanchor"><p>Volume sem registro não é experiência. É a mesma primeira vez, repetida dez mil vezes.</p></div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> Duas empresas com a mesma IA: a diferença é quem aprende mais rápido</h2>
+      <p>Durante anos, a vantagem de uma empresa foi "ter mais dados que a concorrente". Isso mudou. Hoje todo mundo tem acesso à mesma IA, boa do mesmo jeito. Se duas imobiliárias usam o mesmo chat, os mesmos portais e o mesmo bairro, o que separa uma da outra? Não é o pedido mais bem escrito — esse se copia em um dia.</p>
+      <p>O que não se copia é o histórico. Uma das imobiliárias registra, por lead, canal, tipo de imóvel, resposta enviada e o que aconteceu. Depois de seis meses, tem cerca de 1.000 linhas para consultar antes de mudar qualquer coisa. A outra tem 1.000 conversas perdidas no WhatsApp de cada corretor. A concorrente pode copiar o texto; não pode copiar seis meses de "o que já testamos e como foi".</p>
+      <p>Esse acúmulo é o ativo. Ele não nasce de tecnologia melhor — nasce de uma linha por execução, todo dia, sem exceção.</p>
+      <div class="quiz" data-answer="b">
+        <p class="qk">Teste-se</p><p class="q">Duas clínicas usam a mesma IA, os mesmos preços e ficam na mesma rua. O que uma delas pode ter que a outra não consegue copiar em um mês?</p>
+        <button class="opt" data-k="a" data-fb="Um pedido bem escrito se copia numa tarde — basta alguém mandar o texto. Não é vantagem duradoura.">O pedido (prompt) mais bem escrito</button>
+        <button class="opt" data-k="b" data-fb="Isso. O histórico do que cada proposta produziu, e do que já foi testado, só se constrói linha a linha, com o tempo — a concorrente teria de começar do zero.">O registro do que cada proposta produziu e do que já foi testado</button>
+        <button class="opt" data-k="c" data-fb="Velocidade a IA dá para as duas igualmente. Responder rápido sem registrar continua sendo terminar ali.">Responder mais rápido</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="fundamento">
+      <h2><span class="n">04</span> Onde nasce a evidência: uma linha por execução</h2>
+      <p>Todo o loop depende de um passo humilde: registrar. O lugar onde isso acontece é a <span class="gterm" tabindex="0" data-def="A planilha onde cada execução (proposta, resposta, chamado) vira uma linha, com uma coluna dizendo o que aconteceu depois. É a fonte de evidência do loop.">planilha de registro</span> — uma planilha comum, com uma linha por proposta, resposta ou chamado, e uma coluna que a maioria esquece: <b>o que aconteceu depois</b>. Sem essa coluna, você tem um arquivo de textos, não evidência.</p>
+      <p>Para o suporte de Paulo, a linha fica assim: data · assunto do chamado · qual resposta pronta foi usada · resolvido no primeiro contato (sim/não) · voltou em 7 dias (sim/não). Cinco colunas. A pergunta que antes levava uma semana de leitura ("sobre o que mais reclamam?") passa a ser uma contagem de dois minutos.</p>
+      <p>Uma honestidade do método: a fonte de evidência é o gargalo, não a IA. Se os dados vivem na cabeça do vendedor ou espalhados em conversas, o loop não tem o que ler — e um loop sem evidência é teatro. E um cuidado, desde já: <b>12 linhas não fazem padrão.</b> "As propostas de terça respondem mais", com 12 propostas, é acaso com cara de descoberta. A regra do loop é só afirmar padrão com 30 ou mais por grupo.</p>
+      <div class="qbefore-after">
+        <div class="qba-col qba-before"><p class="qba-lbl">Suporte de Paulo, hoje</p><p class="qba-txt">10.000 chamados por ano resolvidos um a um. "Sobre o que mais reclamam?" leva uma semana de leitura para responder — e ninguém tem essa semana.</p></div>
+        <div class="qba-col qba-depois"><p class="qba-lbl">Com a planilha de registro</p><p class="qba-txt">10.000 linhas com a coluna "assunto" preenchida. A mesma pergunta se responde numa contagem: 37% de um problema só.</p></div>
+        <p class="qba-saldo"><b>Saldo:</b> mesmas 10.000 respostas, mesmo esforço por chamado, uma coluna a mais — e 3.700 chamados passam a apontar para um único conserto no produto.</p>
+      </div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p2" data-mode="tarefa">
+      <p class="pk">Pratique agora <span class="pcount">0/4 feito</span></p>
+      <h3 class="ph">Conte quantas vezes a mesma tarefa foi refeita do zero no último mês</h3>
+      <p class="pgoal">Sair com uma frase escrita, com dois números: quantas vezes por mês a tarefa acontece e quantas ficaram sem registro. ~10 min.</p>
+      <p class="psafe">É só contagem — nada muda no seu negócio até você aprovar; você não altera nenhuma resposta nem avisa ninguém. Se contar parecer demais, estime uma semana e multiplique por quatro: a ordem de grandeza basta para esta aula.</p>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Escolhi UMA tarefa que a IA faz para mim toda semana (proposta, resposta a lead, resposta de chamado, legenda de post).</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Abri o WhatsApp, o e-mail ou o sistema do último mês e contei quantas vezes ela aconteceu (ou estimei por semana × 4).</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Para cada uma, respondi "sei o que aconteceu depois?" e contei os "não".</span></label></li>
+        <li><label><input type="checkbox" data-ptask="4"> <span>Escrevi a frase: "[tarefa] — [N] vezes por mês — [M] sem registro". Exemplo aceitável: "Resposta a lead de portal — 160 vezes por mês — 160 sem registro".</span></label></li>
+      </ol>
+      <p class="pdone">Você acabou de conseguir dar um número mensal a uma sensação — e esse número é a primeira linha do diagnóstico do seu negócio.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> Cada ponto é um chamado resolvido. Os destacados são o mesmo problema — visível só quando alguém olha o conjunto, nunca de dentro de um chamado."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <g style="fill:var(--muted)">
+          <circle cx="30" cy="40" r="4"/><circle cx="50" cy="40" r="4"/><circle cx="90" cy="40" r="4"/><circle cx="110" cy="40" r="4"/><circle cx="150" cy="40" r="4"/><circle cx="170" cy="40" r="4"/><circle cx="190" cy="40" r="4"/>
+          <circle cx="30" cy="60" r="4"/><circle cx="70" cy="60" r="4"/><circle cx="90" cy="60" r="4"/><circle cx="130" cy="60" r="4"/><circle cx="150" cy="60" r="4"/><circle cx="190" cy="60" r="4"/>
+          <circle cx="50" cy="80" r="4"/><circle cx="70" cy="80" r="4"/><circle cx="110" cy="80" r="4"/><circle cx="130" cy="80" r="4"/><circle cx="170" cy="80" r="4"/><circle cx="190" cy="80" r="4"/>
+          <circle cx="30" cy="100" r="4"/><circle cx="50" cy="100" r="4"/><circle cx="90" cy="100" r="4"/><circle cx="150" cy="100" r="4"/><circle cx="170" cy="100" r="4"/>
+          <circle cx="70" cy="120" r="4"/><circle cx="90" cy="120" r="4"/><circle cx="110" cy="120" r="4"/><circle cx="130" cy="120" r="4"/><circle cx="190" cy="120" r="4"/>
+        </g>
+        <g style="fill:var(--warm)">
+          <circle cx="70" cy="40" r="4"/><circle cx="130" cy="40" r="4"/><circle cx="50" cy="60" r="4"/><circle cx="110" cy="60" r="4"/><circle cx="170" cy="60" r="4"/><circle cx="30" cy="80" r="4"/><circle cx="90" cy="80" r="4"/><circle cx="150" cy="80" r="4"/><circle cx="70" cy="100" r="4"/><circle cx="110" cy="100" r="4"/><circle cx="130" cy="100" r="4"/><circle cx="190" cy="100" r="4"/><circle cx="30" cy="120" r="4"/><circle cx="50" cy="120" r="4"/><circle cx="150" cy="120" r="4"/><circle cx="170" cy="120" r="4"/>
+        </g>
+        <rect x="18" y="26" width="184" height="108" rx="6" style="stroke:var(--line2)" stroke-width="1.2" stroke-dasharray="4 4"/>
+        <text x="20" y="156" font-size="8" style="fill:var(--warm)">■ mesmo problema · 37%</text>
+        <text x="20" y="172" font-size="8" style="fill:var(--muted)">● outros assuntos</text>
+        <text x="20" y="190" font-size="7.5" style="fill:var(--faint)">só se vê olhando o conjunto</text>
+      </svg></div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> Em cima, doze meses de trabalho igual: cada barra começa do zero. Embaixo, o mesmo trabalho deixando uma linha por execução — a única diferença é o rastro que se acumula."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <text x="14" y="26" font-size="8" style="fill:var(--muted)">refazer do zero</text>
+        <g style="fill:var(--line2)"><rect x="14" y="34" width="10" height="30"/><rect x="30" y="34" width="10" height="30"/><rect x="46" y="34" width="10" height="30"/><rect x="62" y="34" width="10" height="30"/><rect x="78" y="34" width="10" height="30"/><rect x="94" y="34" width="10" height="30"/><rect x="110" y="34" width="10" height="30"/><rect x="126" y="34" width="10" height="30"/><rect x="142" y="34" width="10" height="30"/><rect x="158" y="34" width="10" height="30"/><rect x="174" y="34" width="10" height="30"/><rect x="190" y="34" width="10" height="30"/></g>
+        <text x="14" y="84" font-size="7.5" style="fill:var(--faint)">sobra: cansaço</text>
+        <text x="14" y="110" font-size="8" style="fill:var(--muted)">com registro</text>
+        <g style="fill:var(--line2)"><rect x="14" y="118" width="10" height="30"/><rect x="30" y="118" width="10" height="30"/><rect x="46" y="118" width="10" height="30"/><rect x="62" y="118" width="10" height="30"/><rect x="78" y="118" width="10" height="30"/><rect x="94" y="118" width="10" height="30"/><rect x="110" y="118" width="10" height="30"/><rect x="126" y="118" width="10" height="30"/><rect x="142" y="118" width="10" height="30"/><rect x="158" y="118" width="10" height="30"/><rect x="174" y="118" width="10" height="30"/><rect x="190" y="118" width="10" height="30"/></g>
+        <path d="M14 168 L200 152" style="stroke:var(--accent)" stroke-width="2.5"/>
+        <text x="14" y="186" font-size="7.5" style="fill:var(--accent)">sobra: linhas para consultar</text>
+      </svg></div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> Duas empresas partem do mesmo ponto com a mesma IA. A que registra acumula uma barra de histórico que a outra não consegue copiar de uma vez — só construir, linha a linha."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="14" y="30" width="60" height="26" rx="5" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="22" y="47" font-size="8" style="fill:var(--ink)">mesma IA</text>
+        <path d="M74 43 h30 v-16 h20 M104 43 v26 h20" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <text x="128" y="30" font-size="8" style="fill:var(--ink)">imobiliária A</text>
+        <text x="128" y="72" font-size="8" style="fill:var(--ink)">imobiliária B</text>
+        <g style="fill:var(--accent)" opacity=".9"><rect x="128" y="36" width="14" height="6"/><rect x="128" y="44" width="30" height="6"/><rect x="128" y="52" width="48" height="6"/></g>
+        <text x="180" y="58" font-size="7" style="fill:var(--accent)">1.000 linhas</text>
+        <g style="stroke:var(--line2)" stroke-width="1.2" stroke-dasharray="2 3"><rect x="128" y="78" width="48" height="6"/><rect x="128" y="86" width="48" height="6"/><rect x="128" y="94" width="48" height="6"/></g>
+        <text x="180" y="94" font-size="7" style="fill:var(--faint)">conversas perdidas</text>
+        <text x="14" y="130" font-size="8" style="fill:var(--muted)">o texto se copia em um dia;</text>
+        <text x="14" y="144" font-size="8" style="fill:var(--muted)">o histórico, só com tempo</text>
+        <path d="M14 160 h190" style="stroke:var(--line)" stroke-width="1"/>
+        <text x="14" y="180" font-size="7.5" style="fill:var(--faint)">vantagem = velocidade de aprender</text>
+      </svg></div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> A planilha de registro: uma linha por execução e a coluna que quase todo mundo esquece, destacada. A seta mostra a linha voltando para alimentar o próximo pedido."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="12" y="30" width="196" height="100" rx="4" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/>
+        <path d="M12 50 h196 M12 70 h196 M12 90 h196 M12 110 h196" style="stroke:var(--line)" stroke-width="1"/>
+        <path d="M46 30 v100 M96 30 v100 M146 30 v100" style="stroke:var(--line)" stroke-width="1"/>
+        <rect x="146" y="30" width="62" height="100" style="fill:var(--accent)" opacity=".12"/>
+        <g font-size="6.5" style="fill:var(--muted)"><text x="16" y="43">data</text><text x="50" y="43">assunto</text><text x="100" y="43">resposta</text></g>
+        <text x="150" y="43" font-size="6.5" style="fill:var(--accent)">aconteceu?</text>
+        <g font-size="6.5" style="fill:var(--ink)"><text x="16" y="63">02/03</text><text x="50" y="63">senha</text><text x="100" y="63">pronta #4</text><text x="150" y="63">resolvido</text>
+        <text x="16" y="83">02/03</text><text x="50" y="83">boleto</text><text x="100" y="83">pronta #9</text><text x="150" y="83">voltou 7d</text>
+        <text x="16" y="103">03/03</text><text x="50" y="103">senha</text><text x="100" y="103">pronta #4</text><text x="150" y="103">resolvido</text></g>
+        <path d="M177 130 v22 h-140 v-14" style="stroke:var(--accent)" stroke-width="1.5"/><path d="M33 144 l4 -6 l4 6" style="stroke:var(--accent)" stroke-width="1.5"/>
+        <text x="60" y="168" font-size="7.5" style="fill:var(--accent)">alimenta o próximo pedido</text>
+        <text x="12" y="190" font-size="7.5" style="fill:var(--faint)">padrão só com 30 ou mais por grupo</text>
+      </svg></div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>Dez mil chamados resolvidos um a um ensinam tanto quanto o primeiro, se ninguém anotou sobre o que eram.</li>
+    <li>O custo de refazer do zero é invisível na fatura e só aparece quando você conta: a mesma tarefa, dezenas de vezes por mês, sem rastro.</li>
+    <li>Com a mesma IA para todos, a empresa difícil de copiar é a que acumula histórico do que cada execução produziu.</li>
+    <li>A evidência nasce numa planilha simples, com uma coluna dizendo o que aconteceu depois — e só vira padrão a partir de 30 por grupo.</li>
+  </ul>
+</div>
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir transformar "a gente faz isso o tempo todo" em um número mensal, com a parte sem registro contada.</p>
+  <p class="na-action">Nos próximos 15 minutos, crie uma planilha com cinco colunas — data · o que foi enviado · para quem · o que aconteceu · observação — e preencha as três últimas vezes em que a tarefa aconteceu.</p>
+  <p class="na-hook">Na próxima aula, você descobre em qual dos cinco níveis de maturidade o seu negócio está hoje — e por que pular do 1 direto para o 5 nunca funciona.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#aula-1">← aula 1</a><a href="#aula-3">próxima: os cinco níveis →</a></nav>
+<footer>Aula 2 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-2">
+[
+  {"front":"Um gestor de suporte diz: \"atendemos 4.000 chamados este ano, já sabemos tudo sobre nossos clientes\". Que pergunta de uma frase testa essa afirmação?","back":"\"Qual é o assunto mais comum, em porcentagem?\" Se a resposta demora ou é chute, os 4.000 não viraram conhecimento — viraram 4.000 conversas encerradas."},
+  {"front":"Uma corretora tem 900 respostas a leads guardadas no WhatsApp e ainda não consegue dizer qual abordagem funciona. O que falta?","back":"A coluna \"o que aconteceu depois\" por lead. Ter as conversas não é registro; registro é uma linha com resultado (respondeu? agendou?)."},
+  {"front":"Com 12 propostas registradas, a IA aponta que \"as de terça respondem mais\". Você muda o dia de envio?","back":"Não. Doze linhas não fazem padrão; o mínimo é 30 por grupo. Anote como \"observado, não testado\" e continue registrando."},
+  {"front":"Qual a diferença entre \"repetir uma tarefa 160 vezes\" e \"executar 160 vezes com registro\", se o tempo gasto é o mesmo?","back":"Só o rastro. No segundo caso sobra uma linha por execução, que pode virar hipótese; no primeiro, sobra o cansaço — e a mesma dúvida do mês anterior."},
+  {"front":"Você vai começar a registrar as propostas da clínica. Quais cinco colunas escolhe, e qual delas não pode faltar de jeito nenhum?","back":"Data · versão da proposta · tipo de pacote · respondeu (sim/não) · agendou (sim/não). A que não pode faltar é a de resultado — sem ela é arquivo de textos, não evidência."}
+]
+</script>
+
+<!-- COMPLETUDE aula-2 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Paulo suporte · Marcos corretor · duas imobiliárias/clínicas · suporte de Paulo)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="tarefa"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-2"> presente (5 cartões: aplicação · diagnóstico · decisão · contraste · aplicação)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb)
+-->
+</section>
+
+<!-- ===== AULA 3 — FUNDAMENTO ===== -->
+<section class="view" id="v-aula-3" data-aula="3" data-tempo="23min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 01 · Aula 3 · fundamento</p>
+    <h1>Os cinco níveis: de "responde"<br>a <em>empresa que aprende</em></h1>
+    <p class="promise">Ao fim desta aula você consegue marcar, por sinais observáveis e não por impressão, em qual dos cinco níveis de maturidade seu negócio está hoje — e qual é o único nível seguinte que faz sentido.</p>
+    <p class="why">Todo mundo que usa IA acha que está "avançado" — e quase todo mundo está no nível 1. Sem uma régua, você compra ferramenta de nível 4 para resolver um problema de nível 1 e paga por um teatro. A régua desta aula existe para evitar esse dinheiro jogado fora.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <!-- herofig: metáfora do mundo real — a escada de cinco degraus no corredor da clínica, uma pessoa no primeiro -->
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <path d="M20 210 h260" style="stroke:var(--muted)" stroke-width="2"/>
+    <g style="fill:var(--panel);stroke:var(--muted)" stroke-width="2">
+      <rect x="40" y="180" width="60" height="30" rx="3"/><rect x="90" y="150" width="60" height="60" rx="3"/><rect x="140" y="120" width="60" height="90" rx="3"/><rect x="190" y="90" width="60" height="120" rx="3"/><rect x="240" y="60" width="40" height="150" rx="3"/>
+    </g>
+    <rect x="40" y="180" width="60" height="6" style="fill:var(--accent)"/>
+    <g font-size="10" style="fill:var(--ink)"><text x="64" y="200">1</text><text x="114" y="170">2</text><text x="164" y="140">3</text><text x="214" y="110">4</text><text x="254" y="80">5</text></g>
+    <rect x="30" y="40" width="70" height="26" rx="3" style="fill:var(--panel2);stroke:var(--muted)" stroke-width="2"/><path d="M40 53 h50 M40 59 h30" style="stroke:var(--accent)" stroke-width="2"/>
+    <circle cx="60" cy="140" r="11" style="fill:var(--accent)"/><path d="M46 158 q14 -8 28 0 v22 h-28z" style="fill:var(--accent)"/>
+    <path d="M154 96 q30 -40 60 -10" style="stroke:var(--faint)" stroke-width="2" stroke-dasharray="5 5"/>
+    <text x="196" y="40" font-size="9" style="fill:var(--faint)">4 e 5: ainda longe</text>
+    <text x="108" y="232" font-size="9" style="fill:var(--faint)">o degrau seguinte é o único que importa</text>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> Nível 1 — Responde: você pede, ela entrega, você confere</h2>
+      <p>O nível 1 é onde quase todo negócio está, e não há nada de errado nisso. É a IA que responde a um pedido. Você escreve, ela entrega um texto, você confere e usa. A inteligência do processo mora inteira na sua cabeça: o que pedir, o que ajustar, o que mandar.</p>
+      <p>Regina, da clínica, está no nível 1 puro. Os sinais são fáceis de reconhecer: cada uso começa com ela escrevendo; o resultado de cada proposta vive na memória dela, não em lugar nenhum; se ela sair de férias, a IA "esquece" a clínica — porque nunca soube nada além do que estava no pedido do dia.</p>
+      <p>Nível 1 não é ruim. Responder bem mil vezes já poupa muitas horas. Só não confunda com aprender: mil respostas boas continuam sendo mil primeiras vezes.</p>
+      <div class="qanchor"><p>Responder bem mil vezes é nível 1. Nível 1 não é atraso; é o ponto de partida de quase todo mundo.</p></div>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> Nível 2 — Executa um objetivo: o assistente com uma função só</h2>
+      <p>No nível 2 entra o que quem trabalha com isso chama de agente — neste curso, <span class="gterm" tabindex="0" data-def="O que a área chama de agente: um assistente de IA que recebe um objetivo, planeja os passos, usa ferramentas (agenda, planilha, WhatsApp) e entrega, sem você ditar cada passo. Como um funcionário que faz uma coisa só, e faz bem.">assistente com uma função só</span>. Você não dita mais cada passo; dá um objetivo. Ele planeja, usa uma ferramenta (uma agenda, uma planilha, o WhatsApp) e entrega o resultado.</p>
+      <p>Marcos, o corretor, tem um desses: o assistente lê o lead que chegou pelo portal, procura o imóvel na planilha dele, escreve a resposta e propõe dois horários de visita. Marcos só confere e aprova. É mais do que responder — é executar um objetivo de ponta a ponta.</p>
+      <p>O detalhe que engana: o assistente faz mais coisas e aprende exatamente o mesmo tanto que no nível 1 — nada. Ninguém anota se a visita aconteceu. O nível 2 aumenta o alcance; não fecha o círculo.</p>
+      <div class="quiz" data-answer="b">
+        <p class="qk">Teste-se</p><p class="q">Um assistente de suporte lê o chamado, procura a resposta pronta certa e responde sozinho — sem ninguém anotar se o cliente voltou. Que nível é esse?</p>
+        <button class="opt" data-k="a" data-fb="Agir sozinho não é loop. Loop exige medir e comparar versões; aqui ninguém mede nada.">Nível 3, porque age sozinho</button>
+        <button class="opt" data-k="b" data-fb="Isso. Ele executa um objetivo com ferramenta, mas não mede resultado nem muda a partir dele — alcance maior, aprendizado zero.">Nível 2: executa um objetivo, mas não mede nem muda</button>
+        <button class="opt" data-k="c" data-fb="Nível 4 é o sistema que observa o próprio sistema de melhoria. Aqui não há sequer o sistema de melhoria.">Nível 4, porque usa ferramentas</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> Nível 3 — O loop: executa, mede, avalia, melhora, executa de novo</h2>
+      <p>O nível 3 é o primeiro em que a empresa aprende. Cada execução vira uma linha; a cada semana, alguém (ou um assistente com essa função) olha as linhas, propõe uma hipótese, testa a versão nova contra a atual e decide pelo número. Se ganhou com prova, vira a versão oficial. Se não, fica registrado que não deu — para ninguém tentar de novo sem saber.</p>
+      <p>No exemplo de referência do LOOP-R (uma clínica fictícia, dados simulados), o loop rodou quatro ciclos entre fevereiro e julho. Uma hipótese — "abrir citando a avaliação que a cliente deixou" — foi testada com 300 propostas de cada lado: resposta de 19,3% para 29,3%, sem piorar nada do que era vigiado (reclamações, desconto), aprovada no cartão e promovida — virou a versão oficial. Outra, "até 80 palavras", subiu quase o mesmo e foi descartada, por regra. As duas estão na memória.</p>
+      <p>Dentro do nível 3 há três graus de autonomia. <b>L0</b>: o loop só sugere; você faz tudo. <b>L1</b>: você aprova cada mudança num cartão de cinco linhas, uma vez por semana no máximo. <b>L2</b>: ele promove sozinho, avisa e mantém o botão de voltar — e só se desbloqueia depois de cinco aprovações corretas suas em L1. O curso monta o seu em L1.</p>
+      <div class="qbefore-after">
+        <div class="qba-col qba-before"><p class="qba-lbl">Nível 1 — Regina hoje</p><p class="qba-txt">200 propostas por mês. "A IA melhorou?" — ninguém sabe, e a pergunta nem tem como ser respondida.</p></div>
+        <div class="qba-col qba-depois"><p class="qba-lbl">Nível 3 — com o loop</p><p class="qba-txt">As 200 propostas viram 200 linhas. A cada ciclo, uma hipótese testada em duas versões e um cartão para Regina decidir.</p></div>
+        <p class="qba-saldo"><b>Saldo no exemplo de referência:</b> em 4 ciclos, 2 hipóteses testadas com 300 envios por versão, 1 aprovada e promovida, 1 descartada — e nenhuma mudança entrou sem cartão aprovado.</p>
+      </div>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="fundamento">
+      <h2><span class="n">04</span> Níveis 4 e 5 — e por que o seu único próximo degrau é o 3</h2>
+      <p>O nível 4 é o sistema que observa o próprio sistema de melhoria: quanto custa cada ciclo, quantas hipóteses viraram versão, qual assistente mais leva veto. Parece mágica, e é aqui que a honestidade importa: hoje, no produto, esse nível <b>só relata</b>. Ele não redesenha nada sozinho. Um sistema que muda a si mesmo com poucos dados multiplica cada erro dos níveis de baixo — por isso, redesenho autônomo continua sendo pesquisa, não produto.</p>
+      <p>O nível 5 é a empresa inteira: cada área com seu loop e um loop acima cruzando os aprendizados. O suporte de Paulo mostra o caminho: chamados registrados → causa encontrada (a tela de senha) → resposta nova testada contra a antiga → texto de ajuda atualizado → mudança sugerida ao produto. O atendimento deixa de só responder e passa a melhorar o produto. Mas isso só existe porque, lá embaixo, cada chamado virou uma linha.</p>
+      <p>Daí a regra: <b>não se pula degrau.</b> Quem está no 1 e compra "nível 5" compra teatro, porque o loop de cima não tem evidência nenhuma para aprender. Do 1 e do 2, o único próximo degrau útil é o 3 — e o 3 começa com uma coluna a mais na planilha e um teste com número.</p>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p3" data-mode="analise">
+      <p class="pk">Pratique agora <span class="pcount">0/3 feito</span></p>
+      <h3 class="ph">Autoavaliação de maturidade: marque o nível de três negócios — e depois o seu</h3>
+      <p class="pgoal">Ler o caso, marcar o nível de cada pessoa, conferir no gabarito e então marcar os sinais que valem para o seu negócio e ler o seu nível. ~12 min.</p>
+      <p class="psafe">É diagnóstico no papel — nada muda no seu negócio até você aprovar, e ninguém precisa saber o resultado. Se ficar em dúvida entre dois níveis, marque o mais baixo: o degrau seguinte é o mesmo, e errar para baixo não custa nada.</p>
+      <p><b>O caso.</b> Regina pede cada proposta à IA e ajusta na mão; o resultado fica na cabeça dela. Marcos tem um assistente que lê o lead, consulta a planilha de imóveis e propõe visita sozinho; ninguém anota se a visita aconteceu. Paulo registra cada chamado com assunto e "resolvido no primeiro contato?", testa uma resposta nova contra a antiga a cada mês e decide num cartão. Os três dizem estar "bem avançados em IA".</p>
+      <p><b>Responda:</b></p>
+      <ol>
+        <li>Em que nível está cada um dos três?</li>
+        <li>Qual dos três tem o próximo passo mais barato — e qual é esse passo?</li>
+        <li>Agora o seu negócio: marque, na lista abaixo, os sinais que valem hoje — e leia o seu nível no gabarito.</li>
+      </ol>
+      <ul class="sinais">
+        <li data-k="A">Cada uso da IA começa com alguém escrevendo o pedido, e o resultado fica na cabeça de quem pediu.</li>
+        <li data-k="B">Um assistente executa um objetivo de ponta a ponta e usa uma ferramenta (agenda, planilha, WhatsApp) sozinho.</li>
+        <li data-k="C">Existe uma linha por execução com uma coluna "o que aconteceu depois".</li>
+        <li data-k="D">Alguma versão nova já foi testada contra a antiga com um número, nos dois lados.</li>
+        <li data-k="E">Existe uma decisão registrada de aprovar ou rejeitar uma mudança, com o motivo.</li>
+        <li data-k="F">Alguém olha, por ciclo, quanto custou e quantas hipóteses viraram versão.</li>
+        <li data-k="G">Mais de uma área tem loop, e o que uma aprende chega à outra.</li>
+      </ul>
+      <details><summary>Gabarito comentado (abra só depois de marcar)</summary>
+        <p><b>1.</b> Regina: nível 1 (responde). Marcos: nível 2 (executa um objetivo; nenhuma medida). Paulo: nível 3 (linha por execução, teste com número, decisão registrada).</p>
+        <p><b>2.</b> Regina e Marcos empatam no custo: os dois precisam do mesmo passo — uma coluna de resultado por execução ("respondeu?", "a visita aconteceu?"). Marcos tem uma vantagem: o assistente dele já produz a execução de forma padronizada, então a linha é mais fácil de preencher. Para Paulo, o próximo passo é outro: manter o ciclo constante e vigiar custo por hipótese promovida.</p>
+        <p><b>3. Leitura dos sinais.</b> Só A: <b>nível 1</b>. B sem C: <b>nível 2</b>. C + D + E: <b>nível 3</b>. F por cima de C-D-E: <b>nível 4 (relatar)</b>. G: <b>nível 5</b>. Se marcou C sem D: você está entre o 2 e o 3 — tem evidência, falta experimento; é a posição mais comum de quem começou a registrar. Se marcou B e G sem C: desconfie — sem linha por execução, o "loop entre áreas" é impressão.</p>
+      </details>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Respondi 1 e 2 antes de abrir o gabarito.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Marquei os sinais do meu negócio e li o meu nível no gabarito.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Escrevi a frase: "Estou no nível [N] porque [sinal]. O próximo passo é [uma coluna de resultado / um teste com número / manter o ciclo]".</span></label></li>
+      </ol>
+      <p class="pdone">Você acabou de conseguir dar um número ao seu nível, com sinais que qualquer pessoa da equipe pode conferir — e apontar o único degrau seguinte.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> Nível 1 em três caixas: humano, IA, resultado. Nada volta — a inteligência do processo fica inteira na primeira caixa."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <text x="14" y="30" font-size="8" style="fill:var(--accent)">NÍVEL 1 · responde</text>
+        <rect x="14" y="70" width="52" height="34" rx="6" style="fill:var(--panel);stroke:var(--accent)" stroke-width="2"/><text x="22" y="91" font-size="8" style="fill:var(--ink)">humano</text>
+        <path d="M66 87 h20" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <rect x="86" y="70" width="44" height="34" rx="6" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="102" y="91" font-size="8" style="fill:var(--ink)">IA</text>
+        <path d="M130 87 h20" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <rect x="150" y="70" width="58" height="34" rx="6" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="156" y="91" font-size="8" style="fill:var(--ink)">resultado</text>
+        <path d="M40 104 v30" style="stroke:var(--accent)" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <text x="14" y="150" font-size="7.5" style="fill:var(--accent)">toda a inteligência</text><text x="14" y="161" font-size="7.5" style="fill:var(--accent)">mora aqui</text>
+        <text x="120" y="150" font-size="7.5" style="fill:var(--faint)">nada volta</text>
+        <text x="14" y="188" font-size="7.5" style="fill:var(--faint)">sinal: cada uso começa com você escrevendo</text>
+      </svg></div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> Nível 2: o objetivo entra, o assistente planeja, usa uma ferramenta e entrega. A linha é mais longa que no nível 1 — mas continua sendo uma linha, sem volta."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <text x="14" y="30" font-size="8" style="fill:var(--accent)">NÍVEL 2 · executa um objetivo</text>
+        <g font-size="7.5" style="fill:var(--ink)">
+          <rect x="14" y="60" width="50" height="28" rx="5" style="fill:var(--panel);stroke:var(--accent)" stroke-width="1.5"/><text x="20" y="78">objetivo</text>
+          <rect x="78" y="60" width="44" height="28" rx="5" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="88" y="78">plano</text>
+          <rect x="136" y="60" width="70" height="28" rx="5" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="140" y="78">ferramenta</text>
+          <rect x="78" y="112" width="58" height="28" rx="5" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="84" y="130">execução</text>
+          <rect x="150" y="112" width="56" height="28" rx="5" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="154" y="130">resultado</text>
+        </g>
+        <path d="M64 74 h14 M122 74 h14 M171 88 v12 h-35 v12 M136 126 h14" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <text x="150" y="160" font-size="7" style="fill:var(--faint)">agenda · planilha · WhatsApp</text>
+        <text x="14" y="188" font-size="7.5" style="fill:var(--faint)">alcance maior; aprendizado igual: zero</text>
+      </svg></div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> Nível 3: o círculo fecha. A seta de volta, destacada, é a diferença inteira entre os níveis 1–2 e o 3. O cartão fica na mão de quem aprova (L1)."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <text x="14" y="24" font-size="8" style="fill:var(--accent)">NÍVEL 3 · o loop</text>
+        <g font-size="7.5" style="fill:var(--ink)">
+          <rect x="82" y="36" width="56" height="22" rx="11" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="92" y="50">executar</text>
+          <rect x="150" y="76" width="52" height="22" rx="11" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="164" y="90">medir</text>
+          <rect x="130" y="130" width="56" height="22" rx="11" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="140" y="144">avaliar</text>
+          <rect x="34" y="130" width="60" height="22" rx="11" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="42" y="144">melhorar</text>
+          <rect x="16" y="76" width="54" height="22" rx="11" style="fill:var(--panel);stroke:var(--accent)" stroke-width="2"/><text x="22" y="90">de novo</text>
+        </g>
+        <path d="M138 50 l16 24 M176 98 l-14 30 M130 141 h-36 M48 130 l-10 -30" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <path d="M44 76 q10 -30 38 -30" style="stroke:var(--accent)" stroke-width="2.5"/><path d="M76 42 l6 4 l-6 4" style="stroke:var(--accent)" stroke-width="2.5"/>
+        <rect x="90" y="104" width="40" height="18" rx="3" style="fill:var(--panel2);stroke:var(--warm)" stroke-width="1.5"/><text x="95" y="116" font-size="6.5" style="fill:var(--warm)">cartão</text>
+        <text x="14" y="176" font-size="7.5" style="fill:var(--faint)">L0 sugere · L1 você aprova · L2 promove e avisa</text>
+        <text x="14" y="190" font-size="7.5" style="fill:var(--faint)">(L2 só depois de 5 aprovações certas em L1)</text>
+      </svg></div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> A escada inteira. Os degraus 4 e 5 existem, mas em pontilhado: hoje o 4 só relata. A seta cheia, do 1–2 para o 3, é o único movimento que o curso pede."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <g font-size="7.5" style="fill:var(--ink)">
+          <rect x="14" y="150" width="36" height="20" rx="3" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="20" y="164">1 res</text>
+          <rect x="54" y="130" width="36" height="40" rx="3" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="58" y="146">2 exe</text>
+          <rect x="94" y="100" width="40" height="70" rx="3" style="fill:var(--panel);stroke:var(--accent)" stroke-width="2"/><text x="98" y="116">3 loop</text>
+        </g>
+        <g font-size="7.5" style="fill:var(--muted)">
+          <rect x="138" y="70" width="36" height="100" rx="3" style="stroke:var(--faint)" stroke-width="1.5" stroke-dasharray="4 3"/><text x="142" y="86">4 meta</text>
+          <rect x="178" y="40" width="30" height="130" rx="3" style="stroke:var(--faint)" stroke-width="1.5" stroke-dasharray="4 3"/><text x="182" y="56">5 emp</text>
+        </g>
+        <path d="M32 140 q30 -40 76 -46" style="stroke:var(--accent)" stroke-width="2.5"/><path d="M102 92 l8 2 l-4 6" style="stroke:var(--accent)" stroke-width="2.5"/>
+        <text x="140" y="120" font-size="6.5" style="fill:var(--faint)">só relata</text>
+        <text x="140" y="132" font-size="6.5" style="fill:var(--faint)">(custo, vetos)</text>
+        <text x="14" y="190" font-size="7.5" style="fill:var(--faint)">não se pula degrau: sem o 3 não há o que o 4 ler</text>
+      </svg></div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>Nível 1 responde; nível 2 executa um objetivo; nível 3 fecha o círculo com medida e teste; 4 e 5 ainda são, em boa parte, pesquisa.</li>
+    <li>O nível se lê por sinais que qualquer um confere — existe linha por execução? houve teste com número? há decisão registrada? — nunca pela sensação de "estamos avançados".</li>
+    <li>Quase todo negócio pequeno está no 1 ou no 2, e esse é o ponto de partida normal, não um atraso.</li>
+    <li>O degrau seguinte útil é sempre o 3, começando em L1: você aprova cada mudança num cartão.</li>
+  </ul>
+</div>
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir dar um número ao seu nível e apontar o único degrau seguinte — com sinais, não com impressão.</p>
+  <p class="na-action">Nos próximos 15 minutos, mande para o seu sócio (ou para você mesmo): "Estamos no nível N porque [sinal]. O próximo passo é [uma coluna de resultado / um teste com número]." Uma mensagem, três linhas.</p>
+  <p class="na-hook">Na próxima aula, você vê o erro mais comum de quem tenta subir para o 3 — escrever "IA, fique melhor" — e aprende a trocar isso por uma instrução que dá para medir.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#aula-2">← aula 2</a><a href="#aula-4">próxima: "IA, fique melhor" →</a></nav>
+<footer>Aula 3 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-3">
+[
+  {"front":"Um assistente responde chamados sozinho, consulta a base e fecha o chamado. O dono diz \"temos um loop\". Que dois sinais você procura para confirmar ou negar?","back":"Uma linha por chamado com resultado e um teste A contra B com número. Sem os dois, é nível 2: executa, não aprende."},
+  {"front":"Sua clínica está no nível 1 e um fornecedor oferece \"IA que melhora o negócio inteiro\" (nível 5). Aceita?","back":"Não. Sem registro por execução, o loop de cima não tem o que aprender — é teatro caro. O degrau útil é o 3: uma coluna de resultado e um teste."},
+  {"front":"O que separa L1 de L2 dentro do nível 3 — e o que destrava o L2?","back":"Em L1 você aprova cada mudança no cartão; em L2 o loop promove sozinho, avisa e mantém o botão de voltar. L2 só se destrava depois de cinco aprovações corretas em L1."},
+  {"front":"Um corretor registra cada lead com \"agendou visita? sim/não\" há três meses, mas nunca testou duas respostas diferentes. Em que nível está e qual é o próximo passo?","back":"Entre o 2 e o 3: tem evidência, falta experimento. Próximo passo: uma versão B contra a A, com casos suficientes para não ser sorte, e uma decisão registrada."},
+  {"front":"O que o nível 4 faz no produto hoje — e o que ele não faz?","back":"Relata: custo por ciclo, hipóteses geradas contra promovidas, qual assistente mais leva veto. Não redesenha nada sozinho — isso ainda é pesquisa."}
+]
+</script>
+
+<!-- COMPLETUDE aula-3 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Regina clínica · Marcos corretor · clínica do exemplo de referência · Paulo suporte)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1 — autoavaliação de maturidade com gabarito)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~12 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-3"> presente (5 cartões: diagnóstico · decisão · contraste · aplicação · pergunta)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb)
+-->
+</section>
+
+<!-- ===== AULA 4 — FUNDAMENTO ===== -->
+<section class="view" id="v-aula-4" data-aula="4" data-tempo="22min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 01 · Aula 4 · fundamento</p>
+    <h1>"IA, fique melhor" — o erro<br>que <em>parece inteligente</em></h1>
+    <p class="promise">Ao fim desta aula você consegue pegar uma instrução vaga ("fique melhor", "seja mais persuasivo") e reescrevê-la com evidência, meta com número e "sem piorar" e uma hipótese testável — usando qualquer chat de IA.</p>
+    <p class="why">É a primeira coisa que quase todo mundo faz: abre o assistente e escreve "analise seu trabalho e melhore a cada vez". Parece uma ordem inteligente. É uma frase sem número, sem dado e sem jeito de saber se funcionou — e o assistente vai responder que sim, melhorou. Esta aula troca a frase por um pedido que dá para conferir.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <!-- herofig: metáfora do mundo real — o bilhete "fique melhor" colado no monitor, ao lado da prancheta com números -->
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <rect x="24" y="40" width="150" height="110" rx="6" style="fill:var(--panel);stroke:var(--muted)" stroke-width="2"/>
+    <rect x="34" y="50" width="130" height="90" rx="2" style="fill:var(--panel2)"/>
+    <rect x="84" y="150" width="30" height="16" style="fill:var(--muted)"/><rect x="64" y="166" width="70" height="6" rx="3" style="fill:var(--muted)"/>
+    <rect x="132" y="30" width="58" height="46" rx="2" style="fill:var(--warm)" transform="rotate(6 161 53)"/>
+    <text x="142" y="50" font-size="8.5" style="fill:var(--accent-ink)" transform="rotate(6 161 53)">fique</text><text x="140" y="64" font-size="8.5" style="fill:var(--accent-ink)" transform="rotate(6 161 53)">melhor</text>
+    <rect x="200" y="60" width="76" height="130" rx="4" style="fill:var(--panel);stroke:var(--accent)" stroke-width="2"/>
+    <rect x="226" y="52" width="24" height="14" rx="3" style="fill:var(--accent)"/>
+    <g style="fill:var(--ink)" font-size="8"><text x="210" y="88">20% → 30%</text><text x="210" y="108">sem piorar</text><text x="210" y="124">reclamações</text><text x="210" y="150">300 + 300</text></g>
+    <path d="M210 160 h56 M210 172 h40" style="stroke:var(--line2)" stroke-width="2"/>
+    <text x="30" y="212" font-size="9" style="fill:var(--faint)">uma frase que não se confere ×</text><text x="30" y="226" font-size="9" style="fill:var(--faint)">um pedido que se confere</text>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> "Analise seu trabalho e fique cada vez melhor" não é um sistema — é uma frase</h2>
+      <p>Paulo, do suporte, escreveu isso no assistente que responde chamados: "analise suas respostas e melhore continuamente". Um mês depois, perguntou se tinha melhorado. O assistente respondeu que sim, com convicção. Não havia nenhuma forma de saber se era verdade — e é isso que torna a frase perigosa: ela produz a sensação de melhoria sem produzir melhoria.</p>
+      <p>Faltam três perguntas que a frase não responde. Melhorar em relação a <b>quê</b> (a versão de quando?). Medido por <b>quem</b> (o próprio assistente, que tem todo interesse em dizer que melhorou?). Comparado <b>como</b> (contra o quê, com quantos casos?). Sem evidência registrada, sem número e sem versão anterior, "melhorou" é só a resposta esperada para a pergunta feita.</p>
+      <p>Isso não é limitação da IA; é limitação do pedido. A frase-âncora do curso inteiro existe para substituir exatamente esse hábito:</p>
+      <div class="qanchor"><p>Não peça para a IA melhorar. Faça cada execução produzir evidência, cada evidência gerar uma hipótese, cada hipótese virar um experimento — e só o que for comprovado entra na próxima versão.</p></div>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> Um objetivo tem número, direção e "sem piorar"</h2>
+      <p>A primeira troca é sair de "melhorar" para <b>"de X para Y, sem piorar Z"</b>. Para Regina: "taxa de resposta às propostas de 20% para 30%, sem piorar reclamações e desconto médio". Para Marcos: "agendamento de visita de 20% para 30%, sem piorar visitas em que o cliente não aparece". A parte do "sem piorar" tem nome — <span class="gterm" tabindex="0" data-def="A métrica que não pode cair enquanto você tenta subir a principal. Ex.: reclamações, margem, reabertura de chamado. O loop reprova qualquer versão que melhore a meta e piore um guarda-corpo.">guarda-corpo</span> — e não é enfeite.</p>
+      <p>Sem guarda-corpo, toda meta sozinha vira alvo, e o assistente aprende a trapacear: peça "mais cliques" e ele escreve título caça-clique; peça "menos tempo por chamado" e o time de Paulo passa a encerrar rápido sem resolver; peça "mais respostas" e as mensagens começam a provocar "pare de me mandar isso" — que conta como resposta. A meta sem "sem piorar" é o erro mais silencioso desta trilha, porque o número sobe e o negócio piora.</p>
+      <p>Dois cuidados sobre o número. Primeiro: escolha uma métrica que o cliente responda rápido — taxa de resposta, agendamento — e vigie a de dinheiro (conversão, margem) como guarda-corpo. Segundo: metas perto de 3% são quase impossíveis de provar em negócio pequeno; provar 3% → 5% exige cerca de 1.500 execuções de cada lado, o que a 200 por mês leva 15 meses. Provar 20% → 30% exige ~300 de cada lado. Comece pelo terreno onde dá para provar.</p>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> Hipótese é uma frase com SE, ENTÃO e PORQUE — e uma mudança só</h2>
+      <p>A segunda troca é sair de "ideia" para hipótese. Hipótese tem forma fixa: <b>SE</b> [uma mudança] <b>ENTÃO</b> [efeito esperado na meta] <b>PORQUE</b> [motivo]. No exemplo de referência do LOOP-R, a clínica fictícia escreveu: "SE a proposta tiver até 80 palavras, ENTÃO a taxa de resposta sobe de 19% para perto de 30%, PORQUE proposta longa no WhatsApp não é lida até o fim. Mudança: só o tamanho."</p>
+      <p>A parte mais difícil é a última: <b>uma mudança só</b>. Marcos quer "cortar o texto, mudar o tom e enviar de manhã" — três mudanças de uma vez. Se funcionar, ele não sabe qual das três funcionou; se falhar, não sabe qual estragou. Três ideias são três hipóteses, testadas uma por vez ou registradas para depois.</p>
+      <p>Para Regina, a mesma forma: "SE a proposta abrir citando a avaliação que a cliente deixou, ENTÃO mais clientes respondem, PORQUE reconhecem que a mensagem foi escrita para elas" — foi essa, aliás, a hipótese que acabou promovida no exemplo. Uma boa hipótese também protege: se falhar, você sabe exatamente o que descartar e o que anotar na memória para ninguém testar de novo sem querer.</p>
+      <p>Repare no que aconteceu com a instrução vaga de Paulo quando passa por essas duas trocas:</p>
+      <div class="qbefore-after">
+        <div class="qba-col qba-before"><p class="qba-lbl">Instrução vaga</p><p class="qba-txt">"Assistente, responda melhor os chamados e vá melhorando com o tempo."</p></div>
+        <div class="qba-col qba-depois"><p class="qba-lbl">Pedido que se confere</p><p class="qba-txt">"Registre cada chamado (assunto, resposta usada, resolvido no 1º contato?). Meta: resolvido no 1º contato de 50% para 65%, sem piorar reabertura em 7 dias. Hipótese: SE a resposta de senha tiver o link direto ENTÃO menos gente volta PORQUE o cliente se perde na tela. Teste: metade com cada versão, ~170 por versão."</p></div>
+        <p class="qba-saldo"><b>Saldo:</b> a primeira não produz nada conferível; a segunda produz registro, número-alvo, guarda-corpo e teste com quantidade — quatro coisas para discutir com o sócio.</p>
+      </div>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="fundamento">
+      <h2><span class="n">04</span> Quem diz se funcionou não é quem teve a ideia</h2>
+      <p>A terceira troca é separar quem propõe de quem julga. Quem julga só pode responder uma de três coisas: <b>B ganhou com margem</b>, <b>A segue</b>, ou <b>quantidade insuficiente — continue o teste</b>. A terceira é a resposta mais comum e precisa ser aceitável, porque a alternativa é promover acaso. Aquele "300 de cada lado" tem nome — <span class="gterm" tabindex="0" data-def="Quantas execuções por versão são necessárias para que a diferença entre A e B não seja sorte. Para metas entre 20% e 30%, cerca de 300 por versão.">quantidade que prova</span> — e é calculado antes do teste, não depois.</p>
+      <p>É aqui que mora o segundo erro silencioso: parar o teste no meio porque a versão nova "está na frente". Marcos, com 40 leads por semana, precisa de umas 15 semanas para chegar a 300 por versão. Na semana 2, a nova está com 12 respostas em 40 contra 7 em 40 da antiga, e ele quer promover. Doze contra sete em 40 é o tipo de diferença que aparece e some sozinha. Parada antecipada só existe por um motivo: um guarda-corpo caindo. Nunca por vantagem parcial.</p>
+      <div class="quiz" data-answer="b">
+        <p class="qk">Teste-se</p><p class="q">Semana 2 do teste: versão nova com 12 respostas em 40, antiga com 7 em 40. O que quem julga responde?</p>
+        <button class="opt" data-k="a" data-fb="Quase o dobro em 40 casos é exatamente o tipo de diferença que some na semana seguinte. Parar porque está ganhando é a forma mais comum de promover acaso.">B ganhou — é quase o dobro</button>
+        <button class="opt" data-k="b" data-fb="Isso. Com meta perto de 20–30%, a quantidade que prova é ~300 por versão. Até lá, a única resposta honesta é continuar.">Quantidade insuficiente — continue até a quantidade que prova</button>
+        <button class="opt" data-k="c" data-fb="Também não: 'A segue' exige que o teste tenha terminado e B não tenha ganhado com margem. Aqui o teste nem chegou à metade.">A segue — a diferença é pequena</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="5" data-kind="fundamento">
+      <h2><span class="n">05</span> "Parece melhor" não é "melhor": o veredito vem do número e dos guarda-corpos</h2>
+      <p>De volta ao exemplo de referência. No segundo ciclo, a hipótese "até 80 palavras" foi testada com 300 propostas de cada lado: resposta de 19,3% para 29,7% — dez pontos, com quantidade que prova. E não foi promovida. O guarda-corpo "reclamações" marcou 6 contra 1, e a tolerância combinada era zero. A regra foi aplicada como estava escrita; a versão ficou de fora; tudo foi registrado.</p>
+      <p>Aí vem a segunda lição, tão importante quanto a primeira: a regra estava mal calibrada. Seis contra uma reclamação em 300 é ruído — pode acontecer por acaso. Tolerância zero em evento raro descarta ideia boa por sorte ruim. A pessoa ajustou a tolerância para 1% nos testes seguintes, e a hipótese descartada ficou na memória, com o motivo. No quarto ciclo, "abrir citando a avaliação da cliente" subiu de 19,3% para 29,3%, guarda-corpos dentro, e virou a versão oficial. A conversão em venda não se mexeu — e isso também ficou escrito.</p>
+      <p>Para Paulo a mesma regra vale: se "resolvido no primeiro contato" sobe e "reabertura em 7 dias" sobe junto, A segue. O sistema não promove porque parece melhor — e quem aprova, em L1, é você, no cartão, com o número na frente.</p>
+      <div class="qerr">
+        <p class="qk">Erro comum</p>
+        <p class="qerr-txt"><b>Promover porque parece melhor.</b> A proposta nova "está claramente mais bonita", a taxa subiu na primeira semana — e vira a oficial. Acontece porque o olho humano confunde gosto com resultado, e semana boa com padrão. Como evitar: nada vira versão oficial sem veredito com a quantidade que prova e os guarda-corpos conferidos; e a decisão passa pelo seu cartão, não pela impressão de quem escreveu.</p>
+      </div>
+      <div class="mobfig" data-mobfig="5"></div>
+      <button class="readbtn" data-read="s5">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p4" data-mode="prompt">
+      <p class="pk">Pratique agora <span class="pcount">0/4 feito</span></p>
+      <h3 class="ph">Reescreva uma instrução vaga sua com evidência, meta e hipótese</h3>
+      <p class="pgoal">Sair com um texto de quatro partes — evidência, meta com "sem piorar", hipótese SE-ENTÃO-PORQUE, teste — gerado num chat de IA a partir de uma instrução vaga do seu negócio. ~10 min.</p>
+      <p class="psafe">Você está só escrevendo um pedido num chat — nada muda no seu negócio até você aprovar, e nenhuma resposta a cliente sai daqui. Se a resposta vier com números que você não deu, apague-os e peça de novo acrescentando "não invente números".</p>
+      <p>Isto é um pedido pronto para colar num chat de IA: os trechos entre &lt; &gt; são os únicos que você troca — o resto fica como está.</p>
+      <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Tenho um assistente de IA que faz esta tarefa no meu negócio: &lt;descreva a tarefa — ex.: responder leads de portal imobiliário&gt;.
+Hoje a instrução que dei foi vaga: "&lt;cole a instrução vaga — ex.: seja mais persuasivo e vá melhorando&gt;".
+O número atual que eu sei é: &lt;ex.: 20% dos leads respondem — ou "não sei"&gt;.
+
+Reescreva a instrução em quatro partes, sem inventar números que eu não dei:
+1. EVIDÊNCIA — o que registrar por execução, uma linha por vez, em até 5 colunas (uma delas obrigatoriamente "o que aconteceu depois").
+2. META — no formato "de X para Y, sem piorar Z", usando só o número que informei. Se eu disse "não sei", diga que a primeira tarefa é medir por 2 semanas e proponha o que medir.
+3. HIPÓTESE — uma frase "SE [uma mudança só] ENTÃO [efeito na meta] PORQUE [motivo]".
+4. TESTE — como dividir em duas versões (atual e nova) e quantas execuções por versão antes de decidir (para metas entre 20% e 30%, use cerca de 300 por versão).
+Termine listando o que NÃO pode mudar sem a minha aprovação.</pre></div>
+      <p><b>O que você deve ver:</b> uma resposta com os quatro blocos numerados; a META com um "sem piorar"; a HIPÓTESE com uma única mudança; o TESTE com uma quantidade por versão; e uma lista curta do que fica fora do alcance. Se a hipótese vier com duas ou três mudanças juntas, responda: "separe em uma hipótese por mudança".</p>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Colei o pedido no chat de IA que uso e troquei os três trechos entre &lt; &gt; por dados do meu negócio.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>A resposta tem as 4 partes, e a HIPÓTESE tem UMA mudança só (se não, pedi para separar).</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>A META tem "sem piorar" com pelo menos um guarda-corpo (se não, pedi: "acrescente um sem piorar").</span></label></li>
+        <li><label><input type="checkbox" data-ptask="4"> <span>Guardei o texto num lugar que eu ache de novo: ele é o primeiro rascunho da ficha do loop, que a Trilha 2 preenche pergunta por pergunta.</span></label></li>
+      </ol>
+      <p class="pdone">Você acabou de conseguir transformar uma ordem vaga num pedido que dá para conferir — com registro, número-alvo, guarda-corpo e teste.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> A frase 'fique melhor' com três encaixes vazios: em relação a quê, medido por quem, comparado como. Sem preencher os três, a resposta 'melhorei' é só a resposta esperada."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="30" y="24" width="160" height="34" rx="8" style="fill:var(--panel);stroke:var(--warm)" stroke-width="2"/><text x="52" y="45" font-size="8.5" style="fill:var(--ink)">"fique cada vez melhor"</text>
+        <path d="M60 58 v20 M110 58 v20 M160 58 v20" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <g style="stroke:var(--faint)" stroke-width="1.5" stroke-dasharray="4 3"><rect x="30" y="78" width="60" height="40" rx="6"/><rect x="80" y="78" width="60" height="40" rx="6" transform="translate(0 0)"/><rect x="130" y="78" width="60" height="40" rx="6"/></g>
+        <g font-size="7" style="fill:var(--muted)"><text x="36" y="94">em relação</text><text x="36" y="106">a quê?</text><text x="88" y="94">medido</text><text x="88" y="106">por quem?</text><text x="136" y="94">comparado</text><text x="136" y="106">como?</text></g>
+        <rect x="60" y="140" width="100" height="26" rx="6" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="70" y="157" font-size="8" style="fill:var(--ink)">"sim, melhorei"</text>
+        <text x="30" y="188" font-size="7.5" style="fill:var(--faint)">a resposta esperada, não a verdadeira</text>
+      </svg></div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> A meta como uma pista: a seta sobe X, e os guarda-corpos dos lados impedem que o caminho mais curto seja trapacear. Sem eles, a seta sobe e o negócio cai."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="24" y="30" width="172" height="34" rx="6" style="fill:var(--panel);stroke:var(--accent)" stroke-width="2"/><text x="34" y="51" font-size="8" style="fill:var(--ink)">MAXIMIZAR: resposta 20% → 30%</text>
+        <path d="M40 70 v90 M180 70 v90" style="stroke:var(--warm)" stroke-width="3"/>
+        <text x="44" y="82" font-size="7" style="fill:var(--warm)">sem piorar</text>
+        <g font-size="7" style="fill:var(--ink)"><text x="52" y="104">reclamações</text><text x="52" y="120">desconto médio</text><text x="52" y="136">margem</text></g>
+        <path d="M110 160 v-64" style="stroke:var(--accent)" stroke-width="2.5"/><path d="M104 102 l6 -8 l6 8" style="stroke:var(--accent)" stroke-width="2.5"/>
+        <path d="M118 150 q40 -20 60 -60" style="stroke:var(--faint)" stroke-width="1.5" stroke-dasharray="3 3"/><text x="128" y="150" font-size="6.5" style="fill:var(--faint)">trapaça:</text><text x="128" y="160" font-size="6.5" style="fill:var(--faint)">barrada</text>
+        <text x="24" y="188" font-size="7.5" style="fill:var(--faint)">20–30%: ~300 por lado · 3–5%: ~1.500</text>
+      </svg></div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> A hipótese como corrente de três elos — SE, ENTÃO, PORQUE — e a etiqueta que mais se esquece: uma mudança só. Três mudanças juntas quebram a corrente."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <g font-size="8" style="fill:var(--ink)">
+          <rect x="14" y="60" width="50" height="30" rx="15" style="fill:var(--panel);stroke:var(--accent)" stroke-width="2"/><text x="30" y="79">SE</text>
+          <rect x="84" y="60" width="60" height="30" rx="15" style="fill:var(--panel);stroke:var(--accent)" stroke-width="2"/><text x="94" y="79">ENTÃO</text>
+          <rect x="156" y="60" width="54" height="30" rx="15" style="fill:var(--panel);stroke:var(--accent)" stroke-width="2"/><text x="160" y="79">PORQUE</text>
+        </g>
+        <path d="M64 75 h20 M144 75 h12" style="stroke:var(--muted)" stroke-width="2"/>
+        <g font-size="6.5" style="fill:var(--muted)"><text x="10" y="106">≤ 80 palavras</text><text x="84" y="106">resposta 19 → 30%</text><text x="156" y="106">não é lida até o fim</text></g>
+        <rect x="14" y="128" width="84" height="20" rx="4" style="fill:var(--panel2);stroke:var(--warm)" stroke-width="1.5"/><text x="20" y="141" font-size="7" style="fill:var(--warm)">1 mudança só</text>
+        <g style="stroke:var(--faint)" stroke-width="1.2" stroke-dasharray="3 3"><rect x="116" y="128" width="94" height="20" rx="4"/></g><text x="122" y="141" font-size="6.5" style="fill:var(--faint)">tamanho + tom + hora = 3</text>
+        <text x="14" y="176" font-size="7.5" style="fill:var(--faint)">com 3 mudanças, funcionou — mas qual?</text>
+      </svg></div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> O julgamento tem três saídas, não duas. A do meio — quantidade insuficiente — é a mais comum e a única honesta antes de chegar ao número combinado."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="70" y="20" width="80" height="30" rx="6" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="82" y="39" font-size="8" style="fill:var(--ink)">A × B testados</text>
+        <path d="M110 50 v20 M110 70 h-70 v20 M110 70 v20 M110 70 h70 v20" style="stroke:var(--muted)" stroke-width="1.5"/>
+        <g font-size="7" style="fill:var(--ink)">
+          <rect x="10" y="90" width="60" height="36" rx="6" style="fill:var(--panel);stroke:var(--accent)" stroke-width="1.5"/><text x="16" y="105">B ganhou</text><text x="16" y="117">com margem</text>
+          <rect x="80" y="90" width="60" height="36" rx="6" style="fill:var(--panel);stroke:var(--warm)" stroke-width="2"/><text x="86" y="105">quantidade</text><text x="86" y="117">insuficiente</text>
+          <rect x="150" y="90" width="60" height="36" rx="6" style="fill:var(--panel);stroke:var(--muted)" stroke-width="1.5"/><text x="162" y="105">A segue</text><text x="156" y="117">(ou piorou)</text>
+        </g>
+        <text x="82" y="146" font-size="6.5" style="fill:var(--warm)">→ continue o teste</text>
+        <text x="10" y="168" font-size="7.5" style="fill:var(--faint)">semana 2: 12/40 × 7/40 = ainda nada</text>
+        <text x="10" y="184" font-size="7.5" style="fill:var(--faint)">parar cedo só se um guarda-corpo cair</text>
+      </svg></div>
+      <div class="fig" data-fig="5" data-cap="<b>Fig. 5</b> Dois ciclos do exemplo de referência lado a lado. Os dois subiram dez pontos; só um entrou — o que passou nos guarda-corpos. E a tolerância do outro foi revista, com registro."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <g font-size="7" style="fill:var(--ink)">
+          <text x="14" y="26">ciclo 2 · ≤ 80 palavras</text>
+          <rect x="14" y="34" width="90" height="14" rx="3" style="fill:var(--accent)" opacity=".8"/><text x="18" y="44" style="fill:var(--accent-ink)">19,3 → 29,7%</text>
+          <rect x="14" y="52" width="90" height="14" rx="3" style="fill:var(--panel);stroke:var(--warm)" stroke-width="1.5"/><text x="18" y="62" style="fill:var(--warm)">reclamações 6 × 1</text>
+          <text x="14" y="80" style="fill:var(--warm)">→ A segue (regra: 0)</text>
+          <text x="118" y="26">ciclo 4 · cita avaliação</text>
+          <rect x="118" y="34" width="90" height="14" rx="3" style="fill:var(--accent)" opacity=".8"/><text x="122" y="44" style="fill:var(--accent-ink)">19,3 → 29,3%</text>
+          <rect x="118" y="52" width="90" height="14" rx="3" style="fill:var(--panel);stroke:var(--accent)" stroke-width="1.5"/><text x="122" y="62" style="fill:var(--accent)">guarda-corpos ok</text>
+          <text x="118" y="80" style="fill:var(--accent)">→ B ganhou · cartão</text>
+        </g>
+        <path d="M14 96 h194" style="stroke:var(--line)" stroke-width="1"/>
+        <g font-size="7" style="fill:var(--muted)"><text x="14" y="112">300 por versão nos dois</text><text x="14" y="126">conversão: 3,7 × 3,0% — sem diferença</text><text x="14" y="140">tolerância revista: 0 → 1% (evento raro)</text></g>
+        <rect x="14" y="152" width="194" height="22" rx="4" style="fill:var(--panel2);stroke:var(--line2)" stroke-width="1"/><text x="20" y="166" font-size="7" style="fill:var(--ink)">memória: as duas ficam registradas</text>
+        <text x="14" y="190" font-size="7.5" style="fill:var(--faint)">parecer melhor não abre o portão</text>
+      </svg></div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>"Fique melhor" é uma frase, não um sistema: sem evidência, número e comparação, o assistente só vai dizer que melhorou.</li>
+    <li>Um objetivo que presta tem direção, número e "sem piorar" — porque toda meta sozinha ensina o assistente a trapacear.</li>
+    <li>Hipótese é SE-ENTÃO-PORQUE com uma mudança só; quem julga é o número, com a quantidade combinada antes, e nunca quem teve a ideia.</li>
+    <li>Uma versão pode subir dez pontos e ainda assim não entrar — e isso é o sistema funcionando, não falhando.</li>
+  </ul>
+</div>
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir transformar uma ordem vaga num pedido que dá para conferir — o primeiro rascunho da sua ficha do loop.</p>
+  <p class="na-action">Nos próximos 15 minutos, pegue a META que a IA escreveu e confira o número atual com dados de verdade: conte as últimas 20 execuções e veja quantas deram certo. Ajuste o X do "de X para Y".</p>
+  <p class="na-hook">Na Trilha 2 você monta o LOOP-R passo a passo, começando por L — Localizar: um processo, um número — e preenche a primeira pergunta da ficha do loop com o que acabou de escrever.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#aula-3">← aula 3</a><a href="#trilha">concluir a trilha →</a></nav>
+<footer>Aula 4 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-4">
+[
+  {"front":"Um gestor escreveu no assistente \"seja cada vez melhor no atendimento\" e, um mês depois, o assistente afirma que melhorou. Por que essa afirmação não vale nada?","back":"Não há evidência registrada, número-alvo nem versão anterior para comparar. O assistente está só respondendo ao pedido — dizer que melhorou é a resposta esperada, não a verdadeira."},
+  {"front":"Sua meta é \"menos tempo por chamado\". Reescreva com um \"sem piorar\" que impeça o assistente de encerrar sem resolver.","back":"\"Reduzir o tempo por chamado sem piorar reabertura em 7 dias nem satisfação.\" Sem o guarda-corpo, o caminho mais curto para o número é fechar rápido."},
+  {"front":"A hipótese diz: \"SE cortar para 80 palavras, mudar o tom e enviar de manhã ENTÃO responde mais\". Aceita como está?","back":"Não. São três mudanças; se funcionar, não se sabe qual. Uma hipótese, uma mudança — as outras duas viram hipóteses separadas, para depois."},
+  {"front":"Semana 2 do teste: nova versão com 12 em 40, antiga com 7 em 40. O sócio quer promover agora. O que você diz?","back":"Quantidade insuficiente: com meta perto de 20–30%, são ~300 por versão. Parar cedo por vantagem parcial promove acaso. Só se para antes se um guarda-corpo cair."},
+  {"front":"A versão B subiu a resposta de 19% para 30% e foi descartada. Que motivo legítimo pode ter causado isso — e o que você revisaria?","back":"Um guarda-corpo caiu (no exemplo: reclamações 6 contra 1, tolerância zero). Revisar a tolerância: em evento raro com 300 por versão, 6 contra 1 é ruído — tolerância é conta estatística, não desejo."},
+  {"front":"Qual a diferença entre \"a proposta nova ficou claramente mais bonita\" e \"a proposta nova ganhou\"?","back":"A primeira é gosto. A segunda é veredito: quantidade que prova, margem, guarda-corpos dentro. Só a segunda vira versão oficial — e ainda passa pelo seu cartão."}
+]
+</script>
+
+<!-- COMPLETUDE aula-4 | tipo=FUNDAMENTO | steps=5
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (5/5: Paulo suporte · Regina/Marcos · clínica do exemplo + Paulo · Marcos corretor · clínica do exemplo + Paulo)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (5/5)
+  [OK] practice           .practice[data-mode="prompt"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-4"> presente (6 cartões: diagnóstico · aplicação · decisão · decisão · diagnóstico · contraste)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb)
+-->
+</section>
+
+<script src="assets/curso.js"></script>
+</body>
+</html>

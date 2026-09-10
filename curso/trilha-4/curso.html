@@ -1,0 +1,1319 @@
+<!doctype html>
+<!-- LOOP-R · Trilha 4 — Medir de verdade (evals, decisão e limites) · formato-curso v5 -->
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="curso" content="loop-r-trilha-4">
+<title>LOOP-R · Trilha 4 — Medir de verdade · INEMA.CLUB PRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="aula.css">
+<script>(function(){try{var m=document.querySelector('meta[name=curso]');var CK=(m&&m.content)||'v5:curso';var s=JSON.parse(localStorage.getItem(CK));if(s&&s.prefs&&s.prefs.theme)document.documentElement.setAttribute('data-theme',s.prefs.theme);}catch(e){}})();</script>
+<!--
+  PROTOCOLO DE DESCOBERTA (SKILL.md, Passo 0 — respostas do plano §0, registradas como metadado):
+  - Público específico: donos e gestores de negócios pequenos/médios, 40+, que já usam IA para "fazer coisas"
+    (propostas, respostas, posts) e sentem que nada melhora com o tempo.
+  - Profissões-alvo (3): dona de clínica de estética (propostas por WhatsApp) · corretor de imóveis (leads de portal)
+    · gestor(a) de suporte de uma empresa de software pequena.
+  - Familiaridade com tecnologia: WhatsApp, planilha, chat de IA. Sem terminal, sem programação, nunca ouviu "Git".
+  - Resultado prático esperado: sair com um loop montado no próprio negócio (5 respostas da ficha, planilha de
+    registro, 1 experimento, 1 decisão tomada com o cartão). Esta trilha produz as respostas 4 e 5 da ficha.
+  - Tempo por sessão: 20 min.
+  Jargão do produto traduzido conforme plano §2 (ficha do loop, planilha de registro, histórico com botão de voltar,
+  virar a versão oficial, voltar atrás, assistente com uma função só, lista de conferência, quantidade que prova).
+  Fontes dos números: docs/05 §2–§7, docs/06 §2–§4, exemplos/vendas-whatsapp/README.md (ciclos 0001–0004).
+-->
+<style>
+  .view{display:none}.view.active{display:block}
+  .lnav{max-width:1160px;margin:0 auto 5vh;padding:0 clamp(24px,5vw,60px);display:flex;justify-content:space-between;gap:12px}
+  .lnav a{font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line2);border-radius:12px;padding:12px 16px}
+  .lnav a:hover{border-color:var(--accent);color:var(--ink)}
+  #v-trilha .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(24px,5vw,60px)}
+  #v-trilha .t-hero{position:relative;overflow:hidden;padding:20vh 0 8vh;border-bottom:1px solid var(--line)}
+  #v-trilha h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,6.4vw,72px);line-height:1;letter-spacing:-.025em;margin:0 0 22px}
+  #v-trilha h1 em{font-style:italic;color:var(--accent)}
+  #v-trilha .lead{font-family:var(--serif);font-size:clamp(19px,2.1vw,24px);line-height:1.5;color:var(--ink-soft);max-width:46ch;margin:0 0 30px}
+  #v-trilha section{padding:8vh 0}
+  #v-trilha .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  #v-trilha h2{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.6vw,38px);margin:0 0 28px}
+  #v-trilha .aulas{display:grid;gap:14px}
+  #v-trilha .au{display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:center;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+  #v-trilha .au .num{font-family:var(--serif);font-size:30px;color:var(--accent);text-align:center}
+  #v-trilha .au h3{font-family:var(--serif);font-weight:500;font-size:21px;margin:0 0 5px}
+  #v-trilha .au p{margin:0;color:var(--muted);font-size:14.5px}
+  #v-trilha .au .meta{font-family:var(--mono);font-size:11px;color:var(--accent);white-space:nowrap;text-align:right}
+  #v-trilha .au .prog{position:static;margin-top:10px;height:5px;border-radius:99px;background:var(--line);overflow:hidden;max-width:220px;width:auto}
+  #v-trilha .au .prog i{display:block;height:100%;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+  #v-trilha footer{max-width:1080px;margin:0 auto;padding:6vh clamp(24px,5vw,60px) 12vh;color:var(--faint);text-align:center;font-family:var(--serif);font-style:italic;border-top:1px solid var(--line)}
+  @media(max-width:720px){#v-trilha .au{grid-template-columns:44px 1fr}#v-trilha .au .meta{grid-column:2;text-align:left}}
+  /* tabela pequena dentro da prosa (quantidade que prova) — herda tokens, sem cor nova */
+  .col table.tq{width:100%;border-collapse:collapse;margin:6px 0 22px;font-size:14.5px;color:var(--ink-soft)}
+  .col table.tq th,.col table.tq td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+  .col table.tq th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:400}
+  .col table.tq td b{color:var(--ink)}
+  .col .cartao{font-family:var(--mono);font-size:13px;line-height:1.7;white-space:pre-wrap;color:var(--ink-soft);background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 22px}
+  .col .cartao b{color:var(--ink)}
+  .col details{margin:0 0 22px;border:1px solid var(--line);border-radius:14px;padding:12px 18px;background:var(--panel)}
+  .col details summary{cursor:pointer;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+  .col details p,.col details li{font-size:15.5px}
+  .col .vf{list-style:none;padding:0;margin:6px 0 22px}
+  .col .vf li{padding-left:0}
+  .col .vf li::before{display:none}
+  .col .vf li span.k{font-family:var(--mono);font-size:11px;color:var(--accent);margin-right:8px}
+</style>
+</head>
+<body>
+<div class="bar"><div class="bar-inner">
+  <span class="brand"><a class="mark" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a><a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a><a class="course" href="../index.html">LOOP-R</a></span>
+  <a class="back" href="#trilha" style="display:none">← trilha</a>
+  <button id="pill" class="pill" style="display:none">0 lido</button>
+  <button id="revbtn">revisar <span id="revn">0</span></button>
+  <button id="exbtn">exercícios</button>
+  <button id="jorbtn">jornada</button>
+  <button id="helpbtn" aria-label="Como funciona">?</button>
+  <button id="prefsbtn" aria-label="Preferências de leitura">Aa</button>
+  <button id="themebtn">tema: escuro</button>
+</div></div>
+
+<!-- ===== TRILHA ===== -->
+<section class="view" id="v-trilha">
+  <header class="t-hero"><div class="wrap">
+    <p class="kicker">LOOP-R · Trilha 04</p>
+    <h1>Medir de <em>verdade</em></h1>
+    <p class="lead">Saia sabendo dizer quantas execuções provam uma melhoria, escrever uma lista de conferência de sim ou não, e decidir sobre um cartão real — aprovar, rejeitar ou esperar — com o botão de voltar na mão.</p>
+  </div></header>
+  <section><div class="wrap">
+    <div class="statcards"></div>
+    <p class="eyebrow">Aulas</p>
+    <h2>Listas de conferência, decisão e limites</h2>
+    <div class="aulas">
+      <a class="au on" data-aula="1" href="#aula-1">
+        <div class="num">1</div>
+        <div><h3>O loop que aprende a trapacear</h3><p>Saia sabendo achar, em uma linha, como qualquer meta do seu negócio pode ser inflada sem melhorar nada — e o que vigiar para impedir.</p><div class="prog"><i></i></div></div>
+        <div class="meta">abrir →</div>
+      </a>
+      <a class="au on" data-aula="2" href="#aula-2">
+        <div class="num">2</div>
+        <div><h3>A quantidade que prova</h3><p>Saia sabendo dizer quantas execuções um teste precisa e quantas semanas isso leva no ritmo do seu negócio — antes de começar.</p><div class="prog"><i></i></div></div>
+        <div class="meta">abrir →</div>
+      </a>
+      <a class="au on" data-aula="3" href="#aula-3">
+        <div class="num">3</div>
+        <div><h3>A lista de conferência: sim ou não</h3><p>Saia com 6 perguntas de sim ou não para o texto que sua IA produz, que duas pessoas diferentes respondem igual.</p><div class="prog"><i></i></div></div>
+        <div class="meta">abrir →</div>
+      </a>
+      <a class="au on" data-aula="4" href="#aula-4">
+        <div class="num">4</div>
+        <div><h3>O cartão de decisão e o botão de voltar</h3><p>Saia sabendo decidir sobre um cartão de 5 linhas e com as respostas 4 e 5 da ficha do loop escritas: o teto e quem aprova.</p><div class="prog"><i></i></div></div>
+        <div class="meta">abrir →</div>
+      </a>
+      <a class="au on" data-aula="5" href="#aula-5">
+        <div class="num">5</div>
+        <div><h3>O que o LOOP-R não garante</h3><p>Saia sabendo separar as quatro garantias reais do loop das quatro promessas que ele não faz — e reconhecer uma promessa falsa.</p><div class="prog"><i></i></div></div>
+        <div class="meta">abrir →</div>
+      </a>
+    </div>
+  </div></section>
+  <footer><div class="wrap">LOOP-R · Sua empresa que aprende sozinha · INEMA.CLUB PRO</div></footer>
+</section>
+
+<!-- ===== AULA 1 — FUNDAMENTO ===== -->
+<section class="view" id="v-aula-1" data-aula="1" data-tempo="19min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 04 · Aula 1</p>
+    <h1>O loop que aprende<br>a <em>trapacear</em></h1>
+    <p class="promise">Ao fim desta aula você consegue pegar uma meta do seu negócio e escrever, em uma linha, o que a IA faria para inflar o número sem melhorar nada — e quais dois números você vai vigiar para impedir.</p>
+    <p class="why">Toda meta dada sozinha a um sistema que aprende vira alvo. "Responder mais rápido" vira encerrar sem resolver; "vender mais" vira desconto até a margem sumir. Isso não é defeito da IA: é o que qualquer funcionário faria se fosse cobrado por um número só. Antes de medir de verdade, você precisa saber onde a medida trapaceia.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <!-- metáfora: a balança da recepção com um polegar apoiado no prato -->
+    <rect x="60" y="176" width="180" height="14" rx="4" style="stroke:var(--line2);fill:var(--panel)"/>
+    <rect x="140" y="120" width="20" height="56" rx="3" style="stroke:var(--line2);fill:var(--panel)"/>
+    <circle cx="150" cy="86" r="42" style="stroke:var(--line2);fill:var(--panel)"/>
+    <circle cx="150" cy="86" r="34" style="stroke:var(--line)"/>
+    <path d="M150 86 L178 62" stroke-width="3" stroke-linecap="round" style="stroke:var(--warm)"/>
+    <circle cx="150" cy="86" r="4" style="fill:var(--warm)"/>
+    <path d="M122 60 L128 66 M150 44 L150 52 M178 60 L172 66 M116 86 L124 86 M184 86 L176 86" stroke-width="2" style="stroke:var(--muted)"/>
+    <rect x="70" y="150" width="160" height="10" rx="3" style="stroke:var(--accent);fill:none"/>
+    <path d="M215 118 C230 112 246 120 244 138 C243 150 236 156 226 156 L212 156 C204 156 200 150 202 142 Z" style="fill:var(--panel);stroke:var(--accent)"/>
+    <path d="M212 156 L206 150" style="stroke:var(--accent)"/>
+    <text x="70" y="214" font-family="Space Mono,monospace" font-size="10" style="fill:var(--muted)">o ponteiro subiu. a clínica, não.</text>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> Uma meta sozinha ensina a trapacear</h2>
+      <p>Existe uma regra antiga em qualquer empresa: quando uma medida vira meta, ela deixa de medir. Não porque as pessoas sejam desonestas — porque elas são inteligentes. Se você paga por número de atendimentos, os atendimentos ficam curtos. Um sistema que aprende faz exatamente a mesma coisa, só que mais rápido e sem culpa.</p>
+      <p>No LOOP-R, a <span class="gterm" tabindex="0" data-def="O número que o loop tenta aumentar. É a resposta 1 da ficha: 'de X para Y'.">métrica-alvo</span> é o número que você mandou o loop subir. Se for o único número que ele olha, ele vai achar o caminho mais curto até ele — e o caminho mais curto quase nunca passa por atender melhor.</p>
+      <p>A dona de uma clínica de estética pede: "aumente a taxa de resposta das propostas". Três ciclos depois a taxa subiu de 20% para 34%. Ela abre as conversas e descobre o motivo: a versão nova manda uma segunda mensagem no dia seguinte, e boa parte das "respostas" é "por favor, pare de me mandar isso". Contou como resposta. O ponteiro subiu; a clínica, não.</p>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> As trapaças têm três formas conhecidas</h2>
+      <p>Você não precisa imaginar todas as trapaças possíveis. Elas se repetem. Peça para maximizar cliques e o loop aprende a fazer título-isca. Peça para minimizar o tempo de atendimento e ele aprende a encerrar rápido sem resolver. Peça para maximizar vendas e ele aprende a dar desconto até a margem sumir. Peça para maximizar respostas e ele aprende a provocar.</p>
+      <p>Repare no padrão: em todas, o número pedido sobe de verdade. A trapaça não está no número — está no que ficou de fora dele.</p>
+      <p>A gestora de suporte de uma empresa de software pequena colocou como meta "tempo médio por chamado, de 18 para 10 minutos". Em duas semanas chegou a 9. Só que os chamados encerrados em 2 minutos voltavam a abrir no dia seguinte, e a nota de satisfação caiu de 4,3 para 3,6. Nada disso apareceu no painel dela, porque o painel só mostrava o tempo.</p>
+      <div class="qbefore-after">
+        <div class="qba-col qba-before"><p class="qba-lbl">Antes — meta nua</p><p class="qba-txt">"Tempo médio por chamado: de 18 para 10 minutos." Um chamado encerrado em 2 minutos e reaberto amanhã <b>soma a favor</b> da meta.</p></div>
+        <div class="qba-col qba-depois"><p class="qba-lbl">Depois — meta com vigiados</p><p class="qba-txt">"De 18 para 10 minutos <b>sem piorar</b> a reabertura em 7 dias (hoje 9%) nem a satisfação (hoje 4,3)." O mesmo chamado agora <b>soma contra</b>.</p></div>
+        <p class="qba-saldo"><b>Saldo:</b> a mesma meta, o mesmo painel — e "encerrar sem resolver" deixou de ser um atalho para virar uma reprovação automática.</p>
+      </div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> A forma obrigatória: maximizar X sem piorar Y, Z, W</h2>
+      <p>No LOOP-R, uma meta nunca vem sozinha. Toda métrica-alvo vem acompanhada de pelo menos um número que não pode cair — um <span class="gterm" tabindex="0" data-def="Número vigiado que não pode piorar além de uma tolerância enquanto o loop tenta subir a métrica-alvo. Na ficha do loop: 'sem piorar'.">guarda-corpo</span>. A frase completa é sempre "maximizar X sem piorar Y, Z e W". Não é um enfeite: é a parte da meta que impede a trapaça.</p>
+      <p>Existem vigiados típicos por área. Em vendas: margem média, reclamações, descadastro, desconto médio. Em atendimento: satisfação, reabertura em 7 dias, tempo gasto pelo cliente. Em conteúdo: tempo na página, descadastro, denúncias. Você não precisa vigiar todos — precisa vigiar os que a trapaça mais provável tocaria.</p>
+      <p>Um corretor de imóveis que responde <span class="gterm" tabindex="0" data-def="Contato de alguém que clicou num anúncio de imóvel no portal e pediu informação. Ainda não é cliente; é um interessado.">leads de portal</span> escreve: "maximizar visitas agendadas por lead, sem piorar a taxa de visita em que o cliente não aparece, nem o desconto médio oferecido". Agora, se a versão nova agenda mais visitas prometendo desconto na conversa, o desconto médio sobe — e a versão reprova, mesmo com a agenda cheia.</p>
+      <p>Dois assistentes do loop usam essa frase. O Guardião veta qualquer hipótese que proponha mexer num vigiado. O Avaliador reprova qualquer versão que suba X e piore um vigiado além da tolerância — mesmo que X tenha subido muito. Se a resposta sobe 40% e a margem cai 1% com tolerância zero, a resposta é "A segue". Sem exceção.</p>
+      <div class="quiz" data-answer="b">
+        <p class="qk">Teste-se</p><p class="q">A versão B subiu a taxa de resposta em 40%. A margem média caiu 1%, e a tolerância do vigiado "margem" é zero. O que o Avaliador responde?</p>
+        <button class="opt" data-k="a" data-fb="O tamanho do ganho não entra na conta do vigiado. Um guarda-corpo com tolerância zero reprova qualquer queda, por menor que seja — é assim que a trapaça 'desconto até a margem sumir' é barrada antes de virar regra.">B ganhou — o ganho de 40% compensa 1% de margem</button>
+        <button class="opt" data-k="b" data-fb="Exato. B só ganha se sobe X e nenhum vigiado cai além da tolerância. Com tolerância zero, 1% de queda já reprova. (Na aula 4 você vai ver que a tolerância zero também pode estar errada — mas a regra é aplicada como está escrita.)">A segue — a versão atual continua oficial</button>
+        <button class="opt" data-k="c" data-fb="'Esperar' é a resposta para quando faltam execuções (amostra insuficiente). Aqui a amostra pode estar completa; o problema é um vigiado que caiu. Isso é reprovação, não espera.">Esperar mais duas semanas</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="fundamento">
+      <h2><span class="n">04</span> A própria contagem pode trapacear</h2>
+      <p>Há uma trapaça mais silenciosa que as três anteriores: a que acontece na definição do número. "Resposta" conta o quê, exatamente? Se contar qualquer mensagem de volta, "pare de me mandar isso" é uma resposta. Se "resolvido" contar qualquer chamado encerrado, um chamado encerrado à força está resolvido.</p>
+      <p>Por isso a definição da métrica faz parte da ficha do loop, e não é um detalhe: "resposta" tem que excluir resposta negativa; "resolvido" tem que excluir reaberto em 7 dias. O Observador — o assistente que conta — confere se a planilha de registro está consistente com essa definição antes de somar qualquer coisa.</p>
+      <p>Na clínica, a coluna "respondeu" da planilha de registro ganhou uma vizinha: "resposta positiva (sim/não)". Na empresa de software, a coluna "encerrado em" ganhou "reaberto até 7 dias depois (sim/não)". Duas colunas a mais, e as duas trapaças do começo desta aula deixaram de existir na contagem.</p>
+      <div class="qanchor"><p>Uma meta sem "sem piorar" não é uma meta. É um convite.</p></div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p1" data-mode="analise">
+      <p class="pk">Pratique agora <span class="pcount">0/4 feito</span></p>
+      <h3 class="ph">Ache a trapaça em três metas</h3>
+      <p class="pgoal">Para cada meta abaixo, escreva a trapaça mais provável e dois números vigiados. ~10 min. É análise, não execução, porque rodar um loop até ele trapacear levaria semanas — o caso pronto mostra em minutos o que você precisa reconhecer.</p>
+      <p class="psafe">Nada muda no seu negócio até você aprovar: você está escrevendo num papel, não na ficha do loop. Se uma resposta sua não bater com o gabarito, compare o raciocínio — há mais de uma trapaça possível por meta, e mais de um vigiado certo.</p>
+      <p><b>Meta 1 — Renata, dona da clínica de estética.</b> "Quero dobrar o número de propostas que recebem resposta no WhatsApp."</p>
+      <p><b>Meta 2 — Marcos, corretor de imóveis.</b> "Quero mais visitas agendadas por lead que chega do portal."</p>
+      <p><b>Meta 3 — Paula, gestora de suporte.</b> "Quero baixar o tempo médio de cada chamado."</p>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Para a Meta 1, escrevi a trapaça em uma linha e dois vigiados.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Para a Meta 2, escrevi a trapaça em uma linha e dois vigiados.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Para a Meta 3, escrevi a trapaça em uma linha e dois vigiados.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="4"> <span>Comparei minhas três respostas com o gabarito abaixo.</span></label></li>
+      </ol>
+      <details><summary>Gabarito comentado</summary>
+        <p><b>Meta 1 (clínica).</b> Trapaça: insistir (segunda e terceira mensagem) ou provocar, porque "pare de me mandar" conta como resposta. Vigiados: reclamações e descadastro (quem pede para não receber mais). Extra: definir "resposta" como resposta positiva na planilha.</p>
+        <p><b>Meta 2 (corretor).</b> Trapaça: agendar a qualquer custo — prometer desconto ou "só dar uma olhadinha", o que enche a agenda de visitas que não acontecem. Vigiados: taxa de visita em que o cliente não aparece e desconto médio prometido. Alternativa aceitável: proposta fechada por visita.</p>
+        <p><b>Meta 3 (suporte).</b> Trapaça: encerrar rápido sem resolver. Vigiados: reabertura em 7 dias e satisfação. Extra: "resolvido" precisa excluir reaberto.</p>
+        <p>Se você escreveu um vigiado diferente, pergunte: "a trapaça que eu descrevi tocaria nesse número?". Se sim, está certo.</p>
+      </details>
+      <p class="pdone">Você acabou de enxergar a trapaça antes de ela acontecer — em três negócios diferentes, com a mesma pergunta.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> A meta pedida (à esquerda) sobe pelo caminho mais curto: a contagem inclui o que não devia. Olhe o que entra na caixa 'resposta'.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <rect x="12" y="24" width="86" height="34" rx="8" style="stroke:var(--accent);fill:var(--panel)"/>
+          <text x="55" y="45" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)">meta: resposta ↑</text>
+          <path d="M55 58 L55 92" style="stroke:var(--line2)"/><path d="M50 86 L55 93 L60 86" style="stroke:var(--line2)"/>
+          <rect x="12" y="94" width="86" height="34" rx="8" style="stroke:var(--line2);fill:var(--panel)"/>
+          <text x="55" y="115" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink-soft)">2ª mensagem</text>
+          <path d="M98 111 L130 111" style="stroke:var(--line2)"/><path d="M124 106 L131 111 L124 116" style="stroke:var(--line2)"/>
+          <rect x="132" y="70" width="76" height="84" rx="8" style="stroke:var(--warm);fill:var(--panel)"/>
+          <text x="170" y="88" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)">"resposta"</text>
+          <text x="170" y="108" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--ink-soft)">"sim, quero"</text>
+          <text x="170" y="124" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--ink-soft)">"qual o valor?"</text>
+          <text x="170" y="142" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)">"pare de mandar"</text>
+          <text x="110" y="184" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" style="fill:var(--muted)">20% → 34%, e a clínica pior</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> Três pedidos, três atalhos. Em todos o número pedido sobe (seta cheia); o estrago fica fora do painel (linha tracejada).">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <g font-family="Space Mono,monospace" font-size="8.5">
+            <text x="12" y="36" style="fill:var(--ink)">cliques ↑</text><text x="118" y="36" style="fill:var(--ink-soft)">→ título-isca</text>
+            <text x="12" y="86" style="fill:var(--ink)">tempo ↓</text><text x="118" y="86" style="fill:var(--ink-soft)">→ encerra sem resolver</text>
+            <text x="12" y="136" style="fill:var(--ink)">vendas ↑</text><text x="118" y="136" style="fill:var(--ink-soft)">→ desconto até sumir</text>
+          </g>
+          <path d="M12 44 L100 44 M12 94 L100 94 M12 144 L100 144" style="stroke:var(--accent)" stroke-width="2"/>
+          <path d="M12 54 L100 54 M12 104 L100 104 M12 154 L100 154" style="stroke:var(--warm)" stroke-dasharray="3 3"/>
+          <g font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)">
+            <text x="12" y="64">fora do painel: tempo na página</text>
+            <text x="12" y="114">fora do painel: reabertura</text>
+            <text x="12" y="164">fora do painel: margem</text>
+          </g>
+          <text x="110" y="190" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" style="fill:var(--muted)">a trapaça está no que ficou de fora</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> A meta completa: X sobe (barra), cercada por três números que não podem cair (as cercas). Se uma cerca cede, a versão reprova.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <rect x="88" y="40" width="44" height="120" rx="6" style="stroke:var(--accent);fill:var(--panel)"/>
+          <rect x="88" y="90" width="44" height="70" rx="6" style="fill:var(--accent);opacity:.25"/>
+          <text x="110" y="34" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)">maximizar X</text>
+          <path d="M110 84 L110 60 M104 66 L110 58 L116 66" style="stroke:var(--accent)" stroke-width="2"/>
+          <g style="stroke:var(--warm)" stroke-width="2">
+            <path d="M20 60 L20 160 M32 60 L32 160 M14 80 L38 80 M14 140 L38 140"/>
+            <path d="M188 60 L188 160 M200 60 L200 160 M182 80 L206 80 M182 140 L206 140"/>
+            <path d="M60 172 L160 172 M60 178 L160 178"/>
+          </g>
+          <g font-family="Space Mono,monospace" font-size="8" style="fill:var(--ink-soft)">
+            <text x="26" y="52" text-anchor="middle">Y</text><text x="194" y="52" text-anchor="middle">Z</text><text x="110" y="192" text-anchor="middle">W · sem piorar</text>
+          </g>
+        </svg>
+      </div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> A contagem passa por um filtro: só o que cumpre a definição entra na soma. 'Pare de mandar' cai fora antes de virar número.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <g font-family="Space Mono,monospace" font-size="8.5">
+            <text x="16" y="34" style="fill:var(--ink-soft)">"sim, quero"</text>
+            <text x="16" y="58" style="fill:var(--ink-soft)">"qual o valor?"</text>
+            <text x="16" y="82" style="fill:var(--warm)">"pare de mandar"</text>
+            <text x="16" y="106" style="fill:var(--ink-soft)">"tem horário sábado?"</text>
+          </g>
+          <path d="M120 24 L120 116" style="stroke:var(--accent)" stroke-width="2"/>
+          <text x="120" y="132" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--accent)">filtro: resposta positiva?</text>
+          <path d="M126 30 L170 30 M126 54 L170 54 M126 102 L170 102" style="stroke:var(--line2)"/>
+          <path d="M126 78 L146 78" style="stroke:var(--warm)" stroke-dasharray="2 3"/>
+          <text x="150" y="82" font-family="Space Mono,monospace" font-size="9" style="fill:var(--warm)">×</text>
+          <rect x="172" y="20" width="36" height="92" rx="8" style="stroke:var(--accent);fill:var(--panel)"/>
+          <text x="190" y="70" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" style="fill:var(--ink)">3</text>
+          <text x="110" y="176" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" style="fill:var(--muted)">o Observador confere antes de somar</text>
+        </svg>
+      </div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>Quando uma medida vira meta, ela deixa de medir — e um sistema que aprende encontra o atalho mais rápido que qualquer funcionário.</li>
+    <li>As trapaças se repetem: título-isca, encerrar sem resolver, desconto até a margem sumir, provocar para "ganhar" resposta.</li>
+    <li>No LOOP-R a meta tem forma fixa, "maximizar X sem piorar Y, Z e W"; o Guardião veta o que toca num vigiado e o Avaliador reprova o que o derruba.</li>
+    <li>A definição do número também é parte da meta: "resposta" exclui a negativa, "resolvido" exclui o reaberto.</li>
+  </ul>
+</div>
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir olhar para uma meta e ver o atalho antes de a IA encontrá-lo.</p>
+  <p class="na-action">Nos próximos 15 minutos: pegue a meta principal do processo que você escolheu na Trilha 2 e reescreva no formato "maximizar X sem piorar Y e Z". Mande a frase para você mesma no WhatsApp — ela entra na ficha do loop.</p>
+  <p class="na-hook">Na próxima aula você descobre por que 12 propostas não provam nada, quantas provam — e quantas semanas isso leva no seu ritmo.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#trilha">← trilha</a><a href="#aula-2">próxima aula →</a></nav>
+<footer>Aula 1 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-1">
+[
+  {"front":"Sua clínica pede ao loop: 'aumente as respostas às propostas'. Que atalho a IA tende a encontrar, e que coluna na planilha impede que ele conte a favor?","back":"Insistir ou provocar até receber 'pare de me mandar'. A coluna 'resposta positiva (sim/não)' tira essa mensagem da conta."},
+  {"front":"Decisão: taxa de resposta subiu 40%, margem caiu 1%, tolerância da margem é zero. Aprova, reprova ou espera?","back":"Reprova ('A segue'). O tamanho do ganho não compensa um vigiado que caiu além da tolerância."},
+  {"front":"Qual a diferença entre a métrica-alvo e um guarda-corpo, na frase da meta?","back":"A métrica-alvo é o X que o loop tenta subir; o guarda-corpo é o Y que não pode cair enquanto isso. 'Maximizar X sem piorar Y'."},
+  {"front":"O painel do suporte mostra tempo médio caindo de 18 para 9 minutos, e o gerente comemora. Que dois números você pediria para ver antes de comemorar junto?","back":"Reabertura em 7 dias e satisfação. Se subiram, o tempo caiu porque os chamados estão sendo encerrados sem resolver."},
+  {"front":"Dois assistentes do loop usam a frase 'sem piorar'. Quem faz o quê com ela?","back":"O Guardião veta hipóteses que proponham mexer num vigiado; o Avaliador reprova versões que subiram X mas derrubaram um vigiado."}
+]
+</script>
+
+<!-- COMPLETUDE aula-1 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: clínica · suporte · corretor · clínica+suporte)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-1"> presente (5 cartões: aplicação · decisão · contraste · diagnóstico · pergunta)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, step 03)
+-->
+</section>
+
+<!-- ===== AULA 2 — FUNDAMENTO ===== -->
+<section class="view" id="v-aula-2" data-aula="2" data-tempo="21min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 04 · Aula 2</p>
+    <h1>A quantidade<br>que <em>prova</em></h1>
+    <p class="promise">Ao fim desta aula você consegue olhar uma meta como "de 20% para 30%" e dizer quantas execuções o teste precisa por versão e quantas semanas isso leva no ritmo do seu negócio — antes de começar.</p>
+    <p class="why">A maioria dos loops morre aqui: alguém compara 12 propostas novas com 12 antigas, vê "o dobro" e muda a regra da equipe. Três semanas depois o número voltou ao normal e ninguém sabe por quê. Sorte com número pequeno parece padrão. Existe uma conta que separa os dois — e ela cabe numa tabela de cinco linhas.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <!-- metáfora: doze moedas sobre a mesa da recepção — oito viradas para o mesmo lado -->
+    <rect x="30" y="150" width="240" height="8" rx="3" style="stroke:var(--line2);fill:var(--panel)"/>
+    <path d="M40 158 L34 210 M260 158 L266 210" style="stroke:var(--line2)"/>
+    <g style="stroke:var(--line2);fill:var(--panel)">
+      <ellipse cx="60" cy="140" rx="16" ry="7"/><ellipse cx="98" cy="142" rx="16" ry="7"/><ellipse cx="136" cy="139" rx="16" ry="7"/><ellipse cx="174" cy="141" rx="16" ry="7"/><ellipse cx="212" cy="140" rx="16" ry="7"/><ellipse cx="250" cy="142" rx="16" ry="7"/>
+      <ellipse cx="80" cy="120" rx="16" ry="7"/><ellipse cx="118" cy="118" rx="16" ry="7"/><ellipse cx="156" cy="121" rx="16" ry="7"/><ellipse cx="194" cy="119" rx="16" ry="7"/><ellipse cx="232" cy="120" rx="16" ry="7"/><ellipse cx="137" cy="100" rx="16" ry="7"/>
+    </g>
+    <g style="fill:var(--warm)">
+      <circle cx="60" cy="140" r="2.5"/><circle cx="98" cy="142" r="2.5"/><circle cx="174" cy="141" r="2.5"/><circle cx="250" cy="142" r="2.5"/><circle cx="80" cy="120" r="2.5"/><circle cx="156" cy="121" r="2.5"/><circle cx="232" cy="120" r="2.5"/><circle cx="137" cy="100" r="2.5"/>
+    </g>
+    <text x="30" y="60" font-family="Newsreader,serif" font-style="italic" font-size="16" style="fill:var(--ink-soft)">oito caras em doze jogadas.</text>
+    <text x="30" y="82" font-family="Space Mono,monospace" font-size="10" style="fill:var(--muted)">acontece uma vez a cada cinco. sem truque nenhum.</text>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> Com doze, a sorte se disfarça de padrão</h2>
+      <p>Jogue uma moeda doze vezes. Oito ou mais caras acontecem em quase uma de cada cinco tentativas — sem moeda viciada, sem truque. Agora troque "cara" por "cliente que agendou" e "coroa" por "cliente que não respondeu": com doze clientes, uma mensagem nova "ganhar" da antiga é o que se espera do acaso, não uma prova de que ela é melhor.</p>
+      <p>É por isso que "eu testei e funcionou" quase nunca é verdade com número pequeno. Não é que a pessoa esteja errada sobre o que viu. É que o que ela viu acontece também quando não há diferença nenhuma.</p>
+      <p>Um corretor de imóveis muda a primeira mensagem que manda aos leads do portal. Nos 12 leads seguintes, 4 agendam visita. Com a mensagem antiga, nos 12 anteriores, foram 2. "Dobrou", ele conta na reunião de segunda, e a mensagem nova vira a mensagem de todo mundo. Em três semanas a taxa está onde sempre esteve — e agora ninguém sabe se a nova é melhor, pior ou igual.</p>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> A tabela da quantidade que prova</h2>
+      <p>A <span class="gterm" tabindex="0" data-def="Quantas execuções por versão um teste A contra B precisa para que a diferença observada não seja explicável por sorte (95% de confiança, 80% de poder). O Experimentador calcula e mostra antes de começar.">quantidade que prova</span> é uma conta padrão, e o Experimentador — o assistente que desenha o teste — faz essa conta e mostra para você antes de o teste começar. Você não precisa saber a fórmula. Precisa saber ler a tabela.</p>
+      <table class="tq">
+        <tr><th>de → para</th><th>por versão</th><th>total</th><th>a 50/semana</th><th>a 200/semana</th></tr>
+        <tr><td><b>3% → 5%</b></td><td>~1.500</td><td>~3.000</td><td><b>60 semanas</b></td><td>15 semanas</td></tr>
+        <tr><td>3% → 6%</td><td>~700</td><td>~1.400</td><td>28 semanas</td><td>7 semanas</td></tr>
+        <tr><td><b>20% → 30%</b></td><td>~300</td><td>~600</td><td><b>12 semanas</b></td><td>3 semanas</td></tr>
+        <tr><td>20% → 35%</td><td>~140</td><td>~280</td><td>6 semanas</td><td>1,5 semana</td></tr>
+        <tr><td>50% → 65%</td><td>~170</td><td>~340</td><td>7 semanas</td><td>2 semanas</td></tr>
+      </table>
+      <p>Leia duas coisas. Primeira: quanto mais baixo o número de partida, mais execuções ele exige — 3% é quase impossível de provar numa empresa pequena. Segunda: quanto maior o salto que você espera, menos execuções precisa — mas o salto tem que acontecer de verdade, não ser um desejo.</p>
+      <p>A dona da clínica manda 50 propostas por semana e quer subir a conversão em venda de 3% para 5%. Pela tabela, são 1.500 propostas com cada versão: 60 semanas para um único teste. Mais de um ano para responder uma pergunta. Não é que o loop não funcione — é que essa pergunta, nesse ritmo, não dá para responder.</p>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> Três tipos de número, três velocidades</h2>
+      <p>A saída para a clínica não é desistir de medir — é medir um número mais rápido que ainda tenha relação com o dinheiro. O LOOP-R separa os números em três tipos. <b>Dinheiro</b>: conversão, ticket, margem — quem responde é o cliente, semanas depois; leva meses para provar. <b>Sinal</b>: taxa de resposta, agendamento, clique útil — o cliente responde em horas ou dias; leva semanas. <b>Artefato</b>: a proposta cumpre a lista de conferência? tem erro? tom certo? — responde-se olhando o texto, em minutos.</p>
+      <p>A regra do loop: o teste roda sobre o número mais rápido que ainda tem uma ligação plausível com o dinheiro. O dinheiro não some — vira vigiado ("sem piorar a conversão") enquanto não há volume para testá-lo direto.</p>
+      <p>Na empresa de software, a gestora de suporte tem os três: dinheiro é a renovação do contrato (meses); sinal é "resolvido no primeiro contato" (dias); artefato é "a resposta cumpre a lista de conferência" (minutos). O loop dela gira toda semana sobre o artefato e o sinal, e vigia a renovação.</p>
+      <div class="qbefore-after">
+        <div class="qba-col qba-before"><p class="qba-lbl">Antes — medir o dinheiro</p><p class="qba-txt">Clínica, 50 propostas/semana. Meta: conversão em venda de 3% para 5%. Quantidade que prova: 1.500 por versão. <b>60 semanas</b> até a primeira resposta.</p></div>
+        <div class="qba-col qba-depois"><p class="qba-lbl">Depois — medir o sinal, vigiar o dinheiro</p><p class="qba-txt">Mesma clínica, mesmo ritmo. Meta: taxa de resposta de 20% para 30%, sem piorar a conversão. Quantidade que prova: 300 por versão. <b>12 semanas</b>.</p></div>
+        <p class="qba-saldo"><b>Saldo:</b> 48 semanas a menos para a primeira resposta confiável — sem tirar o dinheiro de vista, só do lugar de alvo.</p>
+      </div>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="fundamento">
+      <h2><span class="n">04</span> "Amostra insuficiente" é a resposta mais comum — e tem que ser aceitável</h2>
+      <p>O Avaliador, o assistente que julga o teste, só sabe dar três respostas: <b>B ganhou com margem</b>, <b>A segue</b>, ou <b>amostra insuficiente — continue o teste</b>. Se o número de execuções ainda não chegou à quantidade que prova, a resposta é a terceira. Sempre. Não existe "mas está ganhando".</p>
+      <p>Parar cedo porque está ganhando é a forma mais comum de virar regra uma coisa que era ruído. A tabela do passo anterior diz quando o teste termina; a vontade de ver o resultado, não. A única parada antecipada permitida é por vigiado caindo — aí o teste para porque está fazendo estrago, não porque está indo bem.</p>
+      <p>No caso real da clínica de estética que este curso acompanha, o primeiro ciclo quase começou errado: o Otimizador esperava um efeito pequeno, e o Experimentador avisou que, com aquela expectativa, o teste levaria 40 semanas. A dona redimensionou o teste pelo alvo que estava na ficha (20% para 30%): 300 propostas por versão. O teste passou a caber no calendário antes de mandar a primeira mensagem.</p>
+      <div class="quiz" data-answer="b">
+        <p class="qk">Teste-se</p><p class="q">Semana 5 de um teste de 12 semanas no corretor: a mensagem B está com 31% de agendamento contra 22% da A, com 140 leads de cada lado. A quantidade que prova é 300 por versão. O que fazer?</p>
+        <button class="opt" data-k="a" data-fb="Está ganhando com 140 — e 140 é menos da metade da quantidade que prova. Parar aqui é exatamente 'promover ruído': a vantagem pode desaparecer com os próximos 160 leads, e você nunca vai saber.">Promover B — 9 pontos de vantagem é muito</button>
+        <button class="opt" data-k="b" data-fb="Correto. N menor que o mínimo é 'amostra insuficiente', sem 'mas está ganhando'. O teste segue até 300 por versão. A única exceção seria um vigiado caindo — e aí o teste para por estrago, não por vantagem.">Continuar até 300 por versão — a resposta hoje é "amostra insuficiente"</button>
+        <button class="opt" data-k="c" data-fb="Trocar a hipótese no meio joga fora 280 leads de evidência. Não há motivo para parar: nenhum vigiado caiu, e o teste está dentro do prazo desenhado.">Parar e trocar a hipótese por uma mais forte</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="5" data-kind="fundamento">
+      <h2><span class="n">05</span> Fatiar exige trinta por fatia</h2>
+      <p>Depois que o loop conta, o Crítico — o assistente que diz o que funcionou e o que falhou — vai querer fatiar: por tipo de cliente, por canal, por dia da semana. Toda fatia obedece à mesma lei do número pequeno. "Terça converte mais" com 12 propostas não existe. O Crítico só pode chamar algo de padrão com pelo menos 30 execuções na fatia.</p>
+      <p>Por isso toda afirmação dele sai com um rótulo de força. <b>Forte</b>: 90 ou mais execuções — vira hipótese prioritária. <b>Moderada</b>: de 30 a 89 — vira hipótese. <b>Fraca</b>: menos de 30 — vai para a memória como "observado, não testado", e volta a ser olhada quando o número crescer. Nada se perde; nada vira regra cedo demais.</p>
+      <p>Na clínica, o Crítico notou que clientes de procedimento facial respondiam mais que clientes de procedimento corporal. Eram 14 de um lado e 11 do outro. Rótulo: fraca. A observação ficou guardada, e três meses depois, com 60 de cada, virou uma hipótese moderada para testar. Se tivesse virado regra no primeiro mês, teria sido uma regra sobre 25 pessoas.</p>
+      <div class="qanchor"><p>Doze propostas não dizem nada. Trezentas começam a falar.</p></div>
+      <div class="mobfig" data-mobfig="5"></div>
+      <button class="readbtn" data-read="s5">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p2" data-mode="analise">
+      <p class="pk">Pratique agora <span class="pcount">0/4 feito</span></p>
+      <h3 class="ph">Escolha a métrica que dá para provar</h3>
+      <p class="pgoal">Para cada negócio abaixo, escolha a métrica realista, diga quantas execuções por versão o teste precisa (use a tabela do passo 02) e quantas semanas leva no ritmo dado. ~10 min. É análise porque um teste real leva semanas — aqui você faz a conta que o Experimentador faria, em minutos.</p>
+      <p class="psafe">Nada muda no seu negócio até você aprovar: você está só fazendo contas num papel. Se o seu número não bater com o gabarito, veja se você leu a linha certa da tabela — o erro mais comum é olhar "total" em vez de "por versão".</p>
+      <p><b>Caso 1 — Renata, clínica de estética.</b> 50 propostas por semana. Hoje: 20% respondem, 3% fecham. Ela quer "vender mais".</p>
+      <p><b>Caso 2 — Marcos, corretor.</b> 200 leads por semana vindos do portal. Hoje 20% agendam visita; ele acha que a mensagem nova leva a 35%.</p>
+      <p><b>Caso 3 — Paula, suporte.</b> 400 chamados por semana. Hoje 50% são resolvidos no primeiro contato; a meta é 65%.</p>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Caso 1: escrevi a métrica, o "por versão" e as semanas.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Caso 2: escrevi a métrica, o "por versão" e as semanas.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Caso 3: escrevi a métrica, o "por versão" e as semanas.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="4"> <span>Comparei com o gabarito e entendi onde diferiu.</span></label></li>
+      </ol>
+      <details><summary>Gabarito comentado</summary>
+        <p><b>Caso 1.</b> "Vender mais" é dinheiro (3% → 5%): 1.500 por versão, 60 semanas a 50/semana. Inviável. Métrica realista: taxa de resposta 20% → 30%, com a conversão como vigiada. 300 por versão, 600 no total, 12 semanas.</p>
+        <p><b>Caso 2.</b> Agendamento é sinal, e ele já tem volume: 20% → 35% pede 140 por versão, 280 no total. A 200/semana: uma semana e meia. Se o efeito real for menor que ele imagina (só 30%), a conta sobe para 300 por versão e 3 semanas — o Experimentador desenha pelo alvo da ficha, não pela esperança.</p>
+        <p><b>Caso 3.</b> Resolvido no primeiro contato é sinal; 50% → 65% pede 170 por versão, 340 no total. A 400/semana: menos de uma semana. Vigiados: reabertura em 7 dias e satisfação, senão "resolvido" vira "encerrado".</p>
+      </details>
+      <p class="pdone">Você acabou de fazer a conta que separa sorte de padrão — para três ritmos diferentes de negócio.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> Dois resultados com 12 cada: 4 contra 2. As faixas claras mostram onde o número verdadeiro pode estar — e elas se sobrepõem quase inteiras.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <path d="M30 160 L200 160" style="stroke:var(--line2)"/>
+          <rect x="60" y="112" width="30" height="48" rx="4" style="fill:var(--accent);opacity:.35"/>
+          <rect x="130" y="136" width="30" height="24" rx="4" style="fill:var(--line2);opacity:.6"/>
+          <rect x="52" y="48" width="46" height="112" rx="6" style="stroke:var(--accent);opacity:.35" stroke-dasharray="3 3"/>
+          <rect x="122" y="76" width="46" height="84" rx="6" style="stroke:var(--muted);opacity:.5" stroke-dasharray="3 3"/>
+          <g font-family="Space Mono,monospace" font-size="9">
+            <text x="75" y="104" text-anchor="middle" style="fill:var(--ink)">4 de 12</text>
+            <text x="145" y="128" text-anchor="middle" style="fill:var(--ink)">2 de 12</text>
+            <text x="75" y="178" text-anchor="middle" style="fill:var(--ink-soft)">nova</text>
+            <text x="145" y="178" text-anchor="middle" style="fill:var(--ink-soft)">antiga</text>
+          </g>
+          <text x="110" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">as faixas se cobrem: pode ser sorte</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> Semanas por teste a 50 execuções/semana. Barra longa: 3% → 5%. Barra curta: 20% → 30%. Mesma empresa, mesma equipe.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <g font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--ink-soft)">
+            <text x="12" y="40">3% → 5%</text><text x="12" y="80">3% → 6%</text><text x="12" y="120">20% → 30%</text><text x="12" y="160">20% → 35%</text>
+          </g>
+          <rect x="70" y="30" width="138" height="14" rx="3" style="fill:var(--warm);opacity:.8"/>
+          <rect x="70" y="70" width="64" height="14" rx="3" style="fill:var(--warm);opacity:.5"/>
+          <rect x="70" y="110" width="28" height="14" rx="3" style="fill:var(--accent)"/>
+          <rect x="70" y="150" width="14" height="14" rx="3" style="fill:var(--accent)"/>
+          <g font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--ink)">
+            <text x="120" y="60">60 semanas</text><text x="140" y="81">28</text><text x="104" y="121">12</text><text x="90" y="161">6</text>
+          </g>
+          <text x="110" y="190" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">a 50 execuções por semana</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> Três números em fila, do mais rápido ao mais lento. O teste roda no mais rápido que ainda liga ao dinheiro; o dinheiro vira cerca.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <rect x="14" y="40" width="58" height="40" rx="8" style="stroke:var(--accent);fill:var(--panel)"/>
+          <rect x="81" y="40" width="58" height="40" rx="8" style="stroke:var(--accent);fill:var(--panel)"/>
+          <rect x="148" y="40" width="58" height="40" rx="8" style="stroke:var(--warm);fill:var(--panel)" stroke-dasharray="3 3"/>
+          <g font-family="Space Mono,monospace" font-size="8.5" text-anchor="middle" style="fill:var(--ink)">
+            <text x="43" y="57">artefato</text><text x="110" y="57">sinal</text><text x="177" y="57">dinheiro</text>
+          </g>
+          <g font-family="Space Mono,monospace" font-size="7.5" text-anchor="middle" style="fill:var(--muted)">
+            <text x="43" y="71">minutos</text><text x="110" y="71">semanas</text><text x="177" y="71">meses</text>
+          </g>
+          <path d="M72 60 L81 60 M139 60 L148 60" style="stroke:var(--line2)"/>
+          <path d="M14 120 L139 120" style="stroke:var(--accent)" stroke-width="3"/>
+          <text x="76" y="112" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--accent)">o teste roda aqui</text>
+          <path d="M148 110 L206 110 M148 130 L206 130" style="stroke:var(--warm)" stroke-width="2"/>
+          <text x="177" y="150" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)">vigiado: sem piorar</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> O teste tem uma linha de chegada fixa (300). Antes dela, a única resposta é 'insuficiente' — mesmo com B na frente.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <path d="M20 150 L200 150" style="stroke:var(--line2)"/>
+          <path d="M180 60 L180 156" style="stroke:var(--accent)" stroke-width="2" stroke-dasharray="4 3"/>
+          <text x="180" y="52" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--accent)">300 por versão</text>
+          <path d="M20 120 C50 110 70 90 100 84 C120 80 130 96 150 88" style="stroke:var(--accent)" stroke-width="2"/>
+          <path d="M20 128 C50 126 70 118 100 122 C120 124 130 116 150 120" style="stroke:var(--muted)" stroke-width="2"/>
+          <path d="M100 76 L100 156" style="stroke:var(--warm)" stroke-dasharray="2 3"/>
+          <text x="100" y="170" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--warm)">140: "insuficiente"</text>
+          <g font-family="Space Mono,monospace" font-size="8" style="fill:var(--ink-soft)">
+            <text x="154" y="90">B</text><text x="154" y="124">A</text>
+          </g>
+          <text x="110" y="190" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">a curva ainda pode se cruzar</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="5" data-cap="<b>Fig. 5</b> A escada de força: abaixo de 30 a observação fica guardada; de 30 vira hipótese; de 90 vira prioridade.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <rect x="20" y="130" width="56" height="40" rx="6" style="stroke:var(--line2);fill:var(--panel)"/>
+          <rect x="82" y="96" width="56" height="74" rx="6" style="stroke:var(--accent);fill:var(--panel)"/>
+          <rect x="144" y="56" width="56" height="114" rx="6" style="stroke:var(--accent);fill:var(--panel)"/>
+          <g font-family="Space Mono,monospace" font-size="8.5" text-anchor="middle" style="fill:var(--ink)">
+            <text x="48" y="150">fraca</text><text x="110" y="116">moderada</text><text x="172" y="76">forte</text>
+          </g>
+          <g font-family="Space Mono,monospace" font-size="8" text-anchor="middle" style="fill:var(--muted)">
+            <text x="48" y="164">&lt; 30</text><text x="110" y="130">30 a 89</text><text x="172" y="90">90 ou mais</text>
+          </g>
+          <g font-family="Space Mono,monospace" font-size="7.5" text-anchor="middle" style="fill:var(--ink-soft)">
+            <text x="48" y="186">guardada</text><text x="110" y="186">hipótese</text><text x="172" y="186">prioridade</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>Com número pequeno, o acaso produz "vitórias" o tempo todo — oito caras em doze moedas acontece uma vez em cinco.</li>
+    <li>A quantidade que prova é uma conta que o Experimentador faz e mostra antes: 3% para 5% custa 1.500 por versão; 20% para 30% custa 300.</li>
+    <li>Quando o dinheiro é lento demais para testar, o loop testa o sinal mais rápido ligado a ele e vigia o dinheiro como cerca.</li>
+    <li>Antes da linha de chegada só existe "amostra insuficiente"; a única parada antecipada é por vigiado caindo, nunca por vantagem.</li>
+    <li>Fatiar por segmento pede 30 por fatia; abaixo disso a observação fica guardada como "observado, não testado".</li>
+  </ul>
+</div>
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir dizer, com a tabela na mão, se um teste cabe no calendário do seu negócio.</p>
+  <p class="na-action">Nos próximos 15 minutos: conte quantas execuções do seu processo acontecem por semana (propostas, leads, chamados) e ache na tabela a linha da sua meta. Escreva "N por versão, X semanas" ao lado da meta que você mandou para o WhatsApp na aula passada.</p>
+  <p class="na-hook">Na próxima aula você aprende a medir o que não depende do cliente responder: a lista de conferência de sim ou não, que gira em minutos — e é onde o loop trabalha toda semana.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#aula-1">← aula anterior</a><a href="#aula-3">próxima aula →</a></nav>
+<footer>Aula 2 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-2">
+[
+  {"front":"Aplicação: sua clínica manda 50 propostas por semana e você quer provar que uma mensagem nova leva a resposta de 20% para 30%. Quantas propostas por versão e quantas semanas?","back":"~300 por versão (600 no total). A 50 por semana, 12 semanas."},
+  {"front":"Diagnóstico: o corretor testou uma mensagem em 12 leads, teve 4 agendamentos contra 2 da antiga, e a adotou. Três semanas depois a taxa voltou ao normal. O que aconteceu?","back":"Sorte com número pequeno: 4 contra 2 em 12 é o que o acaso produz. A quantidade que prova para esse salto era ~140 por versão."},
+  {"front":"Decisão: semana 6 de um teste de 12, B na frente com 150 execuções de cada lado, mínimo 300, nenhum vigiado caiu. Promove, continua ou para?","back":"Continua. N abaixo do mínimo é 'amostra insuficiente', sem 'mas está ganhando'. Só um vigiado caindo justificaria parar."},
+  {"front":"Contraste: qual a diferença entre uma métrica de sinal e uma de dinheiro, e quem faz o que no teste?","back":"Sinal responde em dias (resposta, agendamento) e é o alvo do teste; dinheiro responde em meses (conversão, margem) e fica como vigiado enquanto não há volume."},
+  {"front":"O Crítico diz: 'clientes de procedimento facial respondem mais' com 14 contra 11. Que rótulo essa afirmação recebe e para onde ela vai?","back":"Fraca (menos de 30 por fatia). Vai para a memória como 'observado, não testado' e é reexaminada quando o número crescer."},
+  {"front":"Sua meta é subir a conversão de 3% para 5% e você faz 50 execuções por semana. O que você muda antes de começar o teste?","back":"A métrica: troca o dinheiro (60 semanas) por um sinal ligado a ele, como taxa de resposta 20% → 30% (12 semanas), e mantém a conversão como vigiada."}
+]
+</script>
+
+<!-- COMPLETUDE aula-2 | tipo=FUNDAMENTO | steps=5
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (5/5: corretor · clínica · suporte · clínica/corretor · clínica)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (5/5)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-2"> presente (6 cartões: aplicação · diagnóstico · decisão · contraste · pergunta · aplicação)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, step 04)
+-->
+</section>
+
+<!-- ===== AULA 3 — FERRAMENTA ===== -->
+<section class="view" id="v-aula-3" data-aula="3" data-tempo="25min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 04 · Aula 3</p>
+    <h1>A lista de conferência:<br><em>sim ou não</em></h1>
+    <p class="promise">Ao fim desta aula você consegue escrever uma lista de conferência com 6 perguntas de sim ou não para o texto que sua IA produz — perguntas que duas pessoas diferentes respondem igual, sem discutir.</p>
+    <p class="why">Quando o resultado depende de o cliente responder, o teste leva semanas. Mas boa parte do que você quer saber está no próprio texto: cabe em 80 palavras? cita algo do cliente? promete prazo? Isso se confere em minutos, sem esperar ninguém. Só que "dá uma nota de 1 a 10" não serve — nem duas pessoas, nem a mesma IA em duas semanas, dão a mesma nota.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <!-- metáfora: a prancheta de vistoria do inspetor — cada linha, uma caixa marcada -->
+    <rect x="90" y="30" width="130" height="180" rx="10" style="stroke:var(--line2);fill:var(--panel)"/>
+    <rect x="130" y="20" width="50" height="18" rx="6" style="stroke:var(--line2);fill:var(--bg2)"/>
+    <g style="stroke:var(--line2)">
+      <rect x="104" y="60" width="12" height="12" rx="2"/><rect x="104" y="86" width="12" height="12" rx="2"/><rect x="104" y="112" width="12" height="12" rx="2"/><rect x="104" y="138" width="12" height="12" rx="2"/><rect x="104" y="164" width="12" height="12" rx="2"/>
+    </g>
+    <g style="stroke:var(--accent)" stroke-width="2" stroke-linecap="round">
+      <path d="M106 66 L109 70 L115 62"/><path d="M106 92 L109 96 L115 88"/><path d="M106 144 L109 148 L115 140"/><path d="M106 170 L109 174 L115 166"/>
+    </g>
+    <path d="M106 114 L114 122 M114 114 L106 122" style="stroke:var(--warm)" stroke-width="2" stroke-linecap="round"/>
+    <g style="stroke:var(--line2)">
+      <path d="M124 66 L200 66 M124 92 L196 92 M124 118 L190 118 M124 144 L200 144 M124 170 L192 170"/>
+    </g>
+    <text x="90" y="230" font-family="Space Mono,monospace" font-size="10" style="fill:var(--muted)">4 sim, 1 não. sem "mais ou menos".</text>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> Nota de 1 a 10 mede o humor de quem avalia</h2>
+      <p>Peça a duas pessoas para dar nota a uma proposta comercial. Uma dá 7, outra dá 8, e as duas estão certas — porque "7" não significa nada que se possa conferir. Agora peça a uma IA para dar nota e repita na semana seguinte: ela também muda. Juízes de texto, humanos ou não, têm manias conhecidas: preferem o texto mais longo, preferem o segundo que leem, e mudam de opinião entre semanas.</p>
+      <p>A saída não é achar um juiz melhor. É trocar a pergunta. "Esta proposta é boa?" não tem resposta conferível. "Esta proposta tem exatamente uma pergunta de fechamento?" tem: sim ou não, e qualquer pessoa que olhe o texto responde igual. Uma <span class="gterm" tabindex="0" data-def="Conjunto de perguntas de sim/não que se respondem olhando o próprio texto produzido pela IA. É o que o produto chama de rubrica. Nunca nota de 1 a 10.">lista de conferência</span> é só isso: perguntas que não deixam espaço para gosto.</p>
+      <p>A dona da clínica de estética passou meses pedindo à assistente "melhore esta proposta" e recebendo versões diferentes, sem saber se eram melhores. Quando trocou por "a proposta menciona algo específico que a cliente disse? tem no máximo 80 palavras? promete prazo?", ela e a recepcionista passaram a responder a mesma coisa sobre a mesma proposta — pela primeira vez.</p>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+      <h2><span class="n">02</span> A lista modelo: sete perguntas para uma proposta</h2>
+      <p>O que vem a seguir parece uma ficha de vistoria de carro, e é exatamente isso: cada linha é uma pergunta que se responde olhando o texto, e só o texto. Você não precisa preencher nada agora — só reconhecer o formato, porque a sua lista vai ter a mesma cara.</p>
+      <pre>R1  Tem no máximo 80 palavras?                                   sim/não
+R2  A primeira frase menciona algo específico do cliente?         sim/não
+R3  Tem exatamente UMA pergunta de fechamento?                    sim/não
+R4  Não promete prazo? (invariável)                               sim/não
+R5  Desconto, se houver, é de no máximo 10%? (invariável)         sim/não
+R6  Não contém erro sobre o produto (conferido na base)?          sim/não
+R7  Tom: sem exclamação dupla, sem "imperdível", sem CAPS?         sim/não</pre>
+      <p>Repare em três coisas. Toda pergunta é contável ou visível — palavras, frases, uma coisa que está ou não está no texto. Duas perguntas estão marcadas como <span class="gterm" tabindex="0" data-def="Critério que nenhuma versão pode violar em caso algum, por mais que ganhe nos outros. Vem da resposta 3 da ficha ('o que nunca muda sozinho').">invariável</span>: são as que vêm da resposta 3 da ficha do loop, o que nunca muda sozinho — e uma versão que falhe nelas em um único caso perde, não importa o resto. E nenhuma pergunta usa "adequado", "bom" ou "profissional".</p>
+      <p>Para o corretor de imóveis, a lista da resposta ao lead de portal ficou parecida, com outras perguntas: cita o imóvel pelo nome ou endereço que o lead abriu? oferece dois horários de visita, não um nem três? não informa preço abaixo da tabela (invariável)? não usa "oportunidade única"?</p>
+      <div class="qsteps">
+        <p class="qsk">Como escrever a sua lista</p>
+        <ol>
+          <li><b>Separe 5 textos que você aprovou e 5 que você mandou refazer.</b> Os de verdade, não imaginados.</li>
+          <li><b>Escreva o que os bons têm que os ruins não têm — como pergunta.</b> "Cita algo do cliente?" e não "é personalizado".</li>
+          <li><b>Corte toda pergunta que precise de "depende".</b> Se você hesitou ao responder, o juiz também vai hesitar.</li>
+          <li><b>Marque as invariáveis.</b> O que vem da resposta 3 da ficha vira pergunta com a etiqueta "(invariável)".</li>
+          <li><b>Responda você mesma nos 10 textos.</b> Se um "bom" leva menos sim que um "ruim", a lista está medindo a coisa errada.</li>
+          <li><b>Peça a outra pessoa que responda sem falar com você.</b> Onde vocês discordarem, reescreva a pergunta.</li>
+        </ol>
+      </div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+      <h2><span class="n">03</span> Calibrar o juiz: vinte minutos, uma vez</h2>
+      <p>Quem responde a lista no dia a dia não é você — é o Avaliador, o assistente que julga. E ele precisa ser conferido contra você, porque juízes derivam. O produto pede o único trabalho manual de medição de todo o loop: você responde sim ou não, para cada pergunta da lista, em 10 a 20 textos. Vinte minutos, uma vez. Esses textos com as suas respostas viram o conjunto de calibração.</p>
+      <p>A cada ciclo, antes de julgar qualquer coisa nova, o Avaliador responde esses mesmos textos. Se concordar com você em menos de 80% das respostas, o rótulo é "juiz descalibrado": o ciclo não promove nada e o Meta-agente — o assistente que só observa o próprio loop e relata — avisa. E se uma pergunta específica da lista tiver concordância abaixo de 80%, o problema é da pergunta — ela é reescrita ou removida.</p>
+      <p>Duas proteções a mais, que você não precisa operar, só saber que existem: o Avaliador compara as versões em pares com a ordem embaralhada, três vezes, e fica com a maioria (isso mata a mania de preferir o segundo); e, quando o teto permite, o Avaliador roda num modelo de IA diferente do que escreveu o texto, para não aprovar o próprio estilo.</p>
+      <p>A gestora de suporte separou 15 respostas de chamado — 8 que ela teria enviado, 7 que teria devolvido — e marcou sim/não nas 6 perguntas da lista dela. Na primeira calibração o Avaliador concordou em 71%. Uma pergunta ("a resposta é cordial?") respondia por quase toda a discordância. Ela trocou por "a resposta chama o cliente pelo nome e termina perguntando se resolveu?". Concordância: 93%.</p>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+      <h2><span class="n">04</span> Como a lista vira veredito</h2>
+      <p>A pontuação de um texto é simplesmente a quantidade de "sim". Para comparar a versão atual com a candidata, o loop não olha uma proposta — olha um conjunto fixo de 20 a 50 casos guardados, os casos de conferência, e produz as duas versões para cada caso. A versão B "ganha no artefato" se a média de sim dela é pelo menos um critério acima da média de A <b>e</b> ela não perde em nenhuma invariável, em nenhum caso.</p>
+      <p>Esse teste roda em minutos, sem cliente, toda semana. É por isso que o loop consegue girar mesmo quando a métrica de sinal ainda está juntando as 300 execuções: enquanto o mundo responde devagar, o texto já está sendo conferido rápido.</p>
+      <p>O corretor guardou 30 leads antigos, com a mensagem que cada um mandou, como casos de conferência. A versão nova de resposta fez média 5,4 de 6 contra 4,1 da antiga — e, num dos 30 casos, informou preço abaixo da tabela. Perdeu. Uma invariável violada uma vez vale mais que 1,3 ponto de média a favor.</p>
+      <div class="qerr">
+        <p class="qk">Erro comum</p>
+        <p class="qerr-txt"><b>Ler 12 propostas, achar a versão nova melhor e virar regra.</b> Acontece porque o olho escolhe o que confirma a expectativa, e porque 12 é menos que o mínimo até para o artefato (20 a 50 casos). Como evitar: casos de conferência fixos, guardados antes de a versão nova existir, e contagem de sim — nunca leitura solta.</p>
+      </div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p3" data-mode="tarefa">
+      <p class="pk">Pratique agora <span class="pcount">0/6 feito</span></p>
+      <h3 class="ph">Escreva 6 perguntas de sim ou não para o seu texto</h3>
+      <p class="pgoal">Sair com a sua lista de conferência: 6 perguntas, 2 delas invariáveis, respondidas por você e por mais uma pessoa nos mesmos 6 textos. ~15 min. Fica pronto quando a outra pessoa responde as 36 caixas sem perguntar "depende de quê?".</p>
+      <p class="psafe">Nada muda no seu negócio até você aprovar: a lista é um papel até entrar na ficha do loop, e mesmo depois ela só confere texto — não envia, não altera, não apaga nada. Se a lista parecer errada, risque e escreva de novo; a versão ruim não custa nada.</p>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Escolhi o texto que minha IA mais produz (proposta, resposta a lead, resposta de chamado) e separei 3 que aprovei e 3 que mandei refazer.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Escrevi 6 perguntas de sim/não — cada uma contável ou visível no texto, nenhuma com "bom", "adequado" ou "profissional".</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Marquei 2 delas como invariáveis, tiradas da resposta 3 da minha ficha (o que nunca muda sozinho).</span></label></li>
+        <li><label><input type="checkbox" data-ptask="4"> <span>Respondi as 6 perguntas nos 6 textos. Os 3 aprovados tiveram mais "sim" que os 3 devolvidos.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="5"> <span>Pedi a alguém que respondesse os mesmos 6 textos sem falar comigo.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="6"> <span>Onde discordamos, reescrevi a pergunta — até a outra pessoa preencher as 36 caixas sem me perguntar nada.</span></label></li>
+      </ol>
+      <p><b>Exemplo de resultado aceitável</b> (gestora de suporte): 1. Chama o cliente pelo nome? 2. Repete o problema em uma frase antes de responder? 3. Tem no máximo 120 palavras? 4. Não promete data de correção? (invariável) 5. Não pede dado que já está no chamado? 6. Termina perguntando se resolveu? (invariável)</p>
+      <p class="pdone">Você acabou de escrever a régua que o loop vai usar toda semana — e provou que duas pessoas leem a mesma coisa nela.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> Dois juízes, o mesmo texto. Com nota, as respostas divergem (7 e 8); com sim/não, coincidem. A pergunta muda, não o juiz.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <rect x="16" y="28" width="188" height="60" rx="8" style="stroke:var(--line2);fill:var(--panel)"/>
+          <text x="28" y="48" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">"que nota você dá?"</text>
+          <text x="60" y="76" text-anchor="middle" font-family="Newsreader,serif" font-size="22" style="fill:var(--warm)">7</text>
+          <text x="150" y="76" text-anchor="middle" font-family="Newsreader,serif" font-size="22" style="fill:var(--warm)">8</text>
+          <rect x="16" y="108" width="188" height="60" rx="8" style="stroke:var(--accent);fill:var(--panel)"/>
+          <text x="28" y="128" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">"tem UMA pergunta de fechamento?"</text>
+          <text x="60" y="156" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" style="fill:var(--accent)">sim</text>
+          <text x="150" y="156" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" style="fill:var(--accent)">sim</text>
+          <text x="110" y="190" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">a pergunta muda, não o juiz</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> A lista por dentro: sete linhas, cada uma vira um sim (cheio) ou não (vazio). As duas com cadeado são invariáveis — um não ali derruba a versão.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <g font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--ink-soft)">
+            <text x="20" y="36">R1 palavras ≤ 80</text><text x="20" y="56">R2 cita o cliente</text><text x="20" y="76">R3 uma pergunta</text><text x="20" y="96">R4 sem prazo</text><text x="20" y="116">R5 desconto ≤ 10%</text><text x="20" y="136">R6 sem erro</text><text x="20" y="156">R7 tom</text>
+          </g>
+          <g style="stroke:var(--accent)">
+            <circle cx="170" cy="32" r="5" style="fill:var(--accent)"/><circle cx="170" cy="52" r="5" style="fill:var(--accent)"/><circle cx="170" cy="72" r="5"/><circle cx="170" cy="92" r="5" style="fill:var(--accent)"/><circle cx="170" cy="112" r="5" style="fill:var(--accent)"/><circle cx="170" cy="132" r="5" style="fill:var(--accent)"/><circle cx="170" cy="152" r="5" style="fill:var(--accent)"/>
+          </g>
+          <g style="stroke:var(--warm)">
+            <rect x="190" y="89" width="9" height="7" rx="1.5"/><path d="M192 89 V86 a2.5 2.5 0 0 1 5 0 V89"/>
+            <rect x="190" y="109" width="9" height="7" rx="1.5"/><path d="M192 109 V106 a2.5 2.5 0 0 1 5 0 V109"/>
+          </g>
+          <text x="110" y="184" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)">pontuação: 6 de 7</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> Calibração: suas respostas (linha de cima) contra as do juiz (linha de baixo) nos mesmos 15 textos. Abaixo de 80% de coincidência, o ciclo não promove.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <text x="20" y="50" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">você</text>
+          <text x="20" y="100" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">juiz</text>
+          <g style="fill:var(--accent)">
+            <rect x="60" y="42" width="8" height="10" rx="2"/><rect x="72" y="42" width="8" height="10" rx="2"/><rect x="96" y="42" width="8" height="10" rx="2"/><rect x="108" y="42" width="8" height="10" rx="2"/><rect x="120" y="42" width="8" height="10" rx="2"/><rect x="144" y="42" width="8" height="10" rx="2"/><rect x="168" y="42" width="8" height="10" rx="2"/><rect x="180" y="42" width="8" height="10" rx="2"/>
+            <rect x="60" y="92" width="8" height="10" rx="2"/><rect x="72" y="92" width="8" height="10" rx="2"/><rect x="96" y="92" width="8" height="10" rx="2"/><rect x="108" y="92" width="8" height="10" rx="2"/><rect x="144" y="92" width="8" height="10" rx="2"/><rect x="168" y="92" width="8" height="10" rx="2"/><rect x="180" y="92" width="8" height="10" rx="2"/>
+          </g>
+          <g style="stroke:var(--line2)">
+            <rect x="84" y="42" width="8" height="10" rx="2"/><rect x="132" y="42" width="8" height="10" rx="2"/><rect x="156" y="42" width="8" height="10" rx="2"/><rect x="192" y="42" width="8" height="10" rx="2"/>
+            <rect x="84" y="92" width="8" height="10" rx="2"/><rect x="132" y="92" width="8" height="10" rx="2"/><rect x="156" y="92" width="8" height="10" rx="2"/><rect x="192" y="92" width="8" height="10" rx="2"/>
+          </g>
+          <rect x="120" y="92" width="8" height="10" rx="2" style="stroke:var(--warm)"/>
+          <path d="M124 60 L124 88" style="stroke:var(--warm)" stroke-dasharray="2 2"/>
+          <path d="M60 140 L200 140" style="stroke:var(--line2)"/>
+          <rect x="60" y="136" width="130" height="8" rx="3" style="fill:var(--accent)"/>
+          <path d="M172 130 L172 150" style="stroke:var(--warm)" stroke-width="2"/>
+          <text x="172" y="164" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)">80%</text>
+          <text x="110" y="186" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">concordância: 93% — calibrado</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> Sobre 30 casos, B faz média maior que A + 1 critério. Mas o traço âmbar é uma invariável violada num caso — e isso derruba B sozinho.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <path d="M30 150 L200 150" style="stroke:var(--line2)"/>
+          <rect x="56" y="88" width="40" height="62" rx="4" style="fill:var(--line2);opacity:.7"/>
+          <rect x="126" y="62" width="40" height="88" rx="4" style="fill:var(--accent);opacity:.6"/>
+          <g font-family="Space Mono,monospace" font-size="9" text-anchor="middle" style="fill:var(--ink)">
+            <text x="76" y="80">A · 4,1</text><text x="146" y="54">B · 5,4</text>
+          </g>
+          <g font-family="Space Mono,monospace" font-size="8.5" text-anchor="middle" style="fill:var(--ink-soft)">
+            <text x="76" y="166">média de sim</text><text x="146" y="166">média de sim</text>
+          </g>
+          <path d="M126 128 L166 128" style="stroke:var(--warm)" stroke-width="3"/>
+          <text x="184" y="131" font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)">1× R-inv.</text>
+          <text x="110" y="188" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">B perde, apesar da média</text>
+        </svg>
+      </div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>Nota de 1 a 10 mede o avaliador, não o texto; uma pergunta de sim ou não, respondida olhando o texto, mede o texto.</li>
+    <li>A lista tem perguntas contáveis ou visíveis, e as que vêm da resposta 3 da ficha são invariáveis: um único não nelas derruba a versão.</li>
+    <li>O Avaliador é calibrado contra você em 10 a 20 textos, uma vez; abaixo de 80% de concordância nada é promovido, e a pergunta que causa discordância é reescrita.</li>
+    <li>O veredito sai de 20 a 50 casos guardados, por contagem de sim — é o teste que gira em minutos enquanto o cliente demora semanas.</li>
+  </ul>
+</div>
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir transformar "está bom?" em seis perguntas que qualquer pessoa da sua equipe responde igual.</p>
+  <p class="na-action">Nos próximos 15 minutos: guarde numa pasta os 10 textos que você usou (os 6 da prática e mais 4 antigos). Eles são os seus primeiros casos de conferência — a versão nova da sua IA vai ser julgada contra eles, não contra a sua lembrança.</p>
+  <p class="na-hook">Na próxima aula chega o momento que decide se o loop vale alguma coisa: o cartão de decisão de 5 linhas — e o caso real em que a clínica ganhou 10 pontos e a resposta certa foi não aprovar.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#aula-2">← aula anterior</a><a href="#aula-4">próxima aula →</a></nav>
+<footer>Aula 3 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-3">
+[
+  {"front":"Diagnóstico: na calibração, o juiz concordou com você em 71%, e quase toda a discordância veio da pergunta 'a resposta é cordial?'. O que está errado e o que você faz?","back":"A pergunta pede gosto, não algo visível. Reescreve como algo conferível ('chama pelo nome e termina perguntando se resolveu?') ou remove."},
+  {"front":"Decisão: a versão B fez média 5,4 de 6 contra 4,1 da A nos 30 casos, mas num caso informou preço abaixo da tabela (invariável). Quem ganha no artefato?","back":"A. Uma invariável violada em um único caso derruba a versão, por maior que seja a média."},
+  {"front":"Aplicação: você quer saber se a IA da clínica 'personaliza' as propostas. Como vira isso numa pergunta da lista?","back":"'A primeira frase menciona algo específico que a cliente disse?' — visível no texto, sim ou não. 'É personalizada?' não serve."},
+  {"front":"Por que o loop consegue julgar o texto toda semana, se a taxa de resposta ainda está juntando 300 execuções?","back":"Porque o artefato se confere olhando o próprio texto, em 20 a 50 casos guardados, em minutos — sem esperar o cliente."}
+]
+</script>
+
+<!-- COMPLETUDE aula-3 | tipo=FERRAMENTA | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: clínica · corretor · suporte · corretor)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="tarefa"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~15 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-3"> presente (4 cartões: diagnóstico · decisão · aplicação · pergunta)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); sem teste-se opcional
+-->
+</section>
+
+<!-- ===== AULA 4 — FERRAMENTA ===== -->
+<section class="view" id="v-aula-4" data-aula="4" data-tempo="25min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 04 · Aula 4</p>
+    <h1>O cartão de decisão<br>e o botão de <em>voltar</em></h1>
+    <p class="promise">Ao fim desta aula você consegue ler um cartão de decisão de 5 linhas e responder aprovar, rejeitar ou esperar — e deixa escritas as respostas 4 e 5 da ficha do loop: quanto um ciclo pode custar e quem aprova.</p>
+    <p class="why">Depois do teste vem o momento que decide se o loop vale alguma coisa: alguém precisa dizer "sim, vira a versão oficial". Se essa decisão cair na sua caixa toda hora, você para de ler no terceiro mês. Se for automática cedo demais, uma versão pior entra sem ninguém ver. O cartão resolve isso com uma regra: uma decisão por semana, cinco linhas, três respostas — e sempre um botão de voltar.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <!-- metáfora: a ficha de 5 linhas na mesa da clínica, o carimbo e a tecla de desfazer -->
+    <rect x="40" y="50" width="160" height="120" rx="8" style="stroke:var(--line2);fill:var(--panel)"/>
+    <g style="stroke:var(--line2)"><path d="M56 76 L150 76 M56 96 L170 96 M56 116 L140 116 M56 136 L160 136"/></g>
+    <rect x="56" y="150" width="34" height="10" rx="3" style="stroke:var(--accent)"/><rect x="98" y="150" width="34" height="10" rx="3" style="stroke:var(--line2)"/><rect x="140" y="150" width="34" height="10" rx="3" style="stroke:var(--line2)"/>
+    <rect x="212" y="76" width="56" height="26" rx="6" style="stroke:var(--line2);fill:var(--bg2)"/>
+    <rect x="226" y="60" width="28" height="18" rx="4" style="stroke:var(--line2);fill:var(--panel)"/>
+    <rect x="212" y="102" width="56" height="8" rx="2" style="fill:var(--accent);opacity:.6"/>
+    <rect x="212" y="140" width="56" height="36" rx="8" style="stroke:var(--warm);fill:var(--panel)"/>
+    <path d="M250 158 L228 158 M234 151 L227 158 L234 165" style="stroke:var(--warm)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="40" y="206" font-family="Newsreader,serif" font-style="italic" font-size="15" style="fill:var(--ink-soft)">uma ficha por semana. o carimbo — e a tecla de voltar.</text>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+      <h2><span class="n">01</span> Cinco linhas, no máximo uma vez por semana</h2>
+      <p>O <span class="gterm" tabindex="0" data-def="Resumo de 5 linhas que o loop entrega ao aprovador ao fim de um teste: hipótese, resultado com quantidade e margem, vigiados, custo e as três opções. No máximo um por semana.">cartão de decisão</span> é a única coisa do loop que exige a sua atenção. Ele chega no máximo uma vez por semana e tem cinco linhas fixas: qual hipótese foi testada; o resultado com a quantidade e a margem; como ficaram os vigiados; quanto custou contra o teto; e as três opções. Nada mais. Se precisasse de mais, não caberia na sexta-feira de ninguém.</p>
+      <p>O que vem a seguir parece um recibo de caixa, e é: cada linha é um número que você já sabe ler pelas aulas anteriores. Este é o cartão que a dona da clínica de estética recebeu no quarto ciclo do caso real deste curso.</p>
+      <div class="cartao"><b>CICLO 0004</b> — hipótese: abrir a proposta citando a avaliação que a cliente deixou
+Resultado:   taxa de resposta 19,3% → 29,3%  (N = 300 vs 300, margem ok)
+Vigiados:    reclamações, descadastro e desconto médio — todos dentro da tolerância
+Custo:       dentro do teto do ciclo
+Decisão:     [aprovar]  [rejeitar]  [esperar mais 2 semanas]</div>
+      <p>Leia de cima para baixo como você leria um exame: primeiro o que foi testado, depois se o número principal andou e com quantas execuções (300 de cada lado era a quantidade que prova), depois se alguma cerca cedeu, depois o custo. Só então a decisão. A linha da conversão em venda não aparece aqui porque ela não era o alvo do teste — era vigiada, e não caiu.</p>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> Três respostas, e só três</h2>
+      <p>Antes de o cartão chegar a você, o Avaliador já deu o veredito dele, que só pode ser um de três: B ganhou com margem, A segue, ou amostra insuficiente. O cartão traduz isso nas suas três opções. <b>Aprovar</b>: a candidata vira a versão oficial. <b>Rejeitar</b>: a atual continua, e a hipótese vai para a memória como descartada, com o motivo. <b>Esperar</b>: o teste continua por mais um prazo.</p>
+      <p>E se você não responder? O padrão é o seguro: nada é promovido, e o histórico registra "decisão pendente". O loop não fica esperando de braços cruzados — continua executando com a versão atual — mas também não decide por você.</p>
+      <p>O corretor de imóveis recebeu o cartão numa sexta de plantão e não abriu. Na segunda, o histórico mostrava "ciclo 0003: pendente há 3 dias". A versão antiga seguiu respondendo os leads, sem mudança. Quando ele abriu na terça, o cartão era o mesmo — o loop não tinha tomado nenhuma decisão em nome dele.</p>
+      <div class="qerr">
+        <p class="qk">Erro comum</p>
+        <p class="qerr-txt"><b>Aprovar porque a versão nova "parece melhor".</b> Acontece porque o texto novo é mais bonito de ler, ou porque foi você quem sugeriu a hipótese. Como evitar: só existe "aprovar" quando a linha 2 do cartão diz B ganhou com margem e quando a quantidade bateu o mínimo. Se a sua vontade e a linha 2 discordam, a linha 2 manda — a memória do loop registra a hipótese para o próximo teste, não para o esquecimento.</p>
+      </div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> O caso real: ganhou dez pontos e não passou</h2>
+      <p>No segundo ciclo da mesma clínica, a hipótese era "propostas com no máximo 80 palavras". O resultado principal foi ótimo: taxa de resposta de 19,3% para 29,7%, com 300 propostas de cada lado — um ganho de dez pontos, e não por sorte. Mas a linha dos vigiados mostrava reclamações 6 contra 1, e a <span class="gterm" tabindex="0" data-def="Quanto um vigiado pode cair sem reprovar a versão. Zero significa 'nenhuma piora'. Para eventos raros, precisa ser calculada, não desejada.">tolerância</span> de reclamações estava em zero. Veredito: A segue. A hipótese foi descartada.</p>
+      <p>O sistema fez exatamente o que devia — aplicou a regra como estava escrita, não promoveu, registrou. O erro estava na regra. Reclamação é um evento raro, cerca de 1%: em 300 propostas, ter 6 num lado e 1 no outro acontece por acaso com facilidade. Não era uma diferença; era ruído. E a tolerância zero transformou ruído em reprovação.</p>
+      <p>A lição não é "ignore o vigiado quando o ganho for grande" — isso derrubaria a única garantia forte do loop. A lição é que tolerância é uma decisão de conta, não de vontade: para um evento a 1% em 300 execuções, a oscilação normal é de cerca de 1 ponto, então a tolerância certa é 0,01 e não zero. A dona da clínica ajustou a ficha para os próximos testes. A hipótese descartada ficou na memória, com o motivo — e dois ciclos depois uma hipótese diferente ganhou de verdade.</p>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+      <h2><span class="n">04</span> Resposta 4 da ficha: o teto</h2>
+      <p>A quarta linha do cartão — custo — só existe porque você escreveu um teto na ficha do loop. É a resposta 4: quanto um ciclo pode custar em dinheiro, e quanto tempo seu ele pode pedir por semana. O Guardião interrompe o ciclo quando o teto é atingido. Sem teto, um loop pode custar mais do que o ganho que persegue, e ninguém percebe até a fatura.</p>
+      <p>Há um segundo número que o Meta-agente — o assistente que só observa o próprio loop e relata — vigia desde o primeiro ciclo: o custo por hipótese que virou oficial. Se em cinco ciclos nada foi promovido, ele propõe uma de três coisas: rodar com menos frequência, usar assistentes mais baratos nas etapas de leitura, ou carregar menos memória. Ele propõe; você decide.</p>
+      <p>Na ficha modelo do produto, a linha de custo aparece como "R$ 41 neste ciclo (teto R$ 50)" — o valor é ilustrativo, mas a forma é essa: gasto contra limite, sempre. A gestora de suporte fixou o teto dela em duas partes: até R$ 60 por ciclo, e no máximo uma hora da atenção dela por semana — a hora de ler o cartão e a evidência, se quiser.</p>
+      <div class="qsteps">
+        <p class="qsk">Como preencher as respostas 4 e 5 da ficha</p>
+        <ol>
+          <li><b>Teto em dinheiro por ciclo.</b> Um pouco acima do que um ciclo típico custa — o Guardião para no teto, então um teto justo demais interrompe testes bons.</li>
+          <li><b>Teto de tempo seu por semana.</b> O que você consegue sustentar no mês 4, não no mês 1. Uma hora é realista; "quando der" não é teto.</li>
+          <li><b>Nível de aprovação inicial: L1.</b> Você aprova cada cartão. Nunca comece em L2, por mais que confie na ideia.</li>
+          <li><b>Prazo para responder ao cartão.</b> Por exemplo, 7 dias. E o que acontece se passar: nada é promovido, fica "pendente".</li>
+          <li><b>Condição para subir a L2.</b> Cinco aprovações em L1 sem nenhum voltar atrás. Escreva o número; sem ele, a promessa de "depois eu automatizo" nunca chega.</li>
+        </ol>
+      </div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="5" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+      <h2><span class="n">05</span> Resposta 5: quem aprova — e o botão de voltar</h2>
+      <p>A resposta 5 da ficha é quem aprova, e ela tem três níveis. <b>L0</b>: o loop só relata; nada vira oficial. <b>L1</b>: o loop propõe, você aprova cada cartão. <b>L2</b>: quando o veredito é B ganhou, o loop promove sozinho e avisa — e só se desbloqueia depois de cinco promoções corretas em L1. Existe um L3 (o loop redesenhar a si mesmo), e a última aula desta trilha diz por que ele ainda é pesquisa.</p>
+      <p>O que torna o L2 aceitável, e o L1 tranquilo, é o <span class="gterm" tabindex="0" data-def="Regra do primeiro ciclo após uma promoção: se a métrica do teste ou qualquer vigiado cair abaixo do valor da versão anterior além da tolerância, a versão anterior volta a ser a oficial, e o histórico registra o motivo.">botão de voltar</span>. No primeiro ciclo depois de uma promoção, se o número do teste ou qualquer vigiado cair abaixo do que a versão anterior fazia, além da tolerância, a versão anterior volta. Em L1, o cartão avisa e pede a sua confirmação. Em L2, volta sozinho e avisa. Nos dois casos, o histórico guarda o motivo: nada some, nada é sobrescrito.</p>
+      <p>O corretor promoveu a resposta nova aos leads no ciclo 5. No ciclo 6, o agendamento caiu de 31% para 19% — abaixo dos 22% que a versão antiga fazia. O cartão chegou com uma linha diferente: "queda além da tolerância; voltar para a versão anterior? [sim] [manter]". Ele voltou. A versão promovida ficou no histórico com a data, os números e a palavra "revertida", para nunca ser testada de novo como se fosse nova.</p>
+      <div class="mobfig" data-mobfig="5"></div>
+      <button class="readbtn" data-read="s5">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p4" data-mode="analise">
+      <p class="pk">Pratique agora <span class="pcount">0/5 feito</span></p>
+      <h3 class="ph">Decida sobre três cartões — e escreva o seu teto</h3>
+      <p class="pgoal">Para cada cartão, escreva aprovar, rejeitar ou esperar, e o porquê em uma linha. Depois, preencha as respostas 4 e 5 da sua ficha. ~12 min. É análise porque uma decisão real muda a versão oficial de um negócio — aqui você treina em cartões prontos, dois deles reais, antes de decidir sobre o seu.</p>
+      <p class="psafe">Nada muda no seu negócio até você aprovar: os cartões 1 e 2 são do caso real da clínica (já decididos), o cartão 3 foi construído para esta prática. As suas respostas 4 e 5 vão para a ficha só quando você as levar para a última aula do curso.</p>
+      <div class="cartao"><b>CARTÃO 1</b> (real — clínica, ciclo 0002) — hipótese: propostas com no máximo 80 palavras
+Resultado:   taxa de resposta 19,3% → 29,7%  (N = 300 vs 300, margem ok)
+Vigiados:    reclamações 6 vs 1 — tolerância 0 · descadastro e desconto dentro
+Custo:       dentro do teto
+Decisão:     [aprovar]  [rejeitar]  [esperar]</div>
+      <div class="cartao"><b>CARTÃO 2</b> (real — clínica, ciclo 0004) — hipótese: abrir citando a avaliação da cliente
+Resultado:   taxa de resposta 19,3% → 29,3%  (N = 300 vs 300, margem ok)
+Vigiados:    reclamações, descadastro e desconto — todos dentro · conversão 3,7% vs 3,0% (sem significância)
+Custo:       dentro do teto
+Decisão:     [aprovar]  [rejeitar]  [esperar]</div>
+      <div class="cartao"><b>CARTÃO 3</b> (construído — corretor, ciclo 0002) — hipótese: oferecer dois horários de visita na primeira resposta
+Resultado:   agendamento 22% → 31%  (N = 140 vs 138; quantidade que prova: 300 por versão)
+Vigiados:    visitas em que o cliente não aparece: igual · desconto médio: igual
+Custo:       dentro do teto
+Decisão:     [aprovar]  [rejeitar]  [esperar]</div>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Cartão 1: escrevi a decisão e o porquê em uma linha.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Cartão 2: escrevi a decisão e o porquê em uma linha.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Cartão 3: escrevi a decisão e o porquê em uma linha.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="4"> <span>Resposta 4 da minha ficha: escrevi o teto em dinheiro por ciclo e o teto de tempo meu por semana.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="5"> <span>Resposta 5: escrevi o nível inicial, o prazo para responder ao cartão e a condição para subir de nível. Comparei tudo com o gabarito.</span></label></li>
+      </ol>
+      <details><summary>Gabarito comentado</summary>
+        <p><b>Cartão 1 — rejeitar (A segue).</b> A regra escrita diz tolerância zero e um vigiado subiu; a resposta correta no cartão é não aprovar. O que se faz em seguida é o que a dona da clínica fez: reconhecer que 6 contra 1 em 300 é ruído para um evento raro, ajustar a tolerância de reclamações para 0,01 na ficha, e deixar a hipótese na memória como descartada, com o motivo, para poder ser retestada com a regra certa. Nem "aprovar mesmo assim", nem "tolerância zero para sempre".</p>
+        <p><b>Cartão 2 — aprovar.</b> B ganhou com margem, a quantidade bateu o mínimo, nenhum vigiado caiu. A conversão não se moveu de forma significativa — mas ela era vigiada, não alvo, e não piorou. A versão vira oficial; o botão de voltar fica armado para o próximo ciclo. Foi o que aconteceu de verdade: promovida como v2.</p>
+        <p><b>Cartão 3 — esperar.</b> 140 é menos da metade da quantidade que prova. Nove pontos de vantagem com essa amostra é "amostra insuficiente", sem "mas está ganhando". Nenhum vigiado caiu, então não há motivo para interromper: o teste segue até 300 por versão.</p>
+        <p><b>Respostas 4 e 5 (exemplo aceitável, para a clínica).</b> Teto: R$ 50 por ciclo, 1 hora da dona por semana. Nível inicial: L1. Prazo de resposta ao cartão: 7 dias; sem resposta, nada é promovido. Sobe para L2 depois de 5 aprovações em L1 sem nenhum voltar atrás. Se a sua ficha tiver números diferentes, tudo bem — o que não pode faltar é um número em cada linha.</p>
+      </details>
+      <p class="pdone">Você acabou de decidir sobre dois cartões reais e um construído — e deixou o teto e o aprovador do seu loop escritos em números.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> As cinco linhas do cartão e o que cada uma responde. Leia de cima para baixo; a decisão é a última, nunca a primeira.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <rect x="16" y="16" width="188" height="168" rx="10" style="stroke:var(--line2);fill:var(--panel)"/>
+          <g font-family="Space Mono,monospace" font-size="8.5">
+            <text x="28" y="40" style="fill:var(--ink)">1 hipótese</text><text x="120" y="40" style="fill:var(--muted)">o que foi testado</text>
+            <text x="28" y="68" style="fill:var(--ink)">2 resultado</text><text x="120" y="68" style="fill:var(--muted)">X, N, margem</text>
+            <text x="28" y="96" style="fill:var(--ink)">3 vigiados</text><text x="120" y="96" style="fill:var(--muted)">alguma cerca cedeu?</text>
+            <text x="28" y="124" style="fill:var(--ink)">4 custo</text><text x="120" y="124" style="fill:var(--muted)">gasto vs teto</text>
+            <text x="28" y="160" style="fill:var(--accent)">5 decisão</text><text x="120" y="160" style="fill:var(--accent)">só depois de 1–4</text>
+          </g>
+          <path d="M28 48 L196 48 M28 76 L196 76 M28 104 L196 104 M28 132 L196 132" style="stroke:var(--line)"/>
+          <path d="M28 140 L196 140" style="stroke:var(--accent)" stroke-dasharray="3 3"/>
+        </svg>
+      </div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> O veredito do Avaliador (esquerda) vira uma de três opções suas (direita). Sem resposta, a chave fica na posição segura: nada promovido.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <g font-family="Space Mono,monospace" font-size="8" style="fill:var(--ink-soft)">
+            <text x="14" y="50">B ganhou c/ margem</text><text x="14" y="100">A segue</text><text x="14" y="150">amostra insuficiente</text>
+          </g>
+          <path d="M120 46 L150 46 M120 96 L150 96 M120 146 L150 146" style="stroke:var(--line2)"/>
+          <g font-family="Space Mono,monospace" font-size="9">
+            <text x="156" y="50" style="fill:var(--accent)">aprovar</text><text x="156" y="100" style="fill:var(--ink)">rejeitar</text><text x="156" y="150" style="fill:var(--ink)">esperar</text>
+          </g>
+          <rect x="150" y="84" width="60" height="22" rx="6" style="stroke:var(--warm)" stroke-dasharray="3 3"/>
+          <text x="180" y="180" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--warm)">sem resposta = aqui</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> Ciclo 0002: reclamações 6 e 1 em 300 cada. A faixa clara é a oscilação normal de um evento a 1% — os dois pontos cabem nela. Tolerância zero (linha) não cabe.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <path d="M30 150 L200 150" style="stroke:var(--line2)"/>
+          <rect x="40" y="90" width="150" height="46" rx="6" style="fill:var(--accent);opacity:.15"/>
+          <text x="115" y="84" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--accent)">oscilação normal a 1% em 300</text>
+          <circle cx="80" cy="102" r="6" style="fill:var(--warm)"/><text x="80" y="122" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)">6</text>
+          <circle cx="150" cy="128" r="6" style="fill:var(--line2)"/><text x="150" y="146" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)">1</text>
+          <path d="M40 133 L190 133" style="stroke:var(--warm)" stroke-width="2"/>
+          <text x="196" y="136" font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--warm)">tol. 0</text>
+          <g font-family="Space Mono,monospace" font-size="8.5" text-anchor="middle" style="fill:var(--ink-soft)"><text x="80" y="168">B</text><text x="150" y="168">A</text></g>
+          <text x="110" y="190" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">tolerância certa: 0,01, não 0</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> O gasto do ciclo sobe até bater no teto (linha âmbar) e o Guardião para ali. À direita, o número que o Meta-agente vigia: custo por hipótese promovida.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <path d="M20 150 L120 150" style="stroke:var(--line2)"/>
+          <path d="M20 60 L120 60" style="stroke:var(--warm)" stroke-width="2"/>
+          <text x="70" y="52" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)">teto do ciclo</text>
+          <path d="M24 148 C40 140 60 120 80 100 C90 90 98 78 104 68" style="stroke:var(--accent)" stroke-width="2"/>
+          <circle cx="104" cy="66" r="4" style="fill:var(--accent)"/>
+          <text x="70" y="170" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--muted)">gasto ao longo do ciclo</text>
+          <rect x="140" y="60" width="66" height="90" rx="8" style="stroke:var(--line2);fill:var(--panel)"/>
+          <text x="173" y="82" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)">custo por</text>
+          <text x="173" y="94" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)">promoção</text>
+          <text x="173" y="126" text-anchor="middle" font-family="Newsreader,serif" font-size="20" style="fill:var(--ink)">÷</text>
+          <text x="173" y="170" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)">5 ciclos sem: relata</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="5" data-cap="<b>Fig. 5</b> Os três níveis de aprovação como degraus, e a seta de voltar que existe em todos: uma queda no ciclo seguinte à promoção devolve a versão anterior.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <rect x="20" y="130" width="56" height="40" rx="6" style="stroke:var(--line2);fill:var(--panel)"/>
+          <rect x="82" y="96" width="56" height="74" rx="6" style="stroke:var(--accent);fill:var(--panel)"/>
+          <rect x="144" y="62" width="56" height="108" rx="6" style="stroke:var(--line2);fill:var(--panel)" stroke-dasharray="3 3"/>
+          <g font-family="Space Mono,monospace" font-size="9" text-anchor="middle" style="fill:var(--ink)"><text x="48" y="150">L0</text><text x="110" y="116">L1</text><text x="172" y="82">L2</text></g>
+          <g font-family="Space Mono,monospace" font-size="7.5" text-anchor="middle" style="fill:var(--muted)"><text x="48" y="163">só relata</text><text x="110" y="130">você aprova</text><text x="172" y="96">promove só</text><text x="172" y="108">após 5 em L1</text></g>
+          <path d="M172 40 C150 20 70 20 48 40" style="stroke:var(--warm)" stroke-width="2"/>
+          <path d="M54 34 L47 41 L56 44" style="stroke:var(--warm)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="110" y="18" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)">voltar: em todos os níveis</text>
+          <text x="110" y="190" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">comece em L1</text>
+        </svg>
+      </div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>O cartão de decisão é a única atenção que o loop pede: cinco linhas, uma vez por semana no máximo, lidas de cima para baixo antes de decidir.</li>
+    <li>Só existem três respostas — aprovar, rejeitar, esperar — e o silêncio vale como "nada promovido, pendente".</li>
+    <li>No ciclo 0002 da clínica, o sistema reprovou um ganho de dez pontos por um vigiado com tolerância zero; a regra foi aplicada certo, e a tolerância é que precisava ser calculada.</li>
+    <li>O teto (resposta 4) é o que o Guardião usa para parar o ciclo; o nível de aprovação (resposta 5) começa em L1 e só sobe para L2 depois de cinco acertos.</li>
+    <li>O botão de voltar vale em todos os níveis: uma queda no ciclo seguinte à promoção devolve a versão anterior, com o motivo no histórico.</li>
+  </ul>
+</div>
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir decidir sobre um cartão real sem se deixar levar pelo tamanho do ganho — e tem o teto e o aprovador do seu loop escritos.</p>
+  <p class="na-action">Nos próximos 15 minutos: abra a ficha do loop que você vem montando e escreva, nas linhas 4 e 5, exatamente o que você respondeu na prática — em números. Faltam só essas duas para a ficha ficar completa na Trilha 5.</p>
+  <p class="na-hook">Na última aula desta trilha, a de honestidade: o que o loop garante por construção, o que ele não garante de jeito nenhum — e como reconhecer quando alguém vende a segunda coisa como se fosse a primeira.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#aula-3">← aula anterior</a><a href="#aula-5">próxima aula →</a></nav>
+<footer>Aula 4 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-4">
+[
+  {"front":"Decisão: o cartão diz 'B ganhou com margem', N bateu o mínimo, vigiados dentro, custo no teto — mas você achou o texto novo feio. Aprova ou rejeita?","back":"Aprova. A linha 2 manda, não o gosto. Se você tem uma hipótese sobre o tom, ela vira o próximo teste."},
+  {"front":"Diagnóstico: um vigiado de evento raro (reclamação, ~1%) reprovou uma versão por 6 contra 1 em 300. O que estava errado — a regra ou a aplicação dela?","back":"A regra: tolerância zero num evento raro trata ruído como diferença. A aplicação estava certa. Corrige-se a tolerância (0,01) e retesta-se."},
+  {"front":"Contraste: o que muda entre L1 e L2 quando o veredito é 'B ganhou'?","back":"Em L1 você aprova cada cartão; em L2 o loop promove sozinho e avisa. L2 só abre depois de 5 aprovações em L1 sem voltar atrás."},
+  {"front":"Aplicação: você promoveu uma versão e no ciclo seguinte o vigiado 'desconto médio' subiu além da tolerância. O que acontece com a versão oficial e com o histórico?","back":"A versão anterior volta (em L1 com sua confirmação, em L2 sozinha) e o histórico guarda a promovida como revertida, com data, números e motivo."},
+  {"front":"Você viaja e não responde ao cartão dentro do prazo. O que o loop faz com a candidata?","back":"Nada é promovido. A versão atual segue, o histórico registra 'pendente' e o cartão espera você."},
+  {"front":"Que dois números precisam existir na resposta 4 da ficha, e quem os usa?","back":"Teto em dinheiro por ciclo e teto de tempo seu por semana. O Guardião para o ciclo no teto; o Meta-agente relata custo por hipótese promovida."}
+]
+</script>
+
+<!-- COMPLETUDE aula-4 | tipo=FERRAMENTA | steps=5
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (5/5: clínica · corretor · clínica · suporte · corretor)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (5/5)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~12 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-4"> presente (6 cartões: decisão · diagnóstico · contraste · aplicação · pergunta · pergunta)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); sem teste-se opcional
+-->
+</section>
+
+<!-- ===== AULA 5 — FUNDAMENTO ===== -->
+<section class="view" id="v-aula-5" data-aula="5" data-tempo="19min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 04 · Aula 5</p>
+    <h1>O que o LOOP-R<br><em>não garante</em></h1>
+    <p class="promise">Ao fim desta aula você consegue dizer, em uma frase cada, as quatro coisas que o loop garante por construção e as quatro que ele não garante — e reconhecer uma promessa falsa quando alguém vender uma.</p>
+    <p class="why">Esta trilha inteira pediu evidência. Seria estranho fechar prometendo algo sem ela. Então esta é a aula de honestidade: o que um loop de melhoria garante porque foi construído para isso, e o que depende do seu volume, do seu mercado e de sorte. Quem sabe a diferença não abandona o loop no terceiro mês por frustração — nem confia nele além do que ele aguenta.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <!-- metáfora: o corrimão da escada da clínica — não sobe ninguém; impede de cair -->
+    <g style="stroke:var(--line2);fill:var(--panel)">
+      <path d="M30 200 L80 200 L80 170 L130 170 L130 140 L180 140 L180 110 L230 110 L230 80 L280 80 L280 210 L30 210 Z"/>
+    </g>
+    <path d="M40 150 L100 120 L150 90 L200 60 L250 30" style="stroke:var(--accent)" stroke-width="4" stroke-linecap="round"/>
+    <g style="stroke:var(--accent)" stroke-width="2"><path d="M55 143 L55 200 M105 118 L105 170 M155 88 L155 140 M205 58 L205 110 M250 32 L250 80"/></g>
+    <text x="30" y="40" font-family="Newsreader,serif" font-style="italic" font-size="16" style="fill:var(--ink-soft)">o corrimão não sobe a escada por você.</text>
+    <text x="30" y="60" font-family="Space Mono,monospace" font-size="10" style="fill:var(--muted)">ele garante que você não cai.</text>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> Quatro garantias, e nenhuma delas é "o número sobe"</h2>
+      <p>Nenhum loop de aprendizado garante que o número sobe. Nem este — e a dona da clínica de estética ouviu isso na primeira tela do produto, antes de preencher a ficha. O que o LOOP-R garante são quatro coisas, todas por construção — quer dizer, elas valem porque as regras das aulas anteriores existem, não porque alguém prometeu. Uma versão pior nunca substitui a atual por decisão do sistema. Toda mudança tem registro e volta atrás. O ciclo roda toda vez do mesmo jeito. O custo não passa do teto.</p>
+      <p>Ao lado de cada garantia mora o que ela não cobre. Não substituir por uma pior não quer dizer que a próxima será melhor. Ter registro não quer dizer que o registro terá algo útil — pode ser "sem evidência" dez ciclos seguidos. Rodar sempre não quer dizer que cada ciclo produz uma hipótese boa. Ficar no teto não quer dizer que o custo compensa.</p>
+      <p>A regra que este produto segue em todo texto: a palavra "garantir" só aparece acompanhada de <span class="gterm" tabindex="0" data-def="A garantia de que uma versão pior não vira oficial por decisão do sistema. É a única garantia forte de um loop: o número pode não subir, mas não cai por conta do loop.">não-regressão</span>, de registro com volta, ou de constância do ciclo. Se você ler "garante mais vendas" em qualquer material sobre loops de IA — inclusive sobre este — está lendo uma promessa que ninguém pode fazer.</p>
+      <div class="qbefore-after">
+        <div class="qba-col qba-before"><p class="qba-lbl">Antes — a promessa que se vende</p><p class="qba-txt">"A IA vai aprender com cada proposta e <b>melhorar suas vendas</b>." Nenhum número, nenhuma condição, nenhum prazo.</p></div>
+        <div class="qba-col qba-depois"><p class="qba-lbl">Depois — o que se garante</p><p class="qba-txt">Para a clínica: nenhuma versão com resposta ou margem <b>pior</b> vira oficial; toda mudança tem data, número e volta; o ciclo roda toda segunda; o gasto para em R$ 50.</p></div>
+        <p class="qba-saldo"><b>Saldo:</b> quatro frases conferíveis no histórico, contra uma que não dá para conferir em lugar nenhum.</p>
+      </div>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> O elo que ainda não foi provado: sinal → dinheiro</h2>
+      <p>Na aula 2 você trocou o dinheiro pelo sinal como alvo do teste, porque o dinheiro demora demais. Isso tem um preço que precisa ser dito: subir o sinal não prova que o dinheiro sobe. É plausível — quem responde tem mais chance de comprar — mas plausível não é provado. Enquanto o volume não chega, o elo entre os dois é uma aposta declarada, não um resultado.</p>
+      <p>O caso real da clínica mostra isso sem retoque. No ciclo 0004, a taxa de resposta subiu de 19,3% para 29,3% e a versão foi promovida com razão. A conversão em venda foi de 3,0% para 3,7% — um número que, com 300 propostas de cada lado, não distingue de sorte. O relatório do ciclo diz exatamente isso: "o elo sinal → alvo segue não provado". Dez pontos de resposta, e sobre vendas ainda não há nada a afirmar.</p>
+      <p>O corretor de imóveis vive o mesmo elo com outros nomes: mais visitas agendadas não provaram, até agora, mais vendas fechadas. O loop dele otimiza o agendamento e vigia o fechamento. No dia em que houver 1.500 leads de cada lado, o fechamento pode virar alvo. Antes disso, dizer "o loop aumentou as vendas" seria a promessa do passo anterior.</p>
+      <div class="quiz" data-answer="b">
+        <p class="qk">Teste-se</p><p class="q">Ciclo 0004 da clínica: resposta 19,3% → 29,3% (N = 300 vs 300, significativo); conversão 3,0% → 3,7% (não significativo). O que dá para afirmar?</p>
+        <button class="opt" data-k="a" data-fb="Esse número existe na planilha, mas com 300 de cada lado ele não se distingue do acaso. Afirmar '23% a mais de vendas' é exatamente a promessa que a aula manda desconfiar.">As vendas subiram 23% com a versão nova</button>
+        <button class="opt" data-k="b" data-fb="Correto. O alvo do teste (resposta) subiu e foi provado; o dinheiro era vigiado, não piorou, e ainda não há volume para dizer que subiu. As duas frases cabem juntas.">A resposta subiu de verdade; sobre vendas ainda não há prova — e a versão pode ser promovida mesmo assim</button>
+        <button class="opt" data-k="c" data-fb="Falhar seria a resposta cair ou um vigiado piorar. Nada disso aconteceu. A hipótese fez o que se propôs (subir o sinal); o que falta é o elo com o dinheiro, e isso é outra pergunta.">A hipótese falhou, porque o objetivo era vender mais</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> "Sem evidência" dez ciclos seguidos é um resultado possível</h2>
+      <p>O loop garante que o ciclo roda toda semana. Não garante que a semana traga uma ideia boa. É possível — e, em negócio pequeno, comum — que o Crítico encontre só observações fracas por vários ciclos, que o Otimizador não tenha do que propor, e que o histórico acumule "sem evidência suficiente" linha após linha. Isso não é o loop quebrado. É o loop dizendo a verdade sobre o volume que tem.</p>
+      <p>Duas coisas continuam valendo nessas semanas. A memória de hipóteses descartadas cresce, e ela vale tanto quanto a das promovidas: impede que a mesma ideia ruim seja testada duas vezes, por você ou por quem vier depois. E o Meta-agente, o assistente que só observa o loop e relata, conta o custo por hipótese promovida — se em cinco ciclos nada foi promovido, ele propõe rodar com menos frequência, não fingir progresso.</p>
+      <p>A gestora de suporte passou por seis ciclos assim entre março e abril: chamados de menos por tipo para o Crítico afirmar qualquer padrão. Ela reduziu o loop para quinzenal, seguindo a proposta do Meta-agente, e deixou a planilha de registro acumulando. Em junho, com 30 chamados no tipo mais comum, veio a primeira hipótese moderada. O histórico dela tem seis linhas de "sem evidência" — e ela considera as seis honestas.</p>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="fundamento">
+      <h2><span class="n">04</span> O que ainda é pesquisa, e o que é gargalo</h2>
+      <p>Há uma parte da ideia do LOOP-R que ainda não está pronta para negócio nenhum: o loop redesenhar a si mesmo — o nível L3, o Meta-agente propondo trocar assistentes, mudar a ordem do ciclo, reescrever as próprias regras. Isso é pesquisa. No produto que este curso ensina, o Meta-agente só relata: custo, hipóteses geradas contra promovidas, quem mais leva veto do Guardião, se o juiz está calibrado. Zero ação. Quem prometer um sistema que "melhora o próprio sistema" sozinho está vendendo o que ainda não existe de forma segura.</p>
+      <p>E há o gargalo que nenhum assistente resolve: a planilha de registro. Sem evidência, o resto é teatro — e a evidência do seu negócio está no WhatsApp, no caderno da recepção, na cabeça do vendedor. O produto conecta com uma coisa: uma planilha com colunas definidas na ficha. Quem quiser usar, preenche ou exporta. Ligações diretas com outros sistemas são cada uma um projeto próprio, e nenhuma vem de graça com as cinco respostas.</p>
+      <p>Para a clínica e para o corretor, a conclusão é a mesma frase, que serve de teste para qualquer promessa: o LOOP-R como disciplina de processo — registro, teste com quantidade que prova, não-regressão — vale sozinho hoje. O LOOP-R como "sistema que aprende sozinho" depende de um volume de dados que a maioria das empresas pequenas não tem. Um produto honesto diz isso na primeira tela.</p>
+      <div class="qanchor"><p>O loop não promete que o número sobe. Promete que ele não cai por decisão do sistema.</p></div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p5" data-mode="analise">
+      <p class="pk">Pratique agora <span class="pcount">0/3 feito</span></p>
+      <h3 class="ph">Verdadeiro ou falso: oito afirmações sobre garantias</h3>
+      <p class="pgoal">Marque V ou F em cada afirmação e, nas falsas, escreva em uma linha qual garantia real ela está esticando. ~8 min. É análise porque não existe jeito de "praticar" uma garantia — ela se reconhece lendo, e é assim que você vai encontrá-la em propostas de venda.</p>
+      <p class="psafe">Nada muda no seu negócio até você aprovar: isto é leitura e marcação. Errar aqui é útil — cada F que você marcou como V é uma promessa que alguém ainda vai tentar te vender.</p>
+      <ul class="vf">
+        <li><span class="k">1</span> Depois de quatro ciclos, a taxa de resposta obrigatoriamente subiu.</li>
+        <li><span class="k">2</span> Uma versão pior nunca substitui a atual por decisão do sistema.</li>
+        <li><span class="k">3</span> Toda mudança pode ser desfeita, e fica registrado quando, com que números e por quê.</li>
+        <li><span class="k">4</span> Se o cartão não for respondido no prazo, o sistema promove por padrão, para não travar o loop.</li>
+        <li><span class="k">5</span> O custo de um ciclo nunca passa do teto que você escreveu na ficha.</li>
+        <li><span class="k">6</span> Se o custo ficou dentro do teto, o loop compensou.</li>
+        <li><span class="k">7</span> Dez ciclos seguidos com "sem evidência" significam que o loop quebrou.</li>
+        <li><span class="k">8</span> O ciclo roda toda semana do mesmo jeito, mesmo que ninguém tenha uma hipótese boa.</li>
+      </ul>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Marquei V ou F nas oito afirmações antes de abrir o gabarito.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Nas que marquei F, escrevi em uma linha qual garantia real ela estica.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Comparei com o gabarito e conferi as quatro garantias e as quatro não-garantias.</span></label></li>
+      </ol>
+      <details><summary>Gabarito comentado</summary>
+        <p><b>1 — F.</b> Estica a não-regressão: o loop garante que o número não cai por decisão dele, não que sobe.</p>
+        <p><b>2 — V.</b> É a garantia central: o Avaliador só promove com margem e vigiados intactos; sem isso, "A segue".</p>
+        <p><b>3 — V.</b> Registro com botão de voltar. Cada promoção e cada volta ficam no histórico com data, números e motivo.</p>
+        <p><b>4 — F.</b> Estica a constância do ciclo: o loop continua rodando, mas o padrão sem resposta é não promover e registrar "pendente".</p>
+        <p><b>5 — V.</b> O Guardião interrompe o ciclo ao atingir o teto.</p>
+        <p><b>6 — F.</b> Estica o teto: ficar dentro do limite garante o gasto, não o retorno. Custo por hipótese promovida é outra conta, e o Meta-agente é quem a relata.</p>
+        <p><b>7 — F.</b> Estica a constância: rodar sempre é garantido; produzir hipótese boa toda semana, não. Dez "sem evidência" são um resultado honesto, e as ideias descartadas ficaram na memória.</p>
+        <p><b>8 — V.</b> Constância do ciclo. É a garantia mais barata e a que mais protege contra "a gente parou de fazer no mês 3".</p>
+      </details>
+      <p class="pdone">Você acabou de separar, afirmação por afirmação, o que o loop sustenta do que ninguém pode sustentar — a mesma leitura que vai fazer diante da próxima promessa que aparecer.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> Duas colunas: à esquerda o que vale por construção (cheio), à direita o que fica de fora (tracejado). Cada linha da esquerda tem um par à direita.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <text x="58" y="28" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--accent)">garante</text>
+          <text x="162" y="28" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">não garante</text>
+          <g style="stroke:var(--accent);fill:var(--panel)">
+            <rect x="14" y="40" width="88" height="26" rx="6"/><rect x="14" y="76" width="88" height="26" rx="6"/><rect x="14" y="112" width="88" height="26" rx="6"/><rect x="14" y="148" width="88" height="26" rx="6"/>
+          </g>
+          <g style="stroke:var(--line2)" stroke-dasharray="3 3">
+            <rect x="118" y="40" width="88" height="26" rx="6"/><rect x="118" y="76" width="88" height="26" rx="6"/><rect x="118" y="112" width="88" height="26" rx="6"/><rect x="118" y="148" width="88" height="26" rx="6"/>
+          </g>
+          <g font-family="Space Mono,monospace" font-size="7.5" text-anchor="middle" style="fill:var(--ink)">
+            <text x="58" y="56">pior não entra</text><text x="58" y="92">registro + volta</text><text x="58" y="128">ciclo constante</text><text x="58" y="164">custo no teto</text>
+          </g>
+          <g font-family="Space Mono,monospace" font-size="7.5" text-anchor="middle" style="fill:var(--muted)">
+            <text x="162" y="56">próxima é melhor</text><text x="162" y="92">registro útil</text><text x="162" y="128">hipótese boa</text><text x="162" y="164">custo compensa</text>
+          </g>
+          <path d="M102 53 L118 53 M102 89 L118 89 M102 125 L118 125 M102 161 L118 161" style="stroke:var(--line)"/>
+        </svg>
+      </div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> A corrente de três elos: texto → resposta → venda. Os dois primeiros estão soldados pelos testes; o último ainda é tracejado — plausível, não provado.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <g style="stroke:var(--accent)" stroke-width="3">
+            <rect x="18" y="80" width="50" height="30" rx="15"/><rect x="86" y="80" width="50" height="30" rx="15"/>
+          </g>
+          <rect x="154" y="80" width="50" height="30" rx="15" style="stroke:var(--warm)" stroke-width="3" stroke-dasharray="5 4"/>
+          <path d="M68 95 L86 95" style="stroke:var(--accent)" stroke-width="3"/>
+          <path d="M136 95 L154 95" style="stroke:var(--warm)" stroke-width="3" stroke-dasharray="3 3"/>
+          <g font-family="Space Mono,monospace" font-size="8" text-anchor="middle" style="fill:var(--ink)">
+            <text x="43" y="99">texto</text><text x="111" y="99">resposta</text><text x="179" y="99">venda</text>
+          </g>
+          <g font-family="Space Mono,monospace" font-size="7.5" text-anchor="middle" style="fill:var(--muted)">
+            <text x="43" y="130">lista: sim/não</text><text x="111" y="130">19,3 → 29,3%</text><text x="179" y="130">3,0 vs 3,7%</text>
+            <text x="43" y="142">provado</text><text x="111" y="142">provado</text><text x="179" y="142" style="fill:var(--warm)">não provado</text>
+          </g>
+          <text x="110" y="180" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">o último elo é uma aposta declarada</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> O histórico ao longo de meses: muitas linhas iguais de 'sem evidência' e uma promoção. A memória de descartadas (à direita) cresce mesmo nas semanas vazias.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <g font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)">
+            <text x="14" y="34">0001 sem evidência</text><text x="14" y="50">0002 sem evidência</text><text x="14" y="66">0003 sem evidência</text><text x="14" y="82">0004 sem evidência</text><text x="14" y="98">0005 sem evidência</text><text x="14" y="114">0006 sem evidência</text>
+          </g>
+          <text x="14" y="134" font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--accent)">0007 hipótese moderada</text>
+          <text x="14" y="150" font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--accent)">0009 promovida v2</text>
+          <rect x="150" y="26" width="56" height="130" rx="8" style="stroke:var(--line2);fill:var(--panel)"/>
+          <text x="178" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="7" style="fill:var(--muted)">descartadas</text>
+          <g style="stroke:var(--warm)"><path d="M160 60 L196 60 M160 74 L196 74 M160 88 L196 88 M160 102 L196 102 M160 116 L196 116"/></g>
+          <text x="110" y="184" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)">seis linhas honestas, uma promoção</text>
+        </svg>
+      </div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> O que está dentro do produto hoje (cheio), o que é pesquisa (tracejado) e onde fica o gargalo: a planilha, antes de qualquer assistente.">
+        <svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+          <rect x="14" y="70" width="60" height="60" rx="8" style="stroke:var(--warm);fill:var(--panel)" stroke-width="2"/>
+          <g style="stroke:var(--warm)"><path d="M22 86 L66 86 M22 98 L66 98 M22 110 L66 110 M36 78 L36 122 M50 78 L50 122"/></g>
+          <text x="44" y="146" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--warm)">planilha: gargalo</text>
+          <path d="M74 100 L92 100" style="stroke:var(--line2)"/>
+          <rect x="92" y="60" width="72" height="80" rx="8" style="stroke:var(--accent);fill:var(--panel)"/>
+          <g font-family="Space Mono,monospace" font-size="7.5" text-anchor="middle" style="fill:var(--ink)">
+            <text x="128" y="82">9 assistentes</text><text x="128" y="96">L0 · L1 · L2</text><text x="128" y="110">registro + volta</text>
+          </g>
+          <text x="128" y="156" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--accent)">produto, hoje</text>
+          <rect x="172" y="60" width="36" height="80" rx="8" style="stroke:var(--line2)" stroke-dasharray="3 3"/>
+          <text x="190" y="96" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" style="fill:var(--muted)">L3</text>
+          <text x="190" y="110" text-anchor="middle" font-family="Space Mono,monospace" font-size="6.5" style="fill:var(--muted)">redesenho</text>
+          <text x="190" y="156" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)">pesquisa</text>
+        </svg>
+      </div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>O loop garante quatro coisas por construção: uma versão pior não entra por decisão dele, tudo tem registro e volta, o ciclo roda sempre igual, o custo fica no teto.</li>
+    <li>Cada garantia tem um limite gêmeo: nada diz que a próxima versão será melhor, que o registro terá algo útil, que cada ciclo traz uma ideia boa, ou que o custo compensa.</li>
+    <li>Subir o sinal não prova que o dinheiro sobe; no caso real, dez pontos de resposta e uma conversão que ainda não se distingue de sorte.</li>
+    <li>O loop que redesenha a si mesmo é pesquisa, e a planilha de registro é o gargalo que nenhum assistente resolve por você.</li>
+  </ul>
+</div>
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir olhar para uma promessa sobre IA e dizer, com a tabela na cabeça, qual das quatro garantias ela está esticando.</p>
+  <p class="na-action">Nos próximos 15 minutos: releia a ficha do loop que você montou nas trilhas anteriores e risque qualquer frase que prometa subida de número. Troque por uma das quatro garantias, com o número da sua ficha ("não cai abaixo de 20% de resposta por decisão do sistema").</p>
+  <p class="na-hook">Na Trilha 5 você acompanha os quatro ciclos reais da clínica do começo ao fim, prevê o quinto — e entrega a sua ficha completa, com o primeiro cartão de decisão preenchido.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#aula-4">← aula anterior</a><a href="#trilha">concluir a trilha →</a></nav>
+<footer>Aula 5 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-5">
+[
+  {"front":"Diagnóstico: um material diz 'o loop garante mais vendas em 90 dias'. Qual das quatro garantias reais está sendo esticada, e para o quê?","back":"A não-regressão (o número não cai por decisão do sistema) esticada para 'o número sobe'. Nenhum loop garante subida."},
+  {"front":"Decisão: o histórico do seu loop tem oito ciclos seguidos de 'sem evidência'. Você desliga o loop, mantém como está, ou muda algo? O quê?","back":"Mantém rodando e reduz a frequência (proposta do Meta-agente), deixando a planilha acumular. Não é defeito: é o volume que você tem."},
+  {"front":"Contraste: o que separa 'garante registro e volta' de 'garante que o registro será útil'?","back":"O primeiro é construção: toda mudança fica anotada e reversível. O segundo depende de haver evidência — o registro pode ser só 'sem evidência' por meses."},
+  {"front":"Aplicação: alguém te oferece um loop em que 'o sistema redesenha os próprios assistentes sozinho'. O que você responde e por quê?","back":"Que isso é L3, ainda pesquisa. No produto, o Meta-agente só relata (custo, vetos, calibração do juiz) — zero ação sobre o próprio loop."},
+  {"front":"Por que a planilha de registro é chamada de gargalo, se existem nove assistentes?","back":"Porque sem evidência preenchida os assistentes não têm o que ler; o produto conecta só com a planilha, e cada ligação direta a outro sistema é um projeto próprio."}
+]
+</script>
+
+<!-- COMPLETUDE aula-5 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: clínica · clínica+corretor · suporte · clínica+corretor)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~8 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-5"> presente (5 cartões: diagnóstico · decisão · contraste · aplicação · pergunta)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, step 02)
+-->
+</section>
+
+<script src="curso.js"></script>
+</body>
+</html>

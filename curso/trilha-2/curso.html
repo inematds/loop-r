@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="curso" content="loop-r-trilha-2">
+<title>LOOP-R · Trilha 2 — O método · INEMA.CLUB PRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/aula.css">
+<script>(function(){try{var m=document.querySelector('meta[name=curso]');var CK=(m&&m.content)||'v5:curso';var s=JSON.parse(localStorage.getItem(CK));if(s&&s.prefs&&s.prefs.theme)document.documentElement.setAttribute('data-theme',s.prefs.theme);}catch(e){}})();</script>
+<!--
+  PROTOCOLO DE DESCOBERTA (SKILL.md, Passo 0 — respondido no plano do curso §0, registrado aqui como metadado):
+  - Público específico: donos e gestores de negócios pequenos/médios, 40+, que já usam IA para "fazer coisas" (propostas, respostas, posts) e sentem que nada melhora com o tempo.
+  - Profissões-alvo (3): dona de clínica de estética (propostas por WhatsApp) · corretor de imóveis (leads de portal) · gestor de suporte de uma empresa de software pequena. Nesta trilha a ênfase é no corretor e na dona da clínica; o gestor de suporte aparece em situações próprias.
+  - Familiaridade com tecnologia: WhatsApp, planilha e um chat de IA. Sem terminal, sem programação, nunca ouviu "Git".
+  - Resultado prático esperado: sair da trilha com a resposta 1 (objetivo com número) e a resposta 2 (planilha de registro com 10 linhas) da ficha do loop, 3 hipóteses no formato SE/ENTÃO/PORQUE e a capacidade de ler um resultado A×B e dar uma das três respostas.
+  - Tempo por sessão: 20 min.
+  Tradução obrigatória de jargão (plano §2): ficha do loop · planilha de registro · histórico com botão de voltar · virar a versão oficial · voltar atrás · assistente com uma função só · lista de conferência · quantidade que prova · a pasta do loop.
+  Antipromessa (docs/06 §2): nunca prometer que o número sobe. O que se garante: não-regressão, registro/botão de voltar, constância do ciclo, teto de custo.
+-->
+<style>
+  /* Router + estilos da view da trilha (escopados sob #v-trilha). Idêntico ao template v5. */
+  .view{display:none}.view.active{display:block}
+  .lnav{max-width:1160px;margin:0 auto 5vh;padding:0 clamp(24px,5vw,60px);display:flex;justify-content:space-between;gap:12px}
+  .lnav a{font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line2);border-radius:12px;padding:12px 16px}
+  .lnav a:hover{border-color:var(--accent);color:var(--ink)}
+  #v-trilha .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(24px,5vw,60px)}
+  #v-trilha .t-hero{position:relative;overflow:hidden;padding:20vh 0 8vh;border-bottom:1px solid var(--line)}
+  #v-trilha h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,6.4vw,72px);line-height:1;letter-spacing:-.025em;margin:0 0 22px}
+  #v-trilha h1 em{font-style:italic;color:var(--accent)}
+  #v-trilha .lead{font-family:var(--serif);font-size:clamp(19px,2.1vw,24px);line-height:1.5;color:var(--ink-soft);max-width:46ch;margin:0 0 30px}
+  #v-trilha section{padding:8vh 0}
+  #v-trilha .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  #v-trilha h2{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.6vw,38px);margin:0 0 28px}
+  #v-trilha .aulas{display:grid;gap:14px}
+  #v-trilha .au{display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:center;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+  #v-trilha .au .num{font-family:var(--serif);font-size:30px;color:var(--accent);text-align:center}
+  #v-trilha .au h3{font-family:var(--serif);font-weight:500;font-size:21px;margin:0 0 5px}
+  #v-trilha .au p{margin:0;color:var(--muted);font-size:14.5px}
+  #v-trilha .au .meta{font-family:var(--mono);font-size:11px;color:var(--accent);white-space:nowrap;text-align:right}
+  #v-trilha .au .prog{position:static;margin-top:10px;height:5px;border-radius:99px;background:var(--line);overflow:hidden;max-width:220px;width:auto}
+  #v-trilha .au .prog i{display:block;height:100%;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+  #v-trilha footer{max-width:1080px;margin:0 auto;padding:6vh clamp(24px,5vw,60px) 12vh;color:var(--faint);text-align:center;font-family:var(--serif);font-style:italic;border-top:1px solid var(--line)}
+  @media(max-width:720px){#v-trilha .au{grid-template-columns:44px 1fr}#v-trilha .au .meta{grid-column:2;text-align:left}}
+  /* helpers de cor para os SVGs inline (usam só os tokens herdados) */
+  svg .sa{stroke:var(--accent)} svg .sw{stroke:var(--warm)} svg .sl{stroke:var(--line2)} svg .sm{stroke:var(--muted)}
+  svg .fa{fill:var(--accent)} svg .fw{fill:var(--warm)} svg .fm{fill:var(--muted)} svg .fp{fill:var(--panel)} svg .fb{fill:var(--bg2)}
+  svg .tx{font-family:var(--mono);font-size:9px;fill:var(--muted)} svg .tk{font-family:var(--mono);font-size:9px;fill:var(--ink)} svg .ta{font-family:var(--mono);font-size:9px;fill:var(--accent)} svg .tw{font-family:var(--mono);font-size:9px;fill:var(--warm)}
+  svg .ts{font-family:var(--serif);font-size:13px;fill:var(--ink)}
+  .gab{margin:14px 0 0;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--bg2)}
+  .gab summary{cursor:pointer;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+  .gab p{font-size:15px;line-height:1.6;color:var(--ink-soft);margin:10px 0 0}
+  .practice .pcase{font-size:15.5px;line-height:1.65;color:var(--ink-soft);border-left:2px solid var(--line2);padding-left:14px;margin:0 0 16px}
+</style>
+</head>
+<body>
+<div class="bar"><div class="bar-inner">
+  <span class="brand"><a class="mark" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a><a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a><a class="course" href="../index.html">LOOP-R</a></span>
+  <a class="back" href="#trilha" style="display:none">← trilha</a>
+  <button id="pill" class="pill" style="display:none">0 lido</button>
+  <button id="revbtn">revisar <span id="revn">0</span></button>
+  <button id="exbtn">exercícios</button>
+  <button id="jorbtn">jornada</button>
+  <button id="helpbtn" aria-label="Como funciona">?</button>
+  <button id="prefsbtn" aria-label="Preferências de leitura">Aa</button>
+  <button id="themebtn">tema: escuro</button>
+</div></div>
+
+<!-- ===== TRILHA ===== -->
+<section class="view" id="v-trilha">
+  <header class="t-hero"><div class="wrap">
+    <p class="kicker">Trilha 02 · LOOP-R: Sua Empresa que Aprende Sozinha</p>
+    <h1>O LOOP-R:<br><em>o método</em></h1>
+    <p class="lead">Cinco aulas, cinco letras. Você sai com o objetivo do seu loop escrito com número, dez linhas de evidência registradas, três hipóteses que podem ser testadas — e o critério para dizer, sem achismo, se a versão nova ganhou.</p>
+  </div></header>
+  <section><div class="wrap">
+    <div class="statcards"></div>
+    <p class="eyebrow">Aulas</p>
+    <h2>L · O · O · P · R</h2>
+    <div class="aulas">
+      <a class="au on" data-aula="1" href="#aula-1">
+        <div class="num">1</div>
+        <div><h3>L — Localizar: um processo, um número</h3><p>Saia com a resposta 1 da ficha do loop escrita: "levar [número] de X para Y sem piorar Z".</p><div class="prog"><i></i></div></div>
+        <div class="meta">19 min · abrir →</div>
+      </a>
+      <a class="au on" data-aula="2" href="#aula-2">
+        <div class="num">2</div>
+        <div><h3>O — Operar: não existe aprendizado sem execução</h3><p>Saia com a versão atual do seu processo escrita em até 6 linhas — a que vai ser comparada com a próxima.</p><div class="prog"><i></i></div></div>
+        <div class="meta">19 min · abrir →</div>
+      </a>
+      <a class="au on" data-aula="3" href="#aula-3">
+        <div class="num">3</div>
+        <div><h3>O — Observar: onde nasce a evidência</h3><p>Saia com 10 linhas da planilha de registro preenchidas — a resposta 2 da ficha do loop.</p><div class="prog"><i></i></div></div>
+        <div class="meta">21 min · abrir →</div>
+      </a>
+      <a class="au on" data-aula="4" href="#aula-4">
+        <div class="num">4</div>
+        <div><h3>P — Propor: da evidência à hipótese</h3><p>Saia com 3 hipóteses no formato SE / ENTÃO / PORQUE, cada uma apontando para um número da sua planilha.</p><div class="prog"><i></i></div></div>
+        <div class="meta">20 min · abrir →</div>
+      </a>
+      <a class="au on" data-aula="5" href="#aula-5">
+        <div class="num">5</div>
+        <div><h3>R — Reforçar: testar, validar, virar oficial</h3><p>Saia sabendo ler um resultado A contra B e dar uma das três respostas: B ganhou, A segue, ou quantidade insuficiente.</p><div class="prog"><i></i></div></div>
+        <div class="meta">22 min · abrir →</div>
+      </a>
+    </div>
+  </div></section>
+  <footer><div class="wrap">LOOP-R · Trilha 2 · INEMA.CLUB PRO</div></footer>
+</section>
+
+<!-- ===== AULA 1 — L: Localizar (FERRAMENTA) ===== -->
+<section class="view" id="v-aula-1" data-aula="1" data-tempo="19min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 02 · Aula 1 · L de Localizar</p>
+    <h1>Um processo,<br><em>um número</em></h1>
+    <p class="promise">Ao fim desta aula você consegue escrever, em uma frase, o objetivo do seu loop com número — "levar [número] de X para Y sem piorar Z" — e essa frase é a resposta 1 da ficha do loop.</p>
+    <p class="why">Você já pede coisas à IA todos os dias: propostas, respostas a leads, textos de suporte. Mas quando alguém pergunta "melhorou?", a resposta é uma impressão. Sem um processo escolhido e um número que já existe hoje, não há o que comparar — e o loop nem começa.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <!-- herofig: METÁFORA — a ficha de anamnese na prancheta da clínica, preenchida uma vez -->
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <rect x="70" y="30" width="160" height="196" rx="10" class="fp sl" stroke-width="2"/>
+    <rect x="115" y="18" width="70" height="22" rx="6" class="fb sl" stroke-width="2"/>
+    <circle cx="150" cy="29" r="4" class="fm"/>
+    <text x="150" y="62" text-anchor="middle" class="ts">ficha do loop</text>
+    <rect x="86" y="74" width="128" height="20" rx="4" class="fa" opacity=".18"/>
+    <rect x="86" y="74" width="128" height="20" rx="4" class="sa" stroke-width="1.5"/>
+    <text x="92" y="87" class="ta">1 · objetivo com número</text>
+    <line x1="86" y1="112" x2="214" y2="112" class="sl" stroke-width="1.5"/><text x="92" y="108" class="tx">2 · onde nasce a evidência</text>
+    <line x1="86" y1="140" x2="214" y2="140" class="sl" stroke-width="1.5"/><text x="92" y="136" class="tx">3 · o que nunca muda sozinho</text>
+    <line x1="86" y1="168" x2="214" y2="168" class="sl" stroke-width="1.5"/><text x="92" y="164" class="tx">4 · teto de custo e tempo</text>
+    <line x1="86" y1="196" x2="214" y2="196" class="sl" stroke-width="1.5"/><text x="92" y="192" class="tx">5 · quem aprova</text>
+    <path d="M232 60 l22 -18 l8 8 l-22 18 z" class="fw"/><path d="M254 42 l8 8" class="sw" stroke-width="2"/>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> Escolha um processo só — e um que se repete</h2>
+      <p>O LOOP-R não melhora "a empresa". Ele melhora <b>um processo de cada vez</b>. Processo, aqui, é uma tarefa que acontece muitas vezes, do mesmo jeito, e termina com um resultado que dá para ver. Três critérios ajudam a escolher: acontece pelo menos dezenas de vezes por mês; tem começo e fim claros; e o resultado é observável por quem faz.</p>
+      <p>Marcos, corretor de imóveis, recebe cerca de 80 contatos por mês vindos dos portais de anúncio. <b>Responder o primeiro contato</b> é um processo: começa quando o lead chega, termina quando o lead responde (ou não) em 24 horas. Anunciar imóveis, negociar comissão e acompanhar visitas também são processos — mas ficam para outros loops. Se ele tentar melhorar tudo ao mesmo tempo, não vai conseguir dizer o que causou o quê.</p>
+      <p>Pense em uma reforma feita cômodo por cômodo: você não pinta a casa inteira num sábado. Escolhe a sala, termina, e só então passa para a cozinha. O loop funciona assim — e o primeiro cômodo tem que ser o que mais se repete, porque é onde a evidência se acumula mais rápido.</p>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> "De X para Y" — e sem piorar o quê</h2>
+      <p>O objetivo do loop tem uma forma fixa: <b>levar [um número] de X para Y sem piorar Z</b>. Cada pedaço faz um trabalho. "Um número" diz o que se mede. "De X" é onde você está hoje. "Para Y" é um alvo que você aceitaria comemorar. E "sem piorar Z" é a parte que quase todo mundo esquece — e a que protege o negócio.</p>
+      <p>Dra. Renata é dona de uma clínica de estética e manda propostas por WhatsApp depois da avaliação. De cada 100 propostas, 3 viram pacote pago. O objetivo dela ficou assim: "levar a conversão de 3% para 5% <b>sem piorar a margem média e sem aumentar reclamações</b>". Por que a segunda metade importa? Porque um número sozinho vira alvo — e um sistema que persegue um alvo aprende a trapacear. Se o pedido fosse só "mais propostas fechadas", a versão que dá 20% de desconto ganharia toda vez.</p>
+      <p>No suporte a mesma armadilha tem outra cara. Cláudio gerencia o atendimento de uma empresa de software pequena e pediu "reduzir o tempo de atendimento". Sem um "sem piorar", a versão que encerra o chamado em dois minutos, sem resolver nada, é a campeã. O "sem piorar" dele foi: <b>sem aumentar os chamados reabertos em 7 dias</b>.</p>
+      <div class="qerr">
+        <p class="qk">Erro comum</p>
+        <p class="qerr-txt"><b>Escrever a meta sem "sem piorar".</b> Parece um objetivo limpo — "aumentar a taxa de resposta" — mas é uma porta aberta: a mensagem que provoca "pare de me mandar isso" também conta como resposta. Antes de qualquer teste, escreva pelo menos um número que não pode cair. Sem isso, o loop otimiza contra você.</p>
+      </div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> O número precisa existir hoje — e ser rápido de medir</h2>
+      <p>"De X" é o número que você <b>tem</b>, não o que gostaria de ter. Se ninguém conta hoje, a primeira tarefa do loop é contar (é o que a aula 3 faz). E há uma segunda exigência: o número precisa responder rápido. Existem três velocidades. Números de <b>dinheiro</b> (conversão, ticket, margem) demoram semanas para aparecer. Números de <b>sinal</b> (cliente respondeu, visita agendada) aparecem em horas. Números de <b>artefato</b> (a proposta cumpre a lista de conferência?) aparecem em minutos.</p>
+      <p>A diferença muda tudo por causa da <span class="gterm" tabindex="0" data-def="Quantas execuções são necessárias, em cada versão, para uma diferença não ser sorte. Para 20% contra 30%, cerca de 300 por versão; para 3% contra 5%, cerca de 1.500 por versão.">quantidade que prova</span>. Para provar que uma versão converte 5% contra 3% da atual, precisa de cerca de <b>1.500 propostas por versão</b>. A Dra. Renata manda 50 por semana — levaria mais de um ano para fechar um único teste. Já para provar que a taxa de resposta foi de 20% para 30%, bastam cerca de 300 por versão: 12 semanas no ritmo dela. Por isso o loop da clínica <b>testa a taxa de resposta em 48 horas</b> e apenas vigia a conversão.</p>
+      <p>Marcos fez a mesma troca. Ele queria "mais imóveis vendidos" (2 por mês — impossível de testar). O número que o loop dele persegue é <b>leads que respondem em 24 horas ao primeiro contato</b>: hoje 22 em cada 100. Vendas continuam sendo o que ele quer; só não é o que ele mede toda semana.</p>
+      <div class="quiz" data-answer="b">
+        <p class="qk">Teste-se</p><p class="q">Cláudio, do suporte, quer "menos clientes cancelando a assinatura" (hoje 4% ao mês). Qual número o loop dele deve testar primeiro?</p>
+        <button class="opt" data-k="a" data-fb="Cancelamento é número de dinheiro: leva meses para provar uma diferença de 4% para 3%. Fica como número vigiado, não como o que se testa.">cancelamentos por mês</button>
+        <button class="opt" data-k="b" data-fb="Resolução no primeiro contato é sinal: responde em dias, tem relação plausível com cancelamento e chega à quantidade que prova em semanas.">chamados resolvidos no primeiro contato</button>
+        <button class="opt" data-k="c" data-fb="Chamados abertos por semana não dependem da qualidade do atendimento — é volume, não resultado.">chamados abertos por semana</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="ferramenta" data-versao="ficha do loop v0.1 · set/2026">
+      <h2><span class="n">04</span> A pergunta 1 da ficha do loop</h2>
+      <p>A <span class="gterm" tabindex="0" data-def="O único documento que você preenche no LOOP-R: cinco perguntas respondidas uma vez, lidas pelo loop a cada ciclo. Esta aula produz a resposta 1.">ficha do loop</span> é a única coisa que você preenche. São cinco perguntas — como a ficha de anamnese que a clínica pede na primeira consulta: você responde uma vez, e todo profissional que atender depois lê dali. Os assistentes do loop leem a ficha do mesmo jeito, a cada ciclo. A resposta 1 é exatamente a frase que você montou nos passos anteriores.</p>
+      <p>Você vai ver abaixo um trecho da ficha. Parece uma tela de cadastro — e é isso mesmo: cada linha é uma pergunta que você responde uma vez, e o resto do loop se apoia nela. Você só mexe nas respostas; os rótulos à esquerda ficam como estão.</p>
+      <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">PERGUNTA 1 — objetivo (exemplo: clínica da Dra. Renata)
+  processo:       proposta comercial por WhatsApp
+  número:         conversão — virou pacote pago em até 15 dias
+  hoje:           3%
+  alvo:           5%
+  número rápido:  taxa de resposta em 48h — hoje 20%, alvo 30%
+  sem piorar:     margem média · reclamações · pedidos de parar</pre></div>
+      <p>Repare no que a ficha <b>não</b> promete: que a conversão vai chegar a 5%. O que ela garante é outra coisa — nenhuma versão que piore a margem ou aumente as reclamações vira a versão oficial, tudo fica registrado, e o ciclo roda toda semana do mesmo jeito. Se o número subir, ótimo; se não subir, você não perdeu o que tinha.</p>
+      <div class="qsteps">
+        <p class="qsk">Como escrever a sua resposta 1</p>
+        <ol>
+          <li><b>Nomeie o processo</b> em no máximo 8 palavras ("responder o primeiro contato de lead de portal").</li>
+          <li><b>Escreva o número de hoje.</b> Se não sabe, escreva "não sei — contar primeiro" (é uma resposta válida).</li>
+          <li><b>Escolha o número rápido</b> que tem a ver com o de dinheiro: resposta, agendamento, visita.</li>
+          <li><b>Coloque um alvo realista</b> — de 20% para 30% se prova em semanas; de 3% para 5%, em anos.</li>
+          <li><b>Acrescente pelo menos um "sem piorar"</b> e leia a frase inteira em voz alta.</li>
+        </ol>
+      </div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p1" data-mode="tarefa">
+      <p class="pk">Pratique agora <span class="pcount">0/4 feito</span></p>
+      <h3 class="ph">Escreva a resposta 1 da sua ficha do loop</h3>
+      <p class="pgoal">Sair com uma frase no formato "levar [número] de X para Y sem piorar Z", escrita e guardada onde você a encontre de novo — cerca de 10 min.</p>
+      <p class="psafe">Nada muda no seu negócio até você aprovar: esta frase é só o ponto de partida do loop, nenhum teste começa por causa dela. Se amanhã achar que escolheu o processo errado, apague e escreva outra.</p>
+      <p>Copie o molde abaixo para o seu bloco de notas ou para o chat de IA que você já usa, e troque o que está entre &lt; &gt; pelo seu caso. O exemplo preenchido é o do Marcos.</p>
+      <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Processo:        &lt;responder o primeiro contato de lead de portal&gt;
+Número de hoje:  &lt;22% dos leads respondem em 24h&gt;
+Alvo:            &lt;30%&gt;
+Sem piorar:      &lt;visitas agendadas&gt; · &lt;leads que pedem para parar de receber&gt;
+
+Frase: levar &lt;a taxa de resposta em 24h&gt; de &lt;22%&gt; para &lt;30%&gt;
+       sem piorar &lt;visitas agendadas&gt; nem &lt;pedidos de parar&gt;.</pre></div>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Liste 3 processos do seu negócio que se repetem pelo menos 30 vezes por mês. Escolha 1 — o que mais se repete.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Escreva o número de hoje. Se não sabe, escreva "contar primeiro" — a aula 3 resolve isso.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Escreva o alvo e pelo menos um "sem piorar". Ficou pronto quando a frase tem os quatro pedaços: número, hoje, alvo, sem piorar.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="4"> <span>Leia a frase em voz alta. Se passou de 25 palavras, corte até caber — a ficha lê frases curtas.</span></label></li>
+      </ol>
+      <p class="pdone">Você acabou de escrever a resposta 1 da ficha do loop: o objetivo com número. Tudo o que vem nas próximas quatro aulas se apoia nesta frase.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> Entre os processos que se repetem, o loop pega um só (em destaque) — o de maior volume. Os outros esperam."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="18" y="22" width="84" height="34" rx="7" class="fp sl" stroke-width="1.5"/><text x="60" y="43" text-anchor="middle" class="tx">anunciar imóvel</text>
+        <rect x="118" y="22" width="84" height="34" rx="7" class="fp sl" stroke-width="1.5"/><text x="160" y="43" text-anchor="middle" class="tx">negociar</text>
+        <rect x="18" y="146" width="84" height="34" rx="7" class="fp sl" stroke-width="1.5"/><text x="60" y="167" text-anchor="middle" class="tx">visitas</text>
+        <rect x="118" y="146" width="84" height="34" rx="7" class="fp sl" stroke-width="1.5"/><text x="160" y="167" text-anchor="middle" class="tx">documentos</text>
+        <rect x="46" y="76" width="128" height="50" rx="9" class="fa" opacity=".16"/>
+        <rect x="46" y="76" width="128" height="50" rx="9" class="sa" stroke-width="2"/>
+        <text x="110" y="96" text-anchor="middle" class="tk">responder 1º contato</text>
+        <text x="110" y="112" text-anchor="middle" class="ta">80× / mês</text>
+        <path d="M178 88 a22 22 0 1 1 -8 -16" class="sa" stroke-width="1.5"/><path d="M170 72 l4 -6 l3 7" class="sa" stroke-width="1.5"/>
+      </svg></div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> O objetivo é uma balança: de um lado o número a subir; do outro, os que não podem cair. Sem o lado direito, a balança tomba."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <line x1="110" y1="40" x2="110" y2="150" class="sl" stroke-width="2"/><rect x="80" y="150" width="60" height="8" rx="3" class="fm"/>
+        <line x1="30" y1="60" x2="190" y2="60" class="sm" stroke-width="2"/><circle cx="110" cy="60" r="5" class="fa"/>
+        <line x1="45" y1="60" x2="45" y2="92" class="sm" stroke-width="1.5"/><line x1="175" y1="60" x2="175" y2="92" class="sm" stroke-width="1.5"/>
+        <rect x="14" y="92" width="62" height="40" rx="6" class="fp sa" stroke-width="1.5"/>
+        <text x="45" y="108" text-anchor="middle" class="ta">SUBIR</text><text x="45" y="122" text-anchor="middle" class="tx">resposta 20→30%</text>
+        <rect x="140" y="92" width="70" height="40" rx="6" class="fp sw" stroke-width="1.5"/>
+        <text x="175" y="105" text-anchor="middle" class="tw">SEM PIORAR</text><text x="175" y="116" text-anchor="middle" class="tx">margem</text><text x="175" y="126" text-anchor="middle" class="tx">reclamações</text>
+        <text x="110" y="180" text-anchor="middle" class="tx">levar X de A para B sem piorar Z</text>
+      </svg></div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> Três velocidades de número. Quanto mais rápido o número responde, menos execuções ele pede para provar algo — o loop testa o rápido e vigia o lento."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <text x="16" y="34" class="tk">artefato</text><rect x="16" y="40" width="40" height="12" rx="3" class="fa"/><text x="62" y="50" class="tx">minutos · 20–50 casos</text>
+        <text x="16" y="86" class="tk">sinal</text><rect x="16" y="92" width="110" height="12" rx="3" class="fa" opacity=".6"/><text x="132" y="102" class="tx">dias · ~300</text>
+        <text x="16" y="138" class="tk">dinheiro</text><rect x="16" y="144" width="188" height="12" rx="3" class="fw" opacity=".7"/><text x="16" y="172" class="tx">meses · ~1.500 por versão</text>
+        <text x="204" y="34" text-anchor="end" class="ta">testa</text><text x="204" y="86" text-anchor="end" class="ta">testa</text><text x="204" y="138" text-anchor="end" class="tw">vigia</text>
+      </svg></div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> A ficha do loop tem cinco perguntas; a de cima é a que esta aula responde. O loop lê a ficha a cada ciclo — você a escreve uma vez."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="30" y="16" width="160" height="170" rx="10" class="fp sl" stroke-width="1.5"/>
+        <rect x="42" y="30" width="136" height="30" rx="6" class="fa" opacity=".16"/><rect x="42" y="30" width="136" height="30" rx="6" class="sa" stroke-width="1.5"/>
+        <text x="50" y="43" class="ta">1 · objetivo</text><text x="50" y="55" class="tk">de 20% para 30% sem piorar…</text>
+        <line x1="42" y1="82" x2="178" y2="82" class="sl"/><text x="50" y="77" class="tx">2 · onde nasce a evidência</text>
+        <line x1="42" y1="108" x2="178" y2="108" class="sl"/><text x="50" y="103" class="tx">3 · o que nunca muda sozinho</text>
+        <line x1="42" y1="134" x2="178" y2="134" class="sl"/><text x="50" y="129" class="tx">4 · teto de custo e tempo</text>
+        <line x1="42" y1="160" x2="178" y2="160" class="sl"/><text x="50" y="155" class="tx">5 · quem aprova</text>
+        <path d="M196 45 h14 M204 45 l-5 -5 M204 45 l-5 5" class="sa" stroke-width="1.5"/><text x="216" y="48" text-anchor="end" class="tx"></text>
+      </svg></div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>O loop trabalha um processo de cada vez — o que mais se repete, porque é onde a evidência se acumula mais rápido.</li>
+    <li>O objetivo tem forma fixa: levar um número de X para Y sem piorar Z. A parte do "sem piorar" é o que impede o sistema de aprender a trapacear.</li>
+    <li>O número testado é o rápido (resposta, agendamento); o de dinheiro fica vigiado, porque precisa de uma quantidade que a maioria das empresas pequenas não tem.</li>
+    <li>A ficha não promete que o número sobe. Promete que nenhuma versão pior vira oficial, que tudo fica registrado e que o ciclo roda toda semana.</li>
+  </ul>
+</div>
+
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de transformar uma vontade ("melhorar as propostas") em um objetivo que pode ser medido e comparado.</p>
+  <p class="na-action">Nos próximos 15 minutos, no seu trabalho de verdade: mostre a frase para uma pessoa que executa o processo e pergunte "o número de hoje está certo?". Se ela hesitar, anote "contar primeiro".</p>
+  <p class="na-hook">Na próxima aula, você resolve o que trava logo depois disso: o processo é executado de um jeito diferente a cada vez — e sem uma versão atual escrita, não existe com o que comparar.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#trilha">← trilha</a><a href="#aula-2">aula 2 →</a></nav>
+<footer>Aula 1 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-1">
+[
+  {"front":"Marcos quer 'vender mais imóveis' (2 por mês). Por que o loop dele não deve testar esse número — e o que ele testa no lugar?","back":"Vendas é número de dinheiro: 2 por mês nunca chega à quantidade que prova. Ele testa leads que respondem em 24h ao primeiro contato (22 em 100) e vigia as vendas."},
+  {"front":"Uma versão nova de proposta aumentou a taxa de resposta em 10 pontos, mas o objetivo foi escrito só como 'aumentar respostas'. Que pergunta falta fazer antes de comemorar?","back":"O que piorou? Sem um 'sem piorar' (margem, reclamações, pedidos de parar), respostas do tipo 'pare de me mandar isso' contam como sucesso."},
+  {"front":"Qual é a diferença entre o que a ficha do loop garante e o que ela não garante?","back":"Não garante que o número suba. Garante três coisas: uma versão pior não substitui a atual por decisão do sistema; toda mudança tem registro e caminho de volta; o ciclo roda sempre igual."},
+  {"front":"Dra. Renata manda 50 propostas por semana. Ela quer provar 3% → 5% de conversão. Em quanto tempo o teste fecha, e o que ela deveria fazer?","back":"Cerca de 1.500 por versão: mais de um ano. Trocar para taxa de resposta (20% → 30%): ~300 por versão, 12 semanas — e vigiar a conversão."}
+]
+</script>
+
+<!-- COMPLETUDE aula-1 | tipo=FERRAMENTA | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo 19min no view + render no cold-open pelo motor (1) — 1.686 palavras/200 + 10 min prática + 0,5 min quiz = 18,9 → 19
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4): s1 Marcos corretor · s2 Dra. Renata clínica + Cláudio suporte · s3 Dra. Renata + Marcos · s4 Dra. Renata
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4) — data-fig 1..4 com data-cap
+  [OK] practice           .practice[data-mode="tarefa"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com "cerca de 10 min" (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-1"> presente (4 cartões: aplicação / diagnóstico / contraste / decisão)
+  [OK] anti-duplicacao    §11.3 — substring ≥6 palavras: nenhuma · forma: 4/4 pergunta/decisão · operação: recap afirma, cartões aplicam a cenário
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); teste-se opcional presente (1 pergunta)
+  Pool dosado: qerr (s2) · qsteps (s4) · quiz opcional (s3) · cartões (4) = 4 ≤ 5. Densidade: quadros em s2 e s4, não adjacentes.
+-->
+</section>
+
+<!-- ===== AULA 2 — O: Operar (FUNDAMENTO) ===== -->
+<section class="view" id="v-aula-2" data-aula="2" data-tempo="19min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 02 · Aula 2 · O de Operar</p>
+    <h1>Não existe aprendizado<br><em>sem execução</em></h1>
+    <p class="promise">Ao fim desta aula você consegue escrever a versão atual do seu processo em até 6 linhas — o roteiro que é seguido hoje, do mesmo jeito, em toda execução — e reconhecer, num caso real, o que varia de uma vez para outra.</p>
+    <p class="why">Todo mundo executa. O problema é que cada execução é feita "do jeito que deu": uma proposta mais longa, outra mais curta, uma com desconto, outra sem. No fim do mês existem 200 propostas e nenhuma comparável com a outra. Sem uma versão atual escrita, a IA não tem o que melhorar — só tem o que repetir.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <!-- herofig: METÁFORA — o roteiro de atendimento plastificado na mesa da imobiliária, ao lado do celular -->
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <rect x="20" y="180" width="260" height="10" rx="3" class="fm" opacity=".5"/>
+    <rect x="48" y="52" width="150" height="128" rx="8" class="fp sl" stroke-width="2"/>
+    <text x="123" y="76" text-anchor="middle" class="ts">roteiro · versão 1</text>
+    <text x="62" y="98" class="tk">1. saudação pelo nome</text>
+    <text x="62" y="116" class="tk">2. o que ela procura</text>
+    <text x="62" y="134" class="tk">3. imóvel que encaixa</text>
+    <text x="62" y="152" class="tk">4. uma pergunta no fim</text>
+    <circle cx="188" cy="62" r="9" class="fa" opacity=".25"/><path d="M182 62 l4 4 l7 -8" class="sa" stroke-width="2"/>
+    <rect x="216" y="70" width="52" height="104" rx="9" class="fb sl" stroke-width="2"/>
+    <rect x="224" y="82" width="36" height="12" rx="4" class="fa" opacity=".7"/>
+    <rect x="224" y="100" width="28" height="10" rx="4" class="fm" opacity=".5"/>
+    <rect x="232" y="116" width="28" height="10" rx="4" class="fa" opacity=".7"/>
+    <rect x="224" y="132" width="24" height="10" rx="4" class="fm" opacity=".5"/>
+    <line x1="234" y1="164" x2="250" y2="164" class="sm" stroke-width="2"/>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> O loop só aprende com o que foi feito</h2>
+      <p>A segunda letra do LOOP-R é <b>Operar</b>: executar o trabalho de verdade. Parece óbvio, mas é onde muita gente tenta pular. Não dá para melhorar uma proposta que nunca foi enviada, nem um atendimento que só existe no papel. Cada execução real é uma chance de aprender — e cada execução que não acontece é uma chance perdida.</p>
+      <p>Marcos, o corretor, respondia os leads do portal de cabeça. Segunda-feira, com tempo, escrevia três parágrafos e mandava foto do imóvel. Quinta, no trânsito, mandava "oi, tem interesse?". Ele executou 80 vezes no mês — mas foram 80 execuções de 80 coisas diferentes. Quando perguntou à IA "como melhorar minha resposta?", a IA não tinha como responder: qual delas?</p>
+      <p>É como a diferença entre uma receita e "cozinhar como a vó". A vó acerta, mas ninguém consegue repetir nem melhorar, porque cada dia a mão pesa diferente. A receita escrita pode estar errada — e é justamente por isso que pode ser corrigida.</p>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> A versão atual precisa estar escrita</h2>
+      <p>Antes do primeiro ciclo, o processo ganha uma <b>versão atual</b>: um roteiro curto, escrito, que descreve como a execução é feita hoje. Não precisa ser bom. Precisa ser <b>o mesmo</b> em toda execução, para que 200 propostas virem 200 casos comparáveis — e não 200 opiniões.</p>
+      <p>A versão 1 da clínica da Dra. Renata tinha cinco blocos: saudação pelo nome e agradecimento pela visita; resumo do que foi observado na avaliação, em duas ou três frases; explicação do pacote indicado; valor e formas de pagamento; encerramento cordial, "à disposição para dúvidas". Cabe em seis linhas. Foi esse roteiro que gerou as primeiras 200 propostas registradas — e foi sobre ele que apareceu o primeiro achado: 166 das 200 não tiveram resposta em 48 horas.</p>
+      <div class="qbefore-after">
+        <div class="qba-col qba-before"><p class="qba-lbl">Antes</p><p class="qba-txt">Cada proposta escrita de cabeça, do jeito que deu naquele dia. Ao fim do mês: 200 mensagens, nenhuma parecida com a outra, nenhuma comparável.</p></div>
+        <div class="qba-col qba-depois"><p class="qba-lbl">Depois</p><p class="qba-txt">Roteiro versão 1 escrito em 6 linhas, seguido em toda proposta. Ao fim de 4 semanas: 200 propostas com a mesma estrutura, registradas.</p></div>
+        <p class="qba-saldo">Saldo: <b>200 casos comparáveis em 4 semanas</b> — o suficiente para o primeiro achado (166 sem resposta). Sem o roteiro escrito, o mesmo mês produz zero.</p>
+      </div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> Executar do mesmo jeito é o que torna as coisas comparáveis</h2>
+      <p>Seguir a versão atual à risca parece rígido. É o contrário: é o que permite mudar com segurança depois. Se duas execuções diferem em cinco coisas ao mesmo tempo, e uma foi melhor, você não sabe qual das cinco fez diferença. Se diferem em <b>uma</b> coisa, você sabe. O roteiro fixo é o que deixa a próxima aula mudar uma coisa de cada vez.</p>
+      <p>No suporte de Cláudio, dois atendentes respondiam o mesmo tipo de chamado de jeitos opostos: um mandava um passo a passo com imagens, o outro pedia acesso remoto de cara. Os números do mês diziam que 61% dos chamados eram resolvidos no primeiro contato. Mas 61% de quê? De uma mistura. Quando os dois passaram a seguir a mesma versão 1 (passo a passo primeiro, acesso remoto só se falhar), o número caiu para 58% — e pela primeira vez significou alguma coisa.</p>
+      <p>Isso não significa que ninguém pode improvisar. Significa que improviso não entra na conta. Quem sai do roteiro anota "fora do roteiro" na linha daquela execução — e essa linha fica de fora da comparação.</p>
+      <div class="quiz" data-answer="c">
+        <p class="qk">Teste-se</p><p class="q">Marcos seguiu o roteiro versão 1 em 70 leads e improvisou em 10. Na hora de comparar com a versão 2, o que ele faz com os 10?</p>
+        <button class="opt" data-k="a" data-fb="Misturar 10 improvisos com 70 execuções do roteiro contamina a conta: você não sabe mais o que está medindo.">conta os 80 juntos — execução é execução</button>
+        <button class="opt" data-k="b" data-fb="Apagar é pior que separar: a linha existe, o lead existiu, e o registro precisa ser completo — só não entra na comparação.">apaga os 10 da planilha</button>
+        <button class="opt" data-k="c" data-fb="A linha fica, marcada como 'fora do roteiro'. A comparação usa os 70; os 10 continuam registrados e podem virar uma observação depois.">marca os 10 como "fora do roteiro" e compara com os 70</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="fundamento">
+      <h2><span class="n">04</span> Quem executa não julga: o Executor</h2>
+      <p>No LOOP-R, quem executa é um <span class="gterm" tabindex="0" data-def="Um assistente de IA com uma responsabilidade só — como um funcionário que faz uma coisa e faz bem. O Executor produz o artefato seguindo a versão atual; nunca avalia o próprio trabalho.">assistente com uma função só</span> chamado <b>Executor</b>. Ele recebe a versão atual e os dados daquele caso, produz o artefato (a proposta, a resposta ao lead, o texto do chamado) e registra uma linha. Só isso. Ele não opina se ficou bom, não sugere mudança, não "melhora" por conta própria.</p>
+      <p>Para Marcos, o Executor é o assistente que recebe o roteiro versão 1 mais os dados do lead (nome, imóvel que ele clicou, bairro) e devolve a primeira resposta pronta para colar no WhatsApp. Se o roteiro pede "uma pergunta no fim", vai uma pergunta no fim — mesmo que naquele caso parecesse melhor mandar duas. A vontade de "melhorar na hora" é exatamente o que ele não faz, porque uma melhoria na hora é invisível: ninguém registrou, ninguém comparou.</p>
+      <p>A separação é a mesma da linha de montagem: quem monta não é quem inspeciona. Não por desconfiança — por método. O olhar de quem fez nunca é o olhar de quem confere.</p>
+      <div class="qanchor"><p>Uma melhoria feita na hora, sem registro, não é melhoria. É sorte que ninguém vai conseguir repetir.</p></div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p2" data-mode="analise">
+      <p class="pk">Pratique agora <span class="pcount">0/3 feito</span></p>
+      <h3 class="ph">Escreva a versão 1 do caso do Marcos — e depois a sua</h3>
+      <p class="pgoal">Ler o caso, escrever a versão atual em até 6 linhas e comparar com o gabarito — cerca de 10 min.</p>
+      <p class="psafe">Nada muda no seu negócio até você aprovar: escrever a versão atual é só descrever o que já acontece. Se a descrição sair errada, ninguém executa nada por causa dela — você corrige e pronto.</p>
+      <p class="pcase">Marcos, corretor há 12 anos, descreve como responde um lead de portal: "Depende. Se o imóvel é bom, eu já mando foto e valor. Se o lead parece curioso, pergunto o que ele procura antes. Geralmente cumprimento pelo nome, porque o portal manda. Às vezes ofereço visita no fim, às vezes esqueço. Se é fim de semana, respondo mais curto." Ele mandou 80 respostas no mês passado.</p>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Liste, do relato, o que Marcos faz <b>sempre</b> e o que faz <b>às vezes</b>. Ficou pronto quando tem duas colunas.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Escreva a versão 1 dele em até 6 linhas numeradas, escolhendo <b>uma</b> opção para cada "às vezes" (não importa qual — importa que seja sempre a mesma).</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Abra o gabarito e compare. Depois, faça o mesmo com o seu processo da aula 1: 6 linhas, uma decisão por "depende".</span></label></li>
+      </ol>
+      <details class="gab"><summary>Gabarito comentado</summary>
+        <p><b>Sempre:</b> cumprimenta pelo nome. <b>Às vezes:</b> manda foto e valor de cara ou pergunta antes; oferece visita ou esquece; encurta no fim de semana. Cada "às vezes" é uma variação que impede a comparação.</p>
+        <p><b>Uma versão 1 possível:</b> 1) Saudação pelo nome. 2) Cita o imóvel que o lead clicou. 3) Pergunta o que ele procura (quartos, bairro, prazo) antes de mandar valor. 4) Informa que tem fotos e a faixa de valor, sem enviar ainda. 5) Encerra dizendo que fica à disposição para dúvidas. 6) Mesmo texto em qualquer dia da semana.</p>
+        <p>Se a sua versão escolheu "mandar foto e valor de cara" em vez de perguntar antes, está igualmente certa. A versão 1 não precisa ser a melhor — precisa ser uma só. Descobrir qual é melhor é trabalho das aulas 4 e 5, não deste passo.</p>
+      </details>
+      <p class="pdone">Você acabou de escrever uma versão atual: um roteiro que transforma "depende" em uma decisão fixa por vez. É contra ele que toda versão nova vai ser comparada.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> As cinco letras do loop. Operar é a segunda — e a única que produz alguma coisa. Sem ela, as outras quatro não têm sobre o que trabalhar."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <g class="tx">
+          <rect x="70" y="14" width="80" height="24" rx="6" class="fp sl" stroke-width="1.5"/><text x="110" y="30" text-anchor="middle" class="tx">L · localizar</text>
+          <rect x="70" y="58" width="80" height="24" rx="6" class="fa" opacity=".16"/><rect x="70" y="58" width="80" height="24" rx="6" class="sa" stroke-width="2"/><text x="110" y="74" text-anchor="middle" class="ta">O · operar</text>
+          <rect x="70" y="102" width="80" height="24" rx="6" class="fp sl" stroke-width="1.5"/><text x="110" y="118" text-anchor="middle" class="tx">O · observar</text>
+          <rect x="70" y="146" width="80" height="24" rx="6" class="fp sl" stroke-width="1.5"/><text x="110" y="162" text-anchor="middle" class="tx">P · propor</text>
+          <rect x="20" y="102" width="40" height="24" rx="6" class="fp sl" stroke-width="1.5"/><text x="40" y="118" text-anchor="middle" class="tx">R</text>
+        </g>
+        <path d="M110 38 v20 M110 82 v20 M110 126 v20" class="sm" stroke-width="1.5"/>
+        <path d="M70 158 h-30 v-26" class="sm" stroke-width="1.5"/><path d="M40 102 v-64 h30" class="sm" stroke-width="1.5"/>
+        <path d="M160 70 h20" class="sa" stroke-width="1.5"/><text x="184" y="73" class="ta">gera dados</text>
+      </svg></div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> A versão atual é um roteiro numerado. Cada execução segue os mesmos blocos, e por isso as linhas registradas podem ser somadas."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="18" y="20" width="110" height="160" rx="8" class="fp sl" stroke-width="1.5"/>
+        <text x="73" y="40" text-anchor="middle" class="tk">versão 1</text>
+        <g class="tx"><text x="28" y="62">1 saudação</text><text x="28" y="84">2 resumo</text><text x="28" y="106">3 pacote</text><text x="28" y="128">4 valor</text><text x="28" y="150">5 encerramento</text></g>
+        <g class="sa" stroke-width="1.5"><path d="M128 60 h16 M128 82 h16 M128 104 h16 M128 126 h16 M128 148 h16"/></g>
+        <g><rect x="150" y="30" width="52" height="8" rx="2" class="fa" opacity=".5"/><rect x="150" y="44" width="52" height="8" rx="2" class="fa" opacity=".5"/><rect x="150" y="58" width="52" height="8" rx="2" class="fa" opacity=".5"/><rect x="150" y="72" width="52" height="8" rx="2" class="fa" opacity=".5"/><rect x="150" y="86" width="52" height="8" rx="2" class="fa" opacity=".5"/><rect x="150" y="100" width="52" height="8" rx="2" class="fa" opacity=".5"/><rect x="150" y="114" width="52" height="8" rx="2" class="fa" opacity=".5"/><rect x="150" y="128" width="52" height="8" rx="2" class="fa" opacity=".5"/></g>
+        <text x="176" y="156" text-anchor="middle" class="ta">200 linhas</text><text x="176" y="168" text-anchor="middle" class="tx">comparáveis</text>
+      </svg></div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> Em cima, execuções que variam em várias coisas: o número final não diz nada. Embaixo, execuções iguais: a diferença de uma para a outra passa a ter significado."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <text x="16" y="28" class="tx">sem roteiro</text>
+        <g class="sw" stroke-width="1.5"><rect x="16" y="36" width="24" height="30" rx="4" class="fp"/><rect x="48" y="36" width="36" height="22" rx="4" class="fp"/><rect x="92" y="36" width="18" height="38" rx="4" class="fp"/><rect x="118" y="36" width="30" height="26" rx="4" class="fp"/><rect x="156" y="36" width="44" height="18" rx="4" class="fp"/></g>
+        <text x="204" y="90" text-anchor="end" class="tw">61% de quê?</text>
+        <text x="16" y="120" class="tx">com roteiro versão 1</text>
+        <g class="sa" stroke-width="1.5"><rect x="16" y="128" width="30" height="28" rx="4" class="fp"/><rect x="54" y="128" width="30" height="28" rx="4" class="fp"/><rect x="92" y="128" width="30" height="28" rx="4" class="fp"/><rect x="130" y="128" width="30" height="28" rx="4" class="fp"/><rect x="168" y="128" width="30" height="28" rx="4" class="fp"/></g>
+        <text x="204" y="182" text-anchor="end" class="ta">58% — comparável</text>
+      </svg></div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> O Executor lê a versão atual e os dados do caso, produz o artefato e registra uma linha. A seta que não existe é a que voltaria para 'melhorar' — esse é o ponto."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="12" y="30" width="62" height="30" rx="6" class="fp sl" stroke-width="1.5"/><text x="43" y="49" text-anchor="middle" class="tx">versão atual</text>
+        <rect x="12" y="80" width="62" height="30" rx="6" class="fp sl" stroke-width="1.5"/><text x="43" y="99" text-anchor="middle" class="tx">dados do caso</text>
+        <path d="M74 45 h20 v25 M74 95 h20 v-25 M94 70 h12" class="sm" stroke-width="1.5"/>
+        <rect x="106" y="50" width="56" height="40" rx="8" class="fa" opacity=".16"/><rect x="106" y="50" width="56" height="40" rx="8" class="sa" stroke-width="2"/><text x="134" y="74" text-anchor="middle" class="ta">Executor</text>
+        <path d="M162 70 h18" class="sa" stroke-width="1.5"/>
+        <rect x="180" y="52" width="30" height="36" rx="5" class="fp sa" stroke-width="1.5"/><text x="195" y="74" text-anchor="middle" class="tx">art.</text>
+        <path d="M134 90 v40" class="sa" stroke-width="1.5"/><rect x="92" y="130" width="84" height="26" rx="5" class="fp sl" stroke-width="1.5"/><text x="134" y="147" text-anchor="middle" class="tx">+1 linha registrada</text>
+        <path d="M60 150 c-40 -20 -40 -80 -10 -100" class="sw" stroke-width="1.2" stroke-dasharray="3 3"/><line x1="20" y1="130" x2="60" y2="170" class="sw" stroke-width="1.5"/><line x1="60" y1="130" x2="20" y2="170" class="sw" stroke-width="1.5"/><text x="40" y="188" text-anchor="middle" class="tw">não "melhora"</text>
+      </svg></div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>Operar é a única letra do loop que produz alguma coisa. O aprendizado vem depois — mas sem execução real não há de onde vir.</li>
+    <li>A versão atual é um roteiro curto, escrito, seguido igual em toda execução. Não precisa ser bom; precisa ser um só, para que as execuções virem casos comparáveis.</li>
+    <li>Quem sai do roteiro anota "fora do roteiro" e fica de fora da conta. Improvisar não é proibido — só não entra na comparação.</li>
+    <li>O Executor faz e registra; nunca julga nem melhora na hora. A separação entre quem faz e quem confere é método, não desconfiança.</li>
+  </ul>
+</div>
+
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir transformar "depende" em uma versão atual escrita — o ponto de comparação de tudo o que vem depois.</p>
+  <p class="na-action">Nos próximos 15 minutos, no seu trabalho de verdade: pegue a última execução do seu processo (a última proposta, a última resposta a lead, o último chamado) e marque, linha a linha, o que seguiu as 6 linhas da sua versão 1 e o que foi improviso.</p>
+  <p class="na-hook">Na próxima aula, você resolve o que trava logo depois: executar 200 vezes não vira evidência sozinho. Cada execução precisa virar uma linha numa planilha — e você vai preencher as 10 primeiras.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#aula-1">← aula 1</a><a href="#aula-3">aula 3 →</a></nav>
+<footer>Aula 2 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-2">
+[
+  {"front":"Cláudio viu o número de resolução no primeiro contato cair de 61% para 58% depois que os dois atendentes passaram a seguir o mesmo roteiro. Isso foi piora?","back":"Não dá para dizer que foi piora: 61% era a média de duas maneiras diferentes de atender, que não mede nada. 58% é o primeiro número que descreve uma versão só — é o ponto de partida real."},
+  {"front":"Dra. Renata percebe, no meio de uma proposta, um jeito claramente melhor de escrever o encerramento. O que ela faz naquela proposta — e o que faz com a ideia?","back":"Segue a versão atual naquela proposta (ou marca 'fora do roteiro'). A ideia vai para a lista de hipóteses da aula 4, para ser testada contra a versão 1 — não aplicada na hora, onde ninguém compara."},
+  {"front":"O que o Executor recebe, o que ele entrega, e o que ele nunca faz?","back":"Recebe a versão atual e os dados do caso. Entrega o artefato e uma linha registrada. Nunca avalia o próprio trabalho nem altera o roteiro por conta própria."},
+  {"front":"Marcos diz que o roteiro 'engessa' e prefere adaptar cada resposta. Que argumento você daria em 2 frases?","back":"Adaptar tudo ao mesmo tempo impede saber o que funcionou: 80 respostas diferentes são 80 amostras de tamanho 1. Seguir uma versão por algumas semanas é o que permite mudar uma coisa e ver se fez diferença."}
+]
+</script>
+
+<!-- COMPLETUDE aula-2 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo 19min no view + render no cold-open pelo motor (1) — 1.563/200 + 10 + 0,5 = 18,3 → 19
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4): s1 Marcos corretor · s2 Dra. Renata clínica · s3 Cláudio suporte + Marcos · s4 Marcos
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4) — data-fig 1..4 com data-cap
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1) — mini-caso com personagem nomeado + gabarito em details; o "faça o seu" vai no passo 3 e na microação
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com "cerca de 10 min" (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-2"> presente (4 cartões: diagnóstico / decisão / pergunta / aplicação)
+  [OK] anti-duplicacao    §11.3 — substring ≥6 palavras: nenhuma · forma: 4/4 · operação: recap afirma, cartões diagnosticam/decidem sobre cenário novo
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, s3)
+  Pool dosado: quiz (s3) · cartões (4) · qbefore-after (s2) · qanchor (s4) = 4 ≤ 5. Densidade: quadros em s2 e s4, não adjacentes.
+-->
+</section>
+
+<!-- ===== AULA 3 — O: Observar (FERRAMENTA) ===== -->
+<section class="view" id="v-aula-3" data-aula="3" data-tempo="21min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 02 · Aula 3 · O de Observar</p>
+    <h1>Onde nasce<br><em>a evidência</em></h1>
+    <p class="promise">Ao fim desta aula você consegue preencher 10 linhas da planilha de registro do seu processo — uma linha por execução, com a coluna que responde ao seu número — e apontar de onde cada linha vem. Essa planilha é a resposta 2 da ficha do loop.</p>
+    <p class="why">Sua empresa executa centenas de vezes por mês e não guarda quase nada disso. O resultado de cada proposta está no WhatsApp, na cabeça de quem mandou, no "acho que fechou". Tudo o que o loop vai aprender depende deste passo — e é o passo que ninguém acha importante até faltar.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <!-- herofig: METÁFORA — o caderno da recepção da clínica, onde cada proposta vira uma linha -->
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <rect x="40" y="36" width="220" height="176" rx="8" class="fp sl" stroke-width="2"/>
+    <line x1="60" y1="36" x2="60" y2="212" class="sw" stroke-width="1.5" opacity=".7"/>
+    <g class="sl" stroke-width="1"><line x1="40" y1="70" x2="260" y2="70"/><line x1="40" y1="96" x2="260" y2="96"/><line x1="40" y1="122" x2="260" y2="122"/><line x1="40" y1="148" x2="260" y2="148"/><line x1="40" y1="174" x2="260" y2="174"/></g>
+    <text x="70" y="58" class="ts">caderno de propostas</text>
+    <g class="tk"><text x="70" y="88">seg · Ana · pacote 3 sessões</text><text x="70" y="114">seg · Carla · pacote 5 sessões</text><text x="70" y="140">ter · Beatriz · avaliação</text><text x="70" y="166">ter · Dulce · pacote 3 sessões</text></g>
+    <g class="ta"><text x="226" y="88">resp.</text><text x="226" y="140">resp.</text></g>
+    <g class="tx"><text x="226" y="114">—</text><text x="226" y="166">—</text></g>
+    <rect x="70" y="182" width="120" height="14" rx="3" class="fa" opacity=".18"/>
+    <circle cx="272" cy="26" r="12" class="fb sl" stroke-width="2"/><path d="M272 18 v8 h6" class="sm" stroke-width="2"/>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> Evidência não é opinião: é uma linha por execução</h2>
+      <p>A terceira letra é <b>Observar</b>. É aqui que começa a inteligência do loop — e é um passo sem glamour: cada execução vira uma linha, com o resultado anotado. Nada de "acho que as propostas curtas funcionam melhor". A pergunta é: <b>quantas</b> foram curtas, e <b>quantas</b> dessas tiveram resposta?</p>
+      <p>Na clínica da Dra. Renata, as primeiras 200 propostas da versão 1 viraram 200 linhas. Somando a coluna "respondeu em 48h", deu 34. Ou seja: 17% de resposta. A ficha dizia 20% — era o número que ela "achava". A diferença de 3 pontos não é grande, mas é a primeira vez que o número saiu da cabeça dela e foi para o papel. Tudo o que o loop propuser a partir daí parte de 17%, não de 20%.</p>
+      <p>Pense no que uma clínica faz com a pressão arterial: não pergunta "você se sente pressionado?"; mede, anota, compara com a última medição. Evidência é a medição anotada. Opinião é o "me sinto".</p>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="ferramenta" data-versao="planilha de registro v0.1 · set/2026">
+      <h2><span class="n">02</span> As colunas da planilha de registro</h2>
+      <p>A <span class="gterm" tabindex="0" data-def="A planilha onde cada execução do processo vira uma linha: quando foi, qual versão do roteiro seguiu, e o que aconteceu. É a única fonte de evidência do loop no começo.">planilha de registro</span> é uma planilha comum — a que você já usa serve. O que muda é a disciplina: uma linha por execução, sempre as mesmas colunas. Ela é a resposta 2 da ficha do loop: "onde nasce a evidência".</p>
+      <p>Você vai ver abaixo o cabeçalho da planilha. Parece uma tabela de contador — e funciona como o caderno da recepção: cada coluna é uma pergunta que se responde uma vez por linha. As três primeiras dizem <i>o quê</i> e <i>quando</i>; as do meio dizem <i>qual versão</i>; as últimas dizem <i>o que aconteceu</i>. Você só preenche; os nomes das colunas não mudam.</p>
+      <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">id     data        versão  variante  respondeu  resultado  reclamou  observação
+L0041  2026-09-02  v1      A         sim        não        não       lead do portal, apto 2 quartos
+L0042  2026-09-02  v1      A         não        não        não
+L0043  2026-09-03  v1      A         sim        sim        não       visita marcada para sábado</pre></div>
+      <p>Marcos usa exatamente essas colunas. "id" é um código qualquer que ele inventa (L0041, L0042…); "versão" é o roteiro que ele seguiu (v1, por enquanto); "variante" fica "A" até existir um teste; "respondeu" é o número rápido dele; "resultado" é o número de dinheiro (fechou visita ou não); "reclamou" é o "sem piorar". A "observação" é livre — e é onde ele escreve "fora do roteiro" quando improvisa.</p>
+      <div class="qsteps">
+        <p class="qsk">Como preencher uma linha (30 segundos cada)</p>
+        <ol>
+          <li><b>Crie o id</b> na hora em que executa — antes de saber o resultado. Uma letra e um número bastam.</li>
+          <li><b>Anote a versão</b> que seguiu (v1). Se saiu do roteiro, escreva "fora do roteiro" na observação.</li>
+          <li><b>Deixe as colunas de resultado em branco</b> e volte quando o prazo passar (48h para resposta, 15 dias para fechar).</li>
+          <li><b>Responda sim ou não</b> — nunca "mais ou menos". Se a definição não cabe em sim/não, a coluna está mal definida.</li>
+        </ol>
+      </div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> A fonte é o gargalo — e a definição da coluna também</h2>
+      <p>Os assistentes do loop são a parte fácil. A parte difícil é que a evidência mora em lugares diferentes: no WhatsApp da clínica, na caixa de mensagens do portal, no sistema de chamados, na planilha do sócio, na cabeça do vendedor. <b>Onde nasce a evidência</b> é a pergunta 2 da ficha justamente porque ninguém a responde sozinho. Nenhum assistente vai buscar os dados no seu WhatsApp; alguém — você, a recepcionista, o próprio Executor quando ele escreve o artefato — tem que levar cada resultado até a linha.</p>
+      <p>E cada coluna precisa de uma definição que caiba em sim ou não. No suporte de Cláudio, "resolvido" parecia óbvio — até aparecerem os chamados fechados pelo atendente sem o cliente concordar. A definição virou: "resolvido = o cliente não reabriu em 7 dias". Na clínica, "respondeu" virou "respondeu em 48h com algo que não seja recusa": um "não, obrigada" conta como resposta? Pela definição, não. Sem essa frase, a versão que provoca mais "não, obrigada" pareceria vencedora.</p>
+      <div class="quiz" data-answer="a">
+        <p class="qk">Teste-se</p><p class="q">Marcos definiu a coluna "respondeu" como "o lead mandou qualquer mensagem de volta". Qual é o risco dessa definição?</p>
+        <button class="opt" data-k="a" data-fb="Uma versão mais insistente gera mais 'pare de me mandar mensagem' — e cada uma conta como resposta. O número sobe enquanto o negócio piora.">"pare de me mandar mensagem" conta como resposta</button>
+        <button class="opt" data-k="b" data-fb="Volume de mensagens é a mesma coisa nas duas definições; o problema não é quantidade, é o que se conta.">ele vai receber mensagens demais</button>
+        <button class="opt" data-k="c" data-fb="A coluna continua sim/não — o problema não está no formato, está no que 'sim' significa.">a coluna deixa de ser sim/não</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="fundamento">
+      <h2><span class="n">04</span> Quantas linhas até a planilha dizer alguma coisa</h2>
+      <p>Dez linhas servem para aprender a preencher. Não servem para concluir nada. O loop só aceita afirmar um padrão com pelo menos <b>30 linhas do mesmo tipo</b> — e trata como forte a partir de 90. Abaixo disso, o que parece padrão é quase sempre acaso, e a planilha guarda a observação numa lista separada, "observado, não testado", para reexaminar quando houver mais linhas.</p>
+      <p>Marcos, com 12 leads registrados, notou que "os de terça-feira respondem mais". Três dos quatro de terça responderam; dos outros oito, só dois. Parece um padrão. Com 12 linhas, não é nada: basta um lead trocar de dia para a "descoberta" desaparecer. A anotação ficou na lista de observados. Oito semanas depois, com 160 linhas, terça-feira não era diferente de nenhum outro dia.</p>
+      <div class="qerr">
+        <p class="qk">Erro comum</p>
+        <p class="qerr-txt"><b>Doze propostas viraram regra.</b> Acontece porque as primeiras linhas são as mais empolgantes — pela primeira vez há um número, e ele parece dizer algo. Como evitar: nenhuma afirmação com menos de 30 linhas do mesmo tipo; abaixo disso, a observação vai para "observado, não testado" e espera. O loop faz essa contagem por você; a sua parte é não pular na frente dele.</p>
+      </div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p3" data-mode="tarefa">
+      <p class="pk">Pratique agora <span class="pcount">0/4 feito</span></p>
+      <h3 class="ph">Preencha as 10 primeiras linhas da sua planilha de registro</h3>
+      <p class="pgoal">Sair com uma planilha (a que você já usa) com o cabeçalho abaixo e 10 linhas das últimas 10 execuções do seu processo — cerca de 12 min.</p>
+      <p class="psafe">Nada muda no seu negócio até você aprovar: a planilha só descreve o que já aconteceu. Se errar uma linha, apague e refaça; se descobrir que uma coluna não cabe em sim/não, é sinal de que a definição precisa de uma frase a mais — não de que você fez errado.</p>
+      <p>Copie o cabeçalho abaixo para a primeira linha da sua planilha. Cada palavra vira uma coluna; a coluna "respondeu" recebe o nome do seu número rápido, e "resultado" o do seu número de dinheiro. Depois preencha uma linha por execução, começando pela mais recente.</p>
+      <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">id   data   versão   variante   &lt;seu número rápido: respondeu&gt;   &lt;seu número de dinheiro: resultado&gt;   &lt;seu sem piorar: reclamou&gt;   observação</pre></div>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Cole o cabeçalho e escreva, numa linha à parte, a definição em sim/não de cada coluna de resultado ("respondeu = mandou mensagem em 48h que não seja recusa").</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Pegue as últimas 10 execuções (as 10 últimas propostas, os 10 últimos leads, os 10 últimos chamados) e preencha id, data e versão (v1) de cada uma.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Preencha as colunas de resultado conferindo na fonte (WhatsApp, portal, sistema de chamados) — não de memória. Ficou pronto quando as 10 linhas têm sim ou não em todas as colunas de resultado.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="4"> <span>Escreva, embaixo da planilha, de onde cada resultado veio ("respondeu: conferido no WhatsApp"). Essa frase é a resposta 2 da ficha.</span></label></li>
+      </ol>
+      <p class="pdone">Você acabou de criar a fonte de evidência do seu loop: 10 linhas conferidas na origem, com definições que cabem em sim ou não. A partir daqui, cada execução nova é só mais uma linha.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> Execuções viram linhas; linhas viram uma contagem; a contagem vira um número. O 'acho que' fica de fora do caminho."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <g class="fp sl" stroke-width="1.2"><rect x="14" y="30" width="60" height="9" rx="2"/><rect x="14" y="44" width="60" height="9" rx="2"/><rect x="14" y="58" width="60" height="9" rx="2"/><rect x="14" y="72" width="60" height="9" rx="2"/><rect x="14" y="86" width="60" height="9" rx="2"/><rect x="14" y="100" width="60" height="9" rx="2"/><rect x="14" y="114" width="60" height="9" rx="2"/><rect x="14" y="128" width="60" height="9" rx="2"/></g>
+        <text x="44" y="156" text-anchor="middle" class="tx">200 linhas</text>
+        <path d="M80 84 h24" class="sa" stroke-width="1.5"/><path d="M100 80 l6 4 l-6 4" class="sa" stroke-width="1.5"/>
+        <rect x="110" y="62" width="44" height="44" rx="8" class="fp sl" stroke-width="1.5"/><text x="132" y="80" text-anchor="middle" class="tx">soma</text><text x="132" y="94" text-anchor="middle" class="tk">34 sim</text>
+        <path d="M156 84 h24" class="sa" stroke-width="1.5"/><path d="M176 80 l6 4 l-6 4" class="sa" stroke-width="1.5"/>
+        <text x="200" y="88" text-anchor="middle" class="ta" style="font-size:16px">17%</text>
+        <text x="200" y="104" text-anchor="middle" class="tx">não 20%</text>
+        <line x1="120" y1="150" x2="200" y2="150" class="sw" stroke-width="1.2" stroke-dasharray="3 3"/><text x="160" y="166" text-anchor="middle" class="tw">"acho que…" não passa aqui</text>
+      </svg></div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> As colunas se dividem em três grupos: o quê e quando · qual versão · o que aconteceu. As do último grupo respondem só sim ou não."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="10" y="40" width="200" height="110" rx="8" class="fp sl" stroke-width="1.5"/>
+        <rect x="10" y="40" width="64" height="110" class="fa" opacity=".08"/><rect x="74" y="40" width="56" height="110" class="fw" opacity=".08"/><rect x="130" y="40" width="80" height="110" class="fa" opacity=".16"/>
+        <g class="tx"><text x="42" y="30" text-anchor="middle">o quê · quando</text><text x="102" y="30" text-anchor="middle">versão</text><text x="170" y="30" text-anchor="middle">o que aconteceu</text></g>
+        <line x1="10" y1="62" x2="210" y2="62" class="sl"/>
+        <g class="tk"><text x="18" y="56">id · data</text><text x="80" y="56">v1 · A</text><text x="138" y="56">resp · result · recl</text></g>
+        <g class="tx"><text x="18" y="84">L0041 09-02</text><text x="18" y="106">L0042 09-02</text><text x="18" y="128">L0043 09-03</text><text x="80" y="84">v1 A</text><text x="80" y="106">v1 A</text><text x="80" y="128">v1 A</text></g>
+        <g class="ta"><text x="138" y="84">sim</text><text x="138" y="128">sim</text><text x="166" y="128">sim</text></g>
+        <g class="tx"><text x="138" y="106">não</text><text x="166" y="84">não</text><text x="166" y="106">não</text><text x="192" y="84">não</text><text x="192" y="106">não</text><text x="192" y="128">não</text></g>
+        <text x="110" y="176" text-anchor="middle" class="tx">uma linha por execução · sim ou não, nunca "mais ou menos"</text>
+      </svg></div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> A evidência nasce em lugares diferentes e alguém tem que levá-la até a planilha. No caminho, cada resultado passa por uma definição em sim/não."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <g class="fp sl" stroke-width="1.5"><rect x="12" y="20" width="64" height="26" rx="6"/><rect x="12" y="62" width="64" height="26" rx="6"/><rect x="12" y="104" width="64" height="26" rx="6"/><rect x="12" y="146" width="64" height="26" rx="6"/></g>
+        <g class="tx"><text x="44" y="37" text-anchor="middle">WhatsApp</text><text x="44" y="79" text-anchor="middle">portal</text><text x="44" y="121" text-anchor="middle">chamados</text><text x="44" y="163" text-anchor="middle">memória</text></g>
+        <g class="sm" stroke-width="1.2"><path d="M76 33 c30 0 30 63 50 63 M76 75 c20 0 20 21 50 21 M76 117 c20 0 20 -21 50 -21 M76 159 c30 0 30 -63 50 -63"/></g>
+        <rect x="126" y="80" width="40" height="32" rx="6" class="fw" opacity=".18"/><rect x="126" y="80" width="40" height="32" rx="6" class="sw" stroke-width="1.5"/><text x="146" y="93" text-anchor="middle" class="tw">definição</text><text x="146" y="105" text-anchor="middle" class="tx">sim/não</text>
+        <path d="M166 96 h14" class="sa" stroke-width="1.5"/>
+        <rect x="180" y="70" width="32" height="52" rx="5" class="fp sa" stroke-width="1.5"/><g class="sa" stroke-width="1"><line x1="186" y1="82" x2="206" y2="82"/><line x1="186" y1="92" x2="206" y2="92"/><line x1="186" y1="102" x2="206" y2="102"/><line x1="186" y1="112" x2="206" y2="112"/></g>
+        <line x1="60" y1="150" x2="70" y2="168" class="sw" stroke-width="1.5"/><line x1="70" y1="150" x2="60" y2="168" class="sw" stroke-width="1.5"/>
+      </svg></div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> Com 12 linhas, qualquer coisa parece padrão. O loop só afirma a partir de 30, e só chama de forte a partir de 90. Abaixo disso: 'observado, não testado'."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <line x1="20" y1="150" x2="205" y2="150" class="sl" stroke-width="1.5"/>
+        <rect x="30" y="126" width="34" height="24" rx="3" class="fw" opacity=".6"/><text x="47" y="166" text-anchor="middle" class="tx">12</text><text x="47" y="118" text-anchor="middle" class="tw">acaso</text>
+        <rect x="90" y="90" width="34" height="60" rx="3" class="fa" opacity=".45"/><text x="107" y="166" text-anchor="middle" class="tx">30</text><text x="107" y="82" text-anchor="middle" class="ta">moderada</text>
+        <rect x="150" y="30" width="34" height="120" rx="3" class="fa" opacity=".8"/><text x="167" y="166" text-anchor="middle" class="tx">90</text><text x="167" y="22" text-anchor="middle" class="ta">forte</text>
+        <text x="112" y="188" text-anchor="middle" class="tx">linhas do mesmo tipo</text>
+      </svg></div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>Observar é transformar cada execução em uma linha com resultado anotado. É o passo menos glamouroso do loop e o que sustenta todos os outros.</li>
+    <li>A planilha de registro é uma planilha comum, com colunas fixas: o quê e quando, qual versão, o que aconteceu — e as colunas de resultado só aceitam sim ou não.</li>
+    <li>A evidência mora em lugares diferentes e alguém tem que levá-la até a linha; a definição de cada coluna decide o que conta e o que não conta.</li>
+    <li>Dez linhas ensinam a preencher; só a partir de 30 do mesmo tipo o loop aceita afirmar um padrão. Antes disso, a observação espera.</li>
+  </ul>
+</div>
+
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir tirar o resultado do seu processo da cabeça e colocar em 10 linhas conferidas na fonte.</p>
+  <p class="na-action">Nos próximos 15 minutos, no seu trabalho de verdade: combine com quem executa o processo quem preenche a linha e em que momento ("a recepcionista, na hora em que manda a proposta"). Sem dono e sem momento, a planilha para na linha 11.</p>
+  <p class="na-hook">Na próxima aula, você resolve o que vem depois das linhas: transformar "83% não respondem" numa hipótese que pode ser testada — no formato SE, ENTÃO, PORQUE.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#aula-2">← aula 2</a><a href="#aula-4">aula 4 →</a></nav>
+<footer>Aula 3 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-3">
+[
+  {"front":"Dra. Renata tem certeza de que sua taxa de resposta é 20%. As 200 linhas da planilha dizem 17%. Qual número o loop usa como ponto de partida, e por quê?","back":"17%. O loop parte do que foi contado, não do que se acredita. A diferença pequena importa menos que o fato: o número saiu da cabeça e foi para a linha."},
+  {"front":"Cláudio quer uma coluna 'satisfação do cliente' com nota de 1 a 10 na planilha de registro. O que está errado, e como corrigir?","back":"Coluna de resultado precisa caber em sim/não. Corrigir: 'cliente respondeu à pesquisa com 9 ou 10?' ou 'cliente não reabriu em 7 dias?' — uma definição que dê sim ou não."},
+  {"front":"Marcos, com 12 leads registrados, quer mudar o roteiro porque 'terça-feira responde mais'. O que a planilha faz com essa observação?","back":"Guarda em 'observado, não testado'. Com menos de 30 linhas do mesmo tipo, é acaso; a observação é reexaminada quando houver linhas suficientes — no caso dele, com 160 linhas o padrão sumiu."},
+  {"front":"Qual é a diferença entre a coluna 'id' e a coluna 'observação' — e qual das duas você preenche antes de saber o resultado?","back":"O id é criado na hora da execução, antes de qualquer resultado, para que nenhuma linha se perca. A observação é livre e recebe coisas como 'fora do roteiro' — pode vir depois."}
+]
+</script>
+
+<!-- COMPLETUDE aula-3 | tipo=FERRAMENTA | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo 21min no view + render no cold-open pelo motor (1) — 1.550/200 + 12 + 0,5 = 20,2 → 21
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4): s1 Dra. Renata clínica · s2 Marcos corretor · s3 Cláudio suporte + Dra. Renata · s4 Marcos
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4) — data-fig 1..4 com data-cap
+  [OK] practice           .practice[data-mode="tarefa"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com "cerca de 12 min" (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-3"> presente (4 cartões: decisão / diagnóstico / aplicação / contraste)
+  [OK] anti-duplicacao    §11.3 — substring ≥6 palavras: nenhuma · forma: 4/4 · operação: recap afirma, cartões decidem/diagnosticam
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); teste-se opcional presente (1 pergunta, s3)
+  Pool dosado: qsteps (s2) · qerr (s4) · quiz opcional (s3) · cartões (4) = 4 ≤ 5. Densidade: quadros em s2 e s4, não adjacentes. Rampa antes dos dois <pre> (s2 e prática).
+-->
+</section>
+
+<!-- ===== AULA 4 — P: Propor (FUNDAMENTO) ===== -->
+<section class="view" id="v-aula-4" data-aula="4" data-tempo="20min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 02 · Aula 4 · P de Propor</p>
+    <h1>Da evidência<br><em>à hipótese</em></h1>
+    <p class="promise">Ao fim desta aula você consegue escrever 3 hipóteses no formato SE / ENTÃO / PORQUE, cada uma apontando para um número da sua planilha, e dizer qual das três tem a evidência mais forte.</p>
+    <p class="why">Você já tem ideias de sobra para melhorar o processo — o problema é que são ideias, não hipóteses. "Deixar a proposta mais curta" não pode ser testada nem reprovada. Uma hipótese diz o que muda, quanto espera mudar e por que — e é a única coisa que o loop aceita levar para o teste.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <!-- herofig: METÁFORA — o quadro branco da sala da imobiliária com três cartões colados: SE / ENTÃO / PORQUE -->
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <rect x="28" y="30" width="244" height="170" rx="8" class="fp sl" stroke-width="2"/>
+    <rect x="28" y="200" width="244" height="10" rx="3" class="fm" opacity=".5"/>
+    <rect x="48" y="56" width="62" height="54" rx="4" class="fa" opacity=".22"/><rect x="48" y="56" width="62" height="54" rx="4" class="sa" stroke-width="1.5"/>
+    <text x="79" y="78" text-anchor="middle" class="ts">SE</text><text x="79" y="96" text-anchor="middle" class="tx">≤ 80 palavras</text>
+    <rect x="120" y="56" width="62" height="54" rx="4" class="fa" opacity=".22"/><rect x="120" y="56" width="62" height="54" rx="4" class="sa" stroke-width="1.5"/>
+    <text x="151" y="78" text-anchor="middle" class="ts">ENTÃO</text><text x="151" y="96" text-anchor="middle" class="tx">17% → 22%</text>
+    <rect x="192" y="56" width="62" height="54" rx="4" class="fw" opacity=".22"/><rect x="192" y="56" width="62" height="54" rx="4" class="sw" stroke-width="1.5"/>
+    <text x="223" y="78" text-anchor="middle" class="ts">PORQUE</text><text x="223" y="96" text-anchor="middle" class="tx">166/200 sem resp.</text>
+    <g class="sm" stroke-width="2"><line x1="56" y1="134" x2="200" y2="134"/><line x1="56" y1="152" x2="160" y2="152"/><line x1="56" y1="170" x2="230" y2="170"/></g>
+    <circle cx="79" cy="56" r="4" class="fw"/><circle cx="151" cy="56" r="4" class="fw"/><circle cx="223" cy="56" r="4" class="fw"/>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> A crítica vem antes da ideia</h2>
+      <p>A quarta letra é <b>Propor</b>. Mas propor não começa com criatividade; começa com uma leitura fria do que a planilha mostrou. No loop, essa leitura tem dono: o <b>Crítico</b>, um assistente com uma função só, que olha a evidência e diz o que funcionou, o que falhou e com que força a evidência sustenta cada afirmação. Ele não sugere solução. Só diagnostica.</p>
+      <p>Sobre as 200 propostas da clínica da Dra. Renata, o Crítico apontou: 166 das 200 não tiveram resposta em 48 horas (83%); o custo e o tempo por proposta eram estáveis (cerca de 5 minutos e meio cada); e a versão 1 terminava com "à disposição para dúvidas" — sem pedir nada à cliente. Três frases, três números. Nenhuma sugestão. Só depois disso alguém propõe.</p>
+      <p>É a ordem do mecânico: primeiro o diagnóstico ("o barulho vem da suspensão dianteira"), depois o orçamento. Quem propõe antes de diagnosticar troca peça boa.</p>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> SE, ENTÃO, PORQUE — o formato que pode ser reprovado</h2>
+      <p>Uma hipótese no LOOP-R tem três partes obrigatórias. <b>SE</b>: o que muda no roteiro, de forma concreta. <b>ENTÃO</b>: qual número muda, de quanto para quanto. <b>PORQUE</b>: qual evidência da planilha sustenta a aposta. E uma quarta, prática: a <b>MUDANÇA</b> — a alteração exata no texto da versão atual, para que o Executor consiga seguir.</p>
+      <p>Aqui está a segunda hipótese real do loop da clínica, como o Otimizador a escreveu: <b>SE</b> for acrescentada em Regras a exigência de no máximo 80 palavras no total, <b>ENTÃO</b> a taxa de resposta deve ir de 17% (200 propostas) para pelo menos 22%, <b>PORQUE</b> 83% das propostas não geram resposta e a estrutura em 5 blocos produz uma mensagem longa para WhatsApp; encurtar reduz o custo de leitura antes do preço. <b>MUDANÇA</b>: em "Regras", acrescentar a linha "máximo de 80 palavras no total da mensagem".</p>
+      <div class="qbefore-after">
+        <div class="qba-col qba-before"><p class="qba-lbl">Antes</p><p class="qba-txt">"IA, deixe a proposta mais curta e melhor." Não diz quanto é curta, o que é melhor, nem por quê. Se der certo ou errado, ninguém saberá.</p></div>
+        <div class="qba-col qba-depois"><p class="qba-lbl">Depois</p><p class="qba-txt">"SE máximo de 80 palavras, ENTÃO resposta de 17% para ≥22%, PORQUE 166 de 200 não respondem e a mensagem é longa." Pode ser testada, pode perder.</p></div>
+        <p class="qba-saldo">Saldo: a hipótese de baixo <b>pode ser reprovada</b> por 300 linhas da planilha. A de cima não pode nem estar errada — e por isso nunca melhora nada.</p>
+      </div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> Toda hipótese carrega a força da evidência</h2>
+      <p>Nem toda hipótese nasce igual. O Crítico rotula cada afirmação: <b>forte</b> quando se apoia em 90 ou mais linhas do mesmo tipo; <b>moderada</b> a partir de 30; <b>fraca</b> abaixo disso. A força decide a fila: hipóteses fortes vão para o teste primeiro; as fracas ficam na lista "observado, não testado" até a planilha crescer. Você só pode testar uma coisa de cada vez — a força diz qual.</p>
+      <p>Marcos tinha duas ideias. A primeira: "leads que pedem o valor na primeira mensagem fecham menos visita" — vinha de 25 leads, força fraca; foi para a lista de espera. A segunda: "a resposta atual não termina pedindo nada" — vinha das 130 linhas registradas até ali, 101 sem resposta em 24 horas; força forte. A hipótese que foi para o teste foi a segunda: SE a primeira resposta terminar com uma pergunta única ("prefere visitar esta semana ou na próxima?"), ENTÃO a taxa de resposta em 24h deve ir de 22% para pelo menos 28%, PORQUE 101 de 130 leads não respondem e o texto atual não pede resposta.</p>
+      <div class="quiz" data-answer="b">
+        <p class="qk">Teste-se</p><p class="q">Dra. Renata tem uma hipótese forte (166 de 200 sem resposta) e uma ideia que ela adora, vinda de 9 clientes que elogiaram o tom "mais íntimo". O que o loop faz com a segunda?</p>
+        <button class="opt" data-k="a" data-fb="Testar duas coisas ao mesmo tempo impede saber qual delas causou a diferença — e 9 casos não sustentam nem a fila.">testa as duas juntas, para aproveitar o ciclo</button>
+        <button class="opt" data-k="b" data-fb="Nove casos é força fraca. A ideia vai para 'observado, não testado' e volta quando houver 30 linhas do mesmo tipo — a hipótese forte testa primeiro.">guarda em "observado, não testado" e testa a forte</button>
+        <button class="opt" data-k="c" data-fb="Descartar apaga uma observação que pode virar hipótese depois. O loop guarda; não descarta o que ainda não foi testado.">descarta, porque 9 é pouco</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="fundamento">
+      <h2><span class="n">04</span> Uma hipótese ainda não é regra</h2>
+      <p>Escrever a hipótese é o fim desta letra, não do loop. Ela ainda vai passar por duas portas. A primeira é o <b>Guardião</b>: um assistente que confere se a mudança toca em algo que nunca pode mudar sozinho ou pressiona um "sem piorar". Se tocar, ele veta — e o veto é final. A segunda porta é o teste da próxima aula. Só o que passa pelas duas vira versão oficial.</p>
+      <p>No suporte de Cláudio, 37% dos chamados de um mês eram sobre o mesmo problema: a tela de pagamento que não carregava. A hipótese foi limpa: SE a primeira resposta a esse tipo de chamado trouxer os três passos que resolvem em 80% dos casos, ENTÃO a resolução no primeiro contato deve ir de 58% para pelo menos 65%, PORQUE 112 de 300 chamados são esse problema e hoje a resposta padrão só pede mais informações. Passou pelo Guardião. Já na clínica, a primeira hipótese do ciclo — encerrar a proposta com uma única pergunta de fechamento, do tipo "prefere começar esta semana ou na próxima?" — foi vetada antes de qualquer teste. A mesma ideia que passou para Marcos parou ali: a ficha da Dra. Renata tinha tolerância zero para reclamações, e uma escolha forçada na mensagem pressiona exatamente esse número. O Guardião lê a ficha de cada loop, não uma regra geral.</p>
+      <p>Uma hipótese que parece ótima e é vetada não é fracasso. É o loop dizendo que a ficha foi levada a sério.</p>
+      <div class="qanchor"><p>Uma ideia que não pode ser reprovada também não pode melhorar nada.</p></div>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p4" data-mode="prompt">
+      <p class="pk">Pratique agora <span class="pcount">0/4 feito</span></p>
+      <h3 class="ph">Peça 3 hipóteses ao seu chat de IA — no formato, a partir das suas 10 linhas</h3>
+      <p class="pgoal">Sair com 3 hipóteses no formato SE / ENTÃO / PORQUE / MUDANÇA, cada uma com força marcada, escritas a partir da sua planilha da aula 3 — cerca de 10 min.</p>
+      <p class="psafe">Nada muda no seu negócio até você aprovar: uma hipótese é uma frase num bloco de notas. Nenhuma delas altera o roteiro, nenhuma vai para teste sem passar pelo Guardião e por você. Se a IA sugerir algo que toca no que nunca muda, risque e peça outra.</p>
+      <p>O texto abaixo é um <span class="gterm" tabindex="0" data-def="A instrução que você cola no chat de IA. Aqui, ela faz a IA agir como o Otimizador: só propõe hipóteses no formato, a partir dos números que você der.">prompt</span> — uma instrução pronta para colar no chat de IA que você já usa. Ele parece longo porque faz o papel do Otimizador: dá o formato, os números e as regras. Você só troca o que está entre &lt; &gt; pelos seus dados; o resto fica como está.</p>
+      <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Você é o Otimizador de um loop de melhoria. Só propõe hipóteses; não executa, não avalia.
+
+Processo: &lt;responder o primeiro contato de lead de portal&gt;
+Versão atual (roteiro, 6 linhas):
+&lt;cole aqui as 6 linhas da sua versão 1&gt;
+
+Evidência (minhas últimas linhas registradas):
+- linhas registradas: &lt;10&gt;
+- número rápido: &lt;respondeu em 24h&gt; = &lt;2 de 10&gt;
+- número de dinheiro: &lt;visita marcada&gt; = &lt;1 de 10&gt;
+- sem piorar: &lt;pediu para parar&gt; = &lt;0 de 10&gt;
+- o que eu observei: &lt;7 dos 8 que não responderam receberam texto sem pergunta no fim&gt;
+
+Regras:
+1. Escreva exatamente 3 hipóteses, cada uma com SE / ENTÃO / PORQUE / MUDANÇA.
+2. ENTÃO precisa citar o número rápido, de quanto para quanto.
+3. PORQUE só pode usar a evidência acima. Se a evidência for de menos de 30 linhas, marque FORÇA: fraca.
+4. MUDANÇA é o texto exato a alterar na versão atual, em uma linha.
+5. Nenhuma hipótese pode tocar em: &lt;desconto acima de 10% · prometer prazo&gt;.</pre></div>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Troque tudo o que está entre &lt; &gt; pelos seus dados da aula 3 e cole no chat de IA.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Confira cada hipótese: tem SE, ENTÃO com número, PORQUE apontando para a sua evidência, e MUDANÇA em uma linha? Se faltar algo, peça de novo só aquela parte.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Marque a força de cada uma: com 10 linhas, todas são fracas — e está certo. Ficou pronto quando as três têm "FORÇA: fraca" e você sabe por quê.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="4"> <span>Faça o papel do Guardião: alguma das três toca no que nunca muda ou pressiona o seu "sem piorar"? Risque essa e anote o motivo.</span></label></li>
+      </ol>
+      <p class="pdone">Você acabou de escrever três hipóteses que podem ser reprovadas — o que separa uma ideia de um experimento. Quando a planilha passar de 30 linhas, a força delas muda e a primeira vai para o teste.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> A evidência passa pelo Crítico antes de virar proposta. O Crítico só diz o que funcionou e o que falhou — a seta para 'solução' não sai dele."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="12" y="70" width="52" height="60" rx="6" class="fp sl" stroke-width="1.5"/><g class="sl" stroke-width="1"><line x1="20" y1="84" x2="56" y2="84"/><line x1="20" y1="96" x2="56" y2="96"/><line x1="20" y1="108" x2="56" y2="108"/><line x1="20" y1="120" x2="56" y2="120"/></g><text x="38" y="150" text-anchor="middle" class="tx">planilha</text>
+        <path d="M64 100 h20" class="sa" stroke-width="1.5"/>
+        <rect x="84" y="76" width="56" height="48" rx="8" class="fa" opacity=".16"/><rect x="84" y="76" width="56" height="48" rx="8" class="sa" stroke-width="2"/><text x="112" y="96" text-anchor="middle" class="ta">Crítico</text><text x="112" y="110" text-anchor="middle" class="tx">diagnostica</text>
+        <path d="M140 100 h20" class="sa" stroke-width="1.5"/>
+        <rect x="160" y="60" width="50" height="80" rx="6" class="fp sl" stroke-width="1.5"/><g class="tx"><text x="185" y="80" text-anchor="middle">166/200</text><text x="185" y="92" text-anchor="middle">sem resp.</text><text x="185" y="110" text-anchor="middle">5,5 min</text><text x="185" y="122" text-anchor="middle">estável</text></g><text x="185" y="156" text-anchor="middle" class="tx">o que falhou</text>
+        <path d="M112 124 v30" class="sw" stroke-width="1.2" stroke-dasharray="3 3"/><line x1="104" y1="150" x2="120" y2="166" class="sw" stroke-width="1.5"/><line x1="120" y1="150" x2="104" y2="166" class="sw" stroke-width="1.5"/><text x="112" y="184" text-anchor="middle" class="tw">não sugere</text>
+      </svg></div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> Os três encaixes da hipótese, mais a mudança. Cada um responde uma pergunta — e o ENTÃO é o que o teste vai conferir."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="14" y="20" width="192" height="34" rx="6" class="fp sa" stroke-width="1.5"/><text x="24" y="34" class="ta">SE</text><text x="24" y="47" class="tx">o que muda no roteiro</text>
+        <rect x="14" y="62" width="192" height="34" rx="6" class="fp sa" stroke-width="1.5"/><text x="24" y="76" class="ta">ENTÃO</text><text x="24" y="89" class="tx">qual número, de quanto para quanto</text>
+        <rect x="14" y="104" width="192" height="34" rx="6" class="fp sw" stroke-width="1.5"/><text x="24" y="118" class="tw">PORQUE</text><text x="24" y="131" class="tx">qual linha da planilha sustenta</text>
+        <rect x="14" y="146" width="192" height="34" rx="6" class="fp sl" stroke-width="1.5"/><text x="24" y="160" class="tk">MUDANÇA</text><text x="24" y="173" class="tx">o texto exato a alterar</text>
+        <text x="200" y="89" text-anchor="end" class="ta">← o teste confere isto</text>
+      </svg></div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> A força vem do número de linhas que sustentam a hipótese. Forte vai para o teste; fraca espera na lista 'observado, não testado'."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="14" y="26" width="120" height="30" rx="6" class="fp sl" stroke-width="1.5"/><text x="24" y="40" class="tk">"pede valor → fecha menos"</text><text x="24" y="51" class="tw">25 linhas · fraca</text>
+        <path d="M134 41 h30" class="sw" stroke-width="1.5" stroke-dasharray="3 3"/><rect x="164" y="26" width="44" height="30" rx="6" class="fw" opacity=".18"/><rect x="164" y="26" width="44" height="30" rx="6" class="sw" stroke-width="1.2"/><text x="186" y="38" text-anchor="middle" class="tx">lista de</text><text x="186" y="49" text-anchor="middle" class="tx">espera</text>
+        <rect x="14" y="96" width="120" height="30" rx="6" class="fa" opacity=".14"/><rect x="14" y="96" width="120" height="30" rx="6" class="sa" stroke-width="1.5"/><text x="24" y="110" class="tk">"não pede resposta no fim"</text><text x="24" y="121" class="ta">130 linhas · forte</text>
+        <path d="M134 111 h30" class="sa" stroke-width="1.5"/><path d="M160 107 l6 4 l-6 4" class="sa" stroke-width="1.5"/><rect x="164" y="96" width="44" height="30" rx="6" class="fa" opacity=".3"/><rect x="164" y="96" width="44" height="30" rx="6" class="sa" stroke-width="1.5"/><text x="186" y="115" text-anchor="middle" class="ta">teste</text>
+        <text x="110" y="170" text-anchor="middle" class="tx">fraca &lt; 30 · moderada ≥ 30 · forte ≥ 90 linhas</text>
+      </svg></div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> Entre a hipótese e a versão oficial há duas portas: o Guardião (veta o que toca o que nunca muda) e o teste. Só o que passa pelas duas entra."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="10" y="80" width="50" height="40" rx="6" class="fp sl" stroke-width="1.5"/><text x="35" y="104" text-anchor="middle" class="tx">hipótese</text>
+        <path d="M60 100 h18" class="sa" stroke-width="1.5"/>
+        <rect x="78" y="70" width="12" height="60" rx="3" class="fw" opacity=".5"/><rect x="78" y="70" width="12" height="60" rx="3" class="sw" stroke-width="1.2"/><text x="84" y="150" text-anchor="middle" class="tw">Guardião</text>
+        <path d="M90 100 h18" class="sa" stroke-width="1.5"/>
+        <rect x="108" y="70" width="12" height="60" rx="3" class="fa" opacity=".4"/><rect x="108" y="70" width="12" height="60" rx="3" class="sa" stroke-width="1.2"/><text x="114" y="150" text-anchor="middle" class="ta">teste</text>
+        <path d="M120 100 h18" class="sa" stroke-width="1.5"/><path d="M134 96 l6 4 l-6 4" class="sa" stroke-width="1.5"/>
+        <rect x="142" y="80" width="68" height="40" rx="6" class="fa" opacity=".16"/><rect x="142" y="80" width="68" height="40" rx="6" class="sa" stroke-width="2"/><text x="176" y="98" text-anchor="middle" class="ta">versão</text><text x="176" y="110" text-anchor="middle" class="ta">oficial</text>
+        <path d="M84 70 v-30 h-30" class="sw" stroke-width="1.2" stroke-dasharray="3 3"/><text x="50" y="36" text-anchor="end" class="tw">veto: volta</text>
+        <text x="110" y="184" text-anchor="middle" class="tx">"pergunta de fechamento" parou na 1ª porta (tolerância zero)</text>
+      </svg></div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>Propor começa com o Crítico lendo a planilha e dizendo o que falhou, com números — sem sugerir nada. A ideia vem depois do diagnóstico.</li>
+    <li>A hipótese tem três encaixes fixos, SE / ENTÃO / PORQUE, mais a MUDANÇA exata no roteiro. O formato existe para que ela possa perder no teste.</li>
+    <li>Cada hipótese carrega a força da evidência: forte testa primeiro; fraca espera na lista "observado, não testado" até a planilha crescer.</li>
+    <li>Hipótese ainda não é regra. Antes de virar versão oficial ela passa pelo Guardião, que veta o que toca no que nunca muda, e pelo teste da próxima aula.</li>
+  </ul>
+</div>
+
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de conseguir transformar uma ideia em uma hipótese que pode ser reprovada — com número, com evidência e com a mudança exata.</p>
+  <p class="na-action">Nos próximos 15 minutos, no seu trabalho de verdade: leia as suas 3 hipóteses para a pessoa que executa o processo e pergunte só uma coisa: "a MUDANÇA está clara o bastante para você seguir sem me perguntar nada?". Reescreva a que não estiver.</p>
+  <p class="na-hook">Na próxima aula, você resolve a pergunta que todo mundo responde errado: a versão nova ganhou? Você vai ler um resultado real — 19,3% contra 29,7% — e descobrir por que a resposta não é a que parece.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#aula-3">← aula 3</a><a href="#aula-5">aula 5 →</a></nav>
+<footer>Aula 4 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-4">
+[
+  {"front":"Marcos escreve: 'SE a resposta for mais simpática, ENTÃO mais leads vão responder.' O que está faltando para isso ser uma hipótese do loop?","back":"Tudo o que a torna reprovável: SE concreto (o que muda no texto), ENTÃO com número (de 22% para ≥28%), PORQUE apontando para linhas da planilha, e a MUDANÇA exata no roteiro."},
+  {"front":"Duas hipóteses da Dra. Renata: uma sustentada por 166 de 200 linhas, outra por 9 elogios. Qual vai para o teste primeiro e o que acontece com a outra?","back":"A de 200 linhas (força forte) testa primeiro. A de 9 vai para 'observado, não testado' e é reexaminada quando houver pelo menos 30 linhas do mesmo tipo."},
+  {"front":"O Guardião vetou a hipótese preferida de Cláudio antes de qualquer teste. Isso é sinal de que o loop está funcionando ou falhando?","back":"Funcionando: o Guardião existe para barrar mudanças que encostam nas invariáveis da ficha ou pressionam um 'sem piorar'. Um veto antes do teste economiza um ciclo inteiro e prova que a ficha está sendo respeitada."},
+  {"front":"Qual é a diferença entre o que o Crítico entrega e o que o Otimizador entrega?","back":"O Crítico entrega o diagnóstico: o que funcionou, o que falhou, com que força — sem solução. O Otimizador entrega as hipóteses no formato SE / ENTÃO / PORQUE / MUDANÇA, a partir desse diagnóstico."}
+]
+</script>
+
+<!-- COMPLETUDE aula-4 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo 20min no view + render no cold-open pelo motor (1) — 1.729/200 + 10 + 0,5 = 19,2 → 20
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4): s1 Dra. Renata clínica · s2 Dra. Renata (H2 real) · s3 Marcos corretor · s4 Cláudio suporte + Dra. Renata (H1 vetada, real)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4) — data-fig 1..4 com data-cap
+  [OK] practice           .practice[data-mode="prompt"] (exatamente 1) — rampa antes do <pre>, "prompt" definido inline + .gterm
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com "cerca de 10 min" (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-4"> presente (4 cartões: diagnóstico / decisão / diagnóstico / contraste)
+  [OK] anti-duplicacao    §11.3 — substring ≥6 palavras: nenhuma · forma: 4/4 · operação: recap afirma, cartões diagnosticam/decidem sobre cenário
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, s3)
+  Pool dosado: quiz (s3) · cartões (4) · qbefore-after (s2) · qanchor (s4) = 4 ≤ 5. Densidade: quadros em s2 e s4, não adjacentes.
+-->
+</section>
+
+<!-- ===== AULA 5 — R: Reforçar (FUNDAMENTO) ===== -->
+<section class="view" id="v-aula-5" data-aula="5" data-tempo="22min">
+<header class="hero"><div class="hero-inner">
+  <div>
+    <p class="kicker">Trilha 02 · Aula 5 · R de Reforçar</p>
+    <h1>Testar, validar,<br><em>virar oficial</em></h1>
+    <p class="promise">Ao fim desta aula você consegue olhar o resultado de um teste A contra B e dar uma das três respostas — B ganhou, A segue, ou quantidade insuficiente — pela regra escrita na ficha, e não pela impressão.</p>
+    <p class="why">É aqui que a maioria dos loops morre: alguém olha vinte respostas da versão nova, acha que "ficou melhor" e troca o roteiro. Três semanas depois ninguém sabe se melhorou, e o antigo já se perdeu. Reforçar é a letra que transforma "parece" em "provou" — e que guarda o caminho de volta.</p>
+    <p class="cue"><span class="arw">↓</span> role para estudar</p>
+  </div>
+  <!-- herofig: METÁFORA — duas pastas A e B na mesa da recepção da clínica, e o carimbo de "versão oficial" -->
+  <div class="herofig"><svg viewBox="0 0 300 240" fill="none" aria-hidden="true">
+    <rect x="20" y="196" width="260" height="10" rx="3" class="fm" opacity=".5"/>
+    <path d="M40 90 h40 l8 -10 h48 v116 h-96 z" class="fp sl" stroke-width="2"/><text x="88" y="150" text-anchor="middle" class="ts">A</text><text x="88" y="170" text-anchor="middle" class="tx">versão atual</text>
+    <path d="M150 90 h40 l8 -10 h48 v116 h-96 z" class="fp sa" stroke-width="2"/><text x="198" y="150" text-anchor="middle" class="ts">B</text><text x="198" y="170" text-anchor="middle" class="tx">candidata</text>
+    <rect x="212" y="30" width="60" height="26" rx="5" class="fw" opacity=".9"/><rect x="230" y="14" width="24" height="18" rx="4" class="fm"/>
+    <text x="242" y="47" text-anchor="middle" class="tk" style="fill:var(--accent-ink)">OFICIAL</text>
+    <path d="M242 56 v18" class="sw" stroke-width="2" stroke-dasharray="3 3"/>
+    <path d="M60 70 c10 -30 40 -30 50 -10" class="sm" stroke-width="1.5"/><path d="M104 54 l6 6 l-8 2" class="sm" stroke-width="1.5"/>
+    <text x="70" y="50" class="tx">voltar atrás</text>
+  </svg></div>
+</div></header>
+
+<div class="layout">
+  <div class="col">
+    <section class="step" data-fig="1" data-kind="fundamento">
+      <h2><span class="n">01</span> "Parece melhor" não prova nada</h2>
+      <p>A quinta letra é <b>Reforçar</b>: testar a hipótese, avaliar o resultado, e só então incorporar — ou descartar. A palavra importante é <b>só então</b>. Entre a hipótese e a versão oficial existe um teste, e o teste tem um resultado que não depende do gosto de ninguém.</p>
+      <p>Marcos leu as vinte primeiras respostas escritas com a versão nova (a que termina com uma pergunta) e gostou: mais diretas, mais simpáticas. Quis trocar o roteiro naquele dia. O que ele tinha era uma impressão sobre vinte textos — não uma linha sequer de resultado. As vinte respostas podiam ser lindas e ter menos retorno que as antigas. Ele não saberia.</p>
+      <p>É a diferença entre o remédio que "parece que fez bem" e o remédio que foi testado contra o outro. O primeiro é um relato; o segundo, um resultado. O loop só aceita o segundo.</p>
+      <div class="qerr">
+        <p class="qk">Erro comum</p>
+        <p class="qerr-txt"><b>Virar a versão oficial porque parece melhor.</b> Acontece porque a versão nova é sempre mais bonita aos olhos de quem a propôs. Como evitar: a versão oficial só muda com o veredito escrito do teste — e o veredito só pode ser um dos três da ficha. Se você não consegue apontar a linha da planilha que sustenta a troca, a troca não acontece.</p>
+      </div>
+      <div class="mobfig" data-mobfig="1"></div>
+      <button class="readbtn" data-read="s1">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="2" data-kind="fundamento">
+      <h2><span class="n">02</span> A e B lado a lado, ao mesmo tempo</h2>
+      <p>Um teste no LOOP-R é simples de descrever: metade das execuções segue a versão atual (<b>A</b>), a outra metade segue a candidata (<b>B</b>), nas <b>mesmas semanas</b>, sorteadas. A coluna "variante" da planilha, que estava parada em A, passa a alternar. Quem desenha isso é o <b>Experimentador</b>, um assistente com uma função só: ele calcula a quantidade que prova, estima quantas semanas vai levar no seu ritmo e escreve o critério de parada antes de o teste começar.</p>
+      <p>Por que ao mesmo tempo, e não "este mês com B, o mês passado com A"? Porque o mês muda: na clínica da Dra. Renata, dezembro tem festas e janeiro tem férias, e a taxa de resposta oscila 8 pontos sem ninguém mudar nada. Se B rodar em janeiro e A tiver rodado em dezembro, a diferença pode ser o calendário, não o roteiro. Com A e B misturados na mesma semana, o calendário atinge os dois igualmente.</p>
+      <div class="quiz" data-answer="c">
+        <p class="qk">Teste-se</p><p class="q">Marcos usou a versão 1 em agosto (22% de resposta) e a versão 2 em setembro (27%). Ele diz que B ganhou. Qual é o problema?</p>
+        <button class="opt" data-k="a" data-fb="Cinco pontos podem ser muito ou nada — depende da quantidade. Mas o defeito principal está antes disso.">5 pontos é pouco para dizer que ganhou</button>
+        <button class="opt" data-k="b" data-fb="Dois meses podem ser suficientes em volume; o problema não é a duração.">dois meses é pouco tempo</button>
+        <button class="opt" data-k="c" data-fb="Agosto e setembro são meses diferentes: feriado, volta às aulas, portais com mais anúncios. Sem A e B nas mesmas semanas, a diferença pode ser o mês, não o roteiro.">A e B rodaram em meses diferentes — não dá para separar o roteiro do calendário</button>
+        <p class="qfb"></p>
+      </div>
+      <div class="mobfig" data-mobfig="2"></div>
+      <button class="readbtn" data-read="s2">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="3" data-kind="fundamento">
+      <h2><span class="n">03</span> As três respostas do teste</h2>
+      <p>Quando o teste termina — ou a cada semana, enquanto roda — o <b>Avaliador</b> lê a planilha e responde uma de três coisas. <b>B ganhou</b>: a diferença é maior do que o acaso explica, a quantidade que prova foi atingida, e nenhum "sem piorar" caiu além do tolerado. <b>A segue</b>: B não ganhou, ou ganhou no número e perdeu num guarda-corpo. <b>Quantidade insuficiente</b>: ainda não há linhas bastantes para dizer nada — continue o teste. Não existe quarta resposta. Não existe "está ganhando".</p>
+      <p>A terceira resposta é a mais comum, e precisa ser aceitável. Para provar que a taxa de resposta foi de 20% para 30%, são cerca de 300 execuções em cada versão; no ritmo da Dra. Renata, 50 por semana, são 12 semanas. No suporte de Cláudio, depois de três semanas de teste, B tinha resolvido 41 chamados no primeiro contato contra 38 de A — 66% contra 61%. Ele quis parar: "B está ganhando". O Avaliador respondeu quantidade insuficiente, porque a ficha pedia 220 chamados por versão e havia 62 em cada. Parar cedo porque está ganhando é a forma mais comum de virar oficial uma diferença que não existe.</p>
+      <div class="qanchor"><p>"Quantidade insuficiente" é a resposta mais comum do loop — e o dia em que ela deixar de ser aceitável, o loop deixa de funcionar.</p></div>
+      <div class="mobfig" data-mobfig="3"></div>
+      <button class="readbtn" data-read="s3">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="4" data-kind="fundamento">
+      <h2><span class="n">04</span> Ganhar no número não basta: os guarda-corpos</h2>
+      <p>B só ganha se sobe o número <b>e</b> nenhum "sem piorar" cai além da tolerância escrita na ficha. Os dois juntos. Se o número sobe 40% e a margem cai um ponto com tolerância zero, a resposta é A segue — sem exceção, sem "mas olha o quanto subiu". O Avaliador aplica a regra como está escrita; se a regra estiver mal escrita, quem corrige é você, para os próximos testes.</p>
+      <p>No suporte, a versão B de Cláudio chegou ao fim das 220 por variante: resolução no primeiro contato de 58% para 66%. Mas os chamados reabertos em 7 dias foram de 4% para 9%, com tolerância de 2 pontos. A segue. B resolvia "mais rápido" fechando chamados que voltavam — exatamente a trapaça que o "sem piorar" existia para pegar.</p>
+      <p>Há um cuidado com a tolerância. Para números frequentes (margem, reabertura), tolerância zero funciona. Para <b>eventos raros</b> — uma reclamação em cada 100, um "pare de me mandar" em cada 200 — tolerância zero não distingue efeito de acaso: em 300 execuções, 1 ou 4 reclamações é a mesma coisa. A regra do loop é que a tolerância de evento raro seja pelo menos o tamanho do ruído esperado na quantidade planejada — cerca de 1 ponto para eventos de 1% em 300 linhas. Escrever zero ali não é rigor; é descartar hipóteses boas por sorteio.</p>
+      <div class="mobfig" data-mobfig="4"></div>
+      <button class="readbtn" data-read="s4">marcar como lido</button>
+    </section>
+
+    <section class="step" data-fig="5" data-kind="fundamento">
+      <h2><span class="n">05</span> Virar a versão oficial — com o botão de voltar</h2>
+      <p>Quando o veredito é B ganhou, a decisão ainda passa por você: uma vez por semana, no máximo, chega um cartão de cinco linhas — o que mudou, quanto melhorou, o que foi vigiado, quanto custou, e três botões: aprovar, rejeitar, esperar mais dados. Se você não responder no prazo, o padrão é <b>não</b> virar oficial. Aprovado, a candidata vira a versão atual, e a antiga fica guardada no <span class="gterm" tabindex="0" data-def="O registro de toda versão que já foi oficial, com data e motivo. Como o 'desfazer' de um editor de texto, só que para o roteiro inteiro: qualquer versão anterior volta em um passo.">histórico com botão de voltar</span>.</p>
+      <p>O botão de voltar não é enfeite. No primeiro ciclo depois da troca, o loop confere: o número do teste ou algum "sem piorar" caiu abaixo do que a versão antiga tinha? Se caiu, a antiga volta a ser a oficial, e o motivo fica escrito. É a única garantia que o LOOP-R faz sem rodeio: uma versão pior não substitui a atual por decisão do sistema — e, se passar, tem caminho de volta.</p>
+      <div class="qbefore-after">
+        <div class="qba-col qba-before"><p class="qba-lbl">Antes · versão 1 da clínica</p><p class="qba-txt">Abertura igual para toda cliente: saudação e agradecimento pela visita. Taxa de resposta em 48h: 19,3% (300 propostas no período do teste).</p></div>
+        <div class="qba-col qba-depois"><p class="qba-lbl">Depois · versão 2, promovida no 4º ciclo</p><p class="qba-txt">A primeira frase cita um ponto específico da avaliação daquela cliente. Taxa de resposta: 29,3% (300 propostas). Margem, reclamações e pedidos de parar dentro da tolerância.</p></div>
+        <p class="qba-saldo">Saldo: <b>+10 pontos de resposta</b>, com registro e botão de voltar. A conversão em pacote pago ficou em 3,7% contra 3,0% — diferença que 300 propostas não provam. O loop entregou o que prometeu; o que não prometeu, ainda está em teste.</p>
+      </div>
+      <div class="mobfig" data-mobfig="5"></div>
+      <button class="readbtn" data-read="s5">marcar como lido</button>
+    </section>
+
+    <section class="practice" data-practice="p5" data-mode="analise">
+      <p class="pk">Pratique agora <span class="pcount">0/3 feito</span></p>
+      <h3 class="ph">Dê o veredito: um resultado real do loop da clínica</h3>
+      <p class="pgoal">Ler o resultado abaixo, escrever qual das três respostas cabe e o que fazer com a regra, e comparar com o gabarito — cerca de 10 min.</p>
+      <p class="psafe">Nada muda no seu negócio até você aprovar: você está decidindo sobre o loop de outra empresa, no papel. Se errar o veredito, o gabarito explica por quê — e é exatamente esse erro que a aula quer que você cometa aqui, e não no seu processo.</p>
+      <p class="pcase">Clínica da Dra. Renata, segundo ciclo. Hipótese testada: proposta com no máximo 80 palavras. Teste A contra B nas mesmas 12 semanas, 300 propostas em cada versão (a ficha pedia 166). Taxa de resposta em 48h: <b>A 19,3% · B 29,7%</b> — diferença muito maior do que o acaso explica. Guarda-corpos escritos na ficha: margem média, tolerância 1 ponto — A 31,3% · B 31,1%; pedidos de "não me mande mais", tolerância 0,5 ponto — A 0 · B 1 em 300; reclamações, <b>tolerância zero — A 1 em 300 · B 6 em 300</b>.</p>
+      <ol class="psteps">
+        <li><label><input type="checkbox" data-ptask="1"> <span>Escreva qual das três respostas o Avaliador dá — B ganhou, A segue ou quantidade insuficiente — e a linha do caso que decide.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="2"> <span>Escreva o que a Dra. Renata deve fazer com a regra da tolerância de reclamações para os próximos testes, e se este teste deve ser julgado de novo com a regra nova.</span></label></li>
+        <li><label><input type="checkbox" data-ptask="3"> <span>Abra o gabarito e compare. Ficou pronto quando você consegue dizer, em uma frase, por que a resposta não é "B ganhou" mesmo com 10 pontos de diferença.</span></label></li>
+      </ol>
+      <details class="gab"><summary>Gabarito comentado</summary>
+        <p><b>1. A segue.</b> A quantidade que prova foi atingida (300 ≥ 166) e B ganhou no número com folga — mas as reclamações ficaram fora da tolerância escrita: 6 contra 1, com tolerância zero. A regra da ficha diz que B só ganha se nenhum "sem piorar" cai além do tolerado. A linha que decide é a das reclamações. Foi exatamente esse o veredito real do loop: A segue, e a hipótese dos 80 palavras foi registrada como testada e descartada.</p>
+        <p><b>2. Corrigir a regra, não o veredito.</b> Reclamação é evento raro (cerca de 1 em 100). Com 300 propostas, 6 contra 1 não é diferença — é o tamanho do ruído. A tolerância zero estava mal escrita: para os próximos testes, ela passa a 1 ponto (o ruído esperado de um evento de 1% em 300 linhas). Este teste <b>não</b> é rejulgado com a regra nova: a regra valia quando o teste rodou, e mudar a régua depois de ver o resultado é a forma mais elegante de "promover porque parece melhor". A hipótese pode ser reapresentada num ciclo futuro, com a tolerância corrigida, e testada de novo.</p>
+        <p><b>3. Em uma frase:</b> o loop não promove o que sobe um número e viola a ficha — e, quando a ficha está errada, conserta-se a ficha para o próximo teste, nunca o resultado deste. Duas coisas ficaram guardadas: a hipótese descartada (para ninguém retestar sem querer) e o aprendizado sobre tolerância (para a ficha do loop e para este curso).</p>
+      </details>
+      <p class="pdone">Você acabou de dar um veredito pela regra, contra a impressão — com 10 pontos de diferença gritando o contrário. É a capacidade que separa um loop que aprende de um que só troca de roteiro.</p>
+    </section>
+  </div>
+
+  <aside class="rail"><div class="railsticky">
+    <div class="figstage">
+      <div class="fig on" data-fig="1" data-cap="<b>Fig. 1</b> Entre a candidata e a versão oficial há um teste com veredito escrito. O caminho de cima — 'parece melhor' — não existe no loop."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="10" y="84" width="54" height="36" rx="6" class="fp sl" stroke-width="1.5"/><text x="37" y="106" text-anchor="middle" class="tx">candidata B</text>
+        <path d="M64 102 h34" class="sa" stroke-width="1.5"/>
+        <rect x="98" y="80" width="54" height="44" rx="8" class="fa" opacity=".16"/><rect x="98" y="80" width="54" height="44" rx="8" class="sa" stroke-width="2"/><text x="125" y="98" text-anchor="middle" class="ta">teste</text><text x="125" y="112" text-anchor="middle" class="tx">veredito</text>
+        <path d="M152 102 h26" class="sa" stroke-width="1.5"/><path d="M174 98 l6 4 l-6 4" class="sa" stroke-width="1.5"/>
+        <rect x="180" y="84" width="32" height="36" rx="6" class="fp sa" stroke-width="1.5"/><text x="196" y="106" text-anchor="middle" class="ta">oficial</text>
+        <path d="M37 84 c0 -50 130 -50 159 0" class="sw" stroke-width="1.2" stroke-dasharray="3 3"/>
+        <line x1="104" y1="30" x2="124" y2="50" class="sw" stroke-width="2"/><line x1="124" y1="30" x2="104" y2="50" class="sw" stroke-width="2"/>
+        <text x="114" y="20" text-anchor="middle" class="tw">"parece melhor"</text>
+        <text x="110" y="160" text-anchor="middle" class="tx">20 textos bonitos ≠ 1 linha de resultado</text>
+      </svg></div>
+      <div class="fig" data-fig="2" data-cap="<b>Fig. 2</b> A e B alternam nas mesmas semanas. O calendário (festas, férias) atinge as duas versões igualmente — a diferença que sobra é do roteiro."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <g class="tx"><text x="40" y="24" text-anchor="middle">sem 1</text><text x="90" y="24" text-anchor="middle">sem 2</text><text x="140" y="24" text-anchor="middle">sem 3</text><text x="190" y="24" text-anchor="middle">…</text></g>
+        <g><rect x="22" y="34" width="36" height="14" rx="3" class="fm" opacity=".5"/><rect x="22" y="52" width="36" height="14" rx="3" class="fa" opacity=".7"/><rect x="22" y="70" width="36" height="14" rx="3" class="fm" opacity=".5"/><rect x="22" y="88" width="36" height="14" rx="3" class="fa" opacity=".7"/></g>
+        <g><rect x="72" y="34" width="36" height="14" rx="3" class="fa" opacity=".7"/><rect x="72" y="52" width="36" height="14" rx="3" class="fm" opacity=".5"/><rect x="72" y="70" width="36" height="14" rx="3" class="fa" opacity=".7"/><rect x="72" y="88" width="36" height="14" rx="3" class="fm" opacity=".5"/></g>
+        <g><rect x="122" y="34" width="36" height="14" rx="3" class="fm" opacity=".5"/><rect x="122" y="52" width="36" height="14" rx="3" class="fm" opacity=".5"/><rect x="122" y="70" width="36" height="14" rx="3" class="fa" opacity=".7"/><rect x="122" y="88" width="36" height="14" rx="3" class="fa" opacity=".7"/></g>
+        <g><rect x="172" y="34" width="36" height="14" rx="3" class="fa" opacity=".7"/><rect x="172" y="52" width="36" height="14" rx="3" class="fm" opacity=".5"/><rect x="172" y="70" width="36" height="14" rx="3" class="fm" opacity=".5"/><rect x="172" y="88" width="36" height="14" rx="3" class="fa" opacity=".7"/></g>
+        <rect x="22" y="120" width="14" height="10" rx="2" class="fm" opacity=".5"/><text x="42" y="129" class="tx">A · versão atual</text>
+        <rect x="112" y="120" width="14" height="10" rx="2" class="fa" opacity=".7"/><text x="132" y="129" class="ta">B · candidata</text>
+        <path d="M22 160 q50 -18 100 0 t86 0" class="sw" stroke-width="1.2"/><text x="110" y="184" text-anchor="middle" class="tw">calendário: bate igual nas duas</text>
+      </svg></div>
+      <div class="fig" data-fig="3" data-cap="<b>Fig. 3</b> O Avaliador tem três saídas, e só três. A de baixo é a mais frequente: continue o teste. 'Está ganhando' não é uma saída."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="14" y="76" width="60" height="48" rx="8" class="fa" opacity=".16"/><rect x="14" y="76" width="60" height="48" rx="8" class="sa" stroke-width="2"/><text x="44" y="96" text-anchor="middle" class="ta">Avaliador</text><text x="44" y="110" text-anchor="middle" class="tx">lê a planilha</text>
+        <g class="sm" stroke-width="1.5"><path d="M74 100 h20 v-60 h20 M74 100 h40 M74 100 h20 v60 h20"/></g>
+        <rect x="116" y="26" width="92" height="28" rx="6" class="fp sa" stroke-width="1.5"/><text x="162" y="44" text-anchor="middle" class="ta">B ganhou</text>
+        <rect x="116" y="86" width="92" height="28" rx="6" class="fp sl" stroke-width="1.5"/><text x="162" y="104" text-anchor="middle" class="tk">A segue</text>
+        <rect x="116" y="146" width="92" height="28" rx="6" class="fp sw" stroke-width="1.5"/><text x="162" y="159" text-anchor="middle" class="tw">quantidade</text><text x="162" y="170" text-anchor="middle" class="tw">insuficiente → continue</text>
+        <text x="162" y="192" text-anchor="middle" class="tx">a mais comum</text>
+      </svg></div>
+      <div class="fig" data-fig="4" data-cap="<b>Fig. 4</b> Duas condições para B ganhar, ligadas por um E: o número sobe e nenhum guarda-corpo cai além da tolerância. Uma só não basta."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="14" y="40" width="80" height="60" rx="8" class="fp sa" stroke-width="1.5"/><text x="54" y="60" text-anchor="middle" class="ta">número</text><text x="54" y="74" text-anchor="middle" class="tk">58% → 66%</text><text x="54" y="90" text-anchor="middle" class="ta">subiu</text>
+        <text x="110" y="76" text-anchor="middle" class="ts">E</text>
+        <rect x="126" y="40" width="80" height="60" rx="8" class="fp sw" stroke-width="1.5"/><text x="166" y="60" text-anchor="middle" class="tw">reabertura</text><text x="166" y="74" text-anchor="middle" class="tk">4% → 9%</text><text x="166" y="90" text-anchor="middle" class="tw">caiu além (tol. 2)</text>
+        <path d="M110 100 v30" class="sm" stroke-width="1.5"/><path d="M106 124 l4 6 l4 -6" class="sm" stroke-width="1.5"/>
+        <rect x="70" y="134" width="80" height="30" rx="6" class="fp sl" stroke-width="1.5"/><text x="110" y="153" text-anchor="middle" class="tk">A segue</text>
+        <text x="110" y="188" text-anchor="middle" class="tx">evento raro: tolerância ≥ ruído esperado</text>
+      </svg></div>
+      <div class="fig" data-fig="5" data-cap="<b>Fig. 5</b> Cada versão que já foi oficial fica no histórico, com data e motivo. Se a nova cair no primeiro ciclo, a anterior volta em um passo — é a única promessa sem rodeio."><svg viewBox="0 0 220 200" fill="none" aria-hidden="true">
+        <rect x="20" y="80" width="44" height="40" rx="6" class="fp sl" stroke-width="1.5"/><text x="42" y="98" text-anchor="middle" class="tx">v1</text><text x="42" y="110" text-anchor="middle" class="tx">fev</text>
+        <path d="M64 100 h24" class="sa" stroke-width="1.5"/><path d="M84 96 l6 4 l-6 4" class="sa" stroke-width="1.5"/>
+        <rect x="90" y="80" width="44" height="40" rx="6" class="fa" opacity=".16"/><rect x="90" y="80" width="44" height="40" rx="6" class="sa" stroke-width="2"/><text x="112" y="98" text-anchor="middle" class="ta">v2</text><text x="112" y="110" text-anchor="middle" class="tx">jul · oficial</text>
+        <path d="M134 100 h24" class="sl" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <rect x="160" y="80" width="44" height="40" rx="6" class="fp sl" stroke-width="1.5" stroke-dasharray="3 3"/><text x="182" y="98" text-anchor="middle" class="tx">v3?</text><text x="182" y="110" text-anchor="middle" class="tx">em teste</text>
+        <path d="M112 80 c0 -40 -70 -40 -70 0" class="sw" stroke-width="1.5"/><path d="M42 74 l0 6 l6 -2" class="sw" stroke-width="1.5"/>
+        <text x="77" y="42" text-anchor="middle" class="tw">voltar atrás</text>
+        <text x="112" y="160" text-anchor="middle" class="tx">1º ciclo após a troca: número caiu? → v1 volta</text>
+        <text x="112" y="176" text-anchor="middle" class="tx">motivo registrado, um passo</text>
+      </svg></div>
+    </div>
+    <p class="railcap"></p>
+    <div class="steps-ind"></div>
+    <p class="sidenote">Grife qualquer trecho para virar um cartão de revisão.</p>
+  </div></aside>
+</div>
+
+<div class="fecho-wrap">
+<div class="recap-autor">
+  <p class="rak">Resumo</p>
+  <ul>
+    <li>Reforçar é testar, avaliar e só então incorporar. A versão oficial nunca muda por impressão — muda por veredito escrito.</li>
+    <li>O teste roda A e B nas mesmas semanas, sorteadas, para que o calendário atinja as duas igualmente. O Experimentador desenha isso antes de começar.</li>
+    <li>O Avaliador dá uma de três respostas: B ganhou, A segue, quantidade insuficiente. A terceira é a mais comum, e parar cedo porque "está ganhando" é a forma mais fácil de promover ruído.</li>
+    <li>B só ganha subindo o número e sem derrubar nenhum guarda-corpo; para eventos raros, a tolerância precisa cobrir o ruído. Quando a regra está errada, corrige-se a regra para o próximo teste — não o veredito deste.</li>
+    <li>Aprovada, a candidata vira oficial e a antiga fica no histórico com botão de voltar. Se cair no primeiro ciclo, a antiga volta.</li>
+  </ul>
+</div>
+
+<div class="next-action">
+  <p class="nak">Seu próximo passo</p>
+  <p class="na-win">Você acabou de fechar as cinco letras: consegue escolher o processo, escrever a versão atual, registrar a evidência, propor hipóteses e julgar um teste pela regra. O método inteiro está com você.</p>
+  <p class="na-action">Nos próximos 15 minutos, no seu trabalho de verdade: releia o "sem piorar" da sua resposta 1 e escreva ao lado a tolerância de cada um — e, para os que são eventos raros (reclamação, pedido de parar), troque o zero por um ponto. É a correção que a clínica só fez depois de perder um teste.</p>
+  <p class="na-hook">Na próxima trilha, você conhece os nove assistentes com uma função só — quem executa, quem observa, quem critica, quem veta — e descobre por que nenhum deles pode fazer o trabalho do outro sem que o loop comece a se convencer sozinho.</p>
+</div>
+</div>
+
+<nav class="lnav"><a href="#aula-4">← aula 4</a><a href="#trilha">concluir a trilha →</a></nav>
+<footer>Aula 5 · LOOP-R · INEMA.CLUB PRO</footer>
+
+<script type="application/json" id="cards-5">
+[
+  {"front":"Depois de 4 semanas de teste, a versão B de Marcos está com 31% de resposta contra 24% de A, com 90 leads em cada. A ficha pede 300 por versão. Ele quer trocar o roteiro hoje. Qual é a resposta do Avaliador e o que ele faz?","back":"Quantidade insuficiente: 90 < 300. Continua o teste. A única razão para parar antes seria um guarda-corpo caindo — nunca uma vantagem parcial."},
+  {"front":"A versão B de Cláudio subiu a resolução no primeiro contato de 58% para 66% e os chamados reabertos foram de 4% para 9% (tolerância 2 pontos). Veredito, e por quê?","back":"A segue. B só ganha se sobe o número e nenhum 'sem piorar' cai além da tolerância. Reabertura subiu 5 pontos com tolerância 2 — B resolvia 'mais' fechando chamados que voltavam."},
+  {"front":"Dra. Renata testou a versão 2 em janeiro e comparou com a versão 1 de dezembro. O que invalida a comparação, e como ela deveria ter desenhado o teste?","back":"Meses diferentes: festas em dezembro, férias em janeiro mudam a resposta sem mexer no roteiro. O certo é A e B sorteadas nas mesmas semanas — assim festas e férias pesam igual sobre as duas versões."},
+  {"front":"Uma regra da ficha se mostrou mal escrita depois do resultado do teste (tolerância zero num evento raro). Duas opções: rejulgar o teste com a regra nova, ou corrigir a regra só para os próximos. Qual, e por quê?","back":"Corrigir só para os próximos. Mudar a régua depois de ver o resultado é promover 'porque parece melhor' com outro nome. A hipótese pode ser reapresentada e testada de novo com a regra corrigida."},
+  {"front":"Qual é a única garantia que o LOOP-R faz sem rodeio sobre a versão oficial?","back":"Que uma versão pior não substitui a atual por decisão do sistema — e que, se uma promovida cair no primeiro ciclo, a anterior volta em um passo, com o motivo registrado. Não garante que o número sobe."}
+]
+</script>
+
+<!-- COMPLETUDE aula-5 | tipo=FUNDAMENTO | steps=5
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo 22min no view + render no cold-open pelo motor (1) — 2.150/200 + 10 + 0,5 = 21,2 → 22
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (5/5): s1 Marcos corretor · s2 Dra. Renata clínica · s3 Dra. Renata + Cláudio suporte · s4 Cláudio · s5 Dra. Renata (ciclo 0004 real)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (5/5) — data-fig 1..5 com data-cap
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1) — justificado: julgar um teste real de outra empresa é o único jeito de praticar o veredito antes de ter 300 linhas próprias; gabarito em details
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com "cerca de 10 min" (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-5"> presente (5 cartões: decisão / decisão / diagnóstico / decisão / pergunta)
+  [OK] anti-duplicacao    §11.3 — substring ≥6 palavras: nenhuma · forma: 5/5 · operação: recap afirma, cartões decidem/diagnosticam sobre cenário novo
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, s2)
+  Pool dosado: quiz (s2) · cartões (5) · qerr (s1) · qanchor (s3) · qbefore-after (s5) = 5 ≤ 5 (teto). Densidade: quadros em s1, s3 e s5 — nenhum par adjacente.
+-->
+</section>
+
+<script src="assets/curso.js"></script>
+</body>
+</html>
