@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+
+<!-- LOOP-R · Trilha 3 — Os assistentes do loop (a arquitetura) · formato-curso v5 -->
+<html data-theme="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="loop-r-trilha-3" name="curso"/>
+<title>LOOP-R · Ruta 3 — Los asistentes del ciclo · INEMA.CLUB PRO</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/aula.css" rel="stylesheet"/>
+<script>(function(){try{var m=document.querySelector('meta[name=curso]');var CK=(m&&m.content)||'v5:curso';var L=document.documentElement.lang||'pt-BR';if(!/^pt/i.test(L))CK+=':'+L;var s=JSON.parse(localStorage.getItem(CK));if(s&&s.prefs&&s.prefs.theme)document.documentElement.setAttribute('data-theme',s.prefs.theme);}catch(e){}})();</script>
+<!--
+  PROTOCOLO DE DESCOBERTA (v5, Passo 0 — respondido no plano do curso, §0):
+  - Público específico: donos e gestores de negócios pequenos/médios, 40+, que já usam IA para
+    "fazer coisas" (propostas, respostas, posts) e sentem que nada melhora com o tempo.
+  - Profissões-alvo (3): dona de clínica de estética (propostas por WhatsApp) · corretor de imóveis
+    (leads de portal) · gestor de suporte de uma empresa de software pequena.
+  - Familiaridade com tecnologia: WhatsApp, planilha e um chat de IA. Sem programação, sem tela preta de comandos.
+  - Resultado prático esperado: sair com um loop montado no próprio negócio (5 respostas da ficha,
+    planilha de registro, 1 experimento, 1 decisão com o cartão). Esta trilha produz a resposta 3
+    (o que nunca muda sozinho) e a primeira linha da memória.
+  - Tempo por sessão: 20 min.
+  Ênfase de exemplos nesta trilha: gestor de suporte e corretor. Os números citados vêm do exemplo
+  de referência do produto (clínica, 4 ciclos rodados com dados simulados) — nunca inventados.
+  Auditoria anti-clone: não existe curso anterior em curso/ para comparar; a ordem dos quadros e as
+  situações dos exemplos variam entre as 4 aulas por construção.
+  Decisão do autor (checklist §5.1): nenhum step tem comando real — o único bloco colável (aula 1)
+  é um pedido para colar num chat de IA; por isso não há .termdemo nesta trilha.
+-->
+<style>
+  .view{display:none}.view.active{display:block}
+  .languages{font:11px var(--mono);white-space:nowrap}.languages a{color:var(--muted);text-decoration:none}.languages a[lang="es"]{color:var(--accent);font-weight:700}
+  .lnav{max-width:1160px;margin:0 auto 5vh;padding:0 clamp(24px,5vw,60px);display:flex;justify-content:space-between;gap:12px}
+  .lnav a{font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line2);border-radius:12px;padding:12px 16px}
+  .lnav a:hover{border-color:var(--accent);color:var(--ink)}
+  #v-trilha .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(24px,5vw,60px)}
+  #v-trilha .t-hero{position:relative;overflow:hidden;padding:20vh 0 8vh;border-bottom:1px solid var(--line)}
+  #v-trilha h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,6.4vw,72px);line-height:1;letter-spacing:-.025em;margin:0 0 22px}
+  #v-trilha h1 em{font-style:italic;color:var(--accent)}
+  #v-trilha .lead{font-family:var(--serif);font-size:clamp(19px,2.1vw,24px);line-height:1.5;color:var(--ink-soft);max-width:46ch;margin:0 0 30px}
+  #v-trilha section{padding:8vh 0}
+  #v-trilha .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  #v-trilha h2{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.6vw,38px);margin:0 0 28px}
+  #v-trilha .aulas{display:grid;gap:14px}
+  #v-trilha .au{display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:center;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+  #v-trilha .au .num{font-family:var(--serif);font-size:30px;color:var(--accent);text-align:center}
+  #v-trilha .au h3{font-family:var(--serif);font-weight:500;font-size:21px;margin:0 0 5px}
+  #v-trilha .au p{margin:0;color:var(--muted);font-size:14.5px}
+  #v-trilha .au .meta{font-family:var(--mono);font-size:11px;color:var(--accent);white-space:nowrap;text-align:right}
+  #v-trilha .au .prog{position:static;margin-top:10px;height:5px;border-radius:99px;background:var(--line);overflow:hidden;max-width:220px;width:auto}
+  #v-trilha .au .prog i{display:block;height:100%;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+  #v-trilha footer{max-width:1080px;margin:0 auto;padding:6vh clamp(24px,5vw,60px) 12vh;color:var(--faint);text-align:center;font-family:var(--serif);font-style:italic;border-top:1px solid var(--line)}
+  @media(max-width:720px){#v-trilha .au{grid-template-columns:44px 1fr}#v-trilha .au .meta{grid-column:2;text-align:left}}
+  /* figuras: texto sempre nas cores do tema, nunca cor fixa */
+  .fig svg text,.mobfig svg text,.herofig svg text{font-family:var(--mono);fill:var(--ink-soft)}
+</style>
+<meta content="Cuatro clases sobre las funciones de los asistentes LOOP-R: Ejecutor, Observador, Crítico, Optimizador, Experimentador, Evaluador, Guardián y Memoria." name="description"/><link rel="alternate" hreflang="pt-BR" href="../../trilha-3/curso.html"><link rel="alternate" hreflang="en" href="../../en/trilha-3/curso.html"><link rel="alternate" hreflang="es" href="curso.html"><link rel="alternate" hreflang="x-default" href="../../trilha-3/curso.html"><link rel="canonical" href="https://inematds.github.io/loop-r/curso/es/trilha-3/curso.html"><style id="language-navigation-style">
+.language-links,.languages{display:inline-flex;align-items:center;gap:.5rem;font:12px system-ui;white-space:nowrap}.language-links a,.languages a{color:inherit;text-decoration:none}.language-links [aria-current=page],.languages [aria-current=page]{font-weight:700;text-decoration:underline}.language-links{padding:.5rem 1rem}.links>a[lang]{font:12px system-ui}.bar-inner{flex-wrap:wrap}.bar .languages{pointer-events:auto}header.top .wrap{flex-wrap:wrap}
+@media(max-width:760px){nav>.wrap{height:auto;min-height:60px;flex-wrap:wrap;gap:12px;padding-block:10px}nav .links{gap:10px;flex-wrap:wrap}}
+</style></head>
+<body>
+<div class="bar"><div class="bar-inner">
+<span class="brand"><a class="mark" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a><a class="course" href="../index.html">LOOP-R · Ruta 3</a></span>
+<a class="back" href="#trilha" style="display:none">← trilha</a>
+<button class="pill" id="pill" style="display:none">0 lido</button>
+<button id="revbtn">revisar <span id="revn">0</span></button>
+<button id="exbtn">exercícios</button>
+<button id="jorbtn">jornada</button>
+<button aria-label="Como funciona" id="helpbtn">?</button>
+<button aria-label="Preferências de leitura" id="prefsbtn">Aa</button>
+<button id="themebtn">tema: escuro</button>
+
+<span class="languages"><a lang="pt-BR" href="../../trilha-3/curso.html">PT</a> · <a lang="en" href="../../en/trilha-3/curso.html">EN</a> · <a lang="es" href="curso.html">ES</a></span></div></div>
+<!-- ===== TRILHA ===== -->
+<section class="view" id="v-trilha">
+<header class="t-hero"><div class="wrap">
+<p class="kicker">LOOP-R · Ruta 03</p>
+<h1>Los asistentes <em>del ciclo</em></h1>
+<p class="lead">Al terminar sabrás quién se encarga de cada parte del ciclo en tu negocio y tendrás escrita la respuesta 3 de la ficha: lo que nunca cambia sin ti.</p>
+</div></header>
+<section><div class="wrap">
+<div class="statcards"></div>
+<p class="eyebrow">Clases</p>
+<h2>Una persona para cada función</h2>
+<div class="aulas">
+<a class="au on" data-aula="1" href="#aula-1">
+<div class="num">1</div>
+<div><h3>Un asistente para cada función: Ejecutor, Observador, Crítico</h3><p>Al terminar sabrás usar al Crítico con una propuesta tuya y leer su respuesta, sin dejar que proponga cambios.</p><div class="prog"><i></i></div></div>
+<div class="meta">20 min · abrir →</div>
+</a>
+<a class="au on" data-aula="2" href="#aula-2">
+<div class="num">2</div>
+<div><h3>Quién propone, quién prueba, quién juzga: Optimizador, Experimentador, Evaluador</h3><p>Al terminar podrás identificar, en un caso real, quién «se convenció por su cuenta» y por qué eso nunca se convierte en una versión oficial.</p><div class="prog"><i></i></div></div>
+<div class="meta">19 min · abrir →</div>
+</a>
+<a class="au on" data-aula="3" href="#aula-3">
+<div class="num">3</div>
+<div><h3>El Guardián: lo que nunca cambia por su cuenta</h3><p>Al terminar tendrás escrita la respuesta 3 de la ficha: 3 invariantes y 2 indicadores de «sin empeorar» para tu proceso.</p><div class="prog"><i></i></div></div>
+<div class="meta">24 min · abrir →</div>
+</a>
+<a class="au on" data-aula="4" href="#aula-4">
+<div class="num">4</div>
+<div><h3>La Memoria: el activo que la competencia no puede copiar</h3><p>Al terminar tendrás escrita la primera línea del historial del ciclo: qué probaste, qué ocurrió y por qué.</p><div class="prog"><i></i></div></div>
+<div class="meta">21 min · abrir →</div>
+</a>
+</div>
+</div></section>
+<footer><div class="wrap">LOOP-R: Tu empresa que aprende por sí misma · Ruta 3 · INEMA.CLUB PRO</div></footer>
+</section>
+<!-- ===== AULA 1 — FUNDAMENTO ===== -->
+<section class="view" data-aula="1" data-tempo="20min" id="v-aula-1">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Ruta 03 · Clase 1</p>
+<h1>Un asistente para<br/><em>cada función</em></h1>
+<p class="promise">Al terminar esta clase, podrás usar al Crítico con una propuesta tuya y distinguir en la respuesta la evidencia sólida de las conjeturas, sin dejar que proponga nada.</p>
+<p class="why">Hoy le pides una propuesta a la IA y, en la misma conversación, preguntas: «¿Quedó bien?». Siempre dice que sí. Quien hace el trabajo nunca evalúa su propio trabajo, ni en tu equipo ni en el ciclo. Separar las funciones es lo que hace visible la evidencia.</p>
+<p class="cue"><span class="arw">↓</span> desplázate para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: três balcões de uma clínica, cada um com uma placa e uma função -->
+<rect height="6" rx="3" style="fill:var(--line2)" width="264" x="18" y="150"></rect>
+<g stroke-width="2" style="stroke:var(--ink-soft)">
+<rect height="54" rx="6" width="70" x="30" y="96"></rect>
+<rect height="54" rx="6" width="70" x="115" y="96"></rect>
+<rect height="54" rx="6" width="70" x="200" y="96"></rect>
+</g>
+<g stroke-linecap="round" stroke-width="2.5" style="stroke:var(--accent)">
+<circle cx="65" cy="62" r="11"></circle><path d="M48 92c3-12 31-12 34 0"></path>
+<circle cx="150" cy="62" r="11"></circle><path d="M133 92c3-12 31-12 34 0"></path>
+<circle cx="235" cy="62" r="11"></circle><path d="M218 92c3-12 31-12 34 0"></path>
+</g>
+<g stroke-width="1.5" style="fill:var(--panel);stroke:var(--warm)">
+<rect height="16" rx="3" width="54" x="38" y="112"></rect>
+<rect height="16" rx="3" width="54" x="123" y="112"></rect>
+<rect height="16" rx="3" width="54" x="208" y="112"></rect>
+</g>
+<g font-size="8" text-anchor="middle">
+<text x="65" y="124">ATIENDE</text><text x="150" y="124">CUENTA</text><text x="235" y="124">COMPRUEBA</text>
+</g>
+<path d="M100 123h15M185 123h15" stroke-dasharray="3 3" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<text font-size="9" style="fill:var(--muted)" text-anchor="middle" x="150" y="196">tres mostradores, tres letreros: nadie revisa lo que hizo en su propio mostrador</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> Nadie evalúa su propio trabajo, ni siquiera la IA</h2>
+<p>LOOP-R divide el ciclo en nueve <span class="gterm" data-def="Una solicitud de IA con una sola función, que lee ciertos registros y produce un resultado. No opina fuera de su función." tabindex="0">asistentes, cada uno con una sola función</span>. Piensa en una persona que hace una sola cosa y la hace bien. No decide lo que debería haber hecho su compañero de al lado.</p>
+<p>La regla se aplica a todos. Cada asistente lee solo lo que exige su función, escribe solo el resultado de esa función y rechaza lo que queda fuera. Puede parecer burocrático. Es justo lo contrario: es la única manera de evitar que una IA «se convenza» de que ha mejorado.</p>
+<p>Ejemplo aplicado: el responsable de soporte de una pequeña empresa de software asigna a una persona las respuestas a los tickets y a otra el recuento de los tickets reabiertos. Si fuera la misma persona, el número de reaperturas nunca aumentaría: a nadie le gusta contar sus propios errores. En el ciclo, la IA que redacta la respuesta no es la que cuenta el resultado.</p>
+<div class="qanchor"><p>Quien hace no mide. Quien mide no explica. Quien explica no propone.</p></div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> El Ejecutor hace el trabajo y no sugiere nada</h2>
+<p>O <span class="gterm" data-def="El asistente que produce el entregable real (propuesta, respuesta, campaña) siguiendo el guion de la versión oficial y registra una línea en el historial." tabindex="0">Ejecutor</span> es el único asistente que produce el entregable real: la propuesta, la respuesta al cliente o la campaña. Sigue exactamente el guion de la versión oficial y registra una fila en la hoja de registro: fecha, versión y resultado.</p>
+<p>Lo que nunca hace: cambiar su propio guion, salirse de la versión indicada ni ignorar lo que nunca debe ocurrir. Y —esto es lo más extraño para quien está acostumbrado a un chat— no evalúa lo que hizo ni sugiere mejoras. Solo ejecuta.</p>
+<p>Ejemplo aplicado: un agente inmobiliario recibe contactos del portal. El Ejecutor responde a cada contacto siguiendo el guion vigente de la inmobiliaria (versión 1) y anota la fecha, la versión 1, el inmueble, el barrio y el tiempo de respuesta. Si el agente pide «responde mejor», el Ejecutor se niega: «mejor» no es una instrucción, sino un veredicto que corresponde a otro asistente.</p>
+<div class="quiz" data-answer="c">
+<p class="qk">Ponte a prueba</p><p class="q">El Ejecutor redactó una propuesta y parece floja. ¿Cuál es el paso correcto dentro del ciclo?</p>
+<button class="opt" data-fb="Pedirle al mismo asistente que lo mejore es el error de la ruta 1: creerá que mejoró, sin ninguna evidencia." data-k="a">Pedir al Ejecutor que la mejore</button>
+<button class="opt" data-fb="Cambiar el guion por una impresión es precisamente lo que el ciclo busca impedir: nada se vuelve oficial sin una prueba." data-k="b">Cambiar el guion de inmediato porque quedó floja</button>
+<button class="opt" data-fb="Correcto. La propuesta se envía tal como está y se convierte en una línea del registro. Cualquier debilidad real aparece como cifra en el informe del Observador y como diagnóstico del Crítico." data-k="c">Dejar que salga, registrar la fila y esperar a que el Observador cuente</button>
+<p class="qfb"></p>
+</div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> El Observador cuenta y no explica</h2>
+<p>O <span class="gterm" data-def="El asistente que lee el registro y devuelve solo cifras: cuántas, de qué tipo y en qué grupo. Cero adjetivos." tabindex="0">Observador</span> convierte las filas de la hoja de cálculo en evidencia. Cuenta, agrupa y comprueba que las filas estén completas. Si falta una columna o hay una fila duplicada, escribe «datos inconsistentes» y detiene ahí el ciclo.</p>
+<p>Lo que nunca hace: explicar la causa, proponer un cambio ni usar información ajena a la hoja. Su respuesta es una tabla con cifras y recuentos. Cero «parece que». Si una cifra no viene acompañada del recuento que la sustenta, no es evidencia: es una impresión.</p>
+<p>Ejemplo aplicado: la empresa del responsable de soporte recibió 10.000 tickets durante el año. El Observador informa que el 37 % trata del mismo problema, indica el tiempo medio de respuesta y cuenta cuántos se reabrieron en 7 días. No dice «el producto tiene un defecto grave»: eso sería una explicación. Solo entrega el recuento para que lo lea el siguiente asistente.</p>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="step" data-fig="4" data-kind="fundamento">
+<h2><span class="n">04</span> El Crítico dice qué falló y qué peso tiene la evidencia</h2>
+<p>O <span class="gterm" data-def="El asistente que lee la evidencia y dice qué hace bien la versión actual y dónde falla, indicando la fuerza de cada afirmación. No propone soluciones." tabindex="0">Crítico</span> lee la tabla del Observador y la versión vigente del guion. Dice qué funciona, qué falla y dónde hay desperdicio, siempre con la cifra que lo demuestra. Además, marca cada afirmación con un nivel de <span class="gterm" data-def="Cuántas veces ocurrió un hecho para poder afirmarlo: SÓLIDA (muchas), MODERADA (el mínimo) o DÉBIL (pocas; va al cajón «observado, no concluyente»)." tabindex="0">fuerza de la evidencia</span>: sólida, moderada o débil.</p>
+<p>Las afirmaciones débiles van en una sección aparte: «observado, no concluyente». El Crítico también consulta la memoria: ¿lo que «falla» hoy ya se resolvió antes? Y lo que nunca hace es proponer. Un diagnóstico no es una receta.</p>
+<p>Ejemplo aplicado: el caso de referencia es una clínica estética que envía propuestas por WhatsApp y ha completado cuatro ciclos con datos simulados. La ficha de la dueña indicaba una conversión actual del 3 %. El Crítico revisó 200 propuestas y señaló tres hallazgos. La conversión observada fue del 2,5 % (5 de 200), por debajo de lo declarado. La tasa de respuesta fue del 17 % (34 de 200). Además, el 83 % de las propuestas no recibió respuesta en 48 horas: casi todo el esfuerzo se dedicó a mensajes sin retorno. Todos los hallazgos quedaron marcados como sólidos. No sugirió acortar el mensaje; solo mostró dónde estaba el problema.</p>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Antes: la dueña lee y saca una conclusión</p><p class="qba-txt">La dueña de la clínica revisa 200 propuestas y tiene la impresión de que «las del martes reciben más respuestas». Cambia el día de envío. No queda nada registrado ni contado.</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">Después: el Crítico lee el recuento</p><p class="qba-txt">«El 83 % no recibió respuesta en 48 h (166 de 200): evidencia sólida. La conversión es del 2,5 %, por debajo del 3 % declarado: sólida. El segmento mediano responde un 10 %, la mitad que los demás: moderada»</p></div>
+<p class="qba-saldo"><b>Balance:</b> En el ejemplo, hay 3 afirmaciones con recuentos y nivel de fuerza, 0 sugerencias y una discrepancia (3 % declarado frente al 2,5 % observado) que nadie había detectado.</p>
+</div>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">marcar como leído</button>
+</section>
+<section class="practice" data-mode="prompt" data-practice="p1">
+<p class="pk">Practica ahora <span class="pcount">0/4 completados</span></p>
+<h3 class="ph">Usa al Crítico con una propuesta tuya</h3>
+<p class="pgoal">Meta: en unos 10 minutos, obtener de tu chat de IA un diagnóstico con la fuerza de la evidencia indicada y sin sugerencias.</p>
+<p class="psafe">Nada cambia en tu negocio hasta que lo apruebes: solo estás leyendo un diagnóstico en un chat. Si la respuesta incluye sugerencias o adjetivos, vuelve a pegar la solicitud y añade: «has propuesto cambios; bórralos y vuelve a hacer solo el diagnóstico».</p>
+<p>Antes de pegarlo: esto es una hoja de instrucciones para una persona nueva. La primera línea indica su función; el centro, lo que recibe; el final, lo que nunca hace. Solo cambia el texto que aparece entre los signos menor y mayor.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Eres el Crítico del proceso "&lt;nombre de tu proceso, p. ej., responder a contactos del portal&gt;". Tu función es diagnosticar. NO propones soluciones, NO sugieres mejoras ni reescribes nada. Propuesta o respuesta enviada (versión actual): &lt;pega aquí el texto que envió tu IA o tu equipo&gt; Qué ocurrió después (solo lo que tienes registrado): &lt;p. ej., 40 enviadas este mes, 7 respondieron, 1 compra, 0 quejas&gt; Responde en 3 bloques: 1. Qué hace bien la versión actual, con la cifra que lo demuestra. 2. Qué falla y dónde hay desperdicio, con la cifra que lo demuestra. 3. Indica la fuerza de cada afirmación: SÓLIDA (ocurrió muchas veces), MODERADA (el mínimo) o DÉBIL (pocas veces). Pon las afirmaciones DÉBILES en una sección aparte llamada "Observado, no concluyente". Si no te di una cifra que sustente una afirmación, escribe "sin recuento: no concluyente". No propongas nada.</pre></div>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Elegí una propuesta o respuesta real enviada durante el último mes y anoté qué ocurrió después, con cifras aunque fueran pequeñas.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Pegué la solicitud en mi chat de IA después de sustituir los dos fragmentos y recibí 3 bloques separados.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Comprobé que cada afirmación tuviera un nivel de fuerza y que al menos una apareciera en «Observado, no concluyente»: señal de que respetó el tamaño de la muestra.</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>Comprobé que la respuesta no incluyera sugerencias. Si las había, pedí que las borrara: el Crítico no propone cambios.</span></label></li>
+</ol>
+<p class="pdone">Acabas de recibir un diagnóstico con la fuerza de la evidencia indicada y sin propuestas incluidas: la primera revisión honesta de una propuesta tuya.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; — Un entregable pasa por tres cajas; cada una solo lee la caja anterior y escribe en la siguiente. Ninguna flecha vuelve a la misma caja." data-fig="1">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--ink-soft)">
+<rect height="44" rx="6" width="56" x="14" y="70"></rect><rect height="44" rx="6" width="56" x="82" y="70"></rect><rect height="44" rx="6" width="56" x="150" y="70"></rect>
+</g>
+<g font-size="8" text-anchor="middle"><text x="42" y="88">EJECUTOR</text><text x="42" y="100">hace</text><text x="110" y="88">OBSERVADOR</text><text x="110" y="100">cuenta</text><text x="178" y="88">CRÍTICO</text><text x="178" y="100">diagnostica</text></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M70 92h10M138 92h10"></path><path d="M77 88l5 4-5 4M145 88l5 4-5 4"></path></g>
+<g stroke-dasharray="3 3" stroke-width="1.5" style="stroke:var(--warm)"><path d="M42 114v22h-14"></path><path d="M110 114v22h-14"></path><path d="M178 114v22h-14"></path></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--warm)"><path d="M22 130l12 12M34 130l-12 12"></path><path d="M90 130l12 12M102 130l-12 12"></path><path d="M158 130l12 12M170 130l-12 12"></path></g>
+<text font-size="8" style="fill:var(--muted)" text-anchor="middle" x="110" y="168">flecha de regreso a sí mismo: prohibida</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; — El Ejecutor lee el guion de la versión oficial y la entrada, y escribe dos cosas: el entregable y una línea del registro. La flecha hacia el guion es solo de lectura." data-fig="2">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="30" rx="5" width="70" x="14" y="20"></rect><rect height="30" rx="5" width="70" x="14" y="66"></rect><rect height="44" rx="6" width="56" x="82" y="120"></rect><rect height="34" rx="5" width="56" x="150" y="20"></rect><rect height="34" rx="5" width="56" x="150" y="80"></rect></g>
+<g font-size="7.5" text-anchor="middle"><text x="49" y="38">guion v1 (solo lectura)</text><text x="49" y="84">entrada: el contacto</text><text x="110" y="139">EJECUTOR</text><text x="110" y="151">versão 1</text><text x="178" y="34">respuesta</text><text x="178" y="44">al contacto</text><text x="178" y="94">1 fila en la</text><text x="178" y="104">hoja de cálculo</text></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M84 35h20v100"></path><path d="M84 81h10v54"></path><path d="M138 135h10v-98h2"></path><path d="M138 142h12v-45"></path><path d="M146 40l4-4 4 4M146 100l4-4 4 4"></path></g>
+<text font-size="8" style="fill:var(--muted)" text-anchor="middle" x="110" y="186">nunca escribe en el guion</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; — El Observador lee las líneas y devuelve una tabla: recuentos por grupo, cada uno con la cantidad que lo sustenta. Si las líneas no pasan la comprobación, se detiene." data-fig="3">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.2" style="stroke:var(--ink-soft)"><rect height="120" rx="4" width="76" x="14" y="20"></rect><path d="M14 40h76M14 60h76M14 80h76M14 100h76M14 120h76"></path></g>
+<g stroke-width="1" style="stroke:var(--line2)"><path d="M22 30h60M22 50h60M22 70h60M22 90h60M22 110h60M22 130h60"></path></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M92 80h22"></path><path d="M110 76l5 4-5 4"></path></g>
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="60" rx="5" width="86" x="120" y="50"></rect></g>
+<g font-size="7.5"><text x="127" y="66">mismo problema</text><text x="127" y="78">reabiertos en 7 d</text><text x="127" y="90">tiempo medio</text><text x="127" y="102">cantidad</text></g>
+<g font-size="7.5" style="fill:var(--accent)" text-anchor="end"><text x="200" y="66">37%</text><text x="200" y="78">n</text><text x="200" y="90">min</text><text x="200" y="102">10.000</text></g>
+<text font-size="8" style="fill:var(--muted)" text-anchor="middle" x="52" y="160">filas de la hoja</text>
+<text font-size="8" style="fill:var(--muted)" text-anchor="middle" x="163" y="130">solo cifras, cero adjetivos</text>
+<text font-size="8" style="fill:var(--warm)" text-anchor="middle" x="110" y="186">fila incompleta → «datos inconsistentes»; detenerse</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; — El Crítico separa las afirmaciones en tres cajones según la fuerza de la evidencia. Las débiles no pasan a la siguiente etapa: nadie propone cambios basándose en ellas." data-fig="4">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="40" rx="6" width="60" x="14" y="76"></rect></g>
+<g font-size="8" text-anchor="middle"><text x="44" y="93">CRÍTICO</text><text x="44" y="105">diagnostica</text></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M74 96h20"></path><path d="M89 92l5 4-5 4"></path></g>
+<g stroke-width="1.5" style="stroke:var(--accent)"><rect height="30" rx="5" width="102" x="104" y="22"></rect><rect height="30" rx="5" width="102" x="104" y="64"></rect></g>
+<g stroke-dasharray="3 3" stroke-width="1.5" style="stroke:var(--warm)"><rect height="30" rx="5" width="102" x="104" y="118"></rect></g>
+<g font-size="7.5"><text x="112" y="35">SÓLIDA · 83 % sin respuesta</text><text x="112" y="46">166 de 200</text><text x="112" y="77">MODERADA · mediano 10 %</text><text x="112" y="88">8 de 78</text><text x="112" y="131">DÉBIL · «el martes responden»</text><text x="112" y="142">observado, no concluyente</text></g>
+<path d="M104 100h102" stroke-width="1" style="stroke:var(--line2)"></path>
+<text font-size="7.5" style="fill:var(--muted)" text-anchor="middle" x="155" y="112">↑ pasa al Optimizador · ↓ se queda en el cajón</text>
+<text font-size="8" style="fill:var(--muted)" text-anchor="middle" x="110" y="180">de aquí no sale ninguna flecha de «solución»</text>
+</svg>
+</div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>El ciclo funciona porque cada asistente tiene una sola función. Quien crea el entregable no cuenta el resultado; quien cuenta no explica; quien explica no propone.</li>
+<li>El Ejecutor produce el trabajo y registra una fila. El Observador devuelve recuentos sin adjetivos. El Crítico indica la fuerza de cada afirmación y separa lo que aún no es concluyente.</li>
+<li>Esta separación no es burocracia: es lo que impide que una sola IA se convenza de que ha mejorado sin una sola cifra.</li>
+<li>En el ejemplo de la clínica, la diferencia entre lo declarado (3 %) y lo observado (2,5 %) solo apareció porque alguien contó antes de que alguien opinara.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu siguiente paso</p>
+<p class="na-win">Acabas de leer un diagnóstico honesto de una propuesta tuya, con recuentos y sin sugerencias incluidas.</p>
+<p class="na-action">Durante los próximos 15 minutos, en tu trabajo real, toma la respuesta del Crítico y subraya solo las afirmaciones marcadas como sólidas. Esas merecen una prueba. Guarda las débiles.</p>
+<p class="na-hook">En la próxima clase decidirás qué hacer con este diagnóstico: quién propone el cambio, quién diseña la prueba y quién juzga, y por qué deben ser tres asistentes distintos.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#trilha">← ruta</a><a href="#aula-2">siguiente: Optimizador, Experimentador, Evaluador →</a></nav>
+<footer>Clase 3.1 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-1" type="application/json">
+[
+  {
+    "front": "Aplicación: el agente inmobiliario le pide al asistente que responde a los contactos: «la próxima vez, responde mejor». ¿Qué hace el Ejecutor con esta solicitud y por qué?",
+    "back": "Se niega. «Mejor» es un veredicto, no una instrucción para el guion; los veredictos corresponden a otro asistente, después del recuento. El Ejecutor sigue la versión oficial y registra la fila."
+  },
+  {
+    "front": "Diagnóstico: el Observador respondió: «el producto tiene un defecto grave en la pantalla de pago». ¿Qué falla en esa respuesta?",
+    "back": "Explicó la causa. Su función es contar (p. ej., el 37 % de los tickets trata del mismo problema); explicar corresponde al Crítico y proponer, al Optimizador."
+  },
+  {
+    "front": "Decisión: el Crítico vio que se cerraron 4 de 12 propuestas enviadas el martes. ¿En qué cajón va esta afirmación y qué ocurre con ella?",
+    "back": "Al cajón «observado, no concluyente» (evidencia débil: muestra pequeña). Nadie propone una prueba basándose en ella; espera a que haya más filas para volver a examinarla."
+  },
+  {
+    "front": "Contraste: ¿qué diferencia hay entre lo que escribe el Observador y lo que escribe el Crítico sobre las mismas 200 propuestas?",
+    "back": "El Observador registra el recuento (34 respondieron, 5 cerraron). El Crítico expresa el juicio con su fuerza («83 % sin respuesta: sólido; conversión inferior a lo declarado: sólida») e identifica el desperdicio. Ninguno propone cambios."
+  },
+  {
+    "front": "Pregunta: ¿por qué el ciclo prohíbe que un asistente evalúe su propio entregable?",
+    "back": "Porque una IA que juzga su propio trabajo tiende a creer que mejoró, aunque no haya cifras. La separación obliga a que la evidencia pase por alguien sin interés en el resultado."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-1 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: suporte · corretor · suporte · clínica)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="prompt"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min) (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-1"> presente (1, 5 cartões)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, step 02)
+-->
+</section>
+<!-- ===== AULA 2 — FUNDAMENTO ===== -->
+<section class="view" data-aula="2" data-tempo="19min" id="v-aula-2">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Ruta 03 · Clase 2</p>
+<h1>Quién propone, quién prueba,<br/><em>quién juzga</em></h1>
+<p class="promise">Al terminar esta clase, podrás identificar, en un caso de tu negocio, quién «se convenció por su cuenta» y decir cuál de los tres asistentes lo habría impedido.</p>
+<p class="why">El cambio más habitual en una pequeña empresa empieza así: alguien tiene una idea, la prueba durante dos semanas, «siente» que funcionó y la convierte en regla. Sin cantidad, sin comparación y sin juez. El ciclo separa la idea, la prueba y el veredicto en tres manos, y la tercera solo puede decir una de tres cosas.</p>
+<p class="cue"><span class="arw">↓</span> desplázate para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: a balança de dois pratos no balcão de uma imobiliária — dois envelopes A e B, um fiel que só aponta para um lado com peso de verdade -->
+<rect height="6" rx="3" style="fill:var(--line2)" width="240" x="30" y="190"></rect>
+<g stroke-linecap="round" stroke-width="2.5" style="stroke:var(--ink-soft)"><path d="M150 60v130"></path><path d="M120 190h60"></path></g>
+<g stroke-linecap="round" stroke-width="2.5" style="stroke:var(--accent)"><path d="M62 78L238 66"></path><circle cx="150" cy="72" r="6"></circle></g>
+<g stroke-width="1.5" style="stroke:var(--muted)"><path d="M62 78v34M238 66v46"></path></g>
+<g stroke-width="2" style="stroke:var(--ink-soft)"><path d="M30 112h64l-6 22H36z"></path><path d="M206 112h64l-6 22H212z"></path></g>
+<g stroke-width="1.5" style="fill:var(--panel);stroke:var(--warm)"><rect height="22" rx="3" width="32" x="46" y="92"></rect><rect height="22" rx="3" width="32" x="222" y="86"></rect></g>
+<g font-size="10" text-anchor="middle"><text x="62" y="107">A</text><text x="238" y="101">B</text></g>
+<g stroke-width="1" style="stroke:var(--muted)"><path d="M46 100l16 8 16-8M222 94l16 8 16-8"></path></g>
+<text font-size="9" style="fill:var(--muted)" text-anchor="middle" x="150" y="220">la balanza no opina: solo pesa lo que pusieron en ambos platillos</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> El Optimizador escribe hipótesis, no consejos</h2>
+<p>O <span class="gterm" data-def="El asistente que lee la crítica y escribe hasta 3 hipótesis comprobables, cada una con un solo cambio concreto. No toma decisiones." tabindex="0">Optimizador</span> lee el diagnóstico del Crítico y escribe hipótesis. Cada hipótesis tiene una estructura fija. <b>SI</b> un único cambio concreto en el guion, <b>ENTONCES</b> esa métrica debe pasar de este valor a este otro, <b>PORQUE</b> esta evidencia (sólida o moderada). Un cambio por hipótesis. Nunca dos.</p>
+<p>Antes de escribir, consulta el cajón de hipótesis descartadas: lo que ya perdió o fue vetado no vuelve. Las hipótesis basadas solo en evidencia débil tampoco se prueban; pasan a «observado, no probado» y esperan a que haya más datos.</p>
+<p>Ejemplo aplicado: el agente inmobiliario recibió dos cifras del Crítico. El 70 % de los contactos del portal nunca responde al primer mensaje y la respuesta tarda 3 horas de media. El Optimizador escribe: «SI la primera respuesta se envía en 15 minutos o menos, ENTONCES la tasa de respuesta debería subir del 30 % al 40 %». Añade: «PORQUE un 70 % de silencio es evidencia sólida y el contacto pierde interés». Un solo cambio. No escribió «responde rápido, añade más fotos e incluye el precio»: eso mezclaría tres hipótesis.</p>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> El Experimentador hace los cálculos antes de probar</h2>
+<p>O <span class="gterm" data-def="El asistente que diseña la prueba A frente a B: cuántas ejecuciones necesita cada grupo, cuánto dura, cómo repartirlas y cuándo detenerse." tabindex="0">Experimentador</span> toma la hipótesis aprobada y diseña la prueba: A es la versión actual y B es la versión con el cambio. Antes de enviar nada, calcula la <span class="gterm" data-def="Cuántas ejecuciones debe acumular cada versión para que la diferencia entre A y B no sea fruto del azar. Depende del aumento esperado." tabindex="0">cantidad necesaria para demostrarlo</span> —cuántas ejecuciones necesita cada lado para que la diferencia no sea fruto del azar.</p>
+<p>Después divide el trabajo por igual, alternando según el orden de llegada: el Ejecutor no elige quién recibe A o B. También fija la regla de parada: la prueba solo se detiene antes de tiempo si se rompe un límite de seguridad. Nunca porque «ya va ganando».</p>
+<p>Ejemplo aplicado: en la clínica del caso de referencia, la hipótesis de que un «mensaje de hasta 80 palabras» elevaría la respuesta del 17 % al 22 %. El Experimentador calculó que demostrar un aumento tan pequeño requería 985 propuestas por grupo. Al ritmo de la clínica, serían 40 semanas, por encima del límite de 16. No redujo la cantidad por su cuenta. Presentó tres opciones a la dueña. La decisión fue medir un aumento que valiera la pena (del 17 % al 30 %): 166 por grupo, 7 semanas. La prueba fue viable porque alguien hizo los cálculos antes, no después.</p>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Antes: la prueba «a ojo»</p><p class="qba-txt">La clínica cambia tres cosas del mensaje a la vez, lo envía durante dos semanas, mira WhatsApp y concluye que «mejoró». Nadie sabe cuál de los tres cambios afectó el resultado ni si fue suerte.</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">Después: la prueba diseñada</p><p class="qba-txt">Un cambio. Dos grupos, repartidos por igual según el orden de llegada. 166 propuestas por grupo antes de emitir un veredicto. Solo se detiene antes si se rompe un límite de seguridad.</p></div>
+<p class="qba-saldo"><b>Balance:</b> En el ejemplo, se pasó de 40 semanas inviables a 7 viables, con un cálculo registrado que cualquiera puede comprobar.</p>
+</div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> El Evaluador solo puede decir tres cosas</h2>
+<p>O <span class="gterm" data-def="El asistente que compara A y B según la métrica y responde exactamente una de tres cosas: B ganó, A sigue o la cantidad es insuficiente. Nunca «parece mejor»." tabindex="0">Evaluador</span> recibe las cifras de la prueba y responde con una sola frase, entre tres posibles. <b>Cantidad insuficiente</b> : a uno de los grupos aún le faltan datos para llegar al mínimo; continúa. <b>A sigue</b> : B no superó a A con margen suficiente o empeoró algún indicador de «sin empeorar», aunque la métrica objetivo haya subido. <b>B ganó</b> : B superó a A con margen suficiente y no empeoró ningún indicador.</p>
+<p>No existe «B parece mejor» ni «B ganó, pero…». La tercera respuesta, «cantidad insuficiente», es la más habitual y hay que aceptarla. Un ciclo honesto pasa muchas semanas diciendo «todavía no lo sé».</p>
+<p>Ejemplo aplicado: en el segundo ciclo de la clínica, la versión B tenía «hasta 80 palabras». Elevó la tasa de respuesta del 19,3 % al 29,7 %, con 300 propuestas por grupo. Un aumento real, no suerte. Y el Evaluador respondió: <b>A sigue</b>. Motivo: hubo 6 quejas de 300 con la versión B frente a 1 de 300 con la versión A, y la ficha establecía tolerancia cero a las quejas. La regla se aplicó tal como estaba escrita. (En la clase del Guardián verás que la regla estaba mal calibrada y cómo la clínica la corrigió sin cambiar el veredicto.)</p>
+<div class="quiz" data-answer="b">
+<p class="qk">Ponte a prueba</p><p class="q">La prueba del responsable de soporte está en su tercera semana. B resuelve el 70 % en el primer contacto frente al 55 % de A, pero cada grupo solo tiene 40 tickets, por debajo del mínimo de 170. ¿Qué responde el Evaluador?</p>
+<button class="opt" data-fb="Detener y promover porque «va ganando» es la forma más común de convertir la suerte en regla: por eso existe un mínimo." data-k="a">B ganó: la diferencia es clara, promuévela</button>
+<button class="opt" data-fb="Correcto. Por debajo del mínimo, el Evaluador no emite un veredicto: responde «cantidad insuficiente», indica el recuento acumulado y la prueba continúa." data-k="b">Cantidad insuficiente: continúa la prueba</button>
+<button class="opt" data-fb="No hay evidencia de que A sea mejor: simplemente no hay datos suficientes para afirmar nada. «A sigue» se responde cuando se alcanzó el mínimo y B no superó a A." data-k="c">A sigue: 15 puntos con 40 tickets no bastan para tener margen</button>
+<p class="qfb"></p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="step" data-fig="4" data-kind="fundamento">
+<h2><span class="n">04</span> Quien se convenció por su cuenta tenía las tres funciones en una sola mano</h2>
+<p>Une las tres clases. Quien hace no mide; quien mide no explica; quien explica no propone. Y ahora: quien propone no prueba, y quien prueba no juzga. Cada vez que alguien «se convence por su cuenta», es porque las tres últimas funciones estaban en la misma mano. Esa persona tuvo la idea, eligió cómo probarla y decidió que había ganado.</p>
+<p>La separación no consiste en desconfiar de las personas. Tiene en cuenta un patrón humano —y también de la IA—: quien tiene la idea quiere que funcione y ve el resultado que espera. El ciclo no te pide que seas neutral; pide que juzgue otra persona.</p>
+<p>Ejemplo aplicado: el responsable de soporte cambia la respuesta estándar para un problema recurrente. La semana siguiente «siente» que bajaron las reaperturas y pide al equipo que adopte el cambio. Actuó como Optimizador (la idea), Experimentador (una semana, sin contar y sin mantener la versión A en paralelo) y Evaluador (el veredicto de que «bajaron»). En el ciclo, su idea se convertiría en una hipótesis. A y B funcionarían en paralelo hasta reunir 170 tickets cada una. El veredicto lo daría alguien que no redactó la respuesta.</p>
+<div class="qanchor"><p>La idea puede ser tuya. La prueba y el veredicto, nunca.</p></div>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">marcar como leído</button>
+</section>
+<section class="practice" data-mode="analise" data-practice="p2">
+<p class="pk">Practica ahora <span class="pcount">0/3 completados</span></p>
+<h3 class="ph">Encuentra quién se convenció por su cuenta</h3>
+<p class="pgoal">Meta: en unos 8 minutos, lee el caso, responde por escrito las 3 preguntas y compara con la clave.</p>
+<p class="psafe">Es seguro: el caso es de otra empresa y nada cambia en tu negocio hasta que lo apruebes; aquí solo entrenas la mirada. Si tu respuesta no coincide con la clave, vuelve a leer el paso 04 e inténtalo de nuevo. La diferencia suele estar en quién emitió el veredicto.</p>
+<p><b>El caso.</b> Marcos dirige el soporte de una empresa de software con 6 agentes. Observó que los tickets sobre «no puedo exportar el informe» eran los que más se reabrían. Redactó una respuesta nueva con un video corto y pidió a todos que la usaran desde el lunes. El viernes miró el panel: se reabrieron 3 de las 23 respuestas nuevas; «antes eran muchas más». Estableció la respuesta nueva como estándar y borró la anterior.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Anoté cuál de las tres funciones (proponer, probar, juzgar) desempeñó Marcos y qué frase del caso muestra cada una.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Anoté qué habría exigido el Experimentador antes del lunes (al menos dos cosas).</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Anoté cuál de las tres respuestas daría el Evaluador el viernes y por qué; después la comparé con la clave de abajo.</span></label></li>
+</ol>
+<details><summary>Clave comentada</summary>
+<p><b>1.</b> Las tres. Propuso: «redactó una respuesta nueva». Probó a su manera: «pidió a todos que la usaran desde el lunes», sin mantener la versión A en paralelo. Juzgó: «antes eran muchas más», sin contar el valor anterior. La señal más clara es «borró la anterior»: ya no existe una versión A para comparar ni para volver atrás.</p>
+<p><b>2.</b> Una hipótesis con un solo cambio: la nueva respuesta tiene un texto distinto <i>e</i> y un video: son dos cambios. La cantidad necesaria debe calcularse de antemano; a su ritmo, probablemente tomaría semanas, no días. La mitad de los tickets debe seguir usando la respuesta anterior, alternando según el orden de llegada. Y solo se puede detener la prueba si se rompe un límite de seguridad.</p>
+<p><b>3.</b> «Cantidad insuficiente». Veintitrés respuestas en una semana no alcanzan el mínimo de ninguna prueba razonable y no hay un recuento de A durante el mismo período. Tres de 23 puede ser suerte, un día tranquilo o un efecto real: nadie lo sabe. Marcos convirtió una conjetura en regla y borró la evidencia.</p>
+</details>
+<p class="pdone">Acabas de separar la idea, la prueba y el veredicto en un caso real, y señalaste el momento exacto en que se borró la evidencia.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; — Una hipótesis tiene tres líneas fijas y un solo cambio. Antes de escribir, se consulta el cajón «descartadas»; lo que está allí no vuelve." data-fig="1">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="40" rx="6" width="52" x="14" y="60"></rect><rect height="112" rx="6" width="114" x="92" y="26"></rect></g>
+<g font-size="8" text-anchor="middle"><text x="40" y="77">OTIMIZADOR</text><text x="40" y="89">propõe</text></g>
+<g font-size="8"><text style="fill:var(--accent)" x="100" y="46">SI</text><text x="118" y="46">1 cambio en el guion</text><text style="fill:var(--accent)" x="100" y="72">ENTONCES</text><text x="136" y="72">30% → 40%</text><text style="fill:var(--accent)" x="100" y="98">PORQUE</text><text x="142" y="98">sólida / moderada</text><text style="fill:var(--warm)" x="100" y="124">MUDANÇA</text><text x="150" y="124">texto novo</text></g>
+<path d="M92 58h114M92 84h114M92 110h114" stroke-width="1" style="stroke:var(--line2)"></path>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M66 80h18"></path><path d="M79 76l5 4-5 4"></path></g>
+<g stroke-dasharray="3 3" stroke-width="1.5" style="stroke:var(--warm)"><rect height="30" rx="5" width="52" x="14" y="150"></rect><path d="M40 150v-50"></path></g>
+<text font-size="7.5" text-anchor="middle" x="40" y="164">descartadas</text><text font-size="7.5" text-anchor="middle" x="40" y="174">(lê antes)</text>
+<text font-size="8" style="fill:var(--muted)" text-anchor="middle" x="149" y="160">hasta 3 por ciclo · un cambio cada una</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; — La prueba tiene dos grupos asignados por orden de llegada. La escala inferior muestra la cantidad mínima; no hay veredicto antes de alcanzarla y solo se detiene antes si se rompe un límite de seguridad." data-fig="2">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="60" rx="6" width="40" x="14" y="30"></rect></g>
+<g font-size="7.5" text-anchor="middle"><text x="34" y="56">chegada</text><text x="34" y="68">1,2,3,4…</text></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M54 48h30v-12h20"></path><path d="M54 72h30v12h20"></path><path d="M99 32l5 4-5 4M99 80l5 4-5 4"></path></g>
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="28" rx="5" width="100" x="106" y="22"></rect><rect height="28" rx="5" width="100" x="106" y="70"></rect></g>
+<g font-size="8"><text x="114" y="40">A · versión actual</text><text x="114" y="88">B · un cambio</text></g>
+<g stroke-linecap="round" stroke-width="6" style="stroke:var(--line2)"><path d="M20 130h186"></path></g>
+<g stroke-linecap="round" stroke-width="6" style="stroke:var(--accent)"><path d="M20 130h110"></path></g>
+<g stroke-width="2" style="stroke:var(--warm)"><path d="M160 120v20"></path></g>
+<g font-size="7.5" text-anchor="middle"><text style="fill:var(--warm)" x="160" y="152">166 por grupo</text><text style="fill:var(--muted)" x="75" y="152">todavía no lo sé</text></g>
+<text font-size="8" style="fill:var(--muted)" text-anchor="middle" x="110" y="180">detener antes solo si se rompe un límite de seguridad</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; — El Evaluador es un embudo con tres salidas y ninguna cuarta. Observa que los indicadores de seguridad se comprueban antes de «B ganó»: no basta con subir la métrica objetivo." data-fig="3">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="26" rx="5" width="80" x="70" y="14"></rect></g>
+<text font-size="8" text-anchor="middle" x="110" y="31">cifras de A y B</text>
+<g stroke-width="1.5" style="stroke:var(--accent)"><path d="M110 40v14"></path></g>
+<g stroke-width="1.5" style="stroke:var(--warm)"><path d="M110 54l-40 22 40 22 40-22z"></path></g>
+<text font-size="7" text-anchor="middle" x="110" y="79">¿alcanzó la cantidad?</text>
+<g stroke-width="1.5" style="stroke:var(--warm)"><path d="M110 98l-40 22 40 22 40-22z"></path></g>
+<text font-size="7" text-anchor="middle" x="110" y="123">¿empeoró algo?</text>
+<g stroke-linecap="round" stroke-width="1.5" style="stroke:var(--accent)"><path d="M70 76h-40v40"></path><path d="M150 120h40v18"></path><path d="M110 142v20"></path></g>
+<g font-size="7.5" text-anchor="middle"><text style="fill:var(--muted)" x="30" y="128">no →</text><text x="30" y="140">QUANTIDADE</text><text x="30" y="150">INSUFICIENTE</text><text style="fill:var(--muted)" x="190" y="150">sim →</text><text x="190" y="162">A SEGUE</text><text style="fill:var(--accent)" x="110" y="176">no → B GANÓ</text></g>
+<text font-size="7.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="194">no hay una cuarta salida</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; — A la izquierda, las tres funciones están en una sola mano: la flecha forma un círculo. A la derecha, tres manos: la única forma de que el veredicto no vuelva a quien tuvo la idea." data-fig="4">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--warm)"><circle cx="56" cy="90" r="34"></circle></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--warm)"><path d="M86 74l4 8-8 3"></path></g>
+<g font-size="7.5" text-anchor="middle"><text x="56" y="82">ideia</text><text x="56" y="93">teste</text><text x="56" y="104">veredito</text><text style="fill:var(--warm)" x="56" y="146">mesma mão</text></g>
+<path d="M110 40v120" stroke-dasharray="3 3" stroke-width="1" style="stroke:var(--line2)"></path>
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="24" rx="5" width="80" x="126" y="46"></rect><rect height="24" rx="5" width="80" x="126" y="88"></rect><rect height="24" rx="5" width="80" x="126" y="130"></rect></g>
+<g font-size="7.5"><text x="134" y="61">Optimizador · idea</text><text x="134" y="103">Experimentador · prueba</text><text x="134" y="145">Evaluador · veredicto</text></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M166 70v18M166 112v18"></path><path d="M162 84l4 4 4-4M162 126l4 4 4-4"></path></g>
+<text font-size="7.5" style="fill:var(--accent)" text-anchor="middle" x="166" y="176">três mãos</text>
+</svg>
+</div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>El Optimizador convierte los diagnósticos en hipótesis de un solo cambio con la estructura SI–ENTONCES–PORQUE, y nunca vuelve a presentar algo que ya se descartó.</li>
+<li>El Experimentador calcula la cantidad necesaria antes de enviar nada. Divide según el orden de llegada y solo se detiene antes si se rompe un límite de seguridad.</li>
+<li>El Evaluador responde con una de tres frases, y «cantidad insuficiente» es la más frecuente en un ciclo honesto.</li>
+<li>Quien se convence por su cuenta no es deshonesto: tenía la idea, la prueba y el veredicto en una misma mano. El ciclo separa dos de esas funciones.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu siguiente paso</p>
+<p class="na-win">Acabas de reconocer, en un caso concreto, el momento en que una conjetura se convirtió en regla sin juez.</p>
+<p class="na-action">Durante los próximos 15 minutos, en tu trabajo real, recuerda el último cambio de guion, texto o proceso que se convirtió en regla en tu empresa. Anota quién tuvo la idea, quién la probó y quién decidió. Si aparece el mismo nombre tres veces, ya sabes qué faltó.</p>
+<p class="na-hook">En la próxima clase conocerás al Guardián, el asistente que evita que un cambio correcto siga el camino equivocado. También escribirás la respuesta 3 de tu ficha del ciclo: lo que nunca cambia sin ti.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-1">← anterior: Ejecutor, Observador, Crítico</a><a href="#aula-3">siguiente: el Guardián →</a></nav>
+<footer>Clase 3.2 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-2" type="application/json">
+[
+  {
+    "front": "Diagnóstico: el Optimizador del agente inmobiliario escribió: «SI responde en 15 min, con más fotos y con el precio, ENTONCES…». ¿Qué está mal?",
+    "back": "Tres cambios en una sola hipótesis. Si gana B, nadie sabe cuál funcionó; si pierde, nadie sabe cuál perjudicó. Una modificación por hipótesis."
+  },
+  {
+    "front": "Decisión: el cálculo del Experimentador indica que hacen falta 40 semanas para demostrar el aumento prometido por el Optimizador. ¿Qué hace?",
+    "back": "No reduce la cantidad por su cuenta. Lo consulta con quien aprueba y presenta opciones; en el ejemplo de la clínica, midieron un aumento que valía la pena (del 17 % al 30 %), que cabía en 7 semanas."
+  },
+  {
+    "front": "Aplicación: B subió la tasa de respuesta del 19,3 % al 29,7 % con 300 por grupo, pero hubo 6 quejas frente a 1 y la ficha fijaba tolerancia cero. ¿Qué responde el Evaluador?",
+    "back": "«A sigue». No basta con subir el objetivo si algún indicador empeora más allá de la tolerancia. La regla estaba mal calibrada, pero el Evaluador aplica la regla escrita; ajustarla para las próximas pruebas es tarea humana."
+  },
+  {
+    "front": "Contraste: ¿qué diferencia hay entre «muestra insuficiente» y «A sigue»?",
+    "back": "«Muestra insuficiente» significa que aún no se puede concluir nada y la prueba continúa. «A sigue» significa que se alcanzó la muestra mínima y B no superó a A con margen (o empeoró algo). Una aplaza la decisión; la otra es un veredicto."
+  },
+  {
+    "front": "Pregunta: ¿por qué una prueba solo puede detenerse antes por un indicador de seguridad y nunca por una ventaja parcial?",
+    "back": "Porque detenerse cuando «va ganando» selecciona un momento de suerte y lo convierte en regla. Si empeora un indicador, hay un daño real; detenerse entonces protege, no engaña."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-2 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: corretor · clínica · clínica · suporte)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~8 min) (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-2"> presente (1, 5 cartões)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, step 03)
+-->
+</section>
+<!-- ===== AULA 3 — FERRAMENTA ===== -->
+<section class="view" data-aula="3" data-tempo="24min" id="v-aula-3">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Ruta 03 · Clase 3</p>
+<h1>El Guardián:<br/><em>lo que nunca cambia por su cuenta</em></h1>
+<p class="promise">Al terminar esta clase, habrás escrito la respuesta 3 de la ficha: 3 cosas que nunca cambian sin ti y 2 cifras que no pueden empeorar.</p>
+<p class="why">Todo ciclo aprende a hacer trampa con la meta si nadie indica qué está prohibido. «Más respuestas» puede convertirse en un mensaje molesto; «atención más rápida», en un ticket cerrado sin resolver. El Guardián existe para que la IA mejore la cifra correcta por el camino correcto. Solo funciona si escribes qué debe vigilar.</p>
+<p class="cue"><span class="arw">↓</span> desplázate para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: o corrimão (guarda-corpo) de uma escada de loja — a escada pode subir o quanto quiser; o corrimão fica -->
+<g stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="stroke:var(--ink-soft)"><path d="M30 200h48v-30h48v-30h48v-30h48v-30h48"></path></g>
+<g stroke-width="2" style="stroke:var(--line2)"><path d="M30 200v10h240v-10"></path></g>
+<g stroke-linecap="round" stroke-width="3" style="stroke:var(--accent)"><path d="M54 150L246 30"></path></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M54 150v50M102 120v50M150 90v50M198 60v50M246 30v50"></path></g>
+<g stroke-width="1.5" style="fill:var(--panel);stroke:var(--warm)"><rect height="20" rx="3" width="70" x="118" y="20"></rect></g>
+<text font-size="8" text-anchor="middle" x="153" y="34">NUNCA · SIN EMPEORAR</text>
+<path d="M153 40v42" stroke-dasharray="3 3" stroke-width="1.2" style="stroke:var(--warm)"></path>
+<text font-size="9" style="fill:var(--muted)" text-anchor="middle" x="150" y="228">la escalera puede subir; el pasamanos no se mueve</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> El veto es definitivo y nadie negocia con él</h2>
+<p>O <span class="gterm" data-def="El asistente que lee cada hipótesis antes de la prueba y responde APROBADA o VETADA. Comprueba lo que nunca cambia, lo que no puede empeorar y el límite. El veto es definitivo." tabindex="0">Guardián</span> lee las hipótesis del Optimizador antes de cualquier prueba. Para cada una responde con una palabra: aprobada o vetada. Es el único asistente cuya decisión nadie revisa dentro del ciclo. No se deja convencer con argumentos, no aprueba «con reservas» ni sugiere alternativas. Ante la duda, veta.</p>
+<p>Suena estricto porque lo es. El Guardián no está para aplicar el sentido común, sino para hacer cumplir sin variaciones la lista que escribiste. El sentido común es tuyo al redactarla. Después, el Guardián solo comprueba.</p>
+<p>Ejemplo aplicado: el agente inmobiliario y el responsable de soporte escriben listas distintas, y el Guardián de cada uno vigila cosas diferentes, pero actúa de la misma manera.</p>
+<div class="qapply">
+<p class="qak">En tu profesión</p>
+<ul>
+<li><b>Agente inmobiliario:</b> el Guardián veta cualquier hipótesis cuya respuesta prometa la aprobación de un préstamo o indique una cuota de comunidad sin verificarla, aunque prometa duplicar la tasa de respuesta.</li>
+<li><b>Responsable de soporte:</b> el Guardián veta cualquier hipótesis que cierre un ticket antes de que el cliente confirme que se resolvió, aunque el tiempo medio de atención se redujera a la mitad.</li>
+<li><b>Dueña de la clínica:</b> el Guardián veta cualquier hipótesis que prometa un resultado o un plazo en una propuesta, aunque aumente la conversión.</li>
+</ul>
+</div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="ferramenta" data-versao="ficha do loop, set/2026">
+<h2><span class="n">02</span> Invariantes: lo que nunca cambia sin ti</h2>
+<p>La primera lista del Guardián son las <span class="gterm" data-def="Reglas que ninguna hipótesis puede tocar bajo ninguna circunstancia: seguridad, ley y política de la empresa. Solo cambian por decisión tuya, fuera del ciclo." tabindex="0">invariantes</span> : aquello que ninguna hipótesis puede tocar bajo ninguna circunstancia. No son metas, sino límites: seguridad, ley, promesas que la empresa no hace y personas que pidieron que no las contacten.</p>
+<p>Una buena invariante es breve, concreta y empieza con «nunca». Si necesitas dos frases para explicarla, todavía es una opinión, no un límite. Tú la escribes una sola vez en la ficha del ciclo. El Guardián no inventa invariantes: solo las aplica.</p>
+<p>Antes de ver el modelo: lo que sigue es la parte de la ficha de la clínica del ejemplo. Léela como una lista de «reglas de la casa» colgada en recepción. Escribirás la tuya al final de esta clase.</p>
+<p>Ejemplo aplicado: el agente inmobiliario escribe tres reglas en la ficha: «Nunca prometer la aprobación de un préstamo». «Nunca indicar gastos de comunidad o impuesto inmobiliario sin comprobar el registro». «Nunca contactar a quien pidió no recibir mensajes». La hipótesis «responder de inmediato con una simulación de préstamo aprobada» ni siquiera llega a la prueba: el Guardián la veta al revisarla porque infringe la primera invariante. Como referencia, la clínica tiene cuatro: nunca descontar más del 10 %; nunca prometer un resultado clínico o un plazo; nunca contactar a quien pidió no recibir mensajes; nunca nombrar a competidores.</p>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="ferramenta" data-versao="ficha do loop, set/2026">
+<h2><span class="n">03</span> «Sin empeorar»: la meta siempre va escoltada</h2>
+<p>La segunda lista son los <span class="gterm" data-def="Cifras que acompañan la meta y no pueden caer más allá de una tolerancia mientras la meta sube. Por ejemplo: quejas, margen y solicitudes para dejar de recibir mensajes." tabindex="0">«sin empeorar»</span>. Toda meta del ciclo tiene la forma «aumentar X sin empeorar Y ni Z». Sin esa escolta, el ciclo aprende a hacer trampa: eleva X por el camino más barato, que casi siempre perjudica Y.</p>
+<p>El Guardián usa esta lista de dos maneras. Antes de la prueba, veta las hipótesis que empeoran Y «de forma previsible». Después, el Evaluador rechaza B si Y cae más allá de la tolerancia, aunque X haya subido mucho, como viste en la clase anterior.</p>
+<p>Ejemplo aplicado: en el primer ciclo de la clínica, el Optimizador propuso cerrar la propuesta con una pregunta de elección única: «¿Prefieres empezar esta semana o la próxima?». La hipótesis tenía evidencia sólida (el 83 % de las propuestas no recibía respuesta) y prometía elevar la respuesta del 17 % al 25 %. El Guardián la vetó. Motivo en una línea: la pregunta da por hecha la compra y fija un plazo. Eso supone un riesgo previsible de quejas y solicitudes para dejar de recibir mensajes, los dos indicadores de «sin empeorar» de la ficha. No negoció ni sugirió una pregunta más suave. Vetó la idea y el Optimizador pasó a la siguiente.</p>
+<div class="qerr">
+<p class="qk">Error frecuente</p>
+<p class="qerr-txt"><b>Una meta sin «sin empeorar».</b> «Aumentar la tasa de respuesta» por sí sola es una invitación: el mensaje más irritante del mundo consigue una respuesta («deja de escribirme» también cuenta). Ocurre porque la meta parece obvia y la escolta parece un detalle. Para evitarlo, nunca escribas la meta sin al menos dos indicadores de «sin empeorar» y define qué cuenta como respuesta antes de empezar a contar.</p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="step" data-fig="4" data-kind="ferramenta" data-versao="ficha do loop, set/2026">
+<h2><span class="n">04</span> Tolerancia: cuánto empeoramiento sigue siendo ruido</h2>
+<p>Cada indicador de «sin empeorar» lleva una cifra al lado: la <span class="gterm" data-def="Cuánto puede caer un indicador de «sin empeorar» sin que cuente como deterioro. Debe superar el ruido esperado para el tamaño de muestra; de lo contrario, se descartarán buenas hipótesis por azar." tabindex="0">tolerancia</span>. El cero parece lo más seguro. Casi siempre es lo más equivocado, porque los eventos raros fluctúan por azar: 1 queja un mes, 6 al siguiente, aunque nada haya cambiado.</p>
+<p>Regla práctica: la tolerancia de un evento raro debe ser mayor que su fluctuación normal con el tamaño de muestra de la prueba. Para algo que ocurre el 1 % de las veces, con 300 por grupo, la fluctuación normal ronda 1 punto. Por eso la tolerancia debe ser 0,01, no cero.</p>
+<p>Ejemplo aplicado: eso fue exactamente lo que aprendió la clínica en el segundo ciclo. B elevó la respuesta del 19,3 % al 29,7 %, pero perdió por 6 quejas frente a 1, con tolerancia cero. Seis frente a una de 300 no es una diferencia: es ruido. La dueña no reabrió el veredicto (se aplicó la regla escrita y se conservó el registro). Cambió la tolerancia a 0,01 para las siguientes pruebas. En el ciclo siguiente, incluso con la tolerancia nueva, el Guardián vetó «poner el precio y las formas de pago justo después del saludo». Presentar el precio antes de cualquier explicación crea un riesgo previsible de bajas y quejas. La propia hipótesis admitía el riesgo. La tolerancia no es permiso: es solo una medida de la variación aleatoria.</p>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">marcar como leído</button>
+</section>
+<section class="step" data-fig="5" data-kind="ferramenta" data-versao="ficha do loop, set/2026">
+<h2><span class="n">05</span> El límite: cuánto puede gastar el ciclo por ronda</h2>
+<p>La tercera cosa que vigila el Guardián es el límite: el costo de IA por ciclo y la cantidad de pruebas simultáneas. Si el costo supera el límite, no aprueba nada más, ni siquiera una hipótesis perfecta. Si ya hay una prueba en curso y el máximo es una, la siguiente hipótesis aprobada espera en la fila.</p>
+<p>El límite es la respuesta 4 de la ficha y la escribirás en la ruta 4. Por ahora, basta con saber que existe y que el Guardián lo aplica con la misma firmeza que las invariantes. En el ejemplo de la clínica, el límite era de R$ 50 por ciclo semanal y una prueba a la vez. Por eso la tercera hipótesis aprobada en el primer ciclo esperó a que terminara la prueba anterior.</p>
+<p>Ejemplo aplicado: el responsable de soporte tiene 6 agentes y 800 tickets al mes. Si el ciclo ejecutara tres pruebas al mismo tiempo, cada una tendría 130 tickets por grupo y ninguna alcanzaría la cantidad necesaria para demostrar nada. Con un límite de «una prueba a la vez», cada prueba recibe todos los tickets y termina en semanas, no meses. El límite reduce el desperdicio, no la mejora.</p>
+<div class="qsteps">
+<p class="qsk">Cómo escribir la respuesta 3 de la ficha</p>
+<ol>
+<li><b>Invariantes (3):</b> empieza cada una con «nunca». Una frase, lo bastante concreta para que una persona nueva pueda comprobarla sin preguntar.</li>
+<li><b>«Sin empeorar» (2):</b> cada uno es una cifra que ya registras o puedes registrar por fila (quejas, margen, reaperturas, solicitudes de baja).</li>
+<li><b>Tolerancia:</b> para un evento raro (menos del 5 %), nunca uses cero: empieza con 0,01 y ajusta según el tamaño de muestra.</li>
+<li><b>Prueba del Guardián:</b> toma la última idea de mejora que surgió en tu empresa y compárala con la lista. Si pasa, pero sientes que no debería, falta una invariante.</li>
+</ol>
+</div>
+<div class="mobfig" data-mobfig="5"></div>
+<button class="readbtn" data-read="s5">marcar como leído</button>
+</section>
+<section class="practice" data-mode="tarefa" data-practice="p3">
+<p class="pk">Practica ahora <span class="pcount">0/4 completados</span></p>
+<h3 class="ph">Escribe la respuesta 3 de tu ficha del ciclo</h3>
+<p class="pgoal">Meta: en unos 12 minutos, dejar por escrito 3 invariantes y 2 indicadores de «sin empeorar» con tolerancia para el proceso que elegiste en la ruta 2.</p>
+<p class="psafe">Es seguro: estás escribiendo una lista, no activando nada; nada cambia en tu negocio hasta que lo apruebes. Si una invariante parece exagerada, déjala: es mucho más barato flexibilizar una regla después que descubrir durante una prueba que faltaba una.</p>
+<p><b>Ejemplo de resultado aceptable</b> (la ficha de la clínica del ejemplo, traducida): <i>Nunca descontar más del 10 %. Nunca prometer resultados clínicos ni plazos. Nunca contactar a quien pidió no recibir mensajes. Sin empeorar: margen medio (tolerancia 0,01) · quejas (tolerancia 0,01) · solicitudes para dejar de recibir mensajes (tolerancia 0,005).</i></p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Escribí 3 invariantes, cada una en una frase que empieza con «nunca», sobre el proceso de mi ficha (propuesta, respuesta a un contacto o respuesta a un ticket).</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Escribí 2 indicadores de «sin empeorar» como cifras y sé en qué columna del registro aparecerá cada uno.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Anoté una tolerancia junto a cada indicador de «sin empeorar» y ninguna es cero para un evento raro.</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>Probé la lista con la última idea de mejora de mi empresa y pude escribir «aprobada» o «vetada» en una línea, con el motivo.</span></label></li>
+</ol>
+<p class="pdone">Acabas de escribir la respuesta 3 de la ficha del ciclo: la lista que el Guardián aplicará sin variaciones a cada hipótesis. Está lista cuando hayas podido vetar o aprobar con ella una idea real.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; — El Guardián está entre las hipótesis y la prueba. Cada hipótesis pasa por tres comprobaciones y sale con una palabra; no existe la flecha de «negociar»." data-fig="1">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="64" rx="5" width="44" x="10" y="60"></rect><rect height="64" rx="5" width="46" x="164" y="60"></rect></g>
+<g font-size="7.5" text-anchor="middle"><text x="32" y="80">H1</text><text x="32" y="96">H2</text><text x="32" y="112">H3</text><text x="187" y="88">PRUEBA</text><text x="187" y="100">A × B</text></g>
+<g stroke-width="2" style="stroke:var(--warm)"><rect height="104" rx="6" width="68" x="76" y="40"></rect></g>
+<g font-size="7" text-anchor="middle"><text style="fill:var(--warm)" x="110" y="54">GUARDIÁN</text><text x="110" y="74">¿toca una invariante?</text><text x="110" y="96">¿empeora de forma previsible?</text><text x="110" y="118">¿supera el límite?</text><text style="fill:var(--muted)" x="110" y="136">en caso de duda: veta</text></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M54 80h22M54 112h22"></path><path d="M144 92h20"></path><path d="M159 88l5 4-5 4"></path></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--warm)"><path d="M54 96h22"></path><path d="M110 144v22"></path><path d="M100 174l10-8 10 8"></path></g>
+<text font-size="7.5" style="fill:var(--warm)" text-anchor="middle" x="110" y="188">VETADA: motivo en una línea, sin alternativa</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; — Las invariantes son la cerca fija alrededor del campo donde puede moverse el ciclo. La cerca no es una meta ni una tolerancia: ninguna hipótesis puede cruzarla." data-fig="2">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-linejoin="round" stroke-width="2.5" style="stroke:var(--warm)"><rect height="130" rx="4" width="180" x="20" y="30"></rect></g>
+<g stroke-width="1.5" style="stroke:var(--warm)"><path d="M20 30l-6-6M200 30l6-6M20 160l-6 6M200 160l6 6"></path></g>
+<g font-size="7" style="fill:var(--warm)"><text x="26" y="24">nunca descontar &gt; 10 %</text><text x="26" y="176">nunca prometer resultados</text><text x="118" y="24">nunca contactar a quien pidió la baja</text><text x="118" y="176">nunca nombrar a competidores</text></g>
+<g stroke-dasharray="3 3" stroke-width="1.5" style="stroke:var(--accent)"><path d="M60 120c20-40 40-30 60-60s30-10 50 10"></path></g>
+<g style="fill:var(--accent)"><circle cx="60" cy="120" r="3"></circle><circle cx="120" cy="60" r="3"></circle><circle cx="170" cy="70" r="3"></circle></g>
+<g font-size="7" text-anchor="middle"><text x="60" y="134">v1</text><text x="120" y="52">v2</text><text x="170" y="84">v3…</text></g>
+<text font-size="7.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="194">las versiones avanzan dentro; solo tú puedes mover la cerca</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; — B impulsa la meta hacia arriba, pero está sujeta a dos indicadores de seguridad. Si alguno cae más allá de la tolerancia, la meta no cuenta: el Guardián veta antes y el Evaluador rechaza después." data-fig="3">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1" style="stroke:var(--line2)"><path d="M30 160h170M30 40v120"></path></g>
+<g stroke-linecap="round" stroke-width="2.5" style="stroke:var(--accent)"><path d="M40 130L110 70"></path></g>
+<g style="fill:var(--accent)"><circle cx="110" cy="70" r="4"></circle></g>
+<text font-size="8" style="fill:var(--accent)" x="118" y="66">respuestas 17 % → 25 %</text>
+<g stroke-dasharray="3 3" stroke-width="1.5" style="stroke:var(--warm)"><path d="M40 118h160"></path></g>
+<text font-size="7" style="fill:var(--warm)" x="128" y="114">tolerancia</text>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--warm)"><path d="M40 108l70 26"></path><path d="M40 112l70 34"></path></g>
+<g style="fill:var(--warm)"><circle cx="110" cy="134" r="3.5"></circle><circle cx="110" cy="146" r="3.5"></circle></g>
+<g font-size="7.5" style="fill:var(--ink-soft)"><text x="118" y="137">quejas ↓</text><text x="118" y="150">solicitudes de baja ↓</text></g>
+<g stroke-width="1" style="stroke:var(--muted)"><path d="M110 74v56"></path></g>
+<text font-size="7.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="180">«¿esta semana o la próxima?»: vetada antes de la prueba</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; — La franja gris representa la fluctuación normal de un evento raro en 300 ejecuciones. La tolerancia cero (línea superior) cae dentro del ruido; 0,01 queda justo por encima. Lo que supera la franja es un empeoramiento real." data-fig="4">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1" style="stroke:var(--line2)"><path d="M30 160h170M30 40v120"></path></g>
+<rect height="30" style="fill:var(--line);opacity:.6" width="170" x="30" y="112"></rect>
+<text font-size="7" style="fill:var(--muted)" x="36" y="132">ruido esperado (1 % en 300)</text>
+<g stroke-width="1.5" style="stroke:var(--warm)"><path d="M30 142h170"></path></g>
+<text font-size="7" style="fill:var(--warm)" x="204" y="145">tol. 0</text>
+<g stroke-dasharray="3 3" stroke-width="1.5" style="stroke:var(--accent)"><path d="M30 106h170"></path></g>
+<text font-size="7" style="fill:var(--accent)" x="204" y="109">tol. 0,01</text>
+<g style="fill:var(--ink-soft)"><circle cx="70" cy="150" r="4"></circle><circle cx="120" cy="120" r="4"></circle></g>
+<g style="fill:var(--warm)"><circle cx="170" cy="70" r="4"></circle></g>
+<g font-size="7" text-anchor="middle"><text x="70" y="172">A · 1 de 300</text><text x="120" y="172">B · 6 de 300</text><text x="170" y="172">empeoramiento real</text></g>
+<text font-size="7.5" style="fill:var(--muted)" text-anchor="middle" x="115" y="190">6 frente a 1 quedó dentro del rango: ruido, no un efecto</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 5&lt;/b&gt; — El límite es un medidor y una fila. El costo del ciclo llega hasta la marca; por encima, no se aprueba nada. Al lado, una prueba a la vez: la siguiente hipótesis aprobada espera." data-fig="5">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="120" rx="5" width="40" x="30" y="40"></rect></g>
+<rect height="85" rx="3" style="fill:var(--accent);opacity:.7" width="34" x="33" y="72"></rect>
+<g stroke-width="2" style="stroke:var(--warm)"><path d="M24 62h52"></path></g>
+<g font-size="7" text-anchor="middle"><text style="fill:var(--warm)" x="50" y="30">límite R$ 50</text><text x="50" y="176">costo del ciclo</text></g>
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="28" rx="5" width="90" x="110" y="60"></rect></g>
+<text font-size="8" style="fill:var(--accent)" text-anchor="middle" x="155" y="78">H2 · en prueba</text>
+<g stroke-dasharray="3 3" stroke-width="1.5" style="stroke:var(--muted)"><rect height="28" rx="5" width="90" x="110" y="104"></rect></g>
+<text font-size="8" style="fill:var(--muted)" text-anchor="middle" x="155" y="122">H3 · en espera</text>
+<g stroke-width="1.5" style="stroke:var(--muted)"><path d="M155 132v14"></path><path d="M151 142l4 4 4-4"></path></g>
+<text font-size="7" text-anchor="middle" x="155" y="176">máx. 1 prueba a la vez</text>
+</svg>
+</div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>El Guardián aplica sin negociar tres listas que escribiste. Invariantes: lo que nunca cambia. «Sin empeorar»: la escolta de la meta, con tolerancia. Límite: costo y pruebas simultáneas.</li>
+<li>Veta antes de la prueba lo que previsiblemente empeorará; el Evaluador rechaza después lo que realmente empeoró. Ambos usan la misma ficha.</li>
+<li>La tolerancia cero para un evento raro descarta buenas hipótesis por azar. El umbral debe superar el ruido; ajustarlo es tu trabajo, no el del ciclo.</li>
+<li>La calidad del Guardián depende de tu lista: no tiene sentido común, tiene tu ficha.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu siguiente paso</p>
+<p class="na-win">Acabas de escribir la respuesta 3 de la ficha del ciclo: lo que nunca cambia sin ti.</p>
+<p class="na-action">Durante los próximos 15 minutos, en tu trabajo real, muestra las 3 invariantes a alguien del equipo. Pregunta: «¿Podrías comprobar esto en una propuesta sin preguntarme nada?». Si la respuesta es no, reescribe la frase hasta que sea sí.</p>
+<p class="na-hook">En la próxima clase resolverás el problema de descubrir lo mismo dos veces: la Memoria, el asistente que nunca borra nada. También escribirás la primera línea del historial del ciclo.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-2">← anterior: Optimizador, Experimentador, Evaluador</a><a href="#aula-4">siguiente: la Memoria →</a></nav>
+<footer>Clase 3.3 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-3" type="application/json">
+[
+  {
+    "front": "Decisión: el Optimizador del agente inmobiliario propone «responder al contacto con una simulación de préstamo aprobada», con evidencia sólida. La ficha indica «nunca prometer la aprobación de un préstamo». ¿Qué responde el Guardián?",
+    "back": "Vetada, en una línea y sin sugerir una versión más suave. La evidencia sólida no permite infringir una invariante: la lista es un límite, no una meta."
+  },
+  {
+    "front": "Diagnóstico: un ciclo de soporte con la meta de «reducir el tiempo medio de atención» empezó a cerrar tickets sin resolverlos. ¿Qué faltaba en la ficha?",
+    "back": "Los indicadores de «sin empeorar»: reaperturas a 7 días y satisfacción, con tolerancia. Una meta sin escolta enseña al ciclo a elevar la cifra por el camino más barato."
+  },
+  {
+    "front": "Aplicación: registras 1 queja por cada 100 propuestas y harás una prueba con 300 por grupo. ¿Qué tolerancia asignas a «quejas» y por qué?",
+    "back": "Alrededor de 0,01, no cero. Un evento del 1 % fluctúa cerca de 1 punto por azar con esta cantidad; una tolerancia cero rechazaría una buena versión por ruido, como ocurrió en el ciclo 2 de la clínica (6 frente a 1)."
+  },
+  {
+    "front": "Contraste: ¿qué diferencia hay entre que el Guardián vete «el precio justo después del saludo» y que el Evaluador rechace «hasta 80 palabras»?",
+    "back": "El Guardián vetó antes de la prueba por un riesgo previsible para un indicador de «sin empeorar» (la hipótesis reconocía el riesgo). El Evaluador rechazó después de la prueba porque una cifra superó la tolerancia. La misma ficha, en momentos distintos."
+  },
+  {
+    "front": "Pregunta: ¿por qué no se puede convencer al Guardián con argumentos?",
+    "back": "Porque el argumento viene de quien quiere que se apruebe la hipótesis. Si aceptara «con reservas», la lista dejaría de ser un límite y se volvería una negociación; la escolta de la meta desaparecería en el primer ciclo en que la ganancia pareciera grande."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-3 | tipo=FERRAMENTA | steps=5
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (5/5: corretor+suporte+clínica · corretor · clínica · clínica · suporte)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (5/5)
+  [OK] practice           .practice[data-mode="tarefa"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~12 min) (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-3"> presente (1, 5 cartões)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); sem teste-se opcional
+-->
+</section>
+<!-- ===== AULA 4 — FERRAMENTA ===== -->
+<section class="view" data-aula="4" data-tempo="21min" id="v-aula-4">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Ruta 03 · Clase 4</p>
+<h1>La Memoria: el activo que<br/><em>la competencia no puede copiar</em></h1>
+<p class="promise">Al terminar esta clase, tendrás la primera línea del historial del ciclo: qué intentaste, qué ocurrió (con cifras) y qué decidiste.</p>
+<p class="why">Tu empresa ya probó docenas de cosas y casi todas se olvidaron. Dentro de seis meses, alguien tendrá la misma idea, volverá a probarla y descubrirá el mismo resultado. Sin memoria, el ciclo no aprende: redescubre. La memoria es la única parte del sistema que otra empresa, aunque use la misma IA, no puede copiar.</p>
+<p class="cue"><span class="arw">↓</span> desplázate para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: o arquivo de gavetas atrás do balcão da imobiliária — três gavetas com etiqueta, e um caderno de registro aberto em cima -->
+<g stroke-linejoin="round" stroke-width="2.5" style="stroke:var(--ink-soft)"><rect height="150" rx="6" width="160" x="70" y="70"></rect></g>
+<g stroke-width="2" style="stroke:var(--ink-soft)"><path d="M70 120h160M70 170h160"></path></g>
+<g stroke-linecap="round" stroke-width="2.5" style="stroke:var(--accent)"><path d="M138 95h24M138 145h24M138 195h24"></path></g>
+<g stroke-width="1.5" style="fill:var(--panel);stroke:var(--warm)"><rect height="14" rx="2" width="46" x="80" y="84"></rect><rect height="14" rx="2" width="46" x="80" y="134"></rect><rect height="14" rx="2" width="46" x="80" y="184"></rect></g>
+<g font-size="6.5"><text x="84" y="94">APRENDIDO</text><text x="84" y="144">DESCARTADO</text><text x="84" y="194">OBSERVADO</text></g>
+<g stroke-linejoin="round" stroke-width="2" style="stroke:var(--ink-soft)"><path d="M96 70V46c0-4 3-6 7-6h94c4 0 7 2 7 6v24"></path></g>
+<g stroke-width="1.5" style="stroke:var(--line2)"><path d="M108 50h78M108 58h60M108 66h70"></path></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M108 58h60"></path></g>
+<text font-size="9" style="fill:var(--muted)" text-anchor="middle" x="150" y="234">el registro arriba y los tres cajones abajo: nada se borra</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> Sin memoria, el ciclo descubre lo mismo dos veces</h2>
+<p>A <span class="gterm" data-def="El asistente que registra cada ciclo en una línea del historial y guarda cada hipótesis en uno de tres cajones. Nunca borra ni resume tanto que se pierda el motivo." tabindex="0">Memoria</span> es el asistente que cierra el ciclo. Lee todo lo que escribieron los demás, registra una línea en el historial y guarda cada hipótesis en su lugar. Nunca borra una entrada antigua, la reescribe ni la resume tanto que se pierda el «porqué».</p>
+<p>Se lee al comienzo del siguiente ciclo. El Crítico consulta lo que ya se resolvió; el Optimizador, lo que ya se descartó. Sin eso, cada ciclo empieza desde cero, con la misma IA, las mismas ideas y los mismos errores.</p>
+<p>Ejemplo aplicado: en la inmobiliaria del agente, alguien probó en 2024 «enviar las fotos antes del precio» y el resultado empeoró. Nadie lo anotó. En 2026, un agente nuevo tiene la misma idea, la prueba durante dos semanas y llega al mismo resultado. Costo: un mes de contactos mal atendidos para reaprender lo que la empresa ya sabía. Con la Memoria, la hipótesis ni llega a probarse: el Optimizador la encuentra en «descartadas», con la fecha y la cifra.</p>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="ferramenta" data-versao="pasta do loop, set/2026">
+<h2><span class="n">02</span> Tres cajones: aprendido, descartado, observado</h2>
+<p>Toda hipótesis termina en uno de tres cajones. <b>Aprendido:</b> se probó, ganó y se convirtió en la versión oficial, con la cifra. <b>Descartado:</b> se probó y perdió, o se vetó antes, con el motivo para que no vuelva de la misma forma. <b>Observado, no probado:</b> la evidencia era demasiado débil para convertirse en hipótesis; espera a que haya más datos.</p>
+<p>El tercer cajón es el más olvidado y el más valioso. Allí quedan las ideas que «parecen» ciertas, guardadas sin convertirlas en regla ni desecharlas. Cuando aumenten los datos, el Crítico las revisará.</p>
+<p>Antes de ver la carpeta del ejemplo: son tres listas de texto, una por cajón. Cada entrada incluye fecha, ciclo y la cifra que la sustenta. Solo tienes que saber leer las tres etiquetas.</p>
+<p>Ejemplo aplicado: después de los cuatro ciclos de la clínica, los cajones quedaron así. Aprendido: «abrir la propuesta mencionando un punto concreto de la evaluación de la clienta». La respuesta subió del 19,3 % al 29,3 %, con 300 por grupo y los límites de seguridad respetados; la dueña lo aprobó y se convirtió en la versión 2. Descartado: la pregunta de elección forzada (vetada), el precio justo después del saludo (vetado) y el límite de 80 palabras, que ganó en respuestas pero excedió la tolerancia cero a las quejas. Observado, no probado: «suavizar el trato para el segmento de clientes pequeños»; solo 3 eventos, a la espera de más datos.</p>
+<div class="qerr">
+<p class="qk">Error frecuente</p>
+<p class="qerr-txt"><b>Doce propuestas se convirtieron en regla.</b> «Las propuestas del martes convierten más», con 12 propuestas, va al cajón «observado, no probado», nunca al de «aprendido». Un patrón con pocos casos puede parecer demasiado claro para ser casualidad. Para evitarlo, nada pasa a «aprendido» sin una prueba A/B con la cantidad necesaria. Las conjeturas con pocos casos tienen su propio cajón.</p>
+</div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="ferramenta" data-versao="pasta do loop, set/2026">
+<h2><span class="n">03</span> El historial: una línea por evento, nunca se borra</h2>
+<p>Además de los cajones, la Memoria conserva el historial: una línea por acontecimiento, en orden. Fecha, ciclo, hipótesis, veredicto con cifra, qué se vigiló, quién decidió, qué ocurrió con la versión y costo. Una línea. Sin narración.</p>
+<p>Este historial es el <span class="gterm" data-def="El registro de todas las versiones del proceso, con qué cambió y cuándo. Puedes volver a la versión anterior en un solo paso, como la opción «deshacer» de un editor de texto." tabindex="0">historial con opción para volver atrás</span> de tu proceso. Cada versión oficial tiene una línea que indica de dónde salió y por qué. Si la versión 2 empieza a empeorar, vuelves a la 1, y ese retroceso también queda registrado en una línea.</p>
+<p>Ejemplo aplicado: el responsable de soporte escribe así la primera línea del historial: «2026-09-10 · antes del ciclo · respuesta estándar a “no puedo exportar” reescrita con video · 23 tickets en una semana, 3 reabiertos, sin grupo A para comparar · decidido por mí, sin prueba · respuesta anterior borrada: no hay vuelta atrás». Es una línea honesta sobre una prueba deficiente. Y precisamente eso impide que el siguiente responsable la repita.</p>
+<div class="quiz" data-answer="a">
+<p class="qk">Ponte a prueba</p><p class="q">La versión 2 se promovió hace 3 semanas y el indicador de reaperturas superó su tolerancia. ¿Qué registra la Memoria?</p>
+<button class="opt" data-fb="Correcto. Volver a la versión 1 es un evento como cualquier otro: se registra una línea con la fecha, la cifra que lo desencadenó y quién decidió. La línea de promoción sigue ahí; nada se borra." data-k="a">Una línea nueva: se volvió a la versión 1, con la cifra que motivó el retroceso</button>
+<button class="opt" data-fb="Borrar es lo único que la Memoria nunca hace. Sin la línea de promoción, nadie sabrá que se probó la versión 2 ni por qué cayó." data-k="b">Borrar la línea de promoción porque la versión 2 ya no se usa</button>
+<button class="opt" data-fb="La Memoria registra; no juzga si el retroceso es definitivo. La hipótesis no pasa a «descartadas» por una impresión: va con la cifra de la caída y puede revisarse de nuevo." data-k="c">Nada: esperar a ver si la versión 2 se recupera</button>
+<p class="qfb"></p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="step" data-fig="4" data-kind="fundamento">
+<h2><span class="n">04</span> El activo que la competencia no puede copiar</h2>
+<p>Dos empresas usan el mismo chat de IA, el mismo modelo y el mismo tipo de guion. Después de un año, ¿qué las diferencia? No la IA: ambas tienen la misma. Las diferencia lo que cada una sabe de sus clientes: qué probó, qué funcionó, qué falló, para quién y a qué costo. Esa es la memoria del ciclo.</p>
+<p>LOOP-R lo llama ventaja de aprendizaje. La barrera competitiva deja de ser «quién tiene más datos» y pasa a ser «quién aprende más rápido de lo que ya hace». El noveno asistente, el Meta-agente, revisa el historial y solo informa del costo por ciclo y de cuántas hipótesis se convirtieron en versiones. No actúa. Lo verás en la ruta 4.</p>
+<p>Ejemplo aplicado: dos inmobiliarias del mismo barrio usan el mismo chat de IA para responder a contactos. La del agente tiene un historial de 14 líneas: tres versiones del guion, cinco hipótesis descartadas con cifras y un retroceso registrado. La otra tiene un guion que «alguien mejoró» tres veces sin anotarlo. Si la competencia copia el guion actual del agente, se lleva la versión 3, pero no las cinco ideas que ya se sabe que no funcionan. Tendrá que probarlas una por una.</p>
+<div class="qsteps">
+<p class="qsk">Cómo escribir la primera línea del historial</p>
+<ol>
+<li><b>Fecha y marca «antes del ciclo»:</b> la primera línea registra lo que ya probaste antes de que existiera el ciclo: es el punto de partida.</li>
+<li><b>Qué se probó:</b> un cambio, en una frase («respuesta estándar reescrita con video»).</li>
+<li><b>Qué ocurrió, con cifras:</b> aunque sea poco y no haya grupo A («23 tickets, 3 reabiertos, sin comparación»).</li>
+<li><b>Quién decidió y qué ocurrió con la versión:</b> «decidido por mí, sin prueba · versión anterior borrada» o «se mantuvo la anterior».</li>
+<li><b>En qué cajón va:</b> casi siempre «observado, no probado», porque antes del ciclo casi nada se probó de verdad.</li>
+</ol>
+</div>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">marcar como leído</button>
+</section>
+<section class="practice" data-mode="tarefa" data-practice="p4">
+<p class="pk">Practica ahora <span class="pcount">0/4 completados</span></p>
+<h3 class="ph">Escribe la primera línea del historial de tu ciclo</h3>
+<p class="pgoal">Meta: en unos 10 minutos, escribe una línea sobre un cambio que tu empresa ya hizo en el proceso de la ficha. Incluye qué ocurrió, una cifra, quién decidió y el cajón correspondiente.</p>
+<p class="psafe">Es seguro: estás registrando el pasado, no cambiando nada; nada cambia en tu negocio hasta que lo apruebes. Si no recuerdas una cifra exacta, anota lo que recuerdes y marca «aproximado»: una línea honesta con una cifra aproximada vale más que no tener ninguna.</p>
+<p><b>Ejemplo de resultado aceptable</b> (una línea del historial de la clínica del ejemplo, traducida): <i>2026-07-27 · ciclo 4 · «abrir mencionando un punto de la evaluación de la clienta» · B ganó: respuestas del 19,3 % → 29,3 % con 300 por grupo · vigilado: margen correcto, quejas 4 frente a 2 (dentro de tolerancia), bajas 1 frente a 3 (dentro de tolerancia) · aprobada por la dueña · pasó a ser la versión oficial 2 · cajón: aprendido.</i></p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Elegí un cambio real que ya ocurrió en el proceso de mi ficha (un texto, un guion o una regla). Anoté la fecha aproximada y describí el cambio en una frase.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Anoté qué ocurrió después, con al menos una cifra, e indiqué si había o no un grupo A en paralelo para comparar.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Anoté quién decidió y qué ocurrió con la versión anterior (se mantuvo, se borró o se guardó).</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>Puse la línea en uno de los tres cajones y justifiqué la elección en media frase. Está lista cuando otra persona del equipo la entiende sin tener que preguntarme nada.</span></label></li>
+</ol>
+<p class="pdone">Acabas de escribir la primera línea del historial del ciclo. Es el comienzo de un activo que ninguna otra empresa con la misma IA puede copiar.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; — Sin memoria (arriba), el ciclo 2 empieza donde empezó el ciclo 1. Con memoria (abajo), cada ciclo lee el anterior antes de proponer: el camino asciende en lugar de girar en círculos." data-fig="1">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--warm)"><circle cx="50" cy="60" r="22"></circle><circle cx="110" cy="60" r="22"></circle><circle cx="170" cy="60" r="22"></circle></g>
+<g font-size="7" style="fill:var(--warm)" text-anchor="middle"><text x="50" y="63">ciclo 1</text><text x="110" y="63">ciclo 2</text><text x="170" y="63">ciclo 3</text><text x="110" y="96">misma idea, mismo resultado, tres veces</text></g>
+<path d="M14 110h192" stroke-dasharray="3 3" stroke-width="1" style="stroke:var(--line2)"></path>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M30 180l40-22 40-14 40-10 40-8"></path></g>
+<g style="fill:var(--accent)"><circle cx="30" cy="180" r="3.5"></circle><circle cx="70" cy="158" r="3.5"></circle><circle cx="110" cy="144" r="3.5"></circle><circle cx="150" cy="134" r="3.5"></circle><circle cx="190" cy="126" r="3.5"></circle></g>
+<g stroke-dasharray="2 2" stroke-width="1" style="stroke:var(--muted)"><path d="M70 158c-10 12-30 14-40 22M110 144c-10 12-30 10-40 14M150 134c-10 12-30 8-40 10"></path></g>
+<g font-size="7" text-anchor="middle"><text x="30" y="194">c1</text><text x="70" y="172">c2 lee c1</text><text x="110" y="158">c3 lee c1, c2</text><text style="fill:var(--accent)" x="190" y="118">memoria</text></g>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; — Toda hipótesis sale del ciclo por una de tres puertas. El Optimizador consulta la del medio (descartadas) antes de proponer; el Crítico vuelve a revisar la de abajo (observado) cuando aumenta la cantidad de datos." data-fig="2">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="40" rx="6" width="50" x="14" y="80"></rect></g>
+<g font-size="7.5" text-anchor="middle"><text x="39" y="97">MEMORIA</text><text x="39" y="109">archiva</text></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M64 100h20v-60h20M84 100h20M84 100v60h20"></path><path d="M99 36l5 4-5 4M99 96l5 4-5 4M99 156l5 4-5 4"></path></g>
+<g stroke-width="1.5" style="stroke:var(--accent)"><rect height="32" rx="5" width="100" x="108" y="24"></rect></g>
+<g stroke-width="1.5" style="stroke:var(--warm)"><rect height="32" rx="5" width="100" x="108" y="84"></rect></g>
+<g stroke-dasharray="3 3" stroke-width="1.5" style="stroke:var(--muted)"><rect height="32" rx="5" width="100" x="108" y="144"></rect></g>
+<g font-size="7.5"><text x="114" y="38">APRENDIDO</text><text style="fill:var(--muted)" x="114" y="49">se probó y ganó · pasó a v2</text><text x="114" y="98">DESCARTADO</text><text style="fill:var(--muted)" x="114" y="109">perdió o fue vetada · no vuelve</text><text x="114" y="158">OBSERVADO, NO PROBADO</text><text style="fill:var(--muted)" x="114" y="169">evidencia débil · espera más datos</text></g>
+<g stroke-dasharray="2 2" stroke-width="1" style="stroke:var(--muted)"><path d="M158 116v-4M158 144v-4"></path></g>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; — El historial es una tabla que solo crece hacia abajo. La línea de promoción (v2) y la del retroceso (de nuevo a v1) coexisten: volver es un evento nuevo, no un borrón." data-fig="3">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.2" style="stroke:var(--ink-soft)"><rect height="150" rx="4" width="192" x="14" y="20"></rect><path d="M14 44h192M14 68h192M14 92h192M14 116h192M14 140h192"></path></g>
+<g font-size="7"><text style="fill:var(--muted)" x="20" y="35">fecha · ciclo · hipótesis · veredicto · versión</text><text x="20" y="59">02/02 · c1 · pregunta de elección · vetada</text><text x="20" y="83">27/04 · c2 · ≤80 palabras · A sigue · descartada</text><text x="20" y="107">04/05 · c3 · precio tras el saludo · vetada</text><text style="fill:var(--accent)" x="20" y="131">27/07 · c4 · mencionar la evaluación · B ganó · v2</text><text style="fill:var(--warm)" x="20" y="155">(si cae) · c5 · volvió a v1 · motivo</text></g>
+<g stroke-linecap="round" stroke-width="1.5" style="stroke:var(--warm)"><path d="M196 128v20"></path><path d="M192 144l4 4 4-4"></path></g>
+<g stroke-width="1.5" style="stroke:var(--warm)"><path d="M20 176l8 8M28 176l-8 8"></path></g>
+<text font-size="7" style="fill:var(--muted)" x="40" y="184">borrar: nunca</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; — Dos empresas usan el mismo modelo de IA. Lo que se puede copiar (el guion actual) es la caja superior. Lo que no se copia es la columna de líneas del historial debajo, y esa columna determina la siguiente versión." data-fig="4">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="1.5" style="stroke:var(--ink-soft)"><rect height="26" rx="5" width="80" x="20" y="20"></rect><rect height="26" rx="5" width="80" x="120" y="20"></rect></g>
+<g font-size="7.5" text-anchor="middle"><text x="60" y="36">misma IA</text><text x="160" y="36">misma IA</text></g>
+<g stroke-width="1.5" style="stroke:var(--accent)"><rect height="24" rx="5" width="80" x="20" y="60"></rect><rect height="24" rx="5" width="80" x="120" y="60"></rect></g>
+<g font-size="7.5" text-anchor="middle"><text x="60" y="75">guion v3</text><text x="160" y="75">guion v3 (copiado)</text></g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)"><path d="M100 72h20"></path><path d="M115 68l5 4-5 4"></path></g>
+<g stroke-width="1" style="stroke:var(--line2)"><path d="M28 100h64M28 112h64M28 124h64M28 136h64M28 148h64M28 160h64M28 172h64"></path></g>
+<g stroke-width="2" style="stroke:var(--accent)"><path d="M28 100h40M28 124h52M28 148h36M28 172h58"></path></g>
+<g stroke-width="2" style="stroke:var(--warm)"><path d="M28 112h30M28 136h46M28 160h40"></path></g>
+<text font-size="7" text-anchor="middle" x="60" y="190">14 líneas: lo que ya sabe</text>
+<g stroke-dasharray="3 3" stroke-width="1" style="stroke:var(--line2)"><rect height="80" rx="4" width="80" x="120" y="96"></rect></g>
+<text font-size="7" style="fill:var(--muted)" text-anchor="middle" x="160" y="140">vacío</text>
+<text font-size="7" style="fill:var(--muted)" text-anchor="middle" x="160" y="190">volverá a probarlo todo</text>
+</svg>
+</div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>La Memoria cierra el ciclo: una línea del historial por acontecimiento y cada hipótesis en uno de tres cajones: aprendido, descartado u observado sin probar.</li>
+<li>Nunca borra nada. El retroceso es una línea nueva junto a la promoción, no una goma de borrar.</li>
+<li>El tercer cajón guarda conjeturas con pocos casos sin convertirlas en reglas ni descartarlas.</li>
+<li>Con el mismo modelo de IA, esta columna de líneas es lo que diferencia a dos empresas después de un año. No se copia junto con el guion.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu siguiente paso</p>
+<p class="na-win">Acabas de escribir la primera línea del historial del ciclo y, junto con la clase anterior, completaste la respuesta 3 de la ficha.</p>
+<p class="na-action">Durante los próximos 15 minutos, en tu trabajo real, pregunta al equipo: «¿Qué ya intentamos en este proceso y no funcionó?». Cada respuesta se convierte en una línea del cajón «descartado» u «observado, no probado», con la cifra que recuerden.</p>
+<p class="na-hook">En la próxima ruta responderás la pregunta que todo ciclo debe resolver antes de cambiar nada: cómo medir de verdad. La cantidad necesaria para demostrarlo, la lista de comprobación sí/no, la tarjeta de decisión y lo que LOOP-R no garantiza.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-3">← anterior: el Guardián</a><a href="#trilha">completar la ruta 3 →</a></nav>
+<footer>Clase 3.4 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-4" type="application/json">
+[
+  {
+    "front": "Decisión: el Optimizador del agente inmobiliario quiere proponer «enviar las fotos antes del precio». ¿Dónde consulta antes de escribir y qué pasa si encuentra allí la idea?",
+    "back": "En el cajón de «descartados». Si la idea está allí con fecha y cifra, no vuelve en la misma forma: ni siquiera se escribe la hipótesis. Si está en «observado, no probado», puede volver cuando aumente la muestra."
+  },
+  {
+    "front": "Diagnóstico: una entrada en «aprendizajes» dice «los martes convierten más: 4 de 12». ¿Qué está mal?",
+    "back": "Está en el cajón equivocado. Doce casos sin una prueba A/B son una conjetura, no un aprendizaje: van en «observado, no probado». Los aprendizajes solo incluyen resultados de pruebas con la muestra necesaria."
+  },
+  {
+    "front": "Aplicación: el responsable de soporte quiere registrar una prueba antigua y solo recuerda «unos 20 tickets, pocos se reabrieron». ¿Qué escribe?",
+    "back": "Registra la línea igualmente, como «aproximada» y «sin grupo A para comparar», en «observado, no probado». Una nota honesta con una cifra imprecisa vale más que perder la idea y evita repetir la prueba sin saberlo."
+  },
+  {
+    "front": "Contraste: ¿qué registra la Memoria cuando se promueve la versión 2 y qué registra cuando la versión 2 falla y se vuelve a la 1?",
+    "back": "Dos registros distintos, uno debajo del otro: la promoción (veredicto, cifra, quién aprobó) y la reversión (fecha, indicador que la activó, quién decidió). El primer registro no se borra ni se edita."
+  },
+  {
+    "front": "Pregunta: ¿por qué copiar el guion actual de un competidor no copia su ventaja?",
+    "back": "Porque el guion es solo la versión de hoy. La ventaja está en los registros de lo que ya se probó y falló, con quién y a qué costo; el competidor tendría que redescubrirlo prueba a prueba."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-4 | tipo=FERRAMENTA | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: corretor · clínica · suporte · corretor)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="tarefa"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min) (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-4"> presente (1, 5 cartões)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); teste-se opcional presente (1 pergunta, step 03)
+-->
+</section>
+<script src="assets/curso.js"></script>
+<script id="language-navigation-script">(()=>{const update=()=>{document.querySelectorAll('a').forEach(a=>{if(!['PT','EN','ES'].includes(a.textContent.trim()))return;if(!a.dataset.languageBase)a.dataset.languageBase=a.getAttribute('href');const u=new URL(a.dataset.languageBase,location.href);u.search=location.search;u.hash=location.hash;a.href=u.href;const current=(document.documentElement.lang||'pt').slice(0,2).toUpperCase();if(a.textContent.trim()===current)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});};update();addEventListener('hashchange',update);})();</script></body>
+</html>

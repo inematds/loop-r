@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+
+<!-- LOOP-R · Trilha 4 — Medir de verdade (evals, decisão e limites) · formato-curso v5 -->
+<html data-theme="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="loop-r-trilha-4" name="curso"/>
+<title>LOOP-R · Ruta 4 — Medir de verdad · INEMA.CLUB PRO</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="../../trilha-4/aula.css" rel="stylesheet"/>
+<script>(function(){try{var m=document.querySelector('meta[name=curso]');var CK=(m&&m.content)||'v5:curso';var L=document.documentElement.lang||'pt-BR';if(!/^pt/i.test(L))CK+=':'+L;var s=JSON.parse(localStorage.getItem(CK));if(s&&s.prefs&&s.prefs.theme)document.documentElement.setAttribute('data-theme',s.prefs.theme);}catch(e){}})();</script>
+<!--
+  PROTOCOLO DE DESCOBERTA (SKILL.md, Passo 0 — respostas do plano §0, registradas como metadado):
+  - Público específico: donos e gestores de negócios pequenos/médios, 40+, que já usam IA para "fazer coisas"
+    (propostas, respostas, posts) e sentem que nada melhora com o tempo.
+  - Profissões-alvo (3): dona de clínica de estética (propostas por WhatsApp) · corretor de imóveis (leads de portal)
+    · gestor(a) de suporte de uma empresa de software pequena.
+  - Familiaridade com tecnologia: WhatsApp, planilha, chat de IA. Sem terminal, sem programação, nunca ouviu "Git".
+  - Resultado prático esperado: sair com um loop montado no próprio negócio (5 respostas da ficha, planilha de
+    registro, 1 experimento, 1 decisão tomada com o cartão). Esta trilha produz as respostas 4 e 5 da ficha.
+  - Tempo por sessão: 20 min.
+  Jargão do produto traduzido conforme plano §2 (ficha do loop, planilha de registro, histórico com botão de voltar,
+  virar a versão oficial, voltar atrás, assistente com uma função só, lista de conferência, quantidade que prova).
+  Fontes dos números: docs/05 §2–§7, docs/06 §2–§4, exemplos/vendas-whatsapp/README.md (ciclos 0001–0004).
+-->
+<style>
+  .view{display:none}.view.active{display:block}
+  .languages{font:11px var(--mono);white-space:nowrap}.languages a{color:var(--muted);text-decoration:none}.languages a[lang="es"]{color:var(--accent);font-weight:700}
+  .lnav{max-width:1160px;margin:0 auto 5vh;padding:0 clamp(24px,5vw,60px);display:flex;justify-content:space-between;gap:12px}
+  .lnav a{font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line2);border-radius:12px;padding:12px 16px}
+  .lnav a:hover{border-color:var(--accent);color:var(--ink)}
+  #v-trilha .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(24px,5vw,60px)}
+  #v-trilha .t-hero{position:relative;overflow:hidden;padding:20vh 0 8vh;border-bottom:1px solid var(--line)}
+  #v-trilha h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,6.4vw,72px);line-height:1;letter-spacing:-.025em;margin:0 0 22px}
+  #v-trilha h1 em{font-style:italic;color:var(--accent)}
+  #v-trilha .lead{font-family:var(--serif);font-size:clamp(19px,2.1vw,24px);line-height:1.5;color:var(--ink-soft);max-width:46ch;margin:0 0 30px}
+  #v-trilha section{padding:8vh 0}
+  #v-trilha .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  #v-trilha h2{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.6vw,38px);margin:0 0 28px}
+  #v-trilha .aulas{display:grid;gap:14px}
+  #v-trilha .au{display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:center;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+  #v-trilha .au .num{font-family:var(--serif);font-size:30px;color:var(--accent);text-align:center}
+  #v-trilha .au h3{font-family:var(--serif);font-weight:500;font-size:21px;margin:0 0 5px}
+  #v-trilha .au p{margin:0;color:var(--muted);font-size:14.5px}
+  #v-trilha .au .meta{font-family:var(--mono);font-size:11px;color:var(--accent);white-space:nowrap;text-align:right}
+  #v-trilha .au .prog{position:static;margin-top:10px;height:5px;border-radius:99px;background:var(--line);overflow:hidden;max-width:220px;width:auto}
+  #v-trilha .au .prog i{display:block;height:100%;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+  #v-trilha footer{max-width:1080px;margin:0 auto;padding:6vh clamp(24px,5vw,60px) 12vh;color:var(--faint);text-align:center;font-family:var(--serif);font-style:italic;border-top:1px solid var(--line)}
+  @media(max-width:720px){#v-trilha .au{grid-template-columns:44px 1fr}#v-trilha .au .meta{grid-column:2;text-align:left}}
+  /* tabela pequena dentro da prosa (quantidade que prova) — herda tokens, sem cor nova */
+  .col table.tq{width:100%;border-collapse:collapse;margin:6px 0 22px;font-size:14.5px;color:var(--ink-soft)}
+  .col table.tq th,.col table.tq td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+  .col table.tq th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:400}
+  .col table.tq td b{color:var(--ink)}
+  .col .cartao{font-family:var(--mono);font-size:13px;line-height:1.7;white-space:pre-wrap;color:var(--ink-soft);background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 22px}
+  .col .cartao b{color:var(--ink)}
+  .col details{margin:0 0 22px;border:1px solid var(--line);border-radius:14px;padding:12px 18px;background:var(--panel)}
+  .col details summary{cursor:pointer;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+  .col details p,.col details li{font-size:15.5px}
+  .col .vf{list-style:none;padding:0;margin:6px 0 22px}
+  .col .vf li{padding-left:0}
+  .col .vf li::before{display:none}
+  .col .vf li span.k{font-family:var(--mono);font-size:11px;color:var(--accent);margin-right:8px}
+</style>
+<link rel="alternate" hreflang="pt-BR" href="../../trilha-4/curso.html"><link rel="alternate" hreflang="en" href="../../en/trilha-4/curso.html"><link rel="alternate" hreflang="es" href="curso.html"><link rel="alternate" hreflang="x-default" href="../../trilha-4/curso.html"><link rel="canonical" href="https://inematds.github.io/loop-r/curso/es/trilha-4/curso.html"><style id="language-navigation-style">
+.language-links,.languages{display:inline-flex;align-items:center;gap:.5rem;font:12px system-ui;white-space:nowrap}.language-links a,.languages a{color:inherit;text-decoration:none}.language-links [aria-current=page],.languages [aria-current=page]{font-weight:700;text-decoration:underline}.language-links{padding:.5rem 1rem}.links>a[lang]{font:12px system-ui}.bar-inner{flex-wrap:wrap}.bar .languages{pointer-events:auto}header.top .wrap{flex-wrap:wrap}
+@media(max-width:760px){nav>.wrap{height:auto;min-height:60px;flex-wrap:wrap;gap:12px;padding-block:10px}nav .links{gap:10px;flex-wrap:wrap}}
+</style></head>
+<body>
+<div class="bar"><div class="bar-inner">
+<span class="brand"><a class="mark" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a><a class="course" href="../index.html">LOOP-R</a></span>
+<a class="back" href="#trilha" style="display:none">← trilha</a>
+<button class="pill" id="pill" style="display:none">0 lido</button>
+<button id="revbtn">revisar <span id="revn">0</span></button>
+<button id="exbtn">exercícios</button>
+<button id="jorbtn">jornada</button>
+<button aria-label="Como funciona" id="helpbtn">?</button>
+<button aria-label="Preferências de leitura" id="prefsbtn">Aa</button>
+<button id="themebtn">tema: escuro</button>
+
+<span class="languages"><a lang="pt-BR" href="../../trilha-4/curso.html">PT</a> · <a lang="en" href="../../en/trilha-4/curso.html">EN</a> · <a lang="es" href="curso.html">ES</a></span></div></div>
+<!-- ===== TRILHA ===== -->
+<section class="view" id="v-trilha">
+<header class="t-hero"><div class="wrap">
+<p class="kicker">LOOP-R · Ruta 04</p>
+<h1>Medir de <em>verdad</em></h1>
+<p class="lead">Aprende a decir cuántas ejecuciones prueban una mejora, redactar una lista de verificación de sí o no y decidir sobre una tarjeta real — aprobar, rechazar o esperar — con la opción de volver atrás.</p>
+</div></header>
+<section><div class="wrap">
+<div class="statcards"></div>
+<p class="eyebrow">Clases</p>
+<h2>Listas de verificación, decisiones y límites</h2>
+<div class="aulas">
+<a class="au on" data-aula="1" href="#aula-1">
+<div class="num">1</div>
+<div><h3>El ciclo que aprende a hacer trampa</h3><p>Aprende a detectar, en una sola frase, cómo se puede inflar cualquier meta de tu negocio sin mejorar nada y qué vigilar para evitarlo.</p><div class="prog"><i></i></div></div>
+<div class="meta">abrir →</div>
+</a>
+<a class="au on" data-aula="2" href="#aula-2">
+<div class="num">2</div>
+<div><h3>La cantidad que lo demuestra</h3><p>Aprende a decir cuántas ejecuciones necesita una prueba y cuántas semanas tomará al ritmo de tu negocio, antes de empezar.</p><div class="prog"><i></i></div></div>
+<div class="meta">abrir →</div>
+</a>
+<a class="au on" data-aula="3" href="#aula-3">
+<div class="num">3</div>
+<div><h3>La lista de verificación: sí o no</h3><p>Termina con 6 preguntas de sí o no sobre el texto que produce tu IA, que dos personas distintas responden de la misma manera.</p><div class="prog"><i></i></div></div>
+<div class="meta">abrir →</div>
+</a>
+<a class="au on" data-aula="4" href="#aula-4">
+<div class="num">4</div>
+<div><h3>La tarjeta de decisión y el botón para volver atrás</h3><p>Aprende a decidir sobre una tarjeta de 5 líneas y a completar las respuestas 4 y 5 de la ficha del ciclo: el límite y quién aprueba.</p><div class="prog"><i></i></div></div>
+<div class="meta">abrir →</div>
+</a>
+<a class="au on" data-aula="5" href="#aula-5">
+<div class="num">5</div>
+<div><h3>Lo que LOOP-R no garantiza</h3><p>Aprende a distinguir las cuatro garantías reales del ciclo de las cuatro promesas que no hace, y a reconocer una promesa falsa.</p><div class="prog"><i></i></div></div>
+<div class="meta">abrir →</div>
+</a>
+</div>
+</div></section>
+<footer><div class="wrap">LOOP-R · Tu empresa que aprende por sí sola · INEMA.CLUB PRO</div></footer>
+</section>
+<!-- ===== AULA 1 — FUNDAMENTO ===== -->
+<section class="view" data-aula="1" data-tempo="19min" id="v-aula-1">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Ruta 04 · Clase 1</p>
+<h1>El ciclo que aprende<br/>a <em>hacer trampa</em></h1>
+<p class="promise">Al terminar esta clase, podrás tomar una meta de tu negocio y escribir, en una línea, qué haría la IA para inflar la cifra sin mejorar nada y qué dos indicadores vigilarás para impedirlo.</p>
+<p class="why">Toda meta que se dá a un sistema que aprende se convierte en un objetivo para hacer trampa. «Responder más rápido» se transforma en cerrar tickets sin resolverlos; «vender más», en ofrecer descuentos hasta que desaparece el margen. No es un defecto de la IA: es lo que haría cualquier empleado si se le exigiera una sola cifra. Antes de medir de verdad, debes saber cómo se puede manipular la medida.</p>
+<p class="cue"><span class="arw">↓</span> desplázate para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: a balança da recepção com um polegar apoiado no prato -->
+<rect height="14" rx="4" style="stroke:var(--line2);fill:var(--panel)" width="180" x="60" y="176"></rect>
+<rect height="56" rx="3" style="stroke:var(--line2);fill:var(--panel)" width="20" x="140" y="120"></rect>
+<circle cx="150" cy="86" r="42" style="stroke:var(--line2);fill:var(--panel)"></circle>
+<circle cx="150" cy="86" r="34" style="stroke:var(--line)"></circle>
+<path d="M150 86 L178 62" stroke-linecap="round" stroke-width="3" style="stroke:var(--warm)"></path>
+<circle cx="150" cy="86" r="4" style="fill:var(--warm)"></circle>
+<path d="M122 60 L128 66 M150 44 L150 52 M178 60 L172 66 M116 86 L124 86 M184 86 L176 86" stroke-width="2" style="stroke:var(--muted)"></path>
+<rect height="10" rx="3" style="stroke:var(--accent);fill:none" width="160" x="70" y="150"></rect>
+<path d="M215 118 C230 112 246 120 244 138 C243 150 236 156 226 156 L212 156 C204 156 200 150 202 142 Z" style="fill:var(--panel);stroke:var(--accent)"></path>
+<path d="M212 156 L206 150" style="stroke:var(--accent)"></path>
+<text font-family="Space Mono,monospace" font-size="10" style="fill:var(--muted)" x="70" y="214">la aguja subió. La clínica, no.</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> Una meta por sí sola enseña a hacer trampa</h2>
+<p>Hay una regla antigua en toda empresa: cuando una medida se convierte en meta, deja de medir. No porque la gente sea deshonesta, sino porque es inteligente. Si pagas por la cantidad de atenciones, las atenciones se vuelven más breves. Un sistema que aprende hace lo mismo, solo que más rápido y sin culpa.</p>
+<p>En LOOP-R, la <span class="gterm" data-def="La cifra que el ciclo intenta aumentar. Es la respuesta 1 de la ficha: «de X a Y»." tabindex="0">métrica objetivo</span> es la cifra que le pediste aumentar al ciclo. Si es la única que observa, encontrará el camino más corto para subirla, y ese camino casi nunca consiste en atender mejor.</p>
+<p>La dueña de una clínica estética pide: «aumenta la tasa de respuesta a las propuestas». Tres ciclos después, subió del 20 % al 34 %. Revisa las conversaciones y descubre por qué: la nueva versión envía un segundo mensaje al día siguiente y muchas «respuestas» dicen «por favor, deja de enviarme esto». También cuentan como respuesta. La aguja subió; la clínica, no.</p>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como lido</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> Las trampas tienen tres formas conocidas</h2>
+<p>No hace falta imaginar todas las trampas posibles; se repiten. Pide maximizar los clics y el ciclo aprende a crear titulares engañosos. Pide reducir el tiempo de atención y aprende a cerrar rápido sin resolver. Pide maximizar las ventas y aprende a ofrecer descuentos hasta borrar el margen. Pide maximizar las respuestas y aprende a provocar.</p>
+<p>Observa el patrón: en todos los casos, la cifra solicitada realmente sube. La trampa no está en la cifra, sino en lo que se quedó fuera.</p>
+<p>La responsable de soporte de una pequeña empresa de software fijó la meta de «tiempo medio por ticket: de 18 a 10 minutos». En dos semanas llegó a 9. Pero los tickets cerrados en 2 minutos se reabrían al día siguiente y la satisfacción bajó de 4,3 a 3,6. Nada de eso aparecía en su panel, que solo mostraba el tiempo.</p>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Antes: una meta desnuda</p><p class="qba-txt">«Tiempo medio por ticket: de 18 a 10 minutos». Un ticket cerrado en 2 minutos que se reabre mañana <b>cuenta a favor</b> de la meta.</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">Después: una meta con indicadores de seguridad</p><p class="qba-txt">«De 18 a 10 minutos <b>sin empeorar</b> las reaperturas a 7 días (hoy 9 %) ni la satisfacción (hoy 4,3)». El mismo ticket ahora <b>cuenta en contra</b>.</p></div>
+<p class="qba-saldo"><b>Balance:</b> la misma meta y el mismo panel, pero «cerrar sin resolver» dejó de ser un atajo y ahora implica un rechazo automático.</p>
+</div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como lido</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> La forma obligatoria: maximizar X sin empeorar Y, Z, W</h2>
+<p>En LOOP-R, una meta nunca va sola. Toda métrica objetivo viene acompañada de al menos una cifra que no puede bajar: un <span class="gterm" data-def="Indicador vigilado que no debe empeorar más allá de una tolerancia mientras el ciclo intenta subir la métrica objetivo. En la ficha: «sin empeorar»." tabindex="0">indicador de seguridad</span>. La frase completa siempre es «maximizar X sin empeorar Y, Z y W». No es un adorno: es la parte de la meta que impide hacer trampa.</p>
+<p>Los indicadores de seguridad habituales dependen del área. Ventas: margen medio, quejas, bajas, descuento medio. Atención: satisfacción, reaperturas en 7 días, esfuerzo del cliente. Contenido: tiempo en la página, bajas, denuncias. No hace falta vigilarlos todos, sino los que probablemente afectaría la trampa.</p>
+<p>Un agente inmobiliario que responde a <span class="gterm" data-def="Persona que hizo clic en un anuncio inmobiliario del portal y pidió información. Aún no es cliente; es una persona interesada." tabindex="0">contactos del portal</span> escribe: «maximizar las visitas concertadas por contacto sin empeorar la tasa de ausencias ni el descuento medio ofrecido». Si la nueva versión agenda más visitas prometiendo descuentos durante la conversación, sube el descuento medio y la versión se rechaza, aunque la agenda esté llena.</p>
+<p>Dos asistentes del ciclo utilizan esta frase. El Guardián veta cualquier hipótesis que proponga tocar un indicador de seguridad. El Evaluador rechaza toda versión que suba X y empeore un indicador más allá de la tolerancia, aunque X haya subido mucho. Si las respuestas suben un 40 % y el margen cae un 1 % con tolerancia cero, la respuesta es «A sigue». Sin excepciones.</p>
+<div class="quiz" data-answer="b">
+<p class="qk">Ponte a prueba</p><p class="q">La versión B elevó la tasa de respuesta un 40 %. El margen medio cayó un 1 % y la tolerancia del indicador «margen» es cero. ¿Qué responde el Evaluador?</p>
+<button class="opt" data-fb="El tamaño de la ganancia no compensa el indicador. Con tolerancia cero, cualquier caída implica rechazo, por pequeña que sea. Así se frena la trampa de «descontar hasta borrar el margen» antes de que se vuelva regla." data-k="a">B ganó: el aumento del 40 % compensa la caída del margen del 1 %</button>
+<button class="opt" data-fb="Exacto. B solo gana si X sube y ningún indicador cae más allá de la tolerancia. Con tolerancia cero, una caída del 1 % ya implica rechazo. (En la clase 4 verás que la tolerancia cero también puede estar mal, pero la regla se aplica tal como está escrita.)" data-k="b">A sigue: la versión actual continúa vigente</button>
+<button class="opt" data-fb="«Esperar» es la respuesta cuando faltan ejecuciones (muestra insuficiente). Aquí la muestra puede estar completa; el problema es que cayó un indicador. Eso implica rechazo, no espera." data-k="c">Esperar dos semanas más</button>
+<p class="qfb"></p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como lido</button>
+</section>
+<section class="step" data-fig="4" data-kind="fundamento">
+<h2><span class="n">04</span> El propio recuento puede hacer trampa</h2>
+<p>Hay una trampa más silenciosa que las anteriores: la definición de la cifra. ¿Qué cuenta exactamente como «respuesta»? Si cuenta cualquier mensaje de vuelta, «deja de enviarme esto» es una respuesta. Si «resuelto» significa cualquier ticket cerrado, un ticket cerrado a la fuerza cuenta como resuelto.</p>
+<p>Por eso la definición de la métrica forma parte de la ficha del ciclo; no es un detalle. «Respuesta» debe excluir las negativas; «resuelto» debe excluir lo que se reabre en 7 días. El Observador —el asistente que cuenta— comprueba que el registro coincida con esa definición antes de sumar nada.</p>
+<p>En la clínica, la columna «respondió» del registro añadió una vecina: «respuesta positiva (sí/no)». En la empresa de software, «cerrado el» añadió «reabierto antes de 7 días (sí/no)». Dos columnas adicionales y las dos trampas del comienzo de esta clase desaparecieron del recuento.</p>
+<div class="qanchor"><p>Una meta sin indicadores de «sin empeorar» no es una meta. Es una invitación.</p></div>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">marcar como lido</button>
+</section>
+<section class="practice" data-mode="analise" data-practice="p1">
+<p class="pk">Practica ahora <span class="pcount">0/4 completados</span></p>
+<h3 class="ph">Encuentra la trampa en tres metas</h3>
+<p class="pgoal">Para cada meta, escribe la trampa más probable y dos indicadores de seguridad. Unos 10 minutos. Es un análisis, no una ejecución: dejar que un ciclo haga trampa tomaría semanas; el caso resuelto muestra en minutos qué debes reconocer.</p>
+<p class="psafe">Nada cambia en tu negocio hasta que lo apruebes: estás escribiendo en un papel, no en la ficha del ciclo. Si tu respuesta difiere de la clave, compara el razonamiento: puede haber más de una trampa posible y más de un indicador válido para cada meta.</p>
+<p><b>Meta 1: Renata, dueña de una clínica estética.</b> «Quiero duplicar la cantidad de propuestas que reciben respuesta por WhatsApp».</p>
+<p><b>Meta 2: Marcos, agente inmobiliario.</b> «Quiero más visitas concertadas por cada contacto que llega del portal».</p>
+<p><b>Meta 3: Paula, responsable de soporte.</b> «Quiero reducir el tiempo medio de cada ticket».</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Para la meta 1, escribí la trampa en una línea y dos indicadores.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Para la meta 2, escribí la trampa en una línea y dos indicadores.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Para la meta 3, escribí la trampa en una línea y dos indicadores.</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>Comparé mis tres respuestas con la clave de abajo.</span></label></li>
+</ol>
+<details><summary>Clave comentada</summary>
+<p><b>Meta 1 (clínica).</b> Trampa: insistir (segundo y tercer mensaje) o provocar, porque «deja de enviarme esto» cuenta como respuesta. Indicadores: quejas y bajas. Extra: definir «respuesta» como respuesta positiva en el registro.</p>
+<p><b>Meta 2 (agente inmobiliario).</b> Trampa: agendar a cualquier costo, prometiendo descuentos o diciendo «solo ven a mirar», lo que llena la agenda de visitas que no se concretan. Indicadores: tasa de ausencias y descuento medio prometido. Alternativa válida: propuestas cerradas por visita.</p>
+<p><b>Meta 3 (soporte).</b> Trampa: cerrar rápido sin resolver. Indicadores: reaperturas a 7 días y satisfacción. Extra: «resuelto» debe excluir lo que se reabre.</p>
+<p>Si elegiste otro indicador, pregúntate: «¿La trampa que describí afectaría esta cifra?». Si la respuesta es sí, es válido.</p>
+</details>
+<p class="pdone">Acabas de ver la trampa antes de que ocurra, en tres negocios distintos y con la misma pregunta.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; La meta solicitada (izquierda) sube por el camino más corto: el recuento incluye lo que no debería. Observa qué entra en la caja de «respuesta»." data-fig="1">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="34" rx="8" style="stroke:var(--accent);fill:var(--panel)" width="86" x="12" y="24"></rect>
+<text font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)" text-anchor="middle" x="55" y="45">meta: resposta ↑</text>
+<path d="M55 58 L55 92" style="stroke:var(--line2)"></path><path d="M50 86 L55 93 L60 86" style="stroke:var(--line2)"></path>
+<rect height="34" rx="8" style="stroke:var(--line2);fill:var(--panel)" width="86" x="12" y="94"></rect>
+<text font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink-soft)" text-anchor="middle" x="55" y="115">2ª mensagem</text>
+<path d="M98 111 L130 111" style="stroke:var(--line2)"></path><path d="M124 106 L131 111 L124 116" style="stroke:var(--line2)"></path>
+<rect height="84" rx="8" style="stroke:var(--warm);fill:var(--panel)" width="76" x="132" y="70"></rect>
+<text font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)" text-anchor="middle" x="170" y="88">"resposta"</text>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--ink-soft)" text-anchor="middle" x="170" y="108">"sim, quero"</text>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--ink-soft)" text-anchor="middle" x="170" y="124">"qual o valor?"</text>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)" text-anchor="middle" x="170" y="142">"pare de mandar"</text>
+<text font-family="Space Mono,monospace" font-size="9" style="fill:var(--muted)" text-anchor="middle" x="110" y="184">20% → 34%, e a clínica pior</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; Tres solicitudes, tres atajos. En todas sube la cifra solicitada (flecha continua); el daño queda fuera del panel (línea discontinua)." data-fig="2">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g font-family="Space Mono,monospace" font-size="8.5">
+<text style="fill:var(--ink)" x="12" y="36">cliques ↑</text><text style="fill:var(--ink-soft)" x="118" y="36">→ título-isca</text>
+<text style="fill:var(--ink)" x="12" y="86">tempo ↓</text><text style="fill:var(--ink-soft)" x="118" y="86">→ encerra sem resolver</text>
+<text style="fill:var(--ink)" x="12" y="136">vendas ↑</text><text style="fill:var(--ink-soft)" x="118" y="136">→ desconto até sumir</text>
+</g>
+<path d="M12 44 L100 44 M12 94 L100 94 M12 144 L100 144" stroke-width="2" style="stroke:var(--accent)"></path>
+<path d="M12 54 L100 54 M12 104 L100 104 M12 154 L100 154" stroke-dasharray="3 3" style="stroke:var(--warm)"></path>
+<g font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)">
+<text x="12" y="64">fora do painel: tempo na página</text>
+<text x="12" y="114">fora do painel: reabertura</text>
+<text x="12" y="164">fora do painel: margem</text>
+</g>
+<text font-family="Space Mono,monospace" font-size="9" style="fill:var(--muted)" text-anchor="middle" x="110" y="190">a trapaça está no que ficou de fora</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; La meta completa: X sube (barra), rodeada por tres cifras que no pueden bajar (los indicadores). Si uno cede, la versión se rechaza." data-fig="3">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="120" rx="6" style="stroke:var(--accent);fill:var(--panel)" width="44" x="88" y="40"></rect>
+<rect height="70" rx="6" style="fill:var(--accent);opacity:.25" width="44" x="88" y="90"></rect>
+<text font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)" text-anchor="middle" x="110" y="34">maximizar X</text>
+<path d="M110 84 L110 60 M104 66 L110 58 L116 66" stroke-width="2" style="stroke:var(--accent)"></path>
+<g stroke-width="2" style="stroke:var(--warm)">
+<path d="M20 60 L20 160 M32 60 L32 160 M14 80 L38 80 M14 140 L38 140"></path>
+<path d="M188 60 L188 160 M200 60 L200 160 M182 80 L206 80 M182 140 L206 140"></path>
+<path d="M60 172 L160 172 M60 178 L160 178"></path>
+</g>
+<g font-family="Space Mono,monospace" font-size="8" style="fill:var(--ink-soft)">
+<text text-anchor="middle" x="26" y="52">Y</text><text text-anchor="middle" x="194" y="52">Z</text><text text-anchor="middle" x="110" y="192">W · sem piorar</text>
+</g>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; El recuento pasa por un filtro: solo se suma lo que cumple la definición. «Deja de enviar» queda fuera antes de convertirse en cifra." data-fig="4">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g font-family="Space Mono,monospace" font-size="8.5">
+<text style="fill:var(--ink-soft)" x="16" y="34">"sim, quero"</text>
+<text style="fill:var(--ink-soft)" x="16" y="58">"qual o valor?"</text>
+<text style="fill:var(--warm)" x="16" y="82">"pare de mandar"</text>
+<text style="fill:var(--ink-soft)" x="16" y="106">"tem horário sábado?"</text>
+</g>
+<path d="M120 24 L120 116" stroke-width="2" style="stroke:var(--accent)"></path>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--accent)" text-anchor="middle" x="120" y="132">filtro: resposta positiva?</text>
+<path d="M126 30 L170 30 M126 54 L170 54 M126 102 L170 102" style="stroke:var(--line2)"></path>
+<path d="M126 78 L146 78" stroke-dasharray="2 3" style="stroke:var(--warm)"></path>
+<text font-family="Space Mono,monospace" font-size="9" style="fill:var(--warm)" x="150" y="82">×</text>
+<rect height="92" rx="8" style="stroke:var(--accent);fill:var(--panel)" width="36" x="172" y="20"></rect>
+<text font-family="Space Mono,monospace" font-size="11" style="fill:var(--ink)" text-anchor="middle" x="190" y="70">3</text>
+<text font-family="Space Mono,monospace" font-size="9" style="fill:var(--muted)" text-anchor="middle" x="110" y="176">o Observador confere antes de somar</text>
+</svg>
+</div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>Cuando una medida se convierte en meta, deja de medir, y un sistema que aprende encuentra el atajo más rápido que cualquier empleado.</li>
+<li>Las trampas se repiten: titulares engañosos, cerrar sin resolver, descontar hasta borrar el margen y provocar para «ganar» una respuesta.</li>
+<li>En LOOP-R, la meta tiene una forma fija: «maximizar X sin empeorar Y, Z y W»; el Guardián veta lo que afecta un indicador de seguridad y el Evaluador rechaza lo que lo empeora.</li>
+<li>La definición de la cifra también forma parte de la meta: «respuesta» excluye las negativas y «resuelto» excluye lo que se reabre.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu siguiente paso</p>
+<p class="na-win">Ahora puedes mirar una meta y ver el atajo antes de que lo encuentre la IA.</p>
+<p class="na-action">Durante los próximos 15 minutos: toma la meta principal del proceso que elegiste en la Ruta 2 y reescríbela como «maximizar X sin empeorar Y ni Z». Envíate la frase por WhatsApp: irá a la ficha del ciclo.</p>
+<p class="na-hook">En la próxima clase descubrirás por qué 12 propuestas no demuestran nada, cuántas hacen falta y cuántas semanas tomaría a tu ritmo.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#trilha">← ruta</a><a href="#aula-2">siguiente clase →</a></nav>
+<footer>Clase 1 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-1" type="application/json">
+[
+  {
+    "front": "Tu clínica pide al ciclo «aumentar las respuestas a las propuestas». ¿Qué atajo podría encontrar la IA y qué columna de la hoja impide que cuente a su favor?",
+    "back": "Insistir o provocar hasta recibir «deja de enviarme esto». La columna «respuesta positiva (sí/no)» excluye ese mensaje del recuento."
+  },
+  {
+    "front": "Decisión: la tasa de respuesta subió un 40 %, el margen cayó un 1 % y la tolerancia del margen es cero. ¿Apruebas, rechazas o esperas?",
+    "back": "Se rechaza («A sigue»). El tamaño de la ganancia no compensa que un indicador haya caído más allá de la tolerancia."
+  },
+  {
+    "front": "¿Qué diferencia hay entre la métrica objetivo y un indicador de seguridad en la frase de la meta?",
+    "back": "La métrica objetivo es X, que el ciclo intenta subir; el indicador es Y, que no puede bajar mientras tanto: «maximizar X sin empeorar Y»."
+  },
+  {
+    "front": "El panel de soporte muestra que el tiempo medio bajó de 18 a 9 minutos y el responsable lo celebra. ¿Qué dos cifras pedirías ver antes de celebrar también?",
+    "back": "Reaperturas a 7 días y satisfacción. Si aumentaron, el tiempo bajó porque se están cerrando tickets sin resolverlos."
+  },
+  {
+    "front": "Dos asistentes del ciclo usan la frase «sin empeorar». ¿Qué hace cada uno con ella?",
+    "back": "El Guardián veta hipótesis que propongan tocar un indicador; el Evaluador rechaza versiones que subieron X pero hicieron caer un indicador."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-1 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: clínica · suporte · corretor · clínica+suporte)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-1"> presente (5 cartões: aplicação · decisão · contraste · diagnóstico · pergunta)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, step 03)
+-->
+</section>
+<!-- ===== AULA 2 — FUNDAMENTO ===== -->
+<section class="view" data-aula="2" data-tempo="21min" id="v-aula-2">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Ruta 04 · Clase 2</p>
+<h1>La cantidad<br/>que <em>lo demuestra</em></h1>
+<p class="promise">Al terminar esta clase, podrás mirar una meta como «del 20 % al 30 %» y decir cuántas ejecuciones necesita la prueba por versión y cuántas semanas tomará al ritmo de tu negocio, antes de empezar.</p>
+<p class="why">La mayoría de los ciclos muere aquí: alguien compara 12 propuestas nuevas con 12 anteriores, ve «el doble» y cambia la regla del equipo. Tres semanas después la cifra vuelve a la normalidad y nadie sabe por qué. El azar con pocos datos parece un patrón. Hay un cálculo que los distingue y cabe en una tabla de cinco filas.</p>
+<p class="cue"><span class="arw">↓</span> desplázate para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: doze moedas sobre a mesa da recepção — oito viradas para o mesmo lado -->
+<rect height="8" rx="3" style="stroke:var(--line2);fill:var(--panel)" width="240" x="30" y="150"></rect>
+<path d="M40 158 L34 210 M260 158 L266 210" style="stroke:var(--line2)"></path>
+<g style="stroke:var(--line2);fill:var(--panel)">
+<ellipse cx="60" cy="140" rx="16" ry="7"></ellipse><ellipse cx="98" cy="142" rx="16" ry="7"></ellipse><ellipse cx="136" cy="139" rx="16" ry="7"></ellipse><ellipse cx="174" cy="141" rx="16" ry="7"></ellipse><ellipse cx="212" cy="140" rx="16" ry="7"></ellipse><ellipse cx="250" cy="142" rx="16" ry="7"></ellipse>
+<ellipse cx="80" cy="120" rx="16" ry="7"></ellipse><ellipse cx="118" cy="118" rx="16" ry="7"></ellipse><ellipse cx="156" cy="121" rx="16" ry="7"></ellipse><ellipse cx="194" cy="119" rx="16" ry="7"></ellipse><ellipse cx="232" cy="120" rx="16" ry="7"></ellipse><ellipse cx="137" cy="100" rx="16" ry="7"></ellipse>
+</g>
+<g style="fill:var(--warm)">
+<circle cx="60" cy="140" r="2.5"></circle><circle cx="98" cy="142" r="2.5"></circle><circle cx="174" cy="141" r="2.5"></circle><circle cx="250" cy="142" r="2.5"></circle><circle cx="80" cy="120" r="2.5"></circle><circle cx="156" cy="121" r="2.5"></circle><circle cx="232" cy="120" r="2.5"></circle><circle cx="137" cy="100" r="2.5"></circle>
+</g>
+<text font-family="Newsreader,serif" font-size="16" font-style="italic" style="fill:var(--ink-soft)" x="30" y="60">ocho caras en doce lanzamientos.</text>
+<text font-family="Space Mono,monospace" font-size="10" style="fill:var(--muted)" x="30" y="82">ocurre una vez de cada cinco. Sin truco.</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> Con doce, el azar se disfraza de patrón</h2>
+<p>Lanza una moneda doce veces. Obtener ocho caras o más ocurre en casi uno de cada cinco intentos, sin moneda trucada. Ahora cambia «cara» por «cliente que reservó» y «cruz» por «cliente que no respondió»: con doce clientes, que un mensaje nuevo «gane» al anterior es algo esperable por azar, no una prueba de que sea mejor.</p>
+<p>Por eso «lo probé y funcionó» casi nunca es cierto con pocos datos. La persona no se equivoca sobre lo que vio; eso también ocurre cuando no hay ninguna diferencia.</p>
+<p>Un agente inmobiliario cambia el primer mensaje que envía a los contactos del portal. De los siguientes 12, 4 reservan una visita. Con el mensaje anterior, lo hicieron 2 de los 12 previos. «Se duplicó», dice en la reunión del lunes, y todos adoptan el mensaje nuevo. Tres semanas después, la tasa vuelve a donde siempre estuvo y nadie sabe si el mensaje nuevo es mejor, peor o igual.</p>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> La tabla de la cantidad necesaria</h2>
+<p>La <span class="gterm" data-def="Cuántas ejecuciones por versión necesita una prueba A/B para que la diferencia observada difícilmente se deba al azar (95 % de confianza, 80 % de potencia). El Experimentador lo calcula y lo muestra antes de empezar." tabindex="0">cantidad necesaria para demostrarlo</span> es un cálculo estándar. El Experimentador —el asistente que diseña la prueba— lo hace y te lo muestra antes de empezar. No necesitas conocer la fórmula, sino saber leer la tabla.</p>
+<table class="tq">
+<tr><th>de → a</th><th>por versión</th><th>total</th><th>a 50/semana</th><th>a 200/semana</th></tr>
+<tr><td><b>3% → 5%</b></td><td>~1.500</td><td>~3.000</td><td><b>60 semanas</b></td><td>15 semanas</td></tr>
+<tr><td>3% → 6%</td><td>~700</td><td>~1.400</td><td>28 semanas</td><td>7 semanas</td></tr>
+<tr><td><b>20% → 30%</b></td><td>~300</td><td>~600</td><td><b>12 semanas</b></td><td>3 semanas</td></tr>
+<tr><td>20% → 35%</td><td>~140</td><td>~280</td><td>6 semanas</td><td>1,5 semana</td></tr>
+<tr><td>50% → 65%</td><td>~170</td><td>~340</td><td>7 semanas</td><td>2 semanas</td></tr>
+</table>
+<p>Observa dos cosas. Primero: cuanto más baja la cifra inicial, más ejecuciones exige; demostrar un 3 % es casi imposible en una empresa pequeña. Segundo: cuanto mayor sea el aumento esperado, menos ejecuciones hacen falta, pero el aumento debe ser real, no un deseo.</p>
+<p>La dueña de la clínica envía 50 propuestas por semana y quiere subir la conversión de ventas del 3 % al 5 %. Según la tabla, hacen falta 1.500 propuestas por versión: 60 semanas para una sola prueba. Más de un año para responder una pregunta. El ciclo sí funciona; lo que no se puede responder es esa pregunta a ese ritmo.</p>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> Tres tipos de cifra, tres velocidades</h2>
+<p>La solución para la clínica no es dejar de medir, sino medir una cifra más rápida que siga relacionada con el dinero. LOOP-R divide las métricas en tres tipos. <b>Dinero</b>: conversión, importe, margen: el cliente responde semanas después y demostrarlo lleva meses. <b>Señal</b>: tasa de respuesta, reservas, clics útiles: el cliente responde en horas o días; demostrarlo toma semanas. <b>Entregable</b>: ¿la propuesta cumple la lista de comprobación?, ¿tiene errores?, ¿el tono es adecuado? Se responde mirando el texto, en minutos.</p>
+<p>La regla del ciclo: probar la cifra más rápida que aún tenga una relación plausible con el dinero. El dinero no desaparece: pasa a ser un indicador («sin empeorar la conversión») mientras no haya volumen para probarlo directamente.</p>
+<p>En la empresa de software, la responsable de soporte tiene las tres: dinero es la renovación del contrato (meses); señal es «resuelto en el primer contacto» (días); entregable es «¿la respuesta cumple la lista?» (minutos). Su ciclo gira cada semana con el entregable y la señal, y vigila las renovaciones.</p>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Antes: medir el dinero</p><p class="qba-txt">Clínica, 50 propuestas/semana. Meta: conversión de ventas del 3 % al 5 %. Cantidad necesaria: 1.500 por versión. <b>60 semanas</b> hasta la primera respuesta fiable.</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">Después: medir la señal y vigilar el dinero</p><p class="qba-txt">La misma clínica, el mismo ritmo. Meta: tasa de respuesta del 20 % al 30 %, sin empeorar la conversión. Cantidad necesaria: 300 por versión. <b>12 semanas</b>.</p></div>
+<p class="qba-saldo"><b>Balance:</b> 48 semanas menos para obtener una primera respuesta fiable: el dinero sigue vigilado, pero deja de ser la meta.</p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="step" data-fig="4" data-kind="fundamento">
+<h2><span class="n">04</span> «Muestra insuficiente» es la respuesta más habitual y hay que aceptarla</h2>
+<p>El Evaluador, el asistente que juzga la prueba, solo puede dar tres respuestas: <b>B ganó con margen</b>, <b>A sigue</b>, ou <b>muestra insuficiente: continúa la prueba</b>. Si la cantidad de ejecuciones aún no alcanza el tamaño de muestra necesario, la respuesta siempre es la tercera. No existe «pero va ganando».</p>
+<p>Detenerse antes porque va ganando es la forma más común de convertir ruido en regla. La tabla anterior indica cuándo termina la prueba; las ganas de ver el resultado, no. Solo se permite detenerla antes si cae un indicador: se para porque está causando daño, no porque vaya bien.</p>
+<p>En el caso real de la clínica estética que acompaña este curso, el primer ciclo casi empezó mal: el Optimizador esperaba un efecto pequeño y el Experimentador avisó que la prueba tomaría 40 semanas. La dueña la dimensionó según la meta de la ficha (del 20 % al 30 %): 300 propuestas por versión. La prueba cupo en el calendario antes de enviar el primer mensaje.</p>
+<div class="quiz" data-answer="b">
+<p class="qk">Ponte a prueba</p><p class="q">Semana 5 de una prueba de 12 semanas del agente inmobiliario: el mensaje B tiene un 31 % de reservas frente al 22 % de A, con 140 contactos por grupo. La cantidad necesaria es 300 por versión. ¿Qué hacer?</p>
+<button class="opt" data-fb="Vas ganando con 140, pero 140 es menos de la mitad de la muestra necesaria para demostrarlo. Detenerse aquí es «promover ruido»: la ventaja puede desaparecer en los próximos 160 contactos y nunca lo sabrás." data-k="a">Promover B: 9 puntos de ventaja es mucho</button>
+<button class="opt" data-fb="Correcto. Un N inferior al mínimo significa «muestra insuficiente», sin «pero va ganando». La prueba continúa hasta 300 por versión. La única excepción es que empeore un indicador; entonces se detiene por el daño, no por la ventaja." data-k="b">Continuar hasta 300 por versión: hoy la respuesta es «muestra insuficiente»</button>
+<button class="opt" data-fb="Cambiar la hipótesis a mitad de camino desperdicia la evidencia de 280 contactos. No hay razón para detenerse: ningún indicador empeoró y la prueba sigue dentro del plazo previsto." data-k="c">Detenerse y cambiar la hipótesis por otra más fuerte</button>
+<p class="qfb"></p>
+</div>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">marcar como leído</button>
+</section>
+<section class="step" data-fig="5" data-kind="fundamento">
+<h2><span class="n">05</span> Segmentar exige treinta por segmento</h2>
+<p>Después de contar, el Crítico —el asistente que identifica qué funcionó y qué falló— querrá segmentar por tipo de cliente, canal o día de la semana. Cada segmento obedece la misma regla de pocos datos. «Los martes convierten más», con 12 propuestas, no es un patrón. El Crítico solo puede identificar un patrón con al menos 30 ejecuciones en el segmento.</p>
+<p>Por eso cada afirmación suya lleva una etiqueta de fuerza. <b>Sólida</b> : 90 ejecuciones o más: se convierte en una hipótesis prioritaria. <b>Moderada</b> : de 30 a 89: se convierte en hipótesis. <b>Débil</b> : menos de 30: pasa a la memoria como «observado, no probado» y se revisa cuando aumenten los datos. Nada se pierde ni se convierte en regla antes de tiempo.</p>
+<p>En la clínica, el Crítico observó que respondían más los clientes de tratamientos faciales que los de tratamientos corporales: 14 frente a 11. Etiqueta: débil. La observación quedó guardada y, tres meses después, con 60 en cada grupo, se convirtió en una hipótesis moderada para probar. Si se hubiera vuelto regla el primer mes, habría sido una regla basada en 25 personas.</p>
+<div class="qanchor"><p>Doce propuestas no dicen nada. Trescientas empiezan a hablar.</p></div>
+<div class="mobfig" data-mobfig="5"></div>
+<button class="readbtn" data-read="s5">marcar como leído</button>
+</section>
+<section class="practice" data-mode="analise" data-practice="p2">
+<p class="pk">Pratique agora <span class="pcount">0/4 feito</span></p>
+<h3 class="ph">Elige la métrica que puedes demostrar</h3>
+<p class="pgoal">Para cada negocio, elige una métrica realista, indica cuántas ejecuciones necesita cada versión (usa la tabla del paso 02) y cuántas semanas tomará al ritmo indicado. Unos 10 minutos. Es un análisis: una prueba real lleva semanas; aquí haces en minutos el cálculo del Experimentador.</p>
+<p class="psafe">Nada cambia en tu negocio hasta que lo apruebes: solo haces cálculos en papel. Si tu cifra no coincide con la clave, comprueba que leíste la fila correcta; el error más común es mirar «total» en vez de «por versión».</p>
+<p><b>Caso 1: Renata, clínica estética.</b> 50 propuestas por semana. Hoy responden el 20 % y compra el 3 %. Ella quiere «vender más».</p>
+<p><b>Caso 2: Marcos, agente inmobiliario.</b> 200 contactos semanales del portal. Hoy, el 20 % reserva una visita; cree que el mensaje nuevo lo elevará al 35 %.</p>
+<p><b>Caso 3: Paula, soporte.</b> 400 tickets por semana. Hoy, el 50 % se resuelve en el primer contacto; la meta es el 65 %.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Caso 1: anoté la métrica, la cantidad por versión y las semanas.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Caso 2: anoté la métrica, la cantidad por versión y las semanas.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Caso 3: anoté la métrica, la cantidad por versión y las semanas.</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>Comparé con la clave y entendí dónde difería.</span></label></li>
+</ol>
+<details><summary>Clave comentada</summary>
+<p><b>Caso 1.</b> «Vender más» es una métrica de dinero (3 % → 5 %): 1.500 por versión, 60 semanas a 50 por semana. No es viable. Una métrica realista es la tasa de respuesta, del 20 % al 30 %, con la conversión como indicador: 300 por versión, 600 en total, 12 semanas.</p>
+<p><b>Caso 2.</b> La reserva es una señal y ya tiene volumen: del 20 % al 35 % requiere 140 por versión, 280 en total. A 200 por semana: una semana y media. Si el efecto real es menor de lo que espera (solo 30 %), hacen falta 300 por versión y 3 semanas. El Experimentador diseña según la meta de la ficha, no según la esperanza.</p>
+<p><b>Caso 3.</b> Resuelto en el primer contacto es una señal: del 50 % al 65 % requiere 170 por versión, 340 en total. A 400 por semana: menos de una semana. Indicadores: reaperturas a 7 días y satisfacción; si no, «resuelto» se convierte en «cerrado».</p>
+</details>
+<p class="pdone">Acabas de hacer el cálculo que distingue el azar de un patrón para tres ritmos de negocio distintos.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; Dos resultados con 12 casos: 4 frente a 2. Las franjas claras muestran dónde podría estar la cifra real y se superponen casi por completo." data-fig="1">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<path d="M30 160 L200 160" style="stroke:var(--line2)"></path>
+<rect height="48" rx="4" style="fill:var(--accent);opacity:.35" width="30" x="60" y="112"></rect>
+<rect height="24" rx="4" style="fill:var(--line2);opacity:.6" width="30" x="130" y="136"></rect>
+<rect height="112" rx="6" stroke-dasharray="3 3" style="stroke:var(--accent);opacity:.35" width="46" x="52" y="48"></rect>
+<rect height="84" rx="6" stroke-dasharray="3 3" style="stroke:var(--muted);opacity:.5" width="46" x="122" y="76"></rect>
+<g font-family="Space Mono,monospace" font-size="9">
+<text style="fill:var(--ink)" text-anchor="middle" x="75" y="104">4 de 12</text>
+<text style="fill:var(--ink)" text-anchor="middle" x="145" y="128">2 de 12</text>
+<text style="fill:var(--ink-soft)" text-anchor="middle" x="75" y="178">nova</text>
+<text style="fill:var(--ink-soft)" text-anchor="middle" x="145" y="178">antiga</text>
+</g>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="30">as faixas se cobrem: pode ser sorte</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; Semanas por prueba a 50 ejecuciones/semana. Barra larga: 3 % → 5 %. Barra corta: 20 % → 30 %. La misma empresa y el mismo equipo." data-fig="2">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--ink-soft)">
+<text x="12" y="40">3% → 5%</text><text x="12" y="80">3% → 6%</text><text x="12" y="120">20% → 30%</text><text x="12" y="160">20% → 35%</text>
+</g>
+<rect height="14" rx="3" style="fill:var(--warm);opacity:.8" width="138" x="70" y="30"></rect>
+<rect height="14" rx="3" style="fill:var(--warm);opacity:.5" width="64" x="70" y="70"></rect>
+<rect height="14" rx="3" style="fill:var(--accent)" width="28" x="70" y="110"></rect>
+<rect height="14" rx="3" style="fill:var(--accent)" width="14" x="70" y="150"></rect>
+<g font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--ink)">
+<text x="120" y="60">60 semanas</text><text x="140" y="81">28</text><text x="104" y="121">12</text><text x="90" y="161">6</text>
+</g>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="190">a 50 ejecuciones por semana</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; Tres cifras en fila, de la más rápida a la más lenta. La prueba usa la más rápida que aún se vincula con el dinero; el dinero queda como indicador." data-fig="3">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="40" rx="8" style="stroke:var(--accent);fill:var(--panel)" width="58" x="14" y="40"></rect>
+<rect height="40" rx="8" style="stroke:var(--accent);fill:var(--panel)" width="58" x="81" y="40"></rect>
+<rect height="40" rx="8" stroke-dasharray="3 3" style="stroke:var(--warm);fill:var(--panel)" width="58" x="148" y="40"></rect>
+<g font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--ink)" text-anchor="middle">
+<text x="43" y="57">artefato</text><text x="110" y="57">sinal</text><text x="177" y="57">dinheiro</text>
+</g>
+<g font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)" text-anchor="middle">
+<text x="43" y="71">minutos</text><text x="110" y="71">semanas</text><text x="177" y="71">meses</text>
+</g>
+<path d="M72 60 L81 60 M139 60 L148 60" style="stroke:var(--line2)"></path>
+<path d="M14 120 L139 120" stroke-width="3" style="stroke:var(--accent)"></path>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--accent)" text-anchor="middle" x="76" y="112">o teste roda aqui</text>
+<path d="M148 110 L206 110 M148 130 L206 130" stroke-width="2" style="stroke:var(--warm)"></path>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)" text-anchor="middle" x="177" y="150">vigiado: sem piorar</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; La prueba tiene una meta fija (300). Antes de alcanzarla, la única respuesta es «insuficiente», aunque B vaya por delante." data-fig="4">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<path d="M20 150 L200 150" style="stroke:var(--line2)"></path>
+<path d="M180 60 L180 156" stroke-dasharray="4 3" stroke-width="2" style="stroke:var(--accent)"></path>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--accent)" text-anchor="middle" x="180" y="52">300 por versão</text>
+<path d="M20 120 C50 110 70 90 100 84 C120 80 130 96 150 88" stroke-width="2" style="stroke:var(--accent)"></path>
+<path d="M20 128 C50 126 70 118 100 122 C120 124 130 116 150 120" stroke-width="2" style="stroke:var(--muted)"></path>
+<path d="M100 76 L100 156" stroke-dasharray="2 3" style="stroke:var(--warm)"></path>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--warm)" text-anchor="middle" x="100" y="170">140: "insuficiente"</text>
+<g font-family="Space Mono,monospace" font-size="8" style="fill:var(--ink-soft)">
+<text x="154" y="90">B</text><text x="154" y="124">La</text>
+</g>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="190">a curva ainda pode se cruzar</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 5&lt;/b&gt; La escala de evidencia: por debajo de 30, la observación se guarda; a partir de 30, se convierte en hipótesis; con 90, pasa a ser prioritaria." data-fig="5">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="40" rx="6" style="stroke:var(--line2);fill:var(--panel)" width="56" x="20" y="130"></rect>
+<rect height="74" rx="6" style="stroke:var(--accent);fill:var(--panel)" width="56" x="82" y="96"></rect>
+<rect height="114" rx="6" style="stroke:var(--accent);fill:var(--panel)" width="56" x="144" y="56"></rect>
+<g font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--ink)" text-anchor="middle">
+<text x="48" y="150">fraca</text><text x="110" y="116">moderada</text><text x="172" y="76">forte</text>
+</g>
+<g font-family="Space Mono,monospace" font-size="8" style="fill:var(--muted)" text-anchor="middle">
+<text x="48" y="164">&lt; 30</text><text x="110" y="130">30 a 89</text><text x="172" y="90">90 ou mais</text>
+</g>
+<g font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--ink-soft)" text-anchor="middle">
+<text x="48" y="186">guardada</text><text x="110" y="186">hipótese</text><text x="172" y="186">prioridade</text>
+</g>
+</svg>
+</div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>Con pocos datos, el azar produce «victorias» continuamente: ocho caras en doce lanzamientos ocurre una de cada cinco veces.</li>
+<li>El Experimentador calcula y muestra de antemano la cantidad necesaria: del 3 % al 5 % cuesta 1.500 por versión; del 20 % al 30 %, 300.</li>
+<li>Cuando el dinero tarda demasiado en medirse, el ciclo prueba una señal más rápida relacionada y vigila el dinero como indicador.</li>
+<li>Antes de la meta, solo existe «muestra insuficiente»; la única parada anticipada es por la caída de un indicador, nunca por ir ganando.</li>
+<li>Segmentar requiere 30 por segmento; por debajo, la observación queda guardada como «observado, no probado».</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu siguiente paso</p>
+<p class="na-win">Ahora puedes usar la tabla para saber si una prueba cabe en el calendario de tu negocio.</p>
+<p class="na-action">Durante los próximos 15 minutos: cuenta cuántas ejecuciones tiene tu proceso por semana (propuestas, contactos, tickets) y busca en la tabla la fila de tu meta. Escribe «N por versión, X semanas» junto a la meta que te enviaste por WhatsApp en la clase anterior.</p>
+<p class="na-hook">En la próxima clase aprenderás a medir algo que no depende de que responda el cliente: la lista de comprobación de sí o no, que se completa en minutos y donde trabaja el ciclo cada semana.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-1">← clase anterior</a><a href="#aula-3">siguiente clase →</a></nav>
+<footer>Clase 2 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-2" type="application/json">
+[
+  {
+    "front": "Aplicación: tu clínica envía 50 propuestas por semana y quieres demostrar que un mensaje nuevo aumenta las respuestas del 20 % al 30 %. ¿Cuántas propuestas por versión y cuántas semanas?",
+    "back": "Unas 300 por versión (600 en total). A 50 por semana, 12 semanas."
+  },
+  {
+    "front": "Diagnóstico: un agente probó un mensaje con 12 contactos, obtuvo 4 citas frente a 2 con el anterior y lo adoptó. Tres semanas después, la tasa volvió a la normalidad. ¿Qué pasó?",
+    "back": "Azar con una muestra pequeña: 4 frente a 2 de 12 es algo que puede producir el azar. Para demostrar ese aumento hacían falta unas 140 por versión."
+  },
+  {
+    "front": "Decisión: semana 6 de una prueba de 12; B va por delante con 150 ejecuciones por grupo, el mínimo es 300 y ningún indicador empeoró. ¿Promueves, continúas o paras?",
+    "back": "Continúa. Un N inferior al mínimo significa «muestra insuficiente», no «pero va ganando». Solo un indicador que empeore justificaría detenerse."
+  },
+  {
+    "front": "Contraste: ¿qué diferencia hay entre una métrica de señal y una de dinero, y qué función cumple cada una en la prueba?",
+    "back": "Una señal se mide en días (respuestas, citas) y es el objetivo de la prueba; el dinero tarda meses (conversión, margen) y se vigila mientras no haya suficiente volumen."
+  },
+  {
+    "front": "El Crítico dice que «los clientes de tratamientos faciales responden más», con 14 frente a 11. ¿Qué etiqueta recibe la afirmación y adónde va?",
+    "back": "Débil (menos de 30 por segmento). Se guarda como «observado, no probado» y se revisa cuando aumente la muestra."
+  },
+  {
+    "front": "Tu meta es subir la conversión del 3 % al 5 % y tienes 50 ejecuciones por semana. ¿Qué cambias antes de iniciar la prueba?",
+    "back": "La métrica: sustituye el dinero (60 semanas) por una señal vinculada, como la tasa de respuesta del 20 % → 30 % (12 semanas), y mantén la conversión como indicador vigilado."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-2 | tipo=FUNDAMENTO | steps=5
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (5/5: corretor · clínica · suporte · clínica/corretor · clínica)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (5/5)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-2"> presente (6 cartões: aplicação · diagnóstico · decisão · contraste · pergunta · aplicação)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, step 04)
+-->
+</section>
+<!-- ===== AULA 3 — FERRAMENTA ===== -->
+<section class="view" data-aula="3" data-tempo="25min" id="v-aula-3">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Ruta 04 · Clase 3</p>
+<h1>La lista de comprobación:<br/><em>sí o no</em></h1>
+<p class="promise">Al terminar esta clase, podrás escribir una lista de 6 preguntas de sí o no sobre el texto que produce tu IA; preguntas que dos personas distintas responderán igual, sin discutir.</p>
+<p class="why">Cuando el resultado depende de que responda un cliente, la prueba toma semanas. Pero mucho de lo que quieres saber está en el texto: ¿tiene menos de 80 palabras?, ¿menciona algo que dijo el cliente?, ¿promete un plazo? Eso se comprueba en minutos. Pero «pon una nota del 1 al 10» no sirve: ni dos personas ni la misma IA dos semanas después darán la misma nota.</p>
+<p class="cue"><span class="arw">↓</span> desplázate para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: a prancheta de vistoria do inspetor — cada linha, uma caixa marcada -->
+<rect height="180" rx="10" style="stroke:var(--line2);fill:var(--panel)" width="130" x="90" y="30"></rect>
+<rect height="18" rx="6" style="stroke:var(--line2);fill:var(--bg2)" width="50" x="130" y="20"></rect>
+<g style="stroke:var(--line2)">
+<rect height="12" rx="2" width="12" x="104" y="60"></rect><rect height="12" rx="2" width="12" x="104" y="86"></rect><rect height="12" rx="2" width="12" x="104" y="112"></rect><rect height="12" rx="2" width="12" x="104" y="138"></rect><rect height="12" rx="2" width="12" x="104" y="164"></rect>
+</g>
+<g stroke-linecap="round" stroke-width="2" style="stroke:var(--accent)">
+<path d="M106 66 L109 70 L115 62"></path><path d="M106 92 L109 96 L115 88"></path><path d="M106 144 L109 148 L115 140"></path><path d="M106 170 L109 174 L115 166"></path>
+</g>
+<path d="M106 114 L114 122 M114 114 L106 122" stroke-linecap="round" stroke-width="2" style="stroke:var(--warm)"></path>
+<g style="stroke:var(--line2)">
+<path d="M124 66 L200 66 M124 92 L196 92 M124 118 L190 118 M124 144 L200 144 M124 170 L192 170"></path>
+</g>
+<text font-family="Space Mono,monospace" font-size="10" style="fill:var(--muted)" x="90" y="230">4 sí, 1 no. Nada de «más o menos».</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> Una nota del 1 al 10 mide el humor de quien evalúa</h2>
+<p>Pide a dos personas que puntúen una propuesta comercial. Una le da 7 y otra 8; ambas tienen razón, porque «7» no significa nada que pueda comprobarse. Pídele una nota a una IA y repite la semana siguiente: también cambia. Los jueces de texto, humanos o no, tienen sesgos conocidos: prefieren textos más largos, prefieren el segundo que leen y cambian de opinión entre semanas.</p>
+<p>La solución no es encontrar un juez mejor, sino cambiar la pregunta. «¿Esta propuesta es buena?» no se puede comprobar. «¿Esta propuesta tiene exactamente una pregunta de cierre?» sí: se responde sí o no, y cualquiera que lea el texto responderá igual. Una <span class="gterm" data-def="Conjunto de preguntas de sí o no que se responden mirando el texto producido por la IA. El producto lo llama rúbrica. Nunca una nota del 1 al 10." tabindex="0">lista de comprobación</span> es eso: preguntas que no dejan espacio para gustos personales.</p>
+<p>La dueña de la clínica pasó meses pidiéndole a su asistente «mejora esta propuesta» y recibiendo versiones distintas, sin saber si eran mejores. Cambió la petición por «¿la propuesta menciona algo concreto que dijo la clienta?, ¿tiene como máximo 80 palabras?, ¿promete un plazo?». Por primera vez, ella y la recepcionista respondieron lo mismo sobre la misma propuesta.</p>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+<h2><span class="n">02</span> Modelo de lista: siete preguntas para una propuesta</h2>
+<p>Lo que sigue parece una ficha de inspección de un auto, y eso es exactamente: cada línea es una pregunta que se responde mirando solo el texto. No hace falta completarla ahora; basta con reconocer el formato, porque tu lista tendrá el mismo aspecto.</p>
+<pre>R1  ¿Tiene como máximo 80 palabras?                            sí/no
+R2  ¿La primera frase menciona algo específico del cliente?    sí/no
+R3  ¿Incluye exactamente UNA pregunta de cierre?                sí/no
+R4  ¿No promete un plazo? (invariante)                         sí/no
+R5  Si hay descuento, ¿es como máximo del 10 %? (invariante)   sí/no
+R6  ¿No contiene errores sobre el producto (verificado en la base)? sí/no
+R7  Tono: ¿sin doble exclamación, «imperdible» ni MAYÚSCULAS? sí/no</pre>
+<p>Fíjate en tres cosas. Cada pregunta se puede contar o ver: palabras, frases o algo que está o no está en el texto. Dos preguntas están marcadas como <span class="gterm" data-def="Criterio que ninguna versión puede infringir, por mucho que gane en los demás. Procede de la respuesta 3 de la ficha («lo que nunca cambia por sí solo»)." tabindex="0">invariante</span>: vienen de la respuesta 3 de la ficha del ciclo: lo que nunca cambia por sí solo. Una versión que falle en una sola ocasión pierde, sin importar lo demás. Ninguna pregunta usa «adecuado», «bueno» o «profesional».</p>
+<p>Para el agente inmobiliario, la lista para responder a contactos del portal es parecida, pero con otras preguntas: ¿menciona el inmueble o la dirección que consultó el contacto?, ¿ofrece dos horarios de visita, ni uno ni tres?, ¿evita indicar un precio inferior al de lista (invariante)?, ¿evita «oportunidad única»?</p>
+<div class="qsteps">
+<p class="qsk">Cómo escribir tu lista</p>
+<ol>
+<li><b>Separa 5 textos que aprobaste y 5 que pediste rehacer.</b> Reales, no imaginarios.</li>
+<li><b>Escribe qué tienen los buenos que no tienen los malos, en forma de pregunta.</b> «¿Menciona algo del cliente?» y no «¿Es personalizado?».</li>
+<li><b>Elimina toda pregunta que requiera responder «depende».</b> Si dudaste al responder, el juez también dudará.</li>
+<li><b>Marca las invariantes.</b> Lo que viene de la respuesta 3 de la ficha se convierte en pregunta con la etiqueta «(invariante)».</li>
+<li><b>Responde tú misma las preguntas en los 10 textos.</b> Si un texto «bueno» obtiene menos síes que uno «malo», la lista mide lo equivocado.</li>
+<li><b>Pide a otra persona que responda sin hablar contigo.</b> Donde no coincidan, reescribe la pregunta.</li>
+</ol>
+</div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+<h2><span class="n">03</span> Calibrar al juez: veinte minutos, una vez</h2>
+<p>En el día a día, quien responde la lista no eres tú, sino el Evaluador. Hay que contrastarlo contigo porque los jueces se desvían. El producto pide una única tarea manual de medición en todo el ciclo: responder sí o no a cada pregunta para 10 a 20 textos. Veinte minutos, una vez. Esos textos y tus respuestas forman el conjunto de calibración.</p>
+<p>En cada ciclo, antes de juzgar algo nuevo, el Evaluador responde sobre esos mismos textos. Si coincide contigo en menos del 80 % de las respuestas, se etiqueta como «juez descalibrado»: el ciclo no promueve nada y avisa el Meta-agente, que solo observa e informa sobre el ciclo. Si una pregunta concreta de la lista tiene menos del 80 % de coincidencia, se reescribe o elimina esa pregunta.</p>
+<p>Hay dos protecciones más que no tienes que operar, pero conviene conocer: el Evaluador compara las versiones por pares con el orden mezclado, tres veces, y toma la mayoría (así evita preferir la segunda); y, cuando el límite lo permite, usa un modelo de IA distinto al que redactó el texto para no aprobar su propio estilo.</p>
+<p>La responsable de soporte eligió 15 respuestas a tickets: habría enviado 8 y devuelto 7. Marcó sí o no en las 6 preguntas de su lista. En la primera calibración, el Evaluador coincidió el 71 % de las veces. Casi toda la discrepancia venía de una pregunta («¿la respuesta es cordial?»). La cambió por «¿la respuesta llama al cliente por su nombre y termina preguntando si se resolvió?». Coincidencia: 93 %.</p>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="step" data-fig="4" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+<h2><span class="n">04</span> Cómo la lista se convierte en veredicto</h2>
+<p>La puntuación de un texto es simplemente la cantidad de respuestas «sí». Para comparar la versión actual con la candidata, el ciclo no mira una propuesta aislada: usa un conjunto fijo de 20 a 50 casos guardados y genera ambas versiones para cada caso. La versión B «gana en el entregable» si su promedio de síes supera al de A por al menos un criterio <b>y</b> y no falla ninguna invariante en ningún caso.</p>
+<p>Esta prueba se ejecuta en minutos, sin clientes, cada semana. Por eso el ciclo puede avanzar mientras la métrica de señal reúne 300 ejecuciones: mientras el mundo responde despacio, el texto se comprueba rápido.</p>
+<p>El agente inmobiliario guardó 30 contactos antiguos con el mensaje que envió cada uno como casos de comprobación. La nueva respuesta obtuvo una media de 5,4 sobre 6 frente a 4,1 de la anterior, pero en uno de los 30 casos indicó un precio por debajo de la lista. Perdió. Una infracción de una invariante pesa más que 1,3 puntos de ventaja media.</p>
+<div class="qerr">
+<p class="qk">Error frecuente</p>
+<p class="qerr-txt"><b>Leer 12 propuestas, creer que la nueva versión es mejor y convertirla en regla.</b> Ocurre porque la mirada selecciona lo que confirma nuestras expectativas y porque 12 es menos que el mínimo incluso para el entregable (20 a 50 casos). Evítalo usando casos fijos guardados antes de que exista la versión nueva y contando los síes, nunca con una lectura informal.</p>
+</div>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">marcar como leído</button>
+</section>
+<section class="practice" data-mode="tarefa" data-practice="p3">
+<p class="pk">Practica ahora <span class="pcount">0/6 completados</span></p>
+<h3 class="ph">Escribe 6 preguntas de sí o no sobre tu texto</h3>
+<p class="pgoal">Termina con tu lista de comprobación: 6 preguntas, 2 invariantes, respondidas por ti y otra persona en los mismos 6 textos. Unos 15 minutos. Está lista cuando la otra persona completa las 36 casillas sin preguntar «¿depende de qué?».</p>
+<p class="psafe">Nada cambia en tu negocio hasta que lo apruebes: la lista es solo papel hasta que entre en la ficha del ciclo. Incluso entonces, solo comprueba textos; no envía, modifica ni borra nada. Si parece incorrecta, táchala y escríbela de nuevo; una mala versión no cuesta nada.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Elegí el texto que más produce mi IA (propuesta, respuesta a un contacto o a un ticket) y separé 3 que aprobé y 3 que pedí rehacer.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Escribí 6 preguntas de sí/no, cada una contable o visible en el texto, ninguna con «bueno», «adecuado» o «profesional».</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Marqué 2 como invariantes, tomadas de la respuesta 3 de mi ficha (lo que nunca cambia por sí solo).</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>Respondí las 6 preguntas para los 6 textos. Los 3 aprobados obtuvieron más síes que los 3 devueltos.</span></label></li>
+<li><label><input data-ptask="5" type="checkbox"/> <span>Pedí a alguien que respondiera los mismos 6 textos sin hablar conmigo.</span></label></li>
+<li><label><input data-ptask="6" type="checkbox"/> <span>Donde discrepamos, reescribí la pregunta hasta que la otra persona pudo completar las 36 casillas sin preguntarme nada.</span></label></li>
+</ol>
+<p><b>Ejemplo de resultado aceptable</b> (responsable de soporte): 1. ¿Llama al cliente por su nombre? 2. ¿Repite el problema en una frase antes de responder? 3. ¿Tiene como máximo 120 palabras? 4. ¿No promete una fecha de solución? (invariante) 5. ¿No pide datos que ya están en el ticket? 6. ¿Termina preguntando si se resolvió? (invariante)</p>
+<p class="pdone">Acabas de escribir la regla que el ciclo usará cada semana y comprobaste que dos personas la interpretan igual.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; Dos evaluadores, el mismo texto. Con una nota, las respuestas difieren (7 y 8); con sí o no, coinciden. Cambia la pregunta, no el evaluador." data-fig="1">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="60" rx="8" style="stroke:var(--line2);fill:var(--panel)" width="188" x="16" y="28"></rect>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" x="28" y="48">«¿qué nota le pondrías?»</text>
+<text font-family="Newsreader,serif" font-size="22" style="fill:var(--warm)" text-anchor="middle" x="60" y="76">7</text>
+<text font-family="Newsreader,serif" font-size="22" style="fill:var(--warm)" text-anchor="middle" x="150" y="76">8</text>
+<rect height="60" rx="8" style="stroke:var(--accent);fill:var(--panel)" width="188" x="16" y="108"></rect>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" x="28" y="128">"tem UMA pergunta de fechamento?"</text>
+<text font-family="Space Mono,monospace" font-size="12" style="fill:var(--accent)" text-anchor="middle" x="60" y="156">sim</text>
+<text font-family="Space Mono,monospace" font-size="12" style="fill:var(--accent)" text-anchor="middle" x="150" y="156">sim</text>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="190">cambia la pregunta, no el juez</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; La lista por dentro: siete filas, cada una se convierte en sí (marcada) o no (vacía). Las dos filas con candado son invariantes: un solo no allí rechaza la versión." data-fig="2">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--ink-soft)">
+<text x="20" y="36">R1 palavras ≤ 80</text><text x="20" y="56">R2 cita o cliente</text><text x="20" y="76">R3 uma pergunta</text><text x="20" y="96">R4 sem prazo</text><text x="20" y="116">R5 desconto ≤ 10%</text><text x="20" y="136">R6 sem erro</text><text x="20" y="156">R7 tom</text>
+</g>
+<g style="stroke:var(--accent)">
+<circle cx="170" cy="32" r="5" style="fill:var(--accent)"></circle><circle cx="170" cy="52" r="5" style="fill:var(--accent)"></circle><circle cx="170" cy="72" r="5"></circle><circle cx="170" cy="92" r="5" style="fill:var(--accent)"></circle><circle cx="170" cy="112" r="5" style="fill:var(--accent)"></circle><circle cx="170" cy="132" r="5" style="fill:var(--accent)"></circle><circle cx="170" cy="152" r="5" style="fill:var(--accent)"></circle>
+</g>
+<g style="stroke:var(--warm)">
+<rect height="7" rx="1.5" width="9" x="190" y="89"></rect><path d="M192 89 V86 a2.5 2.5 0 0 1 5 0 V89"></path>
+<rect height="7" rx="1.5" width="9" x="190" y="109"></rect><path d="M192 109 V106 a2.5 2.5 0 0 1 5 0 V109"></path>
+</g>
+<text font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)" text-anchor="middle" x="110" y="184">puntuación: 6 de 7</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; Calibración: tus respuestas (fila superior) frente a las del evaluador (fila inferior) en los mismos 15 textos. Por debajo del 80 % de coincidencia, el ciclo no promueve." data-fig="3">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" x="20" y="50">tú</text>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" x="20" y="100">juiz</text>
+<g style="fill:var(--accent)">
+<rect height="10" rx="2" width="8" x="60" y="42"></rect><rect height="10" rx="2" width="8" x="72" y="42"></rect><rect height="10" rx="2" width="8" x="96" y="42"></rect><rect height="10" rx="2" width="8" x="108" y="42"></rect><rect height="10" rx="2" width="8" x="120" y="42"></rect><rect height="10" rx="2" width="8" x="144" y="42"></rect><rect height="10" rx="2" width="8" x="168" y="42"></rect><rect height="10" rx="2" width="8" x="180" y="42"></rect>
+<rect height="10" rx="2" width="8" x="60" y="92"></rect><rect height="10" rx="2" width="8" x="72" y="92"></rect><rect height="10" rx="2" width="8" x="96" y="92"></rect><rect height="10" rx="2" width="8" x="108" y="92"></rect><rect height="10" rx="2" width="8" x="144" y="92"></rect><rect height="10" rx="2" width="8" x="168" y="92"></rect><rect height="10" rx="2" width="8" x="180" y="92"></rect>
+</g>
+<g style="stroke:var(--line2)">
+<rect height="10" rx="2" width="8" x="84" y="42"></rect><rect height="10" rx="2" width="8" x="132" y="42"></rect><rect height="10" rx="2" width="8" x="156" y="42"></rect><rect height="10" rx="2" width="8" x="192" y="42"></rect>
+<rect height="10" rx="2" width="8" x="84" y="92"></rect><rect height="10" rx="2" width="8" x="132" y="92"></rect><rect height="10" rx="2" width="8" x="156" y="92"></rect><rect height="10" rx="2" width="8" x="192" y="92"></rect>
+</g>
+<rect height="10" rx="2" style="stroke:var(--warm)" width="8" x="120" y="92"></rect>
+<path d="M124 60 L124 88" stroke-dasharray="2 2" style="stroke:var(--warm)"></path>
+<path d="M60 140 L200 140" style="stroke:var(--line2)"></path>
+<rect height="8" rx="3" style="fill:var(--accent)" width="130" x="60" y="136"></rect>
+<path d="M172 130 L172 150" stroke-width="2" style="stroke:var(--warm)"></path>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)" text-anchor="middle" x="172" y="164">80%</text>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="186">concordância: 93% — calibrado</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; En 30 casos, B obtiene en promedio un criterio más que A. Pero la marca ámbar indica una invariante infringida en un caso, y eso basta para rechazar B." data-fig="4">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<path d="M30 150 L200 150" style="stroke:var(--line2)"></path>
+<rect height="62" rx="4" style="fill:var(--line2);opacity:.7" width="40" x="56" y="88"></rect>
+<rect height="88" rx="4" style="fill:var(--accent);opacity:.6" width="40" x="126" y="62"></rect>
+<g font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)" text-anchor="middle">
+<text x="76" y="80">A · 4,1</text><text x="146" y="54">B · 5,4</text>
+</g>
+<g font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--ink-soft)" text-anchor="middle">
+<text x="76" y="166">média de sim</text><text x="146" y="166">média de sim</text>
+</g>
+<path d="M126 128 L166 128" stroke-width="3" style="stroke:var(--warm)"></path>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)" x="184" y="131">1× R-inv.</text>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="188">B perde, apesar da média</text>
+</svg>
+</div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>Una nota del 1 al 10 mide al evaluador, no al texto; una pregunta de sí o no, respondida mirando el texto, mide el texto.</li>
+<li>La lista contiene preguntas contables o visibles. Las que vienen de la respuesta 3 de la ficha son invariantes: un solo «no» hace perder la versión.</li>
+<li>El Evaluador se calibra contigo una vez usando de 10 a 20 textos. Por debajo del 80 % de coincidencia no se promueve nada y se reescribe la pregunta que causa discrepancias.</li>
+<li>El veredicto sale de contar síes en 20 a 50 casos guardados: una prueba que toma minutos mientras el cliente tarda semanas.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu siguiente paso</p>
+<p class="na-win">Ahora puedes convertir «¿está bien?» en seis preguntas que cualquier persona de tu equipo responderá igual.</p>
+<p class="na-action">Durante los próximos 15 minutos: guarda en una carpeta los 10 textos usados (los 6 del ejercicio y otros 4 anteriores). Son tus primeros casos de comprobación: la nueva versión de tu IA se juzgará con ellos, no con tu recuerdo.</p>
+<p class="na-hook">En la próxima clase llega el momento que determina si el ciclo sirve para algo: la tarjeta de decisión de 5 líneas y el caso real en que la clínica ganó 10 puntos, pero la respuesta correcta fue no aprobar.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-2">← clase anterior</a><a href="#aula-4">siguiente clase →</a></nav>
+<footer>Clase 3 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-3" type="application/json">
+[
+  {
+    "front": "Diagnóstico: durante la calibración, el evaluador coincidió contigo el 71 % de las veces, y casi todo el desacuerdo vino de «¿la respuesta es cordial?». ¿Qué está mal y qué haces?",
+    "back": "La pregunta pide una opinión, no algo visible. Reescríbela de forma comprobable («¿usa el nombre del cliente y termina preguntando si se resolvió?») o elimínala."
+  },
+  {
+    "front": "Decisión: la versión B promedió 5,4 de 6 frente a 4,1 de A en 30 casos, pero en uno indicó un precio inferior al de lista (invariante). ¿Qué versión gana en el artefacto?",
+    "back": "A. Una sola infracción de una invariante en un caso rechaza la versión, por alto que sea el promedio."
+  },
+  {
+    "front": "Aplicación: quieres saber si la IA de la clínica «personaliza» las propuestas. ¿Cómo lo conviertes en una pregunta de la lista?",
+    "back": "«¿La primera frase menciona algo específico que dijo la clienta?»; se ve en el texto y se responde sí o no. «¿Está personalizada?» no sirve."
+  },
+  {
+    "front": "¿Por qué el ciclo puede evaluar el texto cada semana mientras la tasa de respuesta aún reúne 300 ejecuciones?",
+    "back": "Porque el artefacto se revisa mirando el texto mismo en 20 a 50 casos guardados, en minutos y sin esperar al cliente."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-3 | tipo=FERRAMENTA | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: clínica · corretor · suporte · corretor)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="tarefa"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~15 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-3"> presente (4 cartões: diagnóstico · decisão · aplicação · pergunta)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); sem teste-se opcional
+-->
+</section>
+<!-- ===== AULA 4 — FERRAMENTA ===== -->
+<section class="view" data-aula="4" data-tempo="25min" id="v-aula-4">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Ruta 04 · Clase 4</p>
+<h1>La tarjeta de decisión<br/>y el botón de <em>retroceso</em></h1>
+<p class="promise">Al terminar esta clase, podrás leer una tarjeta de decisión de 5 líneas y responder aprobar, rechazar o esperar; además, dejarás escritas las respuestas 4 y 5 de la ficha: cuánto puede costar un ciclo y quién lo aprueba.</p>
+<p class="why">Después de la prueba llega el momento que decide si el ciclo sirve: alguien debe decir «sí, que sea la versión oficial». Si esa decisión llega continuamente a tu bandeja, dejarás de leer en el tercer mes. Si se automatiza demasiado pronto, entrará una versión peor sin que nadie lo note. La tarjeta lo resuelve con una regla: una decisión por semana, cinco líneas, tres respuestas y siempre un botón para volver atrás.</p>
+<p class="cue"><span class="arw">↓</span> desplázate para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: a ficha de 5 linhas na mesa da clínica, o carimbo e a tecla de desfazer -->
+<rect height="120" rx="8" style="stroke:var(--line2);fill:var(--panel)" width="160" x="40" y="50"></rect>
+<g style="stroke:var(--line2)"><path d="M56 76 L150 76 M56 96 L170 96 M56 116 L140 116 M56 136 L160 136"></path></g>
+<rect height="10" rx="3" style="stroke:var(--accent)" width="34" x="56" y="150"></rect><rect height="10" rx="3" style="stroke:var(--line2)" width="34" x="98" y="150"></rect><rect height="10" rx="3" style="stroke:var(--line2)" width="34" x="140" y="150"></rect>
+<rect height="26" rx="6" style="stroke:var(--line2);fill:var(--bg2)" width="56" x="212" y="76"></rect>
+<rect height="18" rx="4" style="stroke:var(--line2);fill:var(--panel)" width="28" x="226" y="60"></rect>
+<rect height="8" rx="2" style="fill:var(--accent);opacity:.6" width="56" x="212" y="102"></rect>
+<rect height="36" rx="8" style="stroke:var(--warm);fill:var(--panel)" width="56" x="212" y="140"></rect>
+<path d="M250 158 L228 158 M234 151 L227 158 L234 165" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="stroke:var(--warm)"></path>
+<text font-family="Newsreader,serif" font-size="15" font-style="italic" style="fill:var(--ink-soft)" x="40" y="206">una ficha por semana. El sello y el botón para volver.</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+<h2><span class="n">01</span> Cinco líneas, como máximo una vez por semana</h2>
+<p>El <span class="gterm" data-def="Resumen de cinco líneas que el ciclo entrega a quien aprueba al final de una prueba: hipótesis, resultado con cantidad y margen, indicadores, costo y tres opciones. Como máximo, uno por semana." tabindex="0">tarjeta de decisión</span> es lo único del ciclo que requiere tu atención. Llega como máximo una vez por semana y tiene cinco líneas fijas: hipótesis probada; resultado con cantidad y margen; estado de los indicadores; costo frente al límite; y las tres opciones. Nada más. Si hiciera falta más, no cabría en el viernes de nadie.</p>
+<p>Lo que sigue parece un recibo, y lo es: cada línea es una cifra que ya sabes leer por las clases anteriores. Esta es la tarjeta que recibió la dueña de la clínica estética en el cuarto ciclo del caso real del curso.</p>
+<div class="cartao"><b>CICLO 0004</b> — hipótesis: abrir la propuesta mencionando la reseña de la clienta
+Resultado:     tasa de respuesta 19,3 % → 29,3 % (N = 300 frente a 300, margen OK)
+Indicadores:   quejas, bajas y descuento medio; todos dentro de la tolerancia
+Costo:         dentro del límite del ciclo
+Decisión:      [aprobar] [rechazar] [esperar 2 semanas más]</div>
+<p>Lee de arriba abajo como un resultado médico: primero qué se probó; después si cambió la cifra principal y con cuántas ejecuciones (300 por grupo era la cantidad necesaria); luego si falló algún indicador; por último, el costo. Solo entonces decides. La conversión de ventas no aparece porque no era el objetivo de la prueba: se vigilaba y no cayó.</p>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> Tres respuestas, y solo tres</h2>
+<p>Antes de que te llegue la tarjeta, el Evaluador ya emitió uno de tres veredictos: B ganó con margen, A sigue o la muestra es insuficiente. La tarjeta lo traduce en tus tres opciones. <b>Aprobar</b>: la candidata se convierte en la versión oficial. <b>Rechazar</b>: la versión actual sigue y la hipótesis pasa a la memoria como descartada, con el motivo. <b>Esperar</b>: la prueba continúa durante otro plazo.</p>
+<p>¿Y si no respondes? Se aplica la opción segura: no se promueve nada y el historial registra «decisión pendiente». El ciclo no se queda parado: sigue ejecutando la versión actual, pero tampoco decide por ti.</p>
+<p>El agente inmobiliario recibió la tarjeta durante su turno del viernes y no la abrió. El lunes, el historial mostraba «ciclo 0003: pendiente desde hace 3 días». La versión anterior siguió respondiendo a los contactos, sin cambios. Cuando abrió la tarjeta el martes, seguía igual: el ciclo no había decidido por él.</p>
+<div class="qerr">
+<p class="qk">Error frecuente</p>
+<p class="qerr-txt"><b>Aprobar porque la nueva versión «parece mejor».</b> Ocurre porque el texto nuevo se ve más bonito o porque tú propusiste la hipótesis. Para evitarlo, solo aprueba cuando la línea 2 indique que B ganó con margen y se alcanzó el mínimo. Si tu preferencia contradice la línea 2, manda la línea 2: la memoria guarda la hipótesis para otra prueba, no para olvidarla.</p>
+</div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> El caso real: ganó diez puntos y no pasó</h2>
+<p>En el segundo ciclo de la clínica, la hipótesis era «propuestas de hasta 80 palabras». El resultado principal fue excelente: la tasa de respuesta subió del 19,3 % al 29,7 %, con 300 propuestas por grupo: diez puntos de aumento, no suerte. Pero la línea de indicadores mostraba 6 quejas frente a 1 y la <span class="gterm" data-def="Cuánto puede caer un indicador sin que se rechace la versión. Cero significa «ningún empeoramiento». En eventos raros, la tolerancia se calcula, no se desea." tabindex="0">tolerancia</span> tolerancia a las quejas estaba en cero. Veredicto: A sigue. La hipótesis se descartó.</p>
+<p>El sistema hizo lo que debía: aplicó la regla tal como estaba escrita, no promovió y registró el resultado. El error estaba en la regla. Las quejas son poco frecuentes, cerca del 1 %: en 300 propuestas, tener 6 de un lado y 1 del otro puede ocurrir fácilmente por azar. Era ruido, no una diferencia real. La tolerancia cero convirtió el ruido en rechazo.</p>
+<p>La lección no es «ignora el indicador cuando la ganancia sea grande»: eso destruiría la única garantía sólida del ciclo. La tolerancia se calcula, no se decide por gusto: para un evento del 1 % en 300 ejecuciones, la fluctuación normal es de un punto aproximadamente, así que la tolerancia adecuada es 0,01, no cero. La dueña ajustó la ficha para las próximas pruebas. La hipótesis descartada quedó en la memoria con su motivo y, dos ciclos después, ganó otra hipótesis.</p>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="step" data-fig="4" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+<h2><span class="n">04</span> Respuesta 4 de la ficha: el límite</h2>
+<p>La cuarta línea de la tarjeta —el costo— existe porque fijaste un límite en la ficha. La respuesta 4 indica cuánto puede costar un ciclo y cuánto tiempo tuyo puede requerir por semana. El Guardián detiene el ciclo al alcanzar el límite. Sin límite, el ciclo puede costar más que la ganancia que busca y nadie lo nota hasta que llega la factura.</p>
+<p>El Meta-agente —el asistente que solo observa e informa sobre el ciclo— también vigila desde el primer ciclo una segunda cifra: el costo por hipótesis que se hizo oficial. Si no se promueve nada en cinco ciclos, propone una de tres opciones: ejecutar con menos frecuencia, usar asistentes más baratos para leer o cargar menos memoria. Propone; tú decides.</p>
+<p>En la ficha modelo del producto, la línea de costo dice «R$ 41 en este ciclo (límite R$ 50)». La cifra es ilustrativa, pero el formato siempre compara gasto y límite. La responsable de soporte fijó su límite en dos partes: hasta R$ 60 por ciclo y como máximo una hora de su atención semanal para leer la tarjeta y la evidencia, si quiere.</p>
+<div class="qsteps">
+<p class="qsk">Cómo completar las respuestas 4 y 5 de la ficha</p>
+<ol>
+<li><b>Límite de dinero por ciclo.</b> Un poco por encima del costo de un ciclo típico: el Guardián se detiene al llegar al límite, así que un límite demasiado ajustado interrumpe buenas pruebas.</li>
+<li><b>Límite de tu tiempo por semana.</b> Lo que puedas sostener en el mes 4, no en el mes 1. Una hora es realista; «cuando pueda» no es un límite.</li>
+<li><b>Nivel inicial de aprobación: L1.</b> Apruebas cada tarjeta. Nunca empieces en L2, por mucha confianza que tengas.</li>
+<li><b>Plazo para responder a la tarjeta.</b> Por ejemplo, 7 días. Si vence el plazo, no se promueve nada y queda «pendiente».</li>
+<li><b>Condición para subir a L2.</b> Cinco aprobaciones en L1 sin ningún retroceso. Escribe la cifra; sin ella, la promesa de «más adelante lo automatizo» nunca llega.</li>
+</ol>
+</div>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">marcar como leído</button>
+</section>
+<section class="step" data-fig="5" data-kind="ferramenta" data-versao="LOOP-R v0.1 · set/2026">
+<h2><span class="n">05</span> Respuesta 5: quién aprueba y el botón para volver</h2>
+<p>La respuesta 5 de la ficha indica quién aprueba y tiene tres niveles. <b>L0</b>: el ciclo solo informa; nada se vuelve oficial. <b>L1</b>: el ciclo propone; tú apruebas cada tarjeta. <b>L2</b> : cuando el veredicto es B ganó, el ciclo promueve automáticamente y te avisa; solo se desbloquea después de cinco promociones correctas en L1. Existe L3 (que el ciclo se rediseñe a sí mismo), y la última clase de esta ruta explica por qué aún es investigación.</p>
+<p>Lo que hace aceptable L2 y seguro L1 es el <span class="gterm" data-def="Regla del primer ciclo tras una promoción: si la métrica de prueba o algún indicador cae por debajo del valor de la versión anterior más allá de la tolerancia, la versión anterior vuelve a ser oficial y el historial registra el motivo." tabindex="0">botón para volver</span>. En el primer ciclo después de una promoción, si la métrica de prueba o algún indicador cae por debajo del valor de la versión anterior más allá de la tolerancia, vuelve la versión anterior. En L1, la tarjeta avisa y pide tu confirmación. En L2, revierte automáticamente y te avisa. En ambos casos, el historial conserva el motivo: nada desaparece ni se sobrescribe.</p>
+<p>El agente inmobiliario promovió la nueva respuesta en el ciclo 5. En el ciclo 6, las reservas bajaron del 31 % al 19 %, por debajo del 22 % de la versión anterior. La tarjeta incluía otra línea: «caída más allá de la tolerancia; ¿volver a la versión anterior? [sí] [mantener]». Volvió atrás. La versión promovida quedó en el historial con la fecha, las cifras y la etiqueta «revertida», para no volver a probarla como si fuera nueva.</p>
+<div class="mobfig" data-mobfig="5"></div>
+<button class="readbtn" data-read="s5">marcar como leído</button>
+</section>
+<section class="practice" data-mode="analise" data-practice="p4">
+<p class="pk">Practica ahora <span class="pcount">0/5 completados</span></p>
+<h3 class="ph">Decide sobre tres tarjetas y escribe tu límite</h3>
+<p class="pgoal">Para cada tarjeta, escribe aprobar, rechazar o esperar, con el motivo en una línea. Después completa las respuestas 4 y 5 de tu ficha. Unos 12 minutos. Es un análisis porque una decisión real cambia la versión oficial de un negocio; aquí practicas con tarjetas preparadas, dos reales, antes de decidir sobre el tuyo.</p>
+<p class="psafe">Nada cambia en tu negocio hasta que lo apruebes: las tarjetas 1 y 2 son del caso real de la clínica (ya decididas); la 3 se creó para esta práctica. Tus respuestas 4 y 5 irán a la ficha cuando las lleves a la última clase del curso.</p>
+<div class="cartao"><b>TARJETA 1</b> (real: clínica, ciclo 0002): hipótesis: propuestas de hasta 80 palabras. Resultado: tasa de respuesta 19,3 % → 29,7 % (N = 300 vs. 300, margen correcto). Indicadores: quejas 6 vs. 1; tolerancia 0 · bajas y descuentos dentro del límite. Costo: dentro del límite. Decisión: [aprobar] [rechazar] [esperar]</div>
+<div class="cartao"><b>TARJETA 2</b> (real: clínica, ciclo 0004): hipótesis: empezar mencionando la evaluación de la clienta. Resultado: tasa de respuesta 19,3 % → 29,3 % (N = 300 vs. 300, margen correcto). Indicadores: quejas, bajas y descuentos, todos dentro del límite · conversión 3,7 % vs. 3,0 % (sin significancia). Costo: dentro del límite. Decisión: [aprobar] [rechazar] [esperar]</div>
+<div class="cartao"><b>TARJETA 3</b> (construido: agente inmobiliario, ciclo 0002): hipótesis: ofrecer dos horarios de visita en la primera respuesta. Resultado: reservas 22 % → 31 % (N = 140 vs. 138; cantidad necesaria: 300 por versión). Indicadores: ausencias sin cambios · descuento medio sin cambios. Costo: dentro del límite. Decisión: [aprobar] [rechazar] [esperar]</div>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Tarjeta 1: escribí la decisión y el motivo en una línea.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Tarjeta 2: escribí la decisión y el motivo en una línea.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Tarjeta 3: escribí la decisión y el motivo en una línea.</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>Respuesta 4 de mi ficha: escribí el límite de dinero por ciclo y de mi tiempo por semana.</span></label></li>
+<li><label><input data-ptask="5" type="checkbox"/> <span>Respuesta 5: escribí el nivel inicial, el plazo para responder a la tarjeta y la condición para subir de nivel. Comparé todo con la clave.</span></label></li>
+</ol>
+<details><summary>Clave comentada</summary>
+<p><b>Tarjeta 1: rechazar (A sigue).</b> La regla escrita indica tolerancia cero y empeoró un indicador; la respuesta correcta es no aprobar. Después, haz lo que hizo la dueña: reconoce que 6 frente a 1 de 300 es ruido para un evento raro, ajusta a 0,01 la tolerancia de quejas en la ficha y conserva la hipótesis como descartada, con el motivo, para volver a probarla con la regla correcta. Ni «aprobar de todos modos» ni «tolerancia cero para siempre».</p>
+<p><b>Tarjeta 2: aprobar.</b> B ganó con margen, se alcanzó la cantidad mínima y ningún indicador cayó. La conversión no cambió de forma significativa, pero era vigilada, no objetivo, y no empeoró. La versión se vuelve oficial y el botón de retroceso queda listo para el siguiente ciclo. Eso fue lo que ocurrió: se promovió como v2.</p>
+<p><b>Tarjeta 3: esperar.</b> 140 es menos de la mitad de la cantidad necesaria. Una ventaja de nueve puntos con esta muestra significa «muestra insuficiente», sin «pero va ganando». Ningún indicador cayó, así que no hay motivo para parar: la prueba sigue hasta 300 por versión.</p>
+<p><b>Respuestas 4 y 5 (ejemplo válido para la clínica).</b> Límite: R$ 50 por ciclo y 1 hora semanal de la dueña. Nivel inicial: L1. Plazo para responder: 7 días; sin respuesta, no se promueve nada. Sube a L2 después de 5 aprobaciones en L1 sin retrocesos. Tu ficha puede tener otras cifras; lo importante es que haya una cifra en cada línea.</p>
+</details>
+<p class="pdone">Acabas de decidir sobre dos tarjetas reales y una construida, y dejaste por escrito con cifras el límite y quién aprueba en tu ciclo.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; Las cinco líneas de la tarjeta y qué responde cada una. Lee de arriba abajo: la decisión va al final, nunca al principio." data-fig="1">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="168" rx="10" style="stroke:var(--line2);fill:var(--panel)" width="188" x="16" y="16"></rect>
+<g font-family="Space Mono,monospace" font-size="8.5">
+<text style="fill:var(--ink)" x="28" y="40">1 hipótese</text><text style="fill:var(--muted)" x="120" y="40">o que foi testado</text>
+<text style="fill:var(--ink)" x="28" y="68">2 resultado</text><text style="fill:var(--muted)" x="120" y="68">X, N, margem</text>
+<text style="fill:var(--ink)" x="28" y="96">3 vigiados</text><text style="fill:var(--muted)" x="120" y="96">alguma cerca cedeu?</text>
+<text style="fill:var(--ink)" x="28" y="124">4 custo</text><text style="fill:var(--muted)" x="120" y="124">gasto vs teto</text>
+<text style="fill:var(--accent)" x="28" y="160">5 decisão</text><text style="fill:var(--accent)" x="120" y="160">só depois de 1–4</text>
+</g>
+<path d="M28 48 L196 48 M28 76 L196 76 M28 104 L196 104 M28 132 L196 132" style="stroke:var(--line)"></path>
+<path d="M28 140 L196 140" stroke-dasharray="3 3" style="stroke:var(--accent)"></path>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; El veredicto del Evaluador (izquierda) se convierte en una de tus tres opciones (derecha). Si no respondes, el interruptor queda en la posición segura: no se promueve nada." data-fig="2">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g font-family="Space Mono,monospace" font-size="8" style="fill:var(--ink-soft)">
+<text x="14" y="50">B ganhou c/ margem</text><text x="14" y="100">A segue</text><text x="14" y="150">amostra insuficiente</text>
+</g>
+<path d="M120 46 L150 46 M120 96 L150 96 M120 146 L150 146" style="stroke:var(--line2)"></path>
+<g font-family="Space Mono,monospace" font-size="9">
+<text style="fill:var(--accent)" x="156" y="50">aprovar</text><text style="fill:var(--ink)" x="156" y="100">rejeitar</text><text style="fill:var(--ink)" x="156" y="150">esperar</text>
+</g>
+<rect height="22" rx="6" stroke-dasharray="3 3" style="stroke:var(--warm)" width="60" x="150" y="84"></rect>
+<text font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--warm)" text-anchor="middle" x="180" y="180">sem resposta = aqui</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; Ciclo 0002: 6 y 1 quejas de 300 en cada grupo. La banda clara muestra la fluctuación normal de un evento del 1 %; ambos puntos caben en ella. La tolerancia cero (línea) no." data-fig="3">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<path d="M30 150 L200 150" style="stroke:var(--line2)"></path>
+<rect height="46" rx="6" style="fill:var(--accent);opacity:.15" width="150" x="40" y="90"></rect>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--accent)" text-anchor="middle" x="115" y="84">fluctuación normal al 1 % con 300</text>
+<circle cx="80" cy="102" r="6" style="fill:var(--warm)"></circle><text font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)" text-anchor="middle" x="80" y="122">6</text>
+<circle cx="150" cy="128" r="6" style="fill:var(--line2)"></circle><text font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)" text-anchor="middle" x="150" y="146">1</text>
+<path d="M40 133 L190 133" stroke-width="2" style="stroke:var(--warm)"></path>
+<text font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--warm)" x="196" y="136">tol. 0</text>
+<g font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--ink-soft)" text-anchor="middle"><text x="80" y="168">B</text><text x="150" y="168">A</text></g>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="190">tolerancia correcta: 0,01, no 0</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; El gasto del ciclo aumenta hasta alcanzar el límite (línea ámbar), donde el Guardián lo detiene. A la derecha, la cifra que vigila el Meta-agente: costo por hipótesis promovida." data-fig="4">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<path d="M20 150 L120 150" style="stroke:var(--line2)"></path>
+<path d="M20 60 L120 60" stroke-width="2" style="stroke:var(--warm)"></path>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)" text-anchor="middle" x="70" y="52">teto do ciclo</text>
+<path d="M24 148 C40 140 60 120 80 100 C90 90 98 78 104 68" stroke-width="2" style="stroke:var(--accent)"></path>
+<circle cx="104" cy="66" r="4" style="fill:var(--accent)"></circle>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--muted)" text-anchor="middle" x="70" y="170">gasto ao longo do ciclo</text>
+<rect height="90" rx="8" style="stroke:var(--line2);fill:var(--panel)" width="66" x="140" y="60"></rect>
+<text font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)" text-anchor="middle" x="173" y="82">custo por</text>
+<text font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)" text-anchor="middle" x="173" y="94">promoción</text>
+<text font-family="Newsreader,serif" font-size="20" style="fill:var(--ink)" text-anchor="middle" x="173" y="126">÷</text>
+<text font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)" text-anchor="middle" x="173" y="170">5 ciclos sem: relata</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 5&lt;/b&gt; Los tres niveles de aprobación como escalones, con una flecha para volver atrás en todos: una caída en el ciclo posterior a la promoción restaura la versión anterior." data-fig="5">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="40" rx="6" style="stroke:var(--line2);fill:var(--panel)" width="56" x="20" y="130"></rect>
+<rect height="74" rx="6" style="stroke:var(--accent);fill:var(--panel)" width="56" x="82" y="96"></rect>
+<rect height="108" rx="6" stroke-dasharray="3 3" style="stroke:var(--line2);fill:var(--panel)" width="56" x="144" y="62"></rect>
+<g font-family="Space Mono,monospace" font-size="9" style="fill:var(--ink)" text-anchor="middle"><text x="48" y="150">L0</text><text x="110" y="116">L1</text><text x="172" y="82">L2</text></g>
+<g font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)" text-anchor="middle"><text x="48" y="163">só relata</text><text x="110" y="130">tú apruebas</text><text x="172" y="96">promove só</text><text x="172" y="108">após 5 em L1</text></g>
+<path d="M172 40 C150 20 70 20 48 40" stroke-width="2" style="stroke:var(--warm)"></path>
+<path d="M54 34 L47 41 L56 44" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="stroke:var(--warm)"></path>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--warm)" text-anchor="middle" x="110" y="18">voltar: em todos os níveis</text>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="190">comece em L1</text>
+</svg>
+</div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>La tarjeta de decisión es lo único que requiere atención: cinco líneas, como máximo una vez por semana, para leer de arriba abajo antes de decidir.</li>
+<li>Solo hay tres respuestas: aprobar, rechazar y esperar. El silencio significa «nada promovido, pendiente».</li>
+<li>En el ciclo 0002 de la clínica, el sistema rechazó una ganancia de diez puntos por un indicador con tolerancia cero; la regla se aplicó correctamente, pero había que calcular la tolerancia.</li>
+<li>El límite (respuesta 4) es lo que usa el Guardián para detener el ciclo; el nivel de aprobación (respuesta 5) empieza en L1 y solo pasa a L2 después de cinco aciertos.</li>
+<li>El retroceso funciona en todos los niveles: una caída en el ciclo posterior a la promoción restaura la versión anterior y deja el motivo en el historial.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu siguiente paso</p>
+<p class="na-win">Ahora puedes decidir sobre una tarjeta real sin dejarte llevar por el tamaño de la ganancia y ya escribiste el límite y quién aprueba en tu ciclo.</p>
+<p class="na-action">Durante los próximos 15 minutos: abre la ficha del ciclo que estás preparando y escribe con cifras, en las líneas 4 y 5, lo que respondiste en la práctica. Solo faltan esas dos para completar la ficha en la Ruta 5.</p>
+<p class="na-hook">En la última clase de esta ruta, sobre honestidad, verás qué garantiza el ciclo por diseño, qué no garantiza en absoluto y cómo reconocer cuando alguien vende lo segundo como si fuera lo primero.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-3">← clase anterior</a><a href="#aula-5">siguiente clase →</a></nav>
+<footer>Clase 4 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-4" type="application/json">
+[
+  {
+    "front": "Decisión: la tarjeta dice «B ganó con margen», N alcanzó el mínimo, los indicadores están dentro del límite y el costo también, pero no te gusta el nuevo texto. ¿Apruebas o rechazas?",
+    "back": "Aprueba. La línea 2 manda, no el gusto. Si tienes una hipótesis sobre el tono, conviértela en la próxima prueba."
+  },
+  {
+    "front": "Diagnóstico: un indicador de evento raro (quejas, ~1 %) rechazó una versión por 6 frente a 1 de 300. ¿Qué estaba mal: la regla o su aplicación?",
+    "back": "La regla: una tolerancia cero para un evento raro confunde el ruido con una diferencia real. La aplicación fue correcta. Ajusta la tolerancia (0,01) y vuelve a probar."
+  },
+  {
+    "front": "Contraste: ¿qué cambia entre L1 y L2 cuando el veredicto es «B ganó»?",
+    "back": "En L1 apruebas cada tarjeta; en L2 el ciclo promueve automáticamente y te avisa. L2 solo se habilita tras cinco aprobaciones en L1 sin reversiones."
+  },
+  {
+    "front": "Aplicación: promoviste una versión y, en el siguiente ciclo, el indicador «descuento medio» superó la tolerancia. ¿Qué ocurre con la versión oficial y con el historial?",
+    "back": "Vuelve la versión anterior (con tu confirmación en L1, automáticamente en L2) y el historial conserva la versión promovida como revertida, con fecha, cifras y motivo."
+  },
+  {
+    "front": "Estás de viaje y no respondes la tarjeta dentro del plazo. ¿Qué hace el ciclo con la candidata?",
+    "back": "No se promueve nada. La versión actual sigue, el historial registra «pendiente» y la tarjeta espera tu respuesta."
+  },
+  {
+    "front": "¿Qué dos cifras deben aparecer en la respuesta 4 de la ficha y quién las utiliza?",
+    "back": "Un límite de dinero por ciclo y un límite de tu tiempo semanal. El Guardián detiene el ciclo al alcanzar el límite; el Meta-agente informa el costo por hipótesis promovida."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-4 | tipo=FERRAMENTA | steps=5
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (5/5: clínica · corretor · clínica · suporte · corretor)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (5/5)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~12 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-4"> presente (6 cartões: decisão · diagnóstico · contraste · aplicação · pergunta · pergunta)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); sem teste-se opcional
+-->
+</section>
+<!-- ===== AULA 5 — FUNDAMENTO ===== -->
+<section class="view" data-aula="5" data-tempo="19min" id="v-aula-5">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Ruta 04 · Clase 5</p>
+<h1>Lo que LOOP-R<br/><em>no garantiza</em></h1>
+<p class="promise">Al terminar esta clase, podrás decir, en una frase cada una, las cuatro cosas que el ciclo garantiza por diseño y las cuatro que no garantiza, y reconocer una promesa falsa cuando alguien la venda.</p>
+<p class="why">Toda esta ruta pidió pruebas. Sería extraño terminar prometiendo algo sin ellas. Esta es, entonces, la clase de honestidad: qué garantiza un ciclo de mejora porque fue diseñado para ello y qué depende de tu volumen, tu mercado y la suerte. Saber distinguirlo evita que abandones el ciclo al tercer mes por frustración y que confíes en él más de lo que puede sostener.</p>
+<p class="cue"><span class="arw">↓</span> desplázate para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: o corrimão da escada da clínica — não sobe ninguém; impede de cair -->
+<g style="stroke:var(--line2);fill:var(--panel)">
+<path d="M30 200 L80 200 L80 170 L130 170 L130 140 L180 140 L180 110 L230 110 L230 80 L280 80 L280 210 L30 210 Z"></path>
+</g>
+<path d="M40 150 L100 120 L150 90 L200 60 L250 30" stroke-linecap="round" stroke-width="4" style="stroke:var(--accent)"></path>
+<g stroke-width="2" style="stroke:var(--accent)"><path d="M55 143 L55 200 M105 118 L105 170 M155 88 L155 140 M205 58 L205 110 M250 32 L250 80"></path></g>
+<text font-family="Newsreader,serif" font-size="16" font-style="italic" style="fill:var(--ink-soft)" x="30" y="40">el pasamanos no sube la escalera por ti.</text>
+<text font-family="Space Mono,monospace" font-size="10" style="fill:var(--muted)" x="30" y="60">garantiza que no te caigas.</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> Cuatro garantías, y ninguna es «la cifra sube»</h2>
+<p>Ningún ciclo de aprendizaje garantiza que la cifra suba. Ni siquiera este; la dueña de la clínica estética lo leyó en la primera pantalla del producto, antes de completar la ficha. LOOP-R garantiza cuatro cosas, todas por diseño: se cumplen porque existen las reglas de las clases anteriores, no porque alguien lo haya prometido. Una versión peor nunca sustituye a la actual por decisión del sistema. Todo cambio queda registrado y se puede revertir. El ciclo siempre se ejecuta igual. El costo no supera el límite.</p>
+<p>Junto a cada garantía está lo que no cubre. No sustituir una versión por otra peor no significa que la siguiente será mejor. Tener un registro no significa que contenga algo útil: puede decir «sin evidencia» durante diez ciclos seguidos. Ejecutarse siempre no significa que cada ciclo produzca una buena hipótesis. Respetar el límite no significa que el costo compense.</p>
+<p>La regla que este producto sigue en todos sus textos: la palabra «garantizar» solo aparece acompañada de <span class="gterm" data-def="La garantía de que una versión peor no se vuelva oficial por decisión del sistema. Es la única garantía sólida de un ciclo: la cifra quizá no suba, pero no bajará por causa del ciclo." tabindex="0">no regresión</span>, un registro reversible o la constancia del ciclo. Si lees «garantiza más ventas» en cualquier material sobre ciclos de IA, incluso este, estás leyendo una promesa que nadie puede hacer.</p>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Antes: la promesa que se vende</p><p class="qba-txt">«La IA aprenderá de cada propuesta y <b>mejorará tus ventas</b>.» Ninguna cifra, condición ni plazo.</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">Después: lo que sí se garantiza</p><p class="qba-txt">Para la clínica: ninguna versión con peores respuestas o margen <b>peor</b> se vuelve oficial; cada cambio tiene fecha, cifra y opción de volver atrás; el ciclo se ejecuta cada lunes; el gasto se detiene en R$ 50.</p></div>
+<p class="qba-saldo"><b>Balance:</b> cuatro frases comprobables en el historial frente a una que no se puede comprobar en ninguna parte.</p>
+</div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> El vínculo aún no demostrado: señal → dinero</h2>
+<p>En la clase 2 sustituiste el dinero por una señal como objetivo de la prueba porque el dinero tarda demasiado. Eso tiene un costo que hay que decir: subir la señal no demuestra que suba el dinero. Es plausible —quien responde tiene más probabilidades de comprar—, pero lo plausible no está demostrado. Hasta que haya suficiente volumen, el vínculo entre ambos es una apuesta declarada, no un resultado.</p>
+<p>El caso real de la clínica lo muestra con claridad. En el ciclo 0004, la tasa de respuesta subió del 19,3 % al 29,3 % y la versión se promovió con razón. La conversión en ventas pasó del 3,0 % al 3,7 %: con 300 propuestas por grupo, esa cifra no se distingue del azar. El informe del ciclo dice exactamente eso: «el vínculo señal → objetivo sigue sin demostrarse». Diez puntos más de respuestas, y todavía no se puede afirmar nada sobre las ventas.</p>
+<p>El agente inmobiliario enfrenta el mismo vínculo con otros nombres: más visitas concertadas todavía no han demostrado más ventas cerradas. Su ciclo optimiza las citas y vigila los cierres. Cuando haya 1.500 contactos por grupo, el cierre podrá convertirse en objetivo. Antes de eso, decir «el ciclo aumentó las ventas» sería repetir la promesa sin fundamento.</p>
+<div class="quiz" data-answer="b">
+<p class="qk">Ponte a prueba</p><p class="q">Ciclo 0004 de la clínica: respuesta 19,3 % → 29,3 % (N = 300 frente a 300, significativo); conversión 3,0 % → 3,7 % (no significativo). ¿Qué se puede afirmar?</p>
+<button class="opt" data-fb="Esa cifra está en la hoja, pero con 300 por grupo no se distingue del azar. Afirmar «un 23 % más de ventas» es precisamente la promesa de la que esta clase recomienda desconfiar." data-k="a">Las ventas subieron un 23 % con la nueva versión</button>
+<button class="opt" data-fb="Correcto. El objetivo de la prueba (respuestas) subió y quedó demostrado; el dinero se vigiló, no empeoró y aún no hay volumen para afirmar que subió. Ambas frases pueden ser ciertas." data-k="b">La respuesta sí subió; todavía no hay pruebas sobre las ventas, y aun así se puede promover la versión</button>
+<button class="opt" data-fb="Habría fallado si las respuestas hubieran bajado o empeorado un indicador. No ocurrió ninguna de las dos cosas. La hipótesis cumplió su objetivo (subir la señal); falta el vínculo con el dinero, que es otra pregunta." data-k="c">La hipótesis falló porque el objetivo era vender más</button>
+<p class="qfb"></p>
+</div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> «Sin evidencia» durante diez ciclos seguidos es un resultado posible</h2>
+<p>El ciclo garantiza que se ejecute cada semana. No garantiza que la semana traiga una buena idea. Es posible —y común en un negocio pequeño— que el Crítico solo encuentre observaciones débiles durante varios ciclos, que el Optimizador no tenga propuestas y que el historial acumule «evidencia insuficiente» línea tras línea. Eso no significa que el ciclo esté roto. Está diciendo la verdad sobre el volumen disponible.</p>
+<p>Dos cosas siguen siendo valiosas durante esas semanas. La memoria de hipótesis descartadas crece y vale tanto como la de las promovidas: evita que tú u otra persona vuelva a probar la misma mala idea. El Meta-agente, que solo observa e informa, calcula el costo por hipótesis promovida. Si no se promueve nada en cinco ciclos, propone ejecutarlo con menos frecuencia en vez de fingir progreso.</p>
+<p>La responsable de soporte pasó por seis ciclos así entre marzo y abril: había muy pocos casos por tipo para que el Crítico identificara un patrón. Siguiendo la propuesta del Meta-agente, redujo la frecuencia a quincenal y dejó que la hoja de registro acumulara datos. En junio, con 30 casos del tipo más común, apareció la primera hipótesis moderada. Su historial tiene seis registros de «sin evidencia» y considera honestos los seis.</p>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="step" data-fig="4" data-kind="fundamento">
+<h2><span class="n">04</span> Qué sigue siendo investigación y qué es el cuello de botella</h2>
+<p>Una parte de la idea de LOOP-R aún no está lista para ningún negocio: que el ciclo se rediseñe a sí mismo, el nivel L3, donde el Meta-agente propone cambiar asistentes, alterar el orden del ciclo o reescribir sus propias reglas. Eso es investigación. En el producto que enseña este curso, el Meta-agente solo informa: costos, hipótesis generadas frente a promovidas, quién recibe más vetos del Guardián y si el juez está calibrado. No ejecuta acciones. Quien prometa un sistema que «se mejora a sí mismo» está vendiendo algo que todavía no existe de forma segura.</p>
+<p>Y está el cuello de botella que ningún asistente resuelve: la hoja de registro. Sin pruebas, lo demás es teatro; los datos de tu negocio están en WhatsApp, en el cuaderno de recepción o en la cabeza del vendedor. El producto se conecta a una sola cosa: una hoja con columnas definidas en la ficha. Tú la completas o exportas los datos. Cada integración directa con otro sistema es un proyecto aparte; ninguna viene incluida con las cinco respuestas.</p>
+<p>Para la clínica y el agente inmobiliario, la conclusión es la misma y sirve para evaluar cualquier promesa: LOOP-R como disciplina de proceso —registro, pruebas con muestras suficientes y no regresión— ya tiene valor por sí sola. LOOP-R como «sistema que aprende solo» depende de un volumen de datos que la mayoría de los pequeños negocios no tiene. Un producto honesto lo dice desde la primera pantalla.</p>
+<div class="qanchor"><p>El ciclo no promete que la cifra suba. Promete que no bajará por decisión del sistema.</p></div>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">marcar como leído</button>
+</section>
+<section class="practice" data-mode="analise" data-practice="p5">
+<p class="pk">Practica ahora <span class="pcount">0/3 completados</span></p>
+<h3 class="ph">Verdadero o falso: ocho afirmaciones sobre garantías</h3>
+<p class="pgoal">Marca V o F en cada afirmación y, en las falsas, escribe en una línea qué garantía real está exagerando. Unos 8 min. Es un ejercicio de análisis: no se puede «practicar» una garantía; se aprende a reconocerla al leer propuestas de venta.</p>
+<p class="psafe">Nada cambia en tu negocio hasta que lo apruebes: aquí solo lees y marcas. Equivocarte es útil; cada afirmación falsa que marques como verdadera es una promesa que alguien podría intentar venderte.</p>
+<ul class="vf">
+<li><span class="k">1</span> Después de cuatro ciclos, la tasa de respuesta necesariamente habrá subido.</li>
+<li><span class="k">2</span> Una versión peor nunca sustituye a la actual por decisión del sistema.</li>
+<li><span class="k">3</span> Todo cambio se puede revertir, y queda registrado cuándo, con qué cifras y por qué.</li>
+<li><span class="k">4</span> Si no se responde la tarjeta a tiempo, el sistema promueve por defecto para que el ciclo no se detenga.</li>
+<li><span class="k">5</span> El costo de un ciclo nunca supera el límite que anotaste en la ficha.</li>
+<li><span class="k">6</span> Si el costo quedó dentro del límite, el ciclo compensó.</li>
+<li><span class="k">7</span> Diez ciclos seguidos con «sin evidencia» significan que el ciclo se rompió.</li>
+<li><span class="k">8</span> El ciclo se ejecuta igual cada semana, aunque nadie tenga una buena hipótesis.</li>
+</ul>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Marqué V o F en las ocho afirmaciones antes de abrir la clave.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>En las que marqué F, escribí en una línea qué garantía real exagera cada una.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Comparé mis respuestas con la clave y verifiqué las cuatro garantías y las cuatro cosas que no se garantizan.</span></label></li>
+</ol>
+<details><summary>Clave comentada</summary>
+<p><b>1 — F.</b> Exagera la no regresión: el ciclo garantiza que la cifra no caiga por decisión suya, no que suba.</p>
+<p><b>2 — V.</b> Es la garantía central: el Evaluador solo promueve si el margen y los indicadores se mantienen intactos; de lo contrario, «A sigue».</p>
+<p><b>3 — V.</b> Registro con botón para volver atrás. Cada promoción y reversión queda en el historial con fecha, cifras y motivo.</p>
+<p><b>4 — F.</b> Exagera la constancia del ciclo: sigue ejecutándose, pero si no hay respuesta, lo normal es no promover y registrar «pendiente».</p>
+<p><b>5 — V.</b> El Guardián detiene el ciclo al alcanzar el límite.</p>
+<p><b>6 — F.</b> Exagera el límite: respetarlo garantiza el gasto, no el retorno. El costo por hipótesis promovida es otro cálculo, que informa el Meta-agente.</p>
+<p><b>7 — F.</b> Exagera la constancia: se garantiza que el ciclo se ejecute, no que produzca una buena hipótesis cada semana. Diez resultados de «sin evidencia» son honestos, y las ideas descartadas quedan en la memoria.</p>
+<p><b>8 — V.</b> Constancia del ciclo. Es la garantía más sencilla y la que más protege frente a «dejamos de hacerlo en el tercer mes».</p>
+</details>
+<p class="pdone">Acabas de separar, afirmación por afirmación, lo que el ciclo puede respaldar de lo que nadie puede respaldar; es la misma lectura que aplicarás a la próxima promesa que aparezca.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; Dos columnas: a la izquierda, lo que se cumple por diseño (línea continua); a la derecha, lo que queda fuera (discontinua). Cada punto de la izquierda tiene su límite correspondiente a la derecha." data-fig="1">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--accent)" text-anchor="middle" x="58" y="28">garante</text>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" text-anchor="middle" x="162" y="28">no garantiza</text>
+<g style="stroke:var(--accent);fill:var(--panel)">
+<rect height="26" rx="6" width="88" x="14" y="40"></rect><rect height="26" rx="6" width="88" x="14" y="76"></rect><rect height="26" rx="6" width="88" x="14" y="112"></rect><rect height="26" rx="6" width="88" x="14" y="148"></rect>
+</g>
+<g stroke-dasharray="3 3" style="stroke:var(--line2)">
+<rect height="26" rx="6" width="88" x="118" y="40"></rect><rect height="26" rx="6" width="88" x="118" y="76"></rect><rect height="26" rx="6" width="88" x="118" y="112"></rect><rect height="26" rx="6" width="88" x="118" y="148"></rect>
+</g>
+<g font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--ink)" text-anchor="middle">
+<text x="58" y="56">no entra una versión peor</text><text x="58" y="92">registro + volta</text><text x="58" y="128">ciclo constante</text><text x="58" y="164">custo no teto</text>
+</g>
+<g font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)" text-anchor="middle">
+<text x="162" y="56">la siguiente es mejor</text><text x="162" y="92">registro provechoso</text><text x="162" y="128">buena hipótesis</text><text x="162" y="164">el costo compensa</text>
+</g>
+<path d="M102 53 L118 53 M102 89 L118 89 M102 125 L118 125 M102 161 L118 161" style="stroke:var(--line)"></path>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; La cadena de tres eslabones: texto → respuesta → venta. Las pruebas unen los dos primeros; el último sigue discontinuo: es plausible, pero no está demostrado." data-fig="2">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g stroke-width="3" style="stroke:var(--accent)">
+<rect height="30" rx="15" width="50" x="18" y="80"></rect><rect height="30" rx="15" width="50" x="86" y="80"></rect>
+</g>
+<rect height="30" rx="15" stroke-dasharray="5 4" stroke-width="3" style="stroke:var(--warm)" width="50" x="154" y="80"></rect>
+<path d="M68 95 L86 95" stroke-width="3" style="stroke:var(--accent)"></path>
+<path d="M136 95 L154 95" stroke-dasharray="3 3" stroke-width="3" style="stroke:var(--warm)"></path>
+<g font-family="Space Mono,monospace" font-size="8" style="fill:var(--ink)" text-anchor="middle">
+<text x="43" y="99">texto</text><text x="111" y="99">resposta</text><text x="179" y="99">venda</text>
+</g>
+<g font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)" text-anchor="middle">
+<text x="43" y="130">lista: sí/no</text><text x="111" y="130">19,3 → 29,3%</text><text x="179" y="130">3,0 vs 3,7%</text>
+<text x="43" y="142">provado</text><text x="111" y="142">provado</text><text style="fill:var(--warm)" x="179" y="142">no demostrado</text>
+</g>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="180">o último elo é uma aposta declarada</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; El historial durante varios meses: muchas entradas de «sin evidencia» y una promoción. La memoria de hipótesis descartadas (a la derecha) crece incluso en semanas vacías." data-fig="3">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)">
+<text x="14" y="34">0001 sem evidência</text><text x="14" y="50">0002 sem evidência</text><text x="14" y="66">0003 sem evidência</text><text x="14" y="82">0004 sem evidência</text><text x="14" y="98">0005 sem evidência</text><text x="14" y="114">0006 sem evidência</text>
+</g>
+<text font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--accent)" x="14" y="134">0007 hipótese moderada</text>
+<text font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--accent)" x="14" y="150">0009 promovida v2</text>
+<rect height="130" rx="8" style="stroke:var(--line2);fill:var(--panel)" width="56" x="150" y="26"></rect>
+<text font-family="Space Mono,monospace" font-size="7" style="fill:var(--muted)" text-anchor="middle" x="178" y="44">descartadas</text>
+<g style="stroke:var(--warm)"><path d="M160 60 L196 60 M160 74 L196 74 M160 88 L196 88 M160 102 L196 102 M160 116 L196 116"></path></g>
+<text font-family="Space Mono,monospace" font-size="8.5" style="fill:var(--muted)" text-anchor="middle" x="110" y="184">seis registros honestos, una promoción</text>
+</svg>
+</div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; Lo que incluye hoy el producto (línea continua), lo que sigue en investigación (discontinua) y el cuello de botella: la hoja de cálculo, antes de cualquier asistente." data-fig="4">
+<svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="60" rx="8" stroke-width="2" style="stroke:var(--warm);fill:var(--panel)" width="60" x="14" y="70"></rect>
+<g style="stroke:var(--warm)"><path d="M22 86 L66 86 M22 98 L66 98 M22 110 L66 110 M36 78 L36 122 M50 78 L50 122"></path></g>
+<text font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--warm)" text-anchor="middle" x="44" y="146">planilha: gargalo</text>
+<path d="M74 100 L92 100" style="stroke:var(--line2)"></path>
+<rect height="80" rx="8" style="stroke:var(--accent);fill:var(--panel)" width="72" x="92" y="60"></rect>
+<g font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--ink)" text-anchor="middle">
+<text x="128" y="82">9 assistentes</text><text x="128" y="96">L0 · L1 · L2</text><text x="128" y="110">registro + volta</text>
+</g>
+<text font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--accent)" text-anchor="middle" x="128" y="156">produto, hoje</text>
+<rect height="80" rx="8" stroke-dasharray="3 3" style="stroke:var(--line2)" width="36" x="172" y="60"></rect>
+<text font-family="Space Mono,monospace" font-size="8" style="fill:var(--muted)" text-anchor="middle" x="190" y="96">L3</text>
+<text font-family="Space Mono,monospace" font-size="6.5" style="fill:var(--muted)" text-anchor="middle" x="190" y="110">redesenho</text>
+<text font-family="Space Mono,monospace" font-size="7.5" style="fill:var(--muted)" text-anchor="middle" x="190" y="156">pesquisa</text>
+</svg>
+</div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>Por diseño, el ciclo garantiza cuatro cosas: no elige una versión peor, todo queda registrado y se puede revertir, el ciclo se ejecuta siempre igual y el costo respeta el límite.</li>
+<li>Cada garantía tiene un límite asociado: ninguna asegura que la próxima versión será mejor, que el registro será útil, que cada ciclo traerá una buena idea o que el costo compensará.</li>
+<li>Que suba la señal no demuestra que suba el dinero: en el caso real, la respuesta aumentó diez puntos, pero la conversión aún no se distingue del azar.</li>
+<li>El ciclo que se rediseña a sí mismo sigue siendo investigación, y la hoja de registro es el cuello de botella que ningún asistente puede resolver por ti.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu siguiente paso</p>
+<p class="na-win">Ahora puedes analizar una promesa sobre IA y decir, con la tabla en mente, cuál de las cuatro garantías está exagerando.</p>
+<p class="na-action">Durante los próximos 15 minutos: relee la ficha del ciclo que preparaste en las rutas anteriores y tacha cualquier frase que prometa que una cifra subirá. Sustitúyela por una de las cuatro garantías, con una cifra de tu ficha («el sistema no dejará que la respuesta baje del 20 %»).</p>
+<p class="na-hook">En la Ruta 5 seguirás de principio a fin los cuatro ciclos reales de la clínica, anticiparás el quinto y entregarás la ficha completa con la primera tarjeta de decisión rellenada.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-4">← clase anterior</a><a href="#trilha">terminar la ruta →</a></nav>
+<footer>Clase 5 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-5" type="application/json">
+[
+  {
+    "front": "Diagnóstico: un material afirma que «el ciclo garantiza más ventas en 90 días». ¿Qué garantía real se está exagerando y en qué promesa se convierte?",
+    "back": "Se exagera la no regresión (la cifra no cae por decisión del sistema) hasta afirmar que «la cifra sube». Ningún ciclo garantiza un aumento."
+  },
+  {
+    "front": "Decisión: tu ciclo tiene ocho ejecuciones seguidas con «sin evidencia». ¿Lo apagas, lo mantienes o cambias algo? ¿Qué?",
+    "back": "Déjalo en marcha con menos frecuencia (propuesta del Meta-agente) y permite que la hoja acumule datos. No es un defecto: refleja el volumen disponible."
+  },
+  {
+    "front": "Contraste: ¿qué diferencia hay entre «garantiza un registro y la posibilidad de volver atrás» y «garantiza que el registro será útil»?",
+    "back": "Lo primero está integrado: todo cambio queda anotado y se puede revertir. Lo segundo depende de que haya pruebas; durante meses, el registro podría decir solo «sin evidencia»."
+  },
+  {
+    "front": "Aplicación: alguien ofrece un ciclo donde «el sistema rediseña sus propios asistentes». ¿Qué respondes y por qué?",
+    "back": "Eso es L3 y sigue en investigación. En este producto, el Meta-agente solo informa (costos, vetos y calibración del juez); no actúa sobre el ciclo."
+  },
+  {
+    "front": "¿Por qué se llama cuello de botella a la hoja de registro si hay nueve asistentes?",
+    "back": "Sin pruebas registradas, los asistentes no tienen qué leer. El producto solo se conecta con la hoja y cada integración directa con otro sistema es un proyecto aparte."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-5 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: clínica · clínica+corretor · suporte · clínica+corretor)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~8 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-5"> presente (5 cartões: diagnóstico · decisão · contraste · aplicação · pergunta)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, step 02)
+-->
+</section>
+<script src="curso.js"></script>
+<script id="language-navigation-script">(()=>{const update=()=>{document.querySelectorAll('a').forEach(a=>{if(!['PT','EN','ES'].includes(a.textContent.trim()))return;if(!a.dataset.languageBase)a.dataset.languageBase=a.getAttribute('href');const u=new URL(a.dataset.languageBase,location.href);u.search=location.search;u.hash=location.hash;a.href=u.href;const current=(document.documentElement.lang||'pt').slice(0,2).toUpperCase();if(a.textContent.trim()===current)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});};update();addEventListener('hashchange',update);})();</script></body>
+</html>

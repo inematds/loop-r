@@ -1,0 +1,1012 @@
+<!doctype html>
+<!-- LOOP-R · Trilha 1 — Por que sua empresa não melhora (diagnóstico). Gerado no formato-curso-v5 (INEMA). -->
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="curso" content="loop-r-trilha-1">
+<title>LOOP-R · Track 1 — Why Your Business Does Not Improve · INEMA.CLUB PRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/aula.css">
+<script>(function(){try{var m=document.querySelector('meta[name=curso]');var CK=(m&&m.content)||'v5:curso';var L=document.documentElement.lang||'pt-BR';if(!/^pt/i.test(L))CK+=':'+L;var s=JSON.parse(localStorage.getItem(CK));if(s&&s.prefs&&s.prefs.theme)document.documentElement.setAttribute('data-theme',s.prefs.theme);}catch(e){}})();</script>
+<!--
+  PROTOCOLO DE DESCOBERTA (SKILL.md, Passo 0 — respondido no plano do curso, §0):
+  - Público específico: donos e gestores de negócios pequenos/médios, 40+, que já usam IA para "fazer coisas" (propostas, respostas, posts) e sentem que nada melhora com o tempo.
+  - Profissões-alvo (3): dona de clínica de estética (Regina — propostas por WhatsApp) · corretor de imóveis (Marcos — leads de portal) · gestor de suporte de empresa de software pequena (Paulo — 10.000 chamados/ano).
+  - Familiaridade com tecnologia: WhatsApp, planilha e um chat de IA. Sem terminal, sem programação, nunca ouviu "Git".
+  - Resultado prático esperado (curso inteiro): um loop montado no próprio negócio — 5 respostas, planilha de registro, 1 experimento, 1 decisão com o cartão. Nesta trilha: diagnóstico — apontar onde a IA "termina ali", contar o retrabalho, marcar o nível (1–5) e reescrever uma instrução vaga.
+  - Tempo por sessão: 20 min.
+  Números usados (fonte: docs/05, docs/06, exemplos/vendas-whatsapp/README.md): 19,3% → 29,7% descartada (reclamações 6 vs 1, tolerância 0); 19,3% → 29,3% promovida (N=300/300); conversão 3,7% vs 3,0% n.s.; ~1.500/versão para 3%→5%; 15 meses a 200/mês; ~300/versão para 20%→30%; 37% dos 10.000 chamados; R$ 41 (teto R$ 50); padrão só com N ≥ 30.
+  Anti-clone (último curso gerado: arquiteto-agentes-saude — aula 1: quiz → qbefore-after → qanchor, prática tarefa; aula 2: qerr → qsteps, análise; aula 3: qapply → qsteps, prompt).
+  Esta trilha: aula 1: qbefore-after(s1) → quiz(s2) → qanchor(s4), análise; aula 2: qanchor(s2) → quiz(s3) → qbefore-after(s4), tarefa; aula 3: qanchor(s1) → quiz(s2) → qbefore-after(s3), análise; aula 4: qanchor(s1) → qbefore-after(s3) → quiz(s4) → qerr(s5), prompt.
+-->
+<style>
+  .view{display:none}.view.active{display:block}
+  .languages{font:11px var(--mono);white-space:nowrap}.languages a{color:var(--muted);text-decoration:none}.languages a[lang="en"]{color:var(--accent);font-weight:700}
+  .lnav{max-width:1160px;margin:0 auto 5vh;padding:0 clamp(24px,5vw,60px);display:flex;justify-content:space-between;gap:12px}
+  .lnav a{font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line2);border-radius:12px;padding:12px 16px}
+  .lnav a:hover{border-color:var(--accent);color:var(--ink)}
+  #v-trilha .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(24px,5vw,60px)}
+  #v-trilha .t-hero{position:relative;overflow:hidden;padding:20vh 0 8vh;border-bottom:1px solid var(--line)}
+  #v-trilha h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,6.4vw,72px);line-height:1;letter-spacing:-.025em;margin:0 0 22px}
+  #v-trilha h1 em{font-style:italic;color:var(--accent)}
+  #v-trilha .lead{font-family:var(--serif);font-size:clamp(19px,2.1vw,24px);line-height:1.5;color:var(--ink-soft);max-width:46ch;margin:0 0 30px}
+  #v-trilha section{padding:8vh 0}
+  #v-trilha .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  #v-trilha h2{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.6vw,38px);margin:0 0 28px}
+  #v-trilha .aulas{display:grid;gap:14px}
+  #v-trilha .au{display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:center;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+  #v-trilha .au .num{font-family:var(--serif);font-size:30px;color:var(--accent);text-align:center}
+  #v-trilha .au h3{font-family:var(--serif);font-weight:500;font-size:21px;margin:0 0 5px}
+  #v-trilha .au p{margin:0;color:var(--muted);font-size:14.5px}
+  #v-trilha .au .meta{font-family:var(--mono);font-size:11px;color:var(--accent);white-space:nowrap;text-align:right}
+  #v-trilha .au .prog{position:static;margin-top:10px;height:5px;border-radius:99px;background:var(--line);overflow:hidden;max-width:220px;width:auto}
+  #v-trilha .au .prog i{display:block;height:100%;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+  #v-trilha footer{max-width:1080px;margin:0 auto;padding:6vh clamp(24px,5vw,60px) 12vh;color:var(--faint);text-align:center;font-family:var(--serif);font-style:italic;border-top:1px solid var(--line)}
+  @media(max-width:720px){#v-trilha .au{grid-template-columns:44px 1fr}#v-trilha .au .meta{grid-column:2;text-align:left}}
+  /* tabela leve de garantias / sinais (só tipografia, sem cor nova) */
+  .tbl{width:100%;border-collapse:collapse;margin:18px 0 0;font-size:14.5px;line-height:1.5}
+  .tbl th,.tbl td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
+  .tbl th{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:400}
+  .tbl td b{color:var(--ink)}
+  .sinais{list-style:none;padding:0;margin:12px 0 0}
+  .sinais li{padding:6px 0 6px 28px;position:relative;font-size:15px;line-height:1.5;color:var(--ink-soft)}
+  .sinais li::before{content:attr(data-k);position:absolute;left:0;top:7px;font-family:var(--mono);font-size:11px;color:var(--accent)}
+  svg text{font-family:'Space Mono',monospace}
+</style>
+<link rel="alternate" hreflang="pt-BR" href="../../trilha-1/curso.html"><link rel="alternate" hreflang="en" href="curso.html"><link rel="alternate" hreflang="es" href="../../es/trilha-1/curso.html"><link rel="alternate" hreflang="x-default" href="../../trilha-1/curso.html"><link rel="canonical" href="https://inematds.github.io/loop-r/curso/en/trilha-1/curso.html"><style id="language-navigation-style">
+.language-links,.languages{display:inline-flex;align-items:center;gap:.5rem;font:12px system-ui;white-space:nowrap}.language-links a,.languages a{color:inherit;text-decoration:none}.language-links [aria-current=page],.languages [aria-current=page]{font-weight:700;text-decoration:underline}.language-links{padding:.5rem 1rem}.links>a[lang]{font:12px system-ui}.bar-inner{flex-wrap:wrap}.bar .languages{pointer-events:auto}header.top .wrap{flex-wrap:wrap}
+@media(max-width:760px){nav>.wrap{height:auto;min-height:60px;flex-wrap:wrap;gap:12px;padding-block:10px}nav .links{gap:10px;flex-wrap:wrap}}
+</style></head>
+<body>
+<div class="bar"><div class="bar-inner">
+  <span class="brand"><a class="mark" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a><a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a><a class="course" href="../index.html">LOOP-R</a></span>
+  <a class="back" href="#trilha" style="display:none">← trilha</a>
+  <button id="pill" class="pill" style="display:none">0 lido</button>
+  <button id="revbtn">review <span id="revn">0</span></button>
+  <button id="exbtn">exercises</button>
+  <button id="jorbtn">learning path</button>
+  <button id="helpbtn" aria-label="How it works">?</button>
+  <button id="prefsbtn" aria-label="Reading preferences">Aa</button>
+  <button id="themebtn">theme: dark</button>
+
+<span class="languages"><a lang="pt-BR" href="../../trilha-1/curso.html">PT</a> · <a lang="en" href="curso.html">EN</a> · <a lang="es" href="../../es/trilha-1/curso.html">ES</a></span></div></div>
+
+<!-- ===== TRILHA ===== -->
+<section class="view" id="v-trilha">
+  <header class="t-hero"><div class="wrap">
+    <p class="kicker">LOOP-R · Track 01 · Diagnosis</p>
+    <h1>Why your business <em>does not improve</em></h1>
+    <p class="lead">Learn to identify where AI does work but learns nothing in your own business. Leave with a rework count, your maturity level marked, and a vague instruction rewritten so its result can be measured.</p>
+  </div></header>
+  <section><div class="wrap">
+    <div class="statcards"></div>
+    <p class="eyebrow">Lessons</p>
+    <h2>Four diagnoses, one per session</h2>
+    <div class="aulas">
+      <a class="au on" data-aula="1" href="#aula-1">
+        <div class="num">1</div>
+        <div><h3>AI that ends there</h3><p>Leave able to explain in one sentence why every task AI does for you today starts from scratch next time — and what is missing to make that stop.</p><div class="prog"><i></i></div></div>
+        <div class="meta">20min · abrir →</div>
+      </a>
+      <a class="au on" data-aula="2" href="#aula-2">
+        <div class="num">2</div>
+        <div><h3>Ten thousand runs and no learning</h3><p>Leave with a number of your own: how many times a month the same task is redone from scratch, and how many could become a row in a log.</p><div class="prog"><i></i></div></div>
+        <div class="meta">18min · abrir →</div>
+      </a>
+      <a class="au on" data-aula="3" href="#aula-3">
+        <div class="num">3</div>
+        <div><h3>Five levels: from “it responds” to a business that learns</h3><p>Leave with your level (1 to 5) marked using observable signs, an answer key, and the one next step that makes sense.</p><div class="prog"><i></i></div></div>
+        <div class="meta">23min · abrir →</div>
+      </a>
+      <a class="au on" data-aula="4" href="#aula-4">
+        <div class="num">4</div>
+        <div><h3>“AI, get better” — the mistake that sounds smart</h3><p>Leave with a vague instruction rewritten using evidence, a goal with “without making anything worse,” and a testable hypothesis — made in any AI chat.</p><div class="prog"><i></i></div></div>
+        <div class="meta">22min · abrir →</div>
+      </a>
+    </div>
+  </div></section>
+  <footer><div class="wrap">LOOP-R · Track 1 · INEMA.CLUB PRO</div></footer>
+</section>
+
+<!-- ===== AULA 1 — FUNDAMENTO ===== -->
+<section class="view" data-aula="1" data-tempo="20min" id="v-aula-1">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Track 01 · Lesson 1 · foundation</p>
+<h1>AI that<br/><em>ends there</em></h1>
+<p class="promise">By the end of this lesson, you will be able to look at a task AI does for you today and explain in one sentence why it ends there — and what is missing for the next attempt to start from a better place.</p>
+<p class="why">You have already asked AI for hundreds of proposals, replies, and pieces of copy. Each was good enough. And yet today’s proposal starts in exactly the same place as the first: nothing that worked was saved. This lesson names the problem — because without a name, it feels normal.</p>
+<p class="cue"><span class="arw">↓</span> scroll to study</p>
+</div>
+<!-- herofig: metáfora do mundo real — a pilha de propostas da clínica, todas começando da mesma folha em branco -->
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<rect height="70" rx="8" stroke-width="2" style="fill:var(--panel);stroke:var(--muted)" width="256" x="22" y="150"></rect>
+<rect height="60" rx="3" stroke-width="2" style="fill:var(--panel2);stroke:var(--muted)" width="120" x="60" y="112"></rect>
+<rect height="60" rx="3" stroke-width="2" style="fill:var(--panel2);stroke:var(--muted)" width="120" x="66" y="100"></rect>
+<rect height="60" rx="3" stroke-width="2" style="fill:var(--panel2);stroke:var(--muted)" width="120" x="72" y="88"></rect>
+<rect height="60" rx="3" stroke-width="2" style="fill:var(--panel);stroke:var(--ink)" width="120" x="78" y="76"></rect>
+<rect height="8" opacity=".9" rx="2" style="fill:var(--accent)" width="60" x="86" y="84"></rect>
+<path d="M86 102 h100 M86 112 h100 M86 122 h64" stroke-dasharray="3 4" stroke-width="2" style="stroke:var(--line2)"></path>
+<rect height="98" rx="8" stroke-width="2" style="fill:var(--panel2);stroke:var(--muted)" width="52" x="212" y="60"></rect>
+<rect height="70" rx="3" style="fill:var(--panel)" width="40" x="218" y="70"></rect>
+<rect height="10" opacity=".8" rx="4" style="fill:var(--accent)" width="26" x="222" y="76"></rect>
+<rect height="10" opacity=".8" rx="4" style="fill:var(--warm)" width="26" x="228" y="92"></rect>
+<rect height="10" opacity=".8" rx="4" style="fill:var(--accent)" width="26" x="222" y="108"></rect>
+<circle cx="238" cy="150" r="3" style="fill:var(--muted)"></circle>
+<circle cx="44" cy="96" r="12" style="fill:var(--muted)"></circle><path d="M28 116 q16 -10 32 0 v26 h-32z" style="fill:var(--muted)"></path>
+<text font-size="9" style="fill:var(--faint)" x="90" y="205">proposal 201 — a blank page</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> Person, request, response, done — and tomorrow, it starts all over</h2>
+<p>In most businesses today, AI works in a straight line. Someone writes a request — people in the field call it a <span class="gterm" data-def="The text you write to ask AI for something. In this course, we call it a request." tabindex="0">prompt</span> —, the AI returns an answer, the person adjusts what is needed, and sends it. Done. Next time starts from the same point: a new request, a blank page, no memory of the last one.</p>
+<p>Regina owns an aesthetics clinic and sends about 200 proposals a month over WhatsApp. For each one, she writes something like “draft a skincare package proposal for the customer who asked about the price.” The proposal comes back, she changes two sentences, and sends it. The customer replies or disappears. Proposal 201 starts with no knowledge of the previous 200 — neither which got a reply nor which led to a sale.</p>
+<p>The AI did not do a bad job. Every proposal was good. The problem is different: the path has four stops and no way back.</p>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Today, at the clinic</p><p class="qba-txt">200 proposals a month, each one from scratch. Regina does not know which of the 200 worked or why — and tomorrow’s proposal will not know either.</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">With a loop</p><p class="qba-txt">The same 200 proposals, each becoming a row in a log. One decision a week, on a five-line card.</p></div>
+<p class="qba-saldo"><b>What the LOOP-R reference example shows</b> (simulated data, fictional clinic): across 4 cycles, 1 proven change with 300 sends per version, 1 idea discarded by a rule, 0 worse versions in production.</p>
+</div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">mark as read</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> AI remembers nothing from one request to the next — and that is not a flaw</h2>
+<p>An AI chat is like an excellent temporary assistant who arrives new for every shift: it writes very well and knows the subject, but it was not here yesterday. It did not see whether the customer replied, the lead booked a visit, or the support ticket came back. Everything that happens <em>afterward</em> the response stays outside the conversation.</p>
+<p>Marcos, a real estate agent, gets about 40 leads a week through a listing portal — a <span class="gterm" data-def="Someone who asked about a property through a portal or listing and has not made a decision yet." tabindex="0">lead</span> is someone who asked for information but has not decided yet. He replies to each one with AI’s help. When a lead responds well because Marcos mentioned the balcony’s square footage, that teaches something — but only Marcos, if he notices. To the AI, the next lead is the first one it has ever seen.</p>
+<p>That is why “using it a lot” does not become “learning.” More use changes nothing until someone records the result and carries it into the next request. The rest of this course builds that feedback loop.</p>
+<div class="quiz" data-answer="b">
+<p class="qk">Check your understanding</p><p class="q">Marcos used AI 160 times this month to reply to leads. What does it know now about which replies worked?</p>
+<button class="opt" data-fb="No. Every request starts from scratch; it never sees what happened after the reply — whether the lead booked a visit or disappeared." data-k="a">Everything — it learns from use</button>
+<button class="opt" data-fb="Exactly. Unless someone records the result of every reply and carries it into the next request, use number 160 is just as new as the first." data-k="b">Nothing, unless someone records the result and carries it forward</button>
+<button class="opt" data-fb="Praise in the chat is not saved for next time — and “I liked it” is not the same as “the lead booked a visit.”" data-k="c">Only what Marcos praised in the chat</button>
+<p class="qfb"></p>
+</div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">mark as read</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> Real improvement takes six things — and none of them is “effort”</h2>
+<p>When someone says “I want AI to improve,” they usually mean writing a better request. But real improvement does not come from the request. It comes from six ingredients connected in a loop: <b>evidence</b> (what happened, written down), <b>metric</b> (a number that says whether it worked), <b>memory</b> (where past attempts are kept), <b>hypothesis</b> (an idea for a change, with a reason), <b>experiment</b> (the idea tested against the current version), and <b>evaluation</b> (someone determines which one won, based on the number).</p>
+<p>Paulo manages support at a small software company: 10,000 tickets a year. For his team, the six ingredients look like this. Evidence: each ticket has its topic recorded. Metric: resolved on first contact, yes or no. Memory: a place where the team records what it has already tried in its canned replies. Hypothesis: “if the password reply includes a direct link, fewer people will come back.” Experiment: half of password tickets get the new reply, half the old one. Evaluation: the count of tickets that “came back within 7 days” determines the winner, not the opinion of the person who wrote the reply.</p>
+<p>Notice: none of the six means “ask more forcefully.” If one is missing, the loop does not close — a hypothesis without an experiment is a guess; an experiment without memory is a discovery lost the next week.</p>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">mark as read</button>
+</section>
+<section class="step" data-fig="4" data-kind="fundamento">
+<h2><span class="n">04</span> What a loop guarantees — and what it does not promise</h2>
+<p>Before we continue, here is the anti-promise, stated in the very first lesson so it cannot be hidden: <b>no improvement loop guarantees that the number will rise.</b> Anyone promising that is selling luck dressed up as a method. A well-built loop guarantees something else, more modest and more valuable:</p>
+<table class="tbl">
+<tr><th>Guarantees</th><th>Does not guarantee</th></tr>
+<tr><td><b>A worse version will not replace the current one</b> on its own.</td><td>That the next version will be better.</td></tr>
+<tr><td><b>Every change will be recorded</b> and there will be a rollback button.</td><td>That the log will contain something useful every week.</td></tr>
+<tr><td><b>The cycle will run every week</b>, in the same way.</td><td>That every cycle will produce a good idea.</td></tr>
+<tr><td><b>The cost will not exceed the limit</b>.</td><td>That the cost will be worthwhile.</td></tr>
+</table>
+<p>Notice that all four guarantees are about process, not results. That may sound modest. It is exactly what no promise of “AI that improves itself” can honestly deliver — and it lets you sleep while the cycle runs: nothing enters without evidence, and anything that entered can be removed.</p>
+<p>In the LOOP-R reference example — a fictional clinic like Regina’s, using simulated data — the proposal response rate rose from 19.3% to 29.3% in a test with 300 sends per version. Sales conversion did not move: 3.7% versus 3.0%, a difference that could be chance. The loop did not hide that. It recorded it, and the person made the decision with the numbers in front of them. For Regina, that is what matters: not a promised number, but one she can verify.</p>
+<div class="qanchor"><p>No loop guarantees that the number will rise. It guarantees that a worse version will not go live on its own — and that you can always roll back.</p></div>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">mark as read</button>
+</section>
+<section class="practice" data-mode="analise" data-practice="p1">
+<p class="pk">Practice now <span class="pcount">0/3 feito</span></p>
+<h3 class="ph">Identify the tasks that end there — in Regina’s case and in your business</h3>
+<p class="pgoal">Read a short case, answer three questions, and compare your answers with the key; then list five tasks of your own. ~10 min.</p>
+<p class="psafe">This is only reading and note-taking — nothing changes in your business until you approve it, and no customer receives anything. If your answer differs from the key, note the difference: it is exactly the kind of thing worth discussing with a business partner.</p>
+<p><b>The case.</b> Regina, who owns an aesthetics clinic, uses AI for five things each week: (1) writing package proposals on WhatsApp; (2) answering “how much does it cost?” from people who find her on Instagram; (3) drafting Monday’s post caption; (4) summarizing customer reviews on Google; (5) writing appointment reminders. None of the five tracks what happens afterward. Regina thinks task 4 “already counts as learning” because AI reads what customers said.</p>
+<p><b>Answer on paper or on your phone:</b></p>
+<ol>
+<li>Which of the five tasks end there?</li>
+<li>Is task 4 a loop, as Regina thinks? Why or why not?</li>
+<li>If you were Regina, which task would you start tracking — and what would you write in each row?</li>
+</ol>
+<details><summary>Answer key with explanations (open only after answering)</summary>
+<p><b>1.</b> All five. They all follow the path request → response → done: none has a row saying what happened afterward (was the proposal answered? Did the post bring in an appointment? Did the customer show up after the reminder?).</p>
+<p><b>2.</b> No. Reading reviews is a request that ends there, just like the others. It would become a loop if what AI read became a hypothesis (“customers complain about the wait: if the proposal states the session length, will more of them reply?”), were tested against the current version, and the result were recorded. Reading is not learning; changing based on evidence is.</p>
+<p><b>3.</b> The best choice is the most frequent task with an easy-to-see result: proposals (1), with 200 a month and replies arriving within hours. Each row could include: date, proposal version, package type, replied (yes/no), booked (yes/no), complained (yes/no). Task 3 (the post) could work too, but the result takes longer and is harder to connect to the wording.</p>
+</details>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>I answered the three questions before opening the key.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>I compared my answers with the key and noted where they differed.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>I wrote down five tasks AI does in my business that end there, using the phrase “it ends there because no one records ___.”</span></label></li>
+</ol>
+<p class="pdone">You can now identify, in one sentence each, the tasks that end there — in Regina’s case and in your business.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; The path has four stops and no return: what happens after the reply does not flow into the next request. The empty dotted arrow shows what is missing." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="28" rx="5" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="44" x="10" y="40"></rect><text font-size="8" style="fill:var(--ink)" x="16" y="58">person</text>
+<path d="M54 54 h12" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<rect height="28" rx="5" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="40" x="66" y="40"></rect><text font-size="8" style="fill:var(--ink)" x="72" y="58">request</text>
+<path d="M106 54 h12" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<rect height="28" rx="5" stroke-width="1.5" style="fill:var(--panel);stroke:var(--accent)" width="50" x="118" y="40"></rect><text font-size="8" style="fill:var(--ink)" x="122" y="58">reply</text>
+<path d="M168 54 h12" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<rect height="28" rx="5" stroke-width="2" style="fill:var(--panel);stroke:var(--warm)" width="30" x="180" y="40"></rect><text font-size="8" style="fill:var(--warm)" x="187" y="58">done</text>
+<path d="M195 68 v40 h-163 v-14" stroke-dasharray="4 4" stroke-width="1.5" style="stroke:var(--faint)"></path>
+<path d="M28 98 l4 -6 l4 6" stroke-dasharray="4 4" stroke-width="1.5" style="stroke:var(--faint)"></path>
+<text font-size="7.5" style="fill:var(--faint)" x="60" y="122">what happened next? — no return</text>
+<text font-size="8" style="fill:var(--muted)" x="14" y="160">proposal 1 · 2 · 3 … 200 · 201</text>
+<text font-size="8" style="fill:var(--muted)" x="14" y="174">each one starts here →</text><rect height="12" rx="2" stroke-width="1.2" style="stroke:var(--muted)" width="14" x="118" y="164"></rect>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; A wall stands between one request and the next. What happened after the reply (did they answer, book, or disappear?) stays outside and never enters the next conversation." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="60" rx="8" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="80" x="14" y="50"></rect><text font-size="8" style="fill:var(--ink)" x="22" y="72">pedido 1</text><text font-size="7.5" style="fill:var(--muted)" x="22" y="88">resposta 1</text>
+<rect height="60" rx="8" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="80" x="126" y="50"></rect><text font-size="8" style="fill:var(--ink)" x="134" y="72">pedido 2</text><text font-size="7.5" style="fill:var(--muted)" x="134" y="88">resposta 2</text>
+<rect height="100" style="fill:var(--line2)" width="12" x="104" y="30"></rect><path d="M104 30 v100 M116 30 v100" stroke-width="1.5" style="stroke:var(--warm)"></path>
+<text font-size="7.5" style="fill:var(--accent)" x="30" y="150">lead booked</text><rect height="6" style="fill:var(--accent)" width="6" x="14" y="140"></rect>
+<text font-size="7.5" style="fill:var(--accent)" x="30" y="166">customer disappeared</text><rect height="6" style="fill:var(--accent)" width="6" x="14" y="156"></rect>
+<path d="M96 150 q10 -20 8 -40" stroke-dasharray="3 3" stroke-width="1.2" style="stroke:var(--faint)"></path><text font-size="7.5" style="fill:var(--faint)" x="70" y="186">stays outside</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; The six ingredients form a circuit, not a list: today’s evaluation becomes memory, and memory feeds the next hypothesis. If one link is missing, the loop opens." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<circle cx="110" cy="100" r="66" stroke-dasharray="4 4" stroke-width="1.5" style="stroke:var(--line2)"></circle>
+<g font-size="7.5">
+<rect height="20" rx="10" stroke-width="1.5" style="fill:var(--panel);stroke:var(--accent)" width="56" x="82" y="22"></rect><text style="fill:var(--ink)" x="90" y="35">evidence</text>
+<rect height="20" rx="10" stroke-width="1.5" style="fill:var(--panel);stroke:var(--accent)" width="52" x="150" y="56"></rect><text style="fill:var(--ink)" x="160" y="69">metric</text>
+<rect height="20" rx="10" stroke-width="1.5" style="fill:var(--panel);stroke:var(--accent)" width="52" x="150" y="124"></rect><text style="fill:var(--ink)" x="156" y="137">hypothesis</text>
+<rect height="20" rx="10" stroke-width="1.5" style="fill:var(--panel);stroke:var(--accent)" width="56" x="82" y="158"></rect><text style="fill:var(--ink)" x="86" y="171">experiment</text>
+<rect height="20" rx="10" stroke-width="1.5" style="fill:var(--panel);stroke:var(--accent)" width="52" x="18" y="124"></rect><text style="fill:var(--ink)" x="24" y="137">evaluation</text>
+<rect height="20" rx="10" stroke-width="1.5" style="fill:var(--panel);stroke:var(--warm)" width="52" x="18" y="56"></rect><text style="fill:var(--ink)" x="26" y="69">memory</text>
+</g>
+<path d="M140 40 l8 8" stroke-width="1.5" style="stroke:var(--muted)"></path><path d="M176 78 v44" stroke-width="1.5" style="stroke:var(--muted)"></path><path d="M148 152 l-10 8" stroke-width="1.5" style="stroke:var(--muted)"></path><path d="M80 166 l-10 -12" stroke-width="1.5" style="stroke:var(--muted)"></path><path d="M44 122 v-44" stroke-width="1.5" style="stroke:var(--muted)"></path><path d="M62 54 l14 -10" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<text font-size="7.5" style="fill:var(--muted)" x="86" y="104">gira toda</text><text font-size="7.5" style="fill:var(--muted)" x="90" y="114">semana</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; The gate opens only with evidence, and the rollback arrow is always there. What the loop guarantees is in the gate and the arrow — not in the size of the number." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="40" rx="6" stroke-width="2" style="fill:var(--panel);stroke:var(--accent)" width="70" x="14" y="70"></rect><text font-size="8" style="fill:var(--ink)" x="22" y="88">versão</text><text font-size="8" style="fill:var(--ink)" x="22" y="100">oficial</text>
+<rect height="40" rx="6" stroke-dasharray="4 3" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="70" x="136" y="70"></rect><text font-size="8" style="fill:var(--ink)" x="144" y="88">versão</text><text font-size="8" style="fill:var(--ink)" x="144" y="100">nova</text>
+<path d="M136 90 h-20" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<rect height="60" rx="3" stroke-width="2" style="fill:var(--panel2);stroke:var(--warm)" width="20" x="96" y="60"></rect><text font-size="7" style="fill:var(--warm)" x="99" y="96">?</text>
+<text font-size="7.5" style="fill:var(--warm)" x="60" y="48">only enters with evidence</text>
+<path d="M40 110 q0 40 60 40 q60 0 60 -40" stroke-width="1.5" style="stroke:var(--accent)"></path><path d="M156 116 l4 -6 l4 6" stroke-width="1.5" style="stroke:var(--accent)"></path>
+<text font-size="7.5" style="fill:var(--accent)" x="66" y="168">rollback: always</text>
+<text font-size="7.5" style="fill:var(--faint)" x="14" y="190">guaranteed: gate + arrow · not guaranteed: the number</text>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Highlight any passage to turn it into a review card.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Summary</p>
+<ul>
+<li>Today AI works in a straight line: someone asks, it answers, and that is the end. The next turn starts from the same point.</li>
+<li>That is not a flaw in the AI; it is the lack of a record of what happened after the reply.</li>
+<li>Improvement requires six ingredients connected in a loop — and none of them is “asking more forcefully.”</li>
+<li>An honest loop does not promise a higher number; it promises that things will not get worse without your knowledge, and that there is a rollback button.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Your next step</p>
+<p class="na-win">You can now distinguish “uses AI” from “learns with AI” — and you have seen that almost everything today is the first one.</p>
+<p class="na-action">In the next 15 minutes, open yesterday’s WhatsApp messages or email and mark three replies AI helped write. Next to each one, write: “Do I know what happened afterward? yes / no.”</p>
+<p class="na-hook">In the next lesson, you will calculate the cost of starting from scratch — and find out why handling 10,000 support tickets may teach you nothing.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#trilha">← track</a><a href="#aula-2">next: ten thousand runs and no learning →</a></nav>
+<footer>Lesson 1 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-1" type="application/json">
+[
+  {
+    "front": "Your AI replied to 80 leads this month, and your business partner asks, “Has it learned what works yet?” What do you answer — and what would need to exist for the answer to become “yes”?",
+    "back": "No. It does not see what happens after its reply. To make the answer “yes,” record what happened for each lead (did they reply? book?) and carry that into the next request."
+  },
+  {
+    "front": "A clinic manually adjusts its proposal every time and feels it is improving — but cannot say which change helped. Which of the six ingredients is missing first?",
+    "back": "Evidence with a metric: without one row per send and a number (replied or not), any claim that it “improved” is an impression. Without this link, the other five have nothing to rest on."
+  },
+  {
+    "front": "What is the difference between “AI reads customer reviews” and “AI learns from the reviews”?",
+    "back": "Reading is a request that ends there. Learning requires turning what it read into a hypothesis, testing it against the current version, and recording the change in the next version."
+  },
+  {
+    "front": "A vendor says, “I guarantee your response rate will rise.” Which of the four honest guarantees should they have offered instead?",
+    "back": "None of them is “it will rise.” The honest guarantees: the system will not put a worse version into production; everything is recorded and reversible; the cycle is consistent; costs stay under the limit."
+  },
+  {
+    "front": "You have 20 minutes with a support manager. What would you ask to find out whether their tickets “end there”?",
+    "back": "“After someone replies to a ticket, does anyone record its topic and whether it came back?” If the answer is no, every ticket is the first one — 10,000 times."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-1 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Regina clínica · Marcos corretor · Paulo suporte · clínica do exemplo de referência)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-1"> presente (5 cartões: decisão · diagnóstico · contraste · pergunta · aplicação)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb)
+-->
+</section>
+
+<!-- ===== AULA 2 — FUNDAMENTO ===== -->
+<section class="view" data-aula="2" data-tempo="18min" id="v-aula-2">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Track 01 · Lesson 2 · foundation</p>
+<h1>Ten thousand executions and<br/><em>no learning</em></h1>
+<p class="promise">By the end of this lesson, you’ll be able to put a number on how many times per month the same task is redone from scratch in your business—and how many of those could become a line in a log.</p>
+<p class="why">Volume creates a sense of experience. Ten thousand support tickets handled can feel like ten thousand lessons. But if nobody noted what they were about, those ten thousand are worth no more than the first one. You pay the cost of repeating without getting the benefit of learning—and that bill never shows up on an invoice.</p>
+<p class="cue"><span class="arw">↓</span> scroll to study</p>
+</div>
+<!-- herofig: metáfora do mundo real — o mural de cortiça do suporte, cheio de papéis; um em cada três é o mesmo assunto -->
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<rect height="176" rx="6" stroke-width="3" style="fill:var(--panel2);stroke:var(--muted)" width="260" x="20" y="24"></rect>
+<g stroke-width="1.5" style="fill:var(--panel);stroke:var(--line2)">
+<rect height="30" rx="2" width="40" x="34" y="40"></rect><rect height="30" rx="2" width="40" x="82" y="44"></rect><rect height="30" rx="2" width="40" x="178" y="40"></rect><rect height="30" rx="2" width="40" x="226" y="46"></rect>
+<rect height="30" rx="2" width="40" x="36" y="86"></rect><rect height="30" rx="2" width="40" x="132" y="88"></rect><rect height="30" rx="2" width="40" x="180" y="90"></rect>
+<rect height="30" rx="2" width="40" x="84" y="134"></rect><rect height="30" rx="2" width="40" x="132" y="136"></rect><rect height="30" rx="2" width="40" x="228" y="138"></rect>
+</g>
+<g opacity=".9" style="fill:var(--warm)">
+<rect height="30" rx="2" width="40" x="130" y="42"></rect><rect height="30" rx="2" width="40" x="84" y="90"></rect><rect height="30" rx="2" width="40" x="228" y="92"></rect><rect height="30" rx="2" width="40" x="36" y="134"></rect><rect height="30" rx="2" width="40" x="180" y="140"></rect>
+</g>
+<g style="fill:var(--accent)"><circle cx="54" cy="40" r="2.5"></circle><circle cx="102" cy="44" r="2.5"></circle><circle cx="150" cy="42" r="2.5"></circle><circle cx="198" cy="40" r="2.5"></circle><circle cx="246" cy="46" r="2.5"></circle><circle cx="56" cy="86" r="2.5"></circle><circle cx="104" cy="90" r="2.5"></circle><circle cx="152" cy="88" r="2.5"></circle><circle cx="200" cy="90" r="2.5"></circle><circle cx="248" cy="92" r="2.5"></circle><circle cx="56" cy="134" r="2.5"></circle><circle cx="104" cy="134" r="2.5"></circle><circle cx="152" cy="136" r="2.5"></circle><circle cx="200" cy="140" r="2.5"></circle><circle cx="248" cy="138" r="2.5"></circle></g>
+<circle cx="150" cy="214" r="10" style="fill:var(--muted)"></circle><path d="M136 230 q14 -8 28 0 v10 h-28z" style="fill:var(--muted)"></path>
+<text font-size="9" style="fill:var(--faint)" x="196" y="190">one in three: the same issue</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> Ten thousand tickets, one issue in three—and nobody noticed</h2>
+<p>Paulo, support manager at a small software company, ends the year with 10,000 tickets handled. Each one was resolved well, one at a time, with AI helping write the reply. The team gets praised. And nobody knows that 37% of those tickets—3,700—are about the same issue: a password screen that confuses everyone.</p>
+<p>Why did nobody notice? Because each ticket is a request that ends right there. From inside one ticket, you can’t see the pile. Only someone looking at the whole set—and, for that, needing a “what was it about?” column filled in for each one—can see that one in three points to the same thing.</p>
+<p>Here’s the difference between “we handled a lot” and “we learned a lot.” The 10,000 resolved tickets left 10,000 customers served and zero product changes. A single fix to that screen would have prevented 3,700 conversations. The information was there all year; it just wasn’t written down.</p>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">mark as read</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> Starting over has a cost that never appears on the invoice</h2>
+<p>Marcos, the real estate agent, replies to about 40 leads a week—around 160 a month. Each reply takes about six minutes to request, adjust, and send. That’s 16 hours a month. He doesn’t think it’s expensive because AI “does it fast.” But next month’s 16 hours will buy exactly the same thing as this month’s: 160 isolated replies, none smarter than the last.</p>
+<p>Compare that with another scenario using the same amount of time: the same 160 replies, but each leaves a row—date, property type, opening used, whether the lead replied, whether they booked a visit. The effort per reply is the same. The difference is the trail. In one case, all that’s left is fatigue; in the other, there’s material to answer a question Marcos can’t answer today: “Which opening gets more people to book?”</p>
+<p>The cost of starting over isn’t the time—you’d spend that time anyway. It’s the learning that passed through your hands and didn’t stay.</p>
+<div class="qanchor"><p>Volume without a record isn’t experience. It’s the same first time, repeated ten thousand times.</p></div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">mark as read</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> Two companies use the same AI: the difference is who learns faster</h2>
+<p>For years, a company’s advantage was “having more data than the competition.” That changed. Today, everyone has access to the same AI, with the same capabilities. If two real estate agencies use the same chat, the same listing sites, and serve the same neighborhood, what sets them apart? It isn’t a better-written prompt—you can copy one in a day.</p>
+<p>What can’t be copied is the history. One agency records the channel, property type, reply sent, and outcome for each lead. After six months, it has about 1,000 rows to consult before changing anything. The other has 1,000 conversations lost in each agent’s WhatsApp. A competitor can copy the text; they can’t copy six months of “what we’ve already tested and how it went.”</p>
+<p>That accumulated history is the asset. It doesn’t come from better technology—it comes from one row per execution, every day, without exception.</p>
+<div class="quiz" data-answer="b">
+<p class="qk">Test yourself</p><p class="q">Two clinics use the same AI, charge the same prices, and are on the same street. What could one have that the other can’t copy in a month?</p>
+<button class="opt" data-fb="A well-written prompt can be copied in an afternoon—someone just has to share the text. It isn’t a lasting advantage." data-k="a">The better-written prompt</button>
+<button class="opt" data-fb="Exactly. A history of what each proposal produced and what has already been tested can only be built over time, row by row—the competitor would have to start from scratch." data-k="b">A record of what each proposal produced and what has already been tested</button>
+<button class="opt" data-fb="AI gives both companies speed equally. A fast reply without a record still ends right there." data-k="c">Reply faster</button>
+<p class="qfb"></p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">mark as read</button>
+</section>
+<section class="step" data-fig="4" data-kind="fundamento">
+<h2><span class="n">04</span> Where evidence begins: one row per execution</h2>
+<p>The whole loop depends on one humble step: recording. The place where it happens is the <span class="gterm" data-def="The spreadsheet where each execution (proposal, reply, ticket) becomes a row, with a column showing what happened next. It is the loop’s source of evidence." tabindex="0">tracking spreadsheet</span> —a regular spreadsheet, with one row for every proposal, reply, or ticket, and a column most people forget: <b>what happened next</b>. Without that column, you have a file of text, not evidence.</p>
+<p>For Paulo’s support team, a row looks like this: date · ticket topic · which saved reply was used · resolved on first contact (yes/no) · came back within 7 days (yes/no). Five columns. The question that used to take a week of reading (“what do people complain about most?”) becomes a two-minute count.</p>
+<p>One honest point about the method: the evidence source is the bottleneck, not the AI. If the data live in a salesperson’s head or are scattered across conversations, the loop has nothing to read—and a loop without evidence is theater. One caution from the start: <b>12 rows don’t make a pattern.</b> “Tuesday’s proposals get more replies,” based on 12 proposals, is chance dressed up as a discovery. The loop’s rule is to claim a pattern only with 30 or more items per group.</p>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Paulo’s support team today</p><p class="qba-txt">10,000 tickets a year, resolved one by one. Answering “what do people complain about most?” takes a week of reading—and nobody has that week.</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">With the tracking spreadsheet</p><p class="qba-txt">10,000 rows with the “topic” column filled in. The same question is answered with a count: 37% are about one issue.</p></div>
+<p class="qba-saldo"><b>Result:</b> same 10,000 replies, same effort per ticket, one extra column—and 3,700 tickets now point to a single product fix.</p>
+</div>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">mark as read</button>
+</section>
+<section class="practice" data-mode="tarefa" data-practice="p2">
+<p class="pk">Practice now <span class="pcount">0/4 done</span></p>
+<h3 class="ph">Count how many times the same task was redone from scratch last month</h3>
+<p class="pgoal">Leave with one written sentence and two numbers: how many times per month the task happens, and how many times it went unrecorded. ~10 min.</p>
+<p class="psafe">This is only a count—nothing in your business changes until you approve it; you won’t alter any reply or tell anyone. If counting everything feels like too much, estimate one week and multiply by four: an approximate scale is enough for this lesson.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>I chose ONE task that AI does for me every week (proposal, lead reply, support ticket reply, post caption).</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>I opened WhatsApp, email, or the system from last month and counted how many times it happened (or estimated weekly × 4).</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>For each one, I answered “do I know what happened next?” and counted the “no” answers.</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>I wrote this sentence: “[task] — [N] times per month — [M] unrecorded.” Acceptable example: “Reply to a listing-site lead — 160 times per month — 160 unrecorded.”</span></label></li>
+</ol>
+<p class="pdone">You’ve just put a monthly number to a feeling—and that number is the first line of your business diagnosis.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; Each dot is a resolved ticket. The highlighted dots are the same issue—visible only when someone looks at the whole set, never from inside a single ticket." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g style="fill:var(--muted)">
+<circle cx="30" cy="40" r="4"></circle><circle cx="50" cy="40" r="4"></circle><circle cx="90" cy="40" r="4"></circle><circle cx="110" cy="40" r="4"></circle><circle cx="150" cy="40" r="4"></circle><circle cx="170" cy="40" r="4"></circle><circle cx="190" cy="40" r="4"></circle>
+<circle cx="30" cy="60" r="4"></circle><circle cx="70" cy="60" r="4"></circle><circle cx="90" cy="60" r="4"></circle><circle cx="130" cy="60" r="4"></circle><circle cx="150" cy="60" r="4"></circle><circle cx="190" cy="60" r="4"></circle>
+<circle cx="50" cy="80" r="4"></circle><circle cx="70" cy="80" r="4"></circle><circle cx="110" cy="80" r="4"></circle><circle cx="130" cy="80" r="4"></circle><circle cx="170" cy="80" r="4"></circle><circle cx="190" cy="80" r="4"></circle>
+<circle cx="30" cy="100" r="4"></circle><circle cx="50" cy="100" r="4"></circle><circle cx="90" cy="100" r="4"></circle><circle cx="150" cy="100" r="4"></circle><circle cx="170" cy="100" r="4"></circle>
+<circle cx="70" cy="120" r="4"></circle><circle cx="90" cy="120" r="4"></circle><circle cx="110" cy="120" r="4"></circle><circle cx="130" cy="120" r="4"></circle><circle cx="190" cy="120" r="4"></circle>
+</g>
+<g style="fill:var(--warm)">
+<circle cx="70" cy="40" r="4"></circle><circle cx="130" cy="40" r="4"></circle><circle cx="50" cy="60" r="4"></circle><circle cx="110" cy="60" r="4"></circle><circle cx="170" cy="60" r="4"></circle><circle cx="30" cy="80" r="4"></circle><circle cx="90" cy="80" r="4"></circle><circle cx="150" cy="80" r="4"></circle><circle cx="70" cy="100" r="4"></circle><circle cx="110" cy="100" r="4"></circle><circle cx="130" cy="100" r="4"></circle><circle cx="190" cy="100" r="4"></circle><circle cx="30" cy="120" r="4"></circle><circle cx="50" cy="120" r="4"></circle><circle cx="150" cy="120" r="4"></circle><circle cx="170" cy="120" r="4"></circle>
+</g>
+<rect height="108" rx="6" stroke-dasharray="4 4" stroke-width="1.2" style="stroke:var(--line2)" width="184" x="18" y="26"></rect>
+<text font-size="8" style="fill:var(--warm)" x="20" y="156">■ same issue · 37%</text>
+<text font-size="8" style="fill:var(--muted)" x="20" y="172">● other topics</text>
+<text font-size="7.5" style="fill:var(--faint)" x="20" y="190">only visible when you look at the whole set</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; Top: twelve months of the same work, each bar starting from zero. Bottom: the same work leaving one row per execution—the only difference is the trail that accumulates." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<text font-size="8" style="fill:var(--muted)" x="14" y="26">starting from scratch</text>
+<g style="fill:var(--line2)"><rect height="30" width="10" x="14" y="34"></rect><rect height="30" width="10" x="30" y="34"></rect><rect height="30" width="10" x="46" y="34"></rect><rect height="30" width="10" x="62" y="34"></rect><rect height="30" width="10" x="78" y="34"></rect><rect height="30" width="10" x="94" y="34"></rect><rect height="30" width="10" x="110" y="34"></rect><rect height="30" width="10" x="126" y="34"></rect><rect height="30" width="10" x="142" y="34"></rect><rect height="30" width="10" x="158" y="34"></rect><rect height="30" width="10" x="174" y="34"></rect><rect height="30" width="10" x="190" y="34"></rect></g>
+<text font-size="7.5" style="fill:var(--faint)" x="14" y="84">left over: fatigue</text>
+<text font-size="8" style="fill:var(--muted)" x="14" y="110">with a record</text>
+<g style="fill:var(--line2)"><rect height="30" width="10" x="14" y="118"></rect><rect height="30" width="10" x="30" y="118"></rect><rect height="30" width="10" x="46" y="118"></rect><rect height="30" width="10" x="62" y="118"></rect><rect height="30" width="10" x="78" y="118"></rect><rect height="30" width="10" x="94" y="118"></rect><rect height="30" width="10" x="110" y="118"></rect><rect height="30" width="10" x="126" y="118"></rect><rect height="30" width="10" x="142" y="118"></rect><rect height="30" width="10" x="158" y="118"></rect><rect height="30" width="10" x="174" y="118"></rect><rect height="30" width="10" x="190" y="118"></rect></g>
+<path d="M14 168 L200 152" stroke-width="2.5" style="stroke:var(--accent)"></path>
+<text font-size="7.5" style="fill:var(--accent)" x="14" y="186">left over: rows to consult</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; Two companies start from the same point with the same AI. The one that records builds a history the other can’t copy all at once—it can only build it, row by row." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="26" rx="5" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="60" x="14" y="30"></rect><text font-size="8" style="fill:var(--ink)" x="22" y="47">same AI</text>
+<path d="M74 43 h30 v-16 h20 M104 43 v26 h20" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<text font-size="8" style="fill:var(--ink)" x="128" y="30">real estate agency A</text>
+<text font-size="8" style="fill:var(--ink)" x="128" y="72">real estate agency B</text>
+<g opacity=".9" style="fill:var(--accent)"><rect height="6" width="14" x="128" y="36"></rect><rect height="6" width="30" x="128" y="44"></rect><rect height="6" width="48" x="128" y="52"></rect></g>
+<text font-size="7" style="fill:var(--accent)" x="180" y="58">1,000 rows</text>
+<g stroke-dasharray="2 3" stroke-width="1.2" style="stroke:var(--line2)"><rect height="6" width="48" x="128" y="78"></rect><rect height="6" width="48" x="128" y="86"></rect><rect height="6" width="48" x="128" y="94"></rect></g>
+<text font-size="7" style="fill:var(--faint)" x="180" y="94">lost conversations</text>
+<text font-size="8" style="fill:var(--muted)" x="14" y="130">the text can be copied in a day;</text>
+<text font-size="8" style="fill:var(--muted)" x="14" y="144">the history takes time</text>
+<path d="M14 160 h190" stroke-width="1" style="stroke:var(--line)"></path>
+<text font-size="7.5" style="fill:var(--faint)" x="14" y="180">advantage = speed of learning</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; The tracking spreadsheet: one row per execution, with the often-forgotten column highlighted. The arrow shows the row feeding into the next request." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="100" rx="4" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="196" x="12" y="30"></rect>
+<path d="M12 50 h196 M12 70 h196 M12 90 h196 M12 110 h196" stroke-width="1" style="stroke:var(--line)"></path>
+<path d="M46 30 v100 M96 30 v100 M146 30 v100" stroke-width="1" style="stroke:var(--line)"></path>
+<rect height="100" opacity=".12" style="fill:var(--accent)" width="62" x="146" y="30"></rect>
+<g font-size="6.5" style="fill:var(--muted)"><text x="16" y="43">date</text><text x="50" y="43">topic</text><text x="100" y="43">reply</text></g>
+<text font-size="6.5" style="fill:var(--accent)" x="150" y="43">outcome?</text>
+<g font-size="6.5" style="fill:var(--ink)"><text x="16" y="63">03/02</text><text x="50" y="63">password</text><text x="100" y="63">saved #4</text><text x="150" y="63">resolved</text>
+<text x="16" y="83">03/02</text><text x="50" y="83">bill</text><text x="100" y="83">saved #9</text><text x="150" y="83">returned in 7d</text>
+<text x="16" y="103">03/03</text><text x="50" y="103">password</text><text x="100" y="103">saved #4</text><text x="150" y="103">resolved</text></g>
+<path d="M177 130 v22 h-140 v-14" stroke-width="1.5" style="stroke:var(--accent)"></path><path d="M33 144 l4 -6 l4 6" stroke-width="1.5" style="stroke:var(--accent)"></path>
+<text font-size="7.5" style="fill:var(--accent)" x="60" y="168">feeds the next request</text>
+<text font-size="7.5" style="fill:var(--faint)" x="12" y="190">pattern only with 30 or more per group</text>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Highlight any passage to turn it into a review card.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Recap</p>
+<ul>
+<li>Ten thousand tickets resolved one by one teach as much as the first one if nobody noted what they were about.</li>
+<li>The cost of starting over is invisible on the invoice and only shows up when you count: the same task, dozens of times a month, with no trail.</li>
+<li>With the same AI available to everyone, the hard-to-copy company is the one that builds a history of what each execution produced.</li>
+<li>Evidence begins in a simple spreadsheet, with a column for what happened next—and only becomes a pattern from 30 per group onward.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Your next step</p>
+<p class="na-win">You’ve just turned “we do this all the time” into a monthly number, with the unrecorded part counted.</p>
+<p class="na-action">In the next 15 minutes, create a spreadsheet with five columns—date · what was sent · to whom · what happened · notes—and fill in the last three times the task occurred.</p>
+<p class="na-hook">In the next lesson, you’ll find out which of the five maturity levels your business is at today—and why jumping straight from 1 to 5 never works.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-1">← lesson 1</a><a href="#aula-3">next: the five levels →</a></nav>
+<footer>Lesson 2 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-2" type="application/json">
+[
+  {
+    "front": "A support manager says, “We handled 4,000 tickets this year, so we know everything about our customers.” What one-sentence question tests that claim?",
+    "back": "“What is the most common topic, as a percentage?” If the answer takes time or is a guess, the 4,000 did not become knowledge—they became 4,000 closed conversations."
+  },
+  {
+    "front": "An agent has 900 replies to leads saved in WhatsApp and still can’t say which approach works. What’s missing?",
+    "back": "The “what happened next” column for each lead. Having conversations isn’t a record; a record is a row with an outcome (replied? booked?)."
+  },
+  {
+    "front": "With 12 proposals logged, AI says “Tuesday’s get more replies.” Do you change the send day?",
+    "back": "No. Twelve rows don’t make a pattern; the minimum is 30 per group. Mark it “observed, not tested” and keep logging."
+  },
+  {
+    "front": "What’s the difference between “repeating a task 160 times” and “doing it 160 times with a record,” if both take the same time?",
+    "back": "Only the trail. In the second case, one row per execution remains and can become a hypothesis; in the first, only fatigue remains—and the same question as last month."
+  },
+  {
+    "front": "You’re starting to log the clinic’s proposals. Which five columns do you choose, and which one is absolutely essential?",
+    "back": "Date · proposal version · package type · replied (yes/no) · booked (yes/no). The outcome column is essential—without it, you have a file of texts, not evidence."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-2 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Paulo suporte · Marcos corretor · duas imobiliárias/clínicas · suporte de Paulo)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="tarefa"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-2"> presente (5 cartões: aplicação · diagnóstico · decisão · contraste · aplicação)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb)
+-->
+</section>
+
+<!-- ===== AULA 3 — FUNDAMENTO ===== -->
+<section class="view" data-aula="3" data-tempo="23min" id="v-aula-3">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Track 01 · Lesson 3 · foundation</p>
+<h1>The five levels: from “responds” to<br/>a <em>a learning company</em></h1>
+<p class="promise">By the end of this lesson, you’ll be able to identify which of the five maturity levels your business is at today using observable signs, not impressions—and the only next level that makes sense.</p>
+<p class="why">Everyone who uses AI thinks they’re “advanced”—and almost everyone is at level 1. Without a yardstick, you buy a level-4 tool to solve a level-1 problem and pay for theater. This lesson’s yardstick is here to keep you from wasting that money.</p>
+<p class="cue"><span class="arw">↓</span> scroll to study</p>
+</div>
+<!-- herofig: metáfora do mundo real — a escada de cinco degraus no corredor da clínica, uma pessoa no primeiro -->
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<path d="M20 210 h260" stroke-width="2" style="stroke:var(--muted)"></path>
+<g stroke-width="2" style="fill:var(--panel);stroke:var(--muted)">
+<rect height="30" rx="3" width="60" x="40" y="180"></rect><rect height="60" rx="3" width="60" x="90" y="150"></rect><rect height="90" rx="3" width="60" x="140" y="120"></rect><rect height="120" rx="3" width="60" x="190" y="90"></rect><rect height="150" rx="3" width="40" x="240" y="60"></rect>
+</g>
+<rect height="6" style="fill:var(--accent)" width="60" x="40" y="180"></rect>
+<g font-size="10" style="fill:var(--ink)"><text x="64" y="200">1</text><text x="114" y="170">2</text><text x="164" y="140">3</text><text x="214" y="110">4</text><text x="254" y="80">5</text></g>
+<rect height="26" rx="3" stroke-width="2" style="fill:var(--panel2);stroke:var(--muted)" width="70" x="30" y="40"></rect><path d="M40 53 h50 M40 59 h30" stroke-width="2" style="stroke:var(--accent)"></path>
+<circle cx="60" cy="140" r="11" style="fill:var(--accent)"></circle><path d="M46 158 q14 -8 28 0 v22 h-28z" style="fill:var(--accent)"></path>
+<path d="M154 96 q30 -40 60 -10" stroke-dasharray="5 5" stroke-width="2" style="stroke:var(--faint)"></path>
+<text font-size="9" style="fill:var(--faint)" x="196" y="40">4 and 5: still far away</text>
+<text font-size="9" style="fill:var(--faint)" x="108" y="232">the next step is the only one that matters</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> Level 1 — Responds: you ask, it delivers, you check</h2>
+<p>Level 1 is where almost every business is, and there’s nothing wrong with that. It’s AI answering a request. You write, it delivers text, you check and use it. All the process intelligence lives in your head: what to ask, what to adjust, what to send.</p>
+<p>Regina, at the clinic, is a pure level 1. The signs are easy to spot: each use starts with her writing; the result of each proposal lives in her memory, nowhere else; if she goes on vacation, the AI “forgets” the clinic—because it never knew anything beyond that day’s request.</p>
+<p>Level 1 isn’t bad. Getting a good answer a thousand times already saves many hours. Just don’t confuse that with learning: a thousand good answers are still a thousand first times.</p>
+<div class="qanchor"><p>Giving a good answer a thousand times is level 1. Level 1 isn’t a delay; it’s where almost everyone starts.</p></div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">mark as read</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> Level 2 — Executes a goal: the single-purpose assistant</h2>
+<p>At level 2 comes what practitioners call an agent—in this course, a <span class="gterm" data-def="What practitioners call an agent: an AI assistant that receives a goal, plans the steps, uses tools (calendar, spreadsheet, WhatsApp), and delivers without you dictating every step. Like an employee who does one thing—and does it well." tabindex="0">single-purpose assistant</span>. You no longer dictate each step; you give it a goal. It plans, uses a tool (a calendar, a spreadsheet, WhatsApp), and delivers the result.</p>
+<p>Marcos, the real estate agent, has one: the assistant reads the lead that came through the listing site, finds the property in his spreadsheet, writes a reply, and suggests two times for a viewing. Marcos just checks and approves. It does more than reply—it executes a goal from start to finish.</p>
+<p>Here’s the catch: the assistant does more things and learns exactly as much as at level 1—nothing. Nobody records whether the viewing happened. Level 2 expands reach; it doesn’t close the loop.</p>
+<div class="quiz" data-answer="b">
+<p class="qk">Test yourself</p><p class="q">A support assistant reads a ticket, finds the right saved reply, and answers on its own—without anyone noting whether the customer came back. What level is this?</p>
+<button class="opt" data-fb="Acting on its own isn’t a loop. A loop requires measuring and comparing versions; nobody measures anything here." data-k="a">Level 3, because it acts on its own</button>
+<button class="opt" data-fb="Exactly. It executes a goal with a tool but doesn’t measure the outcome or change based on it—greater reach, zero learning." data-k="b">Level 2: executes a goal but doesn’t measure or change</button>
+<button class="opt" data-fb="Level 4 is the system that observes its own improvement system. There isn’t even an improvement system here." data-k="c">Level 4, because it uses tools</button>
+<p class="qfb"></p>
+</div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">mark as read</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> Level 3 — The loop: execute, measure, evaluate, improve, execute again</h2>
+<p>Level 3 is the first one where the company learns. Each execution becomes a row; every week, someone (or an assistant with that role) reviews the rows, proposes a hypothesis, tests the new version against the current one, and decides based on the numbers. If it wins with proof, it becomes the official version. If not, the result is recorded so no one unknowingly tries it again.</p>
+<p>In LOOP-R’s reference example (a fictional clinic with simulated data), the loop ran four cycles between February and July. One hypothesis—“open by mentioning the review the client left”—was tested with 300 proposals on each side: response rate went from 19.3% to 29.3%, without worsening anything being monitored (complaints, discount); it was approved on the card and promoted to the official version. Another, “up to 80 words,” rose by almost as much and was discarded by rule. Both remain in memory.</p>
+<p>Within level 3 there are three degrees of autonomy. <b>L0</b>the loop only suggests; you do everything. <b>L1</b>you approve every change on a five-line card, at most once a week. <b>L2</b>it promotes on its own, alerts you, and keeps the rollback button—and unlocks only after you correctly approve five changes at L1. This course sets yours up at L1.</p>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Level 1 — Regina today</p><p class="qba-txt">200 proposals a month. “Did the AI improve?” Nobody knows, and there’s no way to answer the question.</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">Level 3 — with the loop</p><p class="qba-txt">The 200 proposals become 200 rows. Each cycle, one hypothesis is tested in two versions, and Regina gets a card to decide.</p></div>
+<p class="qba-saldo"><b>Reference example result:</b> over 4 cycles, 2 hypotheses tested with 300 sends per version, 1 approved and promoted, 1 discarded—and no change went live without an approved card.</p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">mark as read</button>
+</section>
+<section class="step" data-fig="4" data-kind="fundamento">
+<h2><span class="n">04</span> Levels 4 and 5—and why your only next step is level 3</h2>
+<p>Level 4 is the system that observes its own improvement system: the cost of each cycle, how many hypotheses became versions, which assistant gets vetoed most. It sounds like magic, and honesty matters here: today, in the product, this level <b>only reports</b>. It doesn’t redesign anything on its own. A system that changes itself with little data multiplies every error from the levels below—which is why autonomous redesign remains research, not a product.</p>
+<p>Level 5 is the whole company: every department has its loop, with another loop above them connecting the lessons. Paulo’s support team shows the path: tickets logged → cause found (the password screen) → new reply tested against the old one → help text updated → product change suggested. Support stops just answering and starts improving the product. But that only works because, underneath, every ticket became a row.</p>
+<p>That leads to the rule: <b>you don’t skip a step.</b> Someone at level 1 who buys “level 5” is buying theater, because the loop above has no evidence to learn from. From levels 1 and 2, the only useful next step is level 3—and level 3 starts with one more column in the spreadsheet and a test with numbers.</p>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">mark as read</button>
+</section>
+<section class="practice" data-mode="analise" data-practice="p3">
+<p class="pk">Practice now <span class="pcount">0/3 done</span></p>
+<h3 class="ph">Maturity self-check: identify the level of three businesses—and then your own</h3>
+<p class="pgoal">Read the case, mark each person’s level, check the answer key, then mark the signs that apply to your business and find your level. ~12 min.</p>
+<p class="psafe">This is a paper diagnosis—nothing in your business changes until you approve it, and nobody needs to know the result. If you’re unsure between two levels, choose the lower one: the next step is the same, and being conservative costs nothing.</p>
+<p><b>The case.</b> Regina asks AI for each proposal and edits it by hand; the outcome stays in her head. Marcos has an assistant that reads the lead, checks the property spreadsheet, and suggests a viewing on its own; nobody records whether the viewing happened. Paulo logs each ticket with its topic and “resolved on first contact?”, tests a new reply against the old one every month, and decides on a card. All three say they’re “pretty advanced with AI.”</p>
+<p><b>Answer:</b></p>
+<ol>
+<li>What level is each of the three at?</li>
+<li>Which one has the cheapest next step—and what is it?</li>
+<li>Now your business: mark the signs below that apply today—and find your level in the answer key.</li>
+</ol>
+<ul class="sinais">
+<li data-k="A">Every AI use starts with someone writing the request, and the result stays in that person’s head.</li>
+<li data-k="B">An assistant carries out a goal end to end and uses a tool (calendar, spreadsheet, WhatsApp) on its own.</li>
+<li data-k="C">There is one row per execution, with a column for “what happened next.”</li>
+<li data-k="D">A new version has been tested against the old one using a number on both sides.</li>
+<li data-k="E">There is a recorded decision to approve or reject a change, with a reason.</li>
+<li data-k="F">Someone reviews the cost per cycle and how many hypotheses became versions.</li>
+<li data-k="G">More than one department has a loop, and what one learns reaches the others.</li>
+</ul>
+<details><summary>Annotated answer key (open only after marking)</summary>
+<p><b>1.</b> Regina: level 1 (responds). Marcos: level 2 (executes a goal; no measurement). Paulo: level 3 (one row per execution, a test with numbers, recorded decision).</p>
+<p><b>2.</b> Regina and Marcos tie on cost: both need the same step—a result column for each execution (“did they reply?”, “did the viewing happen?”). Marcos has one advantage: his assistant already produces a standardized execution, so the row is easier to fill in. Paulo’s next step is different: keep the cycle consistent and monitor cost per promoted hypothesis.</p>
+<p><b>3. Reading the signs.</b> Only A: <b>level 1</b>. B without C: <b>level 2</b>. C + D + E: <b>level 3</b>. F on top of C-D-E: <b>level 4 (reporting)</b>. G: <b>level 5</b>. If you marked C without D, you’re between levels 2 and 3—you have evidence but lack an experiment; this is the most common position for someone who started logging. If you marked B and G without C, be skeptical: without one row per execution, the “cross-department loop” is just an impression.</p>
+</details>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>I answered questions 1 and 2 before opening the answer key.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>I marked the signs that apply to my business and found my level in the answer key.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>I wrote: “I’m at level [N] because [sign]. The next step is [a result column / a test with numbers / maintaining the cycle].”</span></label></li>
+</ol>
+<p class="pdone">You’ve just put a number on your level using signs anyone on the team can check—and identified the only next step.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; Level 1 in three boxes: human, AI, result. Nothing comes back—the process intelligence stays entirely in the first box." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<text font-size="8" style="fill:var(--accent)" x="14" y="30">LEVEL 1 · responds</text>
+<rect height="34" rx="6" stroke-width="2" style="fill:var(--panel);stroke:var(--accent)" width="52" x="14" y="70"></rect><text font-size="8" style="fill:var(--ink)" x="22" y="91">human</text>
+<path d="M66 87 h20" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<rect height="34" rx="6" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="44" x="86" y="70"></rect><text font-size="8" style="fill:var(--ink)" x="102" y="91">AI</text>
+<path d="M130 87 h20" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<rect height="34" rx="6" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="58" x="150" y="70"></rect><text font-size="8" style="fill:var(--ink)" x="156" y="91">result</text>
+<path d="M40 104 v30" stroke-dasharray="3 3" stroke-width="1.5" style="stroke:var(--accent)"></path>
+<text font-size="7.5" style="fill:var(--accent)" x="14" y="150">all the intelligence</text><text font-size="7.5" style="fill:var(--accent)" x="14" y="161">lives here</text>
+<text font-size="7.5" style="fill:var(--faint)" x="120" y="150">nothing comes back</text>
+<text font-size="7.5" style="fill:var(--faint)" x="14" y="188">sign: every use starts with you writing</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; Level 2: the goal comes in, the assistant plans, uses a tool, and delivers. The path is longer than at level 1—but it is still a straight line, with no return." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<text font-size="8" style="fill:var(--accent)" x="14" y="30">LEVEL 2 · executes a goal</text>
+<g font-size="7.5" style="fill:var(--ink)">
+<rect height="28" rx="5" stroke-width="1.5" style="fill:var(--panel);stroke:var(--accent)" width="50" x="14" y="60"></rect><text x="20" y="78">goal</text>
+<rect height="28" rx="5" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="44" x="78" y="60"></rect><text x="88" y="78">plan</text>
+<rect height="28" rx="5" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="70" x="136" y="60"></rect><text x="140" y="78">tool</text>
+<rect height="28" rx="5" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="58" x="78" y="112"></rect><text x="84" y="130">execution</text>
+<rect height="28" rx="5" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="56" x="150" y="112"></rect><text x="154" y="130">result</text>
+</g>
+<path d="M64 74 h14 M122 74 h14 M171 88 v12 h-35 v12 M136 126 h14" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<text font-size="7" style="fill:var(--faint)" x="150" y="160">calendar · spreadsheet · WhatsApp</text>
+<text font-size="7.5" style="fill:var(--faint)" x="14" y="188">greater reach; same learning: zero</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; Level 3: the loop closes. The highlighted return arrow is the entire difference between levels 1–2 and level 3. The card stays with the approver (L1)." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<text font-size="8" style="fill:var(--accent)" x="14" y="24">LEVEL 3 · the loop</text>
+<g font-size="7.5" style="fill:var(--ink)">
+<rect height="22" rx="11" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="56" x="82" y="36"></rect><text x="92" y="50">execute</text>
+<rect height="22" rx="11" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="52" x="150" y="76"></rect><text x="164" y="90">measure</text>
+<rect height="22" rx="11" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="56" x="130" y="130"></rect><text x="140" y="144">evaluate</text>
+<rect height="22" rx="11" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="60" x="34" y="130"></rect><text x="42" y="144">improve</text>
+<rect height="22" rx="11" stroke-width="2" style="fill:var(--panel);stroke:var(--accent)" width="54" x="16" y="76"></rect><text x="22" y="90">again</text>
+</g>
+<path d="M138 50 l16 24 M176 98 l-14 30 M130 141 h-36 M48 130 l-10 -30" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<path d="M44 76 q10 -30 38 -30" stroke-width="2.5" style="stroke:var(--accent)"></path><path d="M76 42 l6 4 l-6 4" stroke-width="2.5" style="stroke:var(--accent)"></path>
+<rect height="18" rx="3" stroke-width="1.5" style="fill:var(--panel2);stroke:var(--warm)" width="40" x="90" y="104"></rect><text font-size="6.5" style="fill:var(--warm)" x="95" y="116">card</text>
+<text font-size="7.5" style="fill:var(--faint)" x="14" y="176">L0 suggests · L1 you approve · L2 promotes and alerts</text>
+<text font-size="7.5" style="fill:var(--faint)" x="14" y="190">(L2 only after 5 correct L1 approvals)</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; The whole staircase. Levels 4 and 5 exist, but are dotted: today, level 4 only reports. The solid arrow from 1–2 to 3 is the only move this course asks you to make." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g font-size="7.5" style="fill:var(--ink)">
+<rect height="20" rx="3" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="36" x="14" y="150"></rect><text x="20" y="164">1 responds</text>
+<rect height="40" rx="3" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="36" x="54" y="130"></rect><text x="58" y="146">2 executes</text>
+<rect height="70" rx="3" stroke-width="2" style="fill:var(--panel);stroke:var(--accent)" width="40" x="94" y="100"></rect><text x="98" y="116">3 loop</text>
+</g>
+<g font-size="7.5" style="fill:var(--muted)">
+<rect height="100" rx="3" stroke-dasharray="4 3" stroke-width="1.5" style="stroke:var(--faint)" width="36" x="138" y="70"></rect><text x="142" y="86">4 meta</text>
+<rect height="130" rx="3" stroke-dasharray="4 3" stroke-width="1.5" style="stroke:var(--faint)" width="30" x="178" y="40"></rect><text x="182" y="56">5 company</text>
+</g>
+<path d="M32 140 q30 -40 76 -46" stroke-width="2.5" style="stroke:var(--accent)"></path><path d="M102 92 l8 2 l-4 6" stroke-width="2.5" style="stroke:var(--accent)"></path>
+<text font-size="6.5" style="fill:var(--faint)" x="140" y="120">only reports</text>
+<text font-size="6.5" style="fill:var(--faint)" x="140" y="132">(cost, vetoes)</text>
+<text font-size="7.5" style="fill:var(--faint)" x="14" y="190">don’t skip a step: without 3 there’s nothing for 4 to read</text>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Highlight any passage to turn it into a review card.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Recap</p>
+<ul>
+<li>Level 1 responds; level 2 executes a goal; level 3 closes the loop with measurement and testing; levels 4 and 5 are still largely research.</li>
+<li>You identify the level by signs anyone can verify—is there one row per execution? Was there a test with numbers? Is there a recorded decision?—never by the feeling that “we’re advanced.”</li>
+<li>Almost every small business is at level 1 or 2, and that’s the normal starting point, not a delay.</li>
+<li>The useful next step is always level 3, starting at L1: you approve every change on a card.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Your next step</p>
+<p class="na-win">You’ve just identified your level and the only next step—with signs, not impressions.</p>
+<p class="na-action">In the next 15 minutes, message your business partner (or yourself): “We’re at level N because [sign]. The next step is [a result column / a test with numbers].” One message, three lines.</p>
+<p class="na-hook">In the next lesson, you’ll see the most common mistake when trying to reach level 3—writing “AI, get better”—and learn to replace it with an instruction you can measure.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-2">← lesson 2</a><a href="#aula-4">next: “AI, get better” →</a></nav>
+<footer>Lesson 3 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-3" type="application/json">
+[
+  {
+    "front": "An assistant answers tickets on its own, checks the knowledge base, and closes the ticket. The owner says, “We have a loop.” What two signs would you look for to confirm or reject that?",
+    "back": "One row per ticket with an outcome, and a numbered A/B test. Without both, it’s level 2: it executes but doesn’t learn."
+  },
+  {
+    "front": "Your clinic is at level 1 and a vendor offers “AI that improves the whole business” (level 5). Do you accept?",
+    "back": "No. Without a record for each execution, the loop above has nothing to learn from—it’s expensive theater. The useful next step is level 3: an outcome column and a test."
+  },
+  {
+    "front": "What separates L1 from L2 within level 3—and what unlocks L2?",
+    "back": "At L1 you approve every change on the card; at L2 the loop promotes on its own, alerts you, and keeps the rollback button. L2 unlocks only after five correct approvals at L1."
+  },
+  {
+    "front": "An agent has logged each lead with “booked a viewing? yes/no” for three months but has never tested two different replies. What level are they at, and what’s next?",
+    "back": "Between levels 2 and 3: there’s evidence, but no experiment. Next step: test version B against A with enough cases to rule out chance, and record the decision."
+  },
+  {
+    "front": "What does level 4 do in the product today—and what doesn’t it do?",
+    "back": "It reports cost per cycle, hypotheses generated versus promoted, and which assistant is vetoed most. It doesn’t redesign anything on its own—that’s still research."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-3 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Regina clínica · Marcos corretor · clínica do exemplo de referência · Paulo suporte)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1 — autoavaliação de maturidade com gabarito)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~12 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-3"> presente (5 cartões: diagnóstico · decisão · contraste · aplicação · pergunta)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb)
+-->
+</section>
+
+<!-- ===== AULA 4 — FUNDAMENTO ===== -->
+<section class="view" data-aula="4" data-tempo="22min" id="v-aula-4">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Track 01 · Lesson 4 · foundation</p>
+<h1>“AI, get better”—the mistake<br/>that <em>sounds smart</em></h1>
+<p class="promise">By the end of this lesson, you’ll be able to take a vague instruction (“get better,” “be more persuasive”) and rewrite it with evidence, a numeric goal, a “without worsening” guardrail, and a testable hypothesis—using any AI chat.</p>
+<p class="why">It’s the first thing almost everyone does: open the assistant and write “analyze your work and improve every time.” It sounds like a smart command. But it has no number, no data, and no way to know whether it worked—and the assistant will say it did improve. This lesson replaces that sentence with a request you can verify.</p>
+<p class="cue"><span class="arw">↓</span> scroll to study</p>
+</div>
+<!-- herofig: metáfora do mundo real — o bilhete "fique melhor" colado no monitor, ao lado da prancheta com números -->
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<rect height="110" rx="6" stroke-width="2" style="fill:var(--panel);stroke:var(--muted)" width="150" x="24" y="40"></rect>
+<rect height="90" rx="2" style="fill:var(--panel2)" width="130" x="34" y="50"></rect>
+<rect height="16" style="fill:var(--muted)" width="30" x="84" y="150"></rect><rect height="6" rx="3" style="fill:var(--muted)" width="70" x="64" y="166"></rect>
+<rect height="46" rx="2" style="fill:var(--warm)" transform="rotate(6 161 53)" width="58" x="132" y="30"></rect>
+<text font-size="8.5" style="fill:var(--accent-ink)" transform="rotate(6 161 53)" x="142" y="50">get</text><text font-size="8.5" style="fill:var(--accent-ink)" transform="rotate(6 161 53)" x="140" y="64">better</text>
+<rect height="130" rx="4" stroke-width="2" style="fill:var(--panel);stroke:var(--accent)" width="76" x="200" y="60"></rect>
+<rect height="14" rx="3" style="fill:var(--accent)" width="24" x="226" y="52"></rect>
+<g font-size="8" style="fill:var(--ink)"><text x="210" y="88">20% → 30%</text><text x="210" y="108">without worsening</text><text x="210" y="124">complaints</text><text x="210" y="150">300 + 300</text></g>
+<path d="M210 160 h56 M210 172 h40" stroke-width="2" style="stroke:var(--line2)"></path>
+<text font-size="9" style="fill:var(--faint)" x="30" y="212">a sentence you can’t verify ×</text><text font-size="9" style="fill:var(--faint)" x="30" y="226">a request you can verify</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> “Analyze your work and keep getting better” isn’t a system—it’s a sentence</h2>
+<p>Paulo from support wrote this in the assistant that replies to tickets: “analyze your replies and keep improving.” A month later, he asked whether it had improved. The assistant confidently said yes. There was no way to know if that was true—and that’s what makes the sentence dangerous: it creates the feeling of improvement without producing any.</p>
+<p>Three questions the sentence doesn’t answer are missing. Better than <b>what</b> (which version?). Measured by <b>whom</b> (the assistant itself, which has every reason to say it improved?). Compared <b>how</b> (against what, and using how many cases?). Without recorded evidence, a number, and a previous version, “improved” is just the expected answer to the question you asked.</p>
+<p>This isn’t an AI limitation; it’s a request limitation. The course’s anchor sentence exists to replace exactly this habit:</p>
+<div class="qanchor"><p>Don’t ask AI to improve. Make every execution produce evidence, every piece of evidence generate a hypothesis, and every hypothesis become an experiment—and only what is proven goes into the next version.</p></div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">mark as read</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> A goal needs a number, a direction, and “without worsening”</h2>
+<p>The first change is to replace “improve” with <b>“from X to Y, without worsening Z”</b>. For Regina: “proposal response rate from 20% to 30%, without worsening complaints or average discount.” For Marcos: “viewing booking rate from 20% to 30%, without worsening no-show visits.” The “without worsening” part has a name— <span class="gterm" data-def="A metric that must not fall while you try to raise the main one. For example: complaints, margin, ticket reopenings. The loop rejects any version that improves the goal but worsens a guardrail." tabindex="0">guardrail</span> —and it’s not decoration.</p>
+<p>Without a guardrail, every goal becomes a target on its own, and the assistant learns to cheat: ask for “more clicks” and it writes clickbait; ask for “less time per ticket” and Paulo’s team starts closing tickets quickly without resolving them; ask for “more replies” and messages start provoking “stop sending me this”—which counts as a reply. A goal without “without worsening” is this track’s quietest mistake, because the number goes up while the business gets worse.</p>
+<p>Two cautions about the number. First, choose a metric customers respond to quickly—reply rate, bookings—and monitor a money metric (conversion, margin) as a guardrail. Second, goals near 3% are almost impossible to prove in a small business: proving 3% → 5% takes about 1,500 executions on each side, which at 200 a month takes 15 months. Proving 20% → 30% takes ~300 on each side. Start where proof is possible.</p>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">mark as read</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> A hypothesis is a sentence with IF, THEN, and BECAUSE—and only one change</h2>
+<p>The second change is to replace “idea” with a hypothesis. A hypothesis has a fixed form: <b>IF</b> [one change] <b>THEN</b> [expected effect on the goal] <b>BECAUSE</b> [reason]. In LOOP-R’s reference example, the fictional clinic wrote: “IF the proposal is up to 80 words, THEN the reply rate rises from 19% to about 30%, BECAUSE long WhatsApp proposals aren’t read to the end. Change: length only.”</p>
+<p>The hardest part is the last one: <b>one change only</b>. Marcos wants to “cut the text, change the tone, and send it in the morning”—three changes at once. If it works, he won’t know which one worked; if it fails, he won’t know which one hurt. Three ideas are three hypotheses, tested one at a time or recorded for later.</p>
+<p>For Regina, the same form applies: “IF the proposal opens by mentioning the review the client left, THEN more clients reply, BECAUSE they recognize the message was written for them”—that was, in fact, the hypothesis that was promoted in the example. A good hypothesis also protects you: if it fails, you know exactly what to discard and what to record so nobody unknowingly tests it again.</p>
+<p>Notice what happened to Paulo’s vague instruction after these two changes:</p>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Vague instruction</p><p class="qba-txt">“Assistant, answer tickets better and keep improving over time.”</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">Verifiable request</p><p class="qba-txt">“Log each ticket (topic, reply used, resolved on 1st contact?). Goal: resolved on 1st contact from 50% to 65%, without worsening 7-day reopenings. Hypothesis: IF the password reply includes the direct link THEN fewer people come back BECAUSE customers get lost on the screen. Test: half with each version, ~170 per version.”</p></div>
+<p class="qba-saldo"><b>Result:</b> the first produces nothing verifiable; the second produces a record, a target number, a guardrail, and a test with a sample size—four things to discuss with a business partner.</p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">mark as read</button>
+</section>
+<section class="step" data-fig="4" data-kind="fundamento">
+<h2><span class="n">04</span> The person who decides whether it worked isn’t the person who came up with the idea</h2>
+<p>The third change is to separate the proposer from the judge. The judge can only answer one of three things: <b>B won by a clear margin</b>, <b>A stays</b>, or <b>not enough data—keep testing</b>. The third answer is the most common and must be acceptable, because the alternative is promoting chance. That “300 on each side” has a name— <span class="gterm" data-def="The number of executions per version needed to tell whether the difference between A and B is more than chance. For goals between 20% and 30%, about 300 per version." tabindex="0">sample size that proves it</span> —and it’s calculated before the test, not after.</p>
+<p>This is where the second quiet mistake lives: stopping a test halfway because the new version is “in the lead.” Marcos, with 40 leads a week, needs about 15 weeks to reach 300 per version. In week 2, the new version has 12 replies out of 40 versus 7 out of 40 for the old one, and he wants to promote it. Twelve versus seven out of 40 is exactly the kind of difference that appears and disappears on its own. Stop early for one reason only: a guardrail is falling. Never because of a partial lead.</p>
+<div class="quiz" data-answer="b">
+<p class="qk">Test yourself</p><p class="q">Week 2 of the test: new version gets 12 replies out of 40; old version gets 7 out of 40. What should the judge say?</p>
+<button class="opt" data-fb="Nearly double in 40 cases is exactly the kind of difference that disappears the following week. Stopping because it looks like a win is the most common way to promote chance." data-k="a">B won—it’s almost double</button>
+<button class="opt" data-fb="Exactly. With a target near 20–30%, about 300 per version are needed for proof. Until then, the only honest answer is to keep going." data-k="b">Not enough data—keep testing until the sample size is met</button>
+<button class="opt" data-fb="Not that either: “A stays” requires the test to be over and B not to have won by a clear margin. This test isn’t even halfway done." data-k="c">A stays—the difference is small</button>
+<p class="qfb"></p>
+</div>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">mark as read</button>
+</section>
+<section class="step" data-fig="5" data-kind="fundamento">
+<h2><span class="n">05</span> “Looks better” isn’t “is better”: the verdict comes from the number and the guardrails</h2>
+<p>Back to the reference example. In cycle two, the “up to 80 words” hypothesis was tested with 300 proposals on each side: replies rose from 19.3% to 29.7%—ten points, with a proven sample size. And it wasn’t promoted. The “complaints” guardrail showed 6 versus 1, and the agreed tolerance was zero. The rule was applied as written; the version stayed out; everything was recorded.</p>
+<p>Then comes the second lesson, as important as the first: the rule was poorly calibrated. Six complaints versus one out of 300 is noise—it can happen by chance. Zero tolerance for a rare event rejects good ideas because of bad luck. The team adjusted the tolerance to 1% in later tests, and the rejected hypothesis stayed in memory with the reason. In cycle four, “open by mentioning the client’s review” rose from 19.3% to 29.3%, stayed within the guardrails, and became the official version. Sales conversion didn’t move—and that was recorded too.</p>
+<p>The same rule applies to Paulo: if “resolved on first contact” rises but “reopened within 7 days” rises too, A stays. The system doesn’t promote something because it looks better—and at L1, you’re the one who approves it on the card, with the numbers in front of you.</p>
+<div class="qerr">
+<p class="qk">Common mistake</p>
+<p class="qerr-txt"><b>Promoting because it looks better.</b> The new proposal “is clearly prettier,” the rate went up in the first week—and it becomes official. This happens because the human eye confuses taste with results, and a good week with a pattern. How to avoid it: nothing becomes official without a verdict based on the required sample size and checked guardrails; and the decision goes through your card, not the impression of the person who wrote it.</p>
+</div>
+<div class="mobfig" data-mobfig="5"></div>
+<button class="readbtn" data-read="s5">mark as read</button>
+</section>
+<section class="practice" data-mode="prompt" data-practice="p4">
+<p class="pk">Practice now <span class="pcount">0/4 done</span></p>
+<h3 class="ph">Rewrite one of your vague instructions with evidence, a goal, and a hypothesis</h3>
+<p class="pgoal">Leave with a four-part text—evidence, a goal with “without worsening,” an IF-THEN-BECAUSE hypothesis, and a test—generated in an AI chat from a vague instruction in your business. ~10 min.</p>
+<p class="psafe">You’re only writing a request in a chat—nothing in your business changes until you approve it, and no customer reply goes out from here. If the answer includes numbers you didn’t provide, delete them and ask again, adding “don’t make up numbers.”</p>
+<p>This is a ready-to-paste request for an AI chat: the parts between &lt; &gt; are the only ones you replace—the rest stays as is.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copy</button><pre class="pcode">I have an AI assistant that does this task in my business: &lt;describe the task—for example, reply to real estate portal leads&gt;.
+Today, the instruction I gave was vague: “&lt;paste the vague instruction—for example, be more persuasive and keep improving&gt;.”
+The current number I know is: &lt;for example, 20% of leads reply—or “I don’t know”&gt;.
+
+Rewrite the instruction in four parts, without making up numbers I haven’t given you:
+1. EVIDENCE—what to record per execution, one row at a time, in up to 5 columns (one must be “what happened next”).
+2. GOAL—in the format “from X to Y, without worsening Z,” using only the number I provided. If I said “I don’t know,” say the first task is to measure for 2 weeks and suggest what to measure.
+3. HYPOTHESIS—one sentence: “IF [one change only] THEN [effect on the goal] BECAUSE [reason].”
+4. TEST—how to split into two versions (current and new) and how many executions per version to collect before deciding (for goals between 20% and 30%, use about 300 per version).
+End by listing what must NOT change without my approval.</pre></div>
+<p><b>What you should see:</b> a response with four numbered sections; a GOAL with a “without worsening”; a HYPOTHESIS with just ONE change; a TEST with a sample size per version; and a short list of what’s out of scope. If the hypothesis contains two or three changes, reply: “separate this into one hypothesis per change.”</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>I pasted the request into my AI chat and replaced the three parts between &lt; &gt; with my business data.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>The answer has all 4 parts, and the HYPOTHESIS has only ONE change (if not, I asked it to split them).</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>The GOAL says “without worsening” and includes at least one guardrail (if not, I asked: “add a without-worsening condition”).</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>I saved the text somewhere I can find it again: it’s the first draft of the loop worksheet, which Track 2 fills in question by question.</span></label></li>
+</ol>
+<p class="pdone">You’ve just turned a vague command into a request you can verify—with a record, a target number, a guardrail, and a test.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; The phrase “get better” with three empty slots: better than what, measured by whom, compared how. Without filling in all three, “I improved” is just the expected answer." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="34" rx="8" stroke-width="2" style="fill:var(--panel);stroke:var(--warm)" width="160" x="30" y="24"></rect><text font-size="8.5" style="fill:var(--ink)" x="52" y="45">“keep getting better”</text>
+<path d="M60 58 v20 M110 58 v20 M160 58 v20" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<g stroke-dasharray="4 3" stroke-width="1.5" style="stroke:var(--faint)"><rect height="40" rx="6" width="60" x="30" y="78"></rect><rect height="40" rx="6" transform="translate(0 0)" width="60" x="80" y="78"></rect><rect height="40" rx="6" width="60" x="130" y="78"></rect></g>
+<g font-size="7" style="fill:var(--muted)"><text x="36" y="94">better than</text><text x="36" y="106">what?</text><text x="88" y="94">measured</text><text x="88" y="106">by whom?</text><text x="136" y="94">compared</text><text x="136" y="106">how?</text></g>
+<rect height="26" rx="6" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="100" x="60" y="140"></rect><text font-size="8" style="fill:var(--ink)" x="70" y="157">“yes, I improved”</text>
+<text font-size="7.5" style="fill:var(--faint)" x="30" y="188">the expected answer, not the true one</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; A goal as a track: the arrow raises X, while the guardrails on each side keep the shortest path from cheating. Without them, the arrow rises and the business falls." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="34" rx="6" stroke-width="2" style="fill:var(--panel);stroke:var(--accent)" width="172" x="24" y="30"></rect><text font-size="8" style="fill:var(--ink)" x="34" y="51">MAXIMIZE: reply rate 20% → 30%</text>
+<path d="M40 70 v90 M180 70 v90" stroke-width="3" style="stroke:var(--warm)"></path>
+<text font-size="7" style="fill:var(--warm)" x="44" y="82">without worsening</text>
+<g font-size="7" style="fill:var(--ink)"><text x="52" y="104">complaints</text><text x="52" y="120">average discount</text><text x="52" y="136">margin</text></g>
+<path d="M110 160 v-64" stroke-width="2.5" style="stroke:var(--accent)"></path><path d="M104 102 l6 -8 l6 8" stroke-width="2.5" style="stroke:var(--accent)"></path>
+<path d="M118 150 q40 -20 60 -60" stroke-dasharray="3 3" stroke-width="1.5" style="stroke:var(--faint)"></path><text font-size="6.5" style="fill:var(--faint)" x="128" y="150">cheating:</text><text font-size="6.5" style="fill:var(--faint)" x="128" y="160">blocked</text>
+<text font-size="7.5" style="fill:var(--faint)" x="24" y="188">20–30%: ~300 per side · 3–5%: ~1,500</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; The hypothesis as a three-link chain—IF, THEN, BECAUSE—with the most often-forgotten tag: one change only. Three changes at once break the chain." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g font-size="8" style="fill:var(--ink)">
+<rect height="30" rx="15" stroke-width="2" style="fill:var(--panel);stroke:var(--accent)" width="50" x="14" y="60"></rect><text x="30" y="79">IF</text>
+<rect height="30" rx="15" stroke-width="2" style="fill:var(--panel);stroke:var(--accent)" width="60" x="84" y="60"></rect><text x="94" y="79">THEN</text>
+<rect height="30" rx="15" stroke-width="2" style="fill:var(--panel);stroke:var(--accent)" width="54" x="156" y="60"></rect><text x="160" y="79">BECAUSE</text>
+</g>
+<path d="M64 75 h20 M144 75 h12" stroke-width="2" style="stroke:var(--muted)"></path>
+<g font-size="6.5" style="fill:var(--muted)"><text x="10" y="106">≤ 80 words</text><text x="84" y="106">reply rate 19 → 30%</text><text x="156" y="106">not read to the end</text></g>
+<rect height="20" rx="4" stroke-width="1.5" style="fill:var(--panel2);stroke:var(--warm)" width="84" x="14" y="128"></rect><text font-size="7" style="fill:var(--warm)" x="20" y="141">one change only</text>
+<g stroke-dasharray="3 3" stroke-width="1.2" style="stroke:var(--faint)"><rect height="20" rx="4" width="94" x="116" y="128"></rect></g><text font-size="6.5" style="fill:var(--faint)" x="122" y="141">length + tone + timing = 3</text>
+<text font-size="7.5" style="fill:var(--faint)" x="14" y="176">with 3 changes, it worked—but which one?</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; The verdict has three outcomes, not two. The middle one—not enough data—is the most common and the only honest answer before reaching the agreed sample size." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="30" rx="6" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="80" x="70" y="20"></rect><text font-size="8" style="fill:var(--ink)" x="82" y="39">A × B tested</text>
+<path d="M110 50 v20 M110 70 h-70 v20 M110 70 v20 M110 70 h70 v20" stroke-width="1.5" style="stroke:var(--muted)"></path>
+<g font-size="7" style="fill:var(--ink)">
+<rect height="36" rx="6" stroke-width="1.5" style="fill:var(--panel);stroke:var(--accent)" width="60" x="10" y="90"></rect><text x="16" y="105">B won</text><text x="16" y="117">by a clear margin</text>
+<rect height="36" rx="6" stroke-width="2" style="fill:var(--panel);stroke:var(--warm)" width="60" x="80" y="90"></rect><text x="86" y="105">not enough</text><text x="86" y="117">data</text>
+<rect height="36" rx="6" stroke-width="1.5" style="fill:var(--panel);stroke:var(--muted)" width="60" x="150" y="90"></rect><text x="162" y="105">A stays</text><text x="156" y="117">(or got worse)</text>
+</g>
+<text font-size="6.5" style="fill:var(--warm)" x="82" y="146">→ keep testing</text>
+<text font-size="7.5" style="fill:var(--faint)" x="10" y="168">week 2: 12/40 × 7/40 = still nothing</text>
+<text font-size="7.5" style="fill:var(--faint)" x="10" y="184">stop early only if a guardrail falls</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 5&lt;/b&gt; Two cycles from the reference example side by side. Both rose by ten points; only one went live—the one that passed the guardrails. The other cycle’s tolerance was revised and recorded." data-fig="5"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g font-size="7" style="fill:var(--ink)">
+<text x="14" y="26">cycle 2 · ≤ 80 words</text>
+<rect height="14" opacity=".8" rx="3" style="fill:var(--accent)" width="90" x="14" y="34"></rect><text style="fill:var(--accent-ink)" x="18" y="44">19.3 → 29.7%</text>
+<rect height="14" rx="3" stroke-width="1.5" style="fill:var(--panel);stroke:var(--warm)" width="90" x="14" y="52"></rect><text style="fill:var(--warm)" x="18" y="62">complaints 6 × 1</text>
+<text style="fill:var(--warm)" x="14" y="80">→ A stays (rule: 0)</text>
+<text x="118" y="26">cycle 4 · mention the review</text>
+<rect height="14" opacity=".8" rx="3" style="fill:var(--accent)" width="90" x="118" y="34"></rect><text style="fill:var(--accent-ink)" x="122" y="44">19.3 → 29.3%</text>
+<rect height="14" rx="3" stroke-width="1.5" style="fill:var(--panel);stroke:var(--accent)" width="90" x="118" y="52"></rect><text style="fill:var(--accent)" x="122" y="62">guardrails clear</text>
+<text style="fill:var(--accent)" x="118" y="80">→ B won · card</text>
+</g>
+<path d="M14 96 h194" stroke-width="1" style="stroke:var(--line)"></path>
+<g font-size="7" style="fill:var(--muted)"><text x="14" y="112">300 per version on both sides</text><text x="14" y="126">conversion: 3.7 × 3.0% — no difference</text><text x="14" y="140">tolerance revised: 0 → 1% (rare event)</text></g>
+<rect height="22" rx="4" stroke-width="1" style="fill:var(--panel2);stroke:var(--line2)" width="194" x="14" y="152"></rect><text font-size="7" style="fill:var(--ink)" x="20" y="166">memory: both are recorded</text>
+<text font-size="7.5" style="fill:var(--faint)" x="14" y="190">looking better doesn’t open the gate</text>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Highlight any passage to turn it into a review card.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Recap</p>
+<ul>
+<li>“Get better” is a sentence, not a system: without evidence, a number, and a comparison, the assistant will only say it improved.</li>
+<li>A useful goal has a direction, a number, and “without worsening”—because every goal by itself teaches the assistant to cheat.</li>
+<li>A hypothesis is IF-THEN-BECAUSE with one change only; the numbers judge, using the sample size agreed in advance—not the person who had the idea.</li>
+<li>A version can rise by ten points and still be rejected—and that means the system is working, not failing.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Your next step</p>
+<p class="na-win">You’ve just turned a vague command into a request you can verify—the first draft of your loop worksheet.</p>
+<p class="na-action">In the next 15 minutes, take the GOAL AI wrote and check the current number against real data: count the last 20 executions and see how many succeeded. Adjust X in “from X to Y.”</p>
+<p class="na-hook">In Track 2, you’ll build the LOOP-R step by step, starting with L—Locate: one process, one number—and fill in the first question on the loop worksheet with what you just wrote.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-3">← lesson 3</a><a href="#trilha">complete the track →</a></nav>
+<footer>Lesson 4 · LOOP-R · INEMA.CLUB PRO</footer>
+<script id="cards-4" type="application/json">
+[
+  {
+    "front": "A manager told the assistant, “keep getting better at customer support,” and a month later it says it improved. Why is that claim worthless?",
+    "back": "There is no recorded evidence, target number, or previous version to compare against. The assistant is just responding to the request—saying it improved is the expected answer, not necessarily the truth."
+  },
+  {
+    "front": "Your goal is “less time per ticket.” Rewrite it with a “without worsening” condition that prevents the assistant from closing tickets without resolving them.",
+    "back": "“Reduce time per ticket without worsening 7-day reopenings or satisfaction.” Without the guardrail, the shortest path to the number is to close tickets quickly."
+  },
+  {
+    "front": "The hypothesis says: “IF we cut it to 80 words, change the tone, and send it in the morning, THEN more people reply.” Do you accept it as is?",
+    "back": "No. Those are three changes; if it works, you won’t know which one did. One hypothesis, one change—the other two become separate hypotheses for later."
+  },
+  {
+    "front": "Week 2 of the test: new version gets 12 out of 40; old gets 7 out of 40. Your business partner wants to promote it now. What do you say?",
+    "back": "Not enough data: for a goal near 20–30%, you need about 300 per version. Stopping early because of a partial lead promotes chance. Stop early only if a guardrail falls."
+  },
+  {
+    "front": "Version B raised replies from 19% to 30% but was rejected. What legitimate reason could explain that—and what would you review?",
+    "back": "A guardrail fell (in the example: complaints 6 versus 1, with zero tolerance). Review the tolerance: for a rare event with 300 per version, 6 versus 1 is noise—tolerance is statistical, not wishful thinking."
+  },
+  {
+    "front": "What’s the difference between “the new proposal is clearly prettier” and “the new proposal won”?",
+    "back": "The first is taste. The second is a verdict: sufficient sample size, margin, guardrails met. Only the second becomes official—and it still goes through your approval card."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-4 | tipo=FUNDAMENTO | steps=5
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (5/5: Paulo suporte · Regina/Marcos · clínica do exemplo + Paulo · Marcos corretor · clínica do exemplo + Paulo)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (5/5)
+  [OK] practice           .practice[data-mode="prompt"] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (~10 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-4"> presente (6 cartões: diagnóstico · aplicação · decisão · decisão · diagnóstico · contraste)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb)
+-->
+</section>
+
+<script src="assets/curso.js"></script>
+<script id="language-navigation-script">(()=>{const update=()=>{document.querySelectorAll('a').forEach(a=>{if(!['PT','EN','ES'].includes(a.textContent.trim()))return;if(!a.dataset.languageBase)a.dataset.languageBase=a.getAttribute('href');const u=new URL(a.dataset.languageBase,location.href);u.search=location.search;u.hash=location.hash;a.href=u.href;const current=(document.documentElement.lang||'pt').slice(0,2).toUpperCase();if(a.textContent.trim()===current)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});};update();addEventListener('hashchange',update);})();</script></body>
+</html>

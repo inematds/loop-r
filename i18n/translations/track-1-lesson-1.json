@@ -1,0 +1,646 @@
+{
+  "Trilha 01 · Aula 1 · fundamento": [
+    "Track 01 · Lesson 1 · foundation",
+    "Ruta 01 · Clase 1 · fundamento"
+  ],
+  "A IA que": [
+    "AI that",
+    "La IA que"
+  ],
+  "termina ali": [
+    "ends there",
+    "termina ahí"
+  ],
+  "Ao fim desta aula você consegue olhar uma tarefa que sua IA faz hoje e dizer, em uma frase, por que ela termina ali — e o que faltaria para a próxima vez começar melhor que a anterior.": [
+    "By the end of this lesson, you will be able to look at a task AI does for you today and explain in one sentence why it ends there — and what is missing for the next attempt to start from a better place.",
+    "Al terminar esta clase, podrás mirar una tarea que la IA hace hoy y explicar en una frase por qué termina ahí y qué falta para que la próxima vez empiece mejor que la anterior."
+  ],
+  "Você já pediu centenas de propostas, respostas e textos para a IA. Cada um saiu bom o bastante. E mesmo assim a proposta de hoje começa exatamente do mesmo lugar que a primeira: nada do que deu certo ficou guardado. Esta aula dá nome a esse problema — porque, sem nome, ele parece normal.": [
+    "You have already asked AI for hundreds of proposals, replies, and pieces of copy. Each was good enough. And yet today’s proposal starts in exactly the same place as the first: nothing that worked was saved. This lesson names the problem — because without a name, it feels normal.",
+    "Ya le has pedido a la IA cientos de propuestas, respuestas y textos. Cada uno quedó bastante bien. Aun así, la propuesta de hoy empieza exactamente en el mismo lugar que la primera: no se guardó nada de lo que funcionó. Esta clase le pone nombre al problema, porque sin nombre parece normal."
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "01": [
+    "01",
+    "01"
+  ],
+  "Humano, pedido, resposta, fim — e amanhã tudo de novo": [
+    "Person, request, response, done — and tomorrow, it starts all over",
+    "Persona, solicitud, respuesta, fin... y mañana todo otra vez"
+  ],
+  "Hoje, na maioria dos negócios, a IA trabalha em linha reta. Alguém escreve um pedido — quem trabalha com isso chama de": [
+    "In most businesses today, AI works in a straight line. Someone writes a request — people in the field call it a",
+    "Hoy, en la mayoría de los negocios, la IA trabaja en línea recta. Alguien escribe una solicitud — quienes trabajan con esto la llaman"
+  ],
+  "prompt": [
+    "prompt",
+    "prompt"
+  ],
+  "—, a IA devolve uma resposta, a pessoa ajusta o que precisa e manda. Acabou. A próxima vez começa do mesmo ponto: um pedido novo, uma folha em branco, nenhuma lembrança da anterior.": [
+    "—, the AI returns an answer, the person adjusts what is needed, and sends it. Done. Next time starts from the same point: a new request, a blank page, no memory of the last one.",
+    "—, la IA devuelve una respuesta, la persona ajusta lo necesario y la envía. Se acabó. La próxima vez empieza en el mismo punto: una nueva solicitud, una página en blanco, ningún recuerdo de la anterior."
+  ],
+  "O texto que você escreve para a IA pedindo alguma coisa. Neste curso, chamamos de pedido.": [
+    "The text you write to ask AI for something. In this course, we call it a request.",
+    "El texto que escribes para pedirle algo a la IA. En este curso lo llamamos solicitud."
+  ],
+  "Regina, dona de uma clínica de estética, manda cerca de 200 propostas por mês pelo WhatsApp. Para cada uma, escreve algo como \"faça uma proposta de pacote de limpeza de pele para a cliente que perguntou preço\". A proposta sai, ela troca duas frases, envia. A cliente responde ou some. A proposta número 201 nasce sem saber nada sobre as 200 que vieram antes — nem quais foram respondidas, nem quais fecharam.": [
+    "Regina owns an aesthetics clinic and sends about 200 proposals a month over WhatsApp. For each one, she writes something like “draft a skincare package proposal for the customer who asked about the price.” The proposal comes back, she changes two sentences, and sends it. The customer replies or disappears. Proposal 201 starts with no knowledge of the previous 200 — neither which got a reply nor which led to a sale.",
+    "Regina es dueña de una clínica estética y envía unas 200 propuestas al mes por WhatsApp. Para cada una, escribe algo como «prepara una propuesta de limpieza facial para la clienta que preguntó el precio». Recibe la propuesta, cambia dos frases y la envía. La clienta responde o desaparece. La propuesta número 201 nace sin saber nada de las 200 anteriores: ni cuáles recibieron respuesta ni cuáles acabaron en una venta."
+  ],
+  "Não é que a IA tenha feito um trabalho ruim. Cada proposta ficou boa. O problema é outro: o caminho tem quatro paradas e nenhuma volta.": [
+    "The AI did not do a bad job. Every proposal was good. The problem is different: the path has four stops and no way back.",
+    "No es que la IA haya hecho un mal trabajo. Todas las propuestas quedaron bien. El problema es otro: el recorrido tiene cuatro paradas y ninguna vuelta."
+  ],
+  "Hoje, na clínica": [
+    "Today, at the clinic",
+    "Hoy, en la clínica"
+  ],
+  "200 propostas por mês, cada uma do zero. Regina não sabe qual das 200 funcionou nem por quê — e a de amanhã não vai saber também.": [
+    "200 proposals a month, each one from scratch. Regina does not know which of the 200 worked or why — and tomorrow’s proposal will not know either.",
+    "200 propuestas al mes, cada una desde cero. Regina no sabe cuál de las 200 funcionó ni por qué, y la de mañana tampoco lo sabrá."
+  ],
+  "Com um loop": [
+    "With a loop",
+    "Con un ciclo"
+  ],
+  "As mesmas 200 propostas, cada uma virando uma linha de registro. Uma decisão por semana, num cartão de cinco linhas.": [
+    "The same 200 proposals, each becoming a row in a log. One decision a week, on a five-line card.",
+    "Las mismas 200 propuestas, cada una convertida en una fila de registro. Una decisión por semana, en una tarjeta de cinco líneas."
+  ],
+  "Saldo no exemplo de referência do LOOP-R": [
+    "What the LOOP-R reference example shows",
+    "Resultado del ejemplo de referencia de LOOP-R"
+  ],
+  "(dados simulados, clínica fictícia): em 4 ciclos, 1 mudança comprovada com 300 envios por versão, 1 descartada por regra, 0 versões piores no ar.": [
+    "(simulated data, fictional clinic): across 4 cycles, 1 proven change with 300 sends per version, 1 idea discarded by a rule, 0 worse versions in production.",
+    "(datos simulados, clínica ficticia): en 4 ciclos, 1 cambio comprobado con 300 envíos por versión, 1 idea descartada por una regla y 0 versiones peores en producción."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "02": [
+    "02",
+    "02"
+  ],
+  "A IA não guarda nada entre um pedido e outro — e isso não é defeito": [
+    "AI remembers nothing from one request to the next — and that is not a flaw",
+    "La IA no recuerda nada de una solicitud a otra, y eso no es un defecto"
+  ],
+  "Um chat de IA funciona como um atendente temporário excelente que chega novo a cada turno: escreve muito bem, conhece o assunto, mas não esteve aqui ontem. Ele não viu se a cliente respondeu, se o lead agendou, se o chamado voltou. Tudo o que acontece": [
+    "An AI chat is like an excellent temporary assistant who arrives new for every shift: it writes very well and knows the subject, but it was not here yesterday. It did not see whether the customer replied, the lead booked a visit, or the support ticket came back. Everything that happens",
+    "Un chat de IA funciona como un excelente asistente temporal que empieza de nuevo en cada turno: escribe muy bien y conoce el tema, pero ayer no estuvo aquí. No vio si la clienta respondió, si el lead concertó una visita o si volvió la consulta. Todo lo que ocurre"
+  ],
+  "depois": [
+    "afterward",
+    "después"
+  ],
+  "da resposta fica do lado de fora da conversa.": [
+    "the response stays outside the conversation.",
+    "de la respuesta queda fuera de la conversación."
+  ],
+  "Marcos, corretor de imóveis, recebe uns 40 leads por semana pelo portal — um": [
+    "Marcos, a real estate agent, gets about 40 leads a week through a listing portal — a",
+    "Marcos, agente inmobiliario, recibe unos 40 leads por semana a través del portal — un"
+  ],
+  "lead": [
+    "lead",
+    "lead"
+  ],
+  "Pessoa que pediu informação sobre um imóvel pelo portal ou pelo anúncio e ainda não decidiu nada.": [
+    "Someone who asked about a property through a portal or listing and has not made a decision yet.",
+    "Persona que pidió información sobre una vivienda en el portal o el anuncio y aún no ha decidido nada."
+  ],
+  "é quem pediu informação e ainda não decidiu. Ele responde cada um com ajuda da IA. Quando um lead responde bem porque Marcos citou a metragem da varanda, isso ensinou alguma coisa — mas só a Marcos, se ele reparou. Para a IA, o lead seguinte é o primeiro da vida dela.": [
+    "is someone who asked for information but has not decided yet. He replies to each one with AI’s help. When a lead responds well because Marcos mentioned the balcony’s square footage, that teaches something — but only Marcos, if he notices. To the AI, the next lead is the first one it has ever seen.",
+    "es alguien que pidió información pero aún no ha decidido. Él responde a cada uno con ayuda de la IA. Si un lead responde bien porque Marcos mencionó los metros cuadrados del balcón, eso enseña algo, pero solo a Marcos, si se da cuenta. Para la IA, el siguiente lead es el primero de su vida."
+  ],
+  "Por isso \"usar muito\" não vira \"aprender\". A quantidade de uso não muda nada enquanto ninguém registra o resultado e o leva de volta ao pedido seguinte. Esse \"levar de volta\" é o que o resto do curso monta.": [
+    "That is why “using it a lot” does not become “learning.” More use changes nothing until someone records the result and carries it into the next request. The rest of this course builds that feedback loop.",
+    "Por eso «usar mucho» no se convierte en «aprender». La cantidad de uso no cambia nada mientras nadie registre el resultado y lo incorpore a la siguiente solicitud. El resto del curso construye ese ciclo de retroalimentación."
+  ],
+  "Teste-se": [
+    "Check your understanding",
+    "Comprueba lo aprendido"
+  ],
+  "Marcos usou a IA 160 vezes este mês para responder leads. O que ela sabe hoje sobre quais respostas funcionaram?": [
+    "Marcos used AI 160 times this month to reply to leads. What does it know now about which replies worked?",
+    "Marcos usó la IA 160 veces este mes para responder a leads. ¿Qué sabe ahora sobre cuáles respuestas funcionaron?"
+  ],
+  "Tudo — ela aprende com o uso": [
+    "Everything — it learns from use",
+    "Todo: aprende con el uso"
+  ],
+  "Nada, a menos que alguém registre o resultado e leve de volta": [
+    "Nothing, unless someone records the result and carries it forward",
+    "Nada, a menos que alguien registre el resultado y lo incorpore después"
+  ],
+  "Só o que Marcos elogiou na conversa": [
+    "Only what Marcos praised in the chat",
+    "Solo lo que Marcos elogió en la conversación"
+  ],
+  "Não. Cada pedido começa do zero; ela nunca vê o que aconteceu depois da resposta — se o lead agendou ou sumiu.": [
+    "No. Every request starts from scratch; it never sees what happened after the reply — whether the lead booked a visit or disappeared.",
+    "No. Cada solicitud empieza desde cero; nunca ve qué pasó después de responder: si el lead reservó una visita o desapareció."
+  ],
+  "Isso. Sem alguém registrar o resultado de cada resposta e levar isso de volta ao próximo pedido, o uso número 160 é tão novo quanto o primeiro.": [
+    "Exactly. Unless someone records the result of every reply and carries it into the next request, use number 160 is just as new as the first.",
+    "Exacto. Si nadie registra el resultado de cada respuesta y lo incorpora a la siguiente solicitud, el uso número 160 es tan nuevo como el primero."
+  ],
+  "Elogiar dentro da conversa não fica guardado para a próxima — e 'gostei' não é o mesmo que 'o lead agendou'.": [
+    "Praise in the chat is not saved for next time — and “I liked it” is not the same as “the lead booked a visit.”",
+    "Un elogio en la conversación no se guarda para la próxima vez, y «me gustó» no significa «el lead concertó una visita»."
+  ],
+  "03": [
+    "03",
+    "03"
+  ],
+  "Melhorar de verdade exige seis coisas — e nenhuma delas é \"esforço\"": [
+    "Real improvement takes six things — and none of them is “effort”",
+    "Mejorar de verdad requiere seis cosas, y ninguna es «esforzarse»"
+  ],
+  "Quando alguém diz \"quero que a IA melhore\", quase sempre está pensando em pedir melhor. Mas melhoria real não vem do pedido. Vem de seis ingredientes ligados em círculo:": [
+    "When someone says “I want AI to improve,” they usually mean writing a better request. But real improvement does not come from the request. It comes from six ingredients connected in a loop:",
+    "Cuando alguien dice «quiero que la IA mejore», casi siempre piensa en escribir una mejor solicitud. Pero la mejora real no viene de la solicitud. Viene de seis ingredientes conectados en un ciclo:"
+  ],
+  "evidência": [
+    "evidence",
+    "evidencia"
+  ],
+  "(o que aconteceu, anotado),": [
+    "(what happened, written down),",
+    "(lo que ocurrió, anotado),"
+  ],
+  "métrica": [
+    "metric",
+    "métrica"
+  ],
+  "(um número que diz se foi bom),": [
+    "(a number that says whether it worked),",
+    "(un número que indica si funcionó),"
+  ],
+  "memória": [
+    "memory",
+    "memoria"
+  ],
+  "(onde fica guardado o que já se tentou),": [
+    "(where past attempts are kept),",
+    "(donde se guarda lo que ya se probó),"
+  ],
+  "hipótese": [
+    "hypothesis",
+    "hipótesis"
+  ],
+  "(uma ideia de mudança, com motivo),": [
+    "(an idea for a change, with a reason),",
+    "(una idea de cambio, con un motivo),"
+  ],
+  "experimento": [
+    "experiment",
+    "experimento"
+  ],
+  "(a ideia testada contra a versão atual) e": [
+    "(the idea tested against the current version), and",
+    "(la idea probada frente a la versión actual), y"
+  ],
+  "avaliação": [
+    "evaluation",
+    "evaluación"
+  ],
+  "(alguém diz qual ganhou, pelo número).": [
+    "(someone determines which one won, based on the number).",
+    "(alguien determina cuál ganó, según el número)."
+  ],
+  "Paulo é gestor de suporte numa empresa de software pequena: 10.000 chamados por ano. Para o time dele, os seis ingredientes ficam assim. Evidência: cada chamado com \"sobre o quê\" anotado. Métrica: resolvido no primeiro contato, sim ou não. Memória: um lugar onde está escrito o que o time já tentou nas respostas prontas. Hipótese: \"se a resposta sobre senha tiver o link direto, menos gente volta\". Experimento: metade dos chamados de senha com a resposta nova, metade com a antiga. Avaliação: quem diz qual ganhou é a contagem de \"voltou em 7 dias\", não a opinião de quem escreveu a resposta.": [
+    "Paulo manages support at a small software company: 10,000 tickets a year. For his team, the six ingredients look like this. Evidence: each ticket has its topic recorded. Metric: resolved on first contact, yes or no. Memory: a place where the team records what it has already tried in its canned replies. Hypothesis: “if the password reply includes a direct link, fewer people will come back.” Experiment: half of password tickets get the new reply, half the old one. Evaluation: the count of tickets that “came back within 7 days” determines the winner, not the opinion of the person who wrote the reply.",
+    "Paulo gestiona el soporte de una pequeña empresa de software: 10.000 consultas al año. Para su equipo, los seis ingredientes quedan así. Evidencia: se anota el tema de cada consulta. Métrica: resuelta en el primer contacto, sí o no. Memoria: un lugar donde el equipo registra lo que ya probó en sus respuestas guardadas. Hipótesis: «si la respuesta sobre la contraseña incluye un enlace directo, volverá menos gente». Experimento: la mitad de las consultas sobre contraseñas recibe la nueva respuesta y la otra mitad, la anterior. Evaluación: gana la que tenga menos consultas que «volvieron en 7 días», no la opinión de quien escribió la respuesta."
+  ],
+  "Repare: nenhum dos seis é \"pedir com mais força\". E se faltar um, o círculo não fecha — hipótese sem experimento é palpite, experimento sem memória é descoberta que se perde na semana seguinte.": [
+    "Notice: none of the six means “ask more forcefully.” If one is missing, the loop does not close — a hypothesis without an experiment is a guess; an experiment without memory is a discovery lost the next week.",
+    "Fíjate: ninguno de los seis consiste en «pedir con más insistencia». Si falta uno, el ciclo no se cierra: una hipótesis sin experimento es una suposición; un experimento sin memoria es un descubrimiento que se pierde la semana siguiente."
+  ],
+  "04": [
+    "04",
+    "04"
+  ],
+  "O que um loop garante — e o que ele não promete": [
+    "What a loop guarantees — and what it does not promise",
+    "Qué garantiza un ciclo y qué no promete"
+  ],
+  "Antes de seguir, a antipromessa, dita logo na primeira aula para não ficar escondida:": [
+    "Before we continue, here is the anti-promise, stated in the very first lesson so it cannot be hidden:",
+    "Antes de seguir, aquí va la antipromesa, desde la primera clase y sin esconderla:"
+  ],
+  "nenhum loop de melhoria garante que o número sobe.": [
+    "no improvement loop guarantees that the number will rise.",
+    "ningún ciclo de mejora garantiza que el número aumente."
+  ],
+  "Quem promete isso está vendendo sorte com cara de método. O que um loop bem montado garante é outra coisa, mais modesta e mais valiosa:": [
+    "Anyone promising that is selling luck dressed up as a method. A well-built loop guarantees something else, more modest and more valuable:",
+    "Quien promete eso vende suerte disfrazada de método. Un ciclo bien construido garantiza otra cosa, más modesta y más valiosa:"
+  ],
+  "Garante": [
+    "Guarantees",
+    "Garantiza"
+  ],
+  "Não garante": [
+    "Does not guarantee",
+    "No garantiza"
+  ],
+  "Que uma versão pior não substitui a atual": [
+    "A worse version will not replace the current one",
+    "Que una versión peor no sustituirá a la actual"
+  ],
+  "sozinha.": [
+    "on its own.",
+    "por sí sola."
+  ],
+  "Que a próxima versão será melhor.": [
+    "That the next version will be better.",
+    "Que la siguiente versión será mejor."
+  ],
+  "Que toda mudança fica registrada": [
+    "Every change will be recorded",
+    "Que cada cambio quedará registrado"
+  ],
+  "e tem botão de voltar atrás.": [
+    "and there will be a rollback button.",
+    "y habrá una opción para volver atrás."
+  ],
+  "Que o registro terá algo útil toda semana.": [
+    "That the log will contain something useful every week.",
+    "Que el registro tendrá algo útil cada semana."
+  ],
+  "Que o ciclo roda toda semana": [
+    "The cycle will run every week",
+    "Que el ciclo se ejecutará cada semana"
+  ],
+  ", do mesmo jeito.": [
+    ", in the same way.",
+    ", de la misma manera."
+  ],
+  "Que cada ciclo produz uma boa ideia.": [
+    "That every cycle will produce a good idea.",
+    "Que cada ciclo producirá una buena idea."
+  ],
+  "Que o custo não passa do teto": [
+    "The cost will not exceed the limit",
+    "Que el costo no superará el límite"
+  ],
+  "Que o custo compensa.": [
+    "That the cost will be worthwhile.",
+    "Que el costo compensará."
+  ],
+  "Repare que as quatro garantias falam de processo, não de resultado. Parece pouco. É exatamente o que nenhuma promessa de \"IA que melhora sozinha\" consegue entregar com honestidade — e é o que deixa você dormir enquanto o ciclo roda: nada entra sem prova, e tudo o que entrou pode sair.": [
+    "Notice that all four guarantees are about process, not results. That may sound modest. It is exactly what no promise of “AI that improves itself” can honestly deliver — and it lets you sleep while the cycle runs: nothing enters without evidence, and anything that entered can be removed.",
+    "Fíjate en que las cuatro garantías hablan del proceso, no del resultado. Puede parecer poco. Es precisamente lo que ninguna promesa de «IA que mejora sola» puede cumplir con honestidad, y lo que te permite dormir mientras el ciclo funciona: nada entra sin pruebas y todo lo que entró puede salir."
+  ],
+  "No exemplo de referência do LOOP-R — uma clínica fictícia como a de Regina, com dados simulados —, a taxa de resposta às propostas foi de 19,3% para 29,3% numa versão testada com 300 envios de cada lado. E a conversão em venda não se mexeu: 3,7% contra 3,0%, diferença que pode ser acaso. O loop não escondeu isso. Registrou, e a pessoa decidiu com o número na frente. Para Regina, esse é o negócio real: não um número prometido, mas um número que ela consegue conferir.": [
+    "In the LOOP-R reference example — a fictional clinic like Regina’s, using simulated data — the proposal response rate rose from 19.3% to 29.3% in a test with 300 sends per version. Sales conversion did not move: 3.7% versus 3.0%, a difference that could be chance. The loop did not hide that. It recorded it, and the person made the decision with the numbers in front of them. For Regina, that is what matters: not a promised number, but one she can verify.",
+    "En el ejemplo de referencia de LOOP-R —una clínica ficticia como la de Regina, con datos simulados—, la tasa de respuesta a las propuestas pasó del 19,3 % al 29,3 % en una prueba con 300 envíos por versión. La conversión en ventas no cambió: 3,7 % frente a 3,0 %, una diferencia que puede deberse al azar. El ciclo no lo ocultó. Lo registró, y la persona decidió con los números a la vista. Para Regina, eso es lo importante: no una cifra prometida, sino una que puede comprobar."
+  ],
+  "Nenhum loop garante que o número sobe. Garante que uma versão pior não entra sozinha — e que sempre dá para voltar.": [
+    "No loop guarantees that the number will rise. It guarantees that a worse version will not go live on its own — and that you can always roll back.",
+    "Ningún ciclo garantiza que el número aumente. Garantiza que una versión peor no entre en producción por sí sola y que siempre se pueda volver atrás."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "Aponte as tarefas que terminam ali — no caso de Regina e no seu negócio": [
+    "Identify the tasks that end there — in Regina’s case and in your business",
+    "Identifica las tareas que terminan ahí, tanto en el caso de Regina como en tu negocio"
+  ],
+  "Ler um caso curto, responder três perguntas e comparar com o gabarito; depois, listar as suas cinco. ~10 min.": [
+    "Read a short case, answer three questions, and compare your answers with the key; then list five tasks of your own. ~10 min.",
+    "Lee un caso breve, responde tres preguntas y compara tus respuestas con la clave; después, haz una lista de cinco tareas propias. ~10 min."
+  ],
+  "É só leitura e anotação — nada muda no seu negócio até você aprovar, e nenhuma cliente recebe nada. Se uma resposta sua ficar diferente do gabarito, anote a diferença: é exatamente o tipo de coisa que vale discutir com o sócio.": [
+    "This is only reading and note-taking — nothing changes in your business until you approve it, and no customer receives anything. If your answer differs from the key, note the difference: it is exactly the kind of thing worth discussing with a business partner.",
+    "Solo vas a leer y tomar notas: nada cambia en tu negocio hasta que lo apruebes y ninguna clienta recibirá nada. Si una respuesta tuya difiere de la clave, anota la diferencia: es el tipo de tema que conviene conversar con tu socio o socia."
+  ],
+  "O caso.": [
+    "The case.",
+    "El caso."
+  ],
+  "Regina, dona de uma clínica de estética, usa a IA para cinco coisas por semana: (1) escrever propostas de pacote no WhatsApp; (2) responder \"qual o valor?\" de quem chega pelo Instagram; (3) montar a legenda do post de segunda; (4) resumir as avaliações das clientes no Google; (5) escrever a mensagem de lembrete de sessão. Nenhuma das cinco tem registro do que aconteceu depois. Regina acha que a número 4 \"já é aprendizado\", porque ali a IA lê o que as clientes disseram.": [
+    "Regina, who owns an aesthetics clinic, uses AI for five things each week: (1) writing package proposals on WhatsApp; (2) answering “how much does it cost?” from people who find her on Instagram; (3) drafting Monday’s post caption; (4) summarizing customer reviews on Google; (5) writing appointment reminders. None of the five tracks what happens afterward. Regina thinks task 4 “already counts as learning” because AI reads what customers said.",
+    "Regina, dueña de una clínica estética, usa la IA para cinco tareas cada semana: (1) redactar propuestas de paquetes por WhatsApp; (2) responder «¿cuánto cuesta?» a quienes llegan por Instagram; (3) escribir el texto de la publicación del lunes; (4) resumir las reseñas de clientas en Google; (5) redactar recordatorios de citas. Ninguna registra qué ocurre después. Regina cree que la tarea 4 «ya es aprendizaje» porque la IA lee lo que dijeron las clientas."
+  ],
+  "Responda no papel ou no celular:": [
+    "Answer on paper or on your phone:",
+    "Responde en papel o en el móvil:"
+  ],
+  "Quais das cinco tarefas terminam ali?": [
+    "Which of the five tasks end there?",
+    "¿Cuáles de las cinco tareas terminan ahí?"
+  ],
+  "A tarefa 4 é um loop, como Regina pensa? Por quê?": [
+    "Is task 4 a loop, as Regina thinks? Why or why not?",
+    "¿La tarea 4 es un ciclo, como piensa Regina? ¿Por qué?"
+  ],
+  "Se você fosse Regina, qual das cinco escolheria para começar a registrar — e o que anotaria em cada linha?": [
+    "If you were Regina, which task would you start tracking — and what would you write in each row?",
+    "Si fueras Regina, ¿cuál de las cinco empezarías a registrar y qué anotarías en cada fila?"
+  ],
+  "Gabarito comentado (abra só depois de responder)": [
+    "Answer key with explanations (open only after answering)",
+    "Clave comentada (ábrela solo después de responder)"
+  ],
+  "As cinco. Todas seguem o caminho pedido → resposta → fim: nenhuma tem uma linha dizendo o que aconteceu depois (a proposta foi respondida? o post trouxe agendamento? a cliente do lembrete apareceu?).": [
+    "All five. They all follow the path request → response → done: none has a row saying what happened afterward (was the proposal answered? Did the post bring in an appointment? Did the customer show up after the reminder?).",
+    "Las cinco. Todas siguen el camino solicitud → respuesta → fin: ninguna tiene una fila que indique qué pasó después (¿respondieron a la propuesta?, ¿la publicación generó una cita?, ¿acudió la clienta a la cita recordada?)."
+  ],
+  "Não. Ler avaliações é um pedido que termina ali como os outros. Viraria loop se o que a IA leu virasse uma hipótese (\"clientes reclamam de espera: se a proposta disser o tempo de sessão, respondem mais?\"), fosse testado contra a versão atual e o resultado ficasse registrado. Ler não é aprender; mudar com prova é.": [
+    "No. Reading reviews is a request that ends there, just like the others. It would become a loop if what AI read became a hypothesis (“customers complain about the wait: if the proposal states the session length, will more of them reply?”), were tested against the current version, and the result were recorded. Reading is not learning; changing based on evidence is.",
+    "No. Leer reseñas es una solicitud que termina ahí, como las demás. Se convertiría en un ciclo si lo que leyó la IA generara una hipótesis («las clientas se quejan de la espera: si la propuesta indica cuánto dura la sesión, ¿responderán más?»), se probara frente a la versión actual y se registrara el resultado. Leer no es aprender; cambiar con pruebas, sí."
+  ],
+  "A melhor escolha é a mais frequente e com resultado fácil de ver: a proposta (1), com 200 por mês e a resposta chegando em horas. Por linha: data, versão da proposta, tipo de pacote, respondeu (sim/não), agendou (sim/não), reclamou (sim/não). A tarefa 3 (post) também vale, mas o resultado demora mais e é mais difícil de ligar ao texto.": [
+    "The best choice is the most frequent task with an easy-to-see result: proposals (1), with 200 a month and replies arriving within hours. Each row could include: date, proposal version, package type, replied (yes/no), booked (yes/no), complained (yes/no). Task 3 (the post) could work too, but the result takes longer and is harder to connect to the wording.",
+    "La mejor opción es la tarea más frecuente y con un resultado fácil de observar: las propuestas (1), con 200 al mes y respuestas en pocas horas. Cada fila podría incluir: fecha, versión de la propuesta, tipo de paquete, respondió (sí/no), reservó cita (sí/no), se quejó (sí/no). La tarea 3 (la publicación) también sirve, pero el resultado tarda más y es más difícil vincularlo con el texto."
+  ],
+  "Respondi as três perguntas antes de abrir o gabarito.": [
+    "I answered the three questions before opening the key.",
+    "Respondí las tres preguntas antes de abrir la clave."
+  ],
+  "Comparei minhas respostas com o gabarito e anotei onde diferi.": [
+    "I compared my answers with the key and noted where they differed.",
+    "Comparé mis respuestas con la clave y anoté en qué diferían."
+  ],
+  "Escrevi as cinco tarefas que a IA faz no meu negócio e que terminam ali — com a frase \"termina ali porque ninguém registra ___\".": [
+    "I wrote down five tasks AI does in my business that end there, using the phrase “it ends there because no one records ___.”",
+    "Escribí cinco tareas que la IA hace en mi negocio y que terminan ahí, usando la frase «termina ahí porque nadie registra ___»."
+  ],
+  "Você acabou de conseguir apontar, com uma frase cada, as tarefas que terminam ali — no caso de Regina e no seu negócio.": [
+    "You can now identify, in one sentence each, the tasks that end there — in Regina’s case and in your business.",
+    "Ahora puedes identificar, con una frase cada una, las tareas que terminan ahí, tanto en el caso de Regina como en tu negocio."
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "Hoje a IA trabalha em linha reta: alguém pede, ela responde, acabou. A vez seguinte começa do mesmo ponto.": [
+    "Today AI works in a straight line: someone asks, it answers, and that is the end. The next turn starts from the same point.",
+    "Hoy la IA trabaja en línea recta: alguien pide algo, responde y se acabó. El siguiente turno empieza en el mismo punto."
+  ],
+  "Isso não é defeito dela; é ausência de registro do que aconteceu depois da resposta.": [
+    "That is not a flaw in the AI; it is the lack of a record of what happened after the reply.",
+    "No es un defecto de la IA: falta registrar qué ocurrió después de la respuesta."
+  ],
+  "Melhorar exige seis ingredientes fechados em círculo — e nenhum deles é \"pedir com mais força\".": [
+    "Improvement requires six ingredients connected in a loop — and none of them is “asking more forcefully.”",
+    "Mejorar requiere seis ingredientes conectados en un ciclo, y ninguno consiste en «pedir con más insistencia»."
+  ],
+  "Um loop honesto não promete número maior; promete não piorar sem você saber, com botão de voltar.": [
+    "An honest loop does not promise a higher number; it promises that things will not get worse without your knowledge, and that there is a rollback button.",
+    "Un ciclo honesto no promete un número mayor; promete que nada empeorará sin que lo sepas y que habrá una opción para volver atrás."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de conseguir separar \"usa IA\" de \"aprende com a IA\" — e viu que quase tudo hoje é o primeiro.": [
+    "You can now distinguish “uses AI” from “learns with AI” — and you have seen that almost everything today is the first one.",
+    "Ahora puedes distinguir entre «usa IA» y «aprende con IA», y has visto que hoy casi todo pertenece al primer caso."
+  ],
+  "Nos próximos 15 minutos, abra o WhatsApp ou o e-mail de ontem e marque três respostas que a IA ajudou a escrever. Ao lado de cada uma, anote: \"sei o que aconteceu depois? sim / não\".": [
+    "In the next 15 minutes, open yesterday’s WhatsApp messages or email and mark three replies AI helped write. Next to each one, write: “Do I know what happened afterward? yes / no.”",
+    "En los próximos 15 minutos, abre los mensajes de WhatsApp o el correo de ayer y marca tres respuestas que ayudó a redactar la IA. Junto a cada una, anota: «¿Sé qué pasó después? sí/no»."
+  ],
+  "Na próxima aula, você faz a conta de quanto custa refazer do zero — e descobre por que 10.000 chamados atendidos podem não ensinar nada.": [
+    "In the next lesson, you will calculate the cost of starting from scratch — and find out why handling 10,000 support tickets may teach you nothing.",
+    "En la próxima clase calcularás cuánto cuesta volver a empezar desde cero y descubrirás por qué atender 10.000 consultas puede no enseñar nada."
+  ],
+  "← trilha": [
+    "← track",
+    "← ruta"
+  ],
+  "próxima: dez mil execuções e nenhum aprendizado →": [
+    "next: ten thousand runs and no learning →",
+    "siguiente: diez mil ejecuciones y ningún aprendizaje →"
+  ],
+  "Aula 1 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 1 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 1 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "Fig. 1&lt;/b&gt; O caminho tem quatro paradas e nenhuma volta: o que aconteceu depois da resposta não retorna ao pedido seguinte. A seta pontilhada, vazia, é o que falta.": [
+    "Fig. 1&lt;/b&gt; The path has four stops and no return: what happens after the reply does not flow into the next request. The empty dotted arrow shows what is missing.",
+    "Fig. 1&lt;/b&gt; El recorrido tiene cuatro paradas y ninguna vuelta: lo que ocurre después de la respuesta no llega a la siguiente solicitud. La flecha punteada y vacía muestra lo que falta."
+  ],
+  "Fig. 2&lt;/b&gt; Entre um pedido e o próximo há uma parede. O que aconteceu depois da resposta (respondeu? agendou? sumiu?) fica do lado de fora — e nunca entra na conversa seguinte.": [
+    "Fig. 2&lt;/b&gt; A wall stands between one request and the next. What happened after the reply (did they answer, book, or disappear?) stays outside and never enters the next conversation.",
+    "Fig. 2&lt;/b&gt; Entre una solicitud y la siguiente hay una pared. Lo que ocurrió después de responder (¿contestó, reservó una cita o desapareció?) queda fuera y nunca entra en la conversación siguiente."
+  ],
+  "Fig. 3&lt;/b&gt; Os seis ingredientes formam um circuito, não uma lista: a avaliação de hoje vira memória, e a memória alimenta a próxima hipótese. Se um elo falta, o círculo abre.": [
+    "Fig. 3&lt;/b&gt; The six ingredients form a circuit, not a list: today’s evaluation becomes memory, and memory feeds the next hypothesis. If one link is missing, the loop opens.",
+    "Fig. 3&lt;/b&gt; Los seis ingredientes forman un circuito, no una lista: la evaluación de hoy se convierte en memoria, y la memoria alimenta la siguiente hipótesis. Si falta un eslabón, el ciclo se abre."
+  ],
+  "Fig. 4&lt;/b&gt; O portão só abre com prova, e a seta de volta existe sempre. O que o loop garante está no portão e na seta — não no tamanho do número.": [
+    "Fig. 4&lt;/b&gt; The gate opens only with evidence, and the rollback arrow is always there. What the loop guarantees is in the gate and the arrow — not in the size of the number.",
+    "Fig. 4&lt;/b&gt; La puerta solo se abre con pruebas y la flecha para volver siempre está ahí. Lo que garantiza el ciclo está en la puerta y la flecha, no en el tamaño del número."
+  ],
+  "proposta 201 — folha em branco": [
+    "proposal 201 — a blank page",
+    "propuesta 201 — página en blanco"
+  ],
+  "humano": [
+    "person",
+    "persona"
+  ],
+  "pedido": [
+    "request",
+    "solicitud"
+  ],
+  "resposta": [
+    "reply",
+    "respuesta"
+  ],
+  "fim": [
+    "done",
+    "fin"
+  ],
+  "o que aconteceu depois? — não volta": [
+    "what happened next? — no return",
+    "¿qué pasó después? — no vuelve"
+  ],
+  "proposta 1 · 2 · 3 … 200 · 201": [
+    "proposal 1 · 2 · 3 … 200 · 201",
+    "propuesta 1 · 2 · 3 … 200 · 201"
+  ],
+  "cada uma começa aqui →": [
+    "each one starts here →",
+    "cada una empieza aquí →"
+  ],
+  "lead agendou": [
+    "lead booked",
+    "lead reservó"
+  ],
+  "cliente sumiu": [
+    "customer disappeared",
+    "la clienta desapareció"
+  ],
+  "fica do lado de fora": [
+    "stays outside",
+    "se queda fuera"
+  ],
+  "gira toda semana": [
+    "turns every week",
+    "gira cada semana"
+  ],
+  "versão oficial": [
+    "official version",
+    "versión oficial"
+  ],
+  "versão nova": [
+    "new version",
+    "versión nueva"
+  ],
+  "só entra com prova": [
+    "only enters with evidence",
+    "solo entra con pruebas"
+  ],
+  "voltar atrás: sempre": [
+    "rollback: always",
+    "volver atrás: siempre"
+  ],
+  "garantido: portão + seta · não garantido: o número": [
+    "guaranteed: gate + arrow · not guaranteed: the number",
+    "garantizado: puerta + flecha · no garantizado: el número"
+  ],
+  "Sua IA respondeu 80 leads este mês e o sócio pergunta: \"ela já aprendeu o que funciona?\". O que você responde — e o que precisaria existir para a resposta virar \"sim\"?": [
+    "Your AI replied to 80 leads this month, and your business partner asks, “Has it learned what works yet?” What do you answer — and what would need to exist for the answer to become “yes”?",
+    "La IA respondió a 80 leads este mes y tu socio pregunta: «¿Ya aprendió qué funciona?». ¿Qué respondes y qué tendría que existir para poder decir que sí?"
+  ],
+  "Não. Ela não vê o que acontece depois da resposta. Para virar \"sim\": registrar, por lead, o que aconteceu (respondeu? agendou?) e levar isso de volta ao próximo pedido.": [
+    "No. It does not see what happens after its reply. To make the answer “yes,” record what happened for each lead (did they reply? book?) and carry that into the next request.",
+    "No. No ve qué ocurre después de su respuesta. Para poder decir que sí, hay que registrar qué pasó con cada lead (¿respondió?, ¿reservó?) e incorporar ese dato a la siguiente solicitud."
+  ],
+  "Uma clínica ajusta a proposta \"na mão\" toda vez e sente que está melhorando — mas não consegue dizer qual mudança ajudou. Qual dos seis ingredientes está faltando primeiro?": [
+    "A clinic manually adjusts its proposal every time and feels it is improving — but cannot say which change helped. Which of the six ingredients is missing first?",
+    "Una clínica ajusta la propuesta a mano cada vez y siente que mejora, pero no puede decir qué cambio ayudó. ¿Cuál de los seis ingredientes falta primero?"
+  ],
+  "Evidência com métrica: sem uma linha por envio e um número (respondeu ou não), qualquer \"melhorou\" é impressão. Sem esse elo, os outros cinco não têm onde se apoiar.": [
+    "Evidence with a metric: without one row per send and a number (replied or not), any claim that it “improved” is an impression. Without this link, the other five have nothing to rest on.",
+    "Evidencia con una métrica: sin una fila por envío y una cifra (respondió o no), decir que «mejoró» es una impresión. Sin este eslabón, los otros cinco no tienen dónde apoyarse."
+  ],
+  "Qual a diferença entre \"a IA lê as avaliações das clientes\" e \"a IA aprende com as avaliações\"?": [
+    "What is the difference between “AI reads customer reviews” and “AI learns from the reviews”?",
+    "¿Qué diferencia hay entre «la IA lee las reseñas de las clientas» y «la IA aprende de las reseñas»?"
+  ],
+  "Ler é um pedido que termina ali. Aprender exige que o que ela leu vire hipótese, seja testado contra a versão atual e a mudança fique registrada na próxima versão.": [
+    "Reading is a request that ends there. Learning requires turning what it read into a hypothesis, testing it against the current version, and recording the change in the next version.",
+    "Leer es una solicitud que termina ahí. Aprender exige convertir lo leído en una hipótesis, probarla frente a la versión actual y registrar el cambio en la siguiente versión."
+  ],
+  "Um fornecedor diz: \"garanto que sua taxa de resposta sobe\". Qual das quatro garantias honestas ele deveria ter oferecido no lugar?": [
+    "A vendor says, “I guarantee your response rate will rise.” Which of the four honest guarantees should they have offered instead?",
+    "Un proveedor dice: «Te garantizo que aumentará la tasa de respuesta». ¿Cuál de las cuatro garantías honestas debería haber ofrecido en su lugar?"
+  ],
+  "Nenhuma delas é \"sobe\". As honestas: versão pior não entra por decisão do sistema; tudo registrado com volta; ciclo constante; custo dentro do teto.": [
+    "None of them is “it will rise.” The honest guarantees: the system will not put a worse version into production; everything is recorded and reversible; the cycle is consistent; costs stay under the limit.",
+    "Ninguna dice «aumentará». Las garantías honestas: el sistema no publica una versión peor; todo queda registrado y se puede revertir; el ciclo es constante; el costo respeta el límite."
+  ],
+  "Você tem 20 minutos com um gestor de suporte. Que pergunta faz para descobrir se os chamados dele \"terminam ali\"?": [
+    "You have 20 minutes with a support manager. What would you ask to find out whether their tickets “end there”?",
+    "Tienes 20 minutos con un gestor de soporte. ¿Qué le preguntarías para saber si sus consultas «terminan ahí»?"
+  ],
+  "\"Depois de responder um chamado, alguém anota sobre o que era e se ele voltou?\" Se a resposta é não, cada chamado é o primeiro — 10.000 vezes.": [
+    "“After someone replies to a ticket, does anyone record its topic and whether it came back?” If the answer is no, every ticket is the first one — 10,000 times.",
+    "«Después de responder una consulta, ¿alguien anota de qué trataba y si volvió?» Si la respuesta es no, cada consulta es la primera, 10.000 veces."
+  ],
+  "<b>Fig. 1</b> O caminho tem quatro paradas e nenhuma volta: o que aconteceu depois da resposta não retorna ao pedido seguinte. A seta pontilhada, vazia, é o que falta.": [
+    "<b>Fig. 1</b> The path has four stops and no return: what happens after the reply does not flow into the next request. The empty dotted arrow shows what is missing.",
+    "<b>Fig. 1</b> El recorrido tiene cuatro paradas y ninguna vuelta: lo que ocurre después de la respuesta no llega a la siguiente solicitud. La flecha punteada y vacía muestra lo que falta."
+  ],
+  "<b>Fig. 2</b> Entre um pedido e o próximo há uma parede. O que aconteceu depois da resposta (respondeu? agendou? sumiu?) fica do lado de fora — e nunca entra na conversa seguinte.": [
+    "<b>Fig. 2</b> A wall stands between one request and the next. What happened after the reply (did they answer, book, or disappear?) stays outside and never enters the next conversation.",
+    "<b>Fig. 2</b> Entre una solicitud y la siguiente hay una pared. Lo que ocurrió después de responder (¿contestó, reservó una cita o desapareció?) queda fuera y nunca entra en la conversación siguiente."
+  ],
+  "<b>Fig. 3</b> Os seis ingredientes formam um circuito, não uma lista: a avaliação de hoje vira memória, e a memória alimenta a próxima hipótese. Se um elo falta, o círculo abre.": [
+    "<b>Fig. 3</b> The six ingredients form a circuit, not a list: today’s evaluation becomes memory, and memory feeds the next hypothesis. If one link is missing, the loop opens.",
+    "<b>Fig. 3</b> Los seis ingredientes forman un circuito, no una lista: la evaluación de hoy se convierte en memoria, y la memoria alimenta la siguiente hipótesis. Si falta un eslabón, el ciclo se abre."
+  ],
+  "<b>Fig. 4</b> O portão só abre com prova, e a seta de volta existe sempre. O que o loop garante está no portão e na seta — não no tamanho do número.": [
+    "<b>Fig. 4</b> The gate opens only with evidence, and the rollback arrow is always there. What the loop guarantees is in the gate and the arrow — not in the size of the number.",
+    "<b>Fig. 4</b> La puerta solo se abre con pruebas y la flecha para volver siempre está ahí. Lo que garantiza el ciclo está en la puerta y la flecha, no en el tamaño del número."
+  ],
+  "No. Cada pedido começa do zero; ela nunca vê o que aconteceu depois da resposta — se o lead agendou ou sumiu.": [
+    "No. Every request starts from scratch; AI never sees what happened after its reply — whether the lead booked a visit or disappeared.",
+    "No. Cada solicitud empieza desde cero; la IA nunca ve qué pasó después de responder: si el lead concertó una visita o desapareció."
+  ],
+  "Fig. 1": [
+    "Fig. 1",
+    "Fig. 1"
+  ],
+  "Fig. 2": [
+    "Fig. 2",
+    "Fig. 2"
+  ],
+  "Fig. 3": [
+    "Fig. 3",
+    "Fig. 3"
+  ],
+  "Fig. 4": [
+    "Fig. 4",
+    "Fig. 4"
+  ],
+  "Fig. 1 — O caminho tem quatro paradas e nenhuma volta: o que aconteceu depois da resposta não retorna ao pedido seguinte. A seta pontilhada, vazia, é o que falta.": [
+    "Fig. 1 — The path has four stops and no return: what happens after the reply does not flow into the next request. The empty dotted arrow shows what is missing.",
+    "Fig. 1 — El recorrido tiene cuatro paradas y ninguna vuelta: lo que ocurre después de la respuesta no llega a la siguiente solicitud. La flecha punteada y vacía muestra lo que falta."
+  ],
+  "Fig. 2 — Entre um pedido e o próximo há uma parede. O que aconteceu depois da resposta (respondeu? agendou? sumiu?) fica do lado de fora — e nunca entra na conversa seguinte.": [
+    "Fig. 2 — A wall stands between one request and the next. What happened after the reply (did they answer, book, or disappear?) stays outside and never enters the next conversation.",
+    "Fig. 2 — Entre una solicitud y la siguiente hay una pared. Lo que ocurrió después de responder (¿contestó, reservó una cita o desapareció?) queda fuera y nunca entra en la conversación siguiente."
+  ],
+  "Fig. 3 — Os seis ingredientes formam um circuito, não uma lista: a avaliação de hoje vira memória, e a memória alimenta a próxima hipótese. Se um elo falta, o círculo abre.": [
+    "Fig. 3 — The six ingredients form a circuit, not a list: today’s evaluation becomes memory, and memory feeds the next hypothesis. If one link is missing, the loop opens.",
+    "Fig. 3 — Los seis ingredientes forman un circuito, no una lista: la evaluación de hoy se convierte en memoria, y la memoria alimenta la siguiente hipótesis. Si falta un eslabón, el ciclo se abre."
+  ],
+  "Fig. 4 — O portão só abre com prova, e a seta de volta existe sempre. O que o loop garante está no portão e na seta — não no tamanho do número.": [
+    "Fig. 4 — The gate opens only with evidence, and the rollback arrow is always there. What the loop guarantees is in the gate and the arrow — not in the size of the number.",
+    "Fig. 4 — La puerta solo se abre con pruebas y la flecha para volver siempre está ahí. Lo que garantiza el ciclo está en la puerta y la flecha, no en el tamaño del número."
+  ],
+  "Sua IA respondeu 80 leads este mês e o sócio pergunta: \\\"ela já aprendeu o que funciona?\\\". O que você responde — e o que precisaria existir para a resposta virar \\\"sim\\\"?": [
+    "Your AI replied to 80 leads this month, and your business partner asks, \\\"Has it learned what works yet?\\\" What do you answer, and what would need to exist for the answer to become \\\"yes\\\"?",
+    "La IA respondió a 80 leads este mes y tu socio pregunta: «¿Ya aprendió qué funciona?». ¿Qué respondes y qué tendría que existir para poder decir que sí?"
+  ],
+  "Não. Ela não vê o que acontece depois da resposta. Para virar \\\"sim\\\": registrar, por lead, o que aconteceu (respondeu? agendou?) e levar isso de volta ao próximo pedido.": [
+    "No. It does not see what happens after its reply. To make the answer \\\"yes,\\\" record what happened for each lead (did they reply? book?) and carry it into the next request.",
+    "No. No ve qué ocurre después de su respuesta. Para poder decir que sí, hay que registrar qué pasó con cada lead (¿respondió?, ¿reservó?) e incorporar ese dato a la siguiente solicitud."
+  ],
+  "Uma clínica ajusta a proposta \\\"na mão\\\" toda vez e sente que está melhorando — mas não consegue dizer qual mudança ajudou. Qual dos seis ingredientes está faltando primeiro?": [
+    "A clinic manually adjusts its proposal every time and feels it is improving — but cannot say which change helped. Which of the six ingredients is missing first?",
+    "Una clínica ajusta la propuesta a mano cada vez y siente que mejora, pero no puede decir qué cambio ayudó. ¿Cuál de los seis ingredientes falta primero?"
+  ],
+  "Evidência com métrica: sem uma linha por envio e um número (respondeu ou não), qualquer \\\"melhorou\\\" é impressão. Sem esse elo, os outros cinco não têm onde se apoiar.": [
+    "Evidence with a metric: without one row per send and a number (replied or not), any claim that it \\\"improved\\\" is an impression. Without this link, the other five have nothing to rest on.",
+    "Evidencia con una métrica: sin una fila por envío y una cifra (respondió o no), decir que \\\"mejoró\\\" es una impresión. Sin este eslabón, los otros cinco no tienen dónde apoyarse."
+  ],
+  "Qual a diferença entre \\\"a IA lê as avaliações das clientes\\\" e \\\"a IA aprende com as avaliações\\\"?": [
+    "What is the difference between \\\"AI reads customer reviews\\\" and \\\"AI learns from the reviews\\\"?",
+    "¿Qué diferencia hay entre «la IA lee las reseñas de las clientas» y «la IA aprende de las reseñas»?"
+  ],
+  "Um fornecedor diz: \\\"garanto que sua taxa de resposta sobe\\\". Qual das quatro garantias honestas ele deveria ter oferecido no lugar?": [
+    "A vendor says, \\\"I guarantee your response rate will rise.\\\" Which of the four honest guarantees should they have offered instead?",
+    "Un proveedor dice: «Te garantizo que aumentará la tasa de respuesta». ¿Cuál de las cuatro garantías honestas debería haber ofrecido en su lugar?"
+  ],
+  "Nenhuma delas é \\\"sobe\\\". As honestas: versão pior não entra por decisão do sistema; tudo registrado com volta; ciclo constante; custo dentro do teto.": [
+    "None of them is \\\"it will rise.\\\" The honest guarantees: the system will not put a worse version into production; everything is recorded and reversible; the cycle is consistent; costs stay under the limit.",
+    "Ninguna dice «aumentará». Las garantías honestas: el sistema no publica una versión peor; todo queda registrado y se puede revertir; el ciclo es constante; el costo respeta el límite."
+  ],
+  "Você tem 20 minutos com um gestor de suporte. Que pergunta faz para descobrir se os chamados dele \\\"terminam ali\\\"?": [
+    "You have 20 minutes with a support manager. What would you ask to find out whether their tickets \\\"end there\\\"?",
+    "Tienes 20 minutos con un gestor de soporte. ¿Qué le preguntarías para saber si sus consultas «terminan ahí»?"
+  ],
+  "\\\"Depois de responder um chamado, alguém anota sobre o que era e se ele voltou?\\\" Se a resposta é não, cada chamado é o primeiro — 10.000 vezes.": [
+    "\\\"After someone replies to a ticket, does anyone record its topic and whether it came back?\\\" If the answer is no, every ticket is the first one — 10,000 times.",
+    "«Después de responder una consulta, ¿alguien anota de qué trataba y si volvió?» Si la respuesta es no, cada consulta es la primera, 10.000 veces."
+  ]
+}

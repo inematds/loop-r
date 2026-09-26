@@ -1,0 +1,430 @@
+{
+  "Trilha 04 · Aula 1": [
+    "Track 04 · Lesson 1",
+    "Ruta 04 · Clase 1"
+  ],
+  "O loop que aprende": [
+    "The loop that learns",
+    "El ciclo que aprende"
+  ],
+  "a": [
+    "to",
+    "a"
+  ],
+  "trapacear": [
+    "to game the target",
+    "hacer trampa"
+  ],
+  "Ao fim desta aula você consegue pegar uma meta do seu negócio e escrever, em uma linha, o que a IA faria para inflar o número sem melhorar nada — e quais dois números você vai vigiar para impedir.": [
+    "By the end of this lesson, you will be able to take a business target and write, in one line, what AI might do to inflate the number without improving anything—and which two metrics you will monitor to prevent it.",
+    "Al terminar esta clase, podrás tomar una meta de tu negocio y escribir, en una línea, qué haría la IA para inflar la cifra sin mejorar nada y qué dos indicadores vigilarás para impedirlo."
+  ],
+  "Toda meta dada sozinha a um sistema que aprende vira alvo. \"Responder mais rápido\" vira encerrar sem resolver; \"vender mais\" vira desconto até a margem sumir. Isso não é defeito da IA: é o que qualquer funcionário faria se fosse cobrado por um número só. Antes de medir de verdade, você precisa saber onde a medida trapaceia.": [
+    "Any target given alone to a learning system becomes something to game. “Reply faster” turns into closing tickets without resolving them; “sell more” turns into discounting until the margin disappears. This is not an AI flaw: it is what any employee might do when judged by a single number. Before measuring for real, you need to know how the measure can be gamed.",
+    "Toda meta que se dá a un sistema que aprende se convierte en un objetivo para hacer trampa. «Responder más rápido» se transforma en cerrar tickets sin resolverlos; «vender más», en ofrecer descuentos hasta que desaparece el margen. No es un defecto de la IA: es lo que haría cualquier empleado si se le exigiera una sola cifra. Antes de medir de verdad, debes saber cómo se puede manipular la medida."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "o ponteiro subiu. a clínica, não.": [
+    "the needle went up. The clinic did not.",
+    "la aguja subió. La clínica, no."
+  ],
+  "Uma meta sozinha ensina a trapacear": [
+    "A target on its own teaches the system to cheat",
+    "Una meta por sí sola enseña a hacer trampa"
+  ],
+  "Existe uma regra antiga em qualquer empresa: quando uma medida vira meta, ela deixa de medir. Não porque as pessoas sejam desonestas — porque elas são inteligentes. Se você paga por número de atendimentos, os atendimentos ficam curtos. Um sistema que aprende faz exatamente a mesma coisa, só que mais rápido e sem culpa.": [
+    "There is an old rule in every business: when a measure becomes a target, it stops measuring. Not because people are dishonest, but because they are smart. If you pay by the number of support interactions, those interactions get shorter. A learning system does the same thing, only faster and without guilt.",
+    "Hay una regla antigua en toda empresa: cuando una medida se convierte en meta, deja de medir. No porque la gente sea deshonesta, sino porque es inteligente. Si pagas por la cantidad de atenciones, las atenciones se vuelven más breves. Un sistema que aprende hace lo mismo, solo que más rápido y sin culpa."
+  ],
+  "No LOOP-R, a": [
+    "In LOOP-R, the",
+    "En LOOP-R, la"
+  ],
+  "métrica-alvo": [
+    "target metric",
+    "métrica objetivo"
+  ],
+  "é o número que você mandou o loop subir. Se for o único número que ele olha, ele vai achar o caminho mais curto até ele — e o caminho mais curto quase nunca passa por atender melhor.": [
+    "is the number you asked the loop to increase. If it is the only number it watches, it will find the shortest path to it—and that path rarely means serving people better.",
+    "es la cifra que le pediste aumentar al ciclo. Si es la única que observa, encontrará el camino más corto para subirla, y ese camino casi nunca consiste en atender mejor."
+  ],
+  "A dona de uma clínica de estética pede: \"aumente a taxa de resposta das propostas\". Três ciclos depois a taxa subiu de 20% para 34%. Ela abre as conversas e descobre o motivo: a versão nova manda uma segunda mensagem no dia seguinte, e boa parte das \"respostas\" é \"por favor, pare de me mandar isso\". Contou como resposta. O ponteiro subiu; a clínica, não.": [
+    "The owner of a beauty clinic asks, “increase the proposal response rate.” Three cycles later, it has risen from 20% to 34%. She opens the conversations and finds out why: the new version sends a second message the next day, and many of the “replies” say, “please stop sending me this.” They counted as responses. The needle went up; the clinic did not.",
+    "La dueña de una clínica estética pide: «aumenta la tasa de respuesta a las propuestas». Tres ciclos después, subió del 20 % al 34 %. Revisa las conversaciones y descubre por qué: la nueva versión envía un segundo mensaje al día siguiente y muchas «respuestas» dicen «por favor, deja de enviarme esto». También cuentan como respuesta. La aguja subió; la clínica, no."
+  ],
+  "As trapaças têm três formas conhecidas": [
+    "Cheating takes three familiar forms",
+    "Las trampas tienen tres formas conocidas"
+  ],
+  "Você não precisa imaginar todas as trapaças possíveis. Elas se repetem. Peça para maximizar cliques e o loop aprende a fazer título-isca. Peça para minimizar o tempo de atendimento e ele aprende a encerrar rápido sem resolver. Peça para maximizar vendas e ele aprende a dar desconto até a margem sumir. Peça para maximizar respostas e ele aprende a provocar.": [
+    "You do not need to imagine every possible way to cheat. The same patterns repeat. Ask for maximum clicks and the loop learns clickbait. Ask it to minimize handling time and it learns to close tickets quickly without resolving them. Ask for more sales and it learns to discount until the margin disappears. Ask for more replies and it learns to provoke people.",
+    "No hace falta imaginar todas las trampas posibles; se repiten. Pide maximizar los clics y el ciclo aprende a crear titulares engañosos. Pide reducir el tiempo de atención y aprende a cerrar rápido sin resolver. Pide maximizar las ventas y aprende a ofrecer descuentos hasta borrar el margen. Pide maximizar las respuestas y aprende a provocar."
+  ],
+  "Repare no padrão: em todas, o número pedido sobe de verdade. A trapaça não está no número — está no que ficou de fora dele.": [
+    "Notice the pattern: in every case, the requested number really does go up. The trick is not in the number; it is in what the number leaves out.",
+    "Observa el patrón: en todos los casos, la cifra solicitada realmente sube. La trampa no está en la cifra, sino en lo que se quedó fuera."
+  ],
+  "A gestora de suporte de uma empresa de software pequena colocou como meta \"tempo médio por chamado, de 18 para 10 minutos\". Em duas semanas chegou a 9. Só que os chamados encerrados em 2 minutos voltavam a abrir no dia seguinte, e a nota de satisfação caiu de 4,3 para 3,6. Nada disso apareceu no painel dela, porque o painel só mostrava o tempo.": [
+    "A support manager at a small software company set a target of “average ticket time, from 18 to 10 minutes.” In two weeks it reached 9. But tickets closed in 2 minutes reopened the next day, and satisfaction fell from 4.3 to 3.6. None of this appeared on her dashboard, which showed only time.",
+    "La responsable de soporte de una pequeña empresa de software fijó la meta de «tiempo medio por ticket: de 18 a 10 minutos». En dos semanas llegó a 9. Pero los tickets cerrados en 2 minutos se reabrían al día siguiente y la satisfacción bajó de 4,3 a 3,6. Nada de eso aparecía en su panel, que solo mostraba el tiempo."
+  ],
+  "Antes — meta nua": [
+    "Before—a bare target",
+    "Antes: una meta desnuda"
+  ],
+  "\"Tempo médio por chamado: de 18 para 10 minutos.\" Um chamado encerrado em 2 minutos e reaberto amanhã": [
+    "“Average ticket time: from 18 to 10 minutes.” A ticket closed in 2 minutes and reopened tomorrow",
+    "«Tiempo medio por ticket: de 18 a 10 minutos». Un ticket cerrado en 2 minutos que se reabre mañana"
+  ],
+  "soma a favor": [
+    "counts in favor",
+    "cuenta a favor"
+  ],
+  "da meta.": [
+    "of the target.",
+    "de la meta."
+  ],
+  "Depois — meta com vigiados": [
+    "After—a target with guardrails",
+    "Después: una meta con indicadores de seguridad"
+  ],
+  "\"De 18 para 10 minutos": [
+    "“From 18 to 10 minutes",
+    "«De 18 a 10 minutos"
+  ],
+  "sem piorar": [
+    "without worsening",
+    "sin empeorar"
+  ],
+  "a reabertura em 7 dias (hoje 9%) nem a satisfação (hoje 4,3).\" O mesmo chamado agora": [
+    "7-day reopenings (currently 9%) or satisfaction (currently 4.3).” The same ticket now",
+    "las reaperturas a 7 días (hoy 9 %) ni la satisfacción (hoy 4,3)». El mismo ticket ahora"
+  ],
+  "soma contra": [
+    "counts against it",
+    "cuenta en contra"
+  ],
+  "Saldo:": [
+    "Takeaway:",
+    "Balance:"
+  ],
+  "a mesma meta, o mesmo painel — e \"encerrar sem resolver\" deixou de ser um atalho para virar uma reprovação automática.": [
+    "the same target and dashboard—but “close without resolving” is no longer a shortcut; it automatically fails.",
+    "la misma meta y el mismo panel, pero «cerrar sin resolver» dejó de ser un atajo y ahora implica un rechazo automático."
+  ],
+  "A forma obrigatória: maximizar X sem piorar Y, Z, W": [
+    "The required format: maximize X without worsening Y, Z, W",
+    "La forma obligatoria: maximizar X sin empeorar Y, Z, W"
+  ],
+  "No LOOP-R, uma meta nunca vem sozinha. Toda métrica-alvo vem acompanhada de pelo menos um número que não pode cair — um": [
+    "In LOOP-R, a target never stands alone. Every target metric is paired with at least one number that must not fall—a",
+    "En LOOP-R, una meta nunca va sola. Toda métrica objetivo viene acompañada de al menos una cifra que no puede bajar: un"
+  ],
+  "guarda-corpo": [
+    "guardrail",
+    "indicador de seguridad"
+  ],
+  " .": [
+    ".",
+    "."
+  ],
+  "Existem vigiados típicos por área. Em vendas: margem média, reclamações, descadastro, desconto médio. Em atendimento: satisfação, reabertura em 7 dias, tempo gasto pelo cliente. Em conteúdo: tempo na página, descadastro, denúncias. Você não precisa vigiar todos — precisa vigiar os que a trapaça mais provável tocaria.": [
+    "Typical guardrails vary by area. Sales: average margin, complaints, unsubscribes, average discount. Support: satisfaction, 7-day reopenings, customer effort. Content: time on page, unsubscribes, reports. You do not need to watch them all—only those most likely to be affected by the shortcut.",
+    "Los indicadores de seguridad habituales dependen del área. Ventas: margen medio, quejas, bajas, descuento medio. Atención: satisfacción, reaperturas en 7 días, esfuerzo del cliente. Contenido: tiempo en la página, bajas, denuncias. No hace falta vigilarlos todos, sino los que probablemente afectaría la trampa."
+  ],
+  "Um corretor de imóveis que responde": [
+    "A real estate agent who replies to",
+    "Un agente inmobiliario que responde a"
+  ],
+  "leads de portal": [
+    "portal leads",
+    "contactos del portal"
+  ],
+  "escreve: \"maximizar visitas agendadas por lead, sem piorar a taxa de visita em que o cliente não aparece, nem o desconto médio oferecido\". Agora, se a versão nova agenda mais visitas prometendo desconto na conversa, o desconto médio sobe — e a versão reprova, mesmo com a agenda cheia.": [
+    "writes: “maximize booked visits per lead without worsening the no-show rate or average discount offered.” If the new version books more visits by promising discounts in conversation, the average discount rises—and the version fails, even with a full calendar.",
+    "escribe: «maximizar las visitas concertadas por contacto sin empeorar la tasa de ausencias ni el descuento medio ofrecido». Si la nueva versión agenda más visitas prometiendo descuentos durante la conversación, sube el descuento medio y la versión se rechaza, aunque la agenda esté llena."
+  ],
+  "Dois assistentes do loop usam essa frase. O Guardião veta qualquer hipótese que proponha mexer num vigiado. O Avaliador reprova qualquer versão que suba X e piore um vigiado além da tolerância — mesmo que X tenha subido muito. Se a resposta sobe 40% e a margem cai 1% com tolerância zero, a resposta é \"A segue\". Sem exceção.": [
+    "Two loop assistants use this statement. The Guardian vetoes any hypothesis that proposes changing a guardrail. The Evaluator rejects any version that raises X but worsens a guardrail beyond tolerance—even if X rose a lot. If replies rise 40% and margin falls 1% with zero tolerance, the answer is “A stays.” No exceptions.",
+    "Dos asistentes del ciclo utilizan esta frase. El Guardián veta cualquier hipótesis que proponga tocar un indicador de seguridad. El Evaluador rechaza toda versión que suba X y empeore un indicador más allá de la tolerancia, aunque X haya subido mucho. Si las respuestas suben un 40 % y el margen cae un 1 % con tolerancia cero, la respuesta es «A sigue». Sin excepciones."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "A versão B subiu a taxa de resposta em 40%. A margem média caiu 1%, e a tolerância do vigiado \"margem\" é zero. O que o Avaliador responde?": [
+    "Version B raised the response rate by 40%. Average margin fell 1%, and the tolerance for the “margin” guardrail is zero. What does the Evaluator answer?",
+    "La versión B elevó la tasa de respuesta un 40 %. El margen medio cayó un 1 % y la tolerancia del indicador «margen» es cero. ¿Qué responde el Evaluador?"
+  ],
+  "B ganhou — o ganho de 40% compensa 1% de margem": [
+    "B won—the 40% gain offsets a 1% margin drop",
+    "B ganó: el aumento del 40 % compensa la caída del margen del 1 %"
+  ],
+  "A segue — a versão atual continua oficial": [
+    "A stays—the current version remains official",
+    "A sigue: la versión actual continúa vigente"
+  ],
+  "Esperar mais duas semanas": [
+    "Wait two more weeks",
+    "Esperar dos semanas más"
+  ],
+  "A própria contagem pode trapacear": [
+    "The count itself can be gamed",
+    "El propio recuento puede hacer trampa"
+  ],
+  "Há uma trapaça mais silenciosa que as três anteriores: a que acontece na definição do número. \"Resposta\" conta o quê, exatamente? Se contar qualquer mensagem de volta, \"pare de me mandar isso\" é uma resposta. Se \"resolvido\" contar qualquer chamado encerrado, um chamado encerrado à força está resolvido.": [
+    "There is a quieter trick than the three above: it happens in the definition of the number. What exactly counts as a “reply”? If any message back counts, “stop sending me this” is a reply. If “resolved” means any closed ticket, a forcibly closed ticket counts as resolved.",
+    "Hay una trampa más silenciosa que las anteriores: la definición de la cifra. ¿Qué cuenta exactamente como «respuesta»? Si cuenta cualquier mensaje de vuelta, «deja de enviarme esto» es una respuesta. Si «resuelto» significa cualquier ticket cerrado, un ticket cerrado a la fuerza cuenta como resuelto."
+  ],
+  "Por isso a definição da métrica faz parte da ficha do loop, e não é um detalhe: \"resposta\" tem que excluir resposta negativa; \"resolvido\" tem que excluir reaberto em 7 dias. O Observador — o assistente que conta — confere se a planilha de registro está consistente com essa definição antes de somar qualquer coisa.": [
+    "That is why the metric definition belongs on the loop worksheet; it is not a detail. “Reply” must exclude negative replies; “resolved” must exclude tickets reopened within 7 days. The Observer—the assistant that counts—checks that the log matches this definition before adding anything up.",
+    "Por eso la definición de la métrica forma parte de la ficha del ciclo; no es un detalle. «Respuesta» debe excluir las negativas; «resuelto» debe excluir lo que se reabre en 7 días. El Observador —el asistente que cuenta— comprueba que el registro coincida con esa definición antes de sumar nada."
+  ],
+  "Na clínica, a coluna \"respondeu\" da planilha de registro ganhou uma vizinha: \"resposta positiva (sim/não)\". Na empresa de software, a coluna \"encerrado em\" ganhou \"reaberto até 7 dias depois (sim/não)\". Duas colunas a mais, e as duas trapaças do começo desta aula deixaram de existir na contagem.": [
+    "At the clinic, the “replied” column in the log gained a neighbor: “positive reply (yes/no).” At the software company, “closed on” gained “reopened within 7 days (yes/no).” Two extra columns, and both tricks from the start of this lesson disappeared from the count.",
+    "En la clínica, la columna «respondió» del registro añadió una vecina: «respuesta positiva (sí/no)». En la empresa de software, «cerrado el» añadió «reabierto antes de 7 días (sí/no)». Dos columnas adicionales y las dos trampas del comienzo de esta clase desaparecieron del recuento."
+  ],
+  "Uma meta sem \"sem piorar\" não é uma meta. É um convite.": [
+    "A target without guardrails is not a target. It is an invitation.",
+    "Una meta sin indicadores de «sin empeorar» no es una meta. Es una invitación."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/4 feito": [
+    "0/4 complete",
+    "0/4 completados"
+  ],
+  "Ache a trapaça em três metas": [
+    "Find the trick in three targets",
+    "Encuentra la trampa en tres metas"
+  ],
+  "Para cada meta abaixo, escreva a trapaça mais provável e dois números vigiados. ~10 min. É análise, não execução, porque rodar um loop até ele trapacear levaria semanas — o caso pronto mostra em minutos o que você precisa reconhecer.": [
+    "For each target below, write the most likely trick and two guardrails. About 10 minutes. This is analysis, not execution: running a loop until it cheats would take weeks; the completed case shows in minutes what you need to recognize.",
+    "Para cada meta, escribe la trampa más probable y dos indicadores de seguridad. Unos 10 minutos. Es un análisis, no una ejecución: dejar que un ciclo haga trampa tomaría semanas; el caso resuelto muestra en minutos qué debes reconocer."
+  ],
+  "Nada muda no seu negócio até você aprovar: você está escrevendo num papel, não na ficha do loop. Se uma resposta sua não bater com o gabarito, compare o raciocínio — há mais de uma trapaça possível por meta, e mais de um vigiado certo.": [
+    "Nothing in your business changes until you approve it: you are writing on paper, not on the loop worksheet. If your answer differs from the key, compare the reasoning—each target can have more than one possible trick and more than one valid guardrail.",
+    "Nada cambia en tu negocio hasta que lo apruebes: estás escribiendo en un papel, no en la ficha del ciclo. Si tu respuesta difiere de la clave, compara el razonamiento: puede haber más de una trampa posible y más de un indicador válido para cada meta."
+  ],
+  "Meta 1 — Renata, dona da clínica de estética.": [
+    "Target 1—Renata, beauty clinic owner.",
+    "Meta 1: Renata, dueña de una clínica estética."
+  ],
+  "\"Quero dobrar o número de propostas que recebem resposta no WhatsApp.\"": [
+    "“I want to double the number of proposals that get a reply on WhatsApp.”",
+    "«Quiero duplicar la cantidad de propuestas que reciben respuesta por WhatsApp»."
+  ],
+  "Meta 2 — Marcos, corretor de imóveis.": [
+    "Target 2—Marcos, real estate agent.",
+    "Meta 2: Marcos, agente inmobiliario."
+  ],
+  "\"Quero mais visitas agendadas por lead que chega do portal.\"": [
+    "“I want more visits booked per lead from the portal.”",
+    "«Quiero más visitas concertadas por cada contacto que llega del portal»."
+  ],
+  "Meta 3 — Paula, gestora de suporte.": [
+    "Target 3—Paula, support manager.",
+    "Meta 3: Paula, responsable de soporte."
+  ],
+  "\"Quero baixar o tempo médio de cada chamado.\"": [
+    "“I want to reduce the average time per ticket.”",
+    "«Quiero reducir el tiempo medio de cada ticket»."
+  ],
+  "Para a Meta 1, escrevi a trapaça em uma linha e dois vigiados.": [
+    "For Target 1, I wrote the trick in one line and named two guardrails.",
+    "Para la meta 1, escribí la trampa en una línea y dos indicadores."
+  ],
+  "Para a Meta 2, escrevi a trapaça em uma linha e dois vigiados.": [
+    "For Target 2, I wrote the trick in one line and named two guardrails.",
+    "Para la meta 2, escribí la trampa en una línea y dos indicadores."
+  ],
+  "Para a Meta 3, escrevi a trapaça em uma linha e dois vigiados.": [
+    "For Target 3, I wrote the trick in one line and named two guardrails.",
+    "Para la meta 3, escribí la trampa en una línea y dos indicadores."
+  ],
+  "Comparei minhas três respostas com o gabarito abaixo.": [
+    "I compared my three answers with the key below.",
+    "Comparé mis tres respuestas con la clave de abajo."
+  ],
+  "Gabarito comentado": [
+    "Annotated answer key",
+    "Clave comentada"
+  ],
+  "Meta 1 (clínica).": [
+    "Target 1 (clinic).",
+    "Meta 1 (clínica)."
+  ],
+  "Meta 2 (corretor).": [
+    "Target 2 (real estate agent).",
+    "Meta 2 (agente inmobiliario)."
+  ],
+  "Meta 3 (suporte).": [
+    "Target 3 (support).",
+    "Meta 3 (soporte)."
+  ],
+  "Trapaça: insistir (segunda e terceira mensagem) ou provocar, porque \"pare de me mandar\" conta como resposta. Vigiados: reclamações e descadastro (quem pede para não receber mais). Extra: definir \"resposta\" como resposta positiva na planilha.": [
+    "Trick: keep messaging (second and third messages) or provoke, because “stop sending me this” counts as a reply. Guardrails: complaints and unsubscribes (requests to stop receiving messages). Extra: define “reply” as a positive reply in the log.",
+    "Trampa: insistir (segundo y tercer mensaje) o provocar, porque «deja de enviarme esto» cuenta como respuesta. Indicadores: quejas y bajas. Extra: definir «respuesta» como respuesta positiva en el registro."
+  ],
+  "Trapaça: agendar a qualquer custo — prometer desconto ou \"só dar uma olhadinha\", o que enche a agenda de visitas que não acontecem. Vigiados: taxa de visita em que o cliente não aparece e desconto médio prometido. Alternativa aceitável: proposta fechada por visita.": [
+    "Trick: book at any cost—promise a discount or say “just come take a look,” filling the calendar with visits that never happen. Guardrails: no-show rate and average discount promised. Acceptable alternative: proposals closed per visit.",
+    "Trampa: agendar a cualquier costo, prometiendo descuentos o diciendo «solo ven a mirar», lo que llena la agenda de visitas que no se concretan. Indicadores: tasa de ausencias y descuento medio prometido. Alternativa válida: propuestas cerradas por visita."
+  ],
+  "Trapaça: encerrar rápido sem resolver. Vigiados: reabertura em 7 dias e satisfação. Extra: \"resolvido\" precisa excluir reaberto.": [
+    "Trick: close tickets quickly without resolving them. Guardrails: 7-day reopenings and satisfaction. Extra: “resolved” must exclude reopened tickets.",
+    "Trampa: cerrar rápido sin resolver. Indicadores: reaperturas a 7 días y satisfacción. Extra: «resuelto» debe excluir lo que se reabre."
+  ],
+  "Se você escreveu um vigiado diferente, pergunte: \"a trapaça que eu descrevi tocaria nesse número?\". Se sim, está certo.": [
+    "If you chose a different guardrail, ask: “Would the trick I described affect this number?” If yes, it is valid.",
+    "Si elegiste otro indicador, pregúntate: «¿La trampa que describí afectaría esta cifra?». Si la respuesta es sí, es válido."
+  ],
+  "Você acabou de enxergar a trapaça antes de ela acontecer — em três negócios diferentes, com a mesma pergunta.": [
+    "You have just spotted the trick before it happens—in three different businesses, using the same question.",
+    "Acabas de ver la trampa antes de que ocurra, en tres negocios distintos y con la misma pregunta."
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "Quando uma medida vira meta, ela deixa de medir — e um sistema que aprende encontra o atalho mais rápido que qualquer funcionário.": [
+    "When a measure becomes a target, it stops measuring—and a learning system finds the shortcut faster than any employee.",
+    "Cuando una medida se convierte en meta, deja de medir, y un sistema que aprende encuentra el atajo más rápido que cualquier empleado."
+  ],
+  "As trapaças se repetem: título-isca, encerrar sem resolver, desconto até a margem sumir, provocar para \"ganhar\" resposta.": [
+    "The tricks repeat: clickbait, closing without resolving, discounting until the margin disappears, provoking people to “win” a reply.",
+    "Las trampas se repiten: titulares engañosos, cerrar sin resolver, descontar hasta borrar el margen y provocar para «ganar» una respuesta."
+  ],
+  "No LOOP-R a meta tem forma fixa, \"maximizar X sem piorar Y, Z e W\"; o Guardião veta o que toca num vigiado e o Avaliador reprova o que o derruba.": [
+    "In LOOP-R, a target has a fixed format, “maximize X without worsening Y, Z, and W”; the Guardian vetoes changes that touch a guardrail, and the Evaluator rejects versions that breach one.",
+    "En LOOP-R, la meta tiene una forma fija: «maximizar X sin empeorar Y, Z y W»; el Guardián veta lo que afecta un indicador de seguridad y el Evaluador rechaza lo que lo empeora."
+  ],
+  "A definição do número também é parte da meta: \"resposta\" exclui a negativa, \"resolvido\" exclui o reaberto.": [
+    "The number’s definition is also part of the target: “reply” excludes negative replies, and “resolved” excludes reopened tickets.",
+    "La definición de la cifra también forma parte de la meta: «respuesta» excluye las negativas y «resuelto» excluye lo que se reabre."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de conseguir olhar para uma meta e ver o atalho antes de a IA encontrá-lo.": [
+    "You can now look at a target and spot the shortcut before AI finds it.",
+    "Ahora puedes mirar una meta y ver el atajo antes de que lo encuentre la IA."
+  ],
+  "Nos próximos 15 minutos: pegue a meta principal do processo que você escolheu na Trilha 2 e reescreva no formato \"maximizar X sem piorar Y e Z\". Mande a frase para você mesma no WhatsApp — ela entra na ficha do loop.": [
+    "Over the next 15 minutes: take the main target for the process you chose in Track 2 and rewrite it as “maximize X without worsening Y and Z.” Send the sentence to yourself on WhatsApp—it goes on the loop worksheet.",
+    "Durante los próximos 15 minutos: toma la meta principal del proceso que elegiste en la Ruta 2 y reescríbela como «maximizar X sin empeorar Y ni Z». Envíate la frase por WhatsApp: irá a la ficha del ciclo."
+  ],
+  "Na próxima aula você descobre por que 12 propostas não provam nada, quantas provam — e quantas semanas isso leva no seu ritmo.": [
+    "In the next lesson, you will learn why 12 proposals prove nothing, how many are needed—and how many weeks that takes at your pace.",
+    "En la próxima clase descubrirás por qué 12 propuestas no demuestran nada, cuántas hacen falta y cuántas semanas tomaría a tu ritmo."
+  ],
+  "← trilha": [
+    "← track",
+    "← ruta"
+  ],
+  "próxima aula →": [
+    "next lesson →",
+    "siguiente clase →"
+  ],
+  "Aula 1 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 1 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 1 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "O número que o loop tenta aumentar. É a resposta 1 da ficha: 'de X para Y'.": [
+    "The number the loop tries to increase. This is answer 1 on the worksheet: “from X to Y.”",
+    "La cifra que el ciclo intenta aumentar. Es la respuesta 1 de la ficha: «de X a Y»."
+  ],
+  "Número vigiado que não pode piorar além de uma tolerância enquanto o loop tenta subir a métrica-alvo. Na ficha do loop: 'sem piorar'.": [
+    "A monitored metric that must not worsen beyond a tolerance while the loop tries to raise the target metric. On the worksheet: “without worsening.”",
+    "Indicador vigilado que no debe empeorar más allá de una tolerancia mientras el ciclo intenta subir la métrica objetivo. En la ficha: «sin empeorar»."
+  ],
+  "Contato de alguém que clicou num anúncio de imóvel no portal e pediu informação. Ainda não é cliente; é um interessado.": [
+    "A person who clicked a property listing on the portal and asked for information. They are not a customer yet; they are a prospect.",
+    "Persona que hizo clic en un anuncio inmobiliario del portal y pidió información. Aún no es cliente; es una persona interesada."
+  ],
+  "O tamanho do ganho não entra na conta do vigiado. Um guarda-corpo com tolerância zero reprova qualquer queda, por menor que seja — é assim que a trapaça 'desconto até a margem sumir' é barrada antes de virar regra.": [
+    "The size of the gain does not offset a guardrail. With zero tolerance, any drop fails, however small—that is how “discount until the margin disappears” is stopped before it becomes a rule.",
+    "El tamaño de la ganancia no compensa el indicador. Con tolerancia cero, cualquier caída implica rechazo, por pequeña que sea. Así se frena la trampa de «descontar hasta borrar el margen» antes de que se vuelva regla."
+  ],
+  "Exato. B só ganha se sobe X e nenhum vigiado cai além da tolerância. Com tolerância zero, 1% de queda já reprova. (Na aula 4 você vai ver que a tolerância zero também pode estar errada — mas a regra é aplicada como está escrita.)": [
+    "Exactly. B wins only if X rises and no guardrail falls beyond tolerance. With zero tolerance, a 1% drop already fails. (In lesson 4, you will see that zero tolerance can also be wrong—but the rule is applied as written.)",
+    "Exacto. B solo gana si X sube y ningún indicador cae más allá de la tolerancia. Con tolerancia cero, una caída del 1 % ya implica rechazo. (En la clase 4 verás que la tolerancia cero también puede estar mal, pero la regla se aplica tal como está escrita.)"
+  ],
+  "'Esperar' é a resposta para quando faltam execuções (amostra insuficiente). Aqui a amostra pode estar completa; o problema é um vigiado que caiu. Isso é reprovação, não espera.": [
+    "“Wait” is the answer when more runs are needed (insufficient sample). Here the sample may be complete; the issue is a guardrail that fell. That means rejection, not waiting.",
+    "«Esperar» es la respuesta cuando faltan ejecuciones (muestra insuficiente). Aquí la muestra puede estar completa; el problema es que cayó un indicador. Eso implica rechazo, no espera."
+  ],
+  "<b>Fig. 1</b> A meta pedida (à esquerda) sobe pelo caminho mais curto: a contagem inclui o que não devia. Olhe o que entra na caixa 'resposta'.": [
+    "<b>Fig. 1</b> The requested target (left) rises by the shortest route: the count includes things it should not. Look at what enters the “reply” box.",
+    "<b>Fig. 1</b> La meta solicitada (izquierda) sube por el camino más corto: el recuento incluye lo que no debería. Observa qué entra en la caja de «respuesta»."
+  ],
+  "<b>Fig. 2</b> Três pedidos, três atalhos. Em todos o número pedido sobe (seta cheia); o estrago fica fora do painel (linha tracejada).": [
+    "<b>Fig. 2</b> Three requests, three shortcuts. In each case, the requested number rises (solid arrow); the damage stays outside the dashboard (dashed line).",
+    "<b>Fig. 2</b> Tres solicitudes, tres atajos. En todas sube la cifra solicitada (flecha continua); el daño queda fuera del panel (línea discontinua)."
+  ],
+  "<b>Fig. 3</b> A meta completa: X sobe (barra), cercada por três números que não podem cair (as cercas). Se uma cerca cede, a versão reprova.": [
+    "<b>Fig. 3</b> The complete target: X rises (bar), surrounded by three numbers that must not fall (the guardrails). If one guardrail breaks, the version fails.",
+    "<b>Fig. 3</b> La meta completa: X sube (barra), rodeada por tres cifras que no pueden bajar (los indicadores). Si uno cede, la versión se rechaza."
+  ],
+  "<b>Fig. 4</b> A contagem passa por um filtro: só o que cumpre a definição entra na soma. 'Pare de mandar' cai fora antes de virar número.": [
+    "<b>Fig. 4</b> The count passes through a filter: only what meets the definition is added. “Stop sending” is excluded before it becomes a number.",
+    "<b>Fig. 4</b> El recuento pasa por un filtro: solo se suma lo que cumple la definición. «Deja de enviar» queda fuera antes de convertirse en cifra."
+  ],
+  "Sua clínica pede ao loop: 'aumente as respostas às propostas'. Que atalho a IA tende a encontrar, e que coluna na planilha impede que ele conte a favor?": [
+    "Your clinic asks the loop to “increase replies to proposals.” What shortcut is AI likely to find, and which spreadsheet column prevents it from counting in its favor?",
+    "Tu clínica pide al ciclo «aumentar las respuestas a las propuestas». ¿Qué atajo podría encontrar la IA y qué columna de la hoja impide que cuente a su favor?"
+  ],
+  "Insistir ou provocar até receber 'pare de me mandar'. A coluna 'resposta positiva (sim/não)' tira essa mensagem da conta.": [
+    "Keep messaging or provoke people until they say “stop sending me this.” The “positive reply (yes/no)” column excludes that message from the count.",
+    "Insistir o provocar hasta recibir «deja de enviarme esto». La columna «respuesta positiva (sí/no)» excluye ese mensaje del recuento."
+  ],
+  "Decisão: taxa de resposta subiu 40%, margem caiu 1%, tolerância da margem é zero. Aprova, reprova ou espera?": [
+    "Decision: the response rate rose 40%, margin fell 1%, and margin tolerance is zero. Approve, reject, or wait?",
+    "Decisión: la tasa de respuesta subió un 40 %, el margen cayó un 1 % y la tolerancia del margen es cero. ¿Apruebas, rechazas o esperas?"
+  ],
+  "Reprova ('A segue'). O tamanho do ganho não compensa um vigiado que caiu além da tolerância.": [
+    "Reject (“A stays”). The size of the gain does not offset a guardrail that fell beyond tolerance.",
+    "Se rechaza («A sigue»). El tamaño de la ganancia no compensa que un indicador haya caído más allá de la tolerancia."
+  ],
+  "Qual a diferença entre a métrica-alvo e um guarda-corpo, na frase da meta?": [
+    "What is the difference between the target metric and a guardrail in the target statement?",
+    "¿Qué diferencia hay entre la métrica objetivo y un indicador de seguridad en la frase de la meta?"
+  ],
+  "A métrica-alvo é o X que o loop tenta subir; o guarda-corpo é o Y que não pode cair enquanto isso. 'Maximizar X sem piorar Y'.": [
+    "The target metric is X, which the loop tries to raise; the guardrail is Y, which must not fall while it does so: “maximize X without worsening Y.”",
+    "La métrica objetivo es X, que el ciclo intenta subir; el indicador es Y, que no puede bajar mientras tanto: «maximizar X sin empeorar Y»."
+  ],
+  "O painel do suporte mostra tempo médio caindo de 18 para 9 minutos, e o gerente comemora. Que dois números você pediria para ver antes de comemorar junto?": [
+    "The support dashboard shows average time falling from 18 to 9 minutes, and the manager celebrates. Which two numbers would you ask to see before celebrating too?",
+    "El panel de soporte muestra que el tiempo medio bajó de 18 a 9 minutos y el responsable lo celebra. ¿Qué dos cifras pedirías ver antes de celebrar también?"
+  ],
+  "Reabertura em 7 dias e satisfação. Se subiram, o tempo caiu porque os chamados estão sendo encerrados sem resolver.": [
+    "7-day reopenings and satisfaction. If they rose, the time fell because tickets are being closed without resolution.",
+    "Reaperturas a 7 días y satisfacción. Si aumentaron, el tiempo bajó porque se están cerrando tickets sin resolverlos."
+  ],
+  "Dois assistentes do loop usam a frase 'sem piorar'. Quem faz o quê com ela?": [
+    "Two loop assistants use the phrase “without worsening.” What does each do with it?",
+    "Dos asistentes del ciclo usan la frase «sin empeorar». ¿Qué hace cada uno con ella?"
+  ],
+  "O Guardião veta hipóteses que proponham mexer num vigiado; o Avaliador reprova versões que subiram X mas derrubaram um vigiado.": [
+    "The Guardian vetoes hypotheses that propose changing a guardrail; the Evaluator rejects versions that raised X but lowered a guardrail.",
+    "El Guardián veta hipótesis que propongan tocar un indicador; el Evaluador rechaza versiones que subieron X pero hicieron caer un indicador."
+  ],
+  ". A frase completa é sempre \"maximizar X sem piorar Y, Z e W\". Não é um enfeite: é a parte da meta que impede a trapaça.": [
+    ". The complete statement is always “maximize X without worsening Y, Z, and W.” This is not decoration; it is the part of the target that prevents gaming.",
+    ". La frase completa siempre es «maximizar X sin empeorar Y, Z y W». No es un adorno: es la parte de la meta que impide hacer trampa."
+  ]
+}

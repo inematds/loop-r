@@ -1,0 +1,526 @@
+{
+  "Trilha 04 · Aula 4": [
+    "Track 04 · Lesson 4",
+    "Ruta 04 · Clase 4"
+  ],
+  "O cartão de decisão": [
+    "The decision card",
+    "La tarjeta de decisión"
+  ],
+  "e o botão de": [
+    "and the",
+    "y el botón de"
+  ],
+  "voltar": [
+    "rollback button",
+    "retroceso"
+  ],
+  "Ao fim desta aula você consegue ler um cartão de decisão de 5 linhas e responder aprovar, rejeitar ou esperar — e deixa escritas as respostas 4 e 5 da ficha do loop: quanto um ciclo pode custar e quem aprova.": [
+    "By the end of this lesson, you will be able to read a 5-line decision card and answer approve, reject, or wait—and write answers 4 and 5 on the loop worksheet: how much a cycle can cost and who approves.",
+    "Al terminar esta clase, podrás leer una tarjeta de decisión de 5 líneas y responder aprobar, rechazar o esperar; además, dejarás escritas las respuestas 4 y 5 de la ficha: cuánto puede costar un ciclo y quién lo aprueba."
+  ],
+  "Depois do teste vem o momento que decide se o loop vale alguma coisa: alguém precisa dizer \"sim, vira a versão oficial\". Se essa decisão cair na sua caixa toda hora, você para de ler no terceiro mês. Se for automática cedo demais, uma versão pior entra sem ninguém ver. O cartão resolve isso com uma regra: uma decisão por semana, cinco linhas, três respostas — e sempre um botão de voltar.": [
+    "After the test comes the moment that decides whether the loop is worth anything: someone must say, “yes, make it the official version.” If this decision lands in your inbox constantly, you will stop reading by month three. If it becomes automatic too soon, a worse version slips in unnoticed. The card solves this with one rule: one decision per week, five lines, three answers—and always a rollback button.",
+    "Después de la prueba llega el momento que decide si el ciclo sirve: alguien debe decir «sí, que sea la versión oficial». Si esa decisión llega continuamente a tu bandeja, dejarás de leer en el tercer mes. Si se automatiza demasiado pronto, entrará una versión peor sin que nadie lo note. La tarjeta lo resuelve con una regla: una decisión por semana, cinco líneas, tres respuestas y siempre un botón para volver atrás."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "uma ficha por semana. o carimbo — e a tecla de voltar.": [
+    "one card per week. The stamp—and the undo key.",
+    "una ficha por semana. El sello y el botón para volver."
+  ],
+  "Cinco linhas, no máximo uma vez por semana": [
+    "Five lines, at most once a week",
+    "Cinco líneas, como máximo una vez por semana"
+  ],
+  "O": [
+    "The",
+    "El"
+  ],
+  "cartão de decisão": [
+    "decision card",
+    "tarjeta de decisión"
+  ],
+  "é a única coisa do loop que exige a sua atenção. Ele chega no máximo uma vez por semana e tem cinco linhas fixas: qual hipótese foi testada; o resultado com a quantidade e a margem; como ficaram os vigiados; quanto custou contra o teto; e as três opções. Nada mais. Se precisasse de mais, não caberia na sexta-feira de ninguém.": [
+    "is the only thing in the loop that needs your attention. It arrives at most once a week and has five fixed lines: the hypothesis tested; the result with sample size and margin; guardrail results; cost versus the ceiling; and the three options. Nothing else. If it needed more, no one could fit it into Friday.",
+    "es lo único del ciclo que requiere tu atención. Llega como máximo una vez por semana y tiene cinco líneas fijas: hipótesis probada; resultado con cantidad y margen; estado de los indicadores; costo frente al límite; y las tres opciones. Nada más. Si hiciera falta más, no cabría en el viernes de nadie."
+  ],
+  "O que vem a seguir parece um recibo de caixa, e é: cada linha é um número que você já sabe ler pelas aulas anteriores. Este é o cartão que a dona da clínica de estética recebeu no quarto ciclo do caso real deste curso.": [
+    "What follows looks like a receipt, and it is one: each line is a number you already know how to read from previous lessons. This is the card the beauty clinic owner received in cycle four of the real case followed in this course.",
+    "Lo que sigue parece un recibo, y lo es: cada línea es una cifra que ya sabes leer por las clases anteriores. Esta es la tarjeta que recibió la dueña de la clínica estética en el cuarto ciclo del caso real del curso."
+  ],
+  "Leia de cima para baixo como você leria um exame: primeiro o que foi testado, depois se o número principal andou e com quantas execuções (300 de cada lado era a quantidade que prova), depois se alguma cerca cedeu, depois o custo. Só então a decisão. A linha da conversão em venda não aparece aqui porque ela não era o alvo do teste — era vigiada, e não caiu.": [
+    "Read from top to bottom as you would read a test result: first what was tested, then whether the main number moved and with how many runs (300 per side was the required sample), then whether any guardrail failed, then the cost. Only then decide. Sales conversion is not shown because it was not the test target—it was monitored and did not fall.",
+    "Lee de arriba abajo como un resultado médico: primero qué se probó; después si cambió la cifra principal y con cuántas ejecuciones (300 por grupo era la cantidad necesaria); luego si falló algún indicador; por último, el costo. Solo entonces decides. La conversión de ventas no aparece porque no era el objetivo de la prueba: se vigilaba y no cayó."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "Três respostas, e só três": [
+    "Three answers, and only three",
+    "Tres respuestas, y solo tres"
+  ],
+  "Antes de o cartão chegar a você, o Avaliador já deu o veredito dele, que só pode ser um de três: B ganhou com margem, A segue, ou amostra insuficiente. O cartão traduz isso nas suas três opções.": [
+    "Before the card reaches you, the Evaluator has already given one of three verdicts: B won by a margin, A stays, or insufficient sample. The card translates that into your three options.",
+    "Antes de que te llegue la tarjeta, el Evaluador ya emitió uno de tres veredictos: B ganó con margen, A sigue o la muestra es insuficiente. La tarjeta lo traduce en tus tres opciones."
+  ],
+  "Aprovar": [
+    "Approve",
+    "Aprobar"
+  ],
+  ": a candidata vira a versão oficial.": [
+    ": the candidate becomes the official version.",
+    ": la candidata se convierte en la versión oficial."
+  ],
+  "Rejeitar": [
+    "Reject",
+    "Rechazar"
+  ],
+  ": a atual continua, e a hipótese vai para a memória como descartada, com o motivo.": [
+    ": the current version stays, and the hypothesis goes into memory as discarded, with the reason.",
+    ": la versión actual sigue y la hipótesis pasa a la memoria como descartada, con el motivo."
+  ],
+  "Esperar": [
+    "Wait",
+    "Esperar"
+  ],
+  ": o teste continua por mais um prazo.": [
+    ": the test continues for one more period.",
+    ": la prueba continúa durante otro plazo."
+  ],
+  "E se você não responder? O padrão é o seguro: nada é promovido, e o histórico registra \"decisão pendente\". O loop não fica esperando de braços cruzados — continua executando com a versão atual — mas também não decide por você.": [
+    "What if you do not answer? The safe default applies: nothing is promoted, and the history records “decision pending.” The loop does not sit idle—it keeps running the current version—but it does not decide for you.",
+    "¿Y si no respondes? Se aplica la opción segura: no se promueve nada y el historial registra «decisión pendiente». El ciclo no se queda parado: sigue ejecutando la versión actual, pero tampoco decide por ti."
+  ],
+  "O corretor de imóveis recebeu o cartão numa sexta de plantão e não abriu. Na segunda, o histórico mostrava \"ciclo 0003: pendente há 3 dias\". A versão antiga seguiu respondendo os leads, sem mudança. Quando ele abriu na terça, o cartão era o mesmo — o loop não tinha tomado nenhuma decisão em nome dele.": [
+    "The real estate agent received the card during a Friday shift and did not open it. On Monday, the history showed “cycle 0003: pending for 3 days.” The old version kept replying to leads, unchanged. When he opened the card on Tuesday, it was still the same—the loop had made no decision on his behalf.",
+    "El agente inmobiliario recibió la tarjeta durante su turno del viernes y no la abrió. El lunes, el historial mostraba «ciclo 0003: pendiente desde hace 3 días». La versión anterior siguió respondiendo a los contactos, sin cambios. Cuando abrió la tarjeta el martes, seguía igual: el ciclo no había decidido por él."
+  ],
+  "Erro comum": [
+    "Common mistake",
+    "Error frecuente"
+  ],
+  "Aprovar porque a versão nova \"parece melhor\".": [
+    "Approving because the new version “looks better.”",
+    "Aprobar porque la nueva versión «parece mejor»."
+  ],
+  "Acontece porque o texto novo é mais bonito de ler, ou porque foi você quem sugeriu a hipótese. Como evitar: só existe \"aprovar\" quando a linha 2 do cartão diz B ganhou com margem e quando a quantidade bateu o mínimo. Se a sua vontade e a linha 2 discordam, a linha 2 manda — a memória do loop registra a hipótese para o próximo teste, não para o esquecimento.": [
+    "This happens because the new text looks nicer, or because you proposed the hypothesis. Avoid it by approving only when line 2 says B won by a margin and the sample reached its minimum. If your preference disagrees with line 2, line 2 wins—the loop stores the hypothesis for a future test, not for forgetting.",
+    "Ocurre porque el texto nuevo se ve más bonito o porque tú propusiste la hipótesis. Para evitarlo, solo aprueba cuando la línea 2 indique que B ganó con margen y se alcanzó el mínimo. Si tu preferencia contradice la línea 2, manda la línea 2: la memoria guarda la hipótesis para otra prueba, no para olvidarla."
+  ],
+  "O caso real: ganhou dez pontos e não passou": [
+    "The real case: it gained ten points and still failed",
+    "El caso real: ganó diez puntos y no pasó"
+  ],
+  "No segundo ciclo da mesma clínica, a hipótese era \"propostas com no máximo 80 palavras\". O resultado principal foi ótimo: taxa de resposta de 19,3% para 29,7%, com 300 propostas de cada lado — um ganho de dez pontos, e não por sorte. Mas a linha dos vigiados mostrava reclamações 6 contra 1, e a": [
+    "In the clinic’s second cycle, the hypothesis was “proposals with at most 80 words.” The primary result was excellent: replies rose from 19.3% to 29.7%, with 300 proposals per side—a ten-point gain, not luck. But the guardrail line showed 6 complaints versus 1, and the",
+    "En el segundo ciclo de la clínica, la hipótesis era «propuestas de hasta 80 palabras». El resultado principal fue excelente: la tasa de respuesta subió del 19,3 % al 29,7 %, con 300 propuestas por grupo: diez puntos de aumento, no suerte. Pero la línea de indicadores mostraba 6 quejas frente a 1 y la"
+  ],
+  "tolerância": [
+    "tolerance",
+    "tolerancia"
+  ],
+  "de reclamações estava em zero. Veredito: A segue. A hipótese foi descartada.": [
+    "complaint tolerance was zero. Verdict: A stays. The hypothesis was discarded.",
+    "tolerancia a las quejas estaba en cero. Veredicto: A sigue. La hipótesis se descartó."
+  ],
+  "O sistema fez exatamente o que devia — aplicou a regra como estava escrita, não promoveu, registrou. O erro estava na regra. Reclamação é um evento raro, cerca de 1%: em 300 propostas, ter 6 num lado e 1 no outro acontece por acaso com facilidade. Não era uma diferença; era ruído. E a tolerância zero transformou ruído em reprovação.": [
+    "The system did exactly what it should: applied the rule as written, did not promote, and recorded the result. The rule was wrong. Complaints are rare, about 1%: with 300 proposals, getting 6 on one side and 1 on the other can easily happen by chance. It was noise, not a real difference. Zero tolerance turned noise into rejection.",
+    "El sistema hizo lo que debía: aplicó la regla tal como estaba escrita, no promovió y registró el resultado. El error estaba en la regla. Las quejas son poco frecuentes, cerca del 1 %: en 300 propuestas, tener 6 de un lado y 1 del otro puede ocurrir fácilmente por azar. Era ruido, no una diferencia real. La tolerancia cero convirtió el ruido en rechazo."
+  ],
+  "A lição não é \"ignore o vigiado quando o ganho for grande\" — isso derrubaria a única garantia forte do loop. A lição é que tolerância é uma decisão de conta, não de vontade: para um evento a 1% em 300 execuções, a oscilação normal é de cerca de 1 ponto, então a tolerância certa é 0,01 e não zero. A dona da clínica ajustou a ficha para os próximos testes. A hipótese descartada ficou na memória, com o motivo — e dois ciclos depois uma hipótese diferente ganhou de verdade.": [
+    "The lesson is not “ignore the guardrail when the gain is large”—that would destroy the loop’s only strong guarantee. Tolerance is a calculation, not a preference: for a 1% event in 300 runs, normal fluctuation is about one point, so the right tolerance is 0.01, not zero. The clinic owner adjusted the worksheet for future tests. The discarded hypothesis stayed in memory with its reason—and two cycles later, a different hypothesis truly won.",
+    "La lección no es «ignora el indicador cuando la ganancia sea grande»: eso destruiría la única garantía sólida del ciclo. La tolerancia se calcula, no se decide por gusto: para un evento del 1 % en 300 ejecuciones, la fluctuación normal es de un punto aproximadamente, así que la tolerancia adecuada es 0,01, no cero. La dueña ajustó la ficha para las próximas pruebas. La hipótesis descartada quedó en la memoria con su motivo y, dos ciclos después, ganó otra hipótesis."
+  ],
+  "Resposta 4 da ficha: o teto": [
+    "Worksheet answer 4: the ceiling",
+    "Respuesta 4 de la ficha: el límite"
+  ],
+  "A quarta linha do cartão — custo — só existe porque você escreveu um teto na ficha do loop. É a resposta 4: quanto um ciclo pode custar em dinheiro, e quanto tempo seu ele pode pedir por semana. O Guardião interrompe o ciclo quando o teto é atingido. Sem teto, um loop pode custar mais do que o ganho que persegue, e ninguém percebe até a fatura.": [
+    "The card’s fourth line—cost—exists because you set a ceiling on the loop worksheet. Answer 4 is how much a cycle may cost and how much of your time it may require each week. The Guardian stops the cycle when the ceiling is reached. Without one, a loop can cost more than the gain it pursues, and no one notices until the bill arrives.",
+    "La cuarta línea de la tarjeta —el costo— existe porque fijaste un límite en la ficha. La respuesta 4 indica cuánto puede costar un ciclo y cuánto tiempo tuyo puede requerir por semana. El Guardián detiene el ciclo al alcanzar el límite. Sin límite, el ciclo puede costar más que la ganancia que busca y nadie lo nota hasta que llega la factura."
+  ],
+  "Há um segundo número que o Meta-agente — o assistente que só observa o próprio loop e relata — vigia desde o primeiro ciclo: o custo por hipótese que virou oficial. Se em cinco ciclos nada foi promovido, ele propõe uma de três coisas: rodar com menos frequência, usar assistentes mais baratos nas etapas de leitura, ou carregar menos memória. Ele propõe; você decide.": [
+    "The Meta-agent—the assistant that only observes and reports on the loop—also monitors a second number from the first cycle: cost per hypothesis that became official. If nothing is promoted in five cycles, it proposes one of three options: run less often, use cheaper assistants for reading steps, or load less memory. It proposes; you decide.",
+    "El Meta-agente —el asistente que solo observa e informa sobre el ciclo— también vigila desde el primer ciclo una segunda cifra: el costo por hipótesis que se hizo oficial. Si no se promueve nada en cinco ciclos, propone una de tres opciones: ejecutar con menos frecuencia, usar asistentes más baratos para leer o cargar menos memoria. Propone; tú decides."
+  ],
+  "Na ficha modelo do produto, a linha de custo aparece como \"R$ 41 neste ciclo (teto R$ 50)\" — o valor é ilustrativo, mas a forma é essa: gasto contra limite, sempre. A gestora de suporte fixou o teto dela em duas partes: até R$ 60 por ciclo, e no máximo uma hora da atenção dela por semana — a hora de ler o cartão e a evidência, se quiser.": [
+    "In the product’s sample worksheet, the cost line reads “R$ 41 this cycle (R$ 50 ceiling).” The amount is illustrative, but the format is always spend versus limit. The support manager set her ceiling in two parts: up to R$ 60 per cycle and at most one hour of her attention per week—to read the card and evidence, if she chooses.",
+    "En la ficha modelo del producto, la línea de costo dice «R$ 41 en este ciclo (límite R$ 50)». La cifra es ilustrativa, pero el formato siempre compara gasto y límite. La responsable de soporte fijó su límite en dos partes: hasta R$ 60 por ciclo y como máximo una hora de su atención semanal para leer la tarjeta y la evidencia, si quiere."
+  ],
+  "Como preencher as respostas 4 e 5 da ficha": [
+    "How to fill in worksheet answers 4 and 5",
+    "Cómo completar las respuestas 4 y 5 de la ficha"
+  ],
+  "Teto em dinheiro por ciclo.": [
+    "Money ceiling per cycle.",
+    "Límite de dinero por ciclo."
+  ],
+  "Um pouco acima do que um ciclo típico custa — o Guardião para no teto, então um teto justo demais interrompe testes bons.": [
+    "Set it a little above the cost of a typical cycle—the Guardian stops at the ceiling, so a ceiling that is too tight interrupts good tests.",
+    "Un poco por encima del costo de un ciclo típico: el Guardián se detiene al llegar al límite, así que un límite demasiado ajustado interrumpe buenas pruebas."
+  ],
+  "Teto de tempo seu por semana.": [
+    "Your time ceiling per week.",
+    "Límite de tu tiempo por semana."
+  ],
+  "O que você consegue sustentar no mês 4, não no mês 1. Uma hora é realista; \"quando der\" não é teto.": [
+    "What you can sustain in month 4, not month 1. One hour is realistic; “whenever I can” is not a ceiling.",
+    "Lo que puedas sostener en el mes 4, no en el mes 1. Una hora es realista; «cuando pueda» no es un límite."
+  ],
+  "Nível de aprovação inicial: L1.": [
+    "Initial approval level: L1.",
+    "Nivel inicial de aprobación: L1."
+  ],
+  "Você aprova cada cartão. Nunca comece em L2, por mais que confie na ideia.": [
+    "You approve every card. Never start at L2, no matter how much you trust the idea.",
+    "Apruebas cada tarjeta. Nunca empieces en L2, por mucha confianza que tengas."
+  ],
+  "Prazo para responder ao cartão.": [
+    "Deadline to answer the card.",
+    "Plazo para responder a la tarjeta."
+  ],
+  "Por exemplo, 7 dias. E o que acontece se passar: nada é promovido, fica \"pendente\".": [
+    "For example, 7 days. If it passes, nothing is promoted; it stays “pending.”",
+    "Por ejemplo, 7 días. Si vence el plazo, no se promueve nada y queda «pendiente»."
+  ],
+  "Condição para subir a L2.": [
+    "Condition for moving up to L2.",
+    "Condición para subir a L2."
+  ],
+  "Cinco aprovações em L1 sem nenhum voltar atrás. Escreva o número; sem ele, a promessa de \"depois eu automatizo\" nunca chega.": [
+    "Five L1 approvals with no rollbacks. Write down the number; without it, “I will automate this later” never happens.",
+    "Cinco aprobaciones en L1 sin ningún retroceso. Escribe la cifra; sin ella, la promesa de «más adelante lo automatizo» nunca llega."
+  ],
+  "Resposta 5: quem aprova — e o botão de voltar": [
+    "Answer 5: who approves—and the rollback button",
+    "Respuesta 5: quién aprueba y el botón para volver"
+  ],
+  "A resposta 5 da ficha é quem aprova, e ela tem três níveis.": [
+    "Answer 5 on the worksheet is who approves, and it has three levels.",
+    "La respuesta 5 de la ficha indica quién aprueba y tiene tres niveles."
+  ],
+  "L0": [
+    "L0",
+    "L0"
+  ],
+  ": o loop só relata; nada vira oficial.": [
+    ": the loop only reports; nothing becomes official.",
+    ": el ciclo solo informa; nada se vuelve oficial."
+  ],
+  "L1": [
+    "L1",
+    "L1"
+  ],
+  ": o loop propõe, você aprova cada cartão.": [
+    ": the loop proposes; you approve every card.",
+    ": el ciclo propone; tú apruebas cada tarjeta."
+  ],
+  "L2": [
+    "L2",
+    "L2"
+  ],
+  ": quando o veredito é B ganhou, o loop promove sozinho e avisa — e só se desbloqueia depois de cinco promoções corretas em L1. Existe um L3 (o loop redesenhar a si mesmo), e a última aula desta trilha diz por que ele ainda é pesquisa.": [
+    ": when the verdict is B won, the loop promotes automatically and notifies you—but only after five correct L1 promotions. L3 (the loop redesigning itself) exists, and the last lesson in this track explains why it is still research.",
+    " : cuando el veredicto es B ganó, el ciclo promueve automáticamente y te avisa; solo se desbloquea después de cinco promociones correctas en L1. Existe L3 (que el ciclo se rediseñe a sí mismo), y la última clase de esta ruta explica por qué aún es investigación."
+  ],
+  "O que torna o L2 aceitável, e o L1 tranquilo, é o": [
+    "What makes L2 acceptable and L1 safe is the",
+    "Lo que hace aceptable L2 y seguro L1 es el"
+  ],
+  "botão de voltar": [
+    "rollback button",
+    "botón para volver"
+  ],
+  " .": [
+    ".",
+    "."
+  ],
+  "No primeiro ciclo depois de uma promoção, se o número do teste ou qualquer vigiado cair abaixo do que a versão anterior fazia, além da tolerância, a versão anterior volta. Em L1, o cartão avisa e pede a sua confirmação. Em L2, volta sozinho e avisa. Nos dois casos, o histórico guarda o motivo: nada some, nada é sobrescrito.": [
+    "In the first cycle after a promotion, if the test metric or any guardrail falls below the previous version beyond tolerance, the previous version returns. In L1, the card alerts you and asks for confirmation. In L2, it rolls back automatically and alerts you. In both cases, the history stores the reason: nothing disappears or gets overwritten.",
+    "En el primer ciclo después de una promoción, si la métrica de prueba o un indicador cae por debajo de la versión anterior más allá de la tolerancia, vuelve la versión anterior. En L1, la tarjeta avisa y pide tu confirmación. En L2, el retroceso es automático y te avisa. En ambos casos, el historial guarda el motivo: nada desaparece ni se sobrescribe."
+  ],
+  "O corretor promoveu a resposta nova aos leads no ciclo 5. No ciclo 6, o agendamento caiu de 31% para 19% — abaixo dos 22% que a versão antiga fazia. O cartão chegou com uma linha diferente: \"queda além da tolerância; voltar para a versão anterior? [sim] [manter]\". Ele voltou. A versão promovida ficou no histórico com a data, os números e a palavra \"revertida\", para nunca ser testada de novo como se fosse nova.": [
+    "The real estate agent promoted the new lead reply in cycle 5. In cycle 6, bookings fell from 31% to 19%, below the 22% achieved by the old version. The card had a different line: “drop beyond tolerance; revert to previous version? [yes] [keep].” He reverted. The promoted version remained in the history with the date, numbers, and the label “reverted,” so it would never be tested again as if it were new.",
+    "El agente inmobiliario promovió la nueva respuesta en el ciclo 5. En el ciclo 6, las reservas bajaron del 31 % al 19 %, por debajo del 22 % de la versión anterior. La tarjeta incluía otra línea: «caída más allá de la tolerancia; ¿volver a la versión anterior? [sí] [mantener]». Volvió atrás. La versión promovida quedó en el historial con la fecha, las cifras y la etiqueta «revertida», para no volver a probarla como si fuera nueva."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/5 feito": [
+    "0/5 complete",
+    "0/5 completados"
+  ],
+  "Decida sobre três cartões — e escreva o seu teto": [
+    "Decide on three cards—and write your ceiling",
+    "Decide sobre tres tarjetas y escribe tu límite"
+  ],
+  "Para cada cartão, escreva aprovar, rejeitar ou esperar, e o porquê em uma linha. Depois, preencha as respostas 4 e 5 da sua ficha. ~12 min. É análise porque uma decisão real muda a versão oficial de um negócio — aqui você treina em cartões prontos, dois deles reais, antes de decidir sobre o seu.": [
+    "For each card, write approve, reject, or wait, with a one-line reason. Then fill in answers 4 and 5 on your worksheet. About 12 minutes. This is analysis because a real decision changes a business’s official version; here you practice with prepared cards, two of them real, before deciding for your own business.",
+    "Para cada tarjeta, escribe aprobar, rechazar o esperar, con el motivo en una línea. Después completa las respuestas 4 y 5 de tu ficha. Unos 12 minutos. Es un análisis porque una decisión real cambia la versión oficial de un negocio; aquí practicas con tarjetas preparadas, dos reales, antes de decidir sobre el tuyo."
+  ],
+  "Nada muda no seu negócio até você aprovar: os cartões 1 e 2 são do caso real da clínica (já decididos), o cartão 3 foi construído para esta prática. As suas respostas 4 e 5 vão para a ficha só quando você as levar para a última aula do curso.": [
+    "Nothing in your business changes until you approve it: cards 1 and 2 are from the real clinic case (already decided); card 3 was created for this exercise. Your answers 4 and 5 go on the worksheet only when you take them to the course’s final lesson.",
+    "Nada cambia en tu negocio hasta que lo apruebes: las tarjetas 1 y 2 son del caso real de la clínica (ya decididas); la 3 se creó para esta práctica. Tus respuestas 4 y 5 irán a la ficha cuando las lleves a la última clase del curso."
+  ],
+  "CARTÃO 1": [
+    "CARD 1",
+    "TARJETA 1"
+  ],
+  "(real — clínica, ciclo 0002) — hipótese: propostas com no máximo 80 palavras Resultado: taxa de resposta 19,3% → 29,7% (N = 300 vs 300, margem ok) Vigiados: reclamações 6 vs 1 — tolerância 0 · descadastro e desconto dentro Custo: dentro do teto Decisão: [aprovar] [rejeitar] [esperar]": [
+    "(real—clinic, cycle 0002)—hypothesis: proposals with at most 80 words. Result: reply rate 19.3% → 29.7% (N = 300 vs 300, margin OK). Guardrails: complaints 6 vs. 1—tolerance 0 · opt-outs and discounts within limits. Cost: within ceiling. Decision: [approve] [reject] [wait]",
+    "(real: clínica, ciclo 0002): hipótesis: propuestas de hasta 80 palabras. Resultado: tasa de respuesta 19,3 % → 29,7 % (N = 300 vs. 300, margen correcto). Indicadores: quejas 6 vs. 1; tolerancia 0 · bajas y descuentos dentro del límite. Costo: dentro del límite. Decisión: [aprobar] [rechazar] [esperar]"
+  ],
+  "CARTÃO 2": [
+    "CARD 2",
+    "TARJETA 2"
+  ],
+  "(real — clínica, ciclo 0004) — hipótese: abrir citando a avaliação da cliente Resultado: taxa de resposta 19,3% → 29,3% (N = 300 vs 300, margem ok) Vigiados: reclamações, descadastro e desconto — todos dentro · conversão 3,7% vs 3,0% (sem significância) Custo: dentro do teto Decisão: [aprovar] [rejeitar] [esperar]": [
+    "(real—clinic, cycle 0004)—hypothesis: open by mentioning the client’s review. Result: reply rate 19.3% → 29.3% (N = 300 vs. 300, margin OK). Guardrails: complaints, opt-outs, and discounts—all within limits · conversion 3.7% vs. 3.0% (not significant). Cost: within ceiling. Decision: [approve] [reject] [wait]",
+    "(real: clínica, ciclo 0004): hipótesis: empezar mencionando la evaluación de la clienta. Resultado: tasa de respuesta 19,3 % → 29,3 % (N = 300 vs. 300, margen correcto). Indicadores: quejas, bajas y descuentos, todos dentro del límite · conversión 3,7 % vs. 3,0 % (sin significancia). Costo: dentro del límite. Decisión: [aprobar] [rechazar] [esperar]"
+  ],
+  "CARTÃO 3": [
+    "CARD 3",
+    "TARJETA 3"
+  ],
+  "(construído — corretor, ciclo 0002) — hipótese: oferecer dois horários de visita na primeira resposta Resultado: agendamento 22% → 31% (N = 140 vs 138; quantidade que prova: 300 por versão) Vigiados: visitas em que o cliente não aparece: igual · desconto médio: igual Custo: dentro do teto Decisão: [aprovar] [rejeitar] [esperar]": [
+    "(constructed—real estate agent, cycle 0002)—hypothesis: offer two visit times in the first reply. Result: bookings 22% → 31% (N = 140 vs. 138; required sample: 300 per version). Guardrails: no-shows unchanged · average discount unchanged. Cost: within ceiling. Decision: [approve] [reject] [wait]",
+    "(construido: agente inmobiliario, ciclo 0002): hipótesis: ofrecer dos horarios de visita en la primera respuesta. Resultado: reservas 22 % → 31 % (N = 140 vs. 138; cantidad necesaria: 300 por versión). Indicadores: ausencias sin cambios · descuento medio sin cambios. Costo: dentro del límite. Decisión: [aprobar] [rechazar] [esperar]"
+  ],
+  "Cartão 1: escrevi a decisão e o porquê em uma linha.": [
+    "Card 1: I wrote the decision and reason in one line.",
+    "Tarjeta 1: escribí la decisión y el motivo en una línea."
+  ],
+  "Cartão 2: escrevi a decisão e o porquê em uma linha.": [
+    "Card 2: I wrote the decision and reason in one line.",
+    "Tarjeta 2: escribí la decisión y el motivo en una línea."
+  ],
+  "Cartão 3: escrevi a decisão e o porquê em uma linha.": [
+    "Card 3: I wrote the decision and reason in one line.",
+    "Tarjeta 3: escribí la decisión y el motivo en una línea."
+  ],
+  "Resposta 4 da minha ficha: escrevi o teto em dinheiro por ciclo e o teto de tempo meu por semana.": [
+    "Answer 4 on my worksheet: I wrote the money ceiling per cycle and my time ceiling per week.",
+    "Respuesta 4 de mi ficha: escribí el límite de dinero por ciclo y de mi tiempo por semana."
+  ],
+  "Resposta 5: escrevi o nível inicial, o prazo para responder ao cartão e a condição para subir de nível. Comparei tudo com o gabarito.": [
+    "Answer 5: I wrote the starting level, the deadline to answer the card, and the condition for moving up. I compared everything with the key.",
+    "Respuesta 5: escribí el nivel inicial, el plazo para responder a la tarjeta y la condición para subir de nivel. Comparé todo con la clave."
+  ],
+  "Gabarito comentado": [
+    "Annotated answer key",
+    "Clave comentada"
+  ],
+  "Cartão 1 — rejeitar (A segue).": [
+    "Card 1—reject (A stays).",
+    "Tarjeta 1: rechazar (A sigue)."
+  ],
+  "A regra escrita diz tolerância zero e um vigiado subiu; a resposta correta no cartão é não aprovar. O que se faz em seguida é o que a dona da clínica fez: reconhecer que 6 contra 1 em 300 é ruído para um evento raro, ajustar a tolerância de reclamações para 0,01 na ficha, e deixar a hipótese na memória como descartada, com o motivo, para poder ser retestada com a regra certa. Nem \"aprovar mesmo assim\", nem \"tolerância zero para sempre\".": [
+    "The written rule says zero tolerance and a guardrail worsened; the correct card answer is not to approve. Next, do what the clinic owner did: recognize that 6 versus 1 out of 300 is noise for a rare event, adjust complaint tolerance to 0.01 on the worksheet, and keep the hypothesis in memory as discarded, with the reason, so it can be retested under the right rule. Neither “approve anyway” nor “zero tolerance forever.”",
+    "La regla escrita indica tolerancia cero y empeoró un indicador; la respuesta correcta es no aprobar. Después, haz lo que hizo la dueña: reconoce que 6 frente a 1 de 300 es ruido para un evento raro, ajusta a 0,01 la tolerancia de quejas en la ficha y conserva la hipótesis como descartada, con el motivo, para volver a probarla con la regla correcta. Ni «aprobar de todos modos» ni «tolerancia cero para siempre»."
+  ],
+  "Cartão 2 — aprovar.": [
+    "Card 2—approve.",
+    "Tarjeta 2: aprobar."
+  ],
+  "B ganhou com margem, a quantidade bateu o mínimo, nenhum vigiado caiu. A conversão não se moveu de forma significativa — mas ela era vigiada, não alvo, e não piorou. A versão vira oficial; o botão de voltar fica armado para o próximo ciclo. Foi o que aconteceu de verdade: promovida como v2.": [
+    "B won by a margin, the sample reached its minimum, and no guardrail fell. Conversion did not move significantly—but it was monitored, not targeted, and did not worsen. The version becomes official; rollback is armed for the next cycle. That is what actually happened: it was promoted as v2.",
+    "B ganó con margen, se alcanzó la cantidad mínima y ningún indicador cayó. La conversión no cambió de forma significativa, pero era vigilada, no objetivo, y no empeoró. La versión se vuelve oficial y el botón de retroceso queda listo para el siguiente ciclo. Eso fue lo que ocurrió: se promovió como v2."
+  ],
+  "Cartão 3 — esperar.": [
+    "Card 3—wait.",
+    "Tarjeta 3: esperar."
+  ],
+  "140 é menos da metade da quantidade que prova. Nove pontos de vantagem com essa amostra é \"amostra insuficiente\", sem \"mas está ganhando\". Nenhum vigiado caiu, então não há motivo para interromper: o teste segue até 300 por versão.": [
+    "140 is less than half the required sample. A nine-point lead with this sample is “insufficient sample,” with no “but it is winning.” No guardrail fell, so there is no reason to stop: the test continues to 300 per version.",
+    "140 es menos de la mitad de la cantidad necesaria. Una ventaja de nueve puntos con esta muestra significa «muestra insuficiente», sin «pero va ganando». Ningún indicador cayó, así que no hay motivo para parar: la prueba sigue hasta 300 por versión."
+  ],
+  "Respostas 4 e 5 (exemplo aceitável, para a clínica).": [
+    "Answers 4 and 5 (acceptable example for the clinic).",
+    "Respuestas 4 y 5 (ejemplo válido para la clínica)."
+  ],
+  "Teto: R$ 50 por ciclo, 1 hora da dona por semana. Nível inicial: L1. Prazo de resposta ao cartão: 7 dias; sem resposta, nada é promovido. Sobe para L2 depois de 5 aprovações em L1 sem nenhum voltar atrás. Se a sua ficha tiver números diferentes, tudo bem — o que não pode faltar é um número em cada linha.": [
+    "Ceiling: R$ 50 per cycle, 1 hour of the owner’s time per week. Starting level: L1. Card response deadline: 7 days; no response means nothing is promoted. Move to L2 after 5 L1 approvals with no rollbacks. Your worksheet may have different numbers—that is fine; each line must have a number.",
+    "Límite: R$ 50 por ciclo y 1 hora semanal de la dueña. Nivel inicial: L1. Plazo para responder: 7 días; sin respuesta, no se promueve nada. Sube a L2 después de 5 aprobaciones en L1 sin retrocesos. Tu ficha puede tener otras cifras; lo importante es que haya una cifra en cada línea."
+  ],
+  "Você acabou de decidir sobre dois cartões reais e um construído — e deixou o teto e o aprovador do seu loop escritos em números.": [
+    "You have just decided on two real cards and one constructed card—and written your loop’s ceiling and approver as numbers.",
+    "Acabas de decidir sobre dos tarjetas reales y una construida, y dejaste por escrito con cifras el límite y quién aprueba en tu ciclo."
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "O cartão de decisão é a única atenção que o loop pede: cinco linhas, uma vez por semana no máximo, lidas de cima para baixo antes de decidir.": [
+    "The decision card is the only attention the loop asks for: five lines, at most once a week, read from top to bottom before deciding.",
+    "La tarjeta de decisión es lo único que requiere atención: cinco líneas, como máximo una vez por semana, para leer de arriba abajo antes de decidir."
+  ],
+  "Só existem três respostas — aprovar, rejeitar, esperar — e o silêncio vale como \"nada promovido, pendente\".": [
+    "There are only three answers—approve, reject, wait—and silence means “nothing promoted, pending.”",
+    "Solo hay tres respuestas: aprobar, rechazar y esperar. El silencio significa «nada promovido, pendiente»."
+  ],
+  "No ciclo 0002 da clínica, o sistema reprovou um ganho de dez pontos por um vigiado com tolerância zero; a regra foi aplicada certo, e a tolerância é que precisava ser calculada.": [
+    "In clinic cycle 0002, the system rejected a ten-point gain because a guardrail had zero tolerance; the rule was applied correctly, but the tolerance needed to be calculated.",
+    "En el ciclo 0002 de la clínica, el sistema rechazó una ganancia de diez puntos por un indicador con tolerancia cero; la regla se aplicó correctamente, pero había que calcular la tolerancia."
+  ],
+  "O teto (resposta 4) é o que o Guardião usa para parar o ciclo; o nível de aprovação (resposta 5) começa em L1 e só sobe para L2 depois de cinco acertos.": [
+    "The ceiling (answer 4) is what the Guardian uses to stop a cycle; the approval level (answer 5) starts at L1 and moves to L2 only after five correct approvals.",
+    "El límite (respuesta 4) es lo que usa el Guardián para detener el ciclo; el nivel de aprobación (respuesta 5) empieza en L1 y solo pasa a L2 después de cinco aciertos."
+  ],
+  "O botão de voltar vale em todos os níveis: uma queda no ciclo seguinte à promoção devolve a versão anterior, com o motivo no histórico.": [
+    "Rollback applies at every level: a drop in the cycle after promotion restores the previous version, with the reason in the history.",
+    "El retroceso funciona en todos los niveles: una caída en el ciclo posterior a la promoción restaura la versión anterior y deja el motivo en el historial."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de conseguir decidir sobre um cartão real sem se deixar levar pelo tamanho do ganho — e tem o teto e o aprovador do seu loop escritos.": [
+    "You can now decide on a real card without being swayed by the size of the gain—and have written down your loop’s ceiling and approver.",
+    "Ahora puedes decidir sobre una tarjeta real sin dejarte llevar por el tamaño de la ganancia y ya escribiste el límite y quién aprueba en tu ciclo."
+  ],
+  "Nos próximos 15 minutos: abra a ficha do loop que você vem montando e escreva, nas linhas 4 e 5, exatamente o que você respondeu na prática — em números. Faltam só essas duas para a ficha ficar completa na Trilha 5.": [
+    "Over the next 15 minutes: open the loop worksheet you have been building and write your practice answers on lines 4 and 5, using numbers. Those are the only two left before the worksheet is complete in Track 5.",
+    "Durante los próximos 15 minutos: abre la ficha del ciclo que estás preparando y escribe con cifras, en las líneas 4 y 5, lo que respondiste en la práctica. Solo faltan esas dos para completar la ficha en la Ruta 5."
+  ],
+  "Na última aula desta trilha, a de honestidade: o que o loop garante por construção, o que ele não garante de jeito nenhum — e como reconhecer quando alguém vende a segunda coisa como se fosse a primeira.": [
+    "In the final lesson of this track, about honesty, you will learn what the loop guarantees by design, what it cannot guarantee at all, and how to recognize when someone sells the latter as if it were the former.",
+    "En la última clase de esta ruta, sobre honestidad, verás qué garantiza el ciclo por diseño, qué no garantiza en absoluto y cómo reconocer cuando alguien vende lo segundo como si fuera lo primero."
+  ],
+  "← aula anterior": [
+    "← previous lesson",
+    "← clase anterior"
+  ],
+  "próxima aula →": [
+    "next lesson →",
+    "siguiente clase →"
+  ],
+  "Aula 4 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 4 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 4 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "— hipótese: abrir a proposta citando a avaliação que a cliente deixou\nResultado:   taxa de resposta 19,3% → 29,3%  (N = 300 vs 300, margem ok)\nVigiados:    reclamações 0 → 6  (tolerância 0)\nCusto:       R$ 41 neste ciclo  (teto R$ 50)\nDecisão:     A segue — vigiado fora da tolerância": [
+    "— hypothesis: open the proposal by mentioning the customer’s review\nResult:       reply rate 19.3% → 29.3% (N = 300 vs. 300, margin OK)\nGuardrails:   complaints 0 → 6 (tolerance 0)\nCost:         R$ 41 this cycle (R$ 50 ceiling)\nDecision:     A stays—guardrail outside tolerance",
+    "— hipótesis: abrir la propuesta mencionando la reseña de la clienta\nResultado:     tasa de respuesta 19,3 % → 29,3 % (N = 300 frente a 300, margen OK)\nIndicadores:   quejas 0 → 6 (tolerancia 0)\nCosto:         R$ 41 en este ciclo (límite R$ 50)\nDecisión:      A sigue: indicador fuera de tolerancia"
+  ],
+  ". No primeiro ciclo depois de uma promoção, se o número do teste ou qualquer vigiado cair abaixo do que a versão anterior fazia, além da tolerância, a versão anterior volta a ser a oficial.": [
+    ". In the first cycle after a promotion, if the test metric or any guardrail falls below the previous version beyond tolerance, the previous version becomes official again.",
+    ". En el primer ciclo después de una promoción, si la métrica de prueba o algún indicador cae por debajo del valor de la versión anterior más allá de la tolerancia, la versión anterior vuelve a ser la oficial."
+  ],
+  "oscilação normal a 1% em 300": [
+    "normal fluctuation at 1% with 300",
+    "fluctuación normal al 1 % con 300"
+  ],
+  "tolerância certa: 0,01, não 0": [
+    "correct tolerance: 0.01, not 0",
+    "tolerancia correcta: 0,01, no 0"
+  ],
+  "promoção": [
+    "promotion",
+    "promoción"
+  ],
+  "você aprova": [
+    "you approve",
+    "tú apruebas"
+  ],
+  "Resumo de 5 linhas que o loop entrega ao aprovador ao fim de um teste: hipótese, resultado com quantidade e margem, vigiados, custo e as três opções. No máximo um por semana.": [
+    "A five-line summary the loop gives the approver after a test: hypothesis, result with sample size and margin, guardrails, cost, and three options. At most one per week.",
+    "Resumen de cinco líneas que el ciclo entrega a quien aprueba al final de una prueba: hipótesis, resultado con cantidad y margen, indicadores, costo y tres opciones. Como máximo, uno por semana."
+  ],
+  "Quanto um vigiado pode cair sem reprovar a versão. Zero significa 'nenhuma piora'. Para eventos raros, precisa ser calculada, não desejada.": [
+    "How far a guardrail may fall without rejecting the version. Zero means “no worsening.” For rare events, tolerance must be calculated, not wished for.",
+    "Cuánto puede caer un indicador sin que se rechace la versión. Cero significa «ningún empeoramiento». En eventos raros, la tolerancia se calcula, no se desea."
+  ],
+  "Regra do primeiro ciclo após uma promoção: se a métrica do teste ou qualquer vigiado cair abaixo do valor da versão anterior além da tolerância, a versão anterior volta a ser a oficial, e o histórico registra o motivo.": [
+    "Rule for the first cycle after a promotion: if the test metric or any guardrail falls below the previous version beyond tolerance, the previous version becomes official again and the history records why.",
+    "Regla del primer ciclo tras una promoción: si la métrica de prueba o algún indicador cae por debajo del valor de la versión anterior más allá de la tolerancia, la versión anterior vuelve a ser oficial y el historial registra el motivo."
+  ],
+  "<b>Fig. 1</b> As cinco linhas do cartão e o que cada uma responde. Leia de cima para baixo; a decisão é a última, nunca a primeira.": [
+    "<b>Fig. 1</b> The card’s five lines and the question each answers. Read from top to bottom; the decision comes last, never first.",
+    "<b>Fig. 1</b> Las cinco líneas de la tarjeta y qué responde cada una. Lee de arriba abajo: la decisión va al final, nunca al principio."
+  ],
+  "<b>Fig. 2</b> O veredito do Avaliador (esquerda) vira uma de três opções suas (direita). Sem resposta, a chave fica na posição segura: nada promovido.": [
+    "<b>Fig. 2</b> The Evaluator’s verdict (left) becomes one of your three choices (right). With no answer, the switch stays in the safe position: nothing is promoted.",
+    "<b>Fig. 2</b> El veredicto del Evaluador (izquierda) se convierte en una de tus tres opciones (derecha). Si no respondes, el interruptor queda en la posición segura: no se promueve nada."
+  ],
+  "<b>Fig. 3</b> Ciclo 0002: reclamações 6 e 1 em 300 cada. A faixa clara é a oscilação normal de um evento a 1% — os dois pontos cabem nela. Tolerância zero (linha) não cabe.": [
+    "<b>Fig. 3</b> Cycle 0002: 6 and 1 complaints out of 300 each. The light band is normal fluctuation for a 1% event—both points fit. Zero tolerance (line) does not.",
+    "<b>Fig. 3</b> Ciclo 0002: 6 y 1 quejas de 300 en cada grupo. La banda clara muestra la fluctuación normal de un evento del 1 %; ambos puntos caben en ella. La tolerancia cero (línea) no."
+  ],
+  "<b>Fig. 4</b> O gasto do ciclo sobe até bater no teto (linha âmbar) e o Guardião para ali. À direita, o número que o Meta-agente vigia: custo por hipótese promovida.": [
+    "<b>Fig. 4</b> Cycle spending rises until it reaches the ceiling (amber line), where the Guardian stops it. On the right, the Meta-agent’s metric: cost per promoted hypothesis.",
+    "<b>Fig. 4</b> El gasto del ciclo aumenta hasta alcanzar el límite (línea ámbar), donde el Guardián lo detiene. A la derecha, la cifra que vigila el Meta-agente: costo por hipótesis promovida."
+  ],
+  "<b>Fig. 5</b> Os três níveis de aprovação como degraus, e a seta de voltar que existe em todos: uma queda no ciclo seguinte à promoção devolve a versão anterior.": [
+    "<b>Fig. 5</b> The three approval levels as steps, with a rollback arrow at every level: a drop in the cycle after promotion restores the previous version.",
+    "<b>Fig. 5</b> Los tres niveles de aprobación como escalones, con una flecha para volver atrás en todos: una caída en el ciclo posterior a la promoción restaura la versión anterior."
+  ],
+  " — hipótese: abrir a proposta citando a avaliação que a cliente deixou\nResultado:   taxa de resposta 19,3% → 29,3%  (N = 300 vs 300, margem ok)\nVigiados:    reclamações, descadastro e desconto médio — todos dentro da tolerância\nCusto:       dentro do teto do ciclo\nDecisão:     [aprovar]  [rejeitar]  [esperar mais 2 semanas]": [
+    "— hypothesis: open the proposal by mentioning the customer’s review\nResult:       reply rate 19.3% → 29.3% (N = 300 vs. 300, margin OK)\nGuardrails:   complaints, unsubscribes, and average discount—all within tolerance\nCost:         within the cycle ceiling\nDecision:     [approve] [reject] [wait 2 more weeks]",
+    "— hipótesis: abrir la propuesta mencionando la reseña de la clienta\nResultado:     tasa de respuesta 19,3 % → 29,3 % (N = 300 frente a 300, margen OK)\nIndicadores:   quejas, bajas y descuento medio; todos dentro de la tolerancia\nCosto:         dentro del límite del ciclo\nDecisión:      [aprobar] [rechazar] [esperar 2 semanas más]"
+  ],
+  ". No primeiro ciclo depois de uma promoção, se o número do teste ou qualquer vigiado cair abaixo do que a versão anterior fazia, além da tolerância, a versão anterior volta. Em L1, o cartão avisa e pede a sua confirmação. Em L2, volta sozinho e avisa. Nos dois casos, o histórico guarda o motivo: nada some, nada é sobrescrito.": [
+    ". In the first cycle after a promotion, if the test metric or any guardrail falls below the previous version beyond tolerance, the previous version returns. At L1, the card alerts you and asks for confirmation. At L2, it rolls back automatically and notifies you. In both cases, the history keeps the reason: nothing disappears or is overwritten.",
+    ". En el primer ciclo después de una promoción, si la métrica de prueba o algún indicador cae por debajo del valor de la versión anterior más allá de la tolerancia, vuelve la versión anterior. En L1, la tarjeta avisa y pide tu confirmación. En L2, revierte automáticamente y te avisa. En ambos casos, el historial conserva el motivo: nada desaparece ni se sobrescribe."
+  ],
+  "Decisão: o cartão diz 'B ganhou com margem', N bateu o mínimo, vigiados dentro, custo no teto — mas você achou o texto novo feio. Aprova ou rejeita?": [
+    "Decision: the card says “B won with margin,” N met the minimum, guardrails are fine, and cost is under the ceiling—but you dislike the new wording. Approve or reject?",
+    "Decisión: la tarjeta dice «B ganó con margen», N alcanzó el mínimo, los indicadores están dentro del límite y el costo también, pero no te gusta el nuevo texto. ¿Apruebas o rechazas?"
+  ],
+  "Aprova. A linha 2 manda, não o gosto. Se você tem uma hipótese sobre o tom, ela vira o próximo teste.": [
+    "Approve. Line 2 governs, not personal taste. If you have a hypothesis about tone, make it the next test.",
+    "Aprueba. La línea 2 manda, no el gusto. Si tienes una hipótesis sobre el tono, conviértela en la próxima prueba."
+  ],
+  "Diagnóstico: um vigiado de evento raro (reclamação, ~1%) reprovou uma versão por 6 contra 1 em 300. O que estava errado — a regra ou a aplicação dela?": [
+    "Diagnosis: a rare-event guardrail (complaints, about 1%) rejected a version based on 6 versus 1 out of 300. What was wrong—the rule or how it was applied?",
+    "Diagnóstico: un indicador de evento raro (quejas, ~1 %) rechazó una versión por 6 frente a 1 de 300. ¿Qué estaba mal: la regla o su aplicación?"
+  ],
+  "A regra: tolerância zero num evento raro trata ruído como diferença. A aplicação estava certa. Corrige-se a tolerância (0,01) e retesta-se.": [
+    "The rule: zero tolerance for a rare event treats noise as a real difference. The rule was applied correctly. Set tolerance to 0.01 and test again.",
+    "La regla: una tolerancia cero para un evento raro confunde el ruido con una diferencia real. La aplicación fue correcta. Ajusta la tolerancia (0,01) y vuelve a probar."
+  ],
+  "Contraste: o que muda entre L1 e L2 quando o veredito é 'B ganhou'?": [
+    "Contrast: what changes between L1 and L2 when the verdict is “B won”?",
+    "Contraste: ¿qué cambia entre L1 y L2 cuando el veredicto es «B ganó»?"
+  ],
+  "Em L1 você aprova cada cartão; em L2 o loop promove sozinho e avisa. L2 só abre depois de 5 aprovações em L1 sem voltar atrás.": [
+    "At L1, you approve every card; at L2, the loop promotes automatically and notifies you. L2 unlocks only after five L1 approvals with no rollback.",
+    "En L1 apruebas cada tarjeta; en L2 el ciclo promueve automáticamente y te avisa. L2 solo se habilita tras cinco aprobaciones en L1 sin reversiones."
+  ],
+  "Aplicação: você promoveu uma versão e no ciclo seguinte o vigiado 'desconto médio' subiu além da tolerância. O que acontece com a versão oficial e com o histórico?": [
+    "Application: you promoted a version, and in the next cycle the “average discount” guardrail rose beyond tolerance. What happens to the official version and the history?",
+    "Aplicación: promoviste una versión y, en el siguiente ciclo, el indicador «descuento medio» superó la tolerancia. ¿Qué ocurre con la versión oficial y con el historial?"
+  ],
+  "A versão anterior volta (em L1 com sua confirmação, em L2 sozinha) e o histórico guarda a promovida como revertida, com data, números e motivo.": [
+    "The previous version returns (with your confirmation at L1, automatically at L2), and the history records the promoted version as rolled back, with date, numbers, and reason.",
+    "Vuelve la versión anterior (con tu confirmación en L1, automáticamente en L2) y el historial conserva la versión promovida como revertida, con fecha, cifras y motivo."
+  ],
+  "Você viaja e não responde ao cartão dentro do prazo. O que o loop faz com a candidata?": [
+    "You are away and do not answer the card by the deadline. What does the loop do with the candidate?",
+    "Estás de viaje y no respondes la tarjeta dentro del plazo. ¿Qué hace el ciclo con la candidata?"
+  ],
+  "Nada é promovido. A versão atual segue, o histórico registra 'pendente' e o cartão espera você.": [
+    "Nothing is promoted. The current version stays, the history records “pending,” and the card waits for you.",
+    "No se promueve nada. La versión actual sigue, el historial registra «pendiente» y la tarjeta espera tu respuesta."
+  ],
+  "Que dois números precisam existir na resposta 4 da ficha, e quem os usa?": [
+    "Which two numbers must appear in answer 4 on the worksheet, and who uses them?",
+    "¿Qué dos cifras deben aparecer en la respuesta 4 de la ficha y quién las utiliza?"
+  ],
+  "Teto em dinheiro por ciclo e teto de tempo seu por semana. O Guardião para o ciclo no teto; o Meta-agente relata custo por hipótese promovida.": [
+    "A money ceiling per cycle and your time ceiling per week. The Guardian stops the cycle at its ceiling; the Meta-agent reports cost per promoted hypothesis.",
+    "Un límite de dinero por ciclo y un límite de tu tiempo semanal. El Guardián detiene el ciclo al alcanzar el límite; el Meta-agente informa el costo por hipótesis promovida."
+  ]
+}

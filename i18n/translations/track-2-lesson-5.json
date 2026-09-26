@@ -1,0 +1,694 @@
+{
+  "Trilha 02 · Aula 5 · R de Reforçar": [
+    "Track 02 · Lesson 5 · R for Reinforce",
+    "Ruta 02 · Clase 5 · R de Reforzar"
+  ],
+  "Testar, validar,": [
+    "Test, validate,",
+    "Probar, validar,"
+  ],
+  "virar oficial": [
+    "make it official",
+    "convertir en oficial"
+  ],
+  "Ao fim desta aula você consegue olhar o resultado de um teste A contra B e dar uma das três respostas — B ganhou, A segue, ou quantidade insuficiente — pela regra escrita na ficha, e não pela impressão.": [
+    "By the end of this lesson, you’ll be able to review an A-versus-B test result and choose one of three answers—B won, A stays, or not enough data—based on the rule written on the worksheet, not on your impression.",
+    "Al terminar esta clase, podrás revisar el resultado de una prueba A frente a B y elegir una de tres respuestas —ganó B, sigue A o datos insuficientes— según la regla escrita en la ficha, no según tu impresión."
+  ],
+  "É aqui que a maioria dos loops morre: alguém olha vinte respostas da versão nova, acha que \"ficou melhor\" e troca o roteiro. Três semanas depois ninguém sabe se melhorou, e o antigo já se perdeu. Reforçar é a letra que transforma \"parece\" em \"provou\" — e que guarda o caminho de volta.": [
+    "This is where most loops die: someone looks at twenty replies using the new version, thinks “it’s better,” and changes the script. Three weeks later, no one knows whether it improved, and the old version is gone. Reinforce is the letter that turns “seems” into “proved”—and keeps a way back.",
+    "Aquí es donde mueren la mayoría de los loops: alguien mira veinte respuestas de la versión nueva, piensa «quedó mejor» y cambia el guion. Tres semanas después nadie sabe si mejoró y la versión anterior ya desapareció. Reforzar convierte «parece» en «se comprobó» y conserva la posibilidad de volver atrás."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "A": [
+    "A",
+    "A"
+  ],
+  "versão atual": [
+    "current version",
+    "versión actual"
+  ],
+  "B": [
+    "B",
+    "B"
+  ],
+  "candidata": [
+    "candidate",
+    "candidata"
+  ],
+  "OFICIAL": [
+    "OFFICIAL",
+    "OFICIAL"
+  ],
+  "voltar atrás": [
+    "roll back",
+    "volver atrás"
+  ],
+  "01": [
+    "01",
+    "01"
+  ],
+  "\"Parece melhor\" não prova nada": [
+    "“Seems better” proves nothing",
+    "«Parece mejor» no demuestra nada"
+  ],
+  "A quinta letra é": [
+    "The fifth letter is",
+    "La quinta letra es"
+  ],
+  "Reforçar": [
+    "Reinforce",
+    "Reforzar"
+  ],
+  ": testar a hipótese, avaliar o resultado, e só então incorporar — ou descartar. A palavra importante é": [
+    ": test the hypothesis, evaluate the result, and only then incorporate—or discard it. The important words are",
+    ": probar la hipótesis, evaluar el resultado y solo entonces incorporarla o descartarla. Las palabras importantes son"
+  ],
+  "só então": [
+    "only then",
+    "solo entonces"
+  ],
+  ". Entre a hipótese e a versão oficial existe um teste, e o teste tem um resultado que não depende do gosto de ninguém.": [
+    ". Between the hypothesis and the official version there is a test, and the test has an outcome that doesn’t depend on anyone’s taste.",
+    ". Entre la hipótesis y la versión oficial hay una prueba, cuyo resultado no depende del gusto de nadie."
+  ],
+  "Marcos leu as vinte primeiras respostas escritas com a versão nova (a que termina com uma pergunta) e gostou: mais diretas, mais simpáticas. Quis trocar o roteiro naquele dia. O que ele tinha era uma impressão sobre vinte textos — não uma linha sequer de resultado. As vinte respostas podiam ser lindas e ter menos retorno que as antigas. Ele não saberia.": [
+    "Marcos read the first twenty replies written with the new version (the one that ends with a question) and liked them: more direct, friendlier. He wanted to change the script that day. What he had was an impression about twenty messages—not a single outcome row. Those twenty replies could be lovely and still get fewer responses than the old ones. He wouldn’t know.",
+    "Marcos leyó las primeras veinte respuestas de la versión nueva (la que termina con una pregunta) y le gustaron: eran más directas y amables. Quiso cambiar el guion ese mismo día. Lo que tenía era una impresión sobre veinte mensajes, ni una fila de resultados. Las respuestas podían ser estupendas y recibir menos contestaciones que las anteriores. No lo sabría."
+  ],
+  "É a diferença entre o remédio que \"parece que fez bem\" e o remédio que foi testado contra o outro. O primeiro é um relato; o segundo, um resultado. O loop só aceita o segundo.": [
+    "It’s the difference between a medicine that “seems to have helped” and one tested against another. The first is a story; the second is a result. The loop only accepts the second.",
+    "Es la diferencia entre un medicamento que «parece haber ayudado» y otro comparado con uno distinto en una prueba. Lo primero es un relato; lo segundo, un resultado. El loop solo acepta lo segundo."
+  ],
+  "Erro comum": [
+    "Common mistake",
+    "Error común"
+  ],
+  "Virar a versão oficial porque parece melhor.": [
+    "Making a version official because it seems better.",
+    "Convertir una versión en oficial porque parece mejor."
+  ],
+  "Acontece porque a versão nova é sempre mais bonita aos olhos de quem a propôs. Como evitar: a versão oficial só muda com o veredito escrito do teste — e o veredito só pode ser um dos três da ficha. Se você não consegue apontar a linha da planilha que sustenta a troca, a troca não acontece.": [
+    "It happens because the new version always looks better to the person who proposed it. How to avoid it: the official version only changes with a written test verdict—and the verdict must be one of the three on the worksheet. If you can’t point to the spreadsheet row supporting the change, it doesn’t happen.",
+    "Ocurre porque la versión nueva siempre parece mejor a quien la propuso. Cómo evitarlo: la versión oficial solo cambia con un veredicto escrito de la prueba, que debe ser uno de los tres de la ficha. Si no puedes señalar la fila de la hoja que respalda el cambio, no se cambia."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "02": [
+    "02",
+    "02"
+  ],
+  "A e B lado a lado, ao mesmo tempo": [
+    "A and B side by side, at the same time",
+    "A y B en paralelo, al mismo tiempo"
+  ],
+  "Um teste no LOOP-R é simples de descrever: metade das execuções segue a versão atual (": [
+    "A LOOP-R test is simple to describe: half of the runs follow the current version (",
+    "Una prueba LOOP-R se describe fácilmente: la mitad de las ejecuciones sigue la versión actual ("
+  ],
+  "), a outra metade segue a candidata (": [
+    "), the other half follows the candidate (",
+    "); la otra mitad sigue la candidata ("
+  ],
+  "), nas": [
+    "), during the",
+    ") durante las"
+  ],
+  "mesmas semanas": [
+    "same weeks",
+    "mismas semanas"
+  ],
+  ", sorteadas. A coluna \"variante\" da planilha, que estava parada em A, passa a alternar. Quem desenha isso é o": [
+    ", chosen at random. The spreadsheet’s “variant” column, which was set to A, now alternates. The",
+    ", elegidas al azar. La columna «variante» de la hoja, que estaba fija en A, empieza a alternar. El"
+  ],
+  "Experimentador": [
+    "Experimenter",
+    "Experimentador"
+  ],
+  ", um assistente com uma função só: ele calcula a quantidade que prova, estima quantas semanas vai levar no seu ritmo e escreve o critério de parada antes de o teste começar.": [
+    "is a single-purpose assistant: it calculates the sample size needed for proof, estimates how many weeks the test will take at your current pace, and writes the stopping rule before the test begins.",
+    "es un asistente con una sola función: calcula cuántas ejecuciones hacen falta para demostrarlo, estima cuántas semanas llevará al ritmo actual y escribe el criterio de parada antes de empezar."
+  ],
+  "Por que ao mesmo tempo, e não \"este mês com B, o mês passado com A\"? Porque o mês muda: na clínica da Dra. Renata, dezembro tem festas e janeiro tem férias, e a taxa de resposta oscila 8 pontos sem ninguém mudar nada. Se B rodar em janeiro e A tiver rodado em dezembro, a diferença pode ser o calendário, não o roteiro. Com A e B misturados na mesma semana, o calendário atinge os dois igualmente.": [
+    "Why at the same time, instead of “this month with B, last month with A”? Because months change: at Dr. Renata’s clinic, December has holidays and January has vacations, and the response rate shifts by 8 points without anyone changing anything. If B runs in January and A ran in December, the difference may come from the calendar, not the script. With A and B mixed into the same weeks, the calendar affects both equally.",
+    "¿Por qué al mismo tiempo y no «este mes con B y el pasado con A»? Porque los meses cambian: en la clínica de la Dra. Renata, diciembre tiene fiestas y enero vacaciones, y la tasa de respuesta oscila 8 puntos sin que nadie cambie nada. Si B se prueba en enero y A en diciembre, la diferencia puede deberse al calendario, no al guion. Al mezclar A y B en las mismas semanas, el calendario afecta a ambas por igual."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Marcos usou a versão 1 em agosto (22% de resposta) e a versão 2 em setembro (27%). Ele diz que B ganhou. Qual é o problema?": [
+    "Marcos used version 1 in August (22% response) and version 2 in September (27%). He says B won. What’s the problem?",
+    "Marcos usó la versión 1 en agosto (22 % de respuesta) y la versión 2 en septiembre (27 %). Dice que ganó B. ¿Cuál es el problema?"
+  ],
+  "Cinco pontos podem ser muito ou nada — depende da quantidade. Mas o defeito principal está antes disso.": [
+    "Five points could be a lot or nothing—it depends on the sample size. But the main flaw comes before that.",
+    "Cinco puntos pueden ser mucho o nada; depende del tamaño de la muestra. Pero el problema principal viene antes."
+  ],
+  "5 pontos é pouco para dizer que ganhou": [
+    "5 points is too little to say it won",
+    "5 puntos son pocos para decir que ganó"
+  ],
+  "Dois meses podem ser suficientes em volume; o problema não é a duração.": [
+    "Two months may provide enough volume; duration isn’t the problem.",
+    "Dos meses pueden aportar suficiente volumen; la duración no es el problema."
+  ],
+  "dois meses é pouco tempo": [
+    "two months is too short",
+    "dos meses es poco tiempo"
+  ],
+  "Agosto e setembro são meses diferentes: feriado, volta às aulas, portais com mais anúncios. Sem A e B nas mesmas semanas, a diferença pode ser o mês, não o roteiro.": [
+    "August and September are different months: holidays, back-to-school season, portals with more ads. Without A and B running during the same weeks, the difference may come from the month, not the script.",
+    "Agosto y septiembre son meses distintos: festivos, vuelta a clases, portales con más anuncios. Sin probar A y B en las mismas semanas, la diferencia puede deberse al mes, no al guion."
+  ],
+  "A e B rodaram em meses diferentes — não dá para separar o roteiro do calendário": [
+    "A and B ran in different months—you can’t separate the script from the calendar",
+    "A y B se probaron en meses distintos: no se puede separar el efecto del guion del calendario"
+  ],
+  "03": [
+    "03",
+    "03"
+  ],
+  "As três respostas do teste": [
+    "The test has three possible answers",
+    "La prueba tiene tres respuestas posibles"
+  ],
+  "Quando o teste termina — ou a cada semana, enquanto roda — o": [
+    "When the test ends—or each week while it runs—the",
+    "Cuando termina la prueba —o cada semana mientras sigue—, el"
+  ],
+  "Avaliador": [
+    "Evaluator",
+    "Evaluador"
+  ],
+  "lê a planilha e responde uma de três coisas.": [
+    "reads the spreadsheet and gives one of three answers.",
+    "lee la hoja y da una de tres respuestas."
+  ],
+  "B ganhou": [
+    "B won",
+    "Ganó B"
+  ],
+  ": a diferença é maior do que o acaso explica, a quantidade que prova foi atingida, e nenhum \"sem piorar\" caiu além do tolerado.": [
+    ": the difference is bigger than chance can explain, the required sample size has been reached, and no “no harm” metric fell beyond its allowed margin.",
+    ": la diferencia supera lo que explicaría el azar, se alcanzó la cantidad requerida y ninguna métrica de «sin empeorar» rebasó su tolerancia."
+  ],
+  "A segue": [
+    "A stays",
+    "Sigue A"
+  ],
+  ": B não ganhou, ou ganhou no número e perdeu num guarda-corpo.": [
+    ": B didn’t win, or it won on the main metric but lost on a guardrail.",
+    ": B no ganó o mejoró la métrica principal, pero falló en un límite de seguridad."
+  ],
+  "Quantidade insuficiente": [
+    "Not enough data",
+    "Datos insuficientes"
+  ],
+  ": ainda não há linhas bastantes para dizer nada — continue o teste. Não existe quarta resposta. Não existe \"está ganhando\".": [
+    ": there aren’t enough rows to say anything yet—keep testing. There is no fourth answer. There is no “it’s winning.”",
+    ": todavía no hay filas suficientes para concluir; continúa la prueba. No existe una cuarta respuesta ni «va ganando»."
+  ],
+  "A terceira resposta é a mais comum, e precisa ser aceitável. Para provar que a taxa de resposta foi de 20% para 30%, são cerca de 300 execuções em cada versão; no ritmo da Dra. Renata, 50 por semana, são 12 semanas. No suporte de Cláudio, depois de três semanas de teste, B tinha resolvido 41 chamados no primeiro contato contra 38 de A — 66% contra 61%. Ele quis parar: \"B está ganhando\". O Avaliador respondeu quantidade insuficiente, porque a ficha pedia 220 chamados por versão e havia 62 em cada. Parar cedo porque está ganhando é a forma mais comum de virar oficial uma diferença que não existe.": [
+    "The third answer is the most common, and it has to be acceptable. To prove that the response rate rose from 20% to 30%, you need about 300 runs in each version; at Dr. Renata’s pace of 50 a week, that takes 12 weeks. In Cláudio’s support team, after three weeks of testing, B had resolved 41 tickets on first contact versus 38 for A—66% versus 61%. He wanted to stop: “B is winning.” The Evaluator said there wasn’t enough data because the worksheet required 220 tickets per version, and there were only 62 each. Stopping early because it’s winning is the most common way to make an imaginary difference official.",
+    "La tercera respuesta es la más frecuente y hay que aceptarla. Para demostrar que la tasa de respuesta pasó del 20 % al 30 %, hacen falta unas 300 ejecuciones por versión; al ritmo de la Dra. Renata, 50 por semana, son 12 semanas. En el equipo de soporte de Cláudio, tras tres semanas de prueba, B había resuelto 41 tickets en el primer contacto frente a 38 de A: 66 % contra 61 %. Quiso parar: «B va ganando». El Evaluador respondió que faltaban datos, porque la ficha exigía 220 tickets por versión y solo había 62 de cada una. Parar antes de tiempo porque una versión «va ganando» es la forma más común de oficializar una diferencia inexistente."
+  ],
+  "\"Quantidade insuficiente\" é a resposta mais comum do loop — e o dia em que ela deixar de ser aceitável, o loop deixa de funcionar.": [
+    "“Not enough data” is the loop’s most common answer—and the day it stops being acceptable, the loop stops working.",
+    "«Datos insuficientes» es la respuesta más común del loop; el día en que deje de ser aceptable, el loop dejará de funcionar."
+  ],
+  "04": [
+    "04",
+    "04"
+  ],
+  "Ganhar no número não basta: os guarda-corpos": [
+    "Winning on the main metric isn’t enough: the guardrails",
+    "Ganar en la métrica principal no basta: los límites de seguridad"
+  ],
+  "B só ganha se sobe o número": [
+    "B only wins if it raises the number",
+    "B solo gana si sube el número"
+  ],
+  "e": [
+    "and",
+    "y"
+  ],
+  "nenhum \"sem piorar\" cai além da tolerância escrita na ficha. Os dois juntos. Se o número sobe 40% e a margem cai um ponto com tolerância zero, a resposta é A segue — sem exceção, sem \"mas olha o quanto subiu\". O Avaliador aplica a regra como está escrita; se a regra estiver mal escrita, quem corrige é você, para os próximos testes.": [
+    "none of the “no harm” metrics exceeds the tolerance written on the worksheet. Both conditions must hold. If the number rises 40% and the margin drops by one point with zero tolerance, the answer is A stays—no exceptions, no “but look how much it went up.” The Evaluator applies the rule as written; if the rule is poorly written, you fix it for future tests.",
+    "ninguna métrica de «sin empeorar» supera la tolerancia escrita en la ficha. Deben cumplirse ambas condiciones. Si el número sube un 40 % y el margen cae un punto con tolerancia cero, la respuesta es «Sigue A»: sin excepciones ni «pero mira cuánto subió». El Evaluador aplica la regla tal como está escrita; si está mal redactada, tú la corriges para las próximas pruebas."
+  ],
+  "No suporte, a versão B de Cláudio chegou ao fim das 220 por variante: resolução no primeiro contato de 58% para 66%. Mas os chamados reabertos em 7 dias foram de 4% para 9%, com tolerância de 2 pontos. A segue. B resolvia \"mais rápido\" fechando chamados que voltavam — exatamente a trapaça que o \"sem piorar\" existia para pegar.": [
+    "In support, Cláudio’s version B finished testing with 220 runs per variant: first-contact resolution rose from 58% to 66%. But tickets reopened within 7 days rose from 4% to 9%, with a 2-point tolerance. A stays. B resolved tickets “faster” by closing ones that came back—the exact trick the “no harm” metric was designed to catch.",
+    "En el equipo de soporte, la versión B de Cláudio terminó con 220 ejecuciones por variante: la resolución en el primer contacto subió del 58 % al 66 %. Pero los tickets reabiertos en 7 días pasaron del 4 % al 9 %, con una tolerancia de 2 puntos. Sigue A. B resolvía «más rápido» al cerrar tickets que volvían: justo lo que la métrica «sin empeorar» debía detectar."
+  ],
+  "Há um cuidado com a tolerância. Para números frequentes (margem, reabertura), tolerância zero funciona. Para": [
+    "There’s one thing to watch with the tolerance. For frequent metrics (margin, reopenings), zero tolerance works. For",
+    "Hay que tener cuidado con la tolerancia. Para métricas frecuentes (margen, reaperturas), la tolerancia cero funciona. Para"
+  ],
+  "eventos raros": [
+    "rare events",
+    "eventos raros"
+  ],
+  "— uma reclamação em cada 100, um \"pare de me mandar\" em cada 200 — tolerância zero não distingue efeito de acaso: em 300 execuções, 1 ou 4 reclamações é a mesma coisa. A regra do loop é que a tolerância de evento raro seja pelo menos o tamanho do ruído esperado na quantidade planejada — cerca de 1 ponto para eventos de 1% em 300 linhas. Escrever zero ali não é rigor; é descartar hipóteses boas por sorteio.": [
+    "—one complaint in every 100, one “stop messaging me” in every 200—zero tolerance can’t separate an effect from chance: in 300 runs, 1 or 4 complaints may be the same noise. The loop’s rule is that the tolerance for a rare event should be at least as large as the expected noise at the planned sample size—about 1 point for 1% events in 300 rows. Writing zero there isn’t rigor; it can reject good hypotheses by chance.",
+    "—una reclamación cada 100 casos o un «deja de escribirme» cada 200—, la tolerancia cero no distingue un efecto del azar: en 300 ejecuciones, 1 o 4 reclamaciones pueden ser el mismo ruido. La regla del loop es que la tolerancia de un evento raro cubra al menos el ruido esperado para el tamaño de muestra previsto: alrededor de 1 punto para eventos del 1 % en 300 filas. Poner cero no es ser riguroso; puede descartar buenas hipótesis por azar."
+  ],
+  "05": [
+    "05",
+    "05"
+  ],
+  "Virar a versão oficial — com o botão de voltar": [
+    "Make it official—with a rollback button",
+    "Convertirla en oficial, con un botón para volver atrás"
+  ],
+  "Quando o veredito é B ganhou, a decisão ainda passa por você: uma vez por semana, no máximo, chega um cartão de cinco linhas — o que mudou, quanto melhorou, o que foi vigiado, quanto custou, e três botões: aprovar, rejeitar, esperar mais dados. Se você não responder no prazo, o padrão é": [
+    "When the verdict is B won, the decision still goes through you: at most once a week, you get a five-line card—what changed, how much it improved, what was monitored, what it cost, and three buttons: approve, reject, or wait for more data. If you don’t respond by the deadline, the default is",
+    "Cuando el veredicto es «Ganó B», tú sigues tomando la decisión: como máximo una vez por semana recibes una tarjeta de cinco líneas con qué cambió, cuánto mejoró, qué se vigiló, cuánto costó y tres botones: aprobar, rechazar o esperar más datos. Si no respondes antes del plazo, la opción predeterminada es"
+  ],
+  "não": [
+    "not",
+    "no"
+  ],
+  "virar oficial. Aprovado, a candidata vira a versão atual, e a antiga fica guardada no": [
+    "to make it official. Once approved, the candidate becomes the current version, and the old one is saved in the",
+    "convertirla en oficial. Al aprobarla, la candidata pasa a ser la versión actual y la anterior queda guardada en el"
+  ],
+  "O registro de toda versão que já foi oficial, com data e motivo. Como o 'desfazer' de um editor de texto, só que para o roteiro inteiro: qualquer versão anterior volta em um passo.": [
+    "A record of every version that has ever been official, with its date and reason. Like Undo in a text editor, but for the whole script: any previous version can be restored in one step.",
+    "El registro de todas las versiones que alguna vez fueron oficiales, con fecha y motivo. Como «Deshacer» en un editor de texto, pero para todo el guion: cualquier versión anterior se restaura en un paso."
+  ],
+  "histórico com botão de voltar": [
+    "version history with rollback",
+    "historial de versiones con opción para volver atrás"
+  ],
+  ".": [
+    ".",
+    "."
+  ],
+  "O botão de voltar não é enfeite. No primeiro ciclo depois da troca, o loop confere: o número do teste ou algum \"sem piorar\" caiu abaixo do que a versão antiga tinha? Se caiu, a antiga volta a ser a oficial, e o motivo fica escrito. É a única garantia que o LOOP-R faz sem rodeio: uma versão pior não substitui a atual por decisão do sistema — e, se passar, tem caminho de volta.": [
+    "The rollback button isn’t decoration. During the first cycle after a change, the loop checks whether the test metric or a “no harm” metric fell below the old version’s result. If it did, the old version becomes official again, and the reason is recorded. This is the LOOP-R’s one unambiguous guarantee: the system won’t choose a worse version—and if one slips through, there’s a way back.",
+    "El botón para volver atrás no es decorativo. Durante el primer ciclo después del cambio, el loop comprueba si la métrica de la prueba o alguna de «sin empeorar» cayó por debajo del resultado anterior. Si es así, la versión anterior vuelve a ser oficial y se registra el motivo. Esta es la única garantía inequívoca de LOOP-R: el sistema no reemplaza la versión actual por una peor y, si ocurre, hay forma de volver."
+  ],
+  "Antes · versão 1 da clínica": [
+    "Before · clinic version 1",
+    "Antes · versión 1 de la clínica"
+  ],
+  "Abertura igual para toda cliente: saudação e agradecimento pela visita. Taxa de resposta em 48h: 19,3% (300 propostas no período do teste).": [
+    "Same opening for every client: greeting and thanks for visiting. 48-hour response rate: 19.3% (300 proposals during the test period).",
+    "El mismo inicio para todas las clientas: saludo y agradecimiento por la visita. Respuesta en 48 h: 19,3 % (300 propuestas durante la prueba)."
+  ],
+  "Depois · versão 2, promovida no 4º ciclo": [
+    "After · version 2, promoted in cycle 4",
+    "Después · versión 2, promovida en el cuarto ciclo"
+  ],
+  "A primeira frase cita um ponto específico da avaliação daquela cliente. Taxa de resposta: 29,3% (300 propostas). Margem, reclamações e pedidos de parar dentro da tolerância.": [
+    "The first sentence mentions a specific detail from that client’s assessment. Response rate: 29.3% (300 proposals). Margin, complaints, and requests to stop all stayed within tolerance.",
+    "La primera frase menciona un detalle concreto de la evaluación de esa clienta. Respuesta: 29,3 % (300 propuestas). El margen, las reclamaciones y las solicitudes para dejar de escribirle quedaron dentro de la tolerancia."
+  ],
+  "Saldo:": [
+    "Net result:",
+    "Balance:"
+  ],
+  "+10 pontos de resposta": [
+    "+10 points in replies",
+    "+10 puntos de respuesta"
+  ],
+  ", com registro e botão de voltar. A conversão em pacote pago ficou em 3,7% contra 3,0% — diferença que 300 propostas não provam. O loop entregou o que prometeu; o que não prometeu, ainda está em teste.": [
+    ", recorded and with a rollback button. Paid-package conversion was 3.7% versus 3.0%—a difference 300 proposals can’t prove. The loop delivered what it promised; what it didn’t promise is still being tested.",
+    ", con registro y botón para volver atrás. La conversión a paquetes pagados fue del 3,7 % frente al 3,0 %: una diferencia que 300 propuestas no demuestran. El loop cumplió lo prometido; lo demás sigue en prueba."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/3 feito": [
+    "0/3 done",
+    "0/3 hecho"
+  ],
+  "Dê o veredito: um resultado real do loop da clínica": [
+    "Give the verdict: a real result from the clinic’s loop",
+    "Da el veredicto: un resultado real del loop de la clínica"
+  ],
+  "Ler o resultado abaixo, escrever qual das três respostas cabe e o que fazer com a regra, e comparar com o gabarito — cerca de 10 min.": [
+    "Read the result below, write which of the three answers applies and what to do with the rule, then compare with the answer key—about 10 minutes.",
+    "Lee el resultado, escribe cuál de las tres respuestas corresponde y qué hacer con la regla, y compáralo con la solución: unos 10 minutos."
+  ],
+  "Nada muda no seu negócio até você aprovar: você está decidindo sobre o loop de outra empresa, no papel. Se errar o veredito, o gabarito explica por quê — e é exatamente esse erro que a aula quer que você cometa aqui, e não no seu processo.": [
+    "Nothing changes in your business until you approve it: you’re deciding on another company’s loop, on paper. If you get the verdict wrong, the answer key explains why—and this is exactly the mistake the lesson wants you to make here, not in your own process.",
+    "Nada cambia en tu negocio hasta que lo apruebes: estás evaluando por escrito el loop de otra empresa. Si te equivocas de veredicto, la solución explica por qué; este es justo el error que la clase quiere que cometas aquí, no en tu proceso."
+  ],
+  "Clínica da Dra. Renata, segundo ciclo. Hipótese testada: proposta com no máximo 80 palavras. Teste A contra B nas mesmas 12 semanas, 300 propostas em cada versão (a ficha pedia 166). Taxa de resposta em 48h:": [
+    "Dr. Renata’s clinic, second cycle. Hypothesis tested: a proposal with no more than 80 words. A-versus-B test over the same 12 weeks, 300 proposals per version (the worksheet required 166). 48-hour response rate:",
+    "Clínica de la Dra. Renata, segundo ciclo. Hipótesis: propuesta de un máximo de 80 palabras. Prueba A/B durante las mismas 12 semanas, 300 propuestas por versión (la ficha exigía 166). Respuesta en 48 h:"
+  ],
+  "A 19,3% · B 29,7%": [
+    "A 19.3% · B 29.7%",
+    "A 19,3 % · B 29,7 %"
+  ],
+  "— diferença muito maior do que o acaso explica. Guarda-corpos escritos na ficha: margem média, tolerância 1 ponto — A 31,3% · B 31,1%; pedidos de \"não me mande mais\", tolerância 0,5 ponto — A 0 · B 1 em 300; reclamações,": [
+    "—a difference far greater than chance can explain. Guardrails on the worksheet: average margin, 1-point tolerance—A 31.3% · B 31.1%; “don’t message me again” requests, 0.5-point tolerance—A 0 · B 1 in 300; complaints,",
+    ": una diferencia mucho mayor de lo que explicaría el azar. Límites escritos en la ficha: margen promedio, tolerancia de 1 punto —A 31,3 % · B 31,1 %—; solicitudes de «no me escribas más», tolerancia de 0,5 puntos —A 0 · B 1 de 300—; reclamaciones,"
+  ],
+  "tolerância zero — A 1 em 300 · B 6 em 300": [
+    "zero tolerance—A 1 in 300 · B 6 in 300",
+    "tolerancia cero —A 1 de 300 · B 6 de 300"
+  ],
+  "Escreva qual das três respostas o Avaliador dá — B ganhou, A segue ou quantidade insuficiente — e a linha do caso que decide.": [
+    "Write which of the Evaluator’s three answers applies—B won, A stays, or not enough data—and which line in the case decides it.",
+    "Escribe cuál de las tres respuestas da el Evaluador —ganó B, sigue A o datos insuficientes— y qué línea del caso la decide."
+  ],
+  "Escreva o que a Dra. Renata deve fazer com a regra da tolerância de reclamações para os próximos testes, e se este teste deve ser julgado de novo com a regra nova.": [
+    "Write what Dr. Renata should do with the complaint tolerance rule for future tests, and whether this test should be judged again under the new rule.",
+    "Escribe qué debería hacer la Dra. Renata con la regla de tolerancia para reclamaciones en próximas pruebas y si hay que volver a evaluar esta prueba con la nueva regla."
+  ],
+  "Abra o gabarito e compare. Ficou pronto quando você consegue dizer, em uma frase, por que a resposta não é \"B ganhou\" mesmo com 10 pontos de diferença.": [
+    "Open the answer key and compare. You’re done when you can explain in one sentence why the answer isn’t “B won,” even with a 10-point difference.",
+    "Abre la solución y compara. Termina cuando puedas explicar en una frase por qué la respuesta no es «ganó B», aunque haya 10 puntos de diferencia."
+  ],
+  "Gabarito comentado": [
+    "Answer key with explanations",
+    "Solución comentada"
+  ],
+  "1. A segue.": [
+    "1. A stays.",
+    "1. Sigue A."
+  ],
+  "A quantidade que prova foi atingida (300 ≥ 166) e B ganhou no número com folga — mas as reclamações ficaram fora da tolerância escrita: 6 contra 1, com tolerância zero. A regra da ficha diz que B só ganha se nenhum \"sem piorar\" cai além do tolerado. A linha que decide é a das reclamações. Foi exatamente esse o veredito real do loop: A segue, e a hipótese dos 80 palavras foi registrada como testada e descartada.": [
+    "The required sample size was reached (300 ≥ 166), and B won on the main metric by a wide margin—but complaints exceeded the written tolerance: 6 versus 1, with zero tolerance. The worksheet says B only wins if no “no harm” metric exceeds its tolerance. The complaint row decides it. This was the loop’s actual verdict: A stays, and the 80-word hypothesis was recorded as tested and rejected.",
+    "Se alcanzó el tamaño de muestra requerido (300 ≥ 166) y B ganó ampliamente en la métrica principal, pero las reclamaciones superaron la tolerancia escrita: 6 frente a 1, con tolerancia cero. La ficha dice que B solo gana si ninguna métrica de «sin empeorar» excede su tolerancia. Decide la fila de reclamaciones. Ese fue el veredicto real del loop: sigue A y la hipótesis de las 80 palabras quedó registrada como probada y descartada."
+  ],
+  "2. Corrigir a regra, não o veredito.": [
+    "2. Fix the rule, not the verdict.",
+    "2. Corrige la regla, no el veredicto."
+  ],
+  "Reclamação é evento raro (cerca de 1 em 100). Com 300 propostas, 6 contra 1 não é diferença — é o tamanho do ruído. A tolerância zero estava mal escrita: para os próximos testes, ela passa a 1 ponto (o ruído esperado de um evento de 1% em 300 linhas). Este teste": [
+    "A complaint is a rare event (about 1 in 100). With 300 proposals, 6 versus 1 isn’t a meaningful difference—it’s the size of the noise. Zero tolerance was poorly written: future tests will use 1 point (the expected noise for a 1% event in 300 rows). This test",
+    "Una reclamación es un evento raro (aproximadamente 1 de cada 100). Con 300 propuestas, 6 frente a 1 no es una diferencia significativa: es el tamaño del ruido. La tolerancia cero estaba mal definida; en próximas pruebas será de 1 punto (el ruido esperado para un evento del 1 % en 300 filas). Esta prueba"
+  ],
+  "é rejulgado com a regra nova: a regra valia quando o teste rodou, e mudar a régua depois de ver o resultado é a forma mais elegante de \"promover porque parece melhor\". A hipótese pode ser reapresentada num ciclo futuro, com a tolerância corrigida, e testada de novo.": [
+    "get re-judged under the new rule: the rule in force when the test ran applies, and changing the yardstick after seeing the result is the most elegant way to “promote it because it seems better.” The hypothesis can be proposed in a future cycle, with the corrected tolerance, and tested again.",
+    "no se vuelve a juzgar con la nueva regla: se aplica la que estaba vigente durante la prueba. Cambiar el criterio después de conocer el resultado es la forma más elegante de «promover porque parece mejor». La hipótesis podrá presentarse en un ciclo futuro, con la tolerancia corregida, y volver a probarse."
+  ],
+  "3. Em uma frase:": [
+    "3. In one sentence:",
+    "3. En una frase:"
+  ],
+  "o loop não promove o que sobe um número e viola a ficha — e, quando a ficha está errada, conserta-se a ficha para o próximo teste, nunca o resultado deste. Duas coisas ficaram guardadas: a hipótese descartada (para ninguém retestar sem querer) e o aprendizado sobre tolerância (para a ficha do loop e para este curso).": [
+    "the loop doesn’t promote a metric that rises while violating the worksheet—and when the worksheet is wrong, you fix it for the next test, never the result of this one. Two things were saved: the rejected hypothesis (so no one tests it again by accident) and what was learned about tolerance (for the loop worksheet and this course).",
+    "el loop no promueve una métrica que sube si incumple la ficha; cuando la ficha está mal, se corrige para la próxima prueba, nunca el resultado de esta. Quedaron guardadas dos cosas: la hipótesis descartada (para que nadie la repita sin querer) y lo aprendido sobre tolerancia (para la ficha del loop y este curso)."
+  ],
+  "Você acabou de dar um veredito pela regra, contra a impressão — com 10 pontos de diferença gritando o contrário. É a capacidade que separa um loop que aprende de um que só troca de roteiro.": [
+    "You’ve just given a rule-based verdict against your impression—with a 10-point difference shouting the opposite. That’s the skill that separates a loop that learns from one that only changes scripts.",
+    "Acabas de dar un veredicto basado en reglas, contra tu impresión, aunque una diferencia de 10 puntos indique lo contrario. Esa capacidad distingue un loop que aprende de uno que solo cambia el guion."
+  ],
+  "<b>Fig. 1</b> Entre a candidata e a versão oficial há um teste com veredito escrito. O caminho de cima — 'parece melhor' — não existe no loop.": [
+    "<b>Fig. 1</b> A test with a written verdict stands between the candidate and the official version. The “seems better” path doesn’t exist in the loop.",
+    "<b>Fig. 1</b> Entre la candidata y la versión oficial hay una prueba con veredicto escrito. En el loop no existe el camino de «parece mejor»."
+  ],
+  "candidata B": [
+    "candidate B",
+    "candidata B"
+  ],
+  "teste": [
+    "test",
+    "prueba"
+  ],
+  "veredito": [
+    "verdict",
+    "veredicto"
+  ],
+  "oficial": [
+    "official",
+    "oficial"
+  ],
+  "\"parece melhor\"": [
+    "“seems better”",
+    "«parece mejor»"
+  ],
+  "20 textos bonitos ≠ 1 linha de resultado": [
+    "20 nice messages ≠ 1 outcome row",
+    "20 mensajes bonitos ≠ 1 fila de resultados"
+  ],
+  "<b>Fig. 2</b> A e B alternam nas mesmas semanas. O calendário (festas, férias) atinge as duas versões igualmente — a diferença que sobra é do roteiro.": [
+    "<b>Fig. 2</b> A and B alternate during the same weeks. The calendar (holidays, vacations) affects both versions equally—the remaining difference comes from the script.",
+    "<b>Fig. 2</b> A y B se alternan durante las mismas semanas. El calendario (fiestas, vacaciones) afecta a ambas por igual; la diferencia restante se debe al guion."
+  ],
+  "sem 1": [
+    "wk 1",
+    "sem. 1"
+  ],
+  "sem 2": [
+    "wk 2",
+    "sem. 2"
+  ],
+  "sem 3": [
+    "wk 3",
+    "sem. 3"
+  ],
+  "…": [
+    "…",
+    "…"
+  ],
+  "A · versão atual": [
+    "A · current version",
+    "A · versión actual"
+  ],
+  "B · candidata": [
+    "B · candidate",
+    "B · candidata"
+  ],
+  "calendário: bate igual nas duas": [
+    "calendar: affects both equally",
+    "el calendario afecta a ambas por igual"
+  ],
+  "<b>Fig. 3</b> O Avaliador tem três saídas, e só três. A de baixo é a mais frequente: continue o teste. 'Está ganhando' não é uma saída.": [
+    "<b>Fig. 3</b> The Evaluator has three outcomes, and only three. The bottom one is the most common: keep testing. “It’s winning” is not an outcome.",
+    "<b>Fig. 3</b> El Evaluador tiene tres resultados posibles, y solo tres. El de abajo es el más frecuente: continuar la prueba. «Va ganando» no es una respuesta."
+  ],
+  "lê a planilha": [
+    "reads the spreadsheet",
+    "lee la hoja"
+  ],
+  "quantidade": [
+    "not enough",
+    "datos"
+  ],
+  "insuficiente → continue": [
+    "data → keep testing",
+    "insuficientes → continúa la prueba"
+  ],
+  "a mais comum": [
+    "most common",
+    "el más frecuente"
+  ],
+  "<b>Fig. 4</b> Duas condições para B ganhar, ligadas por um E: o número sobe e nenhum guarda-corpo cai além da tolerância. Uma só não basta.": [
+    "<b>Fig. 4</b> B needs to meet two conditions, joined by AND: the main number rises and no guardrail exceeds its tolerance. Either one alone isn’t enough.",
+    "<b>Fig. 4</b> B debe cumplir dos condiciones unidas por Y: sube el número principal y ningún límite supera su tolerancia. Una sola no basta."
+  ],
+  "número": [
+    "main number",
+    "número principal"
+  ],
+  "58% → 66%": [
+    "58% → 66%",
+    "58 % → 66 %"
+  ],
+  "subiu": [
+    "rose",
+    "subió"
+  ],
+  "E": [
+    "AND",
+    "Y"
+  ],
+  "reabertura": [
+    "reopenings",
+    "reaperturas"
+  ],
+  "4% → 9%": [
+    "4% → 9%",
+    "4 % → 9 %"
+  ],
+  "caiu além (tol. 2)": [
+    "exceeded tolerance (2 pts)",
+    "superó la tolerancia (2 puntos)"
+  ],
+  "evento raro: tolerância ≥ ruído esperado": [
+    "rare event: tolerance ≥ expected noise",
+    "evento raro: tolerancia ≥ ruido esperado"
+  ],
+  "<b>Fig. 5</b> Cada versão que já foi oficial fica no histórico, com data e motivo. Se a nova cair no primeiro ciclo, a anterior volta em um passo — é a única promessa sem rodeio.": [
+    "<b>Fig. 5</b> Every version that was official stays in the history, with its date and reason. If the new version drops in the first cycle, the previous one returns in one step—that’s the one no-nonsense promise.",
+    "<b>Fig. 5</b> Cada versión oficial queda en el historial, con fecha y motivo. Si la nueva empeora durante el primer ciclo, la anterior vuelve en un paso: esa es la única promesa sin rodeos."
+  ],
+  "v1": [
+    "v1",
+    "v1"
+  ],
+  "fev": [
+    "Feb",
+    "feb."
+  ],
+  "v2": [
+    "v2",
+    "v2"
+  ],
+  "jul · oficial": [
+    "Jul · official",
+    "jul. · oficial"
+  ],
+  "v3?": [
+    "v3?",
+    "¿v3?"
+  ],
+  "em teste": [
+    "in test",
+    "en prueba"
+  ],
+  "1º ciclo após a troca: número caiu? → v1 volta": [
+    "1st cycle after change: did the number drop? → v1 returns",
+    "1.er ciclo tras el cambio: ¿bajó el número? → vuelve v1"
+  ],
+  "motivo registrado, um passo": [
+    "reason recorded, one step",
+    "motivo registrado, en un paso"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "Reforçar é testar, avaliar e só então incorporar. A versão oficial nunca muda por impressão — muda por veredito escrito.": [
+    "Reinforce means test, evaluate, and only then incorporate. The official version never changes on an impression—it changes with a written verdict.",
+    "Reforzar significa probar, evaluar y solo entonces incorporar. La versión oficial nunca cambia por impresión, sino por un veredicto escrito."
+  ],
+  "O teste roda A e B nas mesmas semanas, sorteadas, para que o calendário atinja as duas igualmente. O Experimentador desenha isso antes de começar.": [
+    "The test runs A and B during the same randomly assigned weeks, so the calendar affects both equally. The Experimenter designs this before it begins.",
+    "La prueba alterna A y B en las mismas semanas, asignadas al azar, para que el calendario afecte a ambas por igual. El Experimentador lo diseña antes de empezar."
+  ],
+  "O Avaliador dá uma de três respostas: B ganhou, A segue, quantidade insuficiente. A terceira é a mais comum, e parar cedo porque \"está ganhando\" é a forma mais fácil de promover ruído.": [
+    "The Evaluator gives one of three answers: B won, A stays, or not enough data. The third is most common, and stopping early because “it’s winning” is the easiest way to promote noise.",
+    "El Evaluador da una de tres respuestas: ganó B, sigue A o datos insuficientes. La tercera es la más frecuente; parar antes porque «va ganando» es la forma más fácil de oficializar el ruido."
+  ],
+  "B só ganha subindo o número e sem derrubar nenhum guarda-corpo; para eventos raros, a tolerância precisa cobrir o ruído. Quando a regra está errada, corrige-se a regra para o próximo teste — não o veredito deste.": [
+    "B only wins when the main number rises without breaking any guardrail; for rare events, tolerance must account for noise. When a rule is wrong, fix it for the next test—not this test’s verdict.",
+    "B solo gana si sube la métrica principal sin vulnerar ningún límite; para eventos raros, la tolerancia debe cubrir el ruido. Si una regla está mal, corrígela para la próxima prueba, no cambies el veredicto de esta."
+  ],
+  "Aprovada, a candidata vira oficial e a antiga fica no histórico com botão de voltar. Se cair no primeiro ciclo, a antiga volta.": [
+    "Once approved, the candidate becomes official and the old version stays in the history with a rollback button. If the new one drops in the first cycle, the old one returns.",
+    "Al aprobarla, la candidata pasa a ser oficial y la versión anterior queda en el historial con un botón para volver atrás. Si la nueva empeora durante el primer ciclo, vuelve la anterior."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de fechar as cinco letras: consegue escolher o processo, escrever a versão atual, registrar a evidência, propor hipóteses e julgar um teste pela regra. O método inteiro está com você.": [
+    "You’ve just completed all five letters: you can choose a process, write its current version, record evidence, propose hypotheses, and judge a test by the rule. You now have the whole method.",
+    "Acabas de completar las cinco letras: puedes elegir un proceso, escribir su versión actual, registrar evidencia, proponer hipótesis y juzgar una prueba según la regla. Ya tienes el método completo."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: releia o \"sem piorar\" da sua resposta 1 e escreva ao lado a tolerância de cada um — e, para os que são eventos raros (reclamação, pedido de parar), troque o zero por um ponto. É a correção que a clínica só fez depois de perder um teste.": [
+    "In the next 15 minutes, at your actual job, reread the “no harm” metrics from answer 1 and write the tolerance beside each. For rare events (complaints, requests to stop), replace zero with one point. That’s the correction the clinic only made after losing a test.",
+    "En los próximos 15 minutos, en tu trabajo real, vuelve a leer las métricas de «sin empeorar» de tu respuesta 1 y anota la tolerancia de cada una. Para eventos raros (reclamaciones o solicitudes para dejar de escribir), cambia el cero por un punto. La clínica solo hizo esta corrección después de perder una prueba."
+  ],
+  "Na próxima trilha, você conhece os nove assistentes com uma função só — quem executa, quem observa, quem critica, quem veta — e descobre por que nenhum deles pode fazer o trabalho do outro sem que o loop comece a se convencer sozinho.": [
+    "In the next track, you’ll meet the nine single-purpose assistants—who executes, observes, critiques, and vetoes—and learn why none can do another’s job without the loop starting to convince itself.",
+    "En la próxima ruta conocerás a los nueve asistentes de función única —quién ejecuta, observa, critica y veta— y descubrirás por qué ninguno puede hacer el trabajo de otro sin que el loop empiece a convencerse a sí mismo."
+  ],
+  "← aula 4": [
+    "← lesson 4",
+    "← clase 4"
+  ],
+  "concluir a trilha →": [
+    "complete the track →",
+    "completar la ruta →"
+  ],
+  "Aula 5 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 5 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 5 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "Marcos leu as vinte primeiras respostas da versão nova, gostou e quis trocar o roteiro. O que faltava para oficializar?": [
+    "Marcos read the first twenty replies using the new version, liked them, and wanted to change the script. What was missing before making it official?",
+    "Marcos leyó las primeras veinte respuestas de la versión nueva, le gustaron y quiso cambiar el guion. ¿Qué faltaba para oficializarlo?"
+  ],
+  "Uma impressão não é resultado. Faltavam as linhas de resultado e o veredito escrito de um teste A/B — um dos três da ficha.": [
+    "An impression isn’t an outcome. He needed outcome rows and a written verdict from an A/B test—one of the three on the worksheet.",
+    "Una impresión no es un resultado. Faltaban filas de resultados y el veredicto escrito de una prueba A/B: uno de los tres de la ficha."
+  ],
+  "Por que A e B rodam nas mesmas semanas, em vez de um mês cada?": [
+    "Why do A and B run during the same weeks instead of one month each?",
+    "¿Por qué se prueban A y B durante las mismas semanas y no un mes cada una?"
+  ],
+  "Para que o calendário atinja as duas versões igualmente. Feriados, férias e sazonalidade podem mudar o número sem que o roteiro mude.": [
+    "So the calendar affects both versions equally. Holidays, vacations, and seasonality can change the metric without any script change.",
+    "Para que el calendario afecte a ambas versiones por igual. Los festivos, las vacaciones y la temporada pueden cambiar la métrica sin que cambie el guion."
+  ],
+  "Quando B ganha no número principal, mas ultrapassa a tolerância de um \"sem piorar\", qual é o veredito?": [
+    "If B wins on the main metric but exceeds the tolerance on a “no harm” metric, what’s the verdict?",
+    "Si B gana en la métrica principal, pero supera la tolerancia de una métrica de «sin empeorar», ¿cuál es el veredicto?"
+  ],
+  "A segue. B só ganha quando a métrica principal sobe e nenhum guarda-corpo excede a tolerância escrita.": [
+    "A stays. B only wins when the main metric rises and no guardrail exceeds its written tolerance.",
+    "Sigue A. B solo gana si sube la métrica principal y ningún límite supera la tolerancia escrita."
+  ],
+  "Por que \"quantidade insuficiente\" é uma resposta válida — e comum?": [
+    "Why is “not enough data” a valid—and common—answer?",
+    "¿Por qué «datos insuficientes» es una respuesta válida y frecuente?"
+  ],
+  "Porque a quantidade planejada ainda não foi atingida. Continuar o teste evita oficializar uma diferença que pode ser acaso; \"está ganhando\" não é um veredito.": [
+    "Because the planned sample size hasn’t been reached. Continuing the test prevents making a chance difference official; “it’s winning” isn’t a verdict.",
+    "Porque aún no se alcanzó la cantidad planificada. Seguir con la prueba evita oficializar una diferencia que podría ser casualidad; «va ganando» no es un veredicto."
+  ],
+  "Depois de 4 semanas de teste, a versão B de Marcos está com 31% de resposta contra 24% de A, com 90 leads em cada. A ficha pede 300 por versão. Ele quer trocar o roteiro hoje. Qual é a resposta do Avaliador e o que ele faz?": [
+    "After 4 weeks of testing, Marcos’s version B has a 31% response rate versus 24% for A, with 90 leads each. The worksheet requires 300 per version. He wants to change the script today. What does the Evaluator say, and what should Marcos do?",
+    "Después de 4 semanas de prueba, la versión B de Marcos tiene un 31 % de respuestas frente al 24 % de A, con 90 leads en cada una. La ficha exige 300 por versión. Quiere cambiar el guion hoy. ¿Qué responde el Evaluador y qué debe hacer?"
+  ],
+  "Quantidade insuficiente: 90 < 300. Continua o teste. A única razão para parar antes seria um guarda-corpo caindo — nunca uma vantagem parcial.": [
+    "Not enough data: 90 < 300. Keep testing. The only reason to stop early would be a guardrail breach—never a partial lead.",
+    "Datos insuficientes: 90 < 300. Continúa la prueba. La única razón para parar antes sería que se rebasara un límite de seguridad, nunca una ventaja parcial."
+  ],
+  "A versão B de Cláudio subiu a resolução no primeiro contato de 58% para 66% e os chamados reabertos foram de 4% para 9% (tolerância 2 pontos). Veredito, e por quê?": [
+    "Cláudio’s version B raised first-contact resolution from 58% to 66%, while tickets reopened rose from 4% to 9% (2-point tolerance). What’s the verdict, and why?",
+    "La versión B de Cláudio subió la resolución en el primer contacto del 58 % al 66 %, y los tickets reabiertos pasaron del 4 % al 9 % (tolerancia de 2 puntos). ¿Cuál es el veredicto y por qué?"
+  ],
+  "A segue. B só ganha se sobe o número e nenhum 'sem piorar' cai além da tolerância. Reabertura subiu 5 pontos com tolerância 2 — B resolvia 'mais' fechando chamados que voltavam.": [
+    "A stays. B only wins if the main metric rises and no “no harm” metric exceeds its tolerance. Reopenings rose 5 points with a tolerance of 2—B resolved “more” by closing tickets that came back.",
+    "Sigue A. B solo gana si sube la métrica principal y ninguna métrica de «sin empeorar» supera su tolerancia. Las reaperturas subieron 5 puntos con una tolerancia de 2: B resolvía «más» al cerrar tickets que volvían."
+  ],
+  "Dra. Renata testou a versão 2 em janeiro e comparou com a versão 1 de dezembro. O que invalida a comparação, e como ela deveria ter desenhado o teste?": [
+    "Dr. Renata tested version 2 in January and compared it with version 1 from December. What invalidates the comparison, and how should she have designed the test?",
+    "La Dra. Renata probó la versión 2 en enero y la comparó con la versión 1 de diciembre. ¿Qué invalida la comparación y cómo debería haber diseñado la prueba?"
+  ],
+  "Meses diferentes: festas em dezembro, férias em janeiro mudam a resposta sem mexer no roteiro. O certo é A e B sorteadas nas mesmas semanas — assim festas e férias pesam igual sobre as duas versões.": [
+    "Different months: holidays in December and vacations in January change response rates even when the script stays the same. A and B should be randomly assigned during the same weeks, so holidays and vacations affect both versions equally.",
+    "Son meses distintos: las fiestas de diciembre y las vacaciones de enero cambian la tasa de respuesta aunque el guion no cambie. Lo correcto es asignar A y B al azar durante las mismas semanas, para que fiestas y vacaciones afecten a ambas por igual."
+  ],
+  "Uma regra da ficha se mostrou mal escrita depois do resultado do teste (tolerância zero num evento raro). Duas opções: rejulgar o teste com a regra nova, ou corrigir a regra só para os próximos. Qual, e por quê?": [
+    "A worksheet rule turned out to be poorly written after the test result (zero tolerance for a rare event). Two options: rejudge the test under the new rule, or fix the rule only for future tests. Which one, and why?",
+    "Después del resultado se vio que una regla de la ficha estaba mal definida (tolerancia cero para un evento raro). Hay dos opciones: volver a juzgar la prueba con la nueva regla o corregirla solo para las próximas. ¿Cuál y por qué?"
+  ],
+  "Corrigir só para os próximos. Mudar a régua depois de ver o resultado é promover 'porque parece melhor' com outro nome. A hipótese pode ser reapresentada e testada de novo com a regra corrigida.": [
+    "Fix it only for future tests. Changing the yardstick after seeing the result is just another way of promoting something “because it seems better.” The hypothesis can be submitted and tested again in a future cycle under the corrected rule.",
+    "Corrígela solo para las próximas pruebas. Cambiar el criterio después de ver el resultado es promover algo «porque parece mejor» con otro nombre. La hipótesis puede volver a presentarse y probarse en un ciclo futuro con la regla corregida."
+  ],
+  "Qual é a única garantia que o LOOP-R faz sem rodeio sobre a versão oficial?": [
+    "What is the one unambiguous guarantee LOOP-R makes about the official version?",
+    "¿Cuál es la única garantía inequívoca de LOOP-R sobre la versión oficial?"
+  ],
+  "Que uma versão pior não substitui a atual por decisão do sistema — e que, se uma promovida cair no primeiro ciclo, a anterior volta em um passo, com o motivo registrado. Não garante que o número sobe.": [
+    "A worse version will not replace the current one by system decision—and if a promoted version drops during the first cycle, the previous one returns in one step with the reason recorded. It does not guarantee that the metric will rise.",
+    "Que una versión peor no sustituye a la actual por decisión del sistema y que, si una versión promovida empeora en el primer ciclo, la anterior vuelve en un paso y queda registrado el motivo. No garantiza que la cifra suba."
+  ]
+}

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="loop-r-trilha-5" name="curso"/>
+<title>LOOP-R · Track 5 — From Task to Business · INEMA.CLUB PRO</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/aula.css" rel="stylesheet"/>
+<script>(function(){try{var m=document.querySelector('meta[name=curso]');var CK=(m&&m.content)||'v5:curso';var L=document.documentElement.lang||'pt-BR';if(!/^pt/i.test(L))CK+=':'+L;var s=JSON.parse(localStorage.getItem(CK));if(s&&s.prefs&&s.prefs.theme)document.documentElement.setAttribute('data-theme',s.prefs.theme);}catch(e){}})();</script>
+<!--
+  PROTOCOLO DE DESCOBERTA (formato-curso-v5, Passo 0 — respostas do plano-curso-loop-r.md §0):
+  - Público específico: donos e gestores de negócios pequenos/médios, 40+, que já usam IA para "fazer coisas"
+    (propostas, respostas, posts) e sentem que nada melhora com o tempo.
+  - Profissões-alvo (3): dona de clínica de estética (propostas por WhatsApp) · corretor de imóveis (leads de portal)
+    · gestor de suporte de uma empresa de software pequena.
+  - Familiaridade com tecnologia: WhatsApp, planilha e um chat de IA. Sem terminal, sem programação, nunca ouviu "Git".
+  - Resultado prático esperado: sair com um loop montado no próprio negócio — 5 respostas, planilha, 1 experimento, 1 decisão com o cartão.
+  - Tempo por sessão: 20 min.
+  - Trilha 5 (aplicação): 3 aulas — 5.1 ferramenta (caso da clínica, 4 ciclos reais) · 5.2 fundamento (caso do suporte) · 5.3 ferramenta (entrega final).
+  - Fonte dos números reais: exemplos/vendas-whatsapp (README, ledger, ciclos 0001–0004). Dados sintéticos, agentes reais — dito ao aluno na aula 1.
+  - Auditoria anti-clone: nenhum curso anterior em curso/ no momento da geração (só capa/); ordem dos opcionais varia entre as 3 aulas
+    (5.1: qsteps→qerr→qbefore-after · 5.2: qanchor→quiz→qbefore-after · 5.3: qapply→qerr→qsteps).
+-->
+<style>
+  .view{display:none}.view.active{display:block}
+  .languages{font:11px var(--mono);white-space:nowrap}.languages a{color:var(--muted);text-decoration:none}.languages a[lang="en"]{color:var(--accent);font-weight:700}
+  .lnav{max-width:1160px;margin:0 auto 5vh;padding:0 clamp(24px,5vw,60px);display:flex;justify-content:space-between;gap:12px}
+  .lnav a{font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line2);border-radius:12px;padding:12px 16px}
+  .lnav a:hover{border-color:var(--accent);color:var(--ink)}
+  #v-trilha .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(24px,5vw,60px)}
+  #v-trilha .t-hero{position:relative;overflow:hidden;padding:20vh 0 8vh;border-bottom:1px solid var(--line)}
+  #v-trilha h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,6.4vw,72px);line-height:1;letter-spacing:-.025em;margin:0 0 22px}
+  #v-trilha h1 em{font-style:italic;color:var(--accent)}
+  #v-trilha .lead{font-family:var(--serif);font-size:clamp(19px,2.1vw,24px);line-height:1.5;color:var(--ink-soft);max-width:46ch;margin:0 0 30px}
+  #v-trilha section{padding:8vh 0}
+  #v-trilha .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  #v-trilha h2{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.6vw,38px);margin:0 0 28px}
+  #v-trilha .aulas{display:grid;gap:14px}
+  #v-trilha .au{display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:center;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+  #v-trilha .au .num{font-family:var(--serif);font-size:30px;color:var(--accent);text-align:center}
+  #v-trilha .au h3{font-family:var(--serif);font-weight:500;font-size:21px;margin:0 0 5px}
+  #v-trilha .au p{margin:0;color:var(--muted);font-size:14.5px}
+  #v-trilha .au .meta{font-family:var(--mono);font-size:11px;color:var(--accent);white-space:nowrap;text-align:right}
+  #v-trilha .au .prog{position:static;margin-top:10px;height:5px;border-radius:99px;background:var(--line);overflow:hidden;max-width:220px;width:auto}
+  #v-trilha .au .prog i{display:block;height:100%;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+  #v-trilha footer{max-width:1080px;margin:0 auto;padding:6vh clamp(24px,5vw,60px) 12vh;color:var(--faint);text-align:center;font-family:var(--serif);font-style:italic;border-top:1px solid var(--line)}
+  @media(max-width:720px){#v-trilha .au{grid-template-columns:44px 1fr}#v-trilha .au .meta{grid-column:2;text-align:left}}
+  /* figuras do trilho: texto em mono, cores só por token */
+  .fig svg text,.herofig svg text{font-family:var(--mono)}
+  .fig svg .t{fill:var(--muted);font-size:8px}
+  .fig svg .tb{fill:var(--ink);font-size:9px;font-weight:700}
+  .fig svg .ta{fill:var(--accent);font-size:9px;font-weight:700}
+  .fig svg .tw{fill:var(--warm);font-size:8.5px;font-weight:700}
+  .fig svg .box{fill:var(--panel);stroke:var(--line2)}
+  .fig svg .boxa{fill:var(--panel);stroke:var(--accent)}
+  .fig svg .boxw{fill:var(--panel);stroke:var(--warm)}
+  .fig svg .ln{stroke:var(--line2);stroke-width:1.2}
+  .fig svg .la{stroke:var(--accent);stroke-width:1.6}
+  .fig svg .lw{stroke:var(--warm);stroke-width:1.6}
+  .fig svg .bar{fill:var(--line2)}
+  .fig svg .bara{fill:var(--accent)}
+  .fig svg .barw{fill:var(--warm)}
+  .herofig svg .h{stroke:var(--ink-soft);stroke-width:1.4;fill:none}
+  .herofig svg .ha{stroke:var(--accent);stroke-width:1.6;fill:none}
+  .herofig svg .hw{stroke:var(--warm);stroke-width:1.4;fill:none}
+  .herofig svg .hp{fill:var(--panel);stroke:var(--line2);stroke-width:1.2}
+  .herofig svg .ht{fill:var(--muted);font-size:9px}
+  .herofig svg .hta{fill:var(--accent);font-size:10px;font-weight:700}
+  .caso{margin:0 0 14px;padding:14px 18px;border-left:3px solid var(--line2);background:var(--panel);border-radius:0 12px 12px 0;font-family:var(--serif);font-size:16.5px;line-height:1.55;color:var(--ink-soft)}
+  .pq{font-weight:600;color:var(--ink);margin:10px 0 4px}
+  .practice details{margin:14px 0 0;border:1px solid var(--line);border-radius:12px;padding:10px 16px;background:var(--bg2)}
+  .practice details summary{cursor:pointer;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  .practice details p{font-size:14.5px;line-height:1.6;color:var(--ink-soft)}
+  .mini{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0 0}
+  .mini th,.mini td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-soft)}
+  .mini th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .mini td b{color:var(--ink)}
+  .formula{font-family:var(--serif);font-size:clamp(17px,2.2vw,22px);text-align:center;margin:18px 0;color:var(--ink);letter-spacing:.02em}
+  .formula b{color:var(--accent);font-weight:600}
+</style>
+<link rel="alternate" hreflang="pt-BR" href="../../trilha-5/curso.html"><link rel="alternate" hreflang="en" href="curso.html"><link rel="alternate" hreflang="es" href="../../es/trilha-5/curso.html"><link rel="alternate" hreflang="x-default" href="../../trilha-5/curso.html"><link rel="canonical" href="https://inematds.github.io/loop-r/curso/en/trilha-5/curso.html"><style id="language-navigation-style">
+.language-links,.languages{display:inline-flex;align-items:center;gap:.5rem;font:12px system-ui;white-space:nowrap}.language-links a,.languages a{color:inherit;text-decoration:none}.language-links [aria-current=page],.languages [aria-current=page]{font-weight:700;text-decoration:underline}.language-links{padding:.5rem 1rem}.links>a[lang]{font:12px system-ui}.bar-inner{flex-wrap:wrap}.bar .languages{pointer-events:auto}header.top .wrap{flex-wrap:wrap}
+@media(max-width:760px){nav>.wrap{height:auto;min-height:60px;flex-wrap:wrap;gap:12px;padding-block:10px}nav .links{gap:10px;flex-wrap:wrap}}
+</style></head>
+<body>
+<div class="bar"><div class="bar-inner">
+<span class="brand"><a class="mark" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a><a class="course" href="../index.html">LOOP-R</a></span>
+<a class="back" href="#trilha" style="display:none">← trilha</a>
+<button class="pill" id="pill" style="display:none">0 lido</button>
+<button id="revbtn">revisar <span id="revn">0</span></button>
+<button id="exbtn">exercícios</button>
+<button id="jorbtn">jornada</button>
+<button aria-label="Como funciona" id="helpbtn">?</button>
+<button aria-label="Preferências de leitura" id="prefsbtn">Aa</button>
+<button id="themebtn">tema: escuro</button>
+
+<span class="languages"><a lang="pt-BR" href="../../trilha-5/curso.html">PT</a> · <a lang="en" href="curso.html">EN</a> · <a lang="es" href="../../es/trilha-5/curso.html">ES</a></span></div></div>
+<!-- ===== TRILHA ===== -->
+<section class="view" id="v-trilha">
+<header class="t-hero"><div class="wrap">
+<p class="kicker">LOOP-R · Track 05 · Application</p>
+<h1>From task to<em>business</em></h1>
+<p class="lead">Follow two loops from start to finish—one sales loop with four real cycles and one support loop—and leave with your own loop assembled: a complete worksheet, its first cycle designed, and a filled-out decision card.</p>
+</div></header>
+<section><div class="wrap">
+<div class="statcards"></div>
+<p class="eyebrow">Lessons</p>
+<h2>From a real case to your loop</h2>
+<div class="aulas">
+<a class="au on" data-aula="1" href="#aula-1">
+<div class="num">1</div>
+<div><h3>A sales loop, from start to finish</h3><p>Read the clinic loop’s four real cycles—a veto, a discard, a new test, and a promotion—and predict what the fifth should test.</p><div class="prog"><i></i></div></div>
+<div class="meta">open →</div>
+</a>
+<a class="au on" data-aula="2" href="#aula-2">
+<div class="num">2</div>
+<div><h3>A support loop: from 10,000 tickets to a better product</h3><p>Sketch a support loop on paper—what it optimizes and monitors—and run the Observer on 20 tickets in your AI chat.</p><div class="prog"><i></i></div></div>
+<div class="meta">open →</div>
+</a>
+<a class="au on" data-aula="3" href="#aula-3">
+<div class="num">3</div>
+<div><h3>Your loop, assembled</h3><p>Complete the loop worksheet with five answers and your first decision card, and take the 13-question canvas with you.</p><div class="prog"><i></i></div></div>
+<div class="meta">open →</div>
+</a>
+</div>
+</div></section>
+<footer><div class="wrap">LOOP-R: The Business That Learns on Its Own · Track 5 · INEMA.CLUB PRO</div></footer>
+</section>
+<!-- ===== AULA 1 — FERRAMENTA: o caso da clínica, 4 ciclos reais ===== -->
+<section class="view" data-aula="1" data-tempo="23min" id="v-aula-1">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Track 05 · Lesson 1 · tool</p>
+<h1>A sales loop,<br/><em>from start to finish</em></h1>
+<p class="promise">By the end of this lesson, you can read the clinic loop’s four cycles, explain why each idea was vetoed, discarded, or promoted, and identify what the fifth cycle should test.</p>
+<p class="why">You have already seen each part of the loop separately: worksheet, spreadsheet, guardrail, card. Now you’ll see them working together with real numbers—including a ten-point gain that was discarded. This is how the loop will behave in your business.</p>
+<p class="cue"><span class="arw">↓</span> scroll to study</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: a recepção da clínica — o celular com as propostas e a pasta de roteiros com o carimbo v2 -->
+<rect class="hp" height="172" rx="14" width="96" x="30" y="34"></rect>
+<rect class="h" height="128" rx="4" width="72" x="42" y="50"></rect>
+<rect class="h" height="16" rx="6" width="44" x="48" y="60"></rect>
+<rect class="ha" height="16" rx="6" width="44" x="66" y="84"></rect>
+<rect class="h" height="16" rx="6" width="50" x="48" y="108"></rect>
+<rect class="ha" height="16" rx="6" width="48" x="62" y="132"></rect>
+<circle class="h" cx="78" cy="192" r="5"></circle>
+<text class="ht" x="34" y="226">proposals · WhatsApp</text>
+<path class="hp" d="M150 70h110v120a8 8 0 0 1-8 8H158a8 8 0 0 1-8-8z"></path>
+<path class="h" d="M150 70v-10a8 8 0 0 1 8-8h34l10 10h50a8 8 0 0 1 8 8v0"></path>
+<line class="h" x1="166" x2="244" y1="100" y2="100"></line>
+<line class="h" x1="166" x2="232" y1="118" y2="118"></line>
+<line class="h" x1="166" x2="240" y1="136" y2="136"></line>
+<line class="h" x1="166" x2="210" y1="154" y2="154"></line>
+<circle class="hw" cx="232" cy="164" r="20"></circle>
+<text class="hta" x="221" y="168">v2</text>
+<text class="ht" x="150" y="226">team script</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="ferramenta" data-versao="exemplo vendas-whatsapp · ciclos 0001–0004 · fev–jul/2026">
+<h2><span class="n">01</span> It all started with five answers</h2>
+<p>This lesson’s case is LOOP-R’s reference example: a beauty clinic that sends proposals over WhatsApp. First, a note about the numbers. The nine assistants ran for real: every veto, verdict, and report is their unedited output. The proposals and client responses, however, are simulated to reflect a real effect. This case shows how the loop responds to a genuine improvement—it did not discover the improvement by itself.</p>
+<p>The clinic owner—let’s call her Renata—answered the five questions on the loop worksheet. Measurable goal: convert proposals into paid packages, from 3% to 5%. Source of evidence: the tracking spreadsheet, one row per proposal, about 50 per week. What never changes on its own: discounts above 10%, promises about results or timing, contacting anyone who asked to opt out, or naming a competitor. Limit: R$ 50 per cycle, weekly cycles, up to three ideas at a time, one test at a time. Approver: Renata herself, with seven days to respond.</p>
+<p>The system returned a proposal she only had to confirm: first test the <span class="gterm" data-def="A metric that responds quickly and has a plausible link to revenue. Here: the client replied within 48 hours with something other than a refusal." tabindex="0">signal metric</span> —response rate, from 20% to 30%—and monitor conversion from a distance. Reason: proving 3% versus 5% takes about 1,500 proposals per version; at 50 per week, that would take 60 weeks. Response, 20% versus 30%, takes about 300. It also came with three <span class="gterm" data-def="A metric that the new version must not worsen beyond a set tolerance, even if the test metric rises. If it does, the old version stays." tabindex="0">guardrails</span>: average margin, complaints, and opt-out requests.</p>
+<div class="qsteps">
+<p class="qsk">How to read a cycle in four lines</p>
+<ol>
+<li><b>Evidence:</b> what the spreadsheet says, with counts—never “it seems like.”</li>
+<li><b>Ideas and veto:</b> what the Optimizer proposed in IF… THEN… BECAUSE format, and what the Guardian blocked before any test.</li>
+<li><b>Test and verdict:</b> A versus B, how many on each side, and one of three answers—B won, A stays, or there isn’t enough evidence yet.</li>
+<li><b>Decision and memory:</b> what the person decided on the card, and what was recorded so no one repeats it.</li>
+</ol>
+</div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">mark as read</button>
+</section>
+<section class="step" data-fig="2" data-kind="ferramenta" data-versao="ciclo 0001 · 2026-02-02">
+<h2><span class="n">02</span> Cycle 1: three ideas, one veto, and a sobering calculation</h2>
+<p>The Observer reviewed 200 proposals. The Critic spotted the pain point: 166 of them, 83%, received no response within 48 hours. It also found a discrepancy: the worksheet said conversion was 3%, while the spreadsheet showed 2.5%. It flagged this as it should—the worksheet records what the person believes; the spreadsheet records what happened.</p>
+<p>The Optimizer wrote down three ideas. First: close the proposal with a forced-choice question such as “would you rather start this week or next?” Second: cap the message at 80 words. Third: open by mentioning something specific from that client’s review instead of using the same greeting for everyone. The Guardian vetoed the first idea before any test: a forced choice assumes the purchase and sets a deadline, creating predictable pressure that can lead to complaints and opt-outs. A veto is final; the Guardian does not suggest an alternative.</p>
+<p>Then came the calculation. The Optimizer expected response to rise from 17% to 22%. The Experimenter calculated that proving this difference would take 40 weeks. Renata resized the test around the worksheet target of 30%; the test then required 166 proposals per version—seven weeks. One test at a time: the 80-word idea went in, while the opening idea stayed in the queue. If you’re a real estate agent, the same logic applies: “would you like to visit Saturday or Sunday?” would get the same veto, and “reply within 24 hours” is your signal metric, not the sale.</p>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">mark as read</button>
+</section>
+<section class="step" data-fig="3" data-kind="ferramenta" data-versao="ciclo 0002 · 2026-04-27">
+<h2><span class="n">03</span> Cycle 2: it rose ten points and was discarded</h2>
+<p>Twelve weeks later: 300 proposals on each side. Version A, the usual script: a 19.3% response rate. Version B, with up to 80 words: 29.7%. The odds of this being due to chance are 3 in 1,000. Anyone looking at these two numbers would promote B immediately.</p>
+<p>The Evaluator did not promote it. Complaints: 6 for version B versus 1 for A, while the worksheet’s tolerance was zero. Verdict: A STAYS. The rule was applied as written—and the rule was wrong. Six versus one out of 300 is noise from a rare event, not a real difference. Renata accepted the verdict, adjusted the complaint tolerance to 0.01 for future tests, and logged the 80-word idea as tested and discarded, with the numbers, so no one would accidentally test it again.</p>
+<p>Notice what the loop ensured here: a version was not adopted just because it looked better, everything was recorded, and the error was in the worksheet, not the system. A support manager who sets “reopened within 7 days” to zero tolerance will discard a good response because of two tickets. Tolerance is a calculation, not a wish.</p>
+<div class="qerr">
+<p class="qk">Common mistake</p>
+<p class="qerr-txt"><b>Zero tolerance for a rare event.</b> Complaints and opt-out requests occur in 1% or fewer cases. With 300 on each side, 6 versus 1 is noise—and zero tolerance discards good ideas by chance. Use the product calculation: tolerance is about two standard errors of the baseline rate, which at 1% and 300 per side is 0.01.</p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">mark as read</button>
+</section>
+<section class="step" data-fig="4" data-kind="ferramenta" data-versao="ciclos 0003–0004 · mai–jul/2026">
+<h2><span class="n">04</span> Cycles 3 and 4: the second idea enters and becomes the official version</h2>
+<p>In cycle 3, the idea waiting in the queue was brought back: open the message by mentioning a specific point from that client’s review. The Experimenter recalculated using the actual response rate, from 18.4% to 30%: 212 proposals per version, about nine weeks. A new idea—to mention the price right after the greeting—was vetoed because it could predictably increase opt-outs, a risk admitted by the hypothesis itself.</p>
+<p>Twelve weeks later, cycle 4: 300 on each side. Response was 19.3% for A and 29.3% for B; odds of chance, 4 in 1,000. Guardrails: margin rose 0.7 points; complaints were 4 versus 2, within the new 0.01 tolerance; opt-outs were 1 versus 3, an improvement. Verdict: B WON. Renata received a five-line card costing about R$ 45, within the R$ 50 limit. She approved it. The script with the specific opening became the official version, v2. Version 1 remained in the history with a rollback button. If, in the first cycle after promotion, response or any monitored metric falls beyond tolerance, the system alerts her and asks to roll back.</p>
+<p>One line in the verdict deserves attention: conversion, the number Renata actually cared about, rose from 3.0% to 3.7%—and with this sample size, that proves nothing. Remember this detail. At the beauty clinic or real estate agency, what the loop has proved so far is that more people reply, not that more people buy.</p>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">mark as read</button>
+</section>
+<section class="step" data-fig="5" data-kind="ferramenta" data-versao="relatório do meta-agente · ciclo 0004">
+<h2><span class="n">05</span> What the meta-agent saw from above</h2>
+<p>The <span class="gterm" data-def="The assistant that observes the loop, not the problem: cost, how many ideas became tests, and how many were vetoed. In today’s product, it only reports—it never changes anything on its own." tabindex="0">meta-agent</span> doesn’t look at the proposal or the client. It looks at the loop. After cycle 4, its report had four findings. Cost: the four cycles used about 1.6 million <span class="gterm" data-def="The unit AI charges for—pieces of words. One thousand tokens are about 750 words in Portuguese." tabindex="0">tokens</span> for a single promotion. Cycle 4 used 90% of the R$ 50 limit—an alert. Vetoes: of four distinct ideas, two were vetoed, a rate of 0.5—an alert because the Optimizer is proposing things that conflict with the guardrails. Cadence: the worksheet promised weekly cycles; the actual intervals were 12, 1, and 12 weeks. The Critic flagged this three times in a row. Promotions: one in four cycles.</p>
+<p>It also repeated one observation with numbers: two different ideas each raised the response rate by ten points—and neither moved conversion. Two observations against, none in favor. Today’s official version was approved based only on the signal. What it suggested from this will come in the practice—you get to figure it out.</p>
+<p>A support manager reading their own loop’s report would draw the same conclusions: a high veto rate means invariants are poorly explained to whoever proposes ideas; costs near the limit mean too much memory is being loaded each cycle; broken cadence means no one is updating the spreadsheet every week. The meta-agent fixes none of this. It shows you, and you decide.</p>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Before · v1</p><p class="qba-txt">Same greeting for every client, a thank-you for the visit, five blocks of text. Response rate: 19.3%.</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">After · v2</p><p class="qba-txt">The first sentence mentions that client’s concern or the area assessed. Response rate: 29.3%.</p></div>
+<p class="qba-saldo">Result: <b>+10 response points</b>, with 300 proposals on each side and no guardrail outside tolerance. Conversion: 3.0% → 3.7%, still unproven.</p>
+</div>
+<div class="mobfig" data-mobfig="5"></div>
+<button class="readbtn" data-read="s5">mark as read</button>
+</section>
+<section class="practice" data-mode="analise" data-practice="p1">
+<p class="pk">Practice now <span class="pcount">0/3 done</span></p>
+<h3 class="ph">Predict the clinic’s fifth cycle</h3>
+<p class="pgoal">Read the case, answer three questions in writing, and compare with the answer key—about 10 min.</p>
+<p class="psafe">Nothing changes in your business until you approve it: here, you only read and make decisions about the clinic’s loop. If your answer differs from the key, read why—that difference is exactly what this lesson aims to teach.</p>
+<p class="caso">Renata opens the cycle 4 report on a Monday. Script v2 has been official for one week. She has R$ 50 for the next cycle and three ideas in the Optimizer’s queue: a new greeting, sending the proposal as audio, and a meta-agent suggestion she has not yet read carefully. The spreadsheet continues to receive 50 proposals a week.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span><b>Question 1.</b> Why was the 80-word idea discarded in cycle 2 despite rising ten points—and what changed in the worksheet as a result? Write two sentences.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span><b>Question 2.</b> What three conditions authorized promotion in cycle 4? List them.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span><b>Question 3.</b> What should the fifth cycle test—a new idea about the copy, or something else? Justify your answer with a number from the meta-agent’s report.</span></label></li>
+</ol>
+<details>
+<summary>Answer key with explanations</summary>
+<p><b>1.</b> It was discarded because it worsened a guardrail beyond tolerance: 6 complaints versus 1, with zero tolerance. The Evaluator does not choose “what looks better”—if a monitored metric falls outside tolerance, A stays, even when the test metric rises. The worksheet changed: complaint tolerance went from zero to 0.01, because zero tolerance for a rare event discards good ideas due to noise. The idea remained in memory as tested and discarded, with the numbers.</p>
+<p><b>2.</b> Three conditions, all required: the difference was significant (19.3% versus 29.3%, odds of chance 4 in 1,000); the required sample size was reached (300 on each side, minimum 212); and no guardrail went outside tolerance (margin, complaints, and opt-outs all stayed within limits). After that came human approval on the card, within seven days.</p>
+<p><b>3.</b> Neither the new greeting nor audio. The fifth cycle should replace or supplement the signal metric with something closer to closing—for example, “replied and asked about booking or price.” The meta-agent report supports this: two different ideas raised response by ten points, and neither moved conversion (3.0% versus 3.7%, unproven). Continuing to optimize replies means continuing to optimize a signal that has twice failed to move the goal. If you answered “test the greeting,” notice the pattern: it’s the third copy idea, while the evidence points to the metric.</p>
+</details>
+<p class="pdone">You just read an entire loop and predicted its next cycle from evidence, not taste—the same reading you’ll do for your own.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; The five worksheet answers enter on the left; the system proposes the signal metric and guardrails (amber), and the cycle runs on the right. Notice that the revenue goal stays out of the test—it is monitored, not optimized." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect class="box" height="26" rx="5" width="86" x="8" y="14"></rect><text class="tb" x="14" y="30">1 goal 3%→5%</text>
+<rect class="box" height="26" rx="5" width="86" x="8" y="46"></rect><text class="tb" x="14" y="62">2 spreadsheet 50/wk</text>
+<rect class="box" height="26" rx="5" width="86" x="8" y="78"></rect><text class="tb" x="14" y="94">3 never changes ×4</text>
+<rect class="box" height="26" rx="5" width="86" x="8" y="110"></rect><text class="tb" x="14" y="126">4 limit R$ 50</text>
+<rect class="box" height="26" rx="5" width="86" x="8" y="142"></rect><text class="tb" x="14" y="158">5 approved by: Renata</text>
+<path class="la" d="M94 91h22"></path><path class="la" d="M112 86l6 5-6 5"></path>
+<circle class="boxa" cx="166" cy="92" r="44"></circle>
+<text class="t" x="146" y="60">operate</text><text class="t" x="196" y="96">observe</text><text class="t" x="150" y="132">propose</text><text class="t" x="118" y="96">test</text>
+<path class="la" d="M166 54a38 38 0 0 1 36 26"></path><path class="la" d="M198 76l4 6-7 1"></path>
+<rect class="boxw" height="22" rx="5" width="92" x="120" y="150"></rect><text class="tw" x="125" y="164">signal: response 20→30%</text>
+<rect class="boxw" height="18" rx="5" width="92" x="120" y="176"></rect><text class="tw" x="125" y="188">monitor: conversion</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; Three ideas come from the Critic. The Guardian blocks one (amber) before any test; the one-test-at-a-time rule sends the second to experiment and leaves the third in the queue. A veto cannot be appealed." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect class="box" height="24" rx="5" width="100" x="60" y="8"></rect><text class="tb" x="66" y="23">Critic: 83% unanswered</text>
+<path class="ln" d="M110 32v16"></path><path class="ln" d="M40 48h140"></path><path class="ln" d="M40 48v14M110 48v14M180 48v14"></path>
+<rect class="boxw" height="40" rx="5" width="64" x="8" y="62"></rect><text class="tw" x="13" y="78">H1 forced</text><text class="tw" x="13" y="90">choice</text>
+<rect class="boxa" height="40" rx="5" width="64" x="78" y="62"></rect><text class="ta" x="83" y="78">H2 ≤ 80</text><text class="ta" x="83" y="90">words</text>
+<rect class="box" height="40" rx="5" width="64" x="148" y="62"></rect><text class="tb" x="153" y="78">H3 open</text><text class="tb" x="153" y="90">with the review</text>
+<path class="lw" d="M22 112l20 20M42 112l-20 20"></path><text class="tw" x="8" y="146">Guardian: veto</text>
+<path class="la" d="M110 102v22"></path><path class="la" d="M105 119l5 6 5-6"></path>
+<rect class="boxa" height="26" rx="5" width="64" x="78" y="128"></rect><text class="ta" x="84" y="144">A × B test</text>
+<text class="t" x="150" y="122">queue: waiting</text>
+<rect class="box" height="28" rx="5" width="204" x="8" y="164"></rect><text class="t" x="14" y="176">Experimenter: 40 wk → 7 wk</text><text class="t" x="14" y="187">(resized target: 166 per version)</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; The test metric rose ten points (bars on the left), but the complaint guardrail exceeded its zero tolerance (amber marker). One monitored metric outside limits is enough for A to stay—the high bar does not compensate." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<text class="tb" x="10" y="16">response rate</text>
+<rect class="bar" height="58" width="34" x="14" y="110"></rect><text class="t" x="14" y="104">A 19.3%</text>
+<rect class="bara" height="88" width="34" x="58" y="80"></rect><text class="ta" x="58" y="74">B 29.7%</text>
+<text class="t" x="14" y="184">300 on each side</text>
+<line class="ln" x1="118" x2="118" y1="10" y2="190"></line>
+<text class="tb" x="126" y="16">complaints</text>
+<rect class="bar" height="8" width="26" x="130" y="160"></rect><text class="t" x="130" y="154">A: 1</text>
+<rect class="barw" height="44" width="26" x="170" y="124"></rect><text class="tw" x="170" y="118">B: 6</text>
+<line class="lw" stroke-dasharray="3 2" x1="124" x2="210" y1="168" y2="168"></line>
+<text class="tw" x="124" y="184">tolerance: 0 → outside</text>
+<rect class="boxw" height="18" rx="4" width="86" x="126" y="24"></rect><text class="tw" x="132" y="36">verdict: A STAYS</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; Timeline of the four cycles: each point is a cycle, and each label shows its outcome. Only the last ends in promotion—and v1 is stored below, with a rollback button." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<line class="ln" x1="16" x2="208" y1="70" y2="70"></line>
+<circle class="box" cx="30" cy="70" r="6"></circle><text class="tb" x="14" y="52">c1 · Feb</text><text class="t" x="10" y="92">H1 vetoed</text><text class="t" x="10" y="102">H2 tested</text>
+<circle class="boxw" cx="86" cy="70" r="6"></circle><text class="tb" x="70" y="52">c2 · Apr</text><text class="tw" x="64" y="92">A stays</text><text class="t" x="60" y="102">tol. 0→0.01</text>
+<circle class="box" cx="142" cy="70" r="6"></circle><text class="tb" x="126" y="52">c3 · May</text><text class="t" x="122" y="92">H4 vetoed</text><text class="t" x="122" y="102">H3 tested</text>
+<circle class="boxa" cx="198" cy="70" r="6"></circle><text class="ta" x="176" y="52">c4 · Jul</text><text class="ta" x="170" y="92">B won</text><text class="ta" x="164" y="102">promoted</text>
+<rect class="boxa" height="26" rx="5" width="92" x="120" y="120"></rect><text class="ta" x="126" y="136">official: v2 (29.3%)</text>
+<rect class="box" height="22" rx="5" width="92" x="120" y="152"></rect><text class="t" x="126" y="166">history: v1 ← rollback</text>
+<path class="ln" d="M166 152v-6"></path>
+<text class="t" x="10" y="136">conversion:</text><text class="t" x="10" y="148">3.0% → 3.7%</text><text class="t" x="10" y="160">unproven</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 5&lt;/b&gt; The meta-agent dashboard: four gauges about the loop, not the client. Two are in alert (amber). The bottom gauge shows the observation used in the exercise—the signal rose twice, while the goal did not move." data-fig="5"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect class="boxw" height="52" rx="5" width="98" x="8" y="8"></rect><text class="t" x="14" y="22">cycle cost</text><text class="tw" x="14" y="40">R$ 45 / 50</text><text class="tw" x="14" y="52">90% · alert</text>
+<rect class="boxw" height="52" rx="5" width="98" x="114" y="8"></rect><text class="t" x="120" y="22">veto rate</text><text class="tw" x="120" y="40">2 of 4 = 0.5</text><text class="tw" x="120" y="52">alert</text>
+<rect class="box" height="52" rx="5" width="98" x="8" y="68"></rect><text class="t" x="14" y="82">actual cadence</text><text class="tb" x="14" y="100">12 · 1 · 12 wk</text><text class="t" x="14" y="112">promised: 1</text>
+<rect class="box" height="52" rx="5" width="98" x="114" y="68"></rect><text class="t" x="120" y="82">promotions</text><text class="tb" x="120" y="100">1 in 4 cycles</text><text class="t" x="120" y="112">no alert</text>
+<rect class="boxa" height="62" rx="5" width="204" x="8" y="128"></rect><text class="ta" x="14" y="144">signal → goal: unproven</text>
+<rect class="bara" height="8" width="60" x="14" y="152"></rect><text class="t" x="80" y="160">response +10 pp (2×)</text>
+<rect class="bar" height="8" width="6" x="14" y="168"></rect><text class="t" x="80" y="176">conversion: 0 times</text>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Highlight any passage to turn it into a review card.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Summary</p>
+<ul>
+<li>Five answers became a loop that ran four cycles with real assistants on simulated data—the case demonstrates how the loop behaves, not a discovery.</li>
+<li>The Guardian vetoed two ideas before any test; the Evaluator discarded one that rose ten points because a guardrail went outside tolerance.</li>
+<li>The incorrect tolerance was in the worksheet, not the system: the loop recorded it, the owner adjusted it, and the discarded idea remained in memory with its numbers.</li>
+<li>Promotion in cycle 4 required three things at once: a significant difference, a sufficient sample size, and monitored metrics within limits—followed by a signature on the card.</li>
+<li>The meta-agent reports cost, vetoes, cadence, and an honest question: response rose twice, but conversion did not move.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Your next step</p>
+<p class="na-win">You have just learned to read a full cycle from evidence and predict the next one without relying on opinion.</p>
+<p class="na-action">In the next 15 minutes, in your real work: open the spreadsheet for the process you chose in Track 2 and write one line—which number rose over the last few weeks, and which final outcome stayed flat despite it.</p>
+<p class="na-hook">In the next lesson, the loop moves from sales to customer support: 10,000 closed and forgotten tickets become a better answer, better documentation, and a product change request.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#trilha">← track</a><a href="#aula-2">lesson 2 →</a></nav>
+<footer>Track 5 · Lesson 1 · INEMA.CLUB PRO</footer>
+<script id="cards-1" type="application/json">
+[
+  {
+    "front": "Decision: version B raised the response rate from 19% to 30% with 300 on each side, but opt-outs were 0.8 points above tolerance. Do you promote, discard, or wait?",
+    "back": "Discard (A stays). One monitored metric outside tolerance is enough, no matter how large the gain in the test metric. The idea goes into memory as tested, with the numbers."
+  },
+  {
+    "front": "Diagnosis: the Guardian vetoed 2 of your loop’s 4 distinct ideas. What does this say about your worksheet, rather than the Optimizer?",
+    "back": "The invariants and guardrails are poorly explained to the person proposing ideas—the Optimizer keeps suggesting things that conflict with them. Rewrite the invariants with concrete examples before the next cycle."
+  },
+  {
+    "front": "Application: you’re an agent, and lead response rose from 25% to 35% in two consecutive tests, but scheduled visits did not move. What should the fifth cycle change?",
+    "back": "The signal metric, not the copy: replace or supplement it with something closer to closing (e.g., replied and asked for a visit). Two rising signals that do not move the goal are evidence against the signal→goal link."
+  },
+  {
+    "front": "Contrast: what is the difference between the tolerance for a continuous guardrail, such as margin, and for a rare event, such as a complaint?",
+    "back": "For margin, a small fixed tolerance works because there are many observations. For a rare event (~1%), 6 versus 1 out of 300 is noise—the tolerance must be calculated (≈ two standard errors), or good ideas will be discarded by chance."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-1 | tipo=FERRAMENTA | steps=5
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (5/5: clínica em todos; corretor no 02 e 04; suporte no 03 e 05)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (5/5)
+  [OK] practice           .practice[data-mode=analise] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (1: ~10 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-1"> presente (1, 4 cartões)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); sem teste-se opcional
+-->
+</section>
+<!-- ===== AULA 2 — FUNDAMENTO: o caso do suporte ===== -->
+<section class="view" data-aula="2" data-tempo="24min" id="v-aula-2">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Track 05 · Lesson 2 · foundation</p>
+<h1>A customer support loop:<br/><em>from 10,000 tickets to a better product</em></h1>
+<p class="promise">By the end of this lesson, you can say what a support loop optimizes and monitors, and run the Observer on 20 tickets in your AI chat—to see, with numbers, which issue deserves a hypothesis.</p>
+<p class="why">Support is where a company hears the most from customers and learns the least from them. Every ticket is closed and forgotten. Whether there are 200 or 10,000 a month, the evidence is already there—it just isn’t being read.</p>
+<p class="cue"><span class="arw">↓</span> scroll to study</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: a mesa do suporte — pilhas de chamados fechados, uma delas muito mais alta -->
+<line class="h" x1="20" x2="280" y1="200" y2="200"></line>
+<g class="h"><rect class="hp" height="50" rx="3" width="60" x="34" y="150"></rect><line x1="34" x2="94" y1="162" y2="162"></line><line x1="34" x2="94" y1="174" y2="174"></line><line x1="34" x2="94" y1="186" y2="186"></line></g>
+<g class="ha"><rect class="hp" height="154" rx="3" width="64" x="118" y="46"></rect><line x1="118" x2="182" y1="60" y2="60"></line><line x1="118" x2="182" y1="74" y2="74"></line><line x1="118" x2="182" y1="88" y2="88"></line><line x1="118" x2="182" y1="102" y2="102"></line><line x1="118" x2="182" y1="116" y2="116"></line><line x1="118" x2="182" y1="130" y2="130"></line><line x1="118" x2="182" y1="144" y2="144"></line><line x1="118" x2="182" y1="158" y2="158"></line><line x1="118" x2="182" y1="172" y2="172"></line><line x1="118" x2="182" y1="186" y2="186"></line></g>
+<g class="h"><rect class="hp" height="72" rx="3" width="60" x="206" y="128"></rect><line x1="206" x2="266" y1="142" y2="142"></line><line x1="206" x2="266" y1="156" y2="156"></line><line x1="206" x2="266" y1="170" y2="170"></line><line x1="206" x2="266" y1="184" y2="184"></line></g>
+<text class="hta" x="126" y="36">the same issue</text>
+<text class="ht" x="34" y="222">closed tickets, by issue</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> Ten thousand tickets are ten thousand pieces of evidence</h2>
+<p>Marcos manages support for software used by small shops. Eight people handle about 800 tickets a month. Each closed ticket leaves a trace: issue, time to resolution, whether it was solved at first contact, whether it returned within seven days, and the customer’s rating. That is a ready-made tracking spreadsheet—the loop’s evidence exists without anyone having to enter it.</p>
+<p>What no one does is read it. That is all the Observer does: count and group, without interpreting. When Marcos first ran it on a month of tickets, the result was a number he “knew” but had never seen written down: 37% of tickets were about the same issue—exporting a report. Three hundred tickets, each answered from scratch by different people with different responses.</p>
+<p>The beauty clinic owner has the same pile, only smaller: forty messages a month asking “how much does it cost?” before any proposal. Same phenomenon. She has never counted them either.</p>
+<div class="qanchor"><p>Ten thousand closed tickets are not ten thousand interruptions. They are ten thousand unread rows.</p></div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">mark as read</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> Support’s goal is to resolve, not to close</h2>
+<p>A support loop has the same shape as a sales loop—maximize one thing without worsening others—but different components. Optimize: first-contact resolution, for example from 55% to 65%. Without worsening: customer satisfaction, seven-day reopen rate, and time spent by the customer. Marcos needed two minutes to write this down and longer to understand why his previous objective was dangerous.</p>
+<p>The previous version was “reduce average support time from 12 to 8 minutes.” A loop optimizing that learns to close tickets quickly, not resolve them. The customer comes back and opens another ticket, while the average time still looks good. It is the same trap as “maximize clicks,” which turns into clickbait: any metric on its own becomes a target and stops measuring what mattered. That is why the objective’s structure is mandatory, not optional—“without worsening” is what keeps the loop from gaming the metric.</p>
+<p>There is good news in support: rates range from 50% to 70%, so the sample needed for proof is small. Proving 50% versus 65% takes about 170 tickets per version; at 200 a week, that is two weeks. Compare this with the clinic’s conversion rate, around 3%: 1,500 per version. Real estate is in between: “lead replied within 24 hours,” around 25%, takes about 300 per side. Support is where the loop turns fastest.</p>
+<div class="quiz" data-answer="b">
+<p class="qk">Test yourself</p><p class="q">Marcos defines the goal as “average support time from 12 to 8 minutes,” with no “without worsening” conditions. What is the loop likely to learn?</p>
+<button class="opt" data-fb="There is nothing in the goal that rewards resolution. The loop optimizes what is measured." data-k="a">To answer more accurately</button>
+<button class="opt" data-fb="Correct. Closing quickly lowers the average time without resolving anything. The customer reopens the ticket—and reopen rate is not monitored. That is why the objective needs “without worsening reopen rate and satisfaction.”" data-k="b">To close tickets without resolving them</button>
+<button class="opt" data-fb="The loop does not hire people; it changes the response script. Making the script shorter is exactly the dangerous shortcut." data-k="c">To ask for more support agents</button>
+<p class="qfb"></p>
+</div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">mark as read</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> A better answer is only the first step</h2>
+<p>With 37% in hand, the Critic writes a strong critique—300 cases is far above the minimum of 30. The Optimizer proposes a new standard answer for this issue, with steps and an image. The Guardian checks that it promises no timeline and touches no invariants. The Experimenter splits these tickets evenly between old and new answers for two weeks. The Evaluator compares first-contact resolution and monitors satisfaction and reopen rate. If B wins, the new answer becomes the support assistant’s official version. So far, it is the sales loop with a different subject.</p>
+<p>The next step changes the company. Memory records: “37% of tickets concern report export; 214 point to the button hidden in the menu as the cause.” This is not a support hypothesis—it is a product hypothesis. It leaves the support loop as a card for the product decision-maker, with supporting counts attached. Documentation changes that same week. If the button changes, it eliminates those 37% at the source. Support has moved beyond answering customers to improving the product and process.</p>
+<p>At the clinic, the step is smaller but similar: if “is there parking?” appears in 60 messages a month, the answer goes in the first line of the WhatsApp profile and disappears from the queue. At the real estate agency, “does it qualify for financing?” repeated 80 times becomes a line in the portal listing.</p>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Before</p><p class="qba-txt">800 tickets a month, 37% for the same issue, each answered from scratch by eight people using eight different texts. No quantified product change request.</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">After</p><p class="qba-txt">An official answer tested A versus B for the most common issue, updated documentation, and a product card with 296 tickets attached as evidence.</p></div>
+<p class="qba-saldo">Result: <b>296 individual tickets become 1 hypothesis with a supporting sample</b>. The improvement in resolution exists only after the test—the loop does not promise the number, but it ensures it will not fall because of a system decision.</p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">mark as read</button>
+</section>
+<section class="step" data-fig="4" data-kind="fundamento">
+<h2><span class="n">04</span> Two loops, one memory: where the meta-loop begins</h2>
+<p>Marcos’s company also has a sales loop. Both write to the same memory. When support records that 37% of new customers get stuck exporting reports, the sales loop gains a guardrail: never promise “one-click reports” in a proposal. When sales learns that brick-and-mortar customers respond better to a certain kind of message, support gets a segment to monitor. Neither loop discovered this alone—the shared memory connected them.</p>
+<p>This is the beginning of the <span class="gterm" data-def="A view across several loops at once: what one learned that helps another, which costs too much, and which has promoted nothing for months. In today’s product, it is a report, not an action." tabindex="0">meta-loop</span>: someone looks at the loops together. The honesty standard from Track 4 applies. In today’s product, the meta-agent only reports—cost, vetoes, cadence, and agreement. Proposing structural changes is for a future version and requires human approval; self-redesigning loops are neither in the product nor promised. What exists today is already useful: two loops that do not repeat each other’s mistakes.</p>
+<p>A real estate agent with two loops—one for portal leads, another for post-visit follow-up—has the same bridge: if follow-up records a complaint that photos do not match the property, the lead loop gains an invariant about photos. The clinic owner starts with one loop; the second comes after the first has run five cycles.</p>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">mark as read</button>
+</section>
+<section class="practice" data-mode="prompt" data-practice="p2">
+<p class="pk">Practice now <span class="pcount">0/3 done</span></p>
+<h3 class="ph">Run the Observer on 20 tickets</h3>
+<p class="pgoal">Paste the prompt into your AI chat, read the count, and compare it with the expected result—about 12 min.</p>
+<p class="psafe">Nothing changes in your business until you approve it: the 20 tickets are fictional, and the prompt only counts and groups them. If the answer differs from what you expect, paste it again—the Observer must follow the prompt, not you.</p>
+<p>The block below is a ready-to-use prompt: the first part tells the assistant its role, and the second contains the 20 tickets. You only replace what is between &lt; &gt;—and there is nothing to replace here.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copy</button><pre class="pcode">You are the Observer in a customer support loop. Your only job is to count and group. Rules: do not interpret causes, suggest solutions, or give opinions. If a ticket could fit two issues, choose the main one and say how many were uncertain. Output: a table with the columns ISSUE | COUNT | % OF TOTAL, sorted largest to smallest, and a final row with the total. Nothing besides the table and total. Tickets (one per line, number and text): 1. I can’t export the sales report as a PDF; the button doesn’t appear. 2. I forgot my password and the recovery email never arrives. 3. The invoice won’t issue; it shows an unexplained error. 4. I accidentally entered the same product twice. How do I delete it? 5. Where is the report export option? I’ve looked everywhere. 6. The system is slow to open the register today. 7. I was charged twice this month. 8. I want to export the monthly report but can’t find the button. 9. My employee can’t log in; it says the user is locked. 10. Inventory report: I need a PDF for the accountant but can’t generate it. 11. Can the system send a low-stock alert? That would be great. 12. The invoice has been “processing” for two hours. 13. Report export doesn’t work on mobile; I only see a blank screen. 14. I can’t remember the password and the registered phone number is old. 15. The product appears twice in the list, with different prices. 16. It’s slow to save a sale; it freezes for about 20 seconds. 17. I need the sales report by period as a PDF. Where do I generate it? 18. The invoice was rejected; the error mentions code 999. 19. How do I export today’s report? I can’t find it. 20. I created a new user, but they don’t receive the password.</pre></div>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Copy the entire block, paste it into your AI chat, and send it. You should see a three-column table and a total row of 20.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Check the largest group. It should be “report export,” with 7 tickets, 35% of the total (rows 1, 5, 8, 10, 13, 17, 19). Other expected groups: password and access, 4; invoices, 3; duplicate product, 2; slowness, 2; billing, 1; feature request, 1. A difference of one ticket in a group is acceptable; this must be the largest group.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Check what it did not do. If the answer includes a suggestion (“I recommend improving the button…”), reply: “You are the Observer: only count and group. Try again without suggesting anything.” The second answer should contain only the table. This is Track 3’s separation of roles on your screen.</span></label></li>
+</ol>
+<p class="pdone">You just ran the first assistant in a support loop, saw which issue deserves a hypothesis in numbers, and saw the assistant stay in its role.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; On the left, the incoming pile of tickets: closed, unread. On the right, the Observer’s output: the same tickets grouped by issue, with counts. The tallest bar is the first hypothesis candidate." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g class="box"><rect height="10" rx="2" width="60" x="10" y="40"></rect><rect height="10" rx="2" width="60" x="14" y="54"></rect><rect height="10" rx="2" width="60" x="10" y="68"></rect><rect height="10" rx="2" width="60" x="16" y="82"></rect><rect height="10" rx="2" width="60" x="10" y="96"></rect><rect height="10" rx="2" width="60" x="14" y="110"></rect><rect height="10" rx="2" width="60" x="10" y="124"></rect><rect height="10" rx="2" width="60" x="12" y="138"></rect></g>
+<text class="tb" x="10" y="30">800 tickets</text><text class="t" x="10" y="162">closed, unread</text>
+<path class="la" d="M84 96h22"></path><path class="la" d="M102 91l6 5-6 5"></path>
+<text class="tb" x="118" y="30">Observer: groups</text>
+<rect class="bara" height="16" width="90" x="120" y="40"></rect><text class="ta" x="122" y="66">report export 37%</text>
+<rect class="bar" height="12" width="42" x="120" y="76"></rect><text class="t" x="122" y="98">password/access 17%</text>
+<rect class="bar" height="12" width="30" x="120" y="106"></rect><text class="t" x="122" y="128">invoices 12%</text>
+<rect class="bar" height="12" width="22" x="120" y="136"></rect><text class="t" x="122" y="158">slowness 9%</text>
+<rect class="bar" height="12" width="16" x="120" y="166"></rect><text class="t" x="122" y="188">other 25%</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; The objective in two parts: above, the metric the loop pushes; below, the three it monitors (amber). Without the lower part, the arrow on the left shows the shortcut the loop learns: close without resolving." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect class="boxa" height="34" rx="6" width="140" x="40" y="10"></rect><text class="t" x="48" y="24">OPTIMIZE</text><text class="ta" x="48" y="38">first-contact resolution 55→65%</text>
+<path class="ln" d="M110 44v18"></path><path class="ln" d="M40 62h140"></path><path class="ln" d="M40 62v10M110 62v10M180 62v10"></path>
+<rect class="boxw" height="30" rx="5" width="64" x="8" y="72"></rect><text class="t" x="13" y="84">without worsening</text><text class="tw" x="13" y="96">satisfaction</text>
+<rect class="boxw" height="30" rx="5" width="64" x="78" y="72"></rect><text class="t" x="83" y="84">without worsening</text><text class="tw" x="83" y="96">7-day reopen rate</text>
+<rect class="boxw" height="30" rx="5" width="64" x="148" y="72"></rect><text class="t" x="153" y="84">without worsening</text><text class="tw" x="153" y="96">customer time</text>
+<rect class="box" height="70" rx="6" width="204" x="8" y="120"></rect>
+<text class="tb" x="14" y="136">without the lower part:</text>
+<text class="t" x="14" y="152">"time 12 → 8 min"</text>
+<path class="lw" d="M110 148h40"></path><path class="lw" d="M146 143l6 5-6 5"></path>
+<text class="tw" x="158" y="152">closes</text>
+<text class="t" x="14" y="170">customer reopens → time still looks good,</text><text class="t" x="14" y="182">problem remains the same</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; The support ladder: each step takes the same finding (37% for the same issue) deeper into the company. The first two steps stay inside the support loop; the third leaves it as a product card." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect class="box" height="40" rx="5" width="200" x="8" y="150"></rect><text class="tb" x="14" y="166">1 · new official answer</text><text class="t" x="14" y="180">tested A × B, becomes the assistant’s</text>
+<rect class="box" height="40" rx="5" width="168" x="40" y="100"></rect><text class="tb" x="46" y="116">2 · documentation changes</text><text class="t" x="46" y="130">that same week, without a test</text>
+<rect class="boxa" height="40" rx="5" width="136" x="72" y="50"></rect><text class="ta" x="78" y="66">3 · product card</text><text class="t" x="78" y="80">"hidden button" + 296 cases</text>
+<path class="la" d="M24 150v-10h16"></path><path class="la" d="M56 100v-10h16"></path>
+<rect class="boxw" height="26" rx="5" width="120" x="8" y="10"></rect><text class="tw" x="14" y="27">37% same issue</text>
+<path class="lw" d="M68 36v8"></path><path class="lw" d="M68 44h-52v106" stroke-dasharray="3 2"></path>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; Two loops in the same company write to the same memory (center). What support learns becomes a sales guardrail; what sales learns becomes a support segment. The meta-loop below reads both—it does not act." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<circle class="box" cx="52" cy="60" r="34"></circle><text class="tb" x="34" y="58">loop of</text><text class="tb" x="34" y="70">sales</text>
+<circle class="box" cx="168" cy="60" r="34"></circle><text class="tb" x="148" y="58">loop of</text><text class="tb" x="148" y="70">support</text>
+<rect class="boxa" height="34" rx="6" width="76" x="72" y="104"></rect><text class="ta" x="84" y="118">memory</text><text class="t" x="80" y="131">shared</text>
+<path class="la" d="M70 84l22 20"></path><path class="la" d="M150 84l-22 20"></path>
+<text class="t" x="4" y="112">gets a guardrail:</text><text class="t" x="4" y="123">"never promise</text><text class="t" x="4" y="134">one-click reports"</text>
+<text class="t" x="156" y="112">gets a segment:</text><text class="t" x="156" y="123">"brick-and-mortar store</text><text class="t" x="156" y="134">responds better"</text>
+<rect class="box" height="34" rx="6" width="116" x="52" y="156"></rect><text class="tb" x="62" y="170">meta-loop: reports</text><text class="t" x="62" y="183">cost · vetoes · cadence</text>
+<path class="ln" d="M110 138v18" stroke-dasharray="3 2"></path>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Highlight any passage to turn it into a review card.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Summary</p>
+<ul>
+<li>Closed tickets are already a tracking spreadsheet: issue, time, resolved, reopened, rating. Support evidence is ready-made; it just needs to be counted.</li>
+<li>The support objective has the same shape as sales—maximize resolution without worsening satisfaction, reopen rate, or customer time—and the loop turns fastest here because rates are high.</li>
+<li>A better answer is the first step; the finding moves into documentation and leaves the loop as a product card with supporting counts attached.</li>
+<li>Two loops sharing memory stop repeating each other’s mistakes; in today’s product, the meta-loop only reports.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Your next step</p>
+<p class="na-win">You have just turned a pile of tickets into a quantified issue—and kept the assistant in its role.</p>
+<p class="na-action">In the next 15 minutes, in your real work: take the last 20 customer questions (WhatsApp, email, portal) and run the same Observer prompt on them. Note the most common issue and its count.</p>
+<p class="na-hook">In the final lesson, you’ll bring together the five answers you wrote during the course on one worksheet, fill out your first decision card, and take the 13-question canvas to any company process.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-1">← lesson 1</a><a href="#aula-3">lesson 3 →</a></nav>
+<footer>Track 5 · Lesson 2 · INEMA.CLUB PRO</footer>
+<script id="cards-2" type="application/json">
+[
+  {
+    "front": "Application: you are an agent and want a loop for portal leads. Write the full objective—what to maximize and at least two things that must not worsen.",
+    "back": "Example: maximize leads who reply within 24 hours (25% → 35%) without worsening scheduled visits, portal complaints, or opt-outs. Without the “without worsening” condition, the loop learns to send messages that provoke negative replies."
+  },
+  {
+    "front": "Diagnosis: the assistant returned the ticket count and added “I suggest moving the export button.” What is wrong, and how would you correct the prompt?",
+    "back": "The Observer left its role: count and group, never propose. Correct the prompt by explicitly saying “only count; suggest nothing”—proposals belong to the Optimizer, after critique, considering evidence strength."
+  },
+  {
+    "front": "Decision: 37% of tickets concern the same issue. The Optimizer proposes a new answer; someone suggests changing the product directly, without a test. Which path goes through the support loop, and which leaves it?",
+    "back": "The new answer goes through the loop: A × B test, verdict, promotion. The product change leaves the loop as a card for the product decision-maker, with 296 cases attached—it is not tested by support; it is delivered with evidence."
+  },
+  {
+    "front": "Contrast: why does clinic conversion (3%) need 1,500 cases per version, while support first-contact resolution (55%) needs about 170?",
+    "back": "Rates near 0 require huge samples to distinguish a small difference; rates between 20% and 70% show differences with far fewer cases. That is why the support loop turns in weeks, while the conversion loop takes months."
+  },
+  {
+    "front": "Question: in today’s product, what does the meta-loop do—and what does it not do?",
+    "back": "It reports cost per cycle, hypotheses generated and promoted, veto rate, cadence, and judge agreement. It does not redesign loops or change anything on its own; proposing structural changes for human approval is for a future version."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-2 | tipo=FUNDAMENTO | steps=4
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: suporte em todos; clínica no 01, 03 e 04; corretor no 02, 03 e 04)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4)
+  [OK] practice           .practice[data-mode=prompt] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (1: ~12 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-2"> presente (1, 5 cartões)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, step 02)
+-->
+</section>
+<!-- ===== AULA 3 — FERRAMENTA: entrega final ===== -->
+<section class="view" data-aula="3" data-tempo="25min" id="v-aula-3">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Track 05 · Lesson 3 · tool · final deliverable</p>
+<h1>Your loop,<br/><em>assembled</em></h1>
+<p class="promise">By the end of this lesson, you will hand in your loop worksheet with all five answers filled in and a decision card ready for week one—and someone on your team will be able to read them without your explanation.</p>
+<p class="why">Four tracks produced five answers scattered across different notes. Today they become one worksheet, and the worksheet becomes the first cycle. Without it, the course ends the way AI does: one good answer, and that is all.</p>
+<p class="cue"><span class="arw">↓</span> scroll to study</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<!-- metáfora: a prancheta do corretor — a ficha de cinco linhas preenchida, a caneta ao lado -->
+<rect class="hp" height="190" rx="10" width="150" x="70" y="30"></rect>
+<rect class="h" height="22" rx="6" width="50" x="120" y="18"></rect>
+<line class="h" x1="90" x2="200" y1="70" y2="70"></line><circle class="ha" cx="82" cy="70" r="3"></circle>
+<line class="h" x1="90" x2="188" y1="98" y2="98"></line><circle class="ha" cx="82" cy="98" r="3"></circle>
+<line class="h" x1="90" x2="196" y1="126" y2="126"></line><circle class="ha" cx="82" cy="126" r="3"></circle>
+<line class="h" x1="90" x2="170" y1="154" y2="154"></line><circle class="ha" cx="82" cy="154" r="3"></circle>
+<line class="h" x1="90" x2="150" y1="182" y2="182"></line><circle class="hw" cx="82" cy="182" r="3"></circle>
+<path class="hw" d="M236 60l18 18-70 70-24 6 6-24z"></path>
+<text class="ht" x="70" y="236">the loop worksheet — five lines</text>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="ferramenta" data-versao="ficha do loop · versão 0.1 · set/2026">
+<h2><span class="n">01</span> The five answers already exist—you wrote them</h2>
+<p>The loop worksheet asks for nothing new. Each of its five questions was answered in an earlier lesson; today’s task is to bring them together. A numbered goal: Track 2, Lesson 1. Where evidence comes from: Track 2, Lesson 3. What never changes on its own: Track 3, Lesson 3. Cost and time ceilings, and who approves: Track 4, Lesson 4. If any answer is blank, go back—the worksheet with four answers is not “almost ready”; it is unsafe because the system will infer the missing one.</p>
+<p>Paulo, a real estate agent, arrived with these notes: portal leads who reply within 24 hours, from 25% to 35%; the portal spreadsheet, one row per lead, about 80 a week; never promise an appraised value, contact anyone after 9 p.m., or promise exclusivity; up to R$ 30 per week, weekly cycle; he approves, with five days to respond. Five statements. That is the whole worksheet.</p>
+<p>Why only five? Because they are the five things no system can safely infer: what you want, where the record is, what is forbidden, how much you can spend, and who signs off.</p>
+<div class="qapply">
+<p class="qak">The three worksheets, side by side</p>
+<ul>
+<li><b>Beauty clinic:</b> proposal conversion 3% → 5% · spreadsheet, 1 row per proposal, 50/week · never discount over 10%, promise a result, contact someone who opted out, or mention a competitor · R$ 50/week · the owner approves, 7 days.</li>
+<li><b>Real estate agent:</b> leads who reply within 24 h, 25% → 35% · portal spreadsheet, 1 row per lead, 80/week · never promise an appraised value, contact after 9 p.m., or promise exclusivity · R$ 30/week · he approves, 5 days.</li>
+<li><b>Support manager:</b> first-contact resolution 55% → 65% · ticketing system, 1 row per ticket, 200/week · never promise a fix deadline, close without the customer’s reply, or change the price · R$ 80/week · he approves, 3 days.</li>
+</ul>
+</div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">mark as read</button>
+</section>
+<section class="step" data-fig="2" data-kind="ferramenta" data-versao="ficha do loop · campos propostos pelo sistema · set/2026">
+<h2><span class="n">02</span> What the system proposes and you only confirm</h2>
+<p>After the five answers, the worksheet gets a second half that you do not write—you read and confirm it. The signal metric: if your target is a rate near 3%, the system suggests testing something faster and monitoring the target from a distance, as it did for the clinic. The sample size needed for proof, calculated for your metric and pace: “this test needs about 300 per version; at your pace, six weeks.” Guardrails with tolerances, suggested for your type of business. Sales: margin, complaints, and opt-outs. Support: satisfaction and reopenings. And the rollback trigger: in the first cycle after a promotion, if the number or any guardrail falls beyond tolerance, the card alerts you.</p>
+<p>For Paulo, the system proposed a signal metric: the reply rate within 24 hours itself (already fast); a sample size of about 300 leads per version, four weeks at his pace; guardrails of booked visits with a 0.02 tolerance and portal complaints with 0.01. He checked the tolerances against the clinic lesson and confirmed them. Five minutes.</p>
+<p>A note for anyone confirming: read the metric definition word for word. “Replied” must exclude “replied asking us to stop,” or the loop learns to provoke people. And if the clinic owner later wants to tighten a tolerance, she does it through the card, with a record—never midway through a test.</p>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">mark as read</button>
+</section>
+<section class="step" data-fig="3" data-kind="ferramenta" data-versao="primeiro ciclo · o que esperar · set/2026">
+<h2><span class="n">03</span> The first week: the most common answer is “we cannot tell yet”</h2>
+<p>The first cycle runs on the spreadsheet you already have. The Observer counts. If there are fewer than 30 rows for a pattern the Critic wants to claim, it does not claim it—it records “observed, not tested” and waits for the spreadsheet to grow. The Optimizer proposes up to three ideas in IF… THEN… BECAUSE format, marked with evidence strength. The Guardian vetoes anything that touches what “never changes.” The Experimenter shows the calculation and timeline. And the Evaluator, in the first cycle, almost always says: INSUFFICIENT SAMPLE—continue.</p>
+<p>That is not a failure. It was the answer in the clinic’s cycle 1 and cycle 3. The first cycle delivers something else: the first history entry, the first idea vetoed with a reason, the first timeline calculation. The support manager with 200 tickets a week sees a verdict in two weeks; the clinic with 50 proposals, in two or three months. The pace comes from your records, not from AI.</p>
+<p>For the agent, the first card will say: “test in progress, 80 of 300 per version, three weeks left; no guardrail out of bounds.” The temptation is to open the spreadsheet in week two, see B ahead, and decide. Do not decide.</p>
+<div class="qerr">
+<p class="qk">Common mistake</p>
+<p class="qerr-txt"><b>Twelve proposals became the rule.</b> With few rows, any pattern looks true—“Tuesday converts better” with 12 proposals is not a real finding. The Critic only claims a pattern at 30 or more; below that it goes into “observed, not tested.” If you spot a pattern in a small spreadsheet yourself, note it and wait for the sample size needed for proof—do not change the playbook because of it.</p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">mark as read</button>
+</section>
+<section class="step" data-fig="4" data-kind="ferramenta" data-versao="cartão de decisão · 5 linhas · set/2026">
+<h2><span class="n">04</span> The decision card: five lines, once a week</h2>
+<p>Everything the loop asks of you after the worksheet fits on a <span class="gterm" data-def="The five lines that reach the approver at most once a week: what changed, by how much, what was monitored, what it cost, and the decision—approve, reject, or wait." tabindex="0">decision card</span>. Line 1: the cycle and the idea being tested. Line 2: the result, with the sample size on each side. Line 3: each guardrail, within or outside its limit. Line 4: cycle cost versus the ceiling. Line 5: the decision—approve, reject, or wait for more data. If you do not respond by the worksheet deadline, the default is not to promote, and the history records “pending.” Safe by design.</p>
+<p>The clinic’s real card from cycle 4 said: hypothesis “open with something specific from the review”; replies 19.3% → 29.3%, 300 versus 300; margin OK, complaints 4 versus 2 within bounds, opt-outs 1 versus 3; cost about R$ 45 out of R$ 50; decision: approved. Marcos’s support card will have the same shape with different names: resolution 55% → 61%, 180 versus 180; satisfaction unchanged, reopenings 9 versus 8; cost R$ 62 out of R$ 80. Stopping before the sample size needed for proof because B is ahead is not one of the three answers—it is the most common way to promote noise.</p>
+<p>After five approved cards with no rollbacks, the worksheet allows more autonomy: the system promotes automatically and notifies you. You do not have to get there. Approving one card a week for months is the loop working as promised—that is the level the clinic is at.</p>
+<div class="mobfig" data-mobfig="4"></div>
+<button class="readbtn" data-read="s4">mark as read</button>
+</section>
+<section class="step" data-fig="5" data-kind="ferramenta" data-versao="canvas LOOP-R · 13 perguntas · set/2026">
+<h2><span class="n">05</span> The formula and canvas: what you can take to any process</h2>
+<p class="formula"><b>EXECUTION</b> × <b>EVIDENCE</b> × <b>EXPERIMENTATION</b> × <b>MEMORY</b> = <b>EVOLUTION</b></p>
+<p>It is multiplication, not addition: if any factor is zero, the result is zero. No execution means no data—the first track showed AI that executes and stops there. No evidence means no real learning—Track 2 gave you the log spreadsheet. No experimentation means you do not know whether an idea works—Tracks 2 and 4 gave you the test, sample size, and card. Without memory, the system forgets—Track 3 gave you the history. What the loop guarantees when all four exist is not that the number rises: it will not fall by system decision, everything is recorded and reversible, and cost stays under the ceiling.</p>
+<p>Paulo has plenty of execution—80 leads a week for years—and zero memory: every agent at the real estate office replies differently, and no one knows what has already been tried. The support manager has plenty of evidence and zero experimentation: they have never compared two replies. The beauty clinic had all four after four cycles. Each starts with the factor that is at zero.</p>
+<p>The canvas below is the same worksheet, extended to any company process—purchasing, finance, marketing. The five answers cover questions 1, 3, 9, 4, and 11; the system proposes the rest.</p>
+<div class="qsteps">
+<p class="qsk">LOOP-R Canvas—13 questions for any process</p>
+<ol>
+<li><b>Objective</b> — what do we want to improve, with a number from and to? (your answer 1)</li>
+<li><b>Execution</b> — who does the work today: a person, an assistant, or both?</li>
+<li><b>Evidence</b> — what data does each run produce, and in which spreadsheet? (your answer 2)</li>
+<li><b>Metric</b> — how do we know it was good: revenue, signal, or the text itself?</li>
+<li><b>Critique</b> — who says what worked and what failed, and how strong is the evidence?</li>
+<li><b>Hypothesis</b> — who proposes the alternative, in IF… THEN… BECAUSE format?</li>
+<li><b>Experiment</b> — how do we test it: A versus B, how many on each side, and for how long?</li>
+<li><b>Checklist</b> — how do we compare: yes or no for each criterion, never a score from 1 to 10?</li>
+<li><b>Safety</b> — what must never change without a person? (your answer 3)</li>
+<li><b>Memory</b> — where do we store what worked, failed, and was vetoed?</li>
+<li><b>Official version</b> — when does the new version take effect: verdict, card, and who signs off? (your answers 4 and 5)</li>
+<li><b>Rollback</b> — how do we restore the previous version if something goes wrong, and who is notified?</li>
+<li><b>Meta-loop</b> — who reviews the system itself: cost, vetoes, cadence?</li>
+</ol>
+</div>
+<div class="mobfig" data-mobfig="5"></div>
+<button class="readbtn" data-read="s5">mark as read</button>
+</section>
+<section class="practice" data-mode="tarefa" data-practice="p3">
+<p class="pk">Practice now <span class="pcount">0/4 complete</span></p>
+<h3 class="ph">Deliver the loop worksheet and the first card</h3>
+<p class="pgoal">Copy the five answers from your notes, prepare the first week’s card, and test whether a teammate can read it—about 12 minutes.</p>
+<p class="psafe">Nothing changes in your business until you approve it: the worksheet is a document, and this practice card stays undecided. If an answer seems wrong later, correct the worksheet and record the change—the clinic’s worksheet also changed in cycle 2.</p>
+<p>The block below is a plain-text form you fill in once: five questions and one card. Replace only what is inside &lt; &gt; and leave the rest as is. You can fill it in your phone’s notes, an email to yourself, or on paper.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copy</button><pre class="pcode">LOOP WORKSHEET — &lt;process name&gt; 1. NUMBERED GOAL &lt;metric&gt;: from &lt;current value&gt; to &lt;target value&gt; without worsening: &lt;guardrail 1&gt;, &lt;guardrail 2&gt; 2. WHERE EVIDENCE COMES FROM &lt;spreadsheet or system&gt;, one row per &lt;unit: proposal / lead / ticket&gt; volume: about &lt;N&gt; per week 3. WHAT NEVER CHANGES ON ITS OWN - never &lt;invariant 1&gt; - never &lt;invariant 2&gt; - never &lt;invariant 3&gt; 4. CEILING up to R$ &lt;amount&gt; per cycle · cycle &lt;weekly / every two weeks&gt; up to 3 ideas per cycle · 1 test at a time 5. WHO APPROVES &lt;name&gt;, with &lt;N&gt; days to answer the card ---------------------------------------------------------- DECISION CARD — week 1 (fill in what you expect) CYCLE 0001 — hypothesis: “IF &lt;change X&gt;, THEN the metric will go from A to B, BECAUSE &lt;evidence&gt;” Result: &lt;metric&gt; &lt;current&gt; → &lt;expected&gt; (N = &lt;per version&gt;, &lt;weeks&gt; left) Guardrails: &lt;guardrail 1&gt; · &lt;guardrail 2&gt; · &lt;guardrail 3&gt; Cost: R$ &lt;estimated&gt; this cycle (ceiling R$ &lt;limit&gt;) Decision: [approve] [reject] [wait for more data] ← leave blank until the verdict</pre></div>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Fill in the five answers by copying from your notes in Tracks 2, 3, and 4. Done when no &lt; &gt; remains and the goal has two numbers—the current one and the target.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Fill in the week-one card with your best IF… THEN… BECAUSE hypothesis, the N required by the sample-size table for your metric, and the guardrails. Leave the decision blank. Done when the Result line has an N and a timeline in weeks.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Reading test: show the worksheet to a teammate and ask two questions—“what evidence would make us discard this idea?” and “what must AI never change here?” Done when they can answer both just by reading, without your explanation.</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>Save the worksheet and card in the loop folder—the same place as the log spreadsheet and history. Done when all three are together and today’s date is on the first line of the history.</span></label></li>
+</ol>
+<p class="pdone">You have just delivered an assembled loop: a complete worksheet, the first card drafted, and a reader who understands what would discard the idea and what AI must never touch.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig. 1&lt;/b&gt; Each worksheet answer came from an earlier lesson (left) and maps to a line on the worksheet (right). Notice that four tracks feed five lines—Track 4 supplies two." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect class="box" height="24" rx="5" width="70" x="8" y="12"></rect><text class="t" x="13" y="27">track 2 · lesson 1</text>
+<rect class="box" height="24" rx="5" width="70" x="8" y="46"></rect><text class="t" x="13" y="61">track 2 · lesson 3</text>
+<rect class="box" height="24" rx="5" width="70" x="8" y="80"></rect><text class="t" x="13" y="95">track 3 · lesson 3</text>
+<rect class="box" height="24" rx="5" width="70" x="8" y="124"></rect><text class="t" x="13" y="139">track 4 · lesson 4</text>
+<path class="la" d="M78 24h30"></path><path class="la" d="M78 58h30"></path><path class="la" d="M78 92h30"></path><path class="la" d="M78 136h30v-8"></path><path class="la" d="M78 136h30v22"></path>
+<rect class="boxa" height="184" rx="8" width="100" x="112" y="6"></rect>
+<text class="ta" x="120" y="20">loop worksheet</text>
+<text class="tb" x="120" y="38">1 goal + number</text>
+<text class="tb" x="120" y="66">2 evidence</text>
+<text class="tb" x="120" y="100">3 never changes</text>
+<text class="tb" x="120" y="134">4 ceiling</text>
+<text class="tb" x="120" y="164">5 who approves</text>
+<text class="t" x="120" y="184">+ what the system proposes</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 2&lt;/b&gt; The worksheet has two halves: above, what you write (five lines); below, what the system proposes from them for you to confirm (amber). The arrow shows the dependency—without the top half, the bottom is a guess." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect class="boxa" height="70" rx="8" width="204" x="8" y="8"></rect><text class="ta" x="14" y="22">you write</text>
+<text class="t" x="14" y="38">goal · evidence · invariants</text><text class="t" x="14" y="52">ceiling · approver</text>
+<text class="tb" x="14" y="70">5 statements</text>
+<path class="la" d="M110 78v18"></path><path class="la" d="M105 91l5 6 5-6"></path>
+<rect class="boxw" height="92" rx="8" width="204" x="8" y="100"></rect><text class="tw" x="14" y="114">system proposes · you confirm</text>
+<text class="t" x="14" y="132">signal metric (if target is slow)</text>
+<text class="t" x="14" y="146">sample size needed + timeline at your pace</text>
+<text class="t" x="14" y="160">guardrails with tolerance (calculated, not zero)</text>
+<text class="t" x="14" y="174">rollback trigger</text>
+<text class="t" x="14" y="188">which assistants · cadence</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 3&lt;/b&gt; The first week, assistant by assistant. The most common endpoint is “insufficient sample—continue” (amber). It is not failure; it is the test showing how much is still missing." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<line class="ln" x1="20" x2="20" y1="20" y2="186"></line>
+<circle class="boxa" cx="20" cy="30" r="4"></circle><text class="tb" x="32" y="33">Observer counts the spreadsheet</text>
+<circle class="boxa" cx="20" cy="56" r="4"></circle><text class="tb" x="32" y="59">Critic: claims only with N ≥ 30</text>
+<circle class="boxa" cx="20" cy="82" r="4"></circle><text class="tb" x="32" y="85">Optimizer: up to 3 ideas</text>
+<circle class="boxa" cx="20" cy="108" r="4"></circle><text class="tb" x="32" y="111">Guardian vetoes anything touching “never”</text>
+<circle class="boxa" cx="20" cy="134" r="4"></circle><text class="tb" x="32" y="137">Experimenter: N and timeline</text>
+<circle class="boxw" cx="20" cy="160" r="5"></circle><text class="tw" x="32" y="163">Evaluator: INSUFFICIENT SAMPLE</text>
+<text class="t" x="32" y="176">80 of 300 per version · 3 weeks left</text>
+<text class="t" x="32" y="190">history: first entry written</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 4&lt;/b&gt; Anatomy of the decision card: five lines, in the order they arrive. The fifth has three possible answers and a fourth implied one—no answer by the deadline means no promotion." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect class="box" height="150" rx="8" width="204" x="8" y="8"></rect>
+<text class="tb" x="16" y="26">1 CYCLE + hypothesis</text>
+<text class="tb" x="16" y="50">2 Result</text><text class="t" x="100" y="50">A → B, N on each side</text>
+<text class="tb" x="16" y="74">3 Guardrail</text><text class="t" x="100" y="74">each: within / outside</text>
+<text class="tb" x="16" y="98">4 Cost</text><text class="t" x="100" y="98">cycle R$ / ceiling</text>
+<text class="tb" x="16" y="122">5 Decision</text>
+<rect class="boxa" height="18" rx="4" width="52" x="16" y="130"></rect><text class="ta" x="22" y="142">approve</text>
+<rect class="box" height="18" rx="4" width="52" x="76" y="130"></rect><text class="t" x="82" y="142">reject</text>
+<rect class="box" height="18" rx="4" width="68" x="136" y="130"></rect><text class="t" x="142" y="142">wait for data</text>
+<text class="tw" x="16" y="176">no answer by deadline → no promotion</text>
+<text class="t" x="16" y="190">1 card per week, at most</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig. 5&lt;/b&gt; The formula as four multiplied gauges: each course track filled one. A gauge at zero (amber, the agent with no memory) zeroes the result, no matter how full the others are." data-fig="5"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect class="box" height="120" rx="5" width="44" x="8" y="10"></rect><rect class="bara" height="86" width="36" x="12" y="40"></rect><text class="tb" x="10" y="146">execution</text><text class="t" x="10" y="158">track 1</text>
+<text class="tb" x="55" y="76">×</text>
+<rect class="box" height="120" rx="5" width="44" x="62" y="10"></rect><rect class="bara" height="72" width="36" x="66" y="54"></rect><text class="tb" x="64" y="146">evidence</text><text class="t" x="64" y="158">track 2</text>
+<text class="tb" x="109" y="76">×</text>
+<rect class="box" height="120" rx="5" width="44" x="116" y="10"></rect><rect class="bara" height="56" width="36" x="120" y="70"></rect><text class="tb" x="118" y="146">experiment.</text><text class="t" x="118" y="158">tracks 2·4</text>
+<text class="tb" x="163" y="76">×</text>
+<rect class="boxw" height="120" rx="5" width="44" x="170" y="10"></rect><rect class="barw" height="2" width="36" x="174" y="124"></rect><text class="tw" x="172" y="146">memory</text><text class="t" x="172" y="158">track 3</text>
+<text class="tw" x="8" y="184">= evolution: zero (one factor is zero)</text>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Highlight any passage to turn it into a review card.</p>
+</div></aside>
+</div>
+<div class="fecho-wrap">
+<div class="recap-autor">
+<p class="rak">Summary</p>
+<ul>
+<li>The loop worksheet contains five answers the course built one at a time; with only four, the system infers the fifth—and inferring safety is the risk this worksheet prevents.</li>
+<li>The system proposes the worksheet’s second half for you to confirm: signal metric, sample size needed, guardrails with calculated tolerances, and rollback trigger.</li>
+<li>The first cycle almost always ends with “insufficient sample”; what it delivers is the first history entry and the first veto with a reason.</li>
+<li>Everything the loop asks after that fits on a five-line card once a week, and silence by the deadline means no promotion.</li>
+<li>Execution, evidence, experimentation, and memory multiply: each track filled one factor, and your loop starts with whichever one is at zero.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Your next step</p>
+<p class="na-win">You can now assemble a loop for your business: a complete worksheet, the first card, and a reader who understood it without your help.</p>
+<p class="na-action">Over the next 15 minutes, in your real work: put on the calendar the weekday when the card arrives and who records the spreadsheet on the other six days. The clinic’s cadence broke because of this—12 weeks instead of 1—and the Critic pointed it out three times.</p>
+<p class="na-hook">There is no next lesson. The next cycle is yours: next week the spreadsheet has more rows, the Observer counts, and the first card arrives. What you do with it is what separates a business that uses AI from a business that learns.</p>
+</div>
+</div>
+<nav class="lnav"><a href="#aula-2">← lesson 2</a><a href="#trilha">complete the track →</a></nav>
+<footer>Track 5 · Lesson 3 · INEMA.CLUB PRO</footer>
+<script id="cards-3" type="application/json">
+[
+  {
+    "front": "Decision: your worksheet has a goal, evidence, what never changes, and a ceiling—but “who approves” is blank because “obviously it’s me.” Can the first cycle run like this?",
+    "back": "No. With four answers, the system infers the fifth, and its inference about autonomy could be “promote automatically.” Write the name and deadline in days—that is what makes the card a human decision."
+  },
+  {
+    "front": "Diagnosis: in week two of the first test, B is 6 points ahead with 90 of 300 per version. A partner wants to promote now. Which of the card’s three answers applies, and why?",
+    "back": "Wait for more data. Below the sample size needed for proof, a partial lead is the most common way to promote noise; early stopping is allowed only when a guardrail falls, never because “it’s winning.”"
+  },
+  {
+    "front": "Application: you manage support and want to use the canvas for the company’s purchasing process. Which of the 13 questions do you answer yourself, and which does the system propose?",
+    "back": "You answer 1 (numbered goal), 3 (evidence), 9 (safety), and 4 and 11 for the ceiling and approver. The system proposes execution, signal and text metrics, critique, hypothesis, experiment, checklist, memory, rollback, and meta-loop—you confirm them."
+  },
+  {
+    "front": "Contrast: what is the difference between the first and second halves of the loop worksheet—who writes each, and what happens if you edit the second halfway through a test?",
+    "back": "The first half is yours (five answers); the system proposes the second for you to check (signal metric, N, tolerances, trigger). Changing tolerance midway invalidates the test; changes go through the card, are recorded, and apply to the next test—as the clinic did in cycle 2."
+  }
+]
+</script>
+<!-- COMPLETUDE aula-3 | tipo=FERRAMENTA | steps=5
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view + render no cold-open (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (5/5: corretor em 01, 02, 03 e 05; clínica em 01, 02, 04 e 05; suporte em 01, 03, 04 e 05)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (5/5)
+  [OK] practice           .practice[data-mode=tarefa] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (1: ~12 min)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-3"> presente (1, 4 cartões)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); sem teste-se opcional
+-->
+</section>
+<script src="assets/curso.js"></script>
+<script id="language-navigation-script">(()=>{const update=()=>{document.querySelectorAll('a').forEach(a=>{if(!['PT','EN','ES'].includes(a.textContent.trim()))return;if(!a.dataset.languageBase)a.dataset.languageBase=a.getAttribute('href');const u=new URL(a.dataset.languageBase,location.href);u.search=location.search;u.hash=location.hash;a.href=u.href;const current=(document.documentElement.lang||'pt').slice(0,2).toUpperCase();if(a.textContent.trim()===current)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});};update();addEventListener('hashchange',update);})();</script></body>
+</html>

@@ -1,0 +1,450 @@
+{
+  "Trilha 01 · Aula 2 · fundamento": [
+    "Track 01 · Lesson 2 · foundation",
+    "Ruta 01 · Clase 2 · fundamento"
+  ],
+  "Dez mil execuções e": [
+    "Ten thousand executions and",
+    "Diez mil ejecuciones y"
+  ],
+  "nenhum aprendizado": [
+    "no learning",
+    "ningún aprendizaje"
+  ],
+  "Ao fim desta aula você consegue dizer, com um número seu, quantas vezes por mês a mesma tarefa é refeita do zero no seu negócio — e quantas dessas poderiam virar uma linha de registro.": [
+    "By the end of this lesson, you’ll be able to put a number on how many times per month the same task is redone from scratch in your business—and how many of those could become a line in a log.",
+    "Al terminar esta clase, podrás ponerle un número a cuántas veces al mes se repite desde cero la misma tarea en tu negocio y cuántas podrían convertirse en una fila de registro."
+  ],
+  "Volume dá sensação de experiência. Dez mil chamados atendidos parecem dez mil lições. Mas se ninguém anotou sobre o que eram, os dez mil valem o mesmo que o primeiro. Você paga o custo de repetir sem receber o ganho de aprender — e essa conta não aparece em fatura nenhuma.": [
+    "Volume creates a sense of experience. Ten thousand support tickets handled can feel like ten thousand lessons. But if nobody noted what they were about, those ten thousand are worth no more than the first one. You pay the cost of repeating without getting the benefit of learning—and that bill never shows up on an invoice.",
+    "El volumen da sensación de experiencia. Diez mil consultas atendidas parecen diez mil lecciones. Pero si nadie anotó de qué trataban, esas diez mil valen lo mismo que la primera. Pagas el costo de repetir sin recibir el beneficio de aprender, y esa cuenta no aparece en ninguna factura."
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "um em cada três: o mesmo": [
+    "one in three: the same issue",
+    "una de cada tres: el mismo asunto"
+  ],
+  "Dez mil chamados, um problema em cada três — e ninguém viu": [
+    "Ten thousand tickets, one issue in three—and nobody noticed",
+    "Diez mil consultas, un mismo problema en una de cada tres y nadie lo vio"
+  ],
+  "Paulo, gestor de suporte de uma empresa de software pequena, fecha o ano com 10.000 chamados atendidos. Cada um foi bem resolvido, um de cada vez, com a IA ajudando a escrever a resposta. O time é elogiado. E ninguém sabe que 37% desses chamados — 3.700 — são sobre o mesmo problema: uma tela de senha que confunde todo mundo.": [
+    "Paulo, support manager at a small software company, ends the year with 10,000 tickets handled. Each one was resolved well, one at a time, with AI helping write the reply. The team gets praised. And nobody knows that 37% of those tickets—3,700—are about the same issue: a password screen that confuses everyone.",
+    "Paulo, responsable de soporte en una pequeña empresa de software, termina el año con 10.000 consultas atendidas. Cada una se resolvió bien, de una en una, con ayuda de la IA para redactar la respuesta. El equipo recibe elogios. Y nadie sabe que el 37 % de esas consultas —3.700— trata del mismo problema: una pantalla de contraseña que confunde a todo el mundo."
+  ],
+  "Por que ninguém viu? Porque cada chamado é um pedido que termina ali. De dentro de um chamado, não dá para enxergar a pilha. Só quem olha o conjunto — e para isso precisa de uma coluna \"sobre o quê\" preenchida em cada um — percebe que um em cada três aponta para a mesma coisa.": [
+    "Why did nobody notice? Because each ticket is a request that ends right there. From inside one ticket, you can’t see the pile. Only someone looking at the whole set—and, for that, needing a “what was it about?” column filled in for each one—can see that one in three points to the same thing.",
+    "¿Por qué nadie lo vio? Porque cada consulta es una solicitud que termina ahí. Desde dentro de una consulta no se ve el conjunto. Solo quien mira el total —y para eso necesita completar en cada caso una columna «¿de qué se trataba?»— percibe que una de cada tres apunta a lo mismo."
+  ],
+  "Aqui está a diferença entre \"atendemos muito\" e \"aprendemos muito\". Os 10.000 chamados resolvidos deixaram 10.000 clientes atendidos e zero mudanças no produto. Um único conserto naquela tela teria evitado 3.700 conversas. A informação estava lá o ano inteiro; só não estava anotada.": [
+    "Here’s the difference between “we handled a lot” and “we learned a lot.” The 10,000 resolved tickets left 10,000 customers served and zero product changes. A single fix to that screen would have prevented 3,700 conversations. The information was there all year; it just wasn’t written down.",
+    "Esta es la diferencia entre «atendimos mucho» y «aprendimos mucho». Las 10.000 consultas resueltas dejaron 10.000 clientes atendidos y ningún cambio en el producto. Una sola corrección de esa pantalla habría evitado 3.700 conversaciones. La información estuvo ahí todo el año; simplemente no quedó anotada."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leída"
+  ],
+  "Refazer do zero tem um custo que não aparece na fatura": [
+    "Starting over has a cost that never appears on the invoice",
+    "Empezar de cero tiene un costo que no aparece en la factura"
+  ],
+  "Marcos, o corretor, responde uns 40 leads por semana — cerca de 160 por mês. Cada resposta leva uns seis minutos entre pedir, ajustar e enviar. São 16 horas por mês. Ele não acha caro, porque a IA \"faz rápido\". Mas as 16 horas do mês que vem vão comprar exatamente a mesma coisa que as deste mês: 160 respostas isoladas, nenhuma mais esperta que a anterior.": [
+    "Marcos, the real estate agent, replies to about 40 leads a week—around 160 a month. Each reply takes about six minutes to request, adjust, and send. That’s 16 hours a month. He doesn’t think it’s expensive because AI “does it fast.” But next month’s 16 hours will buy exactly the same thing as this month’s: 160 isolated replies, none smarter than the last.",
+    "Marcos, el agente inmobiliario, responde unos 40 contactos potenciales por semana: cerca de 160 al mes. Cada respuesta lleva unos seis minutos entre pedirla, ajustarla y enviarla. Son 16 horas al mes. No le parece caro porque la IA «lo hace rápido». Pero las 16 horas del mes que viene comprarán exactamente lo mismo que las de este mes: 160 respuestas aisladas, ninguna más inteligente que la anterior."
+  ],
+  "Compare com outro cenário, com o mesmo tempo gasto: as mesmas 160 respostas, mas cada uma deixa uma linha — data, tipo de imóvel, qual abertura usou, o lead respondeu, agendou visita. O esforço por resposta é igual. A diferença é o rastro. Num caso sobra cansaço; no outro sobra material para uma pergunta que hoje Marcos não consegue responder: \"qual abertura faz mais gente agendar?\".": [
+    "Compare that with another scenario using the same amount of time: the same 160 replies, but each leaves a row—date, property type, opening used, whether the lead replied, whether they booked a visit. The effort per reply is the same. The difference is the trail. In one case, all that’s left is fatigue; in the other, there’s material to answer a question Marcos can’t answer today: “Which opening gets more people to book?”",
+    "Compáralo con otro escenario que requiere el mismo tiempo: las mismas 160 respuestas, pero cada una deja una fila —fecha, tipo de inmueble, frase inicial utilizada, si respondió el contacto y si agendó una visita—. El esfuerzo por respuesta es igual. La diferencia es el rastro. En un caso solo queda el cansancio; en el otro, material para responder una pregunta que Marcos hoy no puede contestar: «¿Qué frase inicial consigue más citas?»"
+  ],
+  "O custo de refazer do zero não é o tempo — o tempo você gastaria de qualquer jeito. É o aprendizado que passou pela sua mão e não ficou.": [
+    "The cost of starting over isn’t the time—you’d spend that time anyway. It’s the learning that passed through your hands and didn’t stay.",
+    "El costo de empezar de cero no es el tiempo: lo gastarías de todos modos. Es el aprendizaje que pasó por tus manos y no quedó registrado."
+  ],
+  "Volume sem registro não é experiência. É a mesma primeira vez, repetida dez mil vezes.": [
+    "Volume without a record isn’t experience. It’s the same first time, repeated ten thousand times.",
+    "El volumen sin registro no es experiencia. Es la misma primera vez, repetida diez mil veces."
+  ],
+  "Duas empresas com a mesma IA: a diferença é quem aprende mais rápido": [
+    "Two companies use the same AI: the difference is who learns faster",
+    "Dos empresas usan la misma IA: la diferencia está en quién aprende más rápido"
+  ],
+  "Durante anos, a vantagem de uma empresa foi \"ter mais dados que a concorrente\". Isso mudou. Hoje todo mundo tem acesso à mesma IA, boa do mesmo jeito. Se duas imobiliárias usam o mesmo chat, os mesmos portais e o mesmo bairro, o que separa uma da outra? Não é o pedido mais bem escrito — esse se copia em um dia.": [
+    "For years, a company’s advantage was “having more data than the competition.” That changed. Today, everyone has access to the same AI, with the same capabilities. If two real estate agencies use the same chat, the same listing sites, and serve the same neighborhood, what sets them apart? It isn’t a better-written prompt—you can copy one in a day.",
+    "Durante años, la ventaja de una empresa fue «tener más datos que la competencia». Eso cambió. Hoy todos tienen acceso a la misma IA, igual de capaz. Si dos inmobiliarias usan el mismo chat, los mismos portales y trabajan en el mismo barrio, ¿qué las distingue? No es una solicitud mejor redactada: se copia en un día."
+  ],
+  "O que não se copia é o histórico. Uma das imobiliárias registra, por lead, canal, tipo de imóvel, resposta enviada e o que aconteceu. Depois de seis meses, tem cerca de 1.000 linhas para consultar antes de mudar qualquer coisa. A outra tem 1.000 conversas perdidas no WhatsApp de cada corretor. A concorrente pode copiar o texto; não pode copiar seis meses de \"o que já testamos e como foi\".": [
+    "What can’t be copied is the history. One agency records the channel, property type, reply sent, and outcome for each lead. After six months, it has about 1,000 rows to consult before changing anything. The other has 1,000 conversations lost in each agent’s WhatsApp. A competitor can copy the text; they can’t copy six months of “what we’ve already tested and how it went.”",
+    "Lo que no se copia es el historial. Una inmobiliaria registra, por contacto, el canal, el tipo de inmueble, la respuesta enviada y lo que ocurrió. Después de seis meses tiene unas 1.000 filas para consultar antes de cambiar nada. La otra tiene 1.000 conversaciones perdidas en el WhatsApp de cada agente. La competencia puede copiar el texto; no puede copiar seis meses de «lo que ya probamos y cómo salió»."
+  ],
+  "Esse acúmulo é o ativo. Ele não nasce de tecnologia melhor — nasce de uma linha por execução, todo dia, sem exceção.": [
+    "That accumulated history is the asset. It doesn’t come from better technology—it comes from one row per execution, every day, without exception.",
+    "Ese historial acumulado es el activo. No nace de una tecnología mejor: nace de una fila por ejecución, todos los días, sin excepción."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Duas clínicas usam a mesma IA, os mesmos preços e ficam na mesma rua. O que uma delas pode ter que a outra não consegue copiar em um mês?": [
+    "Two clinics use the same AI, charge the same prices, and are on the same street. What could one have that the other can’t copy in a month?",
+    "Dos clínicas usan la misma IA, cobran los mismos precios y están en la misma calle. ¿Qué podría tener una que la otra no pueda copiar en un mes?"
+  ],
+  "O pedido (prompt) mais bem escrito": [
+    "The better-written prompt",
+    "La solicitud (prompt) mejor redactada"
+  ],
+  "O registro do que cada proposta produziu e do que já foi testado": [
+    "A record of what each proposal produced and what has already been tested",
+    "El registro de lo que produjo cada propuesta y de lo que ya se probó"
+  ],
+  "Responder mais rápido": [
+    "Reply faster",
+    "Responder más rápido"
+  ],
+  "Onde nasce a evidência: uma linha por execução": [
+    "Where evidence begins: one row per execution",
+    "Dónde nace la evidencia: una fila por ejecución"
+  ],
+  "Todo o loop depende de um passo humilde: registrar. O lugar onde isso acontece é a": [
+    "The whole loop depends on one humble step: recording. The place where it happens is the",
+    "Todo el ciclo depende de un paso sencillo: registrar. El lugar donde ocurre es la"
+  ],
+  "planilha de registro": [
+    "tracking spreadsheet",
+    "hoja de registro"
+  ],
+  "— uma planilha comum, com uma linha por proposta, resposta ou chamado, e uma coluna que a maioria esquece:": [
+    "—a regular spreadsheet, with one row for every proposal, reply, or ticket, and a column most people forget:",
+    ": una hoja de cálculo común, con una fila por propuesta, respuesta o consulta, y una columna que casi todos olvidan:"
+  ],
+  "o que aconteceu depois": [
+    "what happened next",
+    "qué ocurrió después"
+  ],
+  ". Sem essa coluna, você tem um arquivo de textos, não evidência.": [
+    ". Without that column, you have a file of text, not evidence.",
+    ". Sin esa columna tienes un archivo de textos, no evidencia."
+  ],
+  "Para o suporte de Paulo, a linha fica assim: data · assunto do chamado · qual resposta pronta foi usada · resolvido no primeiro contato (sim/não) · voltou em 7 dias (sim/não). Cinco colunas. A pergunta que antes levava uma semana de leitura (\"sobre o que mais reclamam?\") passa a ser uma contagem de dois minutos.": [
+    "For Paulo’s support team, a row looks like this: date · ticket topic · which saved reply was used · resolved on first contact (yes/no) · came back within 7 days (yes/no). Five columns. The question that used to take a week of reading (“what do people complain about most?”) becomes a two-minute count.",
+    "Para el equipo de soporte de Paulo, la fila queda así: fecha · tema de la consulta · respuesta guardada utilizada · resuelta en el primer contacto (sí/no) · volvió en 7 días (sí/no). Cinco columnas. La pregunta que antes exigía una semana de lectura («¿de qué se quejan más?») se convierte en un conteo de dos minutos."
+  ],
+  "Uma honestidade do método: a fonte de evidência é o gargalo, não a IA. Se os dados vivem na cabeça do vendedor ou espalhados em conversas, o loop não tem o que ler — e um loop sem evidência é teatro. E um cuidado, desde já:": [
+    "One honest point about the method: the evidence source is the bottleneck, not the AI. If the data live in a salesperson’s head or are scattered across conversations, the loop has nothing to read—and a loop without evidence is theater. One caution from the start:",
+    "Una verdad del método: el cuello de botella es la fuente de evidencia, no la IA. Si los datos viven en la cabeza del vendedor o están dispersos en conversaciones, el ciclo no tiene nada que leer; un ciclo sin evidencia es puro teatro. Y una advertencia desde el principio:"
+  ],
+  "12 linhas não fazem padrão.": [
+    "12 rows don’t make a pattern.",
+    "12 filas no forman un patrón."
+  ],
+  "\"As propostas de terça respondem mais\", com 12 propostas, é acaso com cara de descoberta. A regra do loop é só afirmar padrão com 30 ou mais por grupo.": [
+    "“Tuesday’s proposals get more replies,” based on 12 proposals, is chance dressed up as a discovery. The loop’s rule is to claim a pattern only with 30 or more items per group.",
+    "«Las propuestas del martes reciben más respuestas», con solo 12 propuestas, es azar disfrazado de descubrimiento. La regla del ciclo es afirmar que hay un patrón solo con 30 o más casos por grupo."
+  ],
+  "Suporte de Paulo, hoje": [
+    "Paulo’s support team today",
+    "El soporte de Paulo, hoy"
+  ],
+  "10.000 chamados por ano resolvidos um a um. \"Sobre o que mais reclamam?\" leva uma semana de leitura para responder — e ninguém tem essa semana.": [
+    "10,000 tickets a year, resolved one by one. Answering “what do people complain about most?” takes a week of reading—and nobody has that week.",
+    "10.000 consultas al año, resueltas una por una. Responder «¿de qué se quejan más?» exige una semana de lectura, y nadie dispone de esa semana."
+  ],
+  "Com a planilha de registro": [
+    "With the tracking spreadsheet",
+    "Con la hoja de registro"
+  ],
+  "10.000 linhas com a coluna \"assunto\" preenchida. A mesma pergunta se responde numa contagem: 37% de um problema só.": [
+    "10,000 rows with the “topic” column filled in. The same question is answered with a count: 37% are about one issue.",
+    "10.000 filas con la columna «tema» completa. La misma pregunta se responde con un conteo: el 37 % trata de un solo problema."
+  ],
+  "Saldo:": [
+    "Result:",
+    "Resultado:"
+  ],
+  "mesmas 10.000 respostas, mesmo esforço por chamado, uma coluna a mais — e 3.700 chamados passam a apontar para um único conserto no produto.": [
+    "same 10,000 replies, same effort per ticket, one extra column—and 3,700 tickets now point to a single product fix.",
+    "las mismas 10.000 respuestas, el mismo esfuerzo por consulta y una columna más: ahora 3.700 consultas apuntan a una sola corrección del producto."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/4 feito": [
+    "0/4 done",
+    "0/4 completado"
+  ],
+  "Conte quantas vezes a mesma tarefa foi refeita do zero no último mês": [
+    "Count how many times the same task was redone from scratch last month",
+    "Cuenta cuántas veces se repitió desde cero la misma tarea el mes pasado"
+  ],
+  "Sair com uma frase escrita, com dois números: quantas vezes por mês a tarefa acontece e quantas ficaram sem registro. ~10 min.": [
+    "Leave with one written sentence and two numbers: how many times per month the task happens, and how many times it went unrecorded. ~10 min.",
+    "Termina con una frase escrita y dos números: cuántas veces al mes se realiza la tarea y cuántas quedaron sin registrar. ~10 min."
+  ],
+  "É só contagem — nada muda no seu negócio até você aprovar; você não altera nenhuma resposta nem avisa ninguém. Se contar parecer demais, estime uma semana e multiplique por quatro: a ordem de grandeza basta para esta aula.": [
+    "This is only a count—nothing in your business changes until you approve it; you won’t alter any reply or tell anyone. If counting everything feels like too much, estimate one week and multiply by four: an approximate scale is enough for this lesson.",
+    "Es solo un conteo: nada cambia en tu negocio hasta que lo apruebes; no modificarás ninguna respuesta ni avisarás a nadie. Si contar todo parece demasiado, estima una semana y multiplica por cuatro: para esta clase basta con tener una idea aproximada."
+  ],
+  "Escolhi UMA tarefa que a IA faz para mim toda semana (proposta, resposta a lead, resposta de chamado, legenda de post).": [
+    "I chose ONE task that AI does for me every week (proposal, lead reply, support ticket reply, post caption).",
+    "Elegí UNA tarea que la IA hace por mí cada semana (propuesta, respuesta a un contacto, respuesta a una consulta, texto para una publicación)."
+  ],
+  "Abri o WhatsApp, o e-mail ou o sistema do último mês e contei quantas vezes ela aconteceu (ou estimei por semana × 4).": [
+    "I opened WhatsApp, email, or the system from last month and counted how many times it happened (or estimated weekly × 4).",
+    "Abrí WhatsApp, el correo o el sistema del mes pasado y conté cuántas veces ocurrió (o estimé una semana × 4)."
+  ],
+  "Para cada uma, respondi \"sei o que aconteceu depois?\" e contei os \"não\".": [
+    "For each one, I answered “do I know what happened next?” and counted the “no” answers.",
+    "Para cada caso, respondí «¿sé qué pasó después?» y conté las respuestas «no»."
+  ],
+  "Escrevi a frase: \"[tarefa] — [N] vezes por mês — [M] sem registro\". Exemplo aceitável: \"Resposta a lead de portal — 160 vezes por mês — 160 sem registro\".": [
+    "I wrote this sentence: “[task] — [N] times per month — [M] unrecorded.” Acceptable example: “Reply to a listing-site lead — 160 times per month — 160 unrecorded.”",
+    "Escribí esta frase: «[tarea] — [N] veces al mes — [M] sin registro». Ejemplo válido: «Respuesta a un contacto del portal — 160 veces al mes — 160 sin registro»."
+  ],
+  "Você acabou de conseguir dar um número mensal a uma sensação — e esse número é a primeira linha do diagnóstico do seu negócio.": [
+    "You’ve just put a monthly number to a feeling—and that number is the first line of your business diagnosis.",
+    "Acabas de ponerle una cifra mensual a una sensación, y esa cifra es la primera línea del diagnóstico de tu negocio."
+  ],
+  "■ mesmo problema · 37%": [
+    "■ same issue · 37%",
+    "■ mismo problema · 37%"
+  ],
+  "● outros assuntos": [
+    "● other topics",
+    "● otros temas"
+  ],
+  "só se vê olhando o conjunto": [
+    "only visible when you look at the whole set",
+    "solo se ve al mirar el conjunto"
+  ],
+  "refazer do zero": [
+    "starting from scratch",
+    "empezar de cero"
+  ],
+  "sobra: cansaço": [
+    "left over: fatigue",
+    "queda: cansancio"
+  ],
+  "com registro": [
+    "with a record",
+    "con registro"
+  ],
+  "sobra: linhas para consultar": [
+    "left over: rows to consult",
+    "queda: filas para consultar"
+  ],
+  "mesma IA": [
+    "same AI",
+    "la misma IA"
+  ],
+  "imobiliária A": [
+    "real estate agency A",
+    "inmobiliaria A"
+  ],
+  "imobiliária B": [
+    "real estate agency B",
+    "inmobiliaria B"
+  ],
+  "1.000 linhas": [
+    "1,000 rows",
+    "1.000 filas"
+  ],
+  "conversas perdidas": [
+    "lost conversations",
+    "conversaciones perdidas"
+  ],
+  "o texto se copia em um dia;": [
+    "the text can be copied in a day;",
+    "el texto se copia en un día;"
+  ],
+  "o histórico, só com tempo": [
+    "the history takes time",
+    "el historial lleva tiempo"
+  ],
+  "vantagem = velocidade de aprender": [
+    "advantage = speed of learning",
+    "ventaja = velocidad para aprender"
+  ],
+  "data": [
+    "date",
+    "fecha"
+  ],
+  "assunto": [
+    "topic",
+    "tema"
+  ],
+  "resposta": [
+    "reply",
+    "respuesta"
+  ],
+  "aconteceu?": [
+    "outcome?",
+    "¿resultado?"
+  ],
+  "02/03": [
+    "03/02",
+    "02/03"
+  ],
+  "senha": [
+    "password",
+    "contraseña"
+  ],
+  "pronta #4": [
+    "saved #4",
+    "guardada n.º 4"
+  ],
+  "resolvido": [
+    "resolved",
+    "resuelta"
+  ],
+  "boleto": [
+    "bill",
+    "factura"
+  ],
+  "pronta #9": [
+    "saved #9",
+    "guardada n.º 9"
+  ],
+  "voltou 7d": [
+    "returned in 7d",
+    "volvió en 7 días"
+  ],
+  "03/03": [
+    "03/03",
+    "03/03"
+  ],
+  "alimenta o próximo pedido": [
+    "feeds the next request",
+    "alimenta la próxima solicitud"
+  ],
+  "padrão só com 30 ou mais por grupo": [
+    "pattern only with 30 or more per group",
+    "patrón solo con 30 o más por grupo"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Recap",
+    "Resumen"
+  ],
+  "Dez mil chamados resolvidos um a um ensinam tanto quanto o primeiro, se ninguém anotou sobre o que eram.": [
+    "Ten thousand tickets resolved one by one teach as much as the first one if nobody noted what they were about.",
+    "Diez mil consultas resueltas una por una enseñan tanto como la primera si nadie anotó de qué trataban."
+  ],
+  "O custo de refazer do zero é invisível na fatura e só aparece quando você conta: a mesma tarefa, dezenas de vezes por mês, sem rastro.": [
+    "The cost of starting over is invisible on the invoice and only shows up when you count: the same task, dozens of times a month, with no trail.",
+    "El costo de empezar de cero no aparece en la factura; solo se ve al contar: la misma tarea, decenas de veces al mes, sin dejar rastro."
+  ],
+  "Com a mesma IA para todos, a empresa difícil de copiar é a que acumula histórico do que cada execução produziu.": [
+    "With the same AI available to everyone, the hard-to-copy company is the one that builds a history of what each execution produced.",
+    "Con la misma IA al alcance de todos, la empresa difícil de copiar es la que acumula un historial de lo que produjo cada ejecución."
+  ],
+  "A evidência nasce numa planilha simples, com uma coluna dizendo o que aconteceu depois — e só vira padrão a partir de 30 por grupo.": [
+    "Evidence begins in a simple spreadsheet, with a column for what happened next—and only becomes a pattern from 30 per group onward.",
+    "La evidencia nace en una hoja de cálculo sencilla, con una columna que indica qué ocurrió después, y solo se convierte en patrón a partir de 30 casos por grupo."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu próximo paso"
+  ],
+  "Você acabou de conseguir transformar \"a gente faz isso o tempo todo\" em um número mensal, com a parte sem registro contada.": [
+    "You’ve just turned “we do this all the time” into a monthly number, with the unrecorded part counted.",
+    "Acabas de convertir «hacemos esto todo el tiempo» en una cifra mensual, contando también lo que quedó sin registrar."
+  ],
+  "Nos próximos 15 minutos, crie uma planilha com cinco colunas — data · o que foi enviado · para quem · o que aconteceu · observação — e preencha as três últimas vezes em que a tarefa aconteceu.": [
+    "In the next 15 minutes, create a spreadsheet with five columns—date · what was sent · to whom · what happened · notes—and fill in the last three times the task occurred.",
+    "En los próximos 15 minutos, crea una hoja de cálculo con cinco columnas —fecha · qué se envió · a quién · qué ocurrió · observaciones— y completa las tres últimas veces que realizaste la tarea."
+  ],
+  "Na próxima aula, você descobre em qual dos cinco níveis de maturidade o seu negócio está hoje — e por que pular do 1 direto para o 5 nunca funciona.": [
+    "In the next lesson, you’ll find out which of the five maturity levels your business is at today—and why jumping straight from 1 to 5 never works.",
+    "En la próxima clase descubrirás en cuál de los cinco niveles de madurez está hoy tu negocio y por qué saltar directamente del 1 al 5 nunca funciona."
+  ],
+  "← aula 1": [
+    "← lesson 1",
+    "← clase 1"
+  ],
+  "próxima: os cinco níveis →": [
+    "next: the five levels →",
+    "siguiente: los cinco niveles →"
+  ],
+  "Aula 2 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 2 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 2 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "A planilha onde cada execução (proposta, resposta, chamado) vira uma linha, com uma coluna dizendo o que aconteceu depois. É a fonte de evidência do loop.": [
+    "The spreadsheet where each execution (proposal, reply, ticket) becomes a row, with a column showing what happened next. It is the loop’s source of evidence.",
+    "La hoja de cálculo donde cada ejecución (propuesta, respuesta, consulta) se convierte en una fila, con una columna que indica qué ocurrió después. Es la fuente de evidencia del ciclo."
+  ],
+  "<b>Fig. 1</b> Cada ponto é um chamado resolvido. Os destacados são o mesmo problema — visível só quando alguém olha o conjunto, nunca de dentro de um chamado.": [
+    "<b>Fig. 1</b> Each dot is a resolved ticket. The highlighted dots are the same issue—visible only when someone looks at the whole set, never from inside a single ticket.",
+    "<b>Fig. 1</b> Cada punto es una consulta resuelta. Los destacados corresponden al mismo problema: solo se ve al mirar el conjunto, nunca desde dentro de una consulta."
+  ],
+  "<b>Fig. 2</b> Em cima, doze meses de trabalho igual: cada barra começa do zero. Embaixo, o mesmo trabalho deixando uma linha por execução — a única diferença é o rastro que se acumula.": [
+    "<b>Fig. 2</b> Top: twelve months of the same work, each bar starting from zero. Bottom: the same work leaving one row per execution—the only difference is the trail that accumulates.",
+    "<b>Fig. 2</b> Arriba, doce meses del mismo trabajo: cada barra empieza de cero. Abajo, el mismo trabajo deja una fila por ejecución; la única diferencia es el rastro acumulado."
+  ],
+  "<b>Fig. 3</b> Duas empresas partem do mesmo ponto com a mesma IA. A que registra acumula uma barra de histórico que a outra não consegue copiar de uma vez — só construir, linha a linha.": [
+    "<b>Fig. 3</b> Two companies start from the same point with the same AI. The one that records builds a history the other can’t copy all at once—it can only build it, row by row.",
+    "<b>Fig. 3</b> Dos empresas parten del mismo punto con la misma IA. La que registra acumula un historial que la otra no puede copiar de golpe: solo puede construirlo fila a fila."
+  ],
+  "<b>Fig. 4</b> A planilha de registro: uma linha por execução e a coluna que quase todo mundo esquece, destacada. A seta mostra a linha voltando para alimentar o próximo pedido.": [
+    "<b>Fig. 4</b> The tracking spreadsheet: one row per execution, with the often-forgotten column highlighted. The arrow shows the row feeding into the next request.",
+    "<b>Fig. 4</b> La hoja de registro: una fila por ejecución y resaltada la columna que casi todos olvidan. La flecha muestra cómo la fila alimenta la próxima solicitud."
+  ],
+  "Um gestor de suporte diz: \"atendemos 4.000 chamados este ano, já sabemos tudo sobre nossos clientes\". Que pergunta de uma frase testa essa afirmação?": [
+    "A support manager says, “We handled 4,000 tickets this year, so we know everything about our customers.” What one-sentence question tests that claim?",
+    "Un responsable de soporte dice: «Atendimos 4.000 consultas este año; ya lo sabemos todo sobre nuestros clientes». ¿Qué pregunta de una frase pone a prueba esa afirmación?"
+  ],
+  "\"Qual é o assunto mais comum, em porcentagem?\" Se a resposta demora ou é chute, os 4.000 não viraram conhecimento — viraram 4.000 conversas encerradas.": [
+    "“What is the most common topic, as a percentage?” If the answer takes time or is a guess, the 4,000 did not become knowledge—they became 4,000 closed conversations.",
+    "«¿Cuál es el tema más frecuente, en porcentaje?». Si la respuesta tarda o es una suposición, las 4.000 no se convirtieron en conocimiento: fueron 4.000 conversaciones cerradas."
+  ],
+  "Uma corretora tem 900 respostas a leads guardadas no WhatsApp e ainda não consegue dizer qual abordagem funciona. O que falta?": [
+    "An agent has 900 replies to leads saved in WhatsApp and still can’t say which approach works. What’s missing?",
+    "Una agente tiene 900 respuestas a contactos guardadas en WhatsApp y aún no sabe qué enfoque funciona. ¿Qué falta?"
+  ],
+  "A coluna \"o que aconteceu depois\" por lead. Ter as conversas não é registro; registro é uma linha com resultado (respondeu? agendou?).": [
+    "The “what happened next” column for each lead. Having conversations isn’t a record; a record is a row with an outcome (replied? booked?).",
+    "La columna «qué ocurrió después» para cada contacto. Tener las conversaciones no es registrar; registrar es dejar una fila con el resultado (¿respondió?, ¿agendó?)."
+  ],
+  "Com 12 propostas registradas, a IA aponta que \"as de terça respondem mais\". Você muda o dia de envio?": [
+    "With 12 proposals logged, AI says “Tuesday’s get more replies.” Do you change the send day?",
+    "Con 12 propuestas registradas, la IA indica que «las del martes reciben más respuestas». ¿Cambias el día de envío?"
+  ],
+  "Não. Doze linhas não fazem padrão; o mínimo é 30 por grupo. Anote como \"observado, não testado\" e continue registrando.": [
+    "No. Twelve rows don’t make a pattern; the minimum is 30 per group. Mark it “observed, not tested” and keep logging.",
+    "No. Doce filas no forman un patrón; el mínimo es 30 por grupo. Anótalo como «observado, no probado» y sigue registrando."
+  ],
+  "Qual a diferença entre \"repetir uma tarefa 160 vezes\" e \"executar 160 vezes com registro\", se o tempo gasto é o mesmo?": [
+    "What’s the difference between “repeating a task 160 times” and “doing it 160 times with a record,” if both take the same time?",
+    "¿Qué diferencia hay entre «repetir una tarea 160 veces» y «hacerla 160 veces con registro», si llevan el mismo tiempo?"
+  ],
+  "Só o rastro. No segundo caso sobra uma linha por execução, que pode virar hipótese; no primeiro, sobra o cansaço — e a mesma dúvida do mês anterior.": [
+    "Only the trail. In the second case, one row per execution remains and can become a hypothesis; in the first, only fatigue remains—and the same question as last month.",
+    "Solo el rastro. En el segundo caso queda una fila por ejecución que puede convertirse en hipótesis; en el primero, queda el cansancio y la misma duda del mes anterior."
+  ],
+  "Você vai começar a registrar as propostas da clínica. Quais cinco colunas escolhe, e qual delas não pode faltar de jeito nenhum?": [
+    "You’re starting to log the clinic’s proposals. Which five columns do you choose, and which one is absolutely essential?",
+    "Vas a empezar a registrar las propuestas de la clínica. ¿Qué cinco columnas eliges y cuál no puede faltar?"
+  ],
+  "Data · versão da proposta · tipo de pacote · respondeu (sim/não) · agendou (sim/não). A que não pode faltar é a de resultado — sem ela é arquivo de textos, não evidência.": [
+    "Date · proposal version · package type · replied (yes/no) · booked (yes/no). The outcome column is essential—without it, you have a file of texts, not evidence.",
+    "Fecha · versión de la propuesta · tipo de paquete · respondió (sí/no) · agendó (sí/no). La columna imprescindible es la del resultado: sin ella tienes un archivo de textos, no evidencia."
+  ],
+  "Um pedido bem escrito se copia numa tarde — basta alguém mandar o texto. Não é vantagem duradoura.": [
+    "A well-written prompt can be copied in an afternoon—someone just has to share the text. It isn’t a lasting advantage.",
+    "Una solicitud bien redactada se copia en una tarde: basta con compartir el texto. No es una ventaja duradera."
+  ],
+  "Isso. O histórico do que cada proposta produziu, e do que já foi testado, só se constrói linha a linha, com o tempo — a concorrente teria de começar do zero.": [
+    "Exactly. A history of what each proposal produced and what has already been tested can only be built over time, row by row—the competitor would have to start from scratch.",
+    "Exacto. El historial de lo que produjo cada propuesta y de lo que ya se probó solo se construye con el tiempo, fila a fila; la competencia tendría que empezar de cero."
+  ],
+  "Velocidade a IA dá para as duas igualmente. Responder rápido sem registrar continua sendo terminar ali.": [
+    "AI gives both companies speed equally. A fast reply without a record still ends right there.",
+    "La IA les da la misma velocidad a ambas. Responder rápido sin registrar sigue siendo terminar ahí."
+  ]
+}

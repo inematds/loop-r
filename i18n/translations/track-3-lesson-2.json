@@ -1,0 +1,522 @@
+{
+  "Trilha 03 · Aula 2": [
+    "Track 03 · Lesson 2",
+    "Ruta 03 · Clase 2"
+  ],
+  "Quem propõe, quem testa,": [
+    "Who proposes, who tests,",
+    "Quién propone, quién prueba,"
+  ],
+  "quem julga": [
+    "who judges",
+    "quién juzga"
+  ],
+  "Ao fim desta aula você consegue apontar, num caso do seu negócio, quem \"se convenceu sozinho\" — e dizer qual dos três assistentes teria impedido isso.": [
+    "By the end of this lesson, you will be able to identify, in a case from your business, who “convinced themselves”—and say which of the three assistants would have prevented it.",
+    "Al terminar esta clase, podrás identificar, en un caso de tu negocio, quién «se convenció por su cuenta» y decir cuál de los tres asistentes lo habría impedido."
+  ],
+  "A mudança mais comum numa empresa pequena nasce assim: alguém teve uma ideia, testou duas semanas, \"sentiu\" que funcionou e virou regra. Sem quantidade, sem comparação, sem juiz. O loop separa a ideia, o teste e o veredito em três mãos — e a terceira mão só sabe dizer uma de três coisas.": [
+    "The most common change in a small business starts like this: someone has an idea, tests it for two weeks, “feels” that it worked, and turns it into a rule. No sample size, no comparison, no judge. The loop puts the idea, test, and verdict in three different hands—and the third hand can say only one of three things.",
+    "El cambio más habitual en una pequeña empresa empieza así: alguien tiene una idea, la prueba durante dos semanas, «siente» que funcionó y la convierte en regla. Sin cantidad, sin comparación y sin juez. El ciclo separa la idea, la prueba y el veredicto en tres manos, y la tercera solo puede decir una de tres cosas."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "A": [
+    "A",
+    "A"
+  ],
+  "B": [
+    "B",
+    "B"
+  ],
+  "a balança não tem opinião — só pesa o que colocaram nos dois pratos": [
+    "the scale has no opinion—it only weighs what was placed on each side",
+    "la balanza no opina: solo pesa lo que pusieron en ambos platillos"
+  ],
+  "O Otimizador escreve hipóteses, não conselhos": [
+    "The Optimizer writes hypotheses, not advice",
+    "El Optimizador escribe hipótesis, no consejos"
+  ],
+  "Otimizador": [
+    "Optimizer",
+    "Optimizador"
+  ],
+  "lê o diagnóstico do Crítico e escreve hipóteses. Uma hipótese tem forma fixa.": [
+    "reads the Critic’s diagnosis and writes hypotheses. Each hypothesis has a fixed structure.",
+    "lee el diagnóstico del Crítico y escribe hipótesis. Cada hipótesis tiene una estructura fija."
+  ],
+  "SE": [
+    "IF",
+    "SI"
+  ],
+  "uma única mudança concreta no roteiro,": [
+    "one specific change to the script,",
+    "un único cambio concreto en el guion,"
+  ],
+  "ENTÃO": [
+    "THEN",
+    "ENTONCES"
+  ],
+  "tal métrica deve ir de tanto para tanto,": [
+    "the metric should move from this value to that value,",
+    "esa métrica debe pasar de este valor a este otro,"
+  ],
+  "PORQUE": [
+    "BECAUSE",
+    "PORQUE"
+  ],
+  "tal evidência (forte ou moderada). Uma mudança por hipótese. Nunca duas.": [
+    "the evidence is this (strong or moderate). One change per hypothesis. Never two.",
+    "esta evidencia (sólida o moderada). Un cambio por hipótesis. Nunca dos."
+  ],
+  "Antes de escrever, ele consulta a gaveta das hipóteses descartadas: o que já perdeu ou foi vetado não volta. E hipóteses apoiadas só em evidência fraca não vão para teste — vão para \"observado, não testado\", esperando quantidade.": [
+    "Before writing, it checks the drawer of discarded hypotheses: anything that already lost or was vetoed does not come back. Hypotheses based only on weak evidence are not tested; they go into “observed, untested” and wait for a larger sample.",
+    "Antes de escribir, consulta el cajón de hipótesis descartadas: lo que ya perdió o fue vetado no vuelve. Las hipótesis basadas solo en evidencia débil tampoco se prueban; pasan a «observado, no probado» y esperan a que haya más datos."
+  ],
+  "Exemplo aplicado: o corretor recebeu do Crítico dois números. 70% dos leads do portal nunca respondem à primeira mensagem, e a resposta demora em média 3 horas. O Otimizador escreve: \"SE a primeira resposta sair em até 15 minutos, ENTÃO a taxa de resposta deve ir de 30% para 40%\". E completa: \"PORQUE 70% de silêncio é evidência forte e o lead esfria\". Uma mudança só. Ele não escreveu \"responda rápido e com mais fotos e com o preço\" — isso seriam três hipóteses misturadas.": [
+    "Applied example: the real estate agent received two numbers from the Critic. 70% of portal leads never reply to the first message, and the average response time is 3 hours. The Optimizer writes: “IF the first reply is sent within 15 minutes, THEN the response rate should rise from 30% to 40%.” It adds: “BECAUSE 70% silence is strong evidence and the lead goes cold.” One change only. It did not write “reply quickly, add more photos, and include the price”—that would mix three hypotheses.",
+    "Ejemplo aplicado: el agente inmobiliario recibió dos cifras del Crítico. El 70 % de los contactos del portal nunca responde al primer mensaje y la respuesta tarda 3 horas de media. El Optimizador escribe: «SI la primera respuesta se envía en 15 minutos o menos, ENTONCES la tasa de respuesta debería subir del 30 % al 40 %». Añade: «PORQUE un 70 % de silencio es evidencia sólida y el contacto pierde interés». Un solo cambio. No escribió «responde rápido, añade más fotos e incluye el precio»: eso mezclaría tres hipótesis."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "O Experimentador faz a conta antes de testar": [
+    "The Experimenter does the math before testing",
+    "El Experimentador hace los cálculos antes de probar"
+  ],
+  "Experimentador": [
+    "Experimenter",
+    "Experimentador"
+  ],
+  "pega a hipótese aprovada e desenha o teste: A é a versão atual, B é a versão com a mudança. Antes de qualquer envio, ele calcula a": [
+    "takes the approved hypothesis and designs the test: A is the current version, and B is the version with the change. Before sending anything, it calculates the",
+    "toma la hipótesis aprobada y diseña la prueba: A es la versión actual y B es la versión con el cambio. Antes de enviar nada, calcula la"
+  ],
+  "quantidade que prova": [
+    "sample size needed for proof",
+    "cantidad necesaria para demostrarlo"
+  ],
+  "— quantas execuções cada lado precisa para a diferença não ser sorte.": [
+    "—how many runs each side needs so the difference is not just luck.",
+    "—cuántas ejecuciones necesita cada lado para que la diferencia no sea fruto del azar."
+  ],
+  "Depois divide meio a meio, alternando por ordem de chegada — o Executor não escolhe quem recebe A ou B. E fixa a regra de parada: o teste só para antes da hora se algum guarda-corpo cair. Nunca porque \"já está ganhando\".": [
+    "Then it splits the work evenly, alternating by arrival order—the Executor does not choose who gets A or B. It also sets the stopping rule: the test can stop early only if a guardrail is breached. Never because “it is already winning.”",
+    "Después divide el trabajo por igual, alternando según el orden de llegada: el Ejecutor no elige quién recibe A o B. También fija la regla de parada: la prueba solo se detiene antes de tiempo si se rompe un límite de seguridad. Nunca porque «ya va ganando»."
+  ],
+  "Antes — o teste \"de sentimento\"": [
+    "Before—the “gut-feel” test",
+    "Antes: la prueba «a ojo»"
+  ],
+  "A clínica muda três coisas na mensagem de uma vez, envia por duas semanas, olha o WhatsApp e conclui que \"melhorou\". Ninguém sabe qual das três mudou o resultado, nem se foi sorte.": [
+    "The clinic changes three things in the message at once, sends it for two weeks, checks WhatsApp, and concludes that it “improved.” No one knows which change affected the result—or whether it was luck.",
+    "La clínica cambia tres cosas del mensaje a la vez, lo envía durante dos semanas, mira WhatsApp y concluye que «mejoró». Nadie sabe cuál de los tres cambios afectó el resultado ni si fue suerte."
+  ],
+  "Depois — o teste desenhado": [
+    "After—the designed test",
+    "Después: la prueba diseñada"
+  ],
+  "Uma mudança. Dois lados, meio a meio, por ordem de chegada. 166 propostas de cada lado antes de qualquer veredito. Parada antecipada só se um guarda-corpo cair.": [
+    "One change. Two groups, split evenly by arrival order. 166 proposals per group before any verdict. Early stopping only if a guardrail is breached.",
+    "Un cambio. Dos grupos, repartidos por igual según el orden de llegada. 166 propuestas por grupo antes de emitir un veredicto. Solo se detiene antes si se rompe un límite de seguridad."
+  ],
+  "Saldo:": [
+    "Takeaway:",
+    "Balance:"
+  ],
+  "O Avaliador só sabe dizer três coisas": [
+    "The Evaluator can say only three things",
+    "El Evaluador solo puede decir tres cosas"
+  ],
+  "Avaliador": [
+    "Evaluator",
+    "Evaluador"
+  ],
+  "recebe os números do teste e responde uma única frase, de três possíveis.": [
+    "receives the test numbers and gives exactly one of three possible answers.",
+    "recibe las cifras de la prueba y responde con una sola frase, entre tres posibles."
+  ],
+  "Quantidade insuficiente": [
+    "Insufficient sample",
+    "Cantidad insuficiente"
+  ],
+  "A segue": [
+    "A stays",
+    "A sigue"
+  ],
+  "B ganhou": [
+    "B won",
+    "B ganó"
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/3 feito": [
+    "0/3 complete",
+    "0/3 completados"
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Fig. 1": [
+    "Fig. 1",
+    "Fig. 1"
+  ],
+  "Fig. 2": [
+    "Fig. 2",
+    "Fig. 2"
+  ],
+  "Fig. 3": [
+    "Fig. 3",
+    "Fig. 3"
+  ],
+  "Fig. 4": [
+    "Fig. 4",
+    "Fig. 4"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Aula 3.2 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 3.2 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 3.2 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "← anterior: Executor, Observador, Crítico": [
+    "← previous: Executor, Observer, Critic",
+    "← anterior: Ejecutor, Observador, Crítico"
+  ],
+  "próxima: o Guardião →": [
+    "next: the Guardian →",
+    "siguiente: el Guardián →"
+  ],
+  "Exemplo aplicado: na clínica do exemplo de referência, a hipótese \"mensagem com no máximo 80 palavras\" prometia levar a resposta de 17% para 22%. O Experimentador fez a conta: para provar um salto tão pequeno, 985 propostas de cada lado. Isso dava 40 semanas no ritmo da clínica, acima do teto de 16. Ele não encolheu o número por conta própria. Escalou para a dona com três opções. A decisão foi medir pelo salto que vale a pena (17% para 30%): 166 por lado, 7 semanas. O teste ficou possível porque alguém fez a conta antes, não depois.": [
+    "Applied example: in the reference clinic, the hypothesis that “a message of no more than 80 words” would raise replies from 17% to 22%. The Experimenter calculated that proving such a small lift would require 985 proposals per side. At the clinic’s pace, that meant 40 weeks, above the 16-week ceiling. It did not lower the sample size on its own. It took three options to the owner. The decision was to measure a worthwhile lift (17% to 30%): 166 per side, 7 weeks. The test became feasible because someone did the math before, not after.",
+    "Ejemplo aplicado: en la clínica del caso de referencia, la hipótesis de que un «mensaje de hasta 80 palabras» elevaría la respuesta del 17 % al 22 %. El Experimentador calculó que demostrar un aumento tan pequeño requería 985 propuestas por grupo. Al ritmo de la clínica, serían 40 semanas, por encima del límite de 16. No redujo la cantidad por su cuenta. Presentó tres opciones a la dueña. La decisión fue medir un aumento que valiera la pena (del 17 % al 30 %): 166 por grupo, 7 semanas. La prueba fue viable porque alguien hizo los cálculos antes, no después."
+  ],
+  "no exemplo, de 40 semanas impossíveis para 7 semanas viáveis — e uma conta registrada que qualquer pessoa pode conferir.": [
+    "In the example, the test went from an impossible 40 weeks to a feasible 7—and the calculation was recorded for anyone to check.",
+    "En el ejemplo, se pasó de 40 semanas inviables a 7 viables, con un cálculo registrado que cualquiera puede comprobar."
+  ],
+  ": algum lado ainda não chegou ao mínimo — continue.": [
+    ": one side has not reached the minimum yet—continue.",
+    " : a uno de los grupos aún le faltan datos para llegar al mínimo; continúa."
+  ],
+  ": B não superou A com margem, ou B piorou algum \"sem piorar\" — mesmo que a métrica-alvo tenha subido.": [
+    ": B did not beat A by a sufficient margin, or B worsened a guardrail—even if the target metric went up.",
+    " : B no superó a A con margen suficiente o empeoró algún indicador de «sin empeorar», aunque la métrica objetivo haya subido."
+  ],
+  ": B superou A com margem e não piorou nada.": [
+    ": B beat A by a sufficient margin and worsened nothing.",
+    " : B superó a A con margen suficiente y no empeoró ningún indicador."
+  ],
+  "Não existe \"B parece melhor\". Não existe \"B ganhou, mas\". A terceira resposta, \"quantidade insuficiente\", é a mais comum — e tem que ser aceitável. Um loop honesto passa muitas semanas dizendo \"ainda não sei\".": [
+    "There is no “B looks better.” There is no “B won, but…” The third answer, “insufficient sample,” is the most common—and must be acceptable. An honest loop spends many weeks saying, “I still do not know.”",
+    "No existe «B parece mejor» ni «B ganó, pero…». La tercera respuesta, «cantidad insuficiente», es la más habitual y hay que aceptarla. Un ciclo honesto pasa muchas semanas diciendo «todavía no lo sé»."
+  ],
+  "Exemplo aplicado: no segundo ciclo da clínica, a versão B era \"até 80 palavras\". Ela levou a taxa de resposta de 19,3% para 29,7%, com 300 propostas de cada lado. Um salto real, não sorte. E o Avaliador respondeu:": [
+    "Applied example: in the clinic’s second cycle, version B used “up to 80 words.” It raised the response rate from 19.3% to 29.7%, with 300 proposals on each side. A real lift, not luck. And the Evaluator answered:",
+    "Ejemplo aplicado: en el segundo ciclo de la clínica, la versión B tenía «hasta 80 palabras». Elevó la tasa de respuesta del 19,3 % al 29,7 %, con 300 propuestas por grupo. Un aumento real, no suerte. Y el Evaluador respondió:"
+  ],
+  ". Motivo: as reclamações foram 6 em 300 na versão B contra 1 em 300 na versão A, e a ficha dizia tolerância zero para reclamações. A regra foi aplicada como escrita. (Na aula do Guardião você vai ver que a regra estava mal calibrada — e como a clínica corrigiu isso sem quebrar o veredito.)": [
+    ". Reason: there were 6 complaints out of 300 for version B, versus 1 out of 300 for version A, and the worksheet set zero tolerance for complaints. The rule was applied as written. (In the Guardian lesson, you will see that the rule was poorly calibrated—and how the clinic corrected it without changing the verdict.)",
+    ". Motivo: hubo 6 quejas de 300 con la versión B frente a 1 de 300 con la versión A, y la ficha establecía tolerancia cero a las quejas. La regla se aplicó tal como estaba escrita. (En la clase del Guardián verás que la regla estaba mal calibrada y cómo la clínica la corrigió sin cambiar el veredicto.)"
+  ],
+  "Um teste do gestor de suporte está na 3ª semana. B resolve 70% no primeiro contato contra 55% de A — mas cada lado só tem 40 chamados de um mínimo de 170. O que o Avaliador responde?": [
+    "A support manager’s test is in week 3. B resolves 70% on first contact versus 55% for A—but each side has only 40 tickets, below the 170 minimum. What does the Evaluator answer?",
+    "La prueba del responsable de soporte está en su tercera semana. B resuelve el 70 % en el primer contacto frente al 55 % de A, pero cada grupo solo tiene 40 tickets, por debajo del mínimo de 170. ¿Qué responde el Evaluador?"
+  ],
+  "B ganhou — a diferença é clara, promove": [
+    "B won—the difference is clear; promote it",
+    "B ganó: la diferencia es clara, promuévela"
+  ],
+  "Quantidade insuficiente — continua o teste": [
+    "Insufficient sample—continue the test",
+    "Cantidad insuficiente: continúa la prueba"
+  ],
+  "A segue — 15 pontos com 40 chamados não é margem": [
+    "A stays—15 points with 40 tickets is not enough margin",
+    "A sigue: 15 puntos con 40 tickets no bastan para tener margen"
+  ],
+  "Quem se convenceu sozinho tinha as três funções na mesma mão": [
+    "The person who convinced themselves held all three roles",
+    "Quien se convenció por su cuenta tenía las tres funciones en una sola mano"
+  ],
+  "Junte as três aulas. Quem faz não mede, quem mede não explica, quem explica não propõe. E agora: quem propõe não testa, quem testa não julga. Toda vez que alguém \"se convence sozinho\", é porque as três últimas funções estavam na mesma mão. A pessoa teve a ideia, escolheu como testar e decidiu que ganhou.": [
+    "Put the three lessons together. The person who does the work does not measure; the one who measures does not explain; the one who explains does not propose. Now add this: the one who proposes does not test, and the one who tests does not judge. Whenever someone “convinces themselves,” the last three roles were in the same hands. That person had the idea, chose how to test it, and decided it had won.",
+    "Une las tres clases. Quien hace no mide; quien mide no explica; quien explica no propone. Y ahora: quien propone no prueba, y quien prueba no juzga. Cada vez que alguien «se convence por su cuenta», es porque las tres últimas funciones estaban en la misma mano. Esa persona tuvo la idea, eligió cómo probarla y decidió que había ganado."
+  ],
+  "A separação não desconfia das pessoas. Desconfia de um padrão humano — e de IA: quem tem a ideia quer que ela dê certo, e enxerga o resultado que espera. O loop não pede que você seja neutro. Pede que o juiz seja outro.": [
+    "The separation is not about distrusting people. It accounts for a human—and AI—pattern: whoever has the idea wants it to work and sees the result they expect. The loop does not ask you to be neutral. It asks for a different judge.",
+    "La separación no consiste en desconfiar de las personas. Tiene en cuenta un patrón humano —y también de la IA—: quien tiene la idea quiere que funcione y ve el resultado que espera. El ciclo no te pide que seas neutral; pide que juzgue otra persona."
+  ],
+  "Exemplo aplicado: o gestor de suporte muda o texto padrão de resposta para um problema recorrente. Na semana seguinte, \"sente\" que as reaberturas caíram, e manda a equipe adotar. Ele foi Otimizador (a ideia), Experimentador (uma semana, sem contar, sem versão A rodando ao lado) e Avaliador (o veredito \"caíram\"). No loop, a ideia dele viraria uma hipótese. O teste rodaria A e B lado a lado até 170 chamados de cada. E o veredito viria de quem não escreveu o texto.": [
+    "Applied example: a support manager changes the standard reply for a recurring issue. The next week, they “feel” that reopenings have fallen and tell the team to adopt it. They acted as Optimizer (the idea), Experimenter (one week, uncounted, with no version A running alongside), and Evaluator (the verdict that they “fell”). In the loop, the idea would become a hypothesis. A and B would run side by side until each had 170 tickets. The verdict would come from someone who did not write the reply.",
+    "Ejemplo aplicado: el responsable de soporte cambia la respuesta estándar para un problema recurrente. La semana siguiente «siente» que bajaron las reaperturas y pide al equipo que adopte el cambio. Actuó como Optimizador (la idea), Experimentador (una semana, sin contar y sin mantener la versión A en paralelo) y Evaluador (el veredicto de que «bajaron»). En el ciclo, su idea se convertiría en una hipótesis. A y B funcionarían en paralelo hasta reunir 170 tickets cada una. El veredicto lo daría alguien que no redactó la respuesta."
+  ],
+  "A ideia pode ser sua. O teste e o veredito nunca são.": [
+    "The idea can be yours. The test and verdict never are.",
+    "La idea puede ser tuya. La prueba y el veredicto, nunca."
+  ],
+  "Ache quem se convenceu sozinho": [
+    "Find who convinced themselves",
+    "Encuentra quién se convenció por su cuenta"
+  ],
+  "Meta: em ~8 minutos, ler o caso, responder às 3 perguntas por escrito e comparar com o gabarito.": [
+    "Goal: in about 8 minutes, read the case, write answers to the 3 questions, and compare them with the answer key.",
+    "Meta: en unos 8 minutos, lee el caso, responde por escrito las 3 preguntas y compara con la clave."
+  ],
+  "É seguro: o caso é de outra empresa, e nada muda no seu negócio até você aprovar — aqui você só treina o olhar. Se a sua resposta não bater com o gabarito, releia o step 04 e tente de novo. A diferença costuma estar em quem deu o veredito.": [
+    "This is safe: the case is about another company, and nothing changes in your business until you approve it—you are only practicing how to spot the pattern. If your answer does not match the key, reread step 04 and try again. The difference is usually who delivered the verdict.",
+    "Es seguro: el caso es de otra empresa y nada cambia en tu negocio hasta que lo apruebes; aquí solo entrenas la mirada. Si tu respuesta no coincide con la clave, vuelve a leer el paso 04 e inténtalo de nuevo. La diferencia suele estar en quién emitió el veredicto."
+  ],
+  "O caso.": [
+    "The case.",
+    "El caso."
+  ],
+  "Marcos gerencia o suporte de uma empresa de software com 6 atendentes. Ele notou que os chamados sobre \"não consigo exportar o relatório\" eram os que mais reabriam. Escreveu uma resposta nova, com um vídeo curto, e pediu para todos usarem a partir de segunda. Na sexta, olhou o painel: das 23 respostas novas, 3 reabriram — \"antes era muito mais\". Marcou a resposta nova como padrão e apagou a antiga.": [
+    "Marcos manages support at a software company with 6 agents. He noticed that tickets about “I can’t export the report” were reopened most often. He wrote a new reply with a short video and asked everyone to use it starting Monday. On Friday, he checked the dashboard: 3 of the 23 new replies had been reopened—“it used to be much more.” He made the new reply the standard and deleted the old one.",
+    "Marcos dirige el soporte de una empresa de software con 6 agentes. Observó que los tickets sobre «no puedo exportar el informe» eran los que más se reabrían. Redactó una respuesta nueva con un video corto y pidió a todos que la usaran desde el lunes. El viernes miró el panel: se reabrieron 3 de las 23 respuestas nuevas; «antes eran muchas más». Estableció la respuesta nueva como estándar y borró la anterior."
+  ],
+  "Escrevi: qual das três funções (propor, testar, julgar) Marcos exerceu — e em que frase do caso cada uma aparece.": [
+    "I wrote down which of the three roles (propose, test, judge) Marcos performed—and which sentence in the case shows each one.",
+    "Anoté cuál de las tres funciones (proponer, probar, juzgar) desempeñó Marcos y qué frase del caso muestra cada una."
+  ],
+  "Escrevi: o que o Experimentador teria exigido antes de segunda-feira (pelo menos duas coisas).": [
+    "I wrote down what the Experimenter would have required before Monday (at least two things).",
+    "Anoté qué habría exigido el Experimentador antes del lunes (al menos dos cosas)."
+  ],
+  "Escrevi: qual das três respostas o Avaliador daria na sexta, e por quê — e depois comparei com o gabarito abaixo.": [
+    "I wrote down which of the three answers the Evaluator would give on Friday and why, then compared it with the answer key below.",
+    "Anoté cuál de las tres respuestas daría el Evaluador el viernes y por qué; después la comparé con la clave de abajo."
+  ],
+  "Gabarito comentado": [
+    "Annotated answer key",
+    "Clave comentada"
+  ],
+  "As três. Propôs: \"escreveu uma resposta nova\". Testou do jeito dele: \"pediu para todos usarem a partir de segunda\", sem versão A rodando ao lado. Julgou: \"antes era muito mais\", sem contar o antes. O sinal mais claro é \"apagou a antiga\": não existe mais A para comparar nem para voltar atrás.": [
+    "All three. He proposed: “wrote a new reply.” He tested it his own way: “asked everyone to use it starting Monday,” with no version A running alongside. He judged: “it used to be much more,” without counting the baseline. The clearest sign is “deleted the old one”: there is no A left to compare or roll back to.",
+    "Las tres. Propuso: «redactó una respuesta nueva». Probó a su manera: «pidió a todos que la usaran desde el lunes», sin mantener la versión A en paralelo. Juzgó: «antes eran muchas más», sin contar el valor anterior. La señal más clara es «borró la anterior»: ya no existe una versión A para comparar ni para volver atrás."
+  ],
+  "Uma hipótese com uma mudança só — a resposta nova tem texto novo": [
+    "One hypothesis with one change—the new reply has new wording",
+    "Una hipótesis con un solo cambio: la nueva respuesta tiene un texto distinto"
+  ],
+  "vídeo, são duas. A quantidade que prova, calculada antes: no ritmo dele, provavelmente semanas, não dias. Metade dos chamados seguindo com a resposta antiga, alternando por ordem de chegada. E a regra de parada só por guarda-corpo.": [
+    "and a video, so there are two changes. Calculate the required sample size in advance: at his pace, it would probably take weeks, not days. Half the tickets should keep using the old reply, alternating by arrival order. And the test can stop only if a guardrail is breached.",
+    "y un video: son dos cambios. La cantidad necesaria debe calcularse de antemano; a su ritmo, probablemente tomaría semanas, no días. La mitad de los tickets debe seguir usando la respuesta anterior, alternando según el orden de llegada. Y solo se puede detener la prueba si se rompe un límite de seguridad."
+  ],
+  "\"Quantidade insuficiente\". 23 respostas numa semana não chegam ao mínimo de nenhum teste razoável — e não há contagem de A no mesmo período. 3 em 23 pode ser sorte, dia calmo, ou efeito real: ninguém sabe. O que Marcos fez foi transformar um palpite em regra e apagar a prova.": [
+    "“Insufficient sample.” Twenty-three replies in one week do not meet the minimum for any reasonable test—and there is no count for A during the same period. Three out of 23 could be luck, a quiet day, or a real effect: no one knows. Marcos turned a guess into a rule and erased the evidence.",
+    "«Cantidad insuficiente». Veintitrés respuestas en una semana no alcanzan el mínimo de ninguna prueba razonable y no hay un recuento de A durante el mismo período. Tres de 23 puede ser suerte, un día tranquilo o un efecto real: nadie lo sabe. Marcos convirtió una conjetura en regla y borró la evidencia."
+  ],
+  "Você acabou de separar, num caso real, a ideia do teste e do veredito — e apontou o momento exato em que a evidência foi apagada.": [
+    "You have just separated the idea, test, and verdict in a real case—and identified the exact moment the evidence was erased.",
+    "Acabas de separar la idea, la prueba y el veredicto en un caso real, y señalaste el momento exacto en que se borró la evidencia."
+  ],
+  "O Otimizador transforma diagnóstico em hipóteses de uma mudança só, com a forma SE–ENTÃO–PORQUE, e nunca reapresenta o que já foi descartado.": [
+    "The Optimizer turns diagnoses into single-change hypotheses in the IF–THEN–BECAUSE format, and never brings back an idea that was discarded.",
+    "El Optimizador convierte los diagnósticos en hipótesis de un solo cambio con la estructura SI–ENTONCES–PORQUE, y nunca vuelve a presentar algo que ya se descartó."
+  ],
+  "O Experimentador calcula a quantidade que prova antes de enviar qualquer coisa. Divide por ordem de chegada e só para cedo se um guarda-corpo cair.": [
+    "The Experimenter calculates the required sample size before anything is sent. It splits by arrival order and stops early only if a guardrail is breached.",
+    "El Experimentador calcula la cantidad necesaria antes de enviar nada. Divide según el orden de llegada y solo se detiene antes si se rompe un límite de seguridad."
+  ],
+  "O Avaliador responde uma de três frases — e \"quantidade insuficiente\" é a mais frequente num loop honesto.": [
+    "The Evaluator gives one of three answers—and “insufficient sample” is the most common in an honest loop.",
+    "El Evaluador responde con una de tres frases, y «cantidad insuficiente» es la más frecuente en un ciclo honesto."
+  ],
+  "Quem se convence sozinho não é desonesto: só estava com a ideia, o teste e o veredito na mesma mão. O loop tira duas delas.": [
+    "Someone who convinces themselves is not dishonest; they simply held the idea, test, and verdict in the same hands. The loop takes two of those roles away.",
+    "Quien se convence por su cuenta no es deshonesto: tenía la idea, la prueba y el veredicto en una misma mano. El ciclo separa dos de esas funciones."
+  ],
+  "Você acabou de reconhecer, num caso concreto, o momento em que um palpite virou regra sem juiz.": [
+    "You have just identified, in a concrete case, the moment a guess became a rule without a judge.",
+    "Acabas de reconocer, en un caso concreto, el momento en que una conjetura se convirtió en regla sin juez."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: lembre da última mudança de roteiro, texto ou processo que virou regra na sua empresa. Escreva em uma linha quem teve a ideia, quem testou e quem decidiu. Se for o mesmo nome três vezes, você já sabe o que faltou.": [
+    "Over the next 15 minutes, in your actual work, recall the last change to a script, message, or process that became a company rule. Write down who had the idea, who tested it, and who decided. If the same name appears three times, you already know what was missing.",
+    "Durante los próximos 15 minutos, en tu trabajo real, recuerda el último cambio de guion, texto o proceso que se convirtió en regla en tu empresa. Anota quién tuvo la idea, quién la probó y quién decidió. Si aparece el mismo nombre tres veces, ya sabes qué faltó."
+  ],
+  "Na próxima aula, você conhece o Guardião: o assistente que impede a mudança certa de sair pelo caminho errado. E escreve a resposta 3 da sua ficha do loop — o que nunca muda sem você.": [
+    "In the next lesson, you will meet the Guardian: the assistant that keeps the right change from taking the wrong path. You will also write answer 3 on your loop worksheet—what never changes without you.",
+    "En la próxima clase conocerás al Guardián, el asistente que evita que un cambio correcto siga el camino equivocado. También escribirás la respuesta 3 de tu ficha del ciclo: lo que nunca cambia sin ti."
+  ],
+  "1 mudança no roteiro": [
+    "1 change to the script",
+    "1 cambio en el guion"
+  ],
+  "forte / moderada": [
+    "strong / moderate",
+    "sólida / moderada"
+  ],
+  "descartados": [
+    "discarded",
+    "descartadas"
+  ],
+  "até 3 por ciclo · uma mudança cada": [
+    "up to 3 per cycle · one change each",
+    "hasta 3 por ciclo · un cambio cada una"
+  ],
+  "A · versão atual": [
+    "A · current version",
+    "A · versión actual"
+  ],
+  "B · uma mudança": [
+    "B · one change",
+    "B · un cambio"
+  ],
+  "166 por lado": [
+    "166 per side",
+    "166 por grupo"
+  ],
+  "ainda não sei": [
+    "I still do not know",
+    "todavía no lo sé"
+  ],
+  "parar antes: só se um guarda-corpo cair": [
+    "stop early only if a guardrail is breached",
+    "detener antes solo si se rompe un límite de seguridad"
+  ],
+  "números de A e B": [
+    "A and B numbers",
+    "cifras de A y B"
+  ],
+  "chegou à quantidade?": [
+    "has it reached the sample size?",
+    "¿alcanzó la cantidad?"
+  ],
+  "piorou algo?": [
+    "did anything get worse?",
+    "¿empeoró algo?"
+  ],
+  "INSUFICIENTE": [
+    "INSUFFICIENT",
+    "INSUFICIENTE"
+  ],
+  "não → B GANHOU": [
+    "no → B WON",
+    "no → B GANÓ"
+  ],
+  "não existe 4ª saída": [
+    "there is no 4th outcome",
+    "no hay una cuarta salida"
+  ],
+  "Otimizador · ideia": [
+    "Optimizer · idea",
+    "Optimizador · idea"
+  ],
+  "Experimentador · teste": [
+    "Experimenter · test",
+    "Experimentador · prueba"
+  ],
+  "Avaliador · veredito": [
+    "Evaluator · verdict",
+    "Evaluador · veredicto"
+  ],
+  "O assistente que lê a crítica e escreve até 3 hipóteses testáveis, cada uma com uma única mudança concreta. Não decide nada.": [
+    "The assistant that reads the critique and writes up to 3 testable hypotheses, each with one specific change. It does not make decisions.",
+    "El asistente que lee la crítica y escribe hasta 3 hipótesis comprobables, cada una con un solo cambio concreto. No toma decisiones."
+  ],
+  "O assistente que desenha o teste A contra B: quantas execuções cada lado precisa, quanto tempo leva, como dividir, quando parar.": [
+    "The assistant that designs the A-versus-B test: required runs per side, duration, allocation, and stopping rule.",
+    "El asistente que diseña la prueba A frente a B: cuántas ejecuciones necesita cada grupo, cuánto dura, cómo repartirlas y cuándo detenerse."
+  ],
+  "Quantas execuções cada versão precisa acumular para que a diferença entre A e B não possa ser sorte. Depende do tamanho do salto esperado.": [
+    "How many runs each version must accumulate so the difference between A and B is unlikely to be chance. It depends on the expected lift.",
+    "Cuántas ejecuciones debe acumular cada versión para que la diferencia entre A y B no sea fruto del azar. Depende del aumento esperado."
+  ],
+  "O assistente que compara A e B pela métrica e responde exatamente uma de três: B ganhou, A segue, ou quantidade insuficiente. Nunca 'parece melhor'.": [
+    "The assistant that compares A and B on the metric and gives exactly one of three answers: B won, A stays, or insufficient sample. Never “looks better.”",
+    "El asistente que compara A y B según la métrica y responde exactamente una de tres cosas: B ganó, A sigue o la cantidad es insuficiente. Nunca «parece mejor»."
+  ],
+  "Parar e promover porque 'está ganhando' é a forma mais comum de transformar sorte em regra — o mínimo existe para isso.": [
+    "Stopping and promoting because it is “winning” is the most common way to turn luck into a rule—that is why a minimum exists.",
+    "Detener y promover porque «va ganando» es la forma más común de convertir la suerte en regla: por eso existe un mínimo."
+  ],
+  "Certo. Abaixo do mínimo, o Avaliador não tem opinião: responde 'quantidade insuficiente' com a contagem acumulada e o teste continua.": [
+    "Correct. Below the minimum, the Evaluator has no verdict: it answers “insufficient sample,” reports the accumulated count, and the test continues.",
+    "Correcto. Por debajo del mínimo, el Evaluador no emite un veredicto: responde «cantidad insuficiente», indica el recuento acumulado y la prueba continúa."
+  ],
+  "Não há evidência de que A é melhor — só não há quantidade para afirmar nada. 'A segue' é resposta para quando o mínimo foi atingido e B não superou.": [
+    "There is no evidence that A is better; there simply is not enough data to claim anything. “A stays” is the answer when the minimum has been reached and B did not win.",
+    "No hay evidencia de que A sea mejor: simplemente no hay datos suficientes para afirmar nada. «A sigue» se responde cuando se alcanzó el mínimo y B no superó a A."
+  ],
+  "<b>Fig. 1</b> — Uma hipótese tem três linhas fixas e uma única mudança. A gaveta 'descartados' é consultada antes de escrever; o que está lá não volta.": [
+    "<b>Fig. 1</b> — A hypothesis has three fixed lines and one change. The “discarded” drawer is checked before writing; what is there does not return.",
+    "<b>Fig. 1</b> — Una hipótesis tiene tres líneas fijas y un solo cambio. Antes de escribir, se consulta el cajón «descartadas»; lo que está allí no vuelve."
+  ],
+  "<b>Fig. 2</b> — O teste tem dois lados alimentados por ordem de chegada. A régua embaixo mostra a quantidade mínima; nenhum veredito antes da marca, e a parada só se um guarda-corpo cair.": [
+    "<b>Fig. 2</b> — The test has two sides fed in arrival order. The scale below shows the minimum sample size; no verdict before that mark, and early stopping only if a guardrail is breached.",
+    "<b>Fig. 2</b> — La prueba tiene dos grupos asignados por orden de llegada. La escala inferior muestra la cantidad mínima; no hay veredicto antes de alcanzarla y solo se detiene antes si se rompe un límite de seguridad."
+  ],
+  "<b>Fig. 3</b> — O Avaliador é um funil com três saídas e nenhuma quarta. Repare que 'sem piorar' é checado antes de 'B ganhou': subir a métrica-alvo não basta.": [
+    "<b>Fig. 3</b> — The Evaluator is a funnel with three exits and no fourth. Notice that guardrails are checked before “B won”: raising the target metric is not enough.",
+    "<b>Fig. 3</b> — El Evaluador es un embudo con tres salidas y ninguna cuarta. Observa que los indicadores de seguridad se comprueban antes de «B ganó»: no basta con subir la métrica objetivo."
+  ],
+  "<b>Fig. 4</b> — À esquerda, as três funções na mesma mão: a seta fecha um círculo sobre si mesma. À direita, três mãos: a única forma de a seta do veredito não voltar para quem teve a ideia.": [
+    "<b>Fig. 4</b> — On the left, all three roles are in one hand: the arrow closes a loop. On the right, three hands—the only way to keep the verdict from returning to the person with the idea.",
+    "<b>Fig. 4</b> — A la izquierda, las tres funciones están en una sola mano: la flecha forma un círculo. A la derecha, tres manos: la única forma de que el veredicto no vuelva a quien tuvo la idea."
+  ],
+  "não →": [
+    "no →",
+    "no →"
+  ],
+  "Diagnóstico: o Otimizador do corretor escreveu \"SE responder em 15 min, com mais fotos e com o preço, ENTÃO…\". O que está errado?": [
+    "Diagnosis: the real estate agent’s Optimizer wrote, “IF we reply in 15 minutes, with more photos and the price, THEN…” What is wrong?",
+    "Diagnóstico: el Optimizador del agente inmobiliario escribió: «SI responde en 15 min, con más fotos y con el precio, ENTONCES…». ¿Qué está mal?"
+  ],
+  "Três mudanças numa hipótese só. Se B ganhar, ninguém sabe qual das três funcionou; se perder, ninguém sabe qual atrapalhou. Uma mudança por hipótese.": [
+    "Three changes in one hypothesis. If B wins, no one knows which change worked; if it loses, no one knows which hurt. One change per hypothesis.",
+    "Tres cambios en una sola hipótesis. Si gana B, nadie sabe cuál funcionó; si pierde, nadie sabe cuál perjudicó. Una modificación por hipótesis."
+  ],
+  "Decisão: a conta do Experimentador deu 40 semanas para provar o salto que o Otimizador prometeu. O que ele faz?": [
+    "Decision: the Experimenter’s calculation says it will take 40 weeks to prove the increase the Optimizer promised. What should it do?",
+    "Decisión: el cálculo del Experimentador indica que hacen falta 40 semanas para demostrar el aumento prometido por el Optimizador. ¿Qué hace?"
+  ],
+  "Não encolhe o número sozinho. Escala para quem aprova, com opções — no exemplo da clínica, a saída foi medir pelo salto que vale a pena (17% para 30%), que cabia em 7 semanas.": [
+    "It does not lower the sample size on its own. It escalates to the approver with options—in the clinic example, they measured a worthwhile increase (17% to 30%), which fit in 7 weeks.",
+    "No reduce la cantidad por su cuenta. Lo consulta con quien aprueba y presenta opciones; en el ejemplo de la clínica, midieron un aumento que valía la pena (del 17 % al 30 %), que cabía en 7 semanas."
+  ],
+  "Aplicação: B subiu a métrica de resposta de 19,3% para 29,7% com 300 de cada lado, mas as reclamações foram 6 contra 1 e a ficha dizia tolerância zero. Qual a resposta do Avaliador?": [
+    "Application: B raised the reply metric from 19.3% to 29.7% with 300 per side, but complaints were 6 versus 1 and the worksheet set zero tolerance. What does the Evaluator answer?",
+    "Aplicación: B subió la tasa de respuesta del 19,3 % al 29,7 % con 300 por grupo, pero hubo 6 quejas frente a 1 y la ficha fijaba tolerancia cero. ¿Qué responde el Evaluador?"
+  ],
+  "\"A segue\". Subir o alvo não basta se algum \"sem piorar\" cai além da tolerância. A regra estava mal calibrada — mas o Avaliador aplica a regra escrita; ajustar a regra é trabalho humano, para os próximos testes.": [
+    "“A stays.” Raising the target is not enough if any guardrail falls beyond tolerance. The rule was poorly calibrated—but the Evaluator applies the written rule; adjusting it is a human task for future tests.",
+    "«A sigue». No basta con subir el objetivo si algún indicador empeora más allá de la tolerancia. La regla estaba mal calibrada, pero el Evaluador aplica la regla escrita; ajustarla para las próximas pruebas es tarea humana."
+  ],
+  "Contraste: qual a diferença entre \"quantidade insuficiente\" e \"A segue\"?": [
+    "Contrast: what is the difference between “insufficient sample” and “A stays”?",
+    "Contraste: ¿qué diferencia hay entre «muestra insuficiente» y «A sigue»?"
+  ],
+  "\"Quantidade insuficiente\" = ainda não dá para afirmar nada, o teste continua. \"A segue\" = a quantidade mínima foi atingida e B não superou A com margem (ou piorou algo). Uma é adiamento; a outra é veredito.": [
+    "“Insufficient sample” means there is not enough evidence to conclude, so the test continues. “A stays” means the minimum sample was reached and B did not beat A by a margin (or worsened something). One postpones the decision; the other is a verdict.",
+    "«Muestra insuficiente» significa que aún no se puede concluir nada y la prueba continúa. «A sigue» significa que se alcanzó la muestra mínima y B no superó a A con margen (o empeoró algo). Una aplaza la decisión; la otra es un veredicto."
+  ],
+  "Pergunta: por que a parada antecipada de um teste só pode acontecer por guarda-corpo, nunca por vantagem parcial?": [
+    "Question: why can a test stop early only because of a guardrail, never because of a partial lead?",
+    "Pregunta: ¿por qué una prueba solo puede detenerse antes por un indicador de seguridad y nunca por una ventaja parcial?"
+  ],
+  "Porque parar quando \"está ganhando\" seleciona o momento de sorte e o transforma em regra. Um guarda-corpo caindo é dano real acontecendo — aí parar protege, não engana.": [
+    "Because stopping when it is “winning” selects a lucky moment and turns it into a rule. A falling guardrail signals real harm—stopping then protects instead of misleading.",
+    "Porque detenerse cuando «va ganando» selecciona un momento de suerte y lo convierte en regla. Si empeora un indicador, hay un daño real; detenerse entonces protege, no engaña."
+  ]
+}

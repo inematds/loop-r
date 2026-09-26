@@ -1,0 +1,510 @@
+{
+  "Trilha 05 · Aula 2 · fundamento": [
+    "Track 05 · Lesson 2 · foundation",
+    "Ruta 05 · Lección 2 · fundamento"
+  ],
+  "Um loop de atendimento:": [
+    "A customer support loop:",
+    "Un loop de atención al cliente:"
+  ],
+  "dos 10.000 chamados ao produto melhor": [
+    "from 10,000 tickets to a better product",
+    "de 10.000 tickets a un mejor producto"
+  ],
+  "Ao fim desta aula você consegue dizer o que um loop de atendimento maximiza e o que vigia, e rodar o Observador sobre 20 chamados no seu chat de IA — vendo, com número, o motivo que vale uma hipótese.": [
+    "By the end of this lesson, you can say what a support loop optimizes and monitors, and run the Observer on 20 tickets in your AI chat—to see, with numbers, which issue deserves a hypothesis.",
+    "Al terminar esta lección podrás explicar qué optimiza y qué vigila un loop de atención, y ejecutar el Observador sobre 20 tickets en tu chat de IA para ver, con cifras, qué motivo merece una hipótesis."
+  ],
+  "O suporte é o lugar onde a empresa mais ouve o cliente e menos aprende com ele. Cada chamado é fechado e esquecido. Com 200 ou 10.000 por mês, a evidência já existe — só não está sendo lida.": [
+    "Support is where a company hears the most from customers and learns the least from them. Every ticket is closed and forgotten. Whether there are 200 or 10,000 a month, the evidence is already there—it just isn’t being read.",
+    "Soporte es el área donde la empresa más escucha al cliente y menos aprende de él. Cada ticket se cierra y se olvida. Sean 200 o 10.000 al mes, la evidencia ya existe; solo falta leerla."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "o mesmo motivo": [
+    "the same issue",
+    "el mismo motivo"
+  ],
+  "chamados fechados, por motivo": [
+    "closed tickets, by issue",
+    "tickets cerrados, por motivo"
+  ],
+  "01": [
+    "01",
+    "01"
+  ],
+  "Dez mil chamados são dez mil evidências": [
+    "Ten thousand tickets are ten thousand pieces of evidence",
+    "Diez mil tickets son diez mil evidencias"
+  ],
+  "Marcos é gestor de suporte de um software de gestão para lojas pequenas. Oito pessoas, cerca de 800 chamados por mês. Cada chamado fechado deixa um rastro: motivo, tempo até resolver, se resolveu no primeiro contato, se voltou em sete dias, a nota que o cliente deu. Isso é uma planilha de registro pronta — a evidência do loop já nasce sem ninguém precisar digitar.": [
+    "Marcos manages support for software used by small shops. Eight people handle about 800 tickets a month. Each closed ticket leaves a trace: issue, time to resolution, whether it was solved at first contact, whether it returned within seven days, and the customer’s rating. That is a ready-made tracking spreadsheet—the loop’s evidence exists without anyone having to enter it.",
+    "Marcos dirige el equipo de soporte de un software de gestión para pequeñas tiendas. Son ocho personas y unos 800 tickets al mes. Cada ticket cerrado deja un rastro: motivo, tiempo hasta resolverlo, si se resolvió en el primer contacto, si volvió en siete días y la calificación del cliente. Es una hoja de registro lista: la evidencia del loop ya existe sin que nadie tenga que escribirla."
+  ],
+  "O que ninguém faz é ler. O Observador faz só isso: conta e agrupa, sem interpretar. Quando Marcos rodou pela primeira vez sobre um mês de chamados, o resultado foi um número que ele \"sabia\", mas nunca tinha visto escrito: 37% dos chamados eram sobre o mesmo motivo, exportar um relatório. Trezentos chamados, cada um respondido do zero, por pessoas diferentes, com respostas diferentes.": [
+    "What no one does is read it. That is all the Observer does: count and group, without interpreting. When Marcos first ran it on a month of tickets, the result was a number he “knew” but had never seen written down: 37% of tickets were about the same issue—exporting a report. Three hundred tickets, each answered from scratch by different people with different responses.",
+    "Lo que nadie hace es leerla. El Observador solo hace eso: cuenta y agrupa, sin interpretar. Cuando Marcos lo ejecutó por primera vez sobre un mes de tickets, el resultado fue una cifra que «sabía», pero nunca había visto por escrito: el 37% trataba del mismo motivo, exportar un informe. Trescientos tickets, cada uno respondido desde cero por personas distintas y con respuestas distintas."
+  ],
+  "A dona da clínica de estética tem a mesma pilha, só que menor: as quarenta mensagens por mês perguntando \"qual o valor?\" antes de qualquer proposta. Mesmo fenômeno. Ela também nunca contou.": [
+    "The beauty clinic owner has the same pile, only smaller: forty messages a month asking “how much does it cost?” before any proposal. Same phenomenon. She has never counted them either.",
+    "La dueña de la clínica de estética tiene la misma pila, pero más pequeña: cuarenta mensajes al mes preguntando «¿cuánto cuesta?» antes de cualquier propuesta. El mismo fenómeno. Ella tampoco los había contado."
+  ],
+  "Dez mil chamados fechados não são dez mil interrupções. São dez mil linhas que ninguém leu.": [
+    "Ten thousand closed tickets are not ten thousand interruptions. They are ten thousand unread rows.",
+    "Diez mil tickets cerrados no son diez mil interrupciones. Son diez mil filas que nadie ha leído."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "02": [
+    "02",
+    "02"
+  ],
+  "O alvo do atendimento é resolver, não encerrar": [
+    "Support’s goal is to resolve, not to close",
+    "El objetivo de atención es resolver, no cerrar"
+  ],
+  "Um loop de atendimento tem o mesmo formato do de vendas — maximizar uma coisa sem piorar outras — mas com peças diferentes. Maximizar: resolução no primeiro contato, por exemplo de 55% para 65%. Sem piorar: satisfação do cliente, reabertura em sete dias, tempo que o cliente gasta. Marcos precisou de dois minutos para escrever isso. Precisou de mais tempo para entender por que a versão anterior do objetivo dele era perigosa.": [
+    "A support loop has the same shape as a sales loop—maximize one thing without worsening others—but different components. Optimize: first-contact resolution, for example from 55% to 65%. Without worsening: customer satisfaction, seven-day reopen rate, and time spent by the customer. Marcos needed two minutes to write this down and longer to understand why his previous objective was dangerous.",
+    "Un loop de atención tiene la misma estructura que uno de ventas —maximizar algo sin empeorar otras cosas—, pero distintas piezas. Maximizar: resolución en el primer contacto, por ejemplo, del 55% al 65%. Sin empeorar: satisfacción del cliente, reaperturas en siete días y tiempo que dedica el cliente. Marcos tardó dos minutos en escribirlo y más en entender por qué su objetivo anterior era peligroso."
+  ],
+  "A versão anterior era \"reduzir o tempo médio de atendimento de 12 para 8 minutos\". Um loop que otimiza isso aprende a encerrar o chamado rápido, não a resolver. O cliente volta, abre outro, e o tempo médio continua bonito. É a mesma armadilha do \"maximizar cliques\" que vira isca: toda métrica sozinha vira alvo e deixa de medir o que importava. Por isso a forma do objetivo é obrigatória, não opcional — \"sem piorar\" é o que impede o loop de trapacear.": [
+    "The previous version was “reduce average support time from 12 to 8 minutes.” A loop optimizing that learns to close tickets quickly, not resolve them. The customer comes back and opens another ticket, while the average time still looks good. It is the same trap as “maximize clicks,” which turns into clickbait: any metric on its own becomes a target and stops measuring what mattered. That is why the objective’s structure is mandatory, not optional—“without worsening” is what keeps the loop from gaming the metric.",
+    "La versión anterior decía «reducir el tiempo promedio de atención de 12 a 8 minutos». Un loop que optimiza eso aprende a cerrar tickets rápido, no a resolverlos. El cliente vuelve, abre otro ticket y el tiempo promedio sigue pareciendo bueno. Es la misma trampa de «maximizar clics», que termina en cebo: cualquier métrica aislada se convierte en objetivo y deja de medir lo que importaba. Por eso la estructura del objetivo es obligatoria: «sin empeorar» impide que el loop haga trampa."
+  ],
+  "Há uma boa notícia no atendimento: as taxas ficam entre 50% e 70%, e a quantidade que prova é pequena. Provar 50% contra 65% pede cerca de 170 chamados por versão; com 200 por semana, duas semanas. Compare com a conversão da clínica, perto de 3%: 1.500 por versão. O corretor de imóveis está no meio: \"lead respondeu em 24 horas\", perto de 25%, pede umas 300 por lado. Atendimento é o terreno onde o loop gira mais rápido.": [
+    "There is good news in support: rates range from 50% to 70%, so the sample needed for proof is small. Proving 50% versus 65% takes about 170 tickets per version; at 200 a week, that is two weeks. Compare this with the clinic’s conversion rate, around 3%: 1,500 per version. Real estate is in between: “lead replied within 24 hours,” around 25%, takes about 300 per side. Support is where the loop turns fastest.",
+    "Hay buenas noticias en atención: las tasas están entre el 50% y el 70%, así que hace falta una muestra pequeña para demostrar una diferencia. Comparar 50% frente a 65% requiere unos 170 tickets por versión; con 200 por semana, son dos semanas. Compáralo con la conversión de la clínica, cercana al 3%: 1.500 por versión. El sector inmobiliario queda en medio: «el lead respondió en 24 horas», cerca del 25%, requiere unos 300 por lado. Atención es donde el loop gira más rápido."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Marcos define o objetivo como \"tempo médio de atendimento de 12 para 8 minutos\", sem nenhum \"sem piorar\". O que o loop tende a aprender?": [
+    "Marcos defines the goal as “average support time from 12 to 8 minutes,” with no “without worsening” conditions. What is the loop likely to learn?",
+    "Marcos define el objetivo como «tiempo promedio de atención de 12 a 8 minutos», sin ninguna condición de «sin empeorar». ¿Qué es probable que aprenda el loop?"
+  ],
+  "A responder com mais precisão": [
+    "To answer more accurately",
+    "A responder con más precisión"
+  ],
+  "A encerrar chamados sem resolver": [
+    "To close tickets without resolving them",
+    "A cerrar tickets sin resolverlos"
+  ],
+  "A pedir mais atendentes": [
+    "To ask for more support agents",
+    "A pedir más agentes de soporte"
+  ],
+  "03": [
+    "03",
+    "03"
+  ],
+  "A resposta melhor é só o primeiro degrau": [
+    "A better answer is only the first step",
+    "Una mejor respuesta es solo el primer paso"
+  ],
+  "Com os 37% na mão, o Crítico escreve uma crítica com força forte — trezentos casos é muito acima do mínimo de trinta. O Otimizador propõe uma resposta padrão nova para esse motivo, com passo a passo e uma imagem. O Guardião confere que ela não promete prazo nem toca nas invariáveis. O Experimentador desenha: metade dos chamados desse motivo recebe a resposta antiga, metade a nova, por duas semanas. O Avaliador compara resolução no primeiro contato e vigia satisfação e reabertura. Se B ganhou, a resposta nova vira a oficial do assistente de suporte. Até aqui, é o loop de vendas com outro assunto.": [
+    "With 37% in hand, the Critic writes a strong critique—300 cases is far above the minimum of 30. The Optimizer proposes a new standard answer for this issue, with steps and an image. The Guardian checks that it promises no timeline and touches no invariants. The Experimenter splits these tickets evenly between old and new answers for two weeks. The Evaluator compares first-contact resolution and monitors satisfaction and reopen rate. If B wins, the new answer becomes the support assistant’s official version. So far, it is the sales loop with a different subject.",
+    "Con el 37% en la mano, el Crítico redacta una crítica sólida: 300 casos superan ampliamente el mínimo de 30. El Optimizador propone una nueva respuesta estándar para este motivo, con pasos e imagen. El Guardián comprueba que no prometa plazos ni afecte las invariantes. El Experimentador divide estos tickets por igual entre la respuesta anterior y la nueva durante dos semanas. El Evaluador compara la resolución en el primer contacto y vigila la satisfacción y las reaperturas. Si gana B, la nueva respuesta será la versión oficial del asistente de soporte. Hasta aquí, es el loop de ventas con otro tema."
+  ],
+  "O degrau seguinte é o que muda a empresa. A memória registra: \"37% dos chamados são sobre exportar relatório; a causa apontada em 214 deles é o botão escondido no menu\". Isso não é uma hipótese para o suporte — é uma hipótese para o produto. Ela sai do loop de atendimento como um cartão para quem decide o produto, com a quantidade que prova anexada. A documentação muda na mesma semana. O botão, se mudar, mata os 37% na origem. O atendimento parou de só responder clientes: passou a melhorar o produto e o processo.": [
+    "The next step changes the company. Memory records: “37% of tickets concern report export; 214 point to the button hidden in the menu as the cause.” This is not a support hypothesis—it is a product hypothesis. It leaves the support loop as a card for the product decision-maker, with supporting counts attached. Documentation changes that same week. If the button changes, it eliminates those 37% at the source. Support has moved beyond answering customers to improving the product and process.",
+    "El siguiente paso cambia la empresa. La memoria registra: «El 37% de los tickets trata de exportar informes; en 214 se señala como causa que el botón está escondido en el menú». No es una hipótesis para soporte, sino para el producto. Sale del loop de atención como una tarjeta para quien decide sobre el producto, con las cantidades que la respaldan. La documentación cambia esa misma semana. Si se cambia el botón, se elimina ese 37% desde el origen. Atención deja de limitarse a responder clientes y pasa a mejorar el producto y el proceso."
+  ],
+  "Na clínica, o degrau é menor e igual: se \"tem estacionamento?\" aparece em 60 mensagens por mês, a resposta vai para a primeira linha do perfil do WhatsApp e some da fila. Na imobiliária, \"aceita financiamento?\" repetido 80 vezes vira uma linha no anúncio do portal.": [
+    "At the clinic, the step is smaller but similar: if “is there parking?” appears in 60 messages a month, the answer goes in the first line of the WhatsApp profile and disappears from the queue. At the real estate agency, “does it qualify for financing?” repeated 80 times becomes a line in the portal listing.",
+    "En la clínica, el paso es más pequeño pero similar: si «¿hay estacionamiento?» aparece en 60 mensajes al mes, la respuesta se pone en la primera línea del perfil de WhatsApp y desaparece de la cola. En la inmobiliaria, «¿se puede financiar?» repetida 80 veces se convierte en una línea del anuncio del portal."
+  ],
+  "Antes": [
+    "Before",
+    "Antes"
+  ],
+  "800 chamados por mês, 37% do mesmo motivo, cada um respondido do zero por oito pessoas com oito textos diferentes. Nenhum pedido de mudança no produto com número.": [
+    "800 tickets a month, 37% for the same issue, each answered from scratch by eight people using eight different texts. No quantified product change request.",
+    "800 tickets al mes, el 37% por el mismo motivo, cada uno respondido desde cero por ocho personas con ocho textos distintos. Ninguna solicitud de cambio del producto respaldada por cifras."
+  ],
+  "Depois": [
+    "After",
+    "Después"
+  ],
+  "Uma resposta oficial testada A contra B para o motivo mais comum, a documentação atualizada, e um cartão para o produto com 296 chamados anexados como evidência.": [
+    "An official answer tested A versus B for the most common issue, updated documentation, and a product card with 296 tickets attached as evidence.",
+    "Una respuesta oficial probada A frente a B para el motivo más común, documentación actualizada y una tarjeta para producto con 296 tickets adjuntos como evidencia."
+  ],
+  "Saldo:": [
+    "Result:",
+    "Resultado:"
+  ],
+  "296 chamados avulsos viram 1 hipótese com quantidade que prova": [
+    "296 individual tickets become 1 hypothesis with a supporting sample",
+    "296 tickets aislados se convierten en 1 hipótesis con una muestra que la respalda"
+  ],
+  ". O ganho em resolução só existe depois do teste — o loop não promete o número, promete que ele não cai por decisão do sistema.": [
+    ". The improvement in resolution exists only after the test—the loop does not promise the number, but it ensures it will not fall because of a system decision.",
+    ". La mejora en resolución solo existe después de la prueba: el loop no promete una cifra, pero sí que no caerá por una decisión del sistema."
+  ],
+  "04": [
+    "04",
+    "04"
+  ],
+  "Dois loops, uma memória: onde começa o meta-loop": [
+    "Two loops, one memory: where the meta-loop begins",
+    "Dos loops, una memoria: dónde empieza el meta-loop"
+  ],
+  "A empresa de Marcos também tem um loop de vendas. Os dois escrevem na mesma memória. Quando o suporte registra que 37% dos clientes novos travam ao exportar relatório, o loop de vendas ganha um guarda-corpo: nunca prometer \"relatórios em um clique\" na proposta. Quando vendas descobre que clientes de loja física respondem melhor a um tipo de mensagem, o suporte ganha um segmento para observar. Nenhum dos dois loops descobriu isso sozinho — a memória compartilhada fez a ponte.": [
+    "Marcos’s company also has a sales loop. Both write to the same memory. When support records that 37% of new customers get stuck exporting reports, the sales loop gains a guardrail: never promise “one-click reports” in a proposal. When sales learns that brick-and-mortar customers respond better to a certain kind of message, support gets a segment to monitor. Neither loop discovered this alone—the shared memory connected them.",
+    "La empresa de Marcos también tiene un loop de ventas. Ambos escriben en la misma memoria. Cuando soporte registra que el 37% de los clientes nuevos tiene dificultades para exportar informes, el loop de ventas incorpora un guardarraíl: nunca prometer «informes en un clic» en una propuesta. Cuando ventas descubre que los clientes de tiendas físicas responden mejor a cierto tipo de mensaje, soporte obtiene un segmento para observar. Ninguno lo descubrió por sí solo; la memoria compartida los conectó."
+  ],
+  "Esse é o começo do": [
+    "This is the beginning of the",
+    "Este es el comienzo del"
+  ],
+  "meta-loop": [
+    "meta-loop",
+    "meta-loop"
+  ],
+  ": alguém olha os loops juntos. Aqui vale a honestidade da trilha 4. No produto de hoje, o meta-agente só relata — custo, vetos, cadência, concordância. Propor mudanças na estrutura dos loops é a próxima versão, com aprovação humana; loops que se redesenham sozinhos não existem no produto e não estão prometidos. O que existe hoje já vale: dois loops que não repetem o erro um do outro.": [
+    ": someone looks at the loops together. The honesty standard from Track 4 applies. In today’s product, the meta-agent only reports—cost, vetoes, cadence, and agreement. Proposing structural changes is for a future version and requires human approval; self-redesigning loops are neither in the product nor promised. What exists today is already useful: two loops that do not repeat each other’s mistakes.",
+    ": alguien observa los loops en conjunto. Aquí se aplica la honestidad de la Ruta 4. En el producto actual, el metaagente solo informa sobre costos, vetos, ritmo y concordancia. Proponer cambios estructurales queda para una próxima versión y requiere aprobación humana; los loops que se rediseñan solos no existen ni se han prometido. Lo que ya existe es valioso: dos loops que no repiten los errores del otro."
+  ],
+  "O corretor de imóveis com dois loops — um para responder leads do portal, outro para o pós-visita — tem a mesma ponte: se o pós-visita registra que o cliente reclama de fotos que não batem com o imóvel, o loop de leads ganha uma invariável sobre as fotos. A dona da clínica, com um loop só, começa por ele; o segundo vem quando o primeiro tiver rodado cinco ciclos.": [
+    "A real estate agent with two loops—one for portal leads, another for post-visit follow-up—has the same bridge: if follow-up records a complaint that photos do not match the property, the lead loop gains an invariant about photos. The clinic owner starts with one loop; the second comes after the first has run five cycles.",
+    "Un agente inmobiliario con dos loops —uno para leads del portal y otro para el seguimiento tras la visita— tiene el mismo puente: si el seguimiento registra que el cliente se queja de que las fotos no coinciden con la propiedad, el loop de leads incorpora una invariante sobre las fotos. La dueña de la clínica empieza con uno; el segundo llega cuando el primero complete cinco ciclos."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/3 feito": [
+    "0/3 done",
+    "0/3 completado"
+  ],
+  "Rode o Observador sobre 20 chamados": [
+    "Run the Observer on 20 tickets",
+    "Ejecuta el Observador sobre 20 tickets"
+  ],
+  "Colar o pedido no seu chat de IA, ler a contagem e conferir com o resultado esperado — cerca de 12 min.": [
+    "Paste the prompt into your AI chat, read the count, and compare it with the expected result—about 12 min.",
+    "Pega el pedido en tu chat de IA, lee el recuento y compáralo con el resultado esperado: unos 12 min."
+  ],
+  "Nada muda no seu negócio até você aprovar: os 20 chamados são fictícios e o pedido só conta e agrupa. Se a resposta vier diferente do esperado, cole de novo — é o Observador que precisa obedecer ao pedido, não você.": [
+    "Nothing changes in your business until you approve it: the 20 tickets are fictional, and the prompt only counts and groups them. If the answer differs from what you expect, paste it again—the Observer must follow the prompt, not you.",
+    "Nada cambia en tu negocio hasta que lo apruebes: los 20 tickets son ficticios y el pedido solo los cuenta y agrupa. Si la respuesta difiere de lo esperado, vuelve a pegarlo: quien debe obedecer el pedido es el Observador, no tú."
+  ],
+  "O bloco abaixo é um pedido pronto: a primeira parte diz ao assistente qual é a função dele, a segunda traz os 20 chamados. Você só troca o que estiver entre < > — e aqui não há nada para trocar.": [
+    "The block below is a ready-to-use prompt: the first part tells the assistant its role, and the second contains the 20 tickets. You only replace what is between < >—and there is nothing to replace here.",
+    "El bloque siguiente es un pedido listo: la primera parte indica la función del asistente y la segunda contiene los 20 tickets. Solo sustituyes lo que está entre < >; aquí no hay nada que cambiar."
+  ],
+  "copiar": [
+    "copy",
+    "copiar"
+  ],
+  "Você é o Observador de um loop de atendimento. Sua única função é contar e agrupar. Regras: não interprete causa, não proponha solução, não dê opinião. Se um chamado couber em dois motivos, escolha o principal e diga quantos ficaram em dúvida. Saída: uma tabela com as colunas MOTIVO | QUANTIDADE | % DO TOTAL, do maior para o menor, e uma linha final com o total. Nada além da tabela e do total. Chamados (um por linha, número e texto): 1. Não consigo exportar o relatório de vendas em PDF, o botão não aparece. 2. Esqueci minha senha e o e-mail de recuperação não chega. 3. A nota fiscal não emite, dá erro sem explicação. 4. Cadastrei o mesmo produto duas vezes sem querer, como apago? 5. Onde fica a opção de exportar relatório? Procurei em tudo. 6. O sistema está lento para abrir o caixa hoje. 7. Fui cobrado duas vezes no mês. 8. Quero exportar o relatório mensal e não acho o botão. 9. Minha funcionária não consegue entrar, diz usuário bloqueado. 10. Relatório de estoque: preciso em PDF para o contador e não consigo gerar. 11. Tem como o sistema mandar aviso de estoque baixo? Seria ótimo. 12. Nota fiscal fica \"processando\" há duas horas. 13. Exportar relatório não funciona no celular, só aparece a tela em branco. 14. Não lembro a senha e o telefone cadastrado é antigo. 15. Produto aparece duplicado na lista, com preços diferentes. 16. Lentidão ao salvar uma venda, trava por uns 20 segundos. 17. Preciso do relatório de vendas por período em PDF, onde gero? 18. Nota fiscal rejeitada, o erro fala em código 999. 19. Como faço para exportar o relatório do dia? Não encontro. 20. Criei um usuário novo e ele não recebe a senha.": [
+    "You are the Observer in a customer support loop. Your only job is to count and group. Rules: do not interpret causes, suggest solutions, or give opinions. If a ticket could fit two issues, choose the main one and say how many were uncertain. Output: a table with the columns ISSUE | COUNT | % OF TOTAL, sorted largest to smallest, and a final row with the total. Nothing besides the table and total. Tickets (one per line, number and text): 1. I can’t export the sales report as a PDF; the button doesn’t appear. 2. I forgot my password and the recovery email never arrives. 3. The invoice won’t issue; it shows an unexplained error. 4. I accidentally entered the same product twice. How do I delete it? 5. Where is the report export option? I’ve looked everywhere. 6. The system is slow to open the register today. 7. I was charged twice this month. 8. I want to export the monthly report but can’t find the button. 9. My employee can’t log in; it says the user is locked. 10. Inventory report: I need a PDF for the accountant but can’t generate it. 11. Can the system send a low-stock alert? That would be great. 12. The invoice has been “processing” for two hours. 13. Report export doesn’t work on mobile; I only see a blank screen. 14. I can’t remember the password and the registered phone number is old. 15. The product appears twice in the list, with different prices. 16. It’s slow to save a sale; it freezes for about 20 seconds. 17. I need the sales report by period as a PDF. Where do I generate it? 18. The invoice was rejected; the error mentions code 999. 19. How do I export today’s report? I can’t find it. 20. I created a new user, but they don’t receive the password.",
+    "Eres el Observador de un loop de atención al cliente. Tu única función es contar y agrupar. Reglas: no interpretes causas, no propongas soluciones ni des opiniones. Si un ticket encaja en dos motivos, elige el principal e indica cuántos quedaron en duda. Salida: una tabla con las columnas MOTIVO | CANTIDAD | % DEL TOTAL, ordenada de mayor a menor, y una última fila con el total. Nada más que la tabla y el total. Tickets (uno por línea, número y texto): 1. No puedo exportar el informe de ventas en PDF, no aparece el botón. 2. Olvidé mi contraseña y no llega el correo de recuperación. 3. No se emite la factura; aparece un error sin explicación. 4. Registré el mismo producto dos veces por accidente, ¿cómo lo borro? 5. ¿Dónde está la opción para exportar el informe? Ya busqué por todas partes. 6. Hoy el sistema tarda en abrir la caja. 7. Me cobraron dos veces este mes. 8. Quiero exportar el informe mensual y no encuentro el botón. 9. Mi empleada no puede entrar; dice que el usuario está bloqueado. 10. Informe de inventario: lo necesito en PDF para el contador y no puedo generarlo. 11. ¿El sistema puede avisarme cuando quede poco inventario? Sería genial. 12. La factura lleva dos horas «procesando». 13. La exportación del informe no funciona en el móvil; solo aparece una pantalla en blanco. 14. No recuerdo la contraseña y el teléfono registrado es antiguo. 15. El producto aparece duplicado en la lista, con precios diferentes. 16. El sistema tarda en guardar una venta y se bloquea unos 20 segundos. 17. Necesito el informe de ventas por período en PDF, ¿dónde lo genero? 18. Rechazaron la factura; el error menciona el código 999. 19. ¿Cómo exporto el informe del día? No lo encuentro. 20. Creé un usuario nuevo y no recibe la contraseña."
+  ],
+  "Copie o bloco inteiro, cole no seu chat de IA e envie. Você deve ver uma tabela com três colunas e uma linha de total igual a 20.": [
+    "Copy the entire block, paste it into your AI chat, and send it. You should see a three-column table and a total row of 20.",
+    "Copia el bloque completo, pégalo en tu chat de IA y envíalo. Deberías ver una tabla de tres columnas y una fila de total igual a 20."
+  ],
+  "Confira o maior grupo. Deve ser \"exportar relatório\" com 7 chamados, 35% do total (linhas 1, 5, 8, 10, 13, 17, 19). Os outros grupos esperados: senha e acesso, 4; nota fiscal, 3; produto duplicado, 2; lentidão, 2; cobrança, 1; pedido de recurso, 1. Uma diferença de um chamado num grupo é aceitável; o grupo grande tem que ser esse.": [
+    "Check the largest group. It should be “report export,” with 7 tickets, 35% of the total (rows 1, 5, 8, 10, 13, 17, 19). Other expected groups: password and access, 4; invoices, 3; duplicate product, 2; slowness, 2; billing, 1; feature request, 1. A difference of one ticket in a group is acceptable; this must be the largest group.",
+    "Comprueba el grupo más grande. Debe ser «exportar informe», con 7 tickets, el 35% del total (filas 1, 5, 8, 10, 13, 17 y 19). Otros grupos esperados: contraseña y acceso, 4; facturas, 3; producto duplicado, 2; lentitud, 2; cobro, 1; solicitud de función, 1. Se acepta una diferencia de un ticket en un grupo; este debe ser el más grande."
+  ],
+  "Confira o que ele não fez. Se a resposta trouxe uma sugestão (\"recomendo melhorar o botão…\"), responda: \"Você é o Observador: só conte e agrupe. Refaça sem propor nada.\" A segunda resposta deve vir só com a tabela. Essa diferença é a separação de funções da trilha 3 acontecendo na sua tela.": [
+    "Check what it did not do. If the answer includes a suggestion (“I recommend improving the button…”), reply: “You are the Observer: only count and group. Try again without suggesting anything.” The second answer should contain only the table. This is Track 3’s separation of roles on your screen.",
+    "Comprueba lo que no hizo. Si la respuesta incluye una sugerencia («recomiendo mejorar el botón…»), responde: «Eres el Observador: solo cuenta y agrupa. Vuelve a hacerlo sin proponer nada». La segunda respuesta debe contener solo la tabla. Así se aplica en tu pantalla la separación de funciones de la Ruta 3."
+  ],
+  "Você acabou de rodar o primeiro assistente de um loop de atendimento e viu, com número, o motivo que vale uma hipótese — e viu o assistente ficar no papel dele.": [
+    "You just ran the first assistant in a support loop, saw which issue deserves a hypothesis in numbers, and saw the assistant stay in its role.",
+    "Acabas de ejecutar el primer asistente de un loop de atención, viste con cifras qué motivo merece una hipótesis y comprobaste que el asistente se mantuvo en su función."
+  ],
+  "800 chamados": [
+    "800 tickets",
+    "800 tickets"
+  ],
+  "fechados, não lidos": [
+    "closed, unread",
+    "cerrados, sin leer"
+  ],
+  "Observador: agrupa": [
+    "Observer: groups",
+    "Observador: agrupa"
+  ],
+  "exportar relatório 37%": [
+    "report export 37%",
+    "exportar informe 37%"
+  ],
+  "senha/acesso 17%": [
+    "password/access 17%",
+    "contraseña/acceso 17%"
+  ],
+  "nota fiscal 12%": [
+    "invoices 12%",
+    "facturas 12%"
+  ],
+  "lentidão 9%": [
+    "slowness 9%",
+    "lentitud 9%"
+  ],
+  "outros 25%": [
+    "other 25%",
+    "otros 25%"
+  ],
+  "MAXIMIZAR": [
+    "OPTIMIZE",
+    "MAXIMIZAR"
+  ],
+  "resolução no 1º contato 55→65%": [
+    "first-contact resolution 55→65%",
+    "resolución en primer contacto 55→65%"
+  ],
+  "sem piorar": [
+    "without worsening",
+    "sin empeorar"
+  ],
+  "satisfação": [
+    "satisfaction",
+    "satisfacción"
+  ],
+  "reabertura 7d": [
+    "7-day reopen rate",
+    "reapertura en 7 días"
+  ],
+  "tempo do cliente": [
+    "customer time",
+    "tiempo del cliente"
+  ],
+  "sem a parte de baixo:": [
+    "without the lower part:",
+    "sin la parte inferior:"
+  ],
+  "\"tempo 12 → 8 min\"": [
+    "\"time 12 → 8 min\"",
+    "«tiempo 12 → 8 min»"
+  ],
+  "encerra": [
+    "closes",
+    "cierra"
+  ],
+  "cliente reabre → tempo continua bonito,": [
+    "customer reopens → time still looks good,",
+    "el cliente reabre → el tiempo sigue pareciendo bueno,"
+  ],
+  "problema continua igual": [
+    "problem remains the same",
+    "el problema sigue igual"
+  ],
+  "1 · resposta oficial nova": [
+    "1 · new official answer",
+    "1 · nueva respuesta oficial"
+  ],
+  "testada A × B, vira a do assistente": [
+    "tested A × B, becomes the assistant’s",
+    "probada A × B, se convierte en la del asistente"
+  ],
+  "2 · documentação muda": [
+    "2 · documentation changes",
+    "2 · cambia la documentación"
+  ],
+  "na mesma semana, sem teste": [
+    "that same week, without a test",
+    "esa misma semana, sin prueba"
+  ],
+  "3 · cartão para o produto": [
+    "3 · product card",
+    "3 · tarjeta para producto"
+  ],
+  "\"botão escondido\" + 296 casos": [
+    "\"hidden button\" + 296 cases",
+    "«botón escondido» + 296 casos"
+  ],
+  "37% do mesmo motivo": [
+    "37% same issue",
+    "37% por el mismo motivo"
+  ],
+  "loop de": [
+    "loop of",
+    "loop de"
+  ],
+  "vendas": [
+    "sales",
+    "ventas"
+  ],
+  "suporte": [
+    "support",
+    "soporte"
+  ],
+  "memória": [
+    "memory",
+    "memoria"
+  ],
+  "compartilhada": [
+    "shared",
+    "compartida"
+  ],
+  "ganha guarda-corpo:": [
+    "gets a guardrail:",
+    "incorpora un guardarraíl:"
+  ],
+  "\"não prometer": [
+    "\"never promise",
+    "«no prometer"
+  ],
+  "relatório em 1 clique\"": [
+    "one-click reports\"",
+    "informes en un clic»"
+  ],
+  "ganha segmento:": [
+    "gets a segment:",
+    "incorpora un segmento:"
+  ],
+  "\"loja física": [
+    "\"brick-and-mortar store",
+    "«tienda física"
+  ],
+  "responde melhor\"": [
+    "responds better\"",
+    "responde mejor»"
+  ],
+  "meta-loop: relata": [
+    "meta-loop: reports",
+    "meta-loop: informa"
+  ],
+  "custo · vetos · cadência": [
+    "cost · vetoes · cadence",
+    "costo · vetos · ritmo"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "Chamados fechados já são uma planilha de registro: motivo, tempo, resolvido, reaberto, nota. A evidência do atendimento nasce pronta; falta quem conte.": [
+    "Closed tickets are already a tracking spreadsheet: issue, time, resolved, reopened, rating. Support evidence is ready-made; it just needs to be counted.",
+    "Los tickets cerrados ya son una hoja de registro: motivo, tiempo, resuelto, reabierto, calificación. La evidencia de atención ya está lista; falta quien la cuente."
+  ],
+  "O objetivo do suporte tem a mesma forma do de vendas — maximizar resolução sem piorar satisfação, reabertura e tempo do cliente — e é onde o loop gira mais rápido, porque as taxas são altas.": [
+    "The support objective has the same shape as sales—maximize resolution without worsening satisfaction, reopen rate, or customer time—and the loop turns fastest here because rates are high.",
+    "El objetivo de soporte tiene la misma estructura que el de ventas: maximizar la resolución sin empeorar satisfacción, reaperturas ni tiempo del cliente. Aquí el loop gira más rápido porque las tasas son altas."
+  ],
+  "A resposta melhor é o primeiro degrau; o achado sobe para a documentação e sai do loop como um cartão para o produto, com a quantidade que prova anexada.": [
+    "A better answer is the first step; the finding moves into documentation and leaves the loop as a product card with supporting counts attached.",
+    "Una mejor respuesta es el primer paso; el hallazgo pasa a la documentación y sale del loop como una tarjeta para producto, con las cantidades que lo respaldan."
+  ],
+  "Dois loops na mesma memória param de repetir o erro um do outro; o meta-loop, no produto de hoje, apenas relata.": [
+    "Two loops sharing memory stop repeating each other’s mistakes; in today’s product, the meta-loop only reports.",
+    "Dos loops que comparten memoria dejan de repetir los errores del otro; en el producto actual, el meta-loop solo informa."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de conseguir transformar uma pilha de chamados em um motivo com número — e manter o assistente no papel dele.": [
+    "You have just turned a pile of tickets into a quantified issue—and kept the assistant in its role.",
+    "Acabas de convertir una pila de tickets en un motivo cuantificado y mantener al asistente en su función."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: pegue as últimas 20 perguntas que clientes fizeram (WhatsApp, e-mail, portal) e rode o mesmo pedido do Observador sobre elas. Anote o motivo mais comum e a quantidade.": [
+    "In the next 15 minutes, in your real work: take the last 20 customer questions (WhatsApp, email, portal) and run the same Observer prompt on them. Note the most common issue and its count.",
+    "En los próximos 15 minutos, en tu trabajo real: toma las últimas 20 preguntas de clientes (WhatsApp, correo, portal) y ejecuta el mismo pedido del Observador. Anota el motivo más frecuente y su cantidad."
+  ],
+  "Na próxima aula, a última, você junta as cinco respostas que escreveu ao longo do curso numa ficha só, preenche o primeiro cartão de decisão e leva o canvas de 13 perguntas para qualquer processo da empresa.": [
+    "In the final lesson, you’ll bring together the five answers you wrote during the course on one worksheet, fill out your first decision card, and take the 13-question canvas to any company process.",
+    "En la última lección reunirás en una ficha las cinco respuestas que escribiste durante el curso, completarás tu primera tarjeta de decisión y llevarás el canvas de 13 preguntas a cualquier proceso de la empresa."
+  ],
+  "← aula 1": [
+    "← lesson 1",
+    "← lección 1"
+  ],
+  "aula 3 →": [
+    "lesson 3 →",
+    "lección 3 →"
+  ],
+  "Trilha 5 · Aula 2 · INEMA.CLUB PRO": [
+    "Track 5 · Lesson 2 · INEMA.CLUB PRO",
+    "Ruta 5 · Lección 2 · INEMA.CLUB PRO"
+  ],
+  "Não há nada no objetivo que recompense resolver. O loop otimiza o que é medido.": [
+    "There is nothing in the goal that rewards resolution. The loop optimizes what is measured.",
+    "El objetivo no recompensa resolver. El loop optimiza lo que se mide."
+  ],
+  "Certo. Encerrar rápido baixa o tempo médio sem resolver nada. O cliente reabre — e a reabertura não está sendo vigiada. Por isso o objetivo precisa de 'sem piorar reabertura e satisfação'.": [
+    "Correct. Closing quickly lowers the average time without resolving anything. The customer reopens the ticket—and reopen rate is not monitored. That is why the objective needs “without worsening reopen rate and satisfaction.”",
+    "Correcto. Cerrar rápido reduce el tiempo promedio sin resolver nada. El cliente reabre el ticket, y las reaperturas no se vigilan. Por eso el objetivo debe incluir «sin empeorar las reaperturas ni la satisfacción»."
+  ],
+  "O loop não contrata; ele muda o roteiro de resposta. E mudar o roteiro para ser mais curto é exatamente o atalho perigoso.": [
+    "The loop does not hire people; it changes the response script. Making the script shorter is exactly the dangerous shortcut.",
+    "El loop no contrata personal; cambia el guion de respuesta. Acortarlo es justamente el atajo peligroso."
+  ],
+  "Um olhar sobre vários loops ao mesmo tempo: o que um aprendeu que serve ao outro, qual custa demais, qual não promove nada há meses. No produto de hoje, é relatório — não ação.": [
+    "A view across several loops at once: what one learned that helps another, which costs too much, and which has promoted nothing for months. In today’s product, it is a report, not an action.",
+    "Una mirada a varios loops a la vez: qué aprendió uno que sirve al otro, cuál cuesta demasiado y cuál lleva meses sin promover nada. En el producto actual, es un informe, no una acción."
+  ],
+  "<b>Fig. 1</b> À esquerda, a pilha de chamados como chega: fechados, sem leitura. À direita, o que o Observador devolve: os mesmos chamados agrupados por motivo, com quantidade. A barra alta é o primeiro candidato a hipótese.": [
+    "<b>Fig. 1</b> On the left, the incoming pile of tickets: closed, unread. On the right, the Observer’s output: the same tickets grouped by issue, with counts. The tallest bar is the first hypothesis candidate.",
+    "<b>Fig. 1</b> A la izquierda, la pila de tickets tal como llega: cerrados, sin leer. A la derecha, el resultado del Observador: los mismos tickets agrupados por motivo, con cantidades. La barra más alta es el primer candidato a hipótesis."
+  ],
+  "<b>Fig. 2</b> O objetivo em duas partes: em cima, a métrica que o loop empurra; embaixo, as três que ele vigia (âmbar). Sem a parte de baixo, a seta da esquerda mostra o atalho que o loop aprende: encerrar sem resolver.": [
+    "<b>Fig. 2</b> The objective in two parts: above, the metric the loop pushes; below, the three it monitors (amber). Without the lower part, the arrow on the left shows the shortcut the loop learns: close without resolving.",
+    "<b>Fig. 2</b> El objetivo en dos partes: arriba, la métrica que impulsa el loop; abajo, las tres que vigila (ámbar). Sin la parte inferior, la flecha de la izquierda muestra el atajo que aprende el loop: cerrar sin resolver."
+  ],
+  "<b>Fig. 3</b> A escada do atendimento: cada degrau é o mesmo achado (37% do mesmo motivo) chegando mais fundo na empresa. Os dois primeiros degraus ficam dentro do loop de suporte; o terceiro sai dele como um cartão para o produto.": [
+    "<b>Fig. 3</b> The support ladder: each step takes the same finding (37% for the same issue) deeper into the company. The first two steps stay inside the support loop; the third leaves it as a product card.",
+    "<b>Fig. 3</b> La escalera de atención: cada peldaño lleva el mismo hallazgo (37% por el mismo motivo) más adentro de la empresa. Los dos primeros quedan dentro del loop de soporte; el tercero sale como tarjeta para producto."
+  ],
+  "<b>Fig. 4</b> Dois loops da mesma empresa escrevendo na mesma memória (centro). O que o suporte aprende vira guarda-corpo em vendas; o que vendas aprende vira segmento no suporte. O meta-loop, embaixo, só lê os dois — não age.": [
+    "<b>Fig. 4</b> Two loops in the same company write to the same memory (center). What support learns becomes a sales guardrail; what sales learns becomes a support segment. The meta-loop below reads both—it does not act.",
+    "<b>Fig. 4</b> Dos loops de la misma empresa escriben en la misma memoria (centro). Lo que aprende soporte se convierte en guardarraíl para ventas; lo que aprende ventas se convierte en segmento para soporte. El meta-loop, abajo, solo lee ambos; no actúa."
+  ],
+  "Aplicação: você é corretor e quer um loop para os leads do portal. Escreva o objetivo na forma completa — o que maximizar e pelo menos duas coisas que não podem piorar.": [
+    "Application: you are an agent and want a loop for portal leads. Write the full objective—what to maximize and at least two things that must not worsen.",
+    "Aplicación: eres agente inmobiliario y quieres un loop para los leads del portal. Escribe el objetivo completo: qué maximizar y al menos dos cosas que no deben empeorar."
+  ],
+  "Ex.: maximizar leads que respondem em 24 h (25% → 35%) sem piorar visitas agendadas, reclamações no portal e pedidos para não receber contato. Sem a parte 'sem piorar', o loop aprende a mandar mensagem que provoca resposta negativa.": [
+    "Example: maximize leads who reply within 24 hours (25% → 35%) without worsening scheduled visits, portal complaints, or opt-outs. Without the “without worsening” condition, the loop learns to send messages that provoke negative replies.",
+    "Ejemplo: maximizar los leads que responden en 24 h (25% → 35%) sin empeorar las visitas agendadas, las quejas en el portal ni las solicitudes para no recibir contacto. Sin la condición «sin empeorar», el loop aprende a enviar mensajes que provocan respuestas negativas."
+  ],
+  "Diagnóstico: o assistente devolveu a contagem dos chamados e emendou 'sugiro mover o botão de exportar'. O que está errado, e como corrigir no pedido?": [
+    "Diagnosis: the assistant returned the ticket count and added “I suggest moving the export button.” What is wrong, and how would you correct the prompt?",
+    "Diagnóstico: el asistente devolvió el recuento de tickets y añadió «sugiero mover el botón de exportación». ¿Qué está mal y cómo corregirías el pedido?"
+  ],
+  "O Observador saiu da função: contar e agrupar, nunca propor. Corrigir dizendo explicitamente 'só conte; não proponha nada' — a proposta é papel do Otimizador, depois da crítica, com força da evidência.": [
+    "The Observer left its role: count and group, never propose. Correct the prompt by explicitly saying “only count; suggest nothing”—proposals belong to the Optimizer, after critique, considering evidence strength.",
+    "El Observador salió de su función: contar y agrupar, nunca proponer. Corrige el pedido diciendo «solo cuenta; no propongas nada»: proponer le corresponde al Optimizador, después de la crítica y considerando la fuerza de la evidencia."
+  ],
+  "Decisão: 37% dos chamados são sobre o mesmo motivo. O Otimizador propõe uma resposta nova; alguém sugere mudar o produto direto, sem teste. Qual dos dois caminhos passa pelo loop de atendimento e qual sai dele?": [
+    "Decision: 37% of tickets concern the same issue. The Optimizer proposes a new answer; someone suggests changing the product directly, without a test. Which path goes through the support loop, and which leaves it?",
+    "Decisión: el 37% de los tickets trata del mismo motivo. El Optimizador propone una respuesta nueva; alguien sugiere cambiar el producto directamente, sin prueba. ¿Qué camino pasa por el loop de atención y cuál sale de él?"
+  ],
+  "A resposta nova passa pelo loop: teste A × B, veredito, promoção. A mudança no produto sai do loop como cartão para quem decide o produto, com os 296 casos anexados — não é testada pelo suporte, é entregue com evidência.": [
+    "The new answer goes through the loop: A × B test, verdict, promotion. The product change leaves the loop as a card for the product decision-maker, with 296 cases attached—it is not tested by support; it is delivered with evidence.",
+    "La nueva respuesta pasa por el loop: prueba A × B, veredicto y promoción. El cambio del producto sale como tarjeta para quien decide, con los 296 casos adjuntos; soporte no lo prueba, lo entrega con evidencia."
+  ],
+  "Contraste: por que a conversão da clínica (3%) precisa de 1.500 casos por versão e a resolução no 1º contato do suporte (55%) precisa de cerca de 170?": [
+    "Contrast: why does clinic conversion (3%) need 1,500 cases per version, while support first-contact resolution (55%) needs about 170?",
+    "Contraste: ¿por qué la conversión de la clínica (3%) requiere 1.500 casos por versión y la resolución en el primer contacto de soporte (55%) unos 170?"
+  ],
+  "Taxas perto de 0 exigem amostras enormes para distinguir uma diferença pequena; taxas entre 20% e 70% mostram diferenças com muito menos casos. Por isso o loop de atendimento gira em semanas e o de conversão, em meses.": [
+    "Rates near 0 require huge samples to distinguish a small difference; rates between 20% and 70% show differences with far fewer cases. That is why the support loop turns in weeks, while the conversion loop takes months.",
+    "Las tasas cercanas a 0 requieren muestras enormes para distinguir diferencias pequeñas; las tasas entre 20% y 70% muestran diferencias con muchos menos casos. Por eso el loop de atención gira en semanas y el de conversión, en meses."
+  ],
+  "Pergunta: no produto de hoje, o que o meta-loop faz — e o que ele não faz?": [
+    "Question: in today’s product, what does the meta-loop do—and what does it not do?",
+    "Pregunta: en el producto actual, ¿qué hace el meta-loop y qué no hace?"
+  ],
+  "Relata: custo por ciclo, hipóteses geradas e promovidas, taxa de veto, cadência, concordância do juiz. Não redesenha loops nem muda nada sozinho; propor mudanças estruturais para aprovação humana é a próxima versão.": [
+    "It reports cost per cycle, hypotheses generated and promoted, veto rate, cadence, and judge agreement. It does not redesign loops or change anything on its own; proposing structural changes for human approval is for a future version.",
+    "Informa el costo por ciclo, las hipótesis generadas y promovidas, la tasa de veto, el ritmo y la concordancia del evaluador. No rediseña loops ni cambia nada por sí solo; proponer cambios estructurales para aprobación humana queda para una próxima versión."
+  ]
+}

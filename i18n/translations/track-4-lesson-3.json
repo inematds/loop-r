@@ -1,0 +1,386 @@
+{
+  "Trilha 04 · Aula 3": [
+    "Track 04 · Lesson 3",
+    "Ruta 04 · Clase 3"
+  ],
+  "A lista de conferência:": [
+    "The checklist:",
+    "La lista de comprobación:"
+  ],
+  "sim ou não": [
+    "yes or no",
+    "sí o no"
+  ],
+  "Ao fim desta aula você consegue escrever uma lista de conferência com 6 perguntas de sim ou não para o texto que sua IA produz — perguntas que duas pessoas diferentes respondem igual, sem discutir.": [
+    "By the end of this lesson, you will be able to write a checklist of 6 yes-or-no questions about the text your AI produces—questions that two different people answer the same way, without debate.",
+    "Al terminar esta clase, podrás escribir una lista de 6 preguntas de sí o no sobre el texto que produce tu IA; preguntas que dos personas distintas responderán igual, sin discutir."
+  ],
+  "Quando o resultado depende de o cliente responder, o teste leva semanas. Mas boa parte do que você quer saber está no próprio texto: cabe em 80 palavras? cita algo do cliente? promete prazo? Isso se confere em minutos, sem esperar ninguém. Só que \"dá uma nota de 1 a 10\" não serve — nem duas pessoas, nem a mesma IA em duas semanas, dão a mesma nota.": [
+    "When a result depends on a customer replying, a test takes weeks. But much of what you want to know is in the text itself: is it under 80 words? Does it mention something the customer said? Does it promise a timeline? You can check that in minutes. But “give it a score from 1 to 10” does not work—two people, or the same AI two weeks apart, will not give the same score.",
+    "Cuando el resultado depende de que responda un cliente, la prueba toma semanas. Pero mucho de lo que quieres saber está en el texto: ¿tiene menos de 80 palabras?, ¿menciona algo que dijo el cliente?, ¿promete un plazo? Eso se comprueba en minutos. Pero «pon una nota del 1 al 10» no sirve: ni dos personas ni la misma IA dos semanas después darán la misma nota."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "4 sim, 1 não. sem \"mais ou menos\".": [
+    "4 yes, 1 no. No “more or less.”",
+    "4 sí, 1 no. Nada de «más o menos»."
+  ],
+  "Nota de 1 a 10 mede o humor de quem avalia": [
+    "A 1-to-10 score measures the evaluator’s mood",
+    "Una nota del 1 al 10 mide el humor de quien evalúa"
+  ],
+  "Peça a duas pessoas para dar nota a uma proposta comercial. Uma dá 7, outra dá 8, e as duas estão certas — porque \"7\" não significa nada que se possa conferir. Agora peça a uma IA para dar nota e repita na semana seguinte: ela também muda. Juízes de texto, humanos ou não, têm manias conhecidas: preferem o texto mais longo, preferem o segundo que leem, e mudam de opinião entre semanas.": [
+    "Ask two people to score a sales proposal. One gives it 7, the other 8, and both are right—because “7” means nothing that can be checked. Ask an AI for a score and repeat next week: it changes too. Text evaluators, human or not, have known biases: they prefer longer text, prefer the second text they read, and change their minds from week to week.",
+    "Pide a dos personas que puntúen una propuesta comercial. Una le da 7 y otra 8; ambas tienen razón, porque «7» no significa nada que pueda comprobarse. Pídele una nota a una IA y repite la semana siguiente: también cambia. Los jueces de texto, humanos o no, tienen sesgos conocidos: prefieren textos más largos, prefieren el segundo que leen y cambian de opinión entre semanas."
+  ],
+  "A saída não é achar um juiz melhor. É trocar a pergunta. \"Esta proposta é boa?\" não tem resposta conferível. \"Esta proposta tem exatamente uma pergunta de fechamento?\" tem: sim ou não, e qualquer pessoa que olhe o texto responde igual. Uma": [
+    "The answer is not to find a better judge. It is to change the question. “Is this proposal good?” cannot be checked. “Does this proposal contain exactly one closing question?” can: yes or no, and anyone reading the text will answer the same way. A",
+    "La solución no es encontrar un juez mejor, sino cambiar la pregunta. «¿Esta propuesta es buena?» no se puede comprobar. «¿Esta propuesta tiene exactamente una pregunta de cierre?» sí: se responde sí o no, y cualquiera que lea el texto responderá igual. Una"
+  ],
+  "lista de conferência": [
+    "checklist",
+    "lista de comprobación"
+  ],
+  "é só isso: perguntas que não deixam espaço para gosto.": [
+    "is just that: questions that leave no room for personal taste.",
+    "es eso: preguntas que no dejan espacio para gustos personales."
+  ],
+  "A dona da clínica de estética passou meses pedindo à assistente \"melhore esta proposta\" e recebendo versões diferentes, sem saber se eram melhores. Quando trocou por \"a proposta menciona algo específico que a cliente disse? tem no máximo 80 palavras? promete prazo?\", ela e a recepcionista passaram a responder a mesma coisa sobre a mesma proposta — pela primeira vez.": [
+    "The clinic owner spent months asking her assistant to “improve this proposal” and getting different versions without knowing whether they were better. She switched to “does the proposal mention something specific the client said? Is it at most 80 words? Does it promise a timeline?” Now she and the receptionist give the same answers about the same proposal—for the first time.",
+    "La dueña de la clínica pasó meses pidiéndole a su asistente «mejora esta propuesta» y recibiendo versiones distintas, sin saber si eran mejores. Cambió la petición por «¿la propuesta menciona algo concreto que dijo la clienta?, ¿tiene como máximo 80 palabras?, ¿promete un plazo?». Por primera vez, ella y la recepcionista respondieron lo mismo sobre la misma propuesta."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "A lista modelo: sete perguntas para uma proposta": [
+    "A sample checklist: seven questions for a proposal",
+    "Modelo de lista: siete preguntas para una propuesta"
+  ],
+  "O que vem a seguir parece uma ficha de vistoria de carro, e é exatamente isso: cada linha é uma pergunta que se responde olhando o texto, e só o texto. Você não precisa preencher nada agora — só reconhecer o formato, porque a sua lista vai ter a mesma cara.": [
+    "What follows looks like a car inspection form, and that is exactly what it is: each row is a question answered by looking only at the text. You do not need to fill it out now—just recognize the format, because your checklist will look the same.",
+    "Lo que sigue parece una ficha de inspección de un auto, y eso es exactamente: cada línea es una pregunta que se responde mirando solo el texto. No hace falta completarla ahora; basta con reconocer el formato, porque tu lista tendrá el mismo aspecto."
+  ],
+  "Repare em três coisas. Toda pergunta é contável ou visível — palavras, frases, uma coisa que está ou não está no texto. Duas perguntas estão marcadas como": [
+    "Notice three things. Every question is countable or visible—words, sentences, or something present or absent in the text. Two questions are marked as",
+    "Fíjate en tres cosas. Cada pregunta se puede contar o ver: palabras, frases o algo que está o no está en el texto. Dos preguntas están marcadas como"
+  ],
+  "invariável": [
+    "invariant",
+    "invariante"
+  ],
+  ": são as que vêm da resposta 3 da ficha do loop, o que nunca muda sozinho — e uma versão que falhe nelas em um único caso perde, não importa o resto. E nenhuma pergunta usa \"adequado\", \"bom\" ou \"profissional\".": [
+    ": they come from answer 3 on the loop worksheet, what never changes on its own. A version that fails one in even a single case loses, regardless of everything else. No question uses “appropriate,” “good,” or “professional.”",
+    ": vienen de la respuesta 3 de la ficha del ciclo: lo que nunca cambia por sí solo. Una versión que falle en una sola ocasión pierde, sin importar lo demás. Ninguna pregunta usa «adecuado», «bueno» o «profesional»."
+  ],
+  "Para o corretor de imóveis, a lista da resposta ao lead de portal ficou parecida, com outras perguntas: cita o imóvel pelo nome ou endereço que o lead abriu? oferece dois horários de visita, não um nem três? não informa preço abaixo da tabela (invariável)? não usa \"oportunidade única\"?": [
+    "For the real estate agent, the checklist for portal replies is similar, with different questions: does it name the property or address the lead viewed? Does it offer two visit times—not one or three? Does it avoid quoting below-list price (invariant)? Does it avoid “once-in-a-lifetime opportunity”?",
+    "Para el agente inmobiliario, la lista para responder a contactos del portal es parecida, pero con otras preguntas: ¿menciona el inmueble o la dirección que consultó el contacto?, ¿ofrece dos horarios de visita, ni uno ni tres?, ¿evita indicar un precio inferior al de lista (invariante)?, ¿evita «oportunidad única»?"
+  ],
+  "Como escrever a sua lista": [
+    "How to write your checklist",
+    "Cómo escribir tu lista"
+  ],
+  "Separe 5 textos que você aprovou e 5 que você mandou refazer.": [
+    "Set aside 5 texts you approved and 5 you sent back for revision.",
+    "Separa 5 textos que aprobaste y 5 que pediste rehacer."
+  ],
+  "Os de verdade, não imaginados.": [
+    "Real ones, not made-up examples.",
+    "Reales, no imaginarios."
+  ],
+  "Escreva o que os bons têm que os ruins não têm — como pergunta.": [
+    "Write what the good ones have that the bad ones do not—as a question.",
+    "Escribe qué tienen los buenos que no tienen los malos, en forma de pregunta."
+  ],
+  "\"Cita algo do cliente?\" e não \"é personalizado\".": [
+    "“Does it mention something the customer said?” not “Is it personalized?”",
+    "«¿Menciona algo del cliente?» y no «¿Es personalizado?»."
+  ],
+  "Corte toda pergunta que precise de \"depende\".": [
+    "Remove every question that needs an answer of “it depends.”",
+    "Elimina toda pregunta que requiera responder «depende»."
+  ],
+  "Se você hesitou ao responder, o juiz também vai hesitar.": [
+    "If you hesitated to answer, the judge will too.",
+    "Si dudaste al responder, el juez también dudará."
+  ],
+  "Marque as invariáveis.": [
+    "Mark the invariants.",
+    "Marca las invariantes."
+  ],
+  "O que vem da resposta 3 da ficha vira pergunta com a etiqueta \"(invariável)\".": [
+    "Anything from answer 3 on the worksheet becomes a question labeled “(invariant).”",
+    "Lo que viene de la respuesta 3 de la ficha se convierte en pregunta con la etiqueta «(invariante)»."
+  ],
+  "Responda você mesma nos 10 textos.": [
+    "Answer the questions yourself for all 10 texts.",
+    "Responde tú misma las preguntas en los 10 textos."
+  ],
+  "Se um \"bom\" leva menos sim que um \"ruim\", a lista está medindo a coisa errada.": [
+    "If a “good” text gets fewer yeses than a “bad” one, the checklist measures the wrong thing.",
+    "Si un texto «bueno» obtiene menos síes que uno «malo», la lista mide lo equivocado."
+  ],
+  "Peça a outra pessoa que responda sem falar com você.": [
+    "Ask someone else to answer without talking to you.",
+    "Pide a otra persona que responda sin hablar contigo."
+  ],
+  "Onde vocês discordarem, reescreva a pergunta.": [
+    "Where you disagree, rewrite the question.",
+    "Donde no coincidan, reescribe la pregunta."
+  ],
+  "Calibrar o juiz: vinte minutos, uma vez": [
+    "Calibrating the judge: twenty minutes, once",
+    "Calibrar al juez: veinte minutos, una vez"
+  ],
+  "Quem responde a lista no dia a dia não é você — é o Avaliador, o assistente que julga. E ele precisa ser conferido contra você, porque juízes derivam. O produto pede o único trabalho manual de medição de todo o loop: você responde sim ou não, para cada pergunta da lista, em 10 a 20 textos. Vinte minutos, uma vez. Esses textos com as suas respostas viram o conjunto de calibração.": [
+    "You are not the one who answers the checklist day to day—the Evaluator is. It must be checked against your answers because judges drift. The product asks for one manual measurement task across the whole loop: answer yes or no to each checklist question for 10 to 20 texts. Twenty minutes, once. Those texts and your answers become the calibration set.",
+    "En el día a día, quien responde la lista no eres tú, sino el Evaluador. Hay que contrastarlo contigo porque los jueces se desvían. El producto pide una única tarea manual de medición en todo el ciclo: responder sí o no a cada pregunta para 10 a 20 textos. Veinte minutos, una vez. Esos textos y tus respuestas forman el conjunto de calibración."
+  ],
+  "A cada ciclo, antes de julgar qualquer coisa nova, o Avaliador responde esses mesmos textos. Se concordar com você em menos de 80% das respostas, o rótulo é \"juiz descalibrado\": o ciclo não promove nada e o Meta-agente — o assistente que só observa o próprio loop e relata — avisa. E se uma pergunta específica da lista tiver concordância abaixo de 80%, o problema é da pergunta — ela é reescrita ou removida.": [
+    "At every cycle, before judging anything new, the Evaluator answers those same texts. If it agrees with you on fewer than 80% of answers, it is labeled “uncalibrated judge”: the cycle promotes nothing, and the Meta-agent—the assistant that only observes and reports on the loop—alerts you. If one checklist question has under 80% agreement, the question is the problem and is rewritten or removed.",
+    "En cada ciclo, antes de juzgar algo nuevo, el Evaluador responde sobre esos mismos textos. Si coincide contigo en menos del 80 % de las respuestas, se etiqueta como «juez descalibrado»: el ciclo no promueve nada y avisa el Meta-agente, que solo observa e informa sobre el ciclo. Si una pregunta concreta de la lista tiene menos del 80 % de coincidencia, se reescribe o elimina esa pregunta."
+  ],
+  "Duas proteções a mais, que você não precisa operar, só saber que existem: o Avaliador compara as versões em pares com a ordem embaralhada, três vezes, e fica com a maioria (isso mata a mania de preferir o segundo); e, quando o teto permite, o Avaliador roda num modelo de IA diferente do que escreveu o texto, para não aprovar o próprio estilo.": [
+    "Two more safeguards require no action from you, but are worth knowing: the Evaluator compares versions in pairs, with shuffled order, three times, and takes the majority (preventing a bias toward the second one); and, when the budget allows, it runs on a different AI model from the one that wrote the text, so it does not approve its own style.",
+    "Hay dos protecciones más que no tienes que operar, pero conviene conocer: el Evaluador compara las versiones por pares con el orden mezclado, tres veces, y toma la mayoría (así evita preferir la segunda); y, cuando el límite lo permite, usa un modelo de IA distinto al que redactó el texto para no aprobar su propio estilo."
+  ],
+  "A gestora de suporte separou 15 respostas de chamado — 8 que ela teria enviado, 7 que teria devolvido — e marcou sim/não nas 6 perguntas da lista dela. Na primeira calibração o Avaliador concordou em 71%. Uma pergunta (\"a resposta é cordial?\") respondia por quase toda a discordância. Ela trocou por \"a resposta chama o cliente pelo nome e termina perguntando se resolveu?\". Concordância: 93%.": [
+    "The support manager selected 15 ticket replies—8 she would have sent and 7 she would have returned—and marked yes/no for her 6 checklist questions. In the first calibration, the Evaluator agreed 71% of the time. One question (“is the reply cordial?”) caused almost all disagreement. She replaced it with “does the reply address the customer by name and end by asking whether the issue is resolved?” Agreement: 93%.",
+    "La responsable de soporte eligió 15 respuestas a tickets: habría enviado 8 y devuelto 7. Marcó sí o no en las 6 preguntas de su lista. En la primera calibración, el Evaluador coincidió el 71 % de las veces. Casi toda la discrepancia venía de una pregunta («¿la respuesta es cordial?»). La cambió por «¿la respuesta llama al cliente por su nombre y termina preguntando si se resolvió?». Coincidencia: 93 %."
+  ],
+  "Como a lista vira veredito": [
+    "How the checklist becomes a verdict",
+    "Cómo la lista se convierte en veredicto"
+  ],
+  "A pontuação de um texto é simplesmente a quantidade de \"sim\". Para comparar a versão atual com a candidata, o loop não olha uma proposta — olha um conjunto fixo de 20 a 50 casos guardados, os casos de conferência, e produz as duas versões para cada caso. A versão B \"ganha no artefato\" se a média de sim dela é pelo menos um critério acima da média de A": [
+    "A text’s score is simply the number of “yes” answers. To compare the current version with a candidate, the loop does not inspect one proposal; it uses a fixed set of 20 to 50 saved cases and generates both versions for each. Version B “wins on the deliverable” if its average yes score is at least one criterion above A’s",
+    "La puntuación de un texto es simplemente la cantidad de respuestas «sí». Para comparar la versión actual con la candidata, el ciclo no mira una propuesta aislada: usa un conjunto fijo de 20 a 50 casos guardados y genera ambas versiones para cada caso. La versión B «gana en el entregable» si su promedio de síes supera al de A por al menos un criterio"
+  ],
+  "e": [
+    "and",
+    "y"
+  ],
+  "ela não perde em nenhuma invariável, em nenhum caso.": [
+    "and does not fail any invariant in any case.",
+    "y no falla ninguna invariante en ningún caso."
+  ],
+  "Esse teste roda em minutos, sem cliente, toda semana. É por isso que o loop consegue girar mesmo quando a métrica de sinal ainda está juntando as 300 execuções: enquanto o mundo responde devagar, o texto já está sendo conferido rápido.": [
+    "This test runs in minutes, without customers, every week. That is why the loop keeps turning while the signal metric is still gathering 300 runs: while the world responds slowly, the text is checked quickly.",
+    "Esta prueba se ejecuta en minutos, sin clientes, cada semana. Por eso el ciclo puede avanzar mientras la métrica de señal reúne 300 ejecuciones: mientras el mundo responde despacio, el texto se comprueba rápido."
+  ],
+  "O corretor guardou 30 leads antigos, com a mensagem que cada um mandou, como casos de conferência. A versão nova de resposta fez média 5,4 de 6 contra 4,1 da antiga — e, num dos 30 casos, informou preço abaixo da tabela. Perdeu. Uma invariável violada uma vez vale mais que 1,3 ponto de média a favor.": [
+    "The real estate agent saved 30 old leads and their messages as checklist cases. The new reply averaged 5.4 out of 6 versus 4.1 for the old one—but in one of the 30 cases, it quoted a price below the list price. It lost. One invariant violation outweighs a 1.3-point average advantage.",
+    "El agente inmobiliario guardó 30 contactos antiguos con el mensaje que envió cada uno como casos de comprobación. La nueva respuesta obtuvo una media de 5,4 sobre 6 frente a 4,1 de la anterior, pero en uno de los 30 casos indicó un precio por debajo de la lista. Perdió. Una infracción de una invariante pesa más que 1,3 puntos de ventaja media."
+  ],
+  "Erro comum": [
+    "Common mistake",
+    "Error frecuente"
+  ],
+  "Ler 12 propostas, achar a versão nova melhor e virar regra.": [
+    "Review 12 proposals, decide the new version is better, and make it the rule.",
+    "Leer 12 propuestas, creer que la nueva versión es mejor y convertirla en regla."
+  ],
+  "Acontece porque o olho escolhe o que confirma a expectativa, e porque 12 é menos que o mínimo até para o artefato (20 a 50 casos). Como evitar: casos de conferência fixos, guardados antes de a versão nova existir, e contagem de sim — nunca leitura solta.": [
+    "This happens because we notice what confirms our expectations, and because 12 is below even the minimum for a deliverable test (20 to 50 cases). Avoid it with a fixed set of checklist cases saved before the new version exists, and count yeses—never rely on an informal read.",
+    "Ocurre porque la mirada selecciona lo que confirma nuestras expectativas y porque 12 es menos que el mínimo incluso para el entregable (20 a 50 casos). Evítalo usando casos fijos guardados antes de que exista la versión nueva y contando los síes, nunca con una lectura informal."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/6 feito": [
+    "0/6 complete",
+    "0/6 completados"
+  ],
+  "Escreva 6 perguntas de sim ou não para o seu texto": [
+    "Write 6 yes-or-no questions about your text",
+    "Escribe 6 preguntas de sí o no sobre tu texto"
+  ],
+  "Sair com a sua lista de conferência: 6 perguntas, 2 delas invariáveis, respondidas por você e por mais uma pessoa nos mesmos 6 textos. ~15 min. Fica pronto quando a outra pessoa responde as 36 caixas sem perguntar \"depende de quê?\".": [
+    "Leave with your checklist: 6 questions, 2 of them invariants, answered by you and another person for the same 6 texts. About 15 minutes. It is ready when the other person can fill all 36 boxes without asking “depends on what?”",
+    "Termina con tu lista de comprobación: 6 preguntas, 2 invariantes, respondidas por ti y otra persona en los mismos 6 textos. Unos 15 minutos. Está lista cuando la otra persona completa las 36 casillas sin preguntar «¿depende de qué?»."
+  ],
+  "Nada muda no seu negócio até você aprovar: a lista é um papel até entrar na ficha do loop, e mesmo depois ela só confere texto — não envia, não altera, não apaga nada. Se a lista parecer errada, risque e escreva de novo; a versão ruim não custa nada.": [
+    "Nothing in your business changes until you approve it: the checklist is just paper until it goes on the loop worksheet. Even then, it only checks text—it does not send, change, or delete anything. If the checklist seems wrong, cross it out and rewrite it; a bad version costs nothing.",
+    "Nada cambia en tu negocio hasta que lo apruebes: la lista es solo papel hasta que entre en la ficha del ciclo. Incluso entonces, solo comprueba textos; no envía, modifica ni borra nada. Si parece incorrecta, táchala y escríbela de nuevo; una mala versión no cuesta nada."
+  ],
+  "Escolhi o texto que minha IA mais produz (proposta, resposta a lead, resposta de chamado) e separei 3 que aprovei e 3 que mandei refazer.": [
+    "I chose the text my AI produces most often (proposal, lead reply, or ticket response) and set aside 3 I approved and 3 I sent back for revision.",
+    "Elegí el texto que más produce mi IA (propuesta, respuesta a un contacto o a un ticket) y separé 3 que aprobé y 3 que pedí rehacer."
+  ],
+  "Escrevi 6 perguntas de sim/não — cada uma contável ou visível no texto, nenhuma com \"bom\", \"adequado\" ou \"profissional\".": [
+    "I wrote 6 yes/no questions—each countable or visible in the text, with no “good,” “appropriate,” or “professional.”",
+    "Escribí 6 preguntas de sí/no, cada una contable o visible en el texto, ninguna con «bueno», «adecuado» o «profesional»."
+  ],
+  "Marquei 2 delas como invariáveis, tiradas da resposta 3 da minha ficha (o que nunca muda sozinho).": [
+    "I marked 2 as invariants from answer 3 on my worksheet (what never changes on its own).",
+    "Marqué 2 como invariantes, tomadas de la respuesta 3 de mi ficha (lo que nunca cambia por sí solo)."
+  ],
+  "Respondi as 6 perguntas nos 6 textos. Os 3 aprovados tiveram mais \"sim\" que os 3 devolvidos.": [
+    "I answered the 6 questions for all 6 texts. The 3 approved ones got more yeses than the 3 returned for revision.",
+    "Respondí las 6 preguntas para los 6 textos. Los 3 aprobados obtuvieron más síes que los 3 devueltos."
+  ],
+  "Pedi a alguém que respondesse os mesmos 6 textos sem falar comigo.": [
+    "I asked someone to answer the same 6 texts without consulting me.",
+    "Pedí a alguien que respondiera los mismos 6 textos sin hablar conmigo."
+  ],
+  "Onde discordamos, reescrevi a pergunta — até a outra pessoa preencher as 36 caixas sem me perguntar nada.": [
+    "Where we disagreed, I rewrote the question until the other person could fill all 36 boxes without asking me anything.",
+    "Donde discrepamos, reescribí la pregunta hasta que la otra persona pudo completar las 36 casillas sin preguntarme nada."
+  ],
+  "Exemplo de resultado aceitável": [
+    "Example of an acceptable result",
+    "Ejemplo de resultado aceptable"
+  ],
+  "(gestora de suporte): 1. Chama o cliente pelo nome? 2. Repete o problema em uma frase antes de responder? 3. Tem no máximo 120 palavras? 4. Não promete data de correção? (invariável) 5. Não pede dado que já está no chamado? 6. Termina perguntando se resolveu? (invariável)": [
+    "(support manager): 1. Does it address the customer by name? 2. Does it restate the issue in one sentence before answering? 3. Is it at most 120 words? 4. Does it avoid promising a fix date? (invariant) 5. Does it avoid asking for information already in the ticket? 6. Does it end by asking whether the issue is resolved? (invariant)",
+    "(responsable de soporte): 1. ¿Llama al cliente por su nombre? 2. ¿Repite el problema en una frase antes de responder? 3. ¿Tiene como máximo 120 palabras? 4. ¿No promete una fecha de solución? (invariante) 5. ¿No pide datos que ya están en el ticket? 6. ¿Termina preguntando si se resolvió? (invariante)"
+  ],
+  "Você acabou de escrever a régua que o loop vai usar toda semana — e provou que duas pessoas leem a mesma coisa nela.": [
+    "You have just written the ruler the loop will use every week—and confirmed that two people read it the same way.",
+    "Acabas de escribir la regla que el ciclo usará cada semana y comprobaste que dos personas la interpretan igual."
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "Nota de 1 a 10 mede o avaliador, não o texto; uma pergunta de sim ou não, respondida olhando o texto, mede o texto.": [
+    "A 1-to-10 score measures the evaluator, not the text; a yes/no question answered by looking at the text measures the text.",
+    "Una nota del 1 al 10 mide al evaluador, no al texto; una pregunta de sí o no, respondida mirando el texto, mide el texto."
+  ],
+  "A lista tem perguntas contáveis ou visíveis, e as que vêm da resposta 3 da ficha são invariáveis: um único não nelas derruba a versão.": [
+    "The checklist contains countable or visible questions. Those from answer 3 on the worksheet are invariants: one “no” is enough to fail a version.",
+    "La lista contiene preguntas contables o visibles. Las que vienen de la respuesta 3 de la ficha son invariantes: un solo «no» hace perder la versión."
+  ],
+  "O Avaliador é calibrado contra você em 10 a 20 textos, uma vez; abaixo de 80% de concordância nada é promovido, e a pergunta que causa discordância é reescrita.": [
+    "The Evaluator is calibrated against you once using 10 to 20 texts. Below 80% agreement, nothing is promoted, and the question causing disagreement is rewritten.",
+    "El Evaluador se calibra contigo una vez usando de 10 a 20 textos. Por debajo del 80 % de coincidencia no se promueve nada y se reescribe la pregunta que causa discrepancias."
+  ],
+  "O veredito sai de 20 a 50 casos guardados, por contagem de sim — é o teste que gira em minutos enquanto o cliente demora semanas.": [
+    "The verdict comes from counting yeses across 20 to 50 saved cases—a test that runs in minutes while customer outcomes take weeks.",
+    "El veredicto sale de contar síes en 20 a 50 casos guardados: una prueba que toma minutos mientras el cliente tarda semanas."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de conseguir transformar \"está bom?\" em seis perguntas que qualquer pessoa da sua equipe responde igual.": [
+    "You can now turn “is it good?” into six questions anyone on your team can answer the same way.",
+    "Ahora puedes convertir «¿está bien?» en seis preguntas que cualquier persona de tu equipo responderá igual."
+  ],
+  "Nos próximos 15 minutos: guarde numa pasta os 10 textos que você usou (os 6 da prática e mais 4 antigos). Eles são os seus primeiros casos de conferência — a versão nova da sua IA vai ser julgada contra eles, não contra a sua lembrança.": [
+    "Over the next 15 minutes: save the 10 texts you used (the 6 from the exercise and 4 older ones) in a folder. They are your first checklist cases—the new AI version will be judged against them, not against your memory.",
+    "Durante los próximos 15 minutos: guarda en una carpeta los 10 textos usados (los 6 del ejercicio y otros 4 anteriores). Son tus primeros casos de comprobación: la nueva versión de tu IA se juzgará con ellos, no con tu recuerdo."
+  ],
+  "Na próxima aula chega o momento que decide se o loop vale alguma coisa: o cartão de decisão de 5 linhas — e o caso real em que a clínica ganhou 10 pontos e a resposta certa foi não aprovar.": [
+    "In the next lesson comes the moment that determines whether the loop is worth anything: the 5-line decision card—and the real case where the clinic gained 10 points and the right answer was not to approve.",
+    "En la próxima clase llega el momento que determina si el ciclo sirve para algo: la tarjeta de decisión de 5 líneas y el caso real en que la clínica ganó 10 puntos, pero la respuesta correcta fue no aprobar."
+  ],
+  "← aula anterior": [
+    "← previous lesson",
+    "← clase anterior"
+  ],
+  "próxima aula →": [
+    "next lesson →",
+    "siguiente clase →"
+  ],
+  "Aula 3 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 3 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 3 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "R1  Tem no máximo 80 palavras?                                   sim/não\nR2  A primeira frase menciona algo específico do cliente?         sim/não\nR3  Tem exatamente UMA pergunta de fechamento?                    sim/não\nR4  Não promete prazo? (invariável)                               sim/não\nR5  Desconto, se houver, é de no máximo 10%? (invariável)         sim/não\nR6  Não contém erro sobre o produto (conferido na base)?          sim/não\nR7  Tom: sem exclamação dupla, sem \"imperdível\", sem CAPS?         sim/não": [
+    "R1  Is it no more than 80 words?                              yes/no\nR2  Does the first sentence mention something specific to the customer? yes/no\nR3  Is there exactly ONE closing question?                    yes/no\nR4  Does it avoid promising a timeline? (invariant)           yes/no\nR5  Is any discount no more than 10%? (invariant)             yes/no\nR6  Does it contain no product errors (checked against source)? yes/no\nR7  Tone: no double exclamation, “must-have,” or ALL CAPS?     yes/no",
+    "R1  ¿Tiene como máximo 80 palabras?                            sí/no\nR2  ¿La primera frase menciona algo específico del cliente?    sí/no\nR3  ¿Incluye exactamente UNA pregunta de cierre?                sí/no\nR4  ¿No promete un plazo? (invariante)                         sí/no\nR5  Si hay descuento, ¿es como máximo del 10 %? (invariante)   sí/no\nR6  ¿No contiene errores sobre el producto (verificado en la base)? sí/no\nR7  Tono: ¿sin doble exclamación, «imperdible» ni MAYÚSCULAS? sí/no"
+  ],
+  "\"que nota você dá?\"": [
+    "“what score would you give it?”",
+    "«¿qué nota le pondrías?»"
+  ],
+  "a pergunta muda, não o juiz": [
+    "the question changes, not the judge",
+    "cambia la pregunta, no el juez"
+  ],
+  "pontuação: 6 de 7": [
+    "score: 6 out of 7",
+    "puntuación: 6 de 7"
+  ],
+  "você": [
+    "you",
+    "tú"
+  ],
+  "Conjunto de perguntas de sim/não que se respondem olhando o próprio texto produzido pela IA. É o que o produto chama de rubrica. Nunca nota de 1 a 10.": [
+    "A set of yes/no questions answered by looking at the text produced by AI. The product calls this a rubric. Never a score from 1 to 10.",
+    "Conjunto de preguntas de sí o no que se responden mirando el texto producido por la IA. El producto lo llama rúbrica. Nunca una nota del 1 al 10."
+  ],
+  "<b>Fig. 1</b> Dois juízes, o mesmo texto. Com nota, as respostas divergem (7 e 8); com sim/não, coincidem. A pergunta muda, não o juiz.": [
+    "<b>Fig. 1</b> Two judges, the same text. Scores differ (7 and 8); yes/no answers match. The question changes, not the judge.",
+    "<b>Fig. 1</b> Dos evaluadores, el mismo texto. Con una nota, las respuestas difieren (7 y 8); con sí o no, coinciden. Cambia la pregunta, no el evaluador."
+  ],
+  "<b>Fig. 2</b> A lista por dentro: sete linhas, cada uma vira um sim (cheio) ou não (vazio). As duas com cadeado são invariáveis — um não ali reprova tudo.": [
+    "<b>Fig. 2</b> Inside the checklist: seven rows, each becomes a yes (filled) or no (empty). The two locked rows are invariants—one no there rejects the whole item.",
+    "<b>Fig. 2</b> La lista por dentro: siete filas, cada una se convierte en sí (marcada) o no (vacía). Las dos filas con candado son invariantes: un no en ellas lo reprueba todo."
+  ],
+  "<b>Fig. 3</b> Calibração: suas respostas (linha de cima) contra as do juiz (linha de baixo) nos mesmos 15 textos. Abaixo de 80% de coincidência, o juiz não pode promover.": [
+    "<b>Fig. 3</b> Calibration: your answers (top row) against the judge’s (bottom row) on the same 15 texts. Below 80% agreement, the judge cannot promote.",
+    "<b>Fig. 3</b> Calibración: tus respuestas (fila superior) frente a las del evaluador (fila inferior) en los mismos 15 textos. Por debajo del 80 % de coincidencia, no puede promover."
+  ],
+  "<b>Fig. 2</b> A lista por dentro: sete linhas, cada uma vira um sim (cheio) ou não (vazio). As duas com cadeado são invariáveis — um não ali derruba a versão.": [
+    "<b>Fig. 2</b> Inside the checklist: seven rows, each becomes a yes (filled) or no (empty). The two locked rows are invariants—a single no there rejects the version.",
+    "<b>Fig. 2</b> La lista por dentro: siete filas, cada una se convierte en sí (marcada) o no (vacía). Las dos filas con candado son invariantes: un solo no allí rechaza la versión."
+  ],
+  "<b>Fig. 3</b> Calibração: suas respostas (linha de cima) contra as do juiz (linha de baixo) nos mesmos 15 textos. Abaixo de 80% de coincidência, o ciclo não promove.": [
+    "<b>Fig. 3</b> Calibration: your answers (top row) against the judge’s (bottom row) on the same 15 texts. Below 80% agreement, the cycle does not promote.",
+    "<b>Fig. 3</b> Calibración: tus respuestas (fila superior) frente a las del evaluador (fila inferior) en los mismos 15 textos. Por debajo del 80 % de coincidencia, el ciclo no promueve."
+  ],
+  "Diagnóstico: na calibração, o juiz concordou com você em 71%, e quase toda a discordância veio da pergunta 'a resposta é cordial?'. O que está errado e o que você faz?": [
+    "Diagnosis: during calibration, the judge agreed with you 71% of the time, and nearly all disagreement came from “is the reply courteous?” What is wrong, and what do you do?",
+    "Diagnóstico: durante la calibración, el evaluador coincidió contigo el 71 % de las veces, y casi todo el desacuerdo vino de «¿la respuesta es cordial?». ¿Qué está mal y qué haces?"
+  ],
+  "A pergunta pede gosto, não algo visível. Reescreve como algo conferível ('chama pelo nome e termina perguntando se resolveu?') ou remove.": [
+    "The question asks for a preference, not something visible. Rewrite it as something verifiable (“does it use the customer’s name and end by asking whether the issue was resolved?”) or remove it.",
+    "La pregunta pide una opinión, no algo visible. Reescríbela de forma comprobable («¿usa el nombre del cliente y termina preguntando si se resolvió?») o elimínala."
+  ],
+  "Decisão: a versão B fez média 5,4 de 6 contra 4,1 da A nos 30 casos, mas num caso informou preço abaixo da tabela (invariável). Quem ganha no artefato?": [
+    "Decision: version B averaged 5.4 out of 6 versus A’s 4.1 across 30 cases, but in one case it quoted a below-list price (an invariant). Which version wins on the artifact?",
+    "Decisión: la versión B promedió 5,4 de 6 frente a 4,1 de A en 30 casos, pero en uno indicó un precio inferior al de lista (invariante). ¿Qué versión gana en el artefacto?"
+  ],
+  "A. Uma invariável violada em um único caso derruba a versão, por maior que seja a média.": [
+    "A. One invariant violation in a single case rejects the version, no matter how high the average is.",
+    "A. Una sola infracción de una invariante en un caso rechaza la versión, por alto que sea el promedio."
+  ],
+  "Aplicação: você quer saber se a IA da clínica 'personaliza' as propostas. Como vira isso numa pergunta da lista?": [
+    "Application: you want to know whether the clinic’s AI “personalizes” proposals. How do you turn that into a checklist question?",
+    "Aplicación: quieres saber si la IA de la clínica «personaliza» las propuestas. ¿Cómo lo conviertes en una pregunta de la lista?"
+  ],
+  "'A primeira frase menciona algo específico que a cliente disse?' — visível no texto, sim ou não. 'É personalizada?' não serve.": [
+    "“Does the first sentence mention something specific the customer said?”—visible in the text, yes or no. “Is it personalized?” does not work.",
+    "«¿La primera frase menciona algo específico que dijo la clienta?»; se ve en el texto y se responde sí o no. «¿Está personalizada?» no sirve."
+  ],
+  "Por que o loop consegue julgar o texto toda semana, se a taxa de resposta ainda está juntando 300 execuções?": [
+    "Why can the loop judge the text every week while the reply rate is still accumulating 300 runs?",
+    "¿Por qué el ciclo puede evaluar el texto cada semana mientras la tasa de respuesta aún reúne 300 ejecuciones?"
+  ],
+  "Porque o artefato se confere olhando o próprio texto, em 20 a 50 casos guardados, em minutos — sem esperar o cliente.": [
+    "Because you can check the artifact by reading the text itself across 20 to 50 saved cases in minutes—without waiting for customers.",
+    "Porque el artefacto se revisa mirando el texto mismo en 20 a 50 casos guardados, en minutos y sin esperar al cliente."
+  ],
+  "Critério que nenhuma versão pode violar em caso algum, por mais que ganhe nos outros. Vem da resposta 3 da ficha ('o que nunca muda sozinho').": [
+    "A criterion no version may violate in any case, no matter how well it performs elsewhere. It comes from answer 3 on the worksheet (“what never changes on its own”).",
+    "Criterio que ninguna versión puede infringir, por mucho que gane en los demás. Procede de la respuesta 3 de la ficha («lo que nunca cambia por sí solo»)."
+  ],
+  "<b>Fig. 4</b> Sobre 30 casos, B faz média maior que A + 1 critério. Mas o traço âmbar é uma invariável violada num caso — e isso derruba B sozinho.": [
+    "<b>Fig. 4</b> Across 30 cases, B averages one criterion more than A. But the amber mark is an invariant violated in a single case—and that alone rejects B.",
+    "<b>Fig. 4</b> En 30 casos, B obtiene en promedio un criterio más que A. Pero la marca ámbar indica una invariante infringida en un caso, y eso basta para rechazar B."
+  ]
+}

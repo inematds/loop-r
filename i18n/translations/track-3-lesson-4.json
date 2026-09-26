@@ -1,0 +1,542 @@
+{
+  "Trilha 03 · Aula 4": [
+    "Track 03 · Lesson 4",
+    "Ruta 03 · Clase 4"
+  ],
+  "A Memória: o ativo que": [
+    "Memory: the asset that",
+    "La Memoria: el activo que"
+  ],
+  "a concorrência não copia": [
+    "competitors cannot copy",
+    "la competencia no puede copiar"
+  ],
+  "Ao fim desta aula você tem a primeira linha do histórico do loop: o que tentou, o que aconteceu (com número) e o que decidiu.": [
+    "By the end of this lesson, you will have the first line in your loop history: what you tried, what happened (with a number), and what you decided.",
+    "Al terminar esta clase, tendrás la primera línea del historial del ciclo: qué intentaste, qué ocurrió (con cifras) y qué decidiste."
+  ],
+  "Sua empresa já testou dezenas de coisas — e quase todas foram esquecidas. Daqui a seis meses alguém vai ter a mesma ideia, testar de novo, e descobrir o mesmo resultado. Sem memória, o loop não aprende: ele redescobre. E a memória é a única parte do sistema que outra empresa, com a mesma IA, não consegue copiar.": [
+    "Your company has already tested dozens of things—and forgotten almost all of them. Six months from now, someone will have the same idea, test it again, and discover the same result. Without memory, the loop does not learn; it rediscovers. Memory is the only part of the system another company using the same AI cannot copy.",
+    "Tu empresa ya probó docenas de cosas y casi todas se olvidaron. Dentro de seis meses, alguien tendrá la misma idea, volverá a probarla y descubrirá el mismo resultado. Sin memoria, el ciclo no aprende: redescubre. La memoria es la única parte del sistema que otra empresa, aunque use la misma IA, no puede copiar."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "APRENDIDO": [
+    "LEARNED",
+    "APRENDIDO"
+  ],
+  "DESCARTADO": [
+    "DISCARDED",
+    "DESCARTADO"
+  ],
+  "OBSERVADO": [
+    "OBSERVED",
+    "OBSERVADO"
+  ],
+  "o caderno de registro em cima, as três gavetas embaixo — nada sai de lá": [
+    "the logbook above, the three drawers below—nothing is ever removed",
+    "el registro arriba y los tres cajones abajo: nada se borra"
+  ],
+  "Sem memória, o loop descobre a mesma coisa duas vezes": [
+    "Without memory, the loop discovers the same thing twice",
+    "Sin memoria, el ciclo descubre lo mismo dos veces"
+  ],
+  "Memória": [
+    "Memory",
+    "Memoria"
+  ],
+  "é o assistente que fecha o ciclo. Lê tudo o que os outros escreveram, registra uma linha no histórico e guarda cada hipótese no lugar certo. O que ela nunca faz: apagar uma entrada antiga, reescrever, ou resumir tanto que o \"por quê\" se perca.": [
+    "is the assistant that closes the loop. It reads everything the others wrote, records one line in the history, and stores each hypothesis in the right place. It never deletes an old entry, rewrites it, or summarizes it so much that the “why” is lost.",
+    "es el asistente que cierra el ciclo. Lee todo lo que escribieron los demás, registra una línea en el historial y guarda cada hipótesis en su lugar. Nunca borra una entrada antigua, la reescribe ni la resume tanto que se pierda el «porqué»."
+  ],
+  "Ela é lida no começo do ciclo seguinte. O Crítico consulta o que já foi resolvido antes; o Otimizador consulta o que já foi descartado. Sem isso, cada ciclo começa do zero, com a mesma IA, as mesmas ideias e os mesmos erros.": [
+    "It is read at the start of the next cycle. The Critic checks what has already been resolved; the Optimizer checks what has already been discarded. Without this, every cycle starts from scratch, with the same AI, ideas, and mistakes.",
+    "Se lee al comienzo del siguiente ciclo. El Crítico consulta lo que ya se resolvió; el Optimizador, lo que ya se descartó. Sin eso, cada ciclo empieza desde cero, con la misma IA, las mismas ideas y los mismos errores."
+  ],
+  "Exemplo aplicado: na imobiliária do corretor, em 2024 alguém testou \"mandar as fotos antes do preço\" e o resultado foi pior. Ninguém anotou. Em 2026, um corretor novo tem a mesma ideia, testa duas semanas e chega ao mesmo lugar. Custo: um mês de leads mal respondidos para reaprender o que a empresa já sabia. Com a Memória, a hipótese nem chega ao teste — o Otimizador a encontra em \"descartados\" com a data e o número.": [
+    "Applied example: at the agent’s real estate agency, someone tested “send the photos before the price” in 2024, and results got worse. No one recorded it. In 2026, a new agent has the same idea, tests it for two weeks, and reaches the same result. Cost: a month of poorly answered leads to relearn what the company already knew. With Memory, the hypothesis never reaches testing—the Optimizer finds it in “discarded,” with the date and number.",
+    "Ejemplo aplicado: en la inmobiliaria del agente, alguien probó en 2024 «enviar las fotos antes del precio» y el resultado empeoró. Nadie lo anotó. En 2026, un agente nuevo tiene la misma idea, la prueba durante dos semanas y llega al mismo resultado. Costo: un mes de contactos mal atendidos para reaprender lo que la empresa ya sabía. Con la Memoria, la hipótesis ni llega a probarse: el Optimizador la encuentra en «descartadas», con la fecha y la cifra."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "Três gavetas: aprendido, descartado, observado": [
+    "Three drawers: learned, discarded, observed",
+    "Tres cajones: aprendido, descartado, observado"
+  ],
+  "Toda hipótese termina numa de três gavetas.": [
+    "Every hypothesis ends up in one of three drawers.",
+    "Toda hipótesis termina en uno de tres cajones."
+  ],
+  "Aprendizados:": [
+    "Learned:",
+    "Aprendido:"
+  ],
+  "testou, ganhou, virou a versão oficial — com o número.": [
+    "tested, won, and became the official version—with the number.",
+    "se probó, ganó y se convirtió en la versión oficial, con la cifra."
+  ],
+  "Descartados:": [
+    "Discarded:",
+    "Descartado:"
+  ],
+  "testou e perdeu, ou foi vetada antes — com o motivo, para não voltar na mesma forma.": [
+    "tested and lost, or was vetoed beforehand—with the reason, so it does not return in the same form.",
+    "se probó y perdió, o se vetó antes, con el motivo para que no vuelva de la misma forma."
+  ],
+  "Observado, não testado:": [
+    "Observed, untested:",
+    "Observado, no probado:"
+  ],
+  "a evidência era fraca demais para virar hipótese; espera mais quantidade.": [
+    "the evidence was too weak to become a hypothesis; it waits for a larger sample.",
+    "la evidencia era demasiado débil para convertirse en hipótesis; espera a que haya más datos."
+  ],
+  "A terceira gaveta é a mais esquecida e a mais valiosa. É onde ficam os \"parece que\" — guardados sem virar regra, sem ser jogados fora. Quando a quantidade crescer, o Crítico reexamina.": [
+    "The third drawer is the most forgotten and the most valuable. It holds the “it seems” ideas—stored without turning them into rules or throwing them away. When the sample grows, the Critic reviews them again.",
+    "El tercer cajón es el más olvidado y el más valioso. Allí quedan las ideas que «parecen» ciertas, guardadas sin convertirlas en regla ni desecharlas. Cuando aumenten los datos, el Crítico las revisará."
+  ],
+  "Antes de ver a pasta do exemplo: são três listas de texto, uma por gaveta. Cada entrada tem data, ciclo e o número que a sustenta. Você só precisa saber ler as três etiquetas.": [
+    "Before looking at the example folder: these are three text lists, one per drawer. Each entry has a date, cycle, and supporting number. You only need to know how to read the three labels.",
+    "Antes de ver la carpeta del ejemplo: son tres listas de texto, una por cajón. Cada entrada incluye fecha, ciclo y la cifra que la sustenta. Solo tienes que saber leer las tres etiquetas."
+  ],
+  "Exemplo aplicado: depois dos quatro ciclos da clínica do exemplo, as gavetas ficaram assim. Aprendizados: \"abrir a proposta citando um ponto específico da avaliação da cliente\". Resposta de 19,3% para 29,3% com 300 de cada lado, guarda-corpos dentro, aprovada pela dona, virou versão 2. Descartados: a pergunta de escolha forçada (vetada) e o preço logo após a saudação (vetado). E o teto de 80 palavras, que ganhou na resposta e caiu na tolerância zero de reclamações. Observado, não testado: \"suavizar a abordagem no segmento de clientes pequenas\" — só 3 eventos, esperando volume.": [
+    "Applied example: after the clinic’s four cycles, the drawers looked like this. Learned: “open the proposal by mentioning one specific point from the client’s review.” Replies rose from 19.3% to 29.3% with 300 on each side, guardrails intact; the owner approved it, and it became version 2. Discarded: the forced-choice question (vetoed), the price right after the greeting (vetoed), and the 80-word limit, which won on replies but failed the zero-complaint tolerance. Observed, untested: “soften the approach for the small-client segment”—only 3 events, waiting for more volume.",
+    "Ejemplo aplicado: después de los cuatro ciclos de la clínica, los cajones quedaron así. Aprendido: «abrir la propuesta mencionando un punto concreto de la evaluación de la clienta». La respuesta subió del 19,3 % al 29,3 %, con 300 por grupo y los límites de seguridad respetados; la dueña lo aprobó y se convirtió en la versión 2. Descartado: la pregunta de elección forzada (vetada), el precio justo después del saludo (vetado) y el límite de 80 palabras, que ganó en respuestas pero excedió la tolerancia cero a las quejas. Observado, no probado: «suavizar el trato para el segmento de clientes pequeños»; solo 3 eventos, a la espera de más datos."
+  ],
+  "Erro comum": [
+    "Common mistake",
+    "Error frecuente"
+  ],
+  "Doze propostas viraram regra.": [
+    "Twelve proposals became a rule.",
+    "Doce propuestas se convirtieron en regla."
+  ],
+  "\"As propostas de terça convertem mais\" com 12 propostas vai para a gaveta \"observado, não testado\" — nunca para \"aprendizados\". Acontece porque um padrão em poucos casos parece nítido demais para ser sorte. Como evitar: nada entra em \"aprendizados\" sem um teste A contra B com a quantidade que prova. Palpite com poucos casos tem gaveta própria.": [
+    "“Tuesday proposals convert better,” based on 12 proposals, belongs in “observed, untested”—never in “learned.” A pattern in a few cases can look too clear to be luck. Avoid this by putting nothing in “learned” without an A/B test at the required sample size. Guesses based on few cases have their own drawer.",
+    "«Las propuestas del martes convierten más», con 12 propuestas, va al cajón «observado, no probado», nunca al de «aprendido». Un patrón con pocos casos puede parecer demasiado claro para ser casualidad. Para evitarlo, nada pasa a «aprendido» sin una prueba A/B con la cantidad necesaria. Las conjeturas con pocos casos tienen su propio cajón."
+  ],
+  "O histórico: uma linha por evento, e nunca se apaga": [
+    "The history: one row per event, never deleted",
+    "El historial: una línea por evento, nunca se borra"
+  ],
+  "Além das gavetas, a Memória mantém o histórico: uma linha por acontecimento, em ordem. Data, ciclo, hipótese, veredito com número, o que foi vigiado, quem decidiu, o que aconteceu com a versão, custo. Uma linha. Sem narrativa.": [
+    "Alongside the drawers, Memory keeps the history: one row per event, in order. Date, cycle, hypothesis, verdict with a number, what was monitored, who decided, what happened to the version, and cost. One row. No narrative.",
+    "Además de los cajones, la Memoria conserva el historial: una línea por acontecimiento, en orden. Fecha, ciclo, hipótesis, veredicto con cifra, qué se vigiló, quién decidió, qué ocurrió con la versión y costo. Una línea. Sin narración."
+  ],
+  "Esse histórico é o": [
+    "This history is the",
+    "Este historial es el"
+  ],
+  "histórico com botão de voltar": [
+    "version history with an undo button",
+    "historial con opción para volver atrás"
+  ],
+  "do seu processo. Cada versão oficial tem uma linha que diz de onde veio e por quê. Se a versão 2 começar a piorar, você volta para a 1 — e a volta também vira uma linha.": [
+    "for your process. Every official version has a row explaining where it came from and why. If version 2 starts getting worse, you go back to version 1—and that rollback gets its own row.",
+    "de tu proceso. Cada versión oficial tiene una línea que indica de dónde salió y por qué. Si la versión 2 empieza a empeorar, vuelves a la 1, y ese retroceso también queda registrado en una línea."
+  ],
+  "Exemplo aplicado: o gestor de suporte escreve a primeira linha do histórico dele assim: \"2026-09-10 · antes do loop · resposta padrão para 'não consigo exportar' reescrita com vídeo · 23 chamados numa semana, 3 reabriram, sem lado A para comparar · decidido por mim, sem teste · resposta antiga apagada — não há como voltar\". É uma linha honesta sobre um teste ruim. E é exatamente isso que impede o próximo gestor de repetir.": [
+    "Applied example: the support manager writes the first line of the history like this: “2026-09-10 · before the loop · standard reply to ‘I can’t export’ rewritten with a video · 23 tickets in one week, 3 reopened, no A side for comparison · decided by me, no test · old reply deleted—no way back.” It is an honest line about a bad test. That is exactly what keeps the next manager from repeating it.",
+    "Ejemplo aplicado: el responsable de soporte escribe así la primera línea del historial: «2026-09-10 · antes del ciclo · respuesta estándar a “no puedo exportar” reescrita con video · 23 tickets en una semana, 3 reabiertos, sin grupo A para comparar · decidido por mí, sin prueba · respuesta anterior borrada: no hay vuelta atrás». Es una línea honesta sobre una prueba deficiente. Y precisamente eso impide que el siguiente responsable la repita."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "A versão 2 foi promovida há 3 semanas e o \"sem piorar\" de reabertura subiu além da tolerância. O que a Memória registra?": [
+    "Version 2 was promoted 3 weeks ago, and the reopening guardrail rose beyond its tolerance. What does Memory record?",
+    "La versión 2 se promovió hace 3 semanas y el indicador de reaperturas superó su tolerancia. ¿Qué registra la Memoria?"
+  ],
+  "Uma linha nova: voltou para a versão 1, com o número que disparou a volta": [
+    "A new row: reverted to version 1, with the number that triggered the rollback",
+    "Una línea nueva: se volvió a la versión 1, con la cifra que motivó el retroceso"
+  ],
+  "Apaga a linha da promoção, já que a versão 2 não vale mais": [
+    "Delete the promotion row because version 2 is no longer in use",
+    "Borrar la línea de promoción porque la versión 2 ya no se usa"
+  ],
+  "Nada — espera para ver se a versão 2 se recupera": [
+    "Nothing—wait to see if version 2 recovers",
+    "Nada: esperar a ver si la versión 2 se recupera"
+  ],
+  "O ativo que a concorrência não copia": [
+    "The asset competitors cannot copy",
+    "El activo que la competencia no puede copiar"
+  ],
+  "Duas empresas usam o mesmo chat de IA, o mesmo modelo, o mesmo tipo de roteiro. Depois de um ano, o que as separa? Não é a IA — as duas têm a mesma. É o que cada uma sabe sobre os próprios clientes: o que já tentou, o que funcionou, o que falhou, para quem, com que custo. Isso é a memória do loop.": [
+    "Two companies use the same AI chat, model, and type of script. After a year, what sets them apart? Not the AI—they have the same one. It is what each knows about its own customers: what it tried, what worked, what failed, for whom, and at what cost. That is the loop’s memory.",
+    "Dos empresas usan el mismo chat de IA, el mismo modelo y el mismo tipo de guion. Después de un año, ¿qué las diferencia? No la IA: ambas tienen la misma. Las diferencia lo que cada una sabe de sus clientes: qué probó, qué funcionó, qué falló, para quién y a qué costo. Esa es la memoria del ciclo."
+  ],
+  "O LOOP-R chama isso de vantagem de aprendizado. A barreira competitiva deixa de ser \"quem tem mais dados\" e vira \"quem aprende mais rápido com o que já faz\". O nono assistente, o Meta-agente, olha para esse histórico e só relata: custo por ciclo, quantas hipóteses viraram versão. Ele não age. Você vai vê-lo na trilha 4.": [
+    "LOOP-R calls this a learning advantage. The competitive barrier stops being “who has more data” and becomes “who learns faster from what they already do.” The ninth assistant, the Meta-agent, looks at this history and only reports cost per cycle and how many hypotheses became versions. It does not act. You will see it in track 4.",
+    "LOOP-R lo llama ventaja de aprendizaje. La barrera competitiva deja de ser «quién tiene más datos» y pasa a ser «quién aprende más rápido de lo que ya hace». El noveno asistente, el Meta-agente, revisa el historial y solo informa del costo por ciclo y de cuántas hipótesis se convirtieron en versiones. No actúa. Lo verás en la ruta 4."
+  ],
+  "Exemplo aplicado: duas imobiliárias do mesmo bairro, com o mesmo chat de IA respondendo leads. A do corretor tem um histórico com 14 linhas: três versões de roteiro, cinco hipóteses descartadas com número, uma volta atrás registrada. A outra tem um roteiro que \"alguém melhorou\" três vezes sem anotar. Se o concorrente copiar o roteiro atual do corretor, leva a versão 3 — mas não leva as cinco ideias que já sabe que não funcionam. Vai testá-las uma a uma.": [
+    "Applied example: two real estate agencies in the same neighborhood use the same AI chat to reply to leads. The agent’s agency has a 14-row history: three script versions, five discarded hypotheses with numbers, and one recorded rollback. The other has a script that “someone improved” three times without a record. If the competitor copies the agent’s current script, it gets version 3—but not the five ideas already known not to work. It will test them one by one.",
+    "Ejemplo aplicado: dos inmobiliarias del mismo barrio usan el mismo chat de IA para responder a contactos. La del agente tiene un historial de 14 líneas: tres versiones del guion, cinco hipótesis descartadas con cifras y un retroceso registrado. La otra tiene un guion que «alguien mejoró» tres veces sin anotarlo. Si la competencia copia el guion actual del agente, se lleva la versión 3, pero no las cinco ideas que ya se sabe que no funcionan. Tendrá que probarlas una por una."
+  ],
+  "Como escrever a primeira linha do seu histórico": [
+    "How to write the first line of your history",
+    "Cómo escribir la primera línea del historial"
+  ],
+  "Data e marca \"antes do loop\":": [
+    "Date and the label “before the loop”:",
+    "Fecha y marca «antes del ciclo»:"
+  ],
+  "a primeira linha registra o que você já tentou antes de o loop existir — é o ponto de partida.": [
+    "the first row records what you tried before the loop existed—it is the starting point.",
+    "la primera línea registra lo que ya probaste antes de que existiera el ciclo: es el punto de partida."
+  ],
+  "O que foi tentado:": [
+    "What was tried:",
+    "Qué se probó:"
+  ],
+  "uma mudança, em uma frase (\"resposta padrão reescrita com vídeo\").": [
+    "one change, in one sentence (“standard reply rewritten with a video”).",
+    "un cambio, en una frase («respuesta estándar reescrita con video»)."
+  ],
+  "O que aconteceu, com número:": [
+    "What happened, with a number:",
+    "Qué ocurrió, con cifras:"
+  ],
+  "mesmo pequeno e mesmo sem lado A (\"23 chamados, 3 reabriram, sem comparação\").": [
+    "even if it is small and there was no A side (“23 tickets, 3 reopened, no comparison”).",
+    "aunque sea poco y no haya grupo A («23 tickets, 3 reabiertos, sin comparación»)."
+  ],
+  "Quem decidiu e o que aconteceu com a versão:": [
+    "Who decided and what happened to the version:",
+    "Quién decidió y qué ocurrió con la versión:"
+  ],
+  "\"decidido por mim, sem teste · versão antiga apagada\" ou \"mantida a antiga\".": [
+    "“decided by me, no test · old version deleted” or “old version kept.”",
+    "«decidido por mí, sin prueba · versión anterior borrada» o «se mantuvo la anterior»."
+  ],
+  "Em qual gaveta vai:": [
+    "Which drawer it goes in:",
+    "En qué cajón va:"
+  ],
+  "quase sempre \"observado, não testado\" — porque, antes do loop, quase nada foi testado de verdade.": [
+    "almost always “observed, untested”—because before the loop, almost nothing was truly tested.",
+    "casi siempre «observado, no probado», porque antes del ciclo casi nada se probó de verdad."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/4 feito": [
+    "0/4 complete",
+    "0/4 completados"
+  ],
+  "Escreva a primeira linha do histórico do seu loop": [
+    "Write the first line in your loop history",
+    "Escribe la primera línea del historial de tu ciclo"
+  ],
+  "Meta: em ~10 minutos, ter uma linha escrita sobre uma mudança que a sua empresa já fez no processo da ficha. Com o que aconteceu, um número, quem decidiu e a gaveta.": [
+    "Goal: in about 10 minutes, write one line about a change your company already made to the process on your worksheet. Include what happened, a number, who decided, and the drawer.",
+    "Meta: en unos 10 minutos, escribe una línea sobre un cambio que tu empresa ya hizo en el proceso de la ficha. Incluye qué ocurrió, una cifra, quién decidió y el cajón correspondiente."
+  ],
+  "É seguro: você está anotando o passado, não mudando nada — nada muda no seu negócio até você aprovar. Se não lembrar de um número exato, escreva o que lembra e marque \"aproximado\"; uma linha honesta com número aproximado vale mais que nenhuma linha.": [
+    "This is safe: you are recording the past, not changing anything—nothing in your business changes until you approve it. If you cannot remember the exact number, write what you remember and label it “approximate”; an honest line with an approximate number is better than no line.",
+    "Es seguro: estás registrando el pasado, no cambiando nada; nada cambia en tu negocio hasta que lo apruebes. Si no recuerdas una cifra exacta, anota lo que recuerdes y marca «aproximado»: una línea honesta con una cifra aproximada vale más que no tener ninguna."
+  ],
+  "Exemplo de resultado aceitável": [
+    "Example of an acceptable result",
+    "Ejemplo de resultado aceptable"
+  ],
+  "(uma linha do histórico da clínica do exemplo, traduzida):": [
+    "(one line from the example clinic’s history, translated):",
+    "(una línea del historial de la clínica del ejemplo, traducida):"
+  ],
+  "2026-07-27 · ciclo 4 · \"abrir citando um ponto da avaliação da cliente\" · B ganhou: resposta 19,3% → 29,3% com 300 de cada lado · vigiados: margem ok, reclamações 4 contra 2 (dentro), pedidos para sair 1 contra 3 (dentro) · aprovada pela dona · virou a versão oficial 2 · gaveta: aprendizados.": [
+    "2026-07-27 · cycle 4 · “open by mentioning one point from the client’s review” · B won: replies 19.3% → 29.3% with 300 per side · monitored: margin OK, complaints 4 vs. 2 (within tolerance), opt-outs 1 vs. 3 (within tolerance) · approved by the owner · became official version 2 · drawer: learned.",
+    "2026-07-27 · ciclo 4 · «abrir mencionando un punto de la evaluación de la clienta» · B ganó: respuestas del 19,3 % → 29,3 % con 300 por grupo · vigilado: margen correcto, quejas 4 frente a 2 (dentro de tolerancia), bajas 1 frente a 3 (dentro de tolerancia) · aprobada por la dueña · pasó a ser la versión oficial 2 · cajón: aprendido."
+  ],
+  "Escolhi uma mudança real que já aconteceu no processo da minha ficha (um texto, um roteiro, uma regra). Escrevi a data aproximada e a mudança em uma frase.": [
+    "I chose a real change already made to the process on my worksheet (a message, script, or rule). I wrote the approximate date and described the change in one sentence.",
+    "Elegí un cambio real que ya ocurrió en el proceso de mi ficha (un texto, un guion o una regla). Anoté la fecha aproximada y describí el cambio en una frase."
+  ],
+  "Escrevi o que aconteceu depois, com pelo menos um número — e disse se havia ou não um lado A rodando junto para comparar.": [
+    "I wrote what happened afterward, with at least one number, and said whether an A side was running alongside it for comparison.",
+    "Anoté qué ocurrió después, con al menos una cifra, e indiqué si había o no un grupo A en paralelo para comparar."
+  ],
+  "Escrevi quem decidiu e o que aconteceu com a versão anterior (mantida, apagada, guardada).": [
+    "I wrote who decided and what happened to the previous version (kept, deleted, or stored).",
+    "Anoté quién decidió y qué ocurrió con la versión anterior (se mantuvo, se borró o se guardó)."
+  ],
+  "Coloquei a linha numa das três gavetas e justifiquei a escolha em meia frase. Está pronta quando outra pessoa da equipe lê a linha e entende sem me perguntar nada.": [
+    "I put the row in one of the three drawers and justified the choice in half a sentence. It is ready when another team member can understand it without asking me anything.",
+    "Puse la línea en uno de los tres cajones y justifiqué la elección en media frase. Está lista cuando otra persona del equipo la entiende sin tener que preguntarme nada."
+  ],
+  "Você acabou de escrever a primeira linha do histórico do seu loop. É o começo do ativo que nenhuma outra empresa com a mesma IA consegue copiar.": [
+    "You have just written the first line in your loop history. It is the beginning of an asset no other company using the same AI can copy.",
+    "Acabas de escribir la primera línea del historial del ciclo. Es el comienzo de un activo que ninguna otra empresa con la misma IA puede copiar."
+  ],
+  "Fig. 1": [
+    "Fig. 1",
+    "Fig. 1"
+  ],
+  "Fig. 2": [
+    "Fig. 2",
+    "Fig. 2"
+  ],
+  "Fig. 3": [
+    "Fig. 3",
+    "Fig. 3"
+  ],
+  "Fig. 4": [
+    "Fig. 4",
+    "Fig. 4"
+  ],
+  "ciclo 1": [
+    "cycle 1",
+    "ciclo 1"
+  ],
+  "ciclo 2": [
+    "cycle 2",
+    "ciclo 2"
+  ],
+  "ciclo 3": [
+    "cycle 3",
+    "ciclo 3"
+  ],
+  "mesma ideia, mesmo resultado, três vezes": [
+    "same idea, same result, three times",
+    "misma idea, mismo resultado, tres veces"
+  ],
+  "c1": [
+    "c1",
+    "c1"
+  ],
+  "c2 lê c1": [
+    "c2 reads c1",
+    "c2 lee c1"
+  ],
+  "c3 lê c1, c2": [
+    "c3 reads c1, c2",
+    "c3 lee c1, c2"
+  ],
+  "memória": [
+    "memory",
+    "memoria"
+  ],
+  "MEMÓRIA": [
+    "MEMORY",
+    "MEMORIA"
+  ],
+  "arquiva": [
+    "archives",
+    "archiva"
+  ],
+  "APRENDIZADOS": [
+    "LEARNED",
+    "APRENDIDO"
+  ],
+  "testou e ganhou · virou v2": [
+    "tested and won · became v2",
+    "se probó y ganó · pasó a v2"
+  ],
+  "DESCARTADOS": [
+    "DISCARDED",
+    "DESCARTADO"
+  ],
+  "perdeu ou vetada · não volta": [
+    "lost or vetoed · does not return",
+    "perdió o fue vetada · no vuelve"
+  ],
+  "OBSERVADO, NÃO TESTADO": [
+    "OBSERVED, UNTESTED",
+    "OBSERVADO, NO PROBADO"
+  ],
+  "evidência fraca · espera quantidade": [
+    "weak evidence · waiting for sample",
+    "evidencia débil · espera más datos"
+  ],
+  "data · ciclo · hipótese · veredito · versão": [
+    "date · cycle · hypothesis · verdict · version",
+    "fecha · ciclo · hipótesis · veredicto · versión"
+  ],
+  "02/02 · c1 · pergunta de escolha · vetada": [
+    "02/02 · c1 · forced-choice question · vetoed",
+    "02/02 · c1 · pregunta de elección · vetada"
+  ],
+  "27/04 · c2 · ≤80 palavras · A segue · descartada": [
+    "27/04 · c2 · ≤80 words · A stays · discarded",
+    "27/04 · c2 · ≤80 palabras · A sigue · descartada"
+  ],
+  "04/05 · c3 · preço após saudação · vetada": [
+    "04/05 · c3 · price after greeting · vetoed",
+    "04/05 · c3 · precio tras el saludo · vetada"
+  ],
+  "27/07 · c4 · cita a avaliação · B ganhou · v2": [
+    "27/07 · c4 · mention the review · B won · v2",
+    "27/07 · c4 · mencionar la evaluación · B ganó · v2"
+  ],
+  "(se cair) · c5 · voltou para v1 · motivo": [
+    "(if it falls) · c5 · reverted to v1 · reason",
+    "(si cae) · c5 · volvió a v1 · motivo"
+  ],
+  "apagar: nunca": [
+    "delete: never",
+    "borrar: nunca"
+  ],
+  "mesma IA": [
+    "same AI",
+    "misma IA"
+  ],
+  "roteiro v3": [
+    "script v3",
+    "guion v3"
+  ],
+  "roteiro v3 (copiado)": [
+    "script v3 (copied)",
+    "guion v3 (copiado)"
+  ],
+  "14 linhas: o que já sabe": [
+    "14 rows: what it already knows",
+    "14 líneas: lo que ya sabe"
+  ],
+  "vazio": [
+    "empty",
+    "vacío"
+  ],
+  "vai testar tudo de novo": [
+    "will test everything again",
+    "volverá a probarlo todo"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "A Memória fecha o ciclo: uma linha no histórico por acontecimento e cada hipótese numa de três gavetas — aprendido, descartado, observado sem teste.": [
+    "Memory closes the loop: one row in the history per event, and each hypothesis in one of three drawers—learned, discarded, or observed without testing.",
+    "La Memoria cierra el ciclo: una línea del historial por acontecimiento y cada hipótesis en uno de tres cajones: aprendido, descartado u observado sin probar."
+  ],
+  "Ela nunca apaga. A volta atrás é uma linha nova ao lado da promoção, não uma borracha sobre ela.": [
+    "It never deletes anything. A rollback is a new row beside the promotion, not an eraser over it.",
+    "Nunca borra nada. El retroceso es una línea nueva junto a la promoción, no una goma de borrar."
+  ],
+  "A terceira gaveta guarda os palpites com poucos casos sem deixá-los virar regra nem jogá-los fora.": [
+    "The third drawer stores guesses based on few cases without turning them into rules or throwing them away.",
+    "El tercer cajón guarda conjeturas con pocos casos sin convertirlas en reglas ni descartarlas."
+  ],
+  "Com o mesmo modelo de IA, o que separa duas empresas depois de um ano é essa coluna de linhas. Ela não se copia junto com o roteiro.": [
+    "With the same AI model, this column of rows is what separates two companies after a year. It cannot be copied along with the script.",
+    "Con el mismo modelo de IA, esta columna de líneas es lo que diferencia a dos empresas después de un año. No se copia junto con el guion."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de escrever a primeira linha do histórico do seu loop — e, com a aula anterior, fechou a resposta 3 da ficha.": [
+    "You have just written the first line in your loop history—and, together with the previous lesson, completed answer 3 on the worksheet.",
+    "Acabas de escribir la primera línea del historial del ciclo y, junto con la clase anterior, completaste la respuesta 3 de la ficha."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: pergunte à equipe \"o que a gente já tentou nesse processo e não deu certo?\". Cada resposta vira uma linha na gaveta \"descartados\" ou \"observado, não testado\" — com o número que ela lembrar.": [
+    "Over the next 15 minutes, in your actual work, ask the team, “What have we already tried in this process that did not work?” Each answer becomes a row in “discarded” or “observed, untested,” with whatever number they remember.",
+    "Durante los próximos 15 minutos, en tu trabajo real, pregunta al equipo: «¿Qué ya intentamos en este proceso y no funcionó?». Cada respuesta se convierte en una línea del cajón «descartado» u «observado, no probado», con la cifra que recuerden."
+  ],
+  "Na próxima trilha, você resolve a pergunta que todo loop precisa responder antes de mudar qualquer coisa: como medir de verdade. A quantidade que prova, a lista de conferência sim/não, o cartão de decisão — e o que o LOOP-R não garante.": [
+    "In the next track, you will answer the question every loop must address before changing anything: how to measure for real. The sample size needed for proof, the yes/no checklist, the decision card—and what LOOP-R does not guarantee.",
+    "En la próxima ruta responderás la pregunta que todo ciclo debe resolver antes de cambiar nada: cómo medir de verdad. La cantidad necesaria para demostrarlo, la lista de comprobación sí/no, la tarjeta de decisión y lo que LOOP-R no garantiza."
+  ],
+  "← anterior: o Guardião": [
+    "← previous: the Guardian",
+    "← anterior: el Guardián"
+  ],
+  "concluir trilha 3 →": [
+    "complete track 3 →",
+    "completar la ruta 3 →"
+  ],
+  "Aula 3.4 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 3.4 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 3.4 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "O assistente que registra cada ciclo em uma linha do histórico e guarda cada hipótese numa de três gavetas. Nunca apaga, nunca resume a ponto de perder o porquê.": [
+    "The assistant that records each cycle as one history row and stores each hypothesis in one of three drawers. It never deletes anything or summarizes so much that the reason is lost.",
+    "El asistente que registra cada ciclo en una línea del historial y guarda cada hipótesis en uno de tres cajones. Nunca borra ni resume tanto que se pierda el motivo."
+  ],
+  "O registro de todas as versões do processo, com o que mudou e quando. Dá para voltar à versão anterior num único passo, como o 'desfazer' de um editor de texto.": [
+    "The record of every process version, showing what changed and when. You can return to a previous version in one step, like “undo” in a text editor.",
+    "El registro de todas las versiones del proceso, con qué cambió y cuándo. Puedes volver a la versión anterior en un solo paso, como la opción «deshacer» de un editor de texto."
+  ],
+  "Certo. A volta para a versão 1 é um evento como qualquer outro: ganha uma linha, com a data, o número que disparou e quem decidiu. A linha da promoção continua lá — nada se apaga.": [
+    "Correct. Returning to version 1 is an event like any other: it gets a row with the date, the triggering number, and who decided. The promotion row stays—nothing is deleted.",
+    "Correcto. Volver a la versión 1 es un evento como cualquier otro: se registra una línea con la fecha, la cifra que lo desencadenó y quién decidió. La línea de promoción sigue ahí; nada se borra."
+  ],
+  "Apagar é a única coisa que a Memória nunca faz. Sem a linha da promoção, ninguém saberá que a versão 2 já foi tentada e por que caiu.": [
+    "Deleting is the one thing Memory never does. Without the promotion row, no one will know version 2 was tried or why it failed.",
+    "Borrar es lo único que la Memoria nunca hace. Sin la línea de promoción, nadie sabrá que se probó la versión 2 ni por qué cayó."
+  ],
+  "A Memória registra; ela não julga se a volta é definitiva. E a hipótese não vai para 'descartados' por sentimento — vai com o número da queda, e pode ser reexaminada.": [
+    "Memory records; it does not judge whether the rollback is permanent. The hypothesis does not go into “discarded” based on a feeling—it goes there with the failure number and can be reviewed again.",
+    "La Memoria registra; no juzga si el retroceso es definitivo. La hipótesis no pasa a «descartadas» por una impresión: va con la cifra de la caída y puede revisarse de nuevo."
+  ],
+  "<b>Fig. 1</b> — Sem memória (em cima), o ciclo 2 recomeça no mesmo ponto do ciclo 1. Com memória (embaixo), cada ciclo lê o anterior antes de propor: o caminho sobe em vez de rodar em círculo.": [
+    "<b>Fig. 1</b> — Without memory (top), cycle 2 starts where cycle 1 did. With memory (bottom), each cycle reads the previous one before proposing changes: the path climbs instead of circling.",
+    "<b>Fig. 1</b> — Sin memoria (arriba), el ciclo 2 empieza donde empezó el ciclo 1. Con memoria (abajo), cada ciclo lee el anterior antes de proponer: el camino asciende en lugar de girar en círculos."
+  ],
+  "<b>Fig. 2</b> — Toda hipótese sai do ciclo por uma de três portas. A do meio (descartados) é lida pelo Otimizador antes de propor; a de baixo (observado) é relida pelo Crítico quando a quantidade cresce.": [
+    "<b>Fig. 2</b> — Every hypothesis leaves the cycle through one of three doors. The middle one (discarded) is checked by the Optimizer before proposing; the bottom one (observed) is reviewed by the Critic when the sample grows.",
+    "<b>Fig. 2</b> — Toda hipótesis sale del ciclo por una de tres puertas. El Optimizador consulta la del medio (descartadas) antes de proponer; el Crítico vuelve a revisar la de abajo (observado) cuando aumenta la cantidad de datos."
+  ],
+  "<b>Fig. 3</b> — O histórico é uma tabela que só cresce para baixo. A linha da promoção (v2) e a linha da volta (v1 de novo) coexistem: a seta de retorno é um evento novo, não uma borracha.": [
+    "<b>Fig. 3</b> — The history is a table that only grows downward. The promotion row (v2) and the rollback row (back to v1) coexist: the return arrow is a new event, not an eraser.",
+    "<b>Fig. 3</b> — El historial es una tabla que solo crece hacia abajo. La línea de promoción (v2) y la del retroceso (de nuevo a v1) coexisten: volver es un evento nuevo, no un borrón."
+  ],
+  "<b>Fig. 4</b> — Duas empresas com o mesmo modelo de IA. O que se copia (o roteiro atual) é a caixa de cima. O que não se copia é a coluna de linhas embaixo dela — e é a coluna que decide a próxima versão.": [
+    "<b>Fig. 4</b> — Two companies use the same AI model. What can be copied (the current script) is the top box. What cannot be copied is the column of history rows beneath it—and that column determines the next version.",
+    "<b>Fig. 4</b> — Dos empresas usan el mismo modelo de IA. Lo que se puede copiar (el guion actual) es la caja superior. Lo que no se copia es la columna de líneas del historial debajo, y esa columna determina la siguiente versión."
+  ],
+  "Decisão: o Otimizador do corretor quer propor \"mandar as fotos antes do preço\". Onde ele olha antes de escrever, e o que acontece se encontrar a ideia lá?": [
+    "Decision: the real estate agent’s Optimizer wants to suggest “send the photos before the price.” Where does it look before writing, and what happens if it finds the idea there?",
+    "Decisión: el Optimizador del agente inmobiliario quiere proponer «enviar las fotos antes del precio». ¿Dónde consulta antes de escribir y qué pasa si encuentra allí la idea?"
+  ],
+  "Na gaveta \"descartados\". Se a ideia está lá, com data e número, ela não volta na mesma forma — a hipótese nem é escrita. Se estiver em \"observado, não testado\", pode voltar quando a quantidade crescer.": [
+    "In the “discarded” drawer. If the idea is there with a date and number, it cannot return in the same form—the hypothesis is not even written. If it is in “observed, not tested,” it can return when the sample grows.",
+    "En el cajón de «descartados». Si la idea está allí con fecha y cifra, no vuelve en la misma forma: ni siquiera se escribe la hipótesis. Si está en «observado, no probado», puede volver cuando aumente la muestra."
+  ],
+  "Diagnóstico: uma entrada em \"aprendizados\" diz \"terça converte mais — 4 de 12\". O que está errado?": [
+    "Diagnosis: an entry in “learnings” says “Tuesdays convert better—4 out of 12.” What is wrong?",
+    "Diagnóstico: una entrada en «aprendizajes» dice «los martes convierten más: 4 de 12». ¿Qué está mal?"
+  ],
+  "Entrou na gaveta errada. 12 casos sem teste A contra B é palpite, não aprendizado — o lugar é \"observado, não testado\". Aprendizados só recebem o que passou por teste com a quantidade que prova.": [
+    "It went in the wrong drawer. Twelve cases without an A/B test are a guess, not a learning—that belongs in “observed, not tested.” Learnings only include results from tests with the required sample size.",
+    "Está en el cajón equivocado. Doce casos sin una prueba A/B son una conjetura, no un aprendizaje: van en «observado, no probado». Los aprendizajes solo incluyen resultados de pruebas con la muestra necesaria."
+  ],
+  "Aplicação: o gestor de suporte quer registrar um teste antigo do qual só lembra \"uns 20 chamados, poucos reabriram\". O que ele escreve?": [
+    "Application: the support manager wants to record an old test and only remembers “about 20 tickets, few reopened.” What should be written?",
+    "Aplicación: el responsable de soporte quiere registrar una prueba antigua y solo recuerda «unos 20 tickets, pocos se reabrieron». ¿Qué escribe?"
+  ],
+  "A linha mesmo assim, marcando \"aproximado\" e \"sem lado A para comparar\", na gaveta \"observado, não testado\". Uma linha honesta com número vago vale mais que a ideia perdida — e impede repetir o teste sem saber.": [
+    "Record it anyway, marked “approximate” and “no A side for comparison,” in the “observed, not tested” drawer. An honest entry with an imprecise number is better than losing the idea—and prevents repeating the test unknowingly.",
+    "Registra la línea igualmente, como «aproximada» y «sin grupo A para comparar», en «observado, no probado». Una nota honesta con una cifra imprecisa vale más que perder la idea y evita repetir la prueba sin saberlo."
+  ],
+  "Contraste: o que a Memória escreve quando a versão 2 é promovida, e o que escreve quando a versão 2 cai e volta para a 1?": [
+    "Contrast: what does Memory record when version 2 is promoted, and what does it record when version 2 fails and returns to version 1?",
+    "Contraste: ¿qué registra la Memoria cuando se promueve la versión 2 y qué registra cuando la versión 2 falla y se vuelve a la 1?"
+  ],
+  "Duas linhas diferentes, uma embaixo da outra: a da promoção (veredito, número, quem aprovou) e a da volta (data, o \"sem piorar\" que disparou, quem decidiu). A primeira não é apagada nem editada.": [
+    "Two separate entries, one below the other: the promotion (verdict, metric, approver) and the rollback (date, the guardrail that triggered it, who decided). The first entry is never deleted or edited.",
+    "Dos registros distintos, uno debajo del otro: la promoción (veredicto, cifra, quién aprobó) y la reversión (fecha, indicador que la activó, quién decidió). El primer registro no se borra ni se edita."
+  ],
+  "Pergunta: por que copiar o roteiro atual de um concorrente não copia a vantagem dele?": [
+    "Question: why does copying a competitor’s current script not copy their advantage?",
+    "Pregunta: ¿por qué copiar el guion actual de un competidor no copia su ventaja?"
+  ],
+  "Porque o roteiro é só a versão de hoje. A vantagem está nas linhas que dizem o que já foi tentado e falhou, para quem, com que custo — e isso o concorrente vai ter que redescobrir, um teste de cada vez.": [
+    "Because the script is only today’s version. The advantage is in the entries showing what has already been tried and failed, for whom, and at what cost—and a competitor would have to rediscover that one test at a time.",
+    "Porque el guion es solo la versión de hoy. La ventaja está en los registros de lo que ya se probó y falló, con quién y a qué costo; el competidor tendría que redescubrirlo prueba a prueba."
+  ]
+}

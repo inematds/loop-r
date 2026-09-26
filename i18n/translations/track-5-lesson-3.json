@@ -1,0 +1,690 @@
+{
+  "Trilha 05 · Aula 3 · ferramenta · entrega final": [
+    "Track 05 · Lesson 3 · tool · final deliverable",
+    "Ruta 05 · Clase 3 · herramienta · entrega final"
+  ],
+  "Seu loop,": [
+    "Your loop,",
+    "Tu ciclo,"
+  ],
+  "montado": [
+    "assembled",
+    "montado"
+  ],
+  "Ao fim desta aula você entrega a ficha do seu loop com as cinco respostas preenchidas e um cartão de decisão pronto para a primeira semana — e alguém da sua equipe consegue lê-los sem você explicar.": [
+    "By the end of this lesson, you will hand in your loop worksheet with all five answers filled in and a decision card ready for week one—and someone on your team will be able to read them without your explanation.",
+    "Al terminar esta clase, entregarás la ficha de tu ciclo con las cinco respuestas completas y una tarjeta de decisión lista para la primera semana; alguien de tu equipo podrá leerlas sin que tengas que explicarlas."
+  ],
+  "Quatro trilhas produziram cinco respostas espalhadas em anotações diferentes. Hoje elas viram uma ficha só, e a ficha vira o primeiro ciclo. Sem isso, o curso termina como a IA termina: uma resposta boa, e fim.": [
+    "Four tracks produced five answers scattered across different notes. Today they become one worksheet, and the worksheet becomes the first cycle. Without it, the course ends the way AI does: one good answer, and that is all.",
+    "Cuatro rutas produjeron cinco respuestas repartidas en distintas notas. Hoy se reúnen en una sola ficha, y la ficha da inicio al primer ciclo. Sin ella, el curso termina como termina la IA: una respuesta buena y nada más."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "a ficha do loop — cinco linhas": [
+    "the loop worksheet — five lines",
+    "la ficha del ciclo: cinco líneas"
+  ],
+  "01": [
+    "01",
+    "01"
+  ],
+  "As cinco respostas já existem — você as escreveu": [
+    "The five answers already exist—you wrote them",
+    "Las cinco respuestas ya existen: tú las escribiste"
+  ],
+  "A ficha do loop não pede nada novo. Cada uma das cinco perguntas foi respondida numa aula anterior, e o trabalho de hoje é juntar. Objetivo com número: trilha 2, aula 1. Onde nasce a evidência: trilha 2, aula 3. O que nunca muda sozinho: trilha 3, aula 3. Teto de custo e tempo, e quem aprova: trilha 4, aula 4. Se alguma ficou em branco, volte lá — a ficha com quatro respostas não é \"quase pronta\", é insegura, porque o sistema vai inferir a que falta.": [
+    "The loop worksheet asks for nothing new. Each of its five questions was answered in an earlier lesson; today’s task is to bring them together. A numbered goal: Track 2, Lesson 1. Where evidence comes from: Track 2, Lesson 3. What never changes on its own: Track 3, Lesson 3. Cost and time ceilings, and who approves: Track 4, Lesson 4. If any answer is blank, go back—the worksheet with four answers is not “almost ready”; it is unsafe because the system will infer the missing one.",
+    "La ficha del ciclo no pide nada nuevo. Cada una de sus cinco preguntas se respondió en una clase anterior; hoy toca reunirlas. Objetivo con cifra: Ruta 2, clase 1. De dónde salen las pruebas: Ruta 2, clase 3. Lo que nunca cambia por sí solo: Ruta 3, clase 3. Límites de costo y tiempo, y quién aprueba: Ruta 4, clase 4. Si algo quedó en blanco, vuelve a esa clase: una ficha con cuatro respuestas no está «casi lista», es insegura porque el sistema inferirá la que falta."
+  ],
+  "Paulo, corretor de imóveis, chegou aqui com isto nas anotações: leads do portal que respondem em 24 horas, de 25% para 35%; a planilha do portal, uma linha por lead, cerca de 80 por semana; nunca prometer valor de avaliação, nunca contatar depois das 21h, nunca prometer exclusividade; até R$ 30 por semana, ciclo semanal; ele aprova, com cinco dias para responder. Cinco frases. É a ficha inteira.": [
+    "Paulo, a real estate agent, arrived with these notes: portal leads who reply within 24 hours, from 25% to 35%; the portal spreadsheet, one row per lead, about 80 a week; never promise an appraised value, contact anyone after 9 p.m., or promise exclusivity; up to R$ 30 per week, weekly cycle; he approves, with five days to respond. Five statements. That is the whole worksheet.",
+    "Paulo, agente inmobiliario, llegó con estas notas: contactos del portal que responden en 24 horas, del 25 % al 35 %; hoja del portal, una fila por contacto, unos 80 por semana; nunca prometer un valor de tasación, contactar después de las 21 h ni prometer exclusividad; hasta R$ 30 por semana, ciclo semanal; él aprueba y tiene cinco días para responder. Cinco frases. Esa es toda la ficha."
+  ],
+  "Por que só cinco? Porque são as cinco coisas que nenhum sistema consegue inferir com segurança: o que você quer, onde está o registro, o que é proibido, quanto pode gastar e quem assina.": [
+    "Why only five? Because they are the five things no system can safely infer: what you want, where the record is, what is forbidden, how much you can spend, and who signs off.",
+    "¿Por qué solo cinco? Porque son las cinco cosas que ningún sistema puede inferir con seguridad: qué quieres, dónde está el registro, qué está prohibido, cuánto puedes gastar y quién da el visto bueno."
+  ],
+  "As três fichas, lado a lado": [
+    "The three worksheets, side by side",
+    "Las tres fichas, una al lado de la otra"
+  ],
+  "Clínica de estética:": [
+    "Beauty clinic:",
+    "Clínica estética:"
+  ],
+  "conversão de propostas 3% → 5% · planilha, 1 linha por proposta, 50/semana · nunca desconto acima de 10%, prometer resultado, contatar quem saiu, citar concorrente · R$ 50 por semana · a dona aprova, 7 dias.": [
+    "proposal conversion 3% → 5% · spreadsheet, 1 row per proposal, 50/week · never discount over 10%, promise a result, contact someone who opted out, or mention a competitor · R$ 50/week · the owner approves, 7 days.",
+    "conversión de propuestas 3 % → 5 % · hoja de cálculo, 1 fila por propuesta, 50/semana · nunca ofrecer más del 10 % de descuento, prometer resultados, contactar a quien se dio de baja ni mencionar a un competidor · R$ 50 por semana · la dueña aprueba, 7 días."
+  ],
+  "Corretor de imóveis:": [
+    "Real estate agent:",
+    "Agente inmobiliario:"
+  ],
+  "leads que respondem em 24 h, 25% → 35% · planilha do portal, 1 linha por lead, 80/semana · nunca prometer valor de avaliação, contatar após 21h, prometer exclusividade · R$ 30 por semana · ele aprova, 5 dias.": [
+    "leads who reply within 24 h, 25% → 35% · portal spreadsheet, 1 row per lead, 80/week · never promise an appraised value, contact after 9 p.m., or promise exclusivity · R$ 30/week · he approves, 5 days.",
+    "contactos que responden en 24 h, 25 % → 35 % · hoja del portal, 1 fila por contacto, 80/semana · nunca prometer un valor de tasación, contactar después de las 21 h ni prometer exclusividad · R$ 30 por semana · él aprueba, 5 días."
+  ],
+  "Gestor de suporte:": [
+    "Support manager:",
+    "Responsable de soporte:"
+  ],
+  "resolução no 1º contato 55% → 65% · sistema de chamados, 1 linha por chamado, 200/semana · nunca prometer prazo de correção, encerrar sem resposta do cliente, mudar preço · R$ 80 por semana · ele aprova, 3 dias.": [
+    "first-contact resolution 55% → 65% · ticketing system, 1 row per ticket, 200/week · never promise a fix deadline, close without the customer’s reply, or change the price · R$ 80/week · he approves, 3 days.",
+    "resolución en el primer contacto 55 % → 65 % · sistema de tickets, 1 fila por ticket, 200/semana · nunca prometer un plazo de solución, cerrar sin respuesta del cliente ni cambiar el precio · R$ 80 por semana · él aprueba, 3 días."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "02": [
+    "02",
+    "02"
+  ],
+  "O que o sistema propõe e você só confirma": [
+    "What the system proposes and you only confirm",
+    "Lo que propone el sistema y tú solo confirmas"
+  ],
+  "Depois das cinco respostas, a ficha ganha uma segunda metade que você não escreve — lê e confirma. A métrica-sinal: se o seu alvo é uma taxa perto de 3%, o sistema propõe testar algo mais rápido e vigiar o alvo de longe, como fez com a clínica. A quantidade que prova, calculada para o seu número e o seu ritmo: \"este teste precisa de cerca de 300 por versão; no seu ritmo, seis semanas\". As vigiadas com tolerância, sugeridas pelo tipo de negócio. Em vendas: margem, reclamações e pedidos de saída. Em atendimento: satisfação e reabertura. E o gatilho de voltar atrás: no primeiro ciclo depois de uma promoção, se o número ou qualquer vigiada cair além da tolerância, o cartão avisa.": [
+    "After the five answers, the worksheet gets a second half that you do not write—you read and confirm it. The signal metric: if your target is a rate near 3%, the system suggests testing something faster and monitoring the target from a distance, as it did for the clinic. The sample size needed for proof, calculated for your metric and pace: “this test needs about 300 per version; at your pace, six weeks.” Guardrails with tolerances, suggested for your type of business. Sales: margin, complaints, and opt-outs. Support: satisfaction and reopenings. And the rollback trigger: in the first cycle after a promotion, if the number or any guardrail falls beyond tolerance, the card alerts you.",
+    "Después de las cinco respuestas, la ficha recibe una segunda mitad que tú no escribes: la lees y la confirmas. La métrica de señal: si tu objetivo es una tasa cercana al 3 %, el sistema propone probar algo más rápido y vigilar el objetivo a distancia, como hizo con la clínica. La cantidad necesaria para demostrarlo, calculada según tu cifra y tu ritmo: «esta prueba necesita unas 300 por versión; a tu ritmo, seis semanas». Indicadores con tolerancias sugeridas para tu negocio. En ventas: margen, quejas y bajas. En atención: satisfacción y reaperturas. Y el activador de reversión: en el primer ciclo después de una promoción, si la cifra o algún indicador cae más allá de la tolerancia, la tarjeta avisa."
+  ],
+  "Para Paulo, o sistema propôs: métrica-sinal é a própria taxa de resposta em 24 horas (já é rápida); quantidade que prova, cerca de 300 leads por versão, quatro semanas no ritmo dele; vigiadas, visitas agendadas com tolerância de 0,02 e reclamações no portal com 0,01. Ele conferiu as tolerâncias contra a lição da clínica e confirmou. Cinco minutos.": [
+    "For Paulo, the system proposed a signal metric: the reply rate within 24 hours itself (already fast); a sample size of about 300 leads per version, four weeks at his pace; guardrails of booked visits with a 0.02 tolerance and portal complaints with 0.01. He checked the tolerances against the clinic lesson and confirmed them. Five minutes.",
+    "Para Paulo, el sistema propuso como métrica de señal la propia tasa de respuesta en 24 horas (ya es rápida); unas 300 oportunidades por versión, cuatro semanas a su ritmo; e indicadores de visitas concertadas con tolerancia de 0,02 y quejas en el portal con 0,01. Comparó las tolerancias con la clase de la clínica y las confirmó. Cinco minutos."
+  ],
+  "Um aviso para quem confirma: leia a definição da métrica palavra por palavra. \"Respondeu\" tem que excluir \"respondeu pedindo para parar\", senão o loop aprende a provocar. E se a dona da clínica de estética quiser apertar uma tolerância depois, faz isso pelo cartão, com registro — nunca no meio de um teste.": [
+    "A note for anyone confirming: read the metric definition word for word. “Replied” must exclude “replied asking us to stop,” or the loop learns to provoke people. And if the clinic owner later wants to tighten a tolerance, she does it through the card, with a record—never midway through a test.",
+    "Una advertencia para quien confirma: lee la definición de la métrica palabra por palabra. «Respondió» debe excluir «respondió pidiendo que dejáramos de escribir», o el ciclo aprenderá a provocar. Y si la dueña de la clínica quiere ajustar una tolerancia más adelante, lo hace mediante la tarjeta y queda registrado; nunca a mitad de una prueba."
+  ],
+  "03": [
+    "03",
+    "03"
+  ],
+  "A primeira semana: a resposta mais comum é \"ainda não dá para saber\"": [
+    "The first week: the most common answer is “we cannot tell yet”",
+    "La primera semana: la respuesta más habitual es «todavía no se puede saber»"
+  ],
+  "O primeiro ciclo roda sobre a planilha que você já tem. O Observador conta. Se houver menos de 30 linhas por padrão que o Crítico quiser afirmar, ele não afirma — registra como \"observado, não testado\" e espera a planilha crescer. O Otimizador propõe até três ideias no formato SE… ENTÃO… PORQUE, com a força da evidência marcada. O Guardião veta o que tocar no \"nunca muda\". O Experimentador mostra a conta e o prazo. E o Avaliador, no primeiro ciclo, quase sempre responde: AMOSTRA INSUFICIENTE — continue.": [
+    "The first cycle runs on the spreadsheet you already have. The Observer counts. If there are fewer than 30 rows for a pattern the Critic wants to claim, it does not claim it—it records “observed, not tested” and waits for the spreadsheet to grow. The Optimizer proposes up to three ideas in IF… THEN… BECAUSE format, marked with evidence strength. The Guardian vetoes anything that touches what “never changes.” The Experimenter shows the calculation and timeline. And the Evaluator, in the first cycle, almost always says: INSUFFICIENT SAMPLE—continue.",
+    "El primer ciclo se ejecuta con la hoja que ya tienes. El Observador cuenta. Si hay menos de 30 filas para un patrón que el Crítico quiere afirmar, no lo afirma: registra «observado, no probado» y espera a que crezca la hoja. El Optimizador propone hasta tres ideas en formato SI… ENTONCES… PORQUE, con la solidez de la evidencia indicada. El Guardián veta cualquier cosa que toque lo que «nunca cambia». El Experimentador muestra el cálculo y el plazo. Y el Evaluador, en el primer ciclo, casi siempre responde: MUESTRA INSUFICIENTE: continúa."
+  ],
+  "Isso não é falha. Foi a resposta do ciclo 1 da clínica, e do ciclo 3. O que o primeiro ciclo entrega é outra coisa: a primeira linha do histórico, a primeira ideia vetada com motivo, a primeira conta de prazo. O gestor de suporte com 200 chamados por semana vê o veredito em duas semanas; a clínica com 50 propostas, em dois ou três meses. O ritmo é o do seu registro, não o da IA.": [
+    "That is not a failure. It was the answer in the clinic’s cycle 1 and cycle 3. The first cycle delivers something else: the first history entry, the first idea vetoed with a reason, the first timeline calculation. The support manager with 200 tickets a week sees a verdict in two weeks; the clinic with 50 proposals, in two or three months. The pace comes from your records, not from AI.",
+    "Eso no es un fallo. Fue la respuesta del ciclo 1 y del ciclo 3 de la clínica. El primer ciclo entrega otra cosa: la primera línea del historial, la primera idea vetada con su motivo y el primer cálculo de plazo. El responsable de soporte, con 200 tickets por semana, ve un veredicto en dos semanas; la clínica, con 50 propuestas, en dos o tres meses. El ritmo depende de tus registros, no de la IA."
+  ],
+  "Para o corretor, o primeiro cartão vai dizer: \"teste em andamento, 80 de 300 por versão, faltam três semanas; nenhuma vigiada fora\". A tentação é abrir a planilha na segunda semana, ver B na frente e decidir. Não decida.": [
+    "For the agent, the first card will say: “test in progress, 80 of 300 per version, three weeks left; no guardrail out of bounds.” The temptation is to open the spreadsheet in week two, see B ahead, and decide. Do not decide.",
+    "Para el agente, la primera tarjeta dirá: «prueba en curso, 80 de 300 por versión, faltan tres semanas; ningún indicador fuera del límite». La tentación es abrir la hoja en la segunda semana, ver que B va por delante y decidir. No decidas."
+  ],
+  "Erro comum": [
+    "Common mistake",
+    "Error frecuente"
+  ],
+  "Doze propostas viraram regra.": [
+    "Twelve proposals became the rule.",
+    "Doce propuestas se convirtieron en regla."
+  ],
+  "Com poucas linhas, qualquer padrão parece verdade — \"terça converte mais\" com 12 propostas não existe. O Crítico só afirma padrão com 30 ou mais; abaixo disso vai para \"observado, não testado\". Se você mesmo achar um padrão na planilha pequena, anote e espere a quantidade que prova — não mude o roteiro por causa dele.": [
+    "With few rows, any pattern looks true—“Tuesday converts better” with 12 proposals is not a real finding. The Critic only claims a pattern at 30 or more; below that it goes into “observed, not tested.” If you spot a pattern in a small spreadsheet yourself, note it and wait for the sample size needed for proof—do not change the playbook because of it.",
+    "Con pocas filas, cualquier patrón parece real: «los martes convierten más» con 12 propuestas no es un hallazgo. El Crítico solo afirma un patrón con 30 casos o más; por debajo, lo guarda como «observado, no probado». Si tú detectas un patrón en una hoja pequeña, anótalo y espera a reunir la cantidad necesaria para demostrarlo; no cambies el procedimiento por eso."
+  ],
+  "04": [
+    "04",
+    "04"
+  ],
+  "O cartão de decisão: cinco linhas, uma vez por semana": [
+    "The decision card: five lines, once a week",
+    "La tarjeta de decisión: cinco líneas, una vez por semana"
+  ],
+  "Tudo o que o loop pede de você depois da ficha cabe num": [
+    "Everything the loop asks of you after the worksheet fits on a",
+    "Todo lo que el ciclo te pide después de la ficha cabe en una"
+  ],
+  "cartão de decisão": [
+    "decision card",
+    "tarjeta de decisión"
+  ],
+  ". Linha 1: o ciclo e a ideia testada. Linha 2: o resultado, com quantidade de cada lado. Linha 3: as vigiadas, uma a uma, dentro ou fora. Linha 4: o custo do ciclo contra o teto. Linha 5: a decisão — aprovar, rejeitar ou esperar mais dados. Se você não responder dentro do prazo da ficha, o padrão é não promover, e o histórico registra \"pendente\". Seguro por construção.": [
+    ". Line 1: the cycle and the idea being tested. Line 2: the result, with the sample size on each side. Line 3: each guardrail, within or outside its limit. Line 4: cycle cost versus the ceiling. Line 5: the decision—approve, reject, or wait for more data. If you do not respond by the worksheet deadline, the default is not to promote, and the history records “pending.” Safe by design.",
+    ". Línea 1: el ciclo y la idea que se prueba. Línea 2: el resultado, con la cantidad de cada grupo. Línea 3: cada indicador, dentro o fuera del límite. Línea 4: el costo del ciclo frente al límite. Línea 5: la decisión: aprobar, rechazar o esperar más datos. Si no respondes antes del plazo de la ficha, no se promueve nada y el historial registra «pendiente». Seguro por diseño."
+  ],
+  "O cartão real do ciclo 4 da clínica dizia: hipótese \"abrir com algo específico da avaliação\"; resposta 19,3% → 29,3%, 300 contra 300; margem ok, reclamações 4 contra 2 dentro, saídas 1 contra 3; custo cerca de R$ 45 de R$ 50; decisão: aprovado. O de Marcos, no suporte, terá a mesma forma com outros nomes: resolução 55% → 61%, 180 contra 180; satisfação igual, reabertura 9 contra 8; custo R$ 62 de R$ 80. Parar o teste antes da quantidade que prova porque B está na frente não é uma das três respostas — é a forma mais comum de promover ruído.": [
+    "The clinic’s real card from cycle 4 said: hypothesis “open with something specific from the review”; replies 19.3% → 29.3%, 300 versus 300; margin OK, complaints 4 versus 2 within bounds, opt-outs 1 versus 3; cost about R$ 45 out of R$ 50; decision: approved. Marcos’s support card will have the same shape with different names: resolution 55% → 61%, 180 versus 180; satisfaction unchanged, reopenings 9 versus 8; cost R$ 62 out of R$ 80. Stopping before the sample size needed for proof because B is ahead is not one of the three answers—it is the most common way to promote noise.",
+    "La tarjeta real del ciclo 4 de la clínica decía: hipótesis «abrir mencionando algo específico de la reseña»; respuestas del 19,3 % al 29,3 %, 300 frente a 300; margen bien, quejas 4 frente a 2 dentro del límite, bajas 1 frente a 3; costo de unos R$ 45 de R$ 50; decisión: aprobada. La tarjeta de Marcos tendrá la misma forma con otros datos: resolución del 55 % al 61 %, 180 frente a 180; satisfacción igual, reaperturas 9 frente a 8; costo R$ 62 de R$ 80. Detener la prueba antes de alcanzar la cantidad necesaria porque B va por delante no es una de las tres respuestas: es la forma más común de promover ruido."
+  ],
+  "Depois de cinco cartões aprovados sem nenhum \"voltar atrás\", a ficha permite subir a autonomia: o sistema promove sozinho e avisa. Você não precisa chegar lá. Aprovar um cartão por semana durante meses é o loop funcionando como prometido — é o nível em que a clínica está.": [
+    "After five approved cards with no rollbacks, the worksheet allows more autonomy: the system promotes automatically and notifies you. You do not have to get there. Approving one card a week for months is the loop working as promised—that is the level the clinic is at.",
+    "Después de cinco tarjetas aprobadas sin reversiones, la ficha permite aumentar la autonomía: el sistema promueve automáticamente y te avisa. No tienes que llegar a ese punto. Aprobar una tarjeta por semana durante meses es el ciclo funcionando como se prometió; ese es el nivel de la clínica."
+  ],
+  "05": [
+    "05",
+    "05"
+  ],
+  "A fórmula e o canvas: o que você leva para qualquer processo": [
+    "The formula and canvas: what you can take to any process",
+    "La fórmula y el canvas: lo que puedes aplicar a cualquier proceso"
+  ],
+  "EXECUÇÃO": [
+    "EXECUTION",
+    "EJECUCIÓN"
+  ],
+  "×": [
+    "×",
+    "×"
+  ],
+  "EVIDÊNCIA": [
+    "EVIDENCE",
+    "EVIDENCIA"
+  ],
+  "EXPERIMENTAÇÃO": [
+    "EXPERIMENTATION",
+    "EXPERIMENTACIÓN"
+  ],
+  "MEMÓRIA": [
+    "MEMORY",
+    "MEMORIA"
+  ],
+  "=": [
+    "=",
+    "="
+  ],
+  "EVOLUÇÃO": [
+    "EVOLUTION",
+    "EVOLUCIÓN"
+  ],
+  "É uma multiplicação, não uma soma: qualquer fator zero, resultado zero. Sem execução não há dados — a trilha 1 mostrou a IA que executa e termina ali. Sem evidência não há aprendizado real — a trilha 2 deu a planilha de registro. Sem experimentação não se sabe se a ideia funciona — as trilhas 2 e 4 deram o teste, a quantidade que prova e o cartão. Sem memória o sistema esquece — a trilha 3 deu o histórico. O que o loop garante quando os quatro existem não é que o número sobe: é que ele não cai por decisão do sistema, que tudo tem registro e volta atrás, e que o custo não passa do teto.": [
+    "It is multiplication, not addition: if any factor is zero, the result is zero. No execution means no data—the first track showed AI that executes and stops there. No evidence means no real learning—Track 2 gave you the log spreadsheet. No experimentation means you do not know whether an idea works—Tracks 2 and 4 gave you the test, sample size, and card. Without memory, the system forgets—Track 3 gave you the history. What the loop guarantees when all four exist is not that the number rises: it will not fall by system decision, everything is recorded and reversible, and cost stays under the ceiling.",
+    "Es una multiplicación, no una suma: si cualquier factor vale cero, el resultado es cero. Sin ejecución no hay datos; la Ruta 1 mostró una IA que ejecuta y termina ahí. Sin pruebas no hay aprendizaje real; la Ruta 2 aportó la hoja de registro. Sin experimentación no se sabe si una idea funciona; las Rutas 2 y 4 aportaron la prueba, la cantidad necesaria y la tarjeta. Sin memoria, el sistema olvida; la Ruta 3 aportó el historial. Cuando existen los cuatro factores, el ciclo no garantiza que la cifra suba: garantiza que no caiga por decisión del sistema, que todo quede registrado y se pueda revertir, y que el costo no supere el límite."
+  ],
+  "Paulo tem execução de sobra — 80 leads por semana há anos — e memória zero: cada corretor da imobiliária responde do seu jeito e ninguém sabe o que já foi tentado. O gestor de suporte tem evidência de sobra e experimentação zero: nunca comparou duas respostas. A clínica de estética tinha os quatro depois de quatro ciclos. Cada um começa pelo fator que está no zero.": [
+    "Paulo has plenty of execution—80 leads a week for years—and zero memory: every agent at the real estate office replies differently, and no one knows what has already been tried. The support manager has plenty of evidence and zero experimentation: they have never compared two replies. The beauty clinic had all four after four cycles. Each starts with the factor that is at zero.",
+    "A Paulo le sobra ejecución —lleva años recibiendo 80 contactos por semana—, pero tiene cero memoria: cada agente de la inmobiliaria responde a su manera y nadie sabe qué se ha probado. Al responsable de soporte le sobran datos, pero no experimentación: nunca comparó dos respuestas. La clínica estética reunió los cuatro factores después de cuatro ciclos. Cada negocio empieza por el factor que está en cero."
+  ],
+  "O canvas abaixo é a mesma ficha, estendida para qualquer processo da empresa — compras, financeiro, marketing. As cinco respostas cobrem as perguntas 1, 3, 9, 4 e 11; o sistema propõe as outras.": [
+    "The canvas below is the same worksheet, extended to any company process—purchasing, finance, marketing. The five answers cover questions 1, 3, 9, 4, and 11; the system proposes the rest.",
+    "El canvas de abajo es la misma ficha, ampliada a cualquier proceso de la empresa: compras, finanzas, marketing. Las cinco respuestas cubren las preguntas 1, 3, 9, 4 y 11; el sistema propone las demás."
+  ],
+  "Canvas LOOP-R — 13 perguntas para qualquer processo": [
+    "LOOP-R Canvas—13 questions for any process",
+    "Canvas LOOP-R: 13 preguntas para cualquier proceso"
+  ],
+  "Objetivo": [
+    "Objective",
+    "Objetivo"
+  ],
+  "— o que queremos melhorar, com número de e para? (sua resposta 1)": [
+    "— what do we want to improve, with a number from and to? (your answer 1)",
+    "— ¿qué queremos mejorar, con cifras inicial y final? (tu respuesta 1)"
+  ],
+  "Execução": [
+    "Execution",
+    "Ejecución"
+  ],
+  "— quem realiza o trabalho hoje: pessoa, assistente ou os dois?": [
+    "— who does the work today: a person, an assistant, or both?",
+    "— ¿quién realiza hoy el trabajo: una persona, un asistente o ambos?"
+  ],
+  "Evidência": [
+    "Evidence",
+    "Evidencia"
+  ],
+  "— que dados cada execução produz, e em qual planilha? (sua resposta 2)": [
+    "— what data does each run produce, and in which spreadsheet? (your answer 2)",
+    "— ¿qué datos produce cada ejecución y en qué hoja? (tu respuesta 2)"
+  ],
+  "Métrica": [
+    "Metric",
+    "Métrica"
+  ],
+  "— como sabemos se foi bom: a de dinheiro, a de sinal e a do próprio texto?": [
+    "— how do we know it was good: revenue, signal, or the text itself?",
+    "— ¿cómo sabemos si salió bien: por dinero, señal o el propio texto?"
+  ],
+  "Crítica": [
+    "Critique",
+    "Crítica"
+  ],
+  "— quem diz o que funcionou e o que falhou, com a força da evidência?": [
+    "— who says what worked and what failed, and how strong is the evidence?",
+    "— ¿quién dice qué funcionó y qué falló, y con qué solidez de evidencia?"
+  ],
+  "Hipótese": [
+    "Hypothesis",
+    "Hipótesis"
+  ],
+  "— quem propõe a alternativa, no formato SE… ENTÃO… PORQUE?": [
+    "— who proposes the alternative, in IF… THEN… BECAUSE format?",
+    "— ¿quién propone la alternativa en formato SI… ENTONCES… PORQUE?"
+  ],
+  "Experimento": [
+    "Experiment",
+    "Experimento"
+  ],
+  "— como testamos: A contra B, quantos de cada lado, por quanto tempo?": [
+    "— how do we test it: A versus B, how many on each side, and for how long?",
+    "— ¿cómo lo probamos: A frente a B, cuántos por grupo y durante cuánto tiempo?"
+  ],
+  "Lista de conferência": [
+    "Checklist",
+    "Lista de verificación"
+  ],
+  "— como comparamos: sim ou não por critério, nunca nota de 1 a 10?": [
+    "— how do we compare: yes or no for each criterion, never a score from 1 to 10?",
+    "— ¿cómo comparamos: sí o no por criterio, nunca una nota del 1 al 10?"
+  ],
+  "Segurança": [
+    "Safety",
+    "Seguridad"
+  ],
+  "— o que nunca pode ser alterado sem uma pessoa? (sua resposta 3)": [
+    "— what must never change without a person? (your answer 3)",
+    "— ¿qué nunca debe cambiar sin una persona? (tu respuesta 3)"
+  ],
+  "Memória": [
+    "Memory",
+    "Memoria"
+  ],
+  "— onde guardamos o que funcionou, o que falhou e o que foi vetado?": [
+    "— where do we store what worked, failed, and was vetoed?",
+    "— ¿dónde guardamos lo que funcionó, falló y fue vetado?"
+  ],
+  "Versão oficial": [
+    "Official version",
+    "Versión oficial"
+  ],
+  "— quando a nova versão entra: veredito, cartão e quem assina? (suas respostas 4 e 5)": [
+    "— when does the new version take effect: verdict, card, and who signs off? (your answers 4 and 5)",
+    "— ¿cuándo entra en vigor la nueva versión: veredicto, tarjeta y quién da el visto bueno? (tus respuestas 4 y 5)"
+  ],
+  "Voltar atrás": [
+    "Rollback",
+    "Volver atrás"
+  ],
+  "— como retornamos se der errado, e quem é avisado?": [
+    "— how do we restore the previous version if something goes wrong, and who is notified?",
+    "— ¿cómo recuperamos la versión anterior si algo falla y a quién se avisa?"
+  ],
+  "Meta-loop": [
+    "Meta-loop",
+    "Meta-ciclo"
+  ],
+  "— quem olha o próprio sistema: custo, vetos, cadência?": [
+    "— who reviews the system itself: cost, vetoes, cadence?",
+    "— ¿quién revisa el propio sistema: costos, vetos y frecuencia?"
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/4 feito": [
+    "0/4 complete",
+    "0/4 completados"
+  ],
+  "Entregue a ficha do loop e o primeiro cartão": [
+    "Deliver the loop worksheet and the first card",
+    "Entrega la ficha del ciclo y la primera tarjeta"
+  ],
+  "Copiar as cinco respostas das suas anotações, montar o cartão da primeira semana e testar a leitura com alguém da equipe — cerca de 12 min.": [
+    "Copy the five answers from your notes, prepare the first week’s card, and test whether a teammate can read it—about 12 minutes.",
+    "Copia las cinco respuestas de tus notas, prepara la tarjeta de la primera semana y comprueba si alguien del equipo puede leerla: unos 12 minutos."
+  ],
+  "Nada muda no seu negócio até você aprovar: a ficha é um documento, e o cartão desta prática fica com a decisão em branco. Se uma resposta parecer errada depois, corrija a ficha e registre a mudança — a ficha da clínica também mudou no ciclo 2.": [
+    "Nothing changes in your business until you approve it: the worksheet is a document, and this practice card stays undecided. If an answer seems wrong later, correct the worksheet and record the change—the clinic’s worksheet also changed in cycle 2.",
+    "Nada cambia en tu negocio hasta que lo apruebes: la ficha es un documento y la tarjeta de esta práctica queda sin decisión. Si luego una respuesta parece incorrecta, corrige la ficha y registra el cambio; la ficha de la clínica también cambió en el ciclo 2."
+  ],
+  "O bloco abaixo é um formulário em texto puro, do tipo que você preenche uma vez: cinco perguntas e um cartão. Você troca só o que está entre < > e deixa o resto como está. Pode preencher no bloco de notas do celular, num e-mail para você mesmo ou numa folha.": [
+    "The block below is a plain-text form you fill in once: five questions and one card. Replace only what is inside < > and leave the rest as is. You can fill it in your phone’s notes, an email to yourself, or on paper.",
+    "El bloque de abajo es un formulario de texto simple que completas una vez: cinco preguntas y una tarjeta. Sustituye solo lo que está entre < > y deja lo demás tal como está. Puedes rellenarlo en las notas del móvil, en un correo para ti o en una hoja."
+  ],
+  "copiar": [
+    "copy",
+    "copiar"
+  ],
+  "FICHA DO LOOP — <nome do processo> 1. OBJETIVO COM NÚMERO <métrica>: de <valor atual> para <valor-alvo> sem piorar: <vigiada 1>, <vigiada 2> 2. ONDE NASCE A EVIDÊNCIA <planilha ou sistema>, uma linha por <unidade: proposta / lead / chamado> volume: cerca de <N> por semana 3. O QUE NUNCA MUDA SOZINHO - nunca <invariável 1> - nunca <invariável 2> - nunca <invariável 3> 4. TETO até R$ <valor> por ciclo · ciclo <semanal / quinzenal> até 3 ideias por ciclo · 1 teste por vez 5. QUEM APROVA <nome>, com <N> dias para responder o cartão ---------------------------------------------------------- CARTÃO DE DECISÃO — semana 1 (preencha o que você espera) CICLO 0001 — hipótese: \"<SE mudar X, ENTÃO a métrica vai de A para B, PORQUE evidência>\" Resultado: <métrica> <atual> → <esperado> (N = <quantos por versão>, faltam <semanas>) Vigiado: <vigiada 1> · <vigiada 2> · <vigiada 3> Custo: R$ <previsto> neste ciclo (teto R$ <teto>) Decisão: [aprovar] [rejeitar] [esperar mais dados] ← em branco até o veredito": [
+    "LOOP WORKSHEET — <process name> 1. NUMBERED GOAL <metric>: from <current value> to <target value> without worsening: <guardrail 1>, <guardrail 2> 2. WHERE EVIDENCE COMES FROM <spreadsheet or system>, one row per <unit: proposal / lead / ticket> volume: about <N> per week 3. WHAT NEVER CHANGES ON ITS OWN - never <invariant 1> - never <invariant 2> - never <invariant 3> 4. CEILING up to R$ <amount> per cycle · cycle <weekly / every two weeks> up to 3 ideas per cycle · 1 test at a time 5. WHO APPROVES <name>, with <N> days to answer the card ---------------------------------------------------------- DECISION CARD — week 1 (fill in what you expect) CYCLE 0001 — hypothesis: “IF <change X>, THEN the metric will go from A to B, BECAUSE <evidence>” Result: <metric> <current> → <expected> (N = <per version>, <weeks> left) Guardrails: <guardrail 1> · <guardrail 2> · <guardrail 3> Cost: R$ <estimated> this cycle (ceiling R$ <limit>) Decision: [approve] [reject] [wait for more data] ← leave blank until the verdict",
+    "FICHA DEL CICLO — <nombre del proceso> 1. OBJETIVO CON CIFRAS <métrica>: de <valor actual> a <valor objetivo> sin empeorar: <indicador 1>, <indicador 2> 2. ORIGEN DE LAS PRUEBAS <hoja o sistema>, una fila por <unidad: propuesta / contacto / ticket> volumen: unos <N> por semana 3. LO QUE NUNCA CAMBIA POR SÍ SOLO - nunca <invariante 1> - nunca <invariante 2> - nunca <invariante 3> 4. LÍMITE hasta R$ <importe> por ciclo · ciclo <semanal / quincenal> hasta 3 ideas por ciclo · 1 prueba a la vez 5. QUIÉN APRUEBA <nombre>, con <N> días para responder la tarjeta ---------------------------------------------------------- TARJETA DE DECISIÓN — semana 1 (completa lo que esperas) CICLO 0001 — hipótesis: «SI <cambio X>, ENTONCES la métrica pasará de A a B, PORQUE <evidencia>» Resultado: <métrica> <actual> → <esperado> (N = <por versión>, faltan <semanas>) Indicadores: <indicador 1> · <indicador 2> · <indicador 3> Costo: R$ <estimado> en este ciclo (límite R$ <tope>) Decisión: [aprobar] [rechazar] [esperar más datos] ← en blanco hasta el veredicto"
+  ],
+  "Preencha as cinco respostas copiando das suas anotações das trilhas 2, 3 e 4. Pronto quando nenhuma linha tiver < > sobrando e o objetivo tiver dois números — o de hoje e o alvo.": [
+    "Fill in the five answers by copying from your notes in Tracks 2, 3, and 4. Done when no < > remains and the goal has two numbers—the current one and the target.",
+    "Completa las cinco respuestas copiándolas de tus notas de las Rutas 2, 3 y 4. Terminado cuando no quede ningún < > y el objetivo tenga dos cifras: la actual y la meta."
+  ],
+  "Preencha o cartão da semana 1 com a sua melhor hipótese no formato SE… ENTÃO… PORQUE, o N que a tabela da quantidade que prova pede para o seu número, e as vigiadas. Deixe a decisão em branco. Pronto quando a linha \"Resultado\" tiver um N e um prazo em semanas.": [
+    "Fill in the week-one card with your best IF… THEN… BECAUSE hypothesis, the N required by the sample-size table for your metric, and the guardrails. Leave the decision blank. Done when the Result line has an N and a timeline in weeks.",
+    "Completa la tarjeta de la primera semana con tu mejor hipótesis SI… ENTONCES… PORQUE, el N que indica la tabla para tu métrica y los indicadores. Deja en blanco la decisión. Terminado cuando la línea de resultado incluya un N y un plazo en semanas."
+  ],
+  "Teste de leitura: mostre a ficha para alguém da equipe e faça duas perguntas — \"qual evidência faria a gente descartar essa ideia?\" e \"o que a IA nunca pode mudar aqui?\". Pronto quando a pessoa responder as duas só lendo a ficha, sem você explicar.": [
+    "Reading test: show the worksheet to a teammate and ask two questions—“what evidence would make us discard this idea?” and “what must AI never change here?” Done when they can answer both just by reading, without your explanation.",
+    "Prueba de lectura: muestra la ficha a alguien del equipo y haz dos preguntas: «¿Qué evidencia nos haría descartar esta idea?» y «¿Qué nunca puede cambiar aquí la IA?». Terminado cuando responda ambas leyendo la ficha, sin que se lo expliques."
+  ],
+  "Guarde a ficha e o cartão na pasta do loop — a mesma onde ficam a planilha de registro e o histórico. Pronto quando os três estiverem no mesmo lugar e a data de hoje estiver na primeira linha do histórico.": [
+    "Save the worksheet and card in the loop folder—the same place as the log spreadsheet and history. Done when all three are together and today’s date is on the first line of the history.",
+    "Guarda la ficha y la tarjeta en la carpeta del ciclo, junto con la hoja de registro y el historial. Terminado cuando estén los tres en el mismo lugar y la fecha de hoy figure en la primera línea del historial."
+  ],
+  "Você acabou de entregar um loop montado: ficha completa, primeiro cartão desenhado e um leitor que entendeu o que descarta a ideia e o que a IA nunca toca.": [
+    "You have just delivered an assembled loop: a complete worksheet, the first card drafted, and a reader who understands what would discard the idea and what AI must never touch.",
+    "Acabas de entregar un ciclo montado: ficha completa, primera tarjeta preparada y alguien que entendió qué descartaría la idea y qué nunca debe tocar la IA."
+  ],
+  "trilha 2 · aula 1": [
+    "track 2 · lesson 1",
+    "ruta 2 · clase 1"
+  ],
+  "trilha 2 · aula 3": [
+    "track 2 · lesson 3",
+    "ruta 2 · clase 3"
+  ],
+  "trilha 3 · aula 3": [
+    "track 3 · lesson 3",
+    "ruta 3 · clase 3"
+  ],
+  "trilha 4 · aula 4": [
+    "track 4 · lesson 4",
+    "ruta 4 · clase 4"
+  ],
+  "ficha do loop": [
+    "loop worksheet",
+    "ficha del ciclo"
+  ],
+  "1 objetivo + nº": [
+    "1 goal + number",
+    "1 objetivo + cifra"
+  ],
+  "2 evidência": [
+    "2 evidence",
+    "2 pruebas"
+  ],
+  "3 nunca muda": [
+    "3 never changes",
+    "3 nunca cambia"
+  ],
+  "4 teto": [
+    "4 ceiling",
+    "4 límite"
+  ],
+  "5 quem aprova": [
+    "5 who approves",
+    "5 quién aprueba"
+  ],
+  "+ o que o sistema propõe": [
+    "+ what the system proposes",
+    "+ lo que propone el sistema"
+  ],
+  "você escreve": [
+    "you write",
+    "tú escribes"
+  ],
+  "objetivo · evidência · nunca muda": [
+    "goal · evidence · invariants",
+    "objetivo · pruebas · invariantes"
+  ],
+  "teto · quem aprova": [
+    "ceiling · approver",
+    "límite · quién aprueba"
+  ],
+  "5 frases": [
+    "5 statements",
+    "5 frases"
+  ],
+  "o sistema propõe · você confirma": [
+    "system proposes · you confirm",
+    "el sistema propone · tú confirmas"
+  ],
+  "métrica-sinal (se o alvo é lento)": [
+    "signal metric (if target is slow)",
+    "métrica de señal (si el objetivo tarda)"
+  ],
+  "quantidade que prova + prazo no seu ritmo": [
+    "sample size needed + timeline at your pace",
+    "cantidad necesaria + plazo a tu ritmo"
+  ],
+  "vigiadas com tolerância (conta, não zero)": [
+    "guardrails with tolerance (calculated, not zero)",
+    "indicadores con tolerancia (calculada, no cero)"
+  ],
+  "gatilho de voltar atrás": [
+    "rollback trigger",
+    "activador para volver atrás"
+  ],
+  "quais assistentes · cadência": [
+    "which assistants · cadence",
+    "qué asistentes · frecuencia"
+  ],
+  "Observador conta a planilha": [
+    "Observer counts the spreadsheet",
+    "el Observador cuenta la hoja"
+  ],
+  "Crítico: só afirma com N ≥ 30": [
+    "Critic: claims only with N ≥ 30",
+    "Crítico: afirma solo con N ≥ 30"
+  ],
+  "Otimizador: até 3 ideias": [
+    "Optimizer: up to 3 ideas",
+    "Optimizador: hasta 3 ideas"
+  ],
+  "Guardião veta o que toca o \"nunca\"": [
+    "Guardian vetoes anything touching “never”",
+    "Guardián veta lo que toque lo «nunca»"
+  ],
+  "Experimentador: N e prazo": [
+    "Experimenter: N and timeline",
+    "Experimentador: N y plazo"
+  ],
+  "Avaliador: AMOSTRA INSUFICIENTE": [
+    "Evaluator: INSUFFICIENT SAMPLE",
+    "Evaluador: MUESTRA INSUFICIENTE"
+  ],
+  "80 de 300 por versão · faltam 3 semanas": [
+    "80 of 300 per version · 3 weeks left",
+    "80 de 300 por versión · faltan 3 semanas"
+  ],
+  "histórico: linha 1 escrita": [
+    "history: first entry written",
+    "historial: primera línea escrita"
+  ],
+  "1 CICLO + hipótese": [
+    "1 CYCLE + hypothesis",
+    "1 CICLO + hipótesis"
+  ],
+  "2 Resultado": [
+    "2 Result",
+    "2 Resultado"
+  ],
+  "A → B, N de cada lado": [
+    "A → B, N on each side",
+    "A → B, N por grupo"
+  ],
+  "3 Vigiado": [
+    "3 Guardrail",
+    "3 Indicador"
+  ],
+  "cada uma: dentro / fora": [
+    "each: within / outside",
+    "cada uno: dentro / fuera"
+  ],
+  "4 Custo": [
+    "4 Cost",
+    "4 Costo"
+  ],
+  "R$ do ciclo / teto": [
+    "cycle R$ / ceiling",
+    "R$ del ciclo / límite"
+  ],
+  "5 Decisão": [
+    "5 Decision",
+    "5 Decisión"
+  ],
+  "aprovar": [
+    "approve",
+    "aprobar"
+  ],
+  "rejeitar": [
+    "reject",
+    "rechazar"
+  ],
+  "esperar dados": [
+    "wait for data",
+    "esperar datos"
+  ],
+  "sem resposta no prazo → não promove": [
+    "no answer by deadline → no promotion",
+    "sin respuesta a tiempo → no promueve"
+  ],
+  "1 cartão por semana, no máximo": [
+    "1 card per week, at most",
+    "máximo 1 tarjeta por semana"
+  ],
+  "execução": [
+    "execution",
+    "ejecución"
+  ],
+  "trilha 1": [
+    "track 1",
+    "ruta 1"
+  ],
+  "evidência": [
+    "evidence",
+    "evidencia"
+  ],
+  "trilha 2": [
+    "track 2",
+    "ruta 2"
+  ],
+  "experim.": [
+    "experiment.",
+    "experim."
+  ],
+  "trilhas 2·4": [
+    "tracks 2·4",
+    "rutas 2·4"
+  ],
+  "memória": [
+    "memory",
+    "memoria"
+  ],
+  "trilha 3": [
+    "track 3",
+    "ruta 3"
+  ],
+  "= evolução: zero (um fator no zero)": [
+    "= evolution: zero (one factor is zero)",
+    "= evolución: cero (un factor en cero)"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "A ficha do loop são as cinco respostas que o curso construiu uma por vez; com quatro, o sistema infere a quinta — e inferir segurança é o risco que a ficha existe para evitar.": [
+    "The loop worksheet contains five answers the course built one at a time; with only four, the system infers the fifth—and inferring safety is the risk this worksheet prevents.",
+    "La ficha del ciclo reúne cinco respuestas que el curso construyó paso a paso; con solo cuatro, el sistema infiere la quinta, y esa inferencia sobre seguridad es el riesgo que la ficha evita."
+  ],
+  "A segunda metade da ficha o sistema propõe e você confirma: métrica-sinal, quantidade que prova, vigiadas com tolerância calculada, gatilho de voltar atrás.": [
+    "The system proposes the worksheet’s second half for you to confirm: signal metric, sample size needed, guardrails with calculated tolerances, and rollback trigger.",
+    "El sistema propone la segunda mitad de la ficha para que la confirmes: métrica de señal, cantidad necesaria, indicadores con tolerancias calculadas y activador para volver atrás."
+  ],
+  "O primeiro ciclo quase sempre termina em \"amostra insuficiente\"; o que ele entrega é a primeira linha do histórico e o primeiro veto com motivo.": [
+    "The first cycle almost always ends with “insufficient sample”; what it delivers is the first history entry and the first veto with a reason.",
+    "El primer ciclo casi siempre termina en «muestra insuficiente»; lo que entrega es la primera línea del historial y el primer veto con su motivo."
+  ],
+  "Tudo o que o loop pede depois cabe num cartão de cinco linhas por semana, e silêncio no prazo significa não promover.": [
+    "Everything the loop asks after that fits on a five-line card once a week, and silence by the deadline means no promotion.",
+    "Todo lo que pide el ciclo después cabe en una tarjeta de cinco líneas por semana, y el silencio al vencer el plazo significa que no se promueve nada."
+  ],
+  "Execução, evidência, experimentação e memória se multiplicam: cada trilha encheu um fator, e o seu loop começa pelo que está no zero.": [
+    "Execution, evidence, experimentation, and memory multiply: each track filled one factor, and your loop starts with whichever one is at zero.",
+    "Ejecución, evidencia, experimentación y memoria se multiplican: cada ruta completó un factor, y tu ciclo empieza por el que esté en cero."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de conseguir montar um loop no seu negócio: ficha completa, primeiro cartão e um leitor que entendeu sem você.": [
+    "You can now assemble a loop for your business: a complete worksheet, the first card, and a reader who understood it without your help.",
+    "Ahora puedes montar un ciclo para tu negocio: ficha completa, primera tarjeta y alguien que la entendió sin tu explicación."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: marque na agenda o dia da semana em que o cartão chega e quem registra a planilha nos outros seis. A cadência da clínica quebrou por falta disso — 12 semanas em vez de 1 — e o Crítico apontou três vezes.": [
+    "Over the next 15 minutes, in your real work: put on the calendar the weekday when the card arrives and who records the spreadsheet on the other six days. The clinic’s cadence broke because of this—12 weeks instead of 1—and the Critic pointed it out three times.",
+    "Durante los próximos 15 minutos, en tu trabajo real: agenda el día de la semana en que llega la tarjeta y quién registra la hoja los otros seis días. La cadencia de la clínica falló por eso: 12 semanas en vez de 1, y el Crítico lo señaló tres veces."
+  ],
+  "Não há próxima aula. O próximo ciclo é seu: na semana que vem, a planilha tem mais linhas, o Observador conta, e o primeiro cartão chega. O que você fizer com ele é o que separa uma empresa que usa IA de uma empresa que aprende.": [
+    "There is no next lesson. The next cycle is yours: next week the spreadsheet has more rows, the Observer counts, and the first card arrives. What you do with it is what separates a business that uses AI from a business that learns.",
+    "No hay una próxima clase. El siguiente ciclo es tuyo: la semana que viene la hoja tendrá más filas, el Observador contará y llegará la primera tarjeta. Lo que hagas con ella distingue a una empresa que usa IA de una empresa que aprende."
+  ],
+  "← aula 2": [
+    "← lesson 2",
+    "← clase 2"
+  ],
+  "concluir a trilha →": [
+    "complete the track →",
+    "terminar la ruta →"
+  ],
+  "Trilha 5 · Aula 3 · INEMA.CLUB PRO": [
+    "Track 5 · Lesson 3 · INEMA.CLUB PRO",
+    "Ruta 5 · Clase 3 · INEMA.CLUB PRO"
+  ],
+  "As cinco linhas que chegam para quem aprova, no máximo uma vez por semana: o que mudou, quanto mudou, o que foi vigiado, quanto custou, e a decisão — aprovar, rejeitar ou esperar.": [
+    "The five lines that reach the approver at most once a week: what changed, by how much, what was monitored, what it cost, and the decision—approve, reject, or wait.",
+    "Las cinco líneas que recibe quien aprueba, como máximo una vez por semana: qué cambió, cuánto, qué se vigiló, cuánto costó y la decisión: aprobar, rechazar o esperar."
+  ],
+  "<b>Fig. 1</b> Cada resposta da ficha veio de uma aula anterior (esquerda) e cai numa linha da ficha (direita). Repare que quatro trilhas alimentam cinco linhas — a trilha 4 responde duas.": [
+    "<b>Fig. 1</b> Each worksheet answer came from an earlier lesson (left) and maps to a line on the worksheet (right). Notice that four tracks feed five lines—Track 4 supplies two.",
+    "<b>Fig. 1</b> Cada respuesta de la ficha procede de una clase anterior (izquierda) y corresponde a una línea de la ficha (derecha). Cuatro rutas aportan cinco líneas: la Ruta 4 responde dos."
+  ],
+  "<b>Fig. 2</b> A ficha em duas metades: em cima, o que você escreve (cinco linhas); embaixo, o que o sistema propõe a partir delas e você só confirma (âmbar). A seta mostra a dependência — sem a metade de cima, a de baixo é chute.": [
+    "<b>Fig. 2</b> The worksheet has two halves: above, what you write (five lines); below, what the system proposes from them for you to confirm (amber). The arrow shows the dependency—without the top half, the bottom is a guess.",
+    "<b>Fig. 2</b> La ficha tiene dos mitades: arriba, lo que escribes (cinco líneas); abajo, lo que el sistema propone a partir de ellas para que lo confirmes (ámbar). La flecha indica la dependencia: sin la mitad superior, la inferior es una suposición."
+  ],
+  "<b>Fig. 3</b> A primeira semana, assistente por assistente. O ponto final é o mais comum de todos: 'amostra insuficiente — continue' (âmbar). Não é falha; é o teste dizendo quanto ainda falta.": [
+    "<b>Fig. 3</b> The first week, assistant by assistant. The most common endpoint is “insufficient sample—continue” (amber). It is not failure; it is the test showing how much is still missing.",
+    "<b>Fig. 3</b> La primera semana, asistente por asistente. El resultado más habitual es «muestra insuficiente: continúa» (ámbar). No es un fallo; la prueba indica cuánto falta."
+  ],
+  "<b>Fig. 4</b> Anatomia do cartão de decisão: cinco linhas, na ordem em que chegam. A quinta tem três respostas possíveis e uma quarta implícita — sem resposta no prazo, não promove.": [
+    "<b>Fig. 4</b> Anatomy of the decision card: five lines, in the order they arrive. The fifth has three possible answers and a fourth implied one—no answer by the deadline means no promotion.",
+    "<b>Fig. 4</b> Anatomía de la tarjeta de decisión: cinco líneas, en el orden en que llegan. La quinta tiene tres respuestas posibles y una cuarta implícita: si no respondes a tiempo, no se promueve."
+  ],
+  "<b>Fig. 5</b> A fórmula como quatro medidores multiplicados: cada trilha do curso encheu um deles. Um medidor no zero (âmbar, o do corretor sem memória) zera o resultado, por mais cheios que os outros estejam.": [
+    "<b>Fig. 5</b> The formula as four multiplied gauges: each course track filled one. A gauge at zero (amber, the agent with no memory) zeroes the result, no matter how full the others are.",
+    "<b>Fig. 5</b> La fórmula como cuatro medidores multiplicados: cada ruta completó uno. Un medidor en cero (ámbar, el del agente sin memoria) anula el resultado, por llenos que estén los demás."
+  ],
+  "Decisão: sua ficha tem objetivo, evidência, o que nunca muda e teto — mas 'quem aprova' ficou em branco porque 'é óbvio que sou eu'. Roda o primeiro ciclo assim?": [
+    "Decision: your worksheet has a goal, evidence, what never changes, and a ceiling—but “who approves” is blank because “obviously it’s me.” Can the first cycle run like this?",
+    "Decisión: tu ficha tiene objetivo, evidencia, lo que nunca cambia y un límite, pero «quién aprueba» está en blanco porque «obviamente soy yo». ¿Puede ejecutarse así el primer ciclo?"
+  ],
+  "Não. Com quatro respostas o sistema infere a quinta, e o que ele infere sobre autonomia pode ser 'promove sozinho'. Escreva o nome e o prazo em dias — é o que transforma o cartão em decisão humana.": [
+    "No. With four answers, the system infers the fifth, and its inference about autonomy could be “promote automatically.” Write the name and deadline in days—that is what makes the card a human decision.",
+    "No. Con cuatro respuestas, el sistema infiere la quinta, y podría inferir que tiene autonomía para «promover automáticamente». Escribe el nombre y el plazo en días: eso convierte la tarjeta en una decisión humana."
+  ],
+  "Diagnóstico: na segunda semana do primeiro teste, B está 6 pontos na frente com 90 de 300 por versão. Um sócio quer promover agora. Qual das três respostas do cartão cabe, e por quê?": [
+    "Diagnosis: in week two of the first test, B is 6 points ahead with 90 of 300 per version. A partner wants to promote now. Which of the card’s three answers applies, and why?",
+    "Diagnóstico: en la segunda semana de la primera prueba, B va 6 puntos por delante con 90 de 300 por versión. Un socio quiere promoverla ya. ¿Cuál de las tres respuestas de la tarjeta corresponde y por qué?"
+  ],
+  "Esperar mais dados. Abaixo da quantidade que prova, vantagem parcial é a forma mais comum de promover ruído; parada antecipada só existe por guarda-corpo caindo, nunca por 'está ganhando'.": [
+    "Wait for more data. Below the sample size needed for proof, a partial lead is the most common way to promote noise; early stopping is allowed only when a guardrail falls, never because “it’s winning.”",
+    "Esperar más datos. Por debajo de la cantidad necesaria para demostrarlo, una ventaja parcial es la forma más común de promover ruido. Solo se detiene antes si empeora un indicador, nunca porque «va ganando»."
+  ],
+  "Aplicação: você é gestor de suporte e quer usar o canvas para o processo de compras da empresa. Quais das 13 perguntas você responde sozinho e quais o sistema propõe?": [
+    "Application: you manage support and want to use the canvas for the company’s purchasing process. Which of the 13 questions do you answer yourself, and which does the system propose?",
+    "Aplicación: eres responsable de soporte y quieres usar el canvas en el proceso de compras de la empresa. ¿Cuáles de las 13 preguntas respondes tú y cuáles propone el sistema?"
+  ],
+  "Você responde 1 (objetivo com número), 3 (evidência), 9 (segurança), 4 e 11 no que é teto e quem assina. O sistema propõe execução, métricas de sinal e de texto, crítica, hipótese, experimento, lista de conferência, memória, voltar atrás e meta-loop — você confirma.": [
+    "You answer 1 (numbered goal), 3 (evidence), 9 (safety), and 4 and 11 for the ceiling and approver. The system proposes execution, signal and text metrics, critique, hypothesis, experiment, checklist, memory, rollback, and meta-loop—you confirm them.",
+    "Tú respondes la 1 (objetivo con cifras), la 3 (evidencia), la 9 (seguridad) y las preguntas 4 y 11 sobre límite y quién aprueba. El sistema propone ejecución, métricas de señal y de texto, crítica, hipótesis, experimento, lista de verificación, memoria, reversión y metaciclo; tú lo confirmas."
+  ],
+  "Contraste: qual a diferença entre a primeira e a segunda metade da ficha do loop — quem escreve cada uma, e o que acontece se você editar a segunda no meio de um teste?": [
+    "Contrast: what is the difference between the first and second halves of the loop worksheet—who writes each, and what happens if you edit the second halfway through a test?",
+    "Contraste: ¿qué diferencia hay entre la primera y la segunda mitad de la ficha del ciclo, quién escribe cada una y qué pasa si editas la segunda a mitad de una prueba?"
+  ],
+  "A primeira é sua (5 respostas); a segunda vem proposta pelo sistema para você conferir (métrica-sinal, N, tolerâncias, gatilho). Editar tolerância no meio de um teste invalida o teste; mudanças entram pelo cartão, com registro, e valem para o próximo — como a clínica fez no ciclo 2.": [
+    "The first half is yours (five answers); the system proposes the second for you to check (signal metric, N, tolerances, trigger). Changing tolerance midway invalidates the test; changes go through the card, are recorded, and apply to the next test—as the clinic did in cycle 2.",
+    "La primera mitad es tuya (cinco respuestas); el sistema propone la segunda para que la revises (métrica de señal, N, tolerancias y activador). Cambiar la tolerancia a mitad de una prueba la invalida; los cambios se hacen mediante la tarjeta, quedan registrados y se aplican a la siguiente, como hizo la clínica en el ciclo 2."
+  ]
+}

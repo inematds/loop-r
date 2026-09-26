@@ -1,0 +1,678 @@
+{
+  "Trilha 01 · Aula 4 · fundamento": [
+    "Track 01 · Lesson 4 · foundation",
+    "Ruta 01 · Clase 4 · fundamento"
+  ],
+  "\"IA, fique melhor\" — o erro": [
+    "“AI, get better”—the mistake",
+    "«IA, mejora»: el error"
+  ],
+  "que": [
+    "that",
+    "que"
+  ],
+  "parece inteligente": [
+    "sounds smart",
+    "parece inteligente"
+  ],
+  "Ao fim desta aula você consegue pegar uma instrução vaga (\"fique melhor\", \"seja mais persuasivo\") e reescrevê-la com evidência, meta com número e \"sem piorar\" e uma hipótese testável — usando qualquer chat de IA.": [
+    "By the end of this lesson, you’ll be able to take a vague instruction (“get better,” “be more persuasive”) and rewrite it with evidence, a numeric goal, a “without worsening” guardrail, and a testable hypothesis—using any AI chat.",
+    "Al terminar esta clase, podrás tomar una instrucción vaga («mejora», «sé más persuasivo») y reescribirla con evidencia, una meta numérica, un «sin empeorar» y una hipótesis comprobable, usando cualquier chat de IA."
+  ],
+  "É a primeira coisa que quase todo mundo faz: abre o assistente e escreve \"analise seu trabalho e melhore a cada vez\". Parece uma ordem inteligente. É uma frase sem número, sem dado e sem jeito de saber se funcionou — e o assistente vai responder que sim, melhorou. Esta aula troca a frase por um pedido que dá para conferir.": [
+    "It’s the first thing almost everyone does: open the assistant and write “analyze your work and improve every time.” It sounds like a smart command. But it has no number, no data, and no way to know whether it worked—and the assistant will say it did improve. This lesson replaces that sentence with a request you can verify.",
+    "Es lo primero que casi todos hacen: abren el asistente y escriben «analiza tu trabajo y mejora cada vez». Parece una orden inteligente. Pero no tiene cifras, datos ni forma de saber si funcionó, y el asistente responderá que sí, que mejoró. Esta clase sustituye esa frase por una solicitud que se puede comprobar."
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "fique": [
+    "get",
+    "mejora"
+  ],
+  "melhor": [
+    "better",
+    "más"
+  ],
+  "20% → 30%": [
+    "20% → 30%",
+    "20 % → 30 %"
+  ],
+  "sem piorar": [
+    "without worsening",
+    "sin empeorar"
+  ],
+  "reclamações": [
+    "complaints",
+    "quejas"
+  ],
+  "300 + 300": [
+    "300 + 300",
+    "300 + 300"
+  ],
+  "uma frase que não se confere ×": [
+    "a sentence you can’t verify ×",
+    "una frase que no se puede comprobar ×"
+  ],
+  "um pedido que se confere": [
+    "a request you can verify",
+    "una solicitud que se puede comprobar"
+  ],
+  "\"Analise seu trabalho e fique cada vez melhor\" não é um sistema — é uma frase": [
+    "“Analyze your work and keep getting better” isn’t a system—it’s a sentence",
+    "«Analiza tu trabajo y mejora cada vez» no es un sistema: es una frase"
+  ],
+  "Paulo, do suporte, escreveu isso no assistente que responde chamados: \"analise suas respostas e melhore continuamente\". Um mês depois, perguntou se tinha melhorado. O assistente respondeu que sim, com convicção. Não havia nenhuma forma de saber se era verdade — e é isso que torna a frase perigosa: ela produz a sensação de melhoria sem produzir melhoria.": [
+    "Paulo from support wrote this in the assistant that replies to tickets: “analyze your replies and keep improving.” A month later, he asked whether it had improved. The assistant confidently said yes. There was no way to know if that was true—and that’s what makes the sentence dangerous: it creates the feeling of improvement without producing any.",
+    "Paulo, del equipo de soporte, escribió esto en el asistente que responde consultas: «analiza tus respuestas y mejora continuamente». Un mes después, preguntó si había mejorado. El asistente respondió que sí, con seguridad. No había forma de saber si era cierto, y eso hace peligrosa la frase: produce una sensación de mejora sin mejorar nada."
+  ],
+  "Faltam três perguntas que a frase não responde. Melhorar em relação a": [
+    "Three questions the sentence doesn’t answer are missing. Better than",
+    "Faltan tres preguntas que la frase no responde. ¿Mejor en relación con"
+  ],
+  "quê": [
+    "what",
+    "qué"
+  ],
+  "(a versão de quando?). Medido por": [
+    "(which version?). Measured by",
+    "(qué versión?). ¿Medido por"
+  ],
+  "quem": [
+    "whom",
+    "quién"
+  ],
+  "(o próprio assistente, que tem todo interesse em dizer que melhorou?). Comparado": [
+    "(the assistant itself, which has every reason to say it improved?). Compared",
+    "(el propio asistente, que tiene motivos para decir que mejoró?). ¿Comparado"
+  ],
+  "como": [
+    "how",
+    "cómo"
+  ],
+  "(contra o quê, com quantos casos?). Sem evidência registrada, sem número e sem versão anterior, \"melhorou\" é só a resposta esperada para a pergunta feita.": [
+    "(against what, and using how many cases?). Without recorded evidence, a number, and a previous version, “improved” is just the expected answer to the question you asked.",
+    "(¿con qué y con cuántos casos?). Sin evidencia registrada, una cifra y una versión anterior, «mejoró» es solo la respuesta esperada a la pregunta."
+  ],
+  "Isso não é limitação da IA; é limitação do pedido. A frase-âncora do curso inteiro existe para substituir exatamente esse hábito:": [
+    "This isn’t an AI limitation; it’s a request limitation. The course’s anchor sentence exists to replace exactly this habit:",
+    "No es una limitación de la IA, sino de la solicitud. La frase central de este curso existe para sustituir exactamente ese hábito:"
+  ],
+  "Não peça para a IA melhorar. Faça cada execução produzir evidência, cada evidência gerar uma hipótese, cada hipótese virar um experimento — e só o que for comprovado entra na próxima versão.": [
+    "Don’t ask AI to improve. Make every execution produce evidence, every piece of evidence generate a hypothesis, and every hypothesis become an experiment—and only what is proven goes into the next version.",
+    "No le pidas a la IA que mejore. Haz que cada ejecución produzca evidencia, que cada evidencia genere una hipótesis y que cada hipótesis se convierta en un experimento. Solo lo que se compruebe pasa a la siguiente versión."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leída"
+  ],
+  "Um objetivo tem número, direção e \"sem piorar\"": [
+    "A goal needs a number, a direction, and “without worsening”",
+    "Un objetivo necesita una cifra, una dirección y un «sin empeorar»"
+  ],
+  "A primeira troca é sair de \"melhorar\" para": [
+    "The first change is to replace “improve” with",
+    "El primer cambio es sustituir «mejorar» por"
+  ],
+  "\"de X para Y, sem piorar Z\"": [
+    "“from X to Y, without worsening Z”",
+    "«de X a Y, sin empeorar Z»"
+  ],
+  ". Para Regina: \"taxa de resposta às propostas de 20% para 30%, sem piorar reclamações e desconto médio\". Para Marcos: \"agendamento de visita de 20% para 30%, sem piorar visitas em que o cliente não aparece\". A parte do \"sem piorar\" tem nome —": [
+    ". For Regina: “proposal response rate from 20% to 30%, without worsening complaints or average discount.” For Marcos: “viewing booking rate from 20% to 30%, without worsening no-show visits.” The “without worsening” part has a name—",
+    ". Para Regina: «tasa de respuesta a las propuestas del 20 % al 30 %, sin empeorar las quejas ni el descuento medio». Para Marcos: «citas para visitas del 20 % al 30 %, sin empeorar las visitas a las que el cliente no se presenta». La parte «sin empeorar» tiene un nombre:"
+  ],
+  "guarda-corpo": [
+    "guardrail",
+    "límite de control"
+  ],
+  "— e não é enfeite.": [
+    "—and it’s not decoration.",
+    "—y no es un adorno."
+  ],
+  "Sem guarda-corpo, toda meta sozinha vira alvo, e o assistente aprende a trapacear: peça \"mais cliques\" e ele escreve título caça-clique; peça \"menos tempo por chamado\" e o time de Paulo passa a encerrar rápido sem resolver; peça \"mais respostas\" e as mensagens começam a provocar \"pare de me mandar isso\" — que conta como resposta. A meta sem \"sem piorar\" é o erro mais silencioso desta trilha, porque o número sobe e o negócio piora.": [
+    "Without a guardrail, every goal becomes a target on its own, and the assistant learns to cheat: ask for “more clicks” and it writes clickbait; ask for “less time per ticket” and Paulo’s team starts closing tickets quickly without resolving them; ask for “more replies” and messages start provoking “stop sending me this”—which counts as a reply. A goal without “without worsening” is this track’s quietest mistake, because the number goes up while the business gets worse.",
+    "Sin un límite de control, cualquier meta se convierte en un objetivo aislado y el asistente aprende a hacer trampa: pide «más clics» y redacta un título sensacionalista; pide «menos tiempo por consulta» y el equipo de Paulo empieza a cerrarlas rápido sin resolverlas; pide «más respuestas» y los mensajes empiezan a provocar «deja de enviarme esto», que cuenta como respuesta. Una meta sin «sin empeorar» es el error más silencioso de esta ruta, porque la cifra sube mientras el negocio empeora."
+  ],
+  "Dois cuidados sobre o número. Primeiro: escolha uma métrica que o cliente responda rápido — taxa de resposta, agendamento — e vigie a de dinheiro (conversão, margem) como guarda-corpo. Segundo: metas perto de 3% são quase impossíveis de provar em negócio pequeno; provar 3% → 5% exige cerca de 1.500 execuções de cada lado, o que a 200 por mês leva 15 meses. Provar 20% → 30% exige ~300 de cada lado. Comece pelo terreno onde dá para provar.": [
+    "Two cautions about the number. First, choose a metric customers respond to quickly—reply rate, bookings—and monitor a money metric (conversion, margin) as a guardrail. Second, goals near 3% are almost impossible to prove in a small business: proving 3% → 5% takes about 1,500 executions on each side, which at 200 a month takes 15 months. Proving 20% → 30% takes ~300 on each side. Start where proof is possible.",
+    "Dos precauciones sobre la cifra. Primero, elige una métrica a la que el cliente responda rápido —tasa de respuesta, citas— y vigila una métrica económica (conversión, margen) como límite de control. Segundo, es casi imposible demostrar metas cercanas al 3 % en un negocio pequeño: demostrar 3 % → 5 % exige unas 1.500 ejecuciones por versión, lo que a 200 al mes lleva 15 meses. Demostrar 20 % → 30 % exige unas 300 por versión. Empieza por algo que puedas demostrar."
+  ],
+  "Hipótese é uma frase com SE, ENTÃO e PORQUE — e uma mudança só": [
+    "A hypothesis is a sentence with IF, THEN, and BECAUSE—and only one change",
+    "Una hipótesis es una frase con SI, ENTONCES y PORQUE, y un solo cambio"
+  ],
+  "A segunda troca é sair de \"ideia\" para hipótese. Hipótese tem forma fixa:": [
+    "The second change is to replace “idea” with a hypothesis. A hypothesis has a fixed form:",
+    "El segundo cambio es sustituir «idea» por hipótesis. La hipótesis tiene una estructura fija:"
+  ],
+  "SE": [
+    "IF",
+    "SI"
+  ],
+  "[uma mudança]": [
+    "[one change]",
+    "[un solo cambio]"
+  ],
+  "ENTÃO": [
+    "THEN",
+    "ENTONCES"
+  ],
+  "[efeito esperado na meta]": [
+    "[expected effect on the goal]",
+    "[efecto esperado en la meta]"
+  ],
+  "PORQUE": [
+    "BECAUSE",
+    "PORQUE"
+  ],
+  "[motivo]. No exemplo de referência do LOOP-R, a clínica fictícia escreveu: \"SE a proposta tiver até 80 palavras, ENTÃO a taxa de resposta sobe de 19% para perto de 30%, PORQUE proposta longa no WhatsApp não é lida até o fim. Mudança: só o tamanho.\"": [
+    "[reason]. In LOOP-R’s reference example, the fictional clinic wrote: “IF the proposal is up to 80 words, THEN the reply rate rises from 19% to about 30%, BECAUSE long WhatsApp proposals aren’t read to the end. Change: length only.”",
+    "[motivo]. En el ejemplo de referencia de LOOP-R, la clínica ficticia escribió: «SI la propuesta tiene hasta 80 palabras, ENTONCES la tasa de respuesta sube del 19 % a cerca del 30 %, PORQUE las propuestas largas de WhatsApp no se leen hasta el final. Cambio: solo la extensión»."
+  ],
+  "A parte mais difícil é a última:": [
+    "The hardest part is the last one:",
+    "La parte más difícil es la última:"
+  ],
+  "uma mudança só": [
+    "one change only",
+    "un solo cambio"
+  ],
+  ". Marcos quer \"cortar o texto, mudar o tom e enviar de manhã\" — três mudanças de uma vez. Se funcionar, ele não sabe qual das três funcionou; se falhar, não sabe qual estragou. Três ideias são três hipóteses, testadas uma por vez ou registradas para depois.": [
+    ". Marcos wants to “cut the text, change the tone, and send it in the morning”—three changes at once. If it works, he won’t know which one worked; if it fails, he won’t know which one hurt. Three ideas are three hypotheses, tested one at a time or recorded for later.",
+    ". Marcos quiere «acortar el texto, cambiar el tono y enviarlo por la mañana»: tres cambios a la vez. Si funciona, no sabrá cuál funcionó; si falla, no sabrá cuál lo perjudicó. Son tres hipótesis, que se prueban de una en una o se dejan anotadas para después."
+  ],
+  "Para Regina, a mesma forma: \"SE a proposta abrir citando a avaliação que a cliente deixou, ENTÃO mais clientes respondem, PORQUE reconhecem que a mensagem foi escrita para elas\" — foi essa, aliás, a hipótese que acabou promovida no exemplo. Uma boa hipótese também protege: se falhar, você sabe exatamente o que descartar e o que anotar na memória para ninguém testar de novo sem querer.": [
+    "For Regina, the same form applies: “IF the proposal opens by mentioning the review the client left, THEN more clients reply, BECAUSE they recognize the message was written for them”—that was, in fact, the hypothesis that was promoted in the example. A good hypothesis also protects you: if it fails, you know exactly what to discard and what to record so nobody unknowingly tests it again.",
+    "Para Regina sirve la misma estructura: «SI la propuesta empieza mencionando la reseña que dejó la clienta, ENTONCES más clientes responden, PORQUE reconocen que el mensaje se escribió para ellas». De hecho, esa fue la hipótesis que se promovió en el ejemplo. Una buena hipótesis también te protege: si falla, sabes exactamente qué descartar y qué anotar para que nadie vuelva a probarla sin querer."
+  ],
+  "Repare no que aconteceu com a instrução vaga de Paulo quando passa por essas duas trocas:": [
+    "Notice what happened to Paulo’s vague instruction after these two changes:",
+    "Observa qué pasó con la instrucción vaga de Paulo después de aplicar estos dos cambios:"
+  ],
+  "Instrução vaga": [
+    "Vague instruction",
+    "Instrucción vaga"
+  ],
+  "\"Assistente, responda melhor os chamados e vá melhorando com o tempo.\"": [
+    "“Assistant, answer tickets better and keep improving over time.”",
+    "«Asistente, responde mejor las consultas y sigue mejorando con el tiempo»."
+  ],
+  "Pedido que se confere": [
+    "Verifiable request",
+    "Solicitud comprobable"
+  ],
+  "\"Registre cada chamado (assunto, resposta usada, resolvido no 1º contato?). Meta: resolvido no 1º contato de 50% para 65%, sem piorar reabertura em 7 dias. Hipótese: SE a resposta de senha tiver o link direto ENTÃO menos gente volta PORQUE o cliente se perde na tela. Teste: metade com cada versão, ~170 por versão.\"": [
+    "“Log each ticket (topic, reply used, resolved on 1st contact?). Goal: resolved on 1st contact from 50% to 65%, without worsening 7-day reopenings. Hypothesis: IF the password reply includes the direct link THEN fewer people come back BECAUSE customers get lost on the screen. Test: half with each version, ~170 per version.”",
+    "«Registra cada consulta (tema, respuesta utilizada, ¿resuelta en el primer contacto?). Meta: subir del 50 % al 65 % las resoluciones en el primer contacto, sin empeorar las reaperturas en 7 días. Hipótesis: SI la respuesta sobre contraseñas incluye el enlace directo, ENTONCES menos personas vuelven PORQUE el cliente se pierde en la pantalla. Prueba: la mitad con cada versión, unas 170 por versión»."
+  ],
+  "Saldo:": [
+    "Result:",
+    "Resultado:"
+  ],
+  "a primeira não produz nada conferível; a segunda produz registro, número-alvo, guarda-corpo e teste com quantidade — quatro coisas para discutir com o sócio.": [
+    "the first produces nothing verifiable; the second produces a record, a target number, a guardrail, and a test with a sample size—four things to discuss with a business partner.",
+    "la primera no produce nada comprobable; la segunda produce un registro, una cifra objetivo, un límite de control y una prueba con una cantidad definida: cuatro cosas para conversar con un socio."
+  ],
+  "Quem diz se funcionou não é quem teve a ideia": [
+    "The person who decides whether it worked isn’t the person who came up with the idea",
+    "Quien decide si funcionó no es quien tuvo la idea"
+  ],
+  "A terceira troca é separar quem propõe de quem julga. Quem julga só pode responder uma de três coisas:": [
+    "The third change is to separate the proposer from the judge. The judge can only answer one of three things:",
+    "El tercer cambio es separar a quien propone de quien evalúa. Quien evalúa solo puede responder una de estas tres cosas:"
+  ],
+  "B ganhou com margem": [
+    "B won by a clear margin",
+    "B ganó con margen"
+  ],
+  "A segue": [
+    "A stays",
+    "A sigue"
+  ],
+  ", ou": [
+    ", or",
+    ", o"
+  ],
+  "quantidade insuficiente — continue o teste": [
+    "not enough data—keep testing",
+    "cantidad insuficiente: sigue probando"
+  ],
+  ". A terceira é a resposta mais comum e precisa ser aceitável, porque a alternativa é promover acaso. Aquele \"300 de cada lado\" tem nome —": [
+    ". The third answer is the most common and must be acceptable, because the alternative is promoting chance. That “300 on each side” has a name—",
+    ". La tercera respuesta es la más frecuente y debe ser aceptable, porque la alternativa es promover el azar. Esos «300 por versión» tienen un nombre:"
+  ],
+  "quantidade que prova": [
+    "sample size that proves it",
+    "cantidad necesaria para demostrarlo"
+  ],
+  "— e é calculado antes do teste, não depois.": [
+    "—and it’s calculated before the test, not after.",
+    "—y se calcula antes de la prueba, no después."
+  ],
+  "É aqui que mora o segundo erro silencioso: parar o teste no meio porque a versão nova \"está na frente\". Marcos, com 40 leads por semana, precisa de umas 15 semanas para chegar a 300 por versão. Na semana 2, a nova está com 12 respostas em 40 contra 7 em 40 da antiga, e ele quer promover. Doze contra sete em 40 é o tipo de diferença que aparece e some sozinha. Parada antecipada só existe por um motivo: um guarda-corpo caindo. Nunca por vantagem parcial.": [
+    "This is where the second quiet mistake lives: stopping a test halfway because the new version is “in the lead.” Marcos, with 40 leads a week, needs about 15 weeks to reach 300 per version. In week 2, the new version has 12 replies out of 40 versus 7 out of 40 for the old one, and he wants to promote it. Twelve versus seven out of 40 is exactly the kind of difference that appears and disappears on its own. Stop early for one reason only: a guardrail is falling. Never because of a partial lead.",
+    "Aquí aparece el segundo error silencioso: detener la prueba a la mitad porque la nueva versión «va ganando». Marcos, con 40 contactos por semana, necesita unas 15 semanas para llegar a 300 por versión. En la semana 2, la nueva tiene 12 respuestas de 40 frente a 7 de 40 de la anterior, y quiere promoverla. Doce frente a siete de 40 es justo el tipo de diferencia que aparece y desaparece por azar. Solo se detiene antes si cae un límite de control. Nunca por una ventaja parcial."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Semana 2 do teste: versão nova com 12 respostas em 40, antiga com 7 em 40. O que quem julga responde?": [
+    "Week 2 of the test: new version gets 12 replies out of 40; old version gets 7 out of 40. What should the judge say?",
+    "Semana 2 de la prueba: la nueva versión recibe 12 respuestas de 40 y la anterior, 7 de 40. ¿Qué debe responder quien evalúa?"
+  ],
+  "B ganhou — é quase o dobro": [
+    "B won—it’s almost double",
+    "B ganó: casi duplicó el resultado"
+  ],
+  "Quantidade insuficiente — continue até a quantidade que prova": [
+    "Not enough data—keep testing until the sample size is met",
+    "Cantidad insuficiente: sigue hasta alcanzar la cantidad necesaria"
+  ],
+  "A segue — a diferença é pequena": [
+    "A stays—the difference is small",
+    "A sigue: la diferencia es pequeña"
+  ],
+  "\"Parece melhor\" não é \"melhor\": o veredito vem do número e dos guarda-corpos": [
+    "“Looks better” isn’t “is better”: the verdict comes from the number and the guardrails",
+    "«Parece mejor» no significa «es mejor»: el veredicto depende de la cifra y los límites de control"
+  ],
+  "De volta ao exemplo de referência. No segundo ciclo, a hipótese \"até 80 palavras\" foi testada com 300 propostas de cada lado: resposta de 19,3% para 29,7% — dez pontos, com quantidade que prova. E não foi promovida. O guarda-corpo \"reclamações\" marcou 6 contra 1, e a tolerância combinada era zero. A regra foi aplicada como estava escrita; a versão ficou de fora; tudo foi registrado.": [
+    "Back to the reference example. In cycle two, the “up to 80 words” hypothesis was tested with 300 proposals on each side: replies rose from 19.3% to 29.7%—ten points, with a proven sample size. And it wasn’t promoted. The “complaints” guardrail showed 6 versus 1, and the agreed tolerance was zero. The rule was applied as written; the version stayed out; everything was recorded.",
+    "Volvamos al ejemplo de referencia. En el segundo ciclo, la hipótesis «hasta 80 palabras» se probó con 300 propuestas por versión: las respuestas pasaron del 19,3 % al 29,7 %, diez puntos, con una cantidad suficiente para demostrarlo. Aun así, no se promovió. El límite de control de «quejas» marcó 6 frente a 1, y la tolerancia acordada era cero. Se aplicó la regla escrita; la versión quedó fuera y todo se registró."
+  ],
+  "Aí vem a segunda lição, tão importante quanto a primeira: a regra estava mal calibrada. Seis contra uma reclamação em 300 é ruído — pode acontecer por acaso. Tolerância zero em evento raro descarta ideia boa por sorte ruim. A pessoa ajustou a tolerância para 1% nos testes seguintes, e a hipótese descartada ficou na memória, com o motivo. No quarto ciclo, \"abrir citando a avaliação da cliente\" subiu de 19,3% para 29,3%, guarda-corpos dentro, e virou a versão oficial. A conversão em venda não se mexeu — e isso também ficou escrito.": [
+    "Then comes the second lesson, as important as the first: the rule was poorly calibrated. Six complaints versus one out of 300 is noise—it can happen by chance. Zero tolerance for a rare event rejects good ideas because of bad luck. The team adjusted the tolerance to 1% in later tests, and the rejected hypothesis stayed in memory with the reason. In cycle four, “open by mentioning the client’s review” rose from 19.3% to 29.3%, stayed within the guardrails, and became the official version. Sales conversion didn’t move—and that was recorded too.",
+    "Luego viene la segunda lección, tan importante como la primera: la regla estaba mal calibrada. Seis quejas frente a una entre 300 son ruido; pueden deberse al azar. La tolerancia cero para un evento poco frecuente descarta buenas ideas por mala suerte. El equipo ajustó la tolerancia al 1 % en las pruebas siguientes y guardó en el historial la hipótesis descartada junto con el motivo. En el cuarto ciclo, «empezar mencionando la reseña de la clienta» subió del 19,3 % al 29,3 %, respetó los límites de control y se convirtió en la versión oficial. La conversión en ventas no cambió, y también quedó anotado."
+  ],
+  "Para Paulo a mesma regra vale: se \"resolvido no primeiro contato\" sobe e \"reabertura em 7 dias\" sobe junto, A segue. O sistema não promove porque parece melhor — e quem aprova, em L1, é você, no cartão, com o número na frente.": [
+    "The same rule applies to Paulo: if “resolved on first contact” rises but “reopened within 7 days” rises too, A stays. The system doesn’t promote something because it looks better—and at L1, you’re the one who approves it on the card, with the numbers in front of you.",
+    "La misma regla se aplica a Paulo: si suben las resoluciones en el primer contacto y también las reaperturas en 7 días, A sigue. El sistema no promueve algo porque parezca mejor; en L1, tú lo apruebas en la tarjeta con las cifras delante."
+  ],
+  "Erro comum": [
+    "Common mistake",
+    "Error frecuente"
+  ],
+  "Promover porque parece melhor.": [
+    "Promoting because it looks better.",
+    "Promover porque parece mejor."
+  ],
+  "A proposta nova \"está claramente mais bonita\", a taxa subiu na primeira semana — e vira a oficial. Acontece porque o olho humano confunde gosto com resultado, e semana boa com padrão. Como evitar: nada vira versão oficial sem veredito com a quantidade que prova e os guarda-corpos conferidos; e a decisão passa pelo seu cartão, não pela impressão de quem escreveu.": [
+    "The new proposal “is clearly prettier,” the rate went up in the first week—and it becomes official. This happens because the human eye confuses taste with results, and a good week with a pattern. How to avoid it: nothing becomes official without a verdict based on the required sample size and checked guardrails; and the decision goes through your card, not the impression of the person who wrote it.",
+    "La nueva propuesta «es claramente más bonita», la tasa subió la primera semana y se convierte en la oficial. Ocurre porque el ojo confunde gusto con resultado y una buena semana con un patrón. Para evitarlo: ninguna versión se hace oficial sin un veredicto con la cantidad necesaria y los límites de control revisados; la decisión pasa por tu tarjeta, no por la impresión de quien redactó la propuesta."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/4 feito": [
+    "0/4 done",
+    "0/4 completado"
+  ],
+  "Reescreva uma instrução vaga sua com evidência, meta e hipótese": [
+    "Rewrite one of your vague instructions with evidence, a goal, and a hypothesis",
+    "Reescribe una de tus instrucciones vagas con evidencia, una meta y una hipótesis"
+  ],
+  "Sair com um texto de quatro partes — evidência, meta com \"sem piorar\", hipótese SE-ENTÃO-PORQUE, teste — gerado num chat de IA a partir de uma instrução vaga do seu negócio. ~10 min.": [
+    "Leave with a four-part text—evidence, a goal with “without worsening,” an IF-THEN-BECAUSE hypothesis, and a test—generated in an AI chat from a vague instruction in your business. ~10 min.",
+    "Termina con un texto de cuatro partes —evidencia, una meta con «sin empeorar», una hipótesis SI-ENTONCES-PORQUE y una prueba— generado en un chat de IA a partir de una instrucción vaga de tu negocio. ~10 min."
+  ],
+  "Você está só escrevendo um pedido num chat — nada muda no seu negócio até você aprovar, e nenhuma resposta a cliente sai daqui. Se a resposta vier com números que você não deu, apague-os e peça de novo acrescentando \"não invente números\".": [
+    "You’re only writing a request in a chat—nothing in your business changes until you approve it, and no customer reply goes out from here. If the answer includes numbers you didn’t provide, delete them and ask again, adding “don’t make up numbers.”",
+    "Solo vas a escribir una solicitud en un chat: nada cambia en tu negocio hasta que lo apruebes y de aquí no se envía ninguna respuesta a clientes. Si la respuesta incluye cifras que no diste, bórralas y vuelve a pedirla añadiendo «no inventes cifras»."
+  ],
+  "Isto é um pedido pronto para colar num chat de IA: os trechos entre < > são os únicos que você troca — o resto fica como está.": [
+    "This is a ready-to-paste request for an AI chat: the parts between < > are the only ones you replace—the rest stays as is.",
+    "Esta solicitud está lista para pegar en un chat de IA: solo sustituyes los fragmentos entre < >; el resto se deja igual."
+  ],
+  "copiar": [
+    "copy",
+    "copiar"
+  ],
+  "O que você deve ver:": [
+    "What you should see:",
+    "Qué deberías ver:"
+  ],
+  "uma resposta com os quatro blocos numerados; a META com um \"sem piorar\"; a HIPÓTESE com uma única mudança; o TESTE com uma quantidade por versão; e uma lista curta do que fica fora do alcance. Se a hipótese vier com duas ou três mudanças juntas, responda: \"separe em uma hipótese por mudança\".": [
+    "a response with four numbered sections; a GOAL with a “without worsening”; a HYPOTHESIS with just ONE change; a TEST with a sample size per version; and a short list of what’s out of scope. If the hypothesis contains two or three changes, reply: “separate this into one hypothesis per change.”",
+    "una respuesta con cuatro secciones numeradas; una META con «sin empeorar»; una HIPÓTESIS con UN solo cambio; una PRUEBA con la cantidad por versión; y una lista breve de lo que queda fuera. Si la hipótesis incluye dos o tres cambios, responde: «separa en una hipótesis por cambio»."
+  ],
+  "Colei o pedido no chat de IA que uso e troquei os três trechos entre < > por dados do meu negócio.": [
+    "I pasted the request into my AI chat and replaced the three parts between < > with my business data.",
+    "Pegué la solicitud en mi chat de IA y sustituí los tres fragmentos entre < > por datos de mi negocio."
+  ],
+  "A resposta tem as 4 partes, e a HIPÓTESE tem UMA mudança só (se não, pedi para separar).": [
+    "The answer has all 4 parts, and the HYPOTHESIS has only ONE change (if not, I asked it to split them).",
+    "La respuesta tiene las 4 partes y la HIPÓTESIS contiene UN solo cambio (si no, pedí que los separara)."
+  ],
+  "A META tem \"sem piorar\" com pelo menos um guarda-corpo (se não, pedi: \"acrescente um sem piorar\").": [
+    "The GOAL says “without worsening” and includes at least one guardrail (if not, I asked: “add a without-worsening condition”).",
+    "La META dice «sin empeorar» e incluye al menos un límite de control (si no, pedí: «añade una condición de sin empeorar»)."
+  ],
+  "Guardei o texto num lugar que eu ache de novo: ele é o primeiro rascunho da ficha do loop, que a Trilha 2 preenche pergunta por pergunta.": [
+    "I saved the text somewhere I can find it again: it’s the first draft of the loop worksheet, which Track 2 fills in question by question.",
+    "Guardé el texto en un lugar donde pueda encontrarlo: es el primer borrador de la ficha del ciclo, que la Ruta 2 completa pregunta por pregunta."
+  ],
+  "Você acabou de conseguir transformar uma ordem vaga num pedido que dá para conferir — com registro, número-alvo, guarda-corpo e teste.": [
+    "You’ve just turned a vague command into a request you can verify—with a record, a target number, a guardrail, and a test.",
+    "Acabas de convertir una orden vaga en una solicitud comprobable, con un registro, una cifra objetivo, un límite de control y una prueba."
+  ],
+  "\"fique cada vez melhor\"": [
+    "“keep getting better”",
+    "«mejora cada vez»"
+  ],
+  "em relação": [
+    "better than",
+    "mejor que"
+  ],
+  "a quê?": [
+    "what?",
+    "¿qué?"
+  ],
+  "medido": [
+    "measured",
+    "medido"
+  ],
+  "por quem?": [
+    "by whom?",
+    "¿por quién?"
+  ],
+  "comparado": [
+    "compared",
+    "comparado"
+  ],
+  "como?": [
+    "how?",
+    "¿cómo?"
+  ],
+  "\"sim, melhorei\"": [
+    "“yes, I improved”",
+    "«sí, mejoré»"
+  ],
+  "a resposta esperada, não a verdadeira": [
+    "the expected answer, not the true one",
+    "la respuesta esperada, no la verdadera"
+  ],
+  "MAXIMIZAR: resposta 20% → 30%": [
+    "MAXIMIZE: reply rate 20% → 30%",
+    "MAXIMIZAR: tasa de respuesta 20 % → 30 %"
+  ],
+  "desconto médio": [
+    "average discount",
+    "descuento medio"
+  ],
+  "margem": [
+    "margin",
+    "margen"
+  ],
+  "trapaça:": [
+    "cheating:",
+    "trampa:"
+  ],
+  "barrada": [
+    "blocked",
+    "bloqueada"
+  ],
+  "20–30%: ~300 por lado · 3–5%: ~1.500": [
+    "20–30%: ~300 per side · 3–5%: ~1,500",
+    "20–30 %: ~300 por versión · 3–5 %: ~1.500"
+  ],
+  "≤ 80 palavras": [
+    "≤ 80 words",
+    "≤ 80 palabras"
+  ],
+  "resposta 19 → 30%": [
+    "reply rate 19 → 30%",
+    "respuestas 19 → 30 %"
+  ],
+  "não é lida até o fim": [
+    "not read to the end",
+    "no se lee hasta el final"
+  ],
+  "1 mudança só": [
+    "one change only",
+    "un solo cambio"
+  ],
+  "tamanho + tom + hora = 3": [
+    "length + tone + timing = 3",
+    "extensión + tono + horario = 3"
+  ],
+  "com 3 mudanças, funcionou — mas qual?": [
+    "with 3 changes, it worked—but which one?",
+    "con 3 cambios, funcionó, pero ¿cuál?"
+  ],
+  "A × B testados": [
+    "A × B tested",
+    "A × B en prueba"
+  ],
+  "B ganhou": [
+    "B won",
+    "B ganó"
+  ],
+  "com margem": [
+    "by a clear margin",
+    "con margen"
+  ],
+  "quantidade": [
+    "not enough",
+    "cantidad"
+  ],
+  "insuficiente": [
+    "data",
+    "insuficiente"
+  ],
+  "(ou piorou)": [
+    "(or got worse)",
+    "(o empeoró)"
+  ],
+  "→ continue o teste": [
+    "→ keep testing",
+    "→ sigue probando"
+  ],
+  "semana 2: 12/40 × 7/40 = ainda nada": [
+    "week 2: 12/40 × 7/40 = still nothing",
+    "semana 2: 12/40 × 7/40 = aún no alcanza"
+  ],
+  "parar cedo só se um guarda-corpo cair": [
+    "stop early only if a guardrail falls",
+    "solo detén antes si cae un límite de control"
+  ],
+  "ciclo 2 · ≤ 80 palavras": [
+    "cycle 2 · ≤ 80 words",
+    "ciclo 2 · ≤ 80 palabras"
+  ],
+  "19,3 → 29,7%": [
+    "19.3 → 29.7%",
+    "19,3 → 29,7 %"
+  ],
+  "reclamações 6 × 1": [
+    "complaints 6 × 1",
+    "quejas 6 × 1"
+  ],
+  "→ A segue (regra: 0)": [
+    "→ A stays (rule: 0)",
+    "→ A sigue (regla: 0)"
+  ],
+  "ciclo 4 · cita avaliação": [
+    "cycle 4 · mention the review",
+    "ciclo 4 · mencionar la reseña"
+  ],
+  "19,3 → 29,3%": [
+    "19.3 → 29.3%",
+    "19,3 → 29,3 %"
+  ],
+  "guarda-corpos ok": [
+    "guardrails clear",
+    "límites de control aprobados"
+  ],
+  "→ B ganhou · cartão": [
+    "→ B won · card",
+    "→ B ganó · tarjeta"
+  ],
+  "300 por versão nos dois": [
+    "300 per version on both sides",
+    "300 por versión"
+  ],
+  "conversão: 3,7 × 3,0% — sem diferença": [
+    "conversion: 3.7 × 3.0% — no difference",
+    "conversión: 3,7 × 3,0 % — sin diferencia"
+  ],
+  "tolerância revista: 0 → 1% (evento raro)": [
+    "tolerance revised: 0 → 1% (rare event)",
+    "tolerancia ajustada: 0 → 1 % (evento poco frecuente)"
+  ],
+  "memória: as duas ficam registradas": [
+    "memory: both are recorded",
+    "historial: ambas quedan registradas"
+  ],
+  "parecer melhor não abre o portão": [
+    "looking better doesn’t open the gate",
+    "parecer mejor no abre la puerta"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Recap",
+    "Resumen"
+  ],
+  "\"Fique melhor\" é uma frase, não um sistema: sem evidência, número e comparação, o assistente só vai dizer que melhorou.": [
+    "“Get better” is a sentence, not a system: without evidence, a number, and a comparison, the assistant will only say it improved.",
+    "«Mejora» es una frase, no un sistema: sin evidencia, cifras y comparación, el asistente solo dirá que mejoró."
+  ],
+  "Um objetivo que presta tem direção, número e \"sem piorar\" — porque toda meta sozinha ensina o assistente a trapacear.": [
+    "A useful goal has a direction, a number, and “without worsening”—because every goal by itself teaches the assistant to cheat.",
+    "Un objetivo útil tiene dirección, cifras y un «sin empeorar», porque cualquier meta aislada enseña al asistente a hacer trampa."
+  ],
+  "Hipótese é SE-ENTÃO-PORQUE com uma mudança só; quem julga é o número, com a quantidade combinada antes, e nunca quem teve a ideia.": [
+    "A hypothesis is IF-THEN-BECAUSE with one change only; the numbers judge, using the sample size agreed in advance—not the person who had the idea.",
+    "Una hipótesis es SI-ENTONCES-PORQUE con un solo cambio; quien decide son las cifras, con la cantidad acordada de antemano, nunca quien tuvo la idea."
+  ],
+  "Uma versão pode subir dez pontos e ainda assim não entrar — e isso é o sistema funcionando, não falhando.": [
+    "A version can rise by ten points and still be rejected—and that means the system is working, not failing.",
+    "Una versión puede subir diez puntos y aun así quedar fuera; eso significa que el sistema funciona, no que falla."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu próximo paso"
+  ],
+  "Você acabou de conseguir transformar uma ordem vaga num pedido que dá para conferir — o primeiro rascunho da sua ficha do loop.": [
+    "You’ve just turned a vague command into a request you can verify—the first draft of your loop worksheet.",
+    "Acabas de convertir una orden vaga en una solicitud comprobable: el primer borrador de tu ficha del ciclo."
+  ],
+  "Nos próximos 15 minutos, pegue a META que a IA escreveu e confira o número atual com dados de verdade: conte as últimas 20 execuções e veja quantas deram certo. Ajuste o X do \"de X para Y\".": [
+    "In the next 15 minutes, take the GOAL AI wrote and check the current number against real data: count the last 20 executions and see how many succeeded. Adjust X in “from X to Y.”",
+    "En los próximos 15 minutos, toma la META que escribió la IA y comprueba la cifra actual con datos reales: cuenta las últimas 20 ejecuciones y cuántas salieron bien. Ajusta la X de «de X a Y»."
+  ],
+  "Na Trilha 2 você monta o LOOP-R passo a passo, começando por L — Localizar: um processo, um número — e preenche a primeira pergunta da ficha do loop com o que acabou de escrever.": [
+    "In Track 2, you’ll build the LOOP-R step by step, starting with L—Locate: one process, one number—and fill in the first question on the loop worksheet with what you just wrote.",
+    "En la Ruta 2 montarás LOOP-R paso a paso, empezando por L —Localizar: un proceso, una cifra— y completarás con lo que acabas de escribir la primera pregunta de la ficha del ciclo."
+  ],
+  "← aula 3": [
+    "← lesson 3",
+    "← clase 3"
+  ],
+  "concluir a trilha →": [
+    "complete the track →",
+    "terminar la ruta →"
+  ],
+  "Aula 4 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 4 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 4 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "Tenho um assistente de IA que faz esta tarefa no meu negócio: <descreva a tarefa — ex.: responder leads de portal imobiliário>.\nHoje a instrução que dei foi vaga: \"<cole a instrução vaga — ex.: seja mais persuasivo e vá melhorando>\".\nO número atual que eu sei é: <ex.: 20% dos leads respondem — ou \"não sei\">.\n\nReescreva a instrução em quatro partes, sem inventar números que eu não dei:\n1. EVIDÊNCIA — o que registrar por execução, uma linha por vez, em até 5 colunas (uma delas obrigatoriamente \"o que aconteceu depois\").\n2. META — no formato \"de X para Y, sem piorar Z\", usando só o número que informei. Se eu disse \"não sei\", diga que a primeira tarefa é medir por 2 semanas e proponha o que medir.\n3. HIPÓTESE — uma frase \"SE [uma mudança só] ENTÃO [efeito na meta] PORQUE [motivo]\".\n4. TESTE — como dividir em duas versões (atual e nova) e quantas execuções por versão antes de decidir (para metas entre 20% e 30%, use cerca de 300 por versão).\nTermine listando o que NÃO pode mudar sem a minha aprovação.": [
+    "I have an AI assistant that does this task in my business: <describe the task—for example, reply to real estate portal leads>.\nToday, the instruction I gave was vague: “<paste the vague instruction—for example, be more persuasive and keep improving>.”\nThe current number I know is: <for example, 20% of leads reply—or “I don’t know”>.\n\nRewrite the instruction in four parts, without making up numbers I haven’t given you:\n1. EVIDENCE—what to record per execution, one row at a time, in up to 5 columns (one must be “what happened next”).\n2. GOAL—in the format “from X to Y, without worsening Z,” using only the number I provided. If I said “I don’t know,” say the first task is to measure for 2 weeks and suggest what to measure.\n3. HYPOTHESIS—one sentence: “IF [one change only] THEN [effect on the goal] BECAUSE [reason].”\n4. TEST—how to split into two versions (current and new) and how many executions per version to collect before deciding (for goals between 20% and 30%, use about 300 per version).\nEnd by listing what must NOT change without my approval.",
+    "Tenho um assistente de IA que realiza esta tarefa no meu negócio: <descreve la tarea; por ejemplo, responder contactos de un portal inmobiliario>.\nLa instrucción que le di hoy era vaga: «<pega la instrucción vaga; por ejemplo, sé más persuasivo y sigue mejorando>».\nLa cifra actual que conozco es: <por ejemplo, responde el 20 % de los contactos, o «no lo sé»>.\n\nReescribe la instrucción en cuatro partes, sin inventar cifras que no te di:\n1. EVIDENCIA: qué registrar por ejecución, una fila a la vez, en un máximo de 5 columnas (una debe ser «qué ocurrió después»).\n2. META: con el formato «de X a Y, sin empeorar Z», usando solo la cifra que indiqué. Si dije «no lo sé», explica que la primera tarea es medir durante 2 semanas y sugiere qué medir.\n3. HIPÓTESIS: una frase «SI [un solo cambio] ENTONCES [efecto en la meta] PORQUE [motivo]».\n4. PRUEBA: cómo dividir en dos versiones (actual y nueva) y cuántas ejecuciones por versión reunir antes de decidir (para metas entre 20 % y 30 %, usa unas 300 por versión).\nTermina enumerando lo que NO puede cambiar sin mi aprobación."
+  ],
+  "A métrica que não pode cair enquanto você tenta subir a principal. Ex.: reclamações, margem, reabertura de chamado. O loop reprova qualquer versão que melhore a meta e piore um guarda-corpo.": [
+    "A metric that must not fall while you try to raise the main one. For example: complaints, margin, ticket reopenings. The loop rejects any version that improves the goal but worsens a guardrail.",
+    "La métrica que no puede bajar mientras intentas mejorar la principal. Por ejemplo: quejas, margen, reapertura de consultas. El ciclo rechaza toda versión que mejore la meta y empeore un límite de control."
+  ],
+  "Quantas execuções por versão são necessárias para que a diferença entre A e B não seja sorte. Para metas entre 20% e 30%, cerca de 300 por versão.": [
+    "The number of executions per version needed to tell whether the difference between A and B is more than chance. For goals between 20% and 30%, about 300 per version.",
+    "La cantidad de ejecuciones por versión necesaria para saber si la diferencia entre A y B no se debe al azar. Para metas entre el 20 % y el 30 %, unas 300 por versión."
+  ],
+  "<b>Fig. 1</b> A frase 'fique melhor' com três encaixes vazios: em relação a quê, medido por quem, comparado como. Sem preencher os três, a resposta 'melhorei' é só a resposta esperada.": [
+    "<b>Fig. 1</b> The phrase “get better” with three empty slots: better than what, measured by whom, compared how. Without filling in all three, “I improved” is just the expected answer.",
+    "<b>Fig. 1</b> La frase «mejora» con tres espacios vacíos: ¿mejor respecto a qué?, ¿medido por quién?, ¿comparado cómo? Sin completar los tres, «mejoré» es solo la respuesta esperada."
+  ],
+  "<b>Fig. 2</b> A meta como uma pista: a seta sobe X, e os guarda-corpos dos lados impedem que o caminho mais curto seja trapacear. Sem eles, a seta sobe e o negócio cai.": [
+    "<b>Fig. 2</b> A goal as a track: the arrow raises X, while the guardrails on each side keep the shortest path from cheating. Without them, the arrow rises and the business falls.",
+    "<b>Fig. 2</b> La meta como una pista: la flecha eleva X y los límites de control impiden que el atajo haga trampa. Sin ellos, la flecha sube y el negocio cae."
+  ],
+  "<b>Fig. 3</b> A hipótese como corrente de três elos — SE, ENTÃO, PORQUE — e a etiqueta que mais se esquece: uma mudança só. Três mudanças juntas quebram a corrente.": [
+    "<b>Fig. 3</b> The hypothesis as a three-link chain—IF, THEN, BECAUSE—with the most often-forgotten tag: one change only. Three changes at once break the chain.",
+    "<b>Fig. 3</b> La hipótesis como una cadena de tres eslabones —SI, ENTONCES, PORQUE— y la indicación que más se olvida: un solo cambio. Tres cambios juntos rompen la cadena."
+  ],
+  "<b>Fig. 4</b> O julgamento tem três saídas, não duas. A do meio — quantidade insuficiente — é a mais comum e a única honesta antes de chegar ao número combinado.": [
+    "<b>Fig. 4</b> The verdict has three outcomes, not two. The middle one—not enough data—is the most common and the only honest answer before reaching the agreed sample size.",
+    "<b>Fig. 4</b> El veredicto tiene tres opciones, no dos. La del medio —cantidad insuficiente— es la más frecuente y la única honesta antes de alcanzar la cantidad acordada."
+  ],
+  "Um gestor escreveu no assistente \"seja cada vez melhor no atendimento\" e, um mês depois, o assistente afirma que melhorou. Por que essa afirmação não vale nada?": [
+    "A manager told the assistant, “keep getting better at customer support,” and a month later it says it improved. Why is that claim worthless?",
+    "Un responsable escribió en el asistente «mejora cada vez la atención» y, un mes después, este afirma que mejoró. ¿Por qué esa afirmación no vale nada?"
+  ],
+  "Não há evidência registrada, número-alvo nem versão anterior para comparar. O assistente está só respondendo ao pedido — dizer que melhorou é a resposta esperada, não a verdadeira.": [
+    "There is no recorded evidence, target number, or previous version to compare against. The assistant is just responding to the request—saying it improved is the expected answer, not necessarily the truth.",
+    "No hay evidencia registrada, cifra objetivo ni versión anterior para comparar. El asistente solo responde a la solicitud: decir que mejoró es lo esperado, no necesariamente cierto."
+  ],
+  "Sua meta é \"menos tempo por chamado\". Reescreva com um \"sem piorar\" que impeça o assistente de encerrar sem resolver.": [
+    "Your goal is “less time per ticket.” Rewrite it with a “without worsening” condition that prevents the assistant from closing tickets without resolving them.",
+    "Tu meta es «menos tiempo por consulta». Reescríbela con un «sin empeorar» que impida cerrar la consulta sin resolverla."
+  ],
+  "\"Reduzir o tempo por chamado sem piorar reabertura em 7 dias nem satisfação.\" Sem o guarda-corpo, o caminho mais curto para o número é fechar rápido.": [
+    "“Reduce time per ticket without worsening 7-day reopenings or satisfaction.” Without the guardrail, the shortest path to the number is to close tickets quickly.",
+    "«Reducir el tiempo por consulta sin empeorar las reaperturas en 7 días ni la satisfacción». Sin el límite de control, la forma más rápida de alcanzar la cifra es cerrar consultas deprisa."
+  ],
+  "A hipótese diz: \"SE cortar para 80 palavras, mudar o tom e enviar de manhã ENTÃO responde mais\". Aceita como está?": [
+    "The hypothesis says: “IF we cut it to 80 words, change the tone, and send it in the morning, THEN more people reply.” Do you accept it as is?",
+    "La hipótesis dice: «SI lo reducimos a 80 palabras, cambiamos el tono y lo enviamos por la mañana, ENTONCES habrá más respuestas». ¿La aceptas así?"
+  ],
+  "Não. São três mudanças; se funcionar, não se sabe qual. Uma hipótese, uma mudança — as outras duas viram hipóteses separadas, para depois.": [
+    "No. Those are three changes; if it works, you won’t know which one did. One hypothesis, one change—the other two become separate hypotheses for later.",
+    "No. Son tres cambios; si funciona, no sabrás cuál. Una hipótesis, un cambio. Los otros dos se convierten en hipótesis separadas para más adelante."
+  ],
+  "Semana 2 do teste: nova versão com 12 em 40, antiga com 7 em 40. O sócio quer promover agora. O que você diz?": [
+    "Week 2 of the test: new version gets 12 out of 40; old gets 7 out of 40. Your business partner wants to promote it now. What do you say?",
+    "Semana 2 de la prueba: la nueva versión obtiene 12 de 40; la anterior, 7 de 40. Tu socio quiere promoverla ya. ¿Qué le dices?"
+  ],
+  "Quantidade insuficiente: com meta perto de 20–30%, são ~300 por versão. Parar cedo por vantagem parcial promove acaso. Só se para antes se um guarda-corpo cair.": [
+    "Not enough data: for a goal near 20–30%, you need about 300 per version. Stopping early because of a partial lead promotes chance. Stop early only if a guardrail falls.",
+    "Cantidad insuficiente: para una meta cercana al 20–30 %, se necesitan unas 300 por versión. Detenerse por una ventaja parcial promueve el azar. Solo se detiene antes si cae un límite de control."
+  ],
+  "A versão B subiu a resposta de 19% para 30% e foi descartada. Que motivo legítimo pode ter causado isso — e o que você revisaria?": [
+    "Version B raised replies from 19% to 30% but was rejected. What legitimate reason could explain that—and what would you review?",
+    "La versión B subió las respuestas del 19 % al 30 %, pero se descartó. ¿Qué motivo válido pudo causarlo y qué revisarías?"
+  ],
+  "Um guarda-corpo caiu (no exemplo: reclamações 6 contra 1, tolerância zero). Revisar a tolerância: em evento raro com 300 por versão, 6 contra 1 é ruído — tolerância é conta estatística, não desejo.": [
+    "A guardrail fell (in the example: complaints 6 versus 1, with zero tolerance). Review the tolerance: for a rare event with 300 per version, 6 versus 1 is noise—tolerance is statistical, not wishful thinking.",
+    "Cayó un límite de control (en el ejemplo: 6 quejas frente a 1, con tolerancia cero). Revisa la tolerancia: en un evento poco frecuente y con 300 por versión, 6 frente a 1 es ruido. La tolerancia se calcula estadísticamente, no según lo que uno desea."
+  ],
+  "Qual a diferença entre \"a proposta nova ficou claramente mais bonita\" e \"a proposta nova ganhou\"?": [
+    "What’s the difference between “the new proposal is clearly prettier” and “the new proposal won”?",
+    "¿Qué diferencia hay entre «la nueva propuesta quedó claramente más bonita» y «la nueva propuesta ganó»?"
+  ],
+  "A primeira é gosto. A segunda é veredito: quantidade que prova, margem, guarda-corpos dentro. Só a segunda vira versão oficial — e ainda passa pelo seu cartão.": [
+    "The first is taste. The second is a verdict: sufficient sample size, margin, guardrails met. Only the second becomes official—and it still goes through your approval card.",
+    "La primera es una preferencia. La segunda es un veredicto: cantidad suficiente, margen y límites de control respetados. Solo la segunda se convierte en versión oficial, y aun así pasa por tu tarjeta de aprobación."
+  ],
+  "Também não: 'A segue' exige que o teste tenha terminado e B não tenha ganhado com margem. Aqui o teste nem chegou à metade.": [
+    "Not that either: “A stays” requires the test to be over and B not to have won by a clear margin. This test isn’t even halfway done.",
+    "Tampoco: «A sigue» exige que la prueba haya terminado y que B no haya ganado con margen. Esta prueba ni siquiera llegó a la mitad."
+  ],
+  "Quase o dobro em 40 casos é exatamente o tipo de diferença que some na semana seguinte. Parar porque está ganhando é a forma mais comum de promover acaso.": [
+    "Nearly double in 40 cases is exactly the kind of difference that disappears the following week. Stopping because it looks like a win is the most common way to promote chance.",
+    "Casi el doble en 40 casos es justo el tipo de diferencia que desaparece la semana siguiente. Parar porque parece que va ganando es la forma más común de oficializar el azar."
+  ],
+  "Isso. Com meta perto de 20–30%, a quantidade que prova é ~300 por versão. Até lá, a única resposta honesta é continuar.": [
+    "Exactly. With a target near 20–30%, about 300 per version are needed for proof. Until then, the only honest answer is to keep going.",
+    "Exacto. Con una meta cercana al 20–30 %, hacen falta unas 300 por versión para demostrarlo. Hasta entonces, la única respuesta honesta es continuar."
+  ],
+  "<b>Fig. 5</b> Dois ciclos do exemplo de referência lado a lado. Os dois subiram dez pontos; só um entrou — o que passou nos guarda-corpos. E a tolerância do outro foi revista, com registro.": [
+    "<b>Fig. 5</b> Two cycles from the reference example side by side. Both rose by ten points; only one went live—the one that passed the guardrails. The other cycle’s tolerance was revised and recorded.",
+    "<b>Fig. 5</b> Dos ciclos del ejemplo de referencia, uno junto al otro. Ambos subieron diez puntos; solo se implementó el que superó los límites de seguridad. La tolerancia del otro se revisó y quedó registrada."
+  ]
+}

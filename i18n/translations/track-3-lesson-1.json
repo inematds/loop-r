@@ -1,0 +1,550 @@
+{
+  "Trilha 03 · Aula 1": [
+    "Track 03 · Lesson 1",
+    "Ruta 03 · Clase 1"
+  ],
+  "Um assistente para": [
+    "One assistant for",
+    "Un asistente para"
+  ],
+  "cada função": [
+    "each role",
+    "cada función"
+  ],
+  "Ao fim desta aula você consegue rodar o Crítico numa proposta sua e separar, na resposta, evidência forte de palpite — sem deixar ele propor nada.": [
+    "By the end of this lesson, you will be able to run the Critic on one of your proposals and distinguish strong evidence from guesswork in its response—without letting it make any suggestions.",
+    "Al terminar esta clase, podrás usar al Crítico con una propuesta tuya y distinguir en la respuesta la evidencia sólida de las conjeturas, sin dejar que proponga nada."
+  ],
+  "Hoje você pede uma proposta para a IA e, na mesma conversa, pergunta \"ficou boa?\". Ela sempre acha que sim. Quem faz o trabalho nunca avalia o próprio trabalho — nem na sua equipe, nem no loop. Separar as funções é o que faz a evidência aparecer.": [
+    "Today you ask AI for a proposal and, in the same conversation, ask, “Was it good?” It always thinks so. The person doing the work never evaluates their own work—not on your team and not in the loop. Separating the roles is what brings the evidence to light.",
+    "Hoy le pides una propuesta a la IA y, en la misma conversación, preguntas: «¿Quedó bien?». Siempre dice que sí. Quien hace el trabajo nunca evalúa su propio trabajo, ni en tu equipo ni en el ciclo. Separar las funciones es lo que hace visible la evidencia."
+  ],
+  "três balcões, três placas — ninguém confere o que o próprio balcão fez": [
+    "three counters, three signs—no one checks the work done at their own counter",
+    "tres mostradores, tres letreros: nadie revisa lo que hizo en su propio mostrador"
+  ],
+  "Ninguém avalia o próprio trabalho — nem a IA": [
+    "No one evaluates their own work—not even AI",
+    "Nadie evalúa su propio trabajo, ni siquiera la IA"
+  ],
+  "O LOOP-R divide o ciclo em nove": [
+    "LOOP-R divides the cycle into nine",
+    "LOOP-R divide el ciclo en nueve"
+  ],
+  "assistentes com uma função só": [
+    "assistants, each with a single role",
+    "asistentes, cada uno con una sola función"
+  ],
+  "Pense em um funcionário que faz uma coisa e faz bem. Ele não decide o que o colega do lado deveria ter feito.": [
+    "Think of an employee who does one thing and does it well. They do not decide what the colleague next to them should have done.",
+    "Piensa en una persona que hace una sola cosa y la hace bien. No decide lo que debería haber hecho su compañero de al lado."
+  ],
+  "A regra vale para todos. Cada um lê só o que a função pede, escreve só o resultado da função, e recusa o que está fora dela. Parece burocracia. É o contrário: é a única forma de uma IA não \"se convencer\" de que melhorou.": [
+    "The rule applies to everyone. Each assistant reads only what its role requires, writes only that role’s result, and refuses anything outside it. It may sound bureaucratic. It is the opposite: the only way to stop an AI from “convincing itself” that it has improved.",
+    "La regla se aplica a todos. Cada asistente lee solo lo que exige su función, escribe solo el resultado de esa función y rechaza lo que queda fuera. Puede parecer burocrático. Es justo lo contrario: es la única manera de evitar que una IA «se convenza» de que ha mejorado."
+  ],
+  "Exemplo aplicado: um gestor de suporte de uma empresa de software pequena tem uma pessoa que responde chamados e outra que conta quantos chamados reabriram. Se fosse a mesma pessoa, a conta de reaberturas nunca subiria — ninguém gosta de contar o próprio erro. No loop, a IA que escreve a resposta não é a que conta o resultado.": [
+    "Applied example: a support manager at a small software company has one person answer tickets and another count how many tickets were reopened. If it were the same person, the reopen count would never go up—no one likes counting their own mistakes. In the loop, the AI that writes the reply is not the one that counts the outcome.",
+    "Ejemplo aplicado: el responsable de soporte de una pequeña empresa de software asigna a una persona las respuestas a los tickets y a otra el recuento de los tickets reabiertos. Si fuera la misma persona, el número de reaperturas nunca aumentaría: a nadie le gusta contar sus propios errores. En el ciclo, la IA que redacta la respuesta no es la que cuenta el resultado."
+  ],
+  "Quem faz não mede. Quem mede não explica. Quem explica não propõe.": [
+    "The person who does the work does not measure it. The person who measures does not explain it. The person who explains does not propose changes.",
+    "Quien hace no mide. Quien mide no explica. Quien explica no propone."
+  ],
+  "O Executor faz o trabalho e não sugere nada": [
+    "The Executor does the work and suggests nothing",
+    "El Ejecutor hace el trabajo y no sugiere nada"
+  ],
+  "é o único assistente que produz o artefato de verdade: a proposta, a resposta ao cliente, a campanha. Ele segue exatamente o roteiro da versão oficial e registra uma linha na planilha de registro: data, versão, o que saiu.": [
+    "is the only assistant that produces the actual deliverable: the proposal, customer reply, or campaign. It follows the official version’s script exactly and records one row in the log: date, version, and what was produced.",
+    "es el único asistente que produce el entregable real: la propuesta, la respuesta al cliente o la campaña. Sigue exactamente el guion de la versión oficial y registra una fila en la hoja de registro: fecha, versión y resultado."
+  ],
+  "O que ele nunca faz: mudar o próprio roteiro, sair da versão marcada, ignorar o que nunca pode acontecer. E — isto é o mais estranho para quem está acostumado com um chat — ele não avalia o que fez nem sugere melhorias. Só executa.": [
+    "What it never does: change its own script, depart from the designated version, or ignore what must never happen. And—this is the strangest part for anyone used to chat—it does not evaluate its work or suggest improvements. It only executes.",
+    "Lo que nunca hace: cambiar su propio guion, salirse de la versión indicada ni ignorar lo que nunca debe ocurrir. Y —esto es lo más extraño para quien está acostumbrado a un chat— no evalúa lo que hizo ni sugiere mejoras. Solo ejecuta."
+  ],
+  "Exemplo aplicado: um corretor de imóveis recebe leads do portal. O Executor responde cada lead seguindo o roteiro atual da imobiliária (versão 1) e anota: data, versão 1, imóvel, bairro, tempo até responder. Se o corretor pedir \"responde melhor\", o Executor recusa: melhor não é uma instrução, é um veredito — e vem de outro assistente.": [
+    "Applied example: a real estate agent receives leads from the portal. The Executor replies to each lead using the agency’s current script (version 1) and records the date, version 1, property, neighborhood, and response time. If the agent says, “reply better,” the Executor refuses: “better” is not an instruction; it is a verdict, and it comes from another assistant.",
+    "Ejemplo aplicado: un agente inmobiliario recibe contactos del portal. El Ejecutor responde a cada contacto siguiendo el guion vigente de la inmobiliaria (versión 1) y anota la fecha, la versión 1, el inmueble, el barrio y el tiempo de respuesta. Si el agente pide «responde mejor», el Ejecutor se niega: «mejor» no es una instrucción, sino un veredicto que corresponde a otro asistente."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "O Executor escreveu uma proposta e ela parece fraca. Qual é o passo certo dentro do loop?": [
+    "The Executor wrote a proposal and it seems weak. What is the right next step in the loop?",
+    "El Ejecutor redactó una propuesta y parece floja. ¿Cuál es el paso correcto dentro del ciclo?"
+  ],
+  "Pedir para o Executor refazer melhor": [
+    "Ask the Executor to make it better",
+    "Pedir al Ejecutor que la mejore"
+  ],
+  "Trocar o roteiro na hora, já que ficou fraca": [
+    "Change the script right away because it was weak",
+    "Cambiar el guion de inmediato porque quedó floja"
+  ],
+  "Deixar sair, registrar a linha e esperar o Observador contar": [
+    "Let it go out, record the row, and wait for the Observer to count",
+    "Dejar que salga, registrar la fila y esperar a que el Observador cuente"
+  ],
+  "O Observador conta e não explica": [
+    "The Observer counts and does not explain",
+    "El Observador cuenta y no explica"
+  ],
+  "transforma as linhas da planilha em evidência. Conta, agrupa, confere se as linhas estão completas. Se faltar uma coluna ou houver linha duplicada, ele escreve \"dados inconsistentes\" e para o ciclo ali.": [
+    "turns the rows in the spreadsheet into evidence. It counts, groups, and checks that the rows are complete. If a column is missing or a row is duplicated, it writes “inconsistent data” and stops the cycle there.",
+    "convierte las filas de la hoja de cálculo en evidencia. Cuenta, agrupa y comprueba que las filas estén completas. Si falta una columna o hay una fila duplicada, escribe «datos inconsistentes» y detiene ahí el ciclo."
+  ],
+  "O que ele nunca faz: explicar a causa, propor uma mudança, usar informação de fora da planilha. A resposta dele é uma tabela com números e quantidades. Zero \"parece que\". Se um número vem sem a quantidade que o sustenta, não é evidência — é impressão.": [
+    "What it never does: explain the cause, propose a change, or use information from outside the spreadsheet. Its answer is a table of numbers and counts. No “it seems.” If a number has no count to support it, it is not evidence—it is an impression.",
+    "Lo que nunca hace: explicar la causa, proponer un cambio ni usar información ajena a la hoja. Su respuesta es una tabla con cifras y recuentos. Cero «parece que». Si una cifra no viene acompañada del recuento que la sustenta, no es evidencia: es una impresión."
+  ],
+  "O Crítico diz o que falhou — e quanto vale a evidência": [
+    "The Critic says what failed—and how strong the evidence is",
+    "El Crítico dice qué falló y qué peso tiene la evidencia"
+  ],
+  "O Observador": [
+    "The Observer",
+    "El Observador"
+  ],
+  "O Crítico": [
+    "The Critic",
+    "El Crítico"
+  ],
+  "lê a tabela do Observador e a versão atual do roteiro. Diz o que funciona, o que falha e onde há desperdício — sempre com o número que prova. E marca cada afirmação com uma": [
+    "reads the Observer’s table and the current script version. It says what works, what fails, and where there is waste—always with the number that proves it. It also labels each claim with an",
+    "lee la tabla del Observador y la versión vigente del guion. Dice qué funciona, qué falla y dónde hay desperdicio, siempre con la cifra que lo demuestra. Además, marca cada afirmación con un nivel de"
+  ],
+  "Afirmações fracas vão para uma seção separada, \"observado, não conclusivo\". O Crítico também cruza com a memória: o que \"falha\" hoje já foi resolvido antes? E o que ele nunca faz: propor. Diagnóstico não é receita.": [
+    "Weak claims go in a separate section, “observed, inconclusive.” The Critic also checks the memory: has something that “fails” today already been resolved? And what it never does is propose changes. A diagnosis is not a prescription.",
+    "Las afirmaciones débiles van en una sección aparte: «observado, no concluyente». El Crítico también consulta la memoria: ¿lo que «falla» hoy ya se resolvió antes? Y lo que nunca hace es proponer. Un diagnóstico no es una receta."
+  ],
+  "Exemplo aplicado: a empresa do gestor de suporte recebeu 10.000 chamados no ano. O Observador devolve: 37% são sobre o mesmo problema, o tempo médio de resposta é X, tantos reabriram em 7 dias. Ele não diz \"o produto tem um defeito grave\" — isso é explicação. Só entrega a contagem, que o próximo assistente vai ler.": [
+    "Applied example: the support manager’s company received 10,000 tickets in a year. The Observer reports that 37% concern the same issue, gives the average response time, and counts how many were reopened within 7 days. It does not say, “the product has a serious defect”—that would be an explanation. It only provides the counts for the next assistant to read.",
+    "Ejemplo aplicado: la empresa del responsable de soporte recibió 10.000 tickets durante el año. El Observador informa que el 37 % trata del mismo problema, indica el tiempo medio de respuesta y cuenta cuántos se reabrieron en 7 días. No dice «el producto tiene un defecto grave»: eso sería una explicación. Solo entrega el recuento para que lo lea el siguiente asistente."
+  ],
+  "Exemplo aplicado: o produto tem um exemplo de referência — uma clínica de estética com propostas por WhatsApp, quatro ciclos rodados sobre dados simulados. A dona declarou na ficha que a conversão atual era 3%. O Crítico leu 200 propostas e apontou três coisas. A conversão observada foi 2,5% (5 em 200), abaixo do declarado. A taxa de resposta foi 17% (34 em 200). E 83% das propostas não geraram resposta em 48 horas — quase todo o custo foi gasto em mensagens sem retorno. Tudo marcado forte. Ele não sugeriu encurtar a mensagem. Só mostrou onde dói.": [
+    "Applied example: the reference example is a beauty clinic sending proposals over WhatsApp, across four cycles using simulated data. The owner’s worksheet stated a current conversion rate of 3%. The Critic reviewed 200 proposals and identified three findings. Observed conversion was 2.5% (5 of 200), below the stated rate. The response rate was 17% (34 of 200). And 83% of proposals got no reply within 48 hours—nearly all the effort went into messages that received no response. Every finding was labeled strong. The Critic did not suggest shortening the message. It only showed where the problem was.",
+    "Ejemplo aplicado: el caso de referencia es una clínica estética que envía propuestas por WhatsApp y ha completado cuatro ciclos con datos simulados. La ficha de la dueña indicaba una conversión actual del 3 %. El Crítico revisó 200 propuestas y señaló tres hallazgos. La conversión observada fue del 2,5 % (5 de 200), por debajo de lo declarado. La tasa de respuesta fue del 17 % (34 de 200). Además, el 83 % de las propuestas no recibió respuesta en 48 horas: casi todo el esfuerzo se dedicó a mensajes sin retorno. Todos los hallazgos quedaron marcados como sólidos. No sugirió acortar el mensaje; solo mostró dónde estaba el problema."
+  ],
+  "Antes — o dono lê e conclui": [
+    "Before—the owner reads and jumps to a conclusion",
+    "Antes: la dueña lee y saca una conclusión"
+  ],
+  "A dona da clínica olha 200 propostas e sente que \"as de terça respondem mais\". Muda o dia de envio. Nada fica registrado, nada é contado.": [
+    "The clinic owner looks at 200 proposals and feels that “the Tuesday ones get more replies.” She changes the send day. Nothing is recorded or counted.",
+    "La dueña de la clínica revisa 200 propuestas y tiene la impresión de que «las del martes reciben más respuestas». Cambia el día de envío. No queda nada registrado ni contado."
+  ],
+  "Depois — o Crítico lê a contagem": [
+    "After—the Critic reads the count",
+    "Después: el Crítico lee el recuento"
+  ],
+  "\"83% sem resposta em 48 h (166 de 200) — forte. Conversão 2,5%, abaixo do 3% declarado — forte. Segmento médio responde 10%, metade dos outros — moderada.\"": [
+    "“83% received no reply within 48 hours (166 of 200)—strong. Conversion is 2.5%, below the stated 3%—strong. The mid-sized segment replies at 10%, half the rate of the others—moderate.”",
+    "«El 83 % no recibió respuesta en 48 h (166 de 200): evidencia sólida. La conversión es del 2,5 %, por debajo del 3 % declarado: sólida. El segmento mediano responde un 10 %, la mitad que los demás: moderada»"
+  ],
+  "Meta: em ~10 minutos, receber do seu chat de IA um diagnóstico com força de evidência marcada e zero sugestões.": [
+    "Goal: in about 10 minutes, get a diagnosis from your AI chat with evidence strength labeled and no suggestions.",
+    "Meta: en unos 10 minutos, obtener de tu chat de IA un diagnóstico con la fuerza de la evidencia indicada y sin sugerencias."
+  ],
+  "Rode o Crítico numa proposta sua": [
+    "Run the Critic on one of your proposals",
+    "Usa al Crítico con una propuesta tuya"
+  ],
+  "0/4 feito": [
+    "0/4 complete",
+    "0/4 completados"
+  ],
+  "copiar": [
+    "copy",
+    "copiar"
+  ],
+  "Nada muda no seu negócio até você aprovar: você só está lendo um diagnóstico numa conversa de chat. Se a resposta vier com sugestões ou adjetivos, cole o pedido de novo e acrescente \"você propôs — apague as propostas e refaça só o diagnóstico\".": [
+    "Nothing in your business changes until you approve it: you are only reading a diagnosis in a chat. If the answer contains suggestions or adjectives, paste the request again and add: “you made suggestions—delete them and redo only the diagnosis.”",
+    "Nada cambia en tu negocio hasta que lo apruebes: solo estás leyendo un diagnóstico en un chat. Si la respuesta incluye sugerencias o adjetivos, vuelve a pegar la solicitud y añade: «has propuesto cambios; bórralos y vuelve a hacer solo el diagnóstico»."
+  ],
+  "Antes de colar: isto é uma folha de instruções para um funcionário novo. A primeira linha diz qual é a função dele; o meio diz o que ele recebe; o fim diz o que ele nunca faz. Você só troca o que está entre os sinais de menor e maior.": [
+    "Before pasting: this is an instruction sheet for a new employee. The first line states their role; the middle says what they receive; the end says what they never do. Replace only the text between the angle brackets.",
+    "Antes de pegarlo: esto es una hoja de instrucciones para una persona nueva. La primera línea indica su función; el centro, lo que recibe; el final, lo que nunca hace. Solo cambia el texto que aparece entre los signos menor y mayor."
+  ],
+  "Você acabou de receber um diagnóstico com força de evidência marcada e sem nenhuma proposta embutida — a primeira leitura honesta de uma proposta sua.": [
+    "You have just received a diagnosis with evidence strength labeled and no recommendations built in—the first honest review of one of your proposals.",
+    "Acabas de recibir un diagnóstico con la fuerza de la evidencia indicada y sin propuestas incluidas: la primera revisión honesta de una propuesta tuya."
+  ],
+  "Escolhi uma proposta ou resposta real que saiu no último mês e anotei o que aconteceu depois, com números (mesmo pequenos).": [
+    "I chose a real proposal or reply sent in the last month and recorded what happened afterward, with numbers—even small ones.",
+    "Elegí una propuesta o respuesta real enviada durante el último mes y anoté qué ocurrió después, con cifras aunque fueran pequeñas."
+  ],
+  "Colei o pedido no meu chat de IA com os dois trechos trocados e recebi 3 blocos separados.": [
+    "I pasted the request into my AI chat with both sections replaced and received 3 separate blocks.",
+    "Pegué la solicitud en mi chat de IA después de sustituir los dos fragmentos y recibí 3 bloques separados."
+  ],
+  "Conferi: cada afirmação tem uma força marcada, e pelo menos uma caiu em \"Observado, não conclusivo\" — sinal de que ele respeitou a quantidade.": [
+    "I checked that each claim has a strength label and at least one appears under “Observed, inconclusive”—a sign that it respected the sample size.",
+    "Comprobé que cada afirmación tuviera un nivel de fuerza y que al menos una apareciera en «Observado, no concluyente»: señal de que respetó el tamaño de la muestra."
+  ],
+  "Conferi que não há nenhuma sugestão na resposta. Se houver, mandei apagar — o Crítico não propõe.": [
+    "I checked that the answer contains no suggestions. If it did, I asked for them to be removed—the Critic does not propose changes.",
+    "Comprobé que la respuesta no incluyera sugerencias. Si las había, pedí que las borrara: el Crítico no propone cambios."
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "O loop funciona porque cada assistente tem uma função só. Quem faz o artefato não conta o resultado, quem conta não explica, quem explica não propõe.": [
+    "The loop works because each assistant has a single role. The one that creates the deliverable does not count the outcome; the one that counts does not explain; the one that explains does not propose.",
+    "El ciclo funciona porque cada asistente tiene una sola función. Quien crea el entregable no cuenta el resultado; quien cuenta no explica; quien explica no propone."
+  ],
+  "O Executor produz e registra uma linha. O Observador devolve contagens sem adjetivos. O Crítico marca a força de cada afirmação e separa o que ainda não conclui.": [
+    "The Executor produces the work and records one row. The Observer returns counts without adjectives. The Critic labels the strength of each claim and separates what is still inconclusive.",
+    "El Ejecutor produce el trabajo y registra una fila. El Observador devuelve recuentos sin adjetivos. El Crítico indica la fuerza de cada afirmación y separa lo que aún no es concluyente."
+  ],
+  "Essa separação não é burocracia — é o que impede uma única IA de se convencer de que melhorou sem nenhum número.": [
+    "This separation is not bureaucracy—it is what keeps a single AI from convincing itself that it improved without a single number.",
+    "Esta separación no es burocracia: es lo que impide que una sola IA se convenza de que ha mejorado sin una sola cifra."
+  ],
+  "Você acabou de ler um diagnóstico honesto de uma proposta sua — com quantidade e sem sugestão embutida.": [
+    "You have just read an honest diagnosis of one of your proposals—with counts and no suggestions built in.",
+    "Acabas de leer un diagnóstico honesto de una propuesta tuya, con recuentos y sin sugerencias incluidas."
+  ],
+  "Na próxima aula, você resolve o que fazer com esse diagnóstico: quem propõe a mudança, quem desenha o teste e quem julga. E por que nenhum dos três é o mesmo assistente.": [
+    "In the next lesson, you will decide what to do with this diagnosis: who proposes a change, who designs the test, and who judges it—and why they must be three different assistants.",
+    "En la próxima clase decidirás qué hacer con este diagnóstico: quién propone el cambio, quién diseña la prueba y quién juzga, y por qué deben ser tres asistentes distintos."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "próxima: Otimizador, Experimentador, Avaliador →": [
+    "next: Optimizer, Experimenter, Evaluator →",
+    "siguiente: Optimizador, Experimentador, Evaluador →"
+  ],
+  "ATENDE": [
+    "SERVES",
+    "ATIENDE"
+  ],
+  "CONTA": [
+    "COUNTS",
+    "CUENTA"
+  ],
+  "CONFERE": [
+    "CHECKS",
+    "COMPRUEBA"
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "01": [
+    "01",
+    "01"
+  ],
+  "02": [
+    "02",
+    "02"
+  ],
+  "03": [
+    "03",
+    "03"
+  ],
+  "04": [
+    "04",
+    "04"
+  ],
+  "Saldo:": [
+    "Takeaway:",
+    "Balance:"
+  ],
+  "no exemplo, 3 afirmações com quantidade e força marcadas, 0 sugestões — e uma divergência (3% declarado × 2,5% observado) que ninguém tinha visto.": [
+    "In this example, 3 claims have counts and strength labels, with 0 suggestions—and a discrepancy (3% stated vs. 2.5% observed) that no one had noticed.",
+    "En el ejemplo, hay 3 afirmaciones con recuentos y nivel de fuerza, 0 sugerencias y una discrepancia (3 % declarado frente al 2,5 % observado) que nadie había detectado."
+  ],
+  "Fig. 1": [
+    "Fig. 1",
+    "Fig. 1"
+  ],
+  "Fig. 2": [
+    "Fig. 2",
+    "Fig. 2"
+  ],
+  "Fig. 3": [
+    "Fig. 3",
+    "Fig. 3"
+  ],
+  "Fig. 4": [
+    "Fig. 4",
+    "Fig. 4"
+  ],
+  "EXECUTOR": [
+    "EXECUTOR",
+    "EJECUTOR"
+  ],
+  "faz": [
+    "does",
+    "hace"
+  ],
+  "OBSERVADOR": [
+    "OBSERVER",
+    "OBSERVADOR"
+  ],
+  "conta": [
+    "counts",
+    "cuenta"
+  ],
+  "CRÍTICO": [
+    "CRITIC",
+    "CRÍTICO"
+  ],
+  "diagnostica": [
+    "diagnoses",
+    "diagnostica"
+  ],
+  "seta de volta para si mesmo: proibida": [
+    "loopback arrow: prohibited",
+    "flecha de regreso a sí mismo: prohibida"
+  ],
+  "roteiro v1 (lê)": [
+    "script v1 (read-only)",
+    "guion v1 (solo lectura)"
+  ],
+  "entrada: o lead": [
+    "input: the lead",
+    "entrada: el contacto"
+  ],
+  "ao lead": [
+    "to the lead",
+    "al contacto"
+  ],
+  "1 linha na": [
+    "1 row in the",
+    "1 fila en la"
+  ],
+  "nunca escreve no roteiro": [
+    "never writes to the script",
+    "nunca escribe en el guion"
+  ],
+  "mesmo problema": [
+    "same issue",
+    "mismo problema"
+  ],
+  "reabriram 7 d": [
+    "reopened within 7 d",
+    "reabiertos en 7 d"
+  ],
+  "tempo médio": [
+    "average time",
+    "tiempo medio"
+  ],
+  "quantidade": [
+    "count",
+    "cantidad"
+  ],
+  "linhas da planilha": [
+    "spreadsheet rows",
+    "filas de la hoja"
+  ],
+  "só números, zero adjetivo": [
+    "numbers only, no adjectives",
+    "solo cifras, cero adjetivos"
+  ],
+  "linha incompleta → \"dados inconsistentes\", para": [
+    "incomplete row → “inconsistent data”; stop",
+    "fila incompleta → «datos inconsistentes»; detenerse"
+  ],
+  "FORTE · 83% sem resposta": [
+    "STRONG · 83% no reply",
+    "SÓLIDA · 83 % sin respuesta"
+  ],
+  "166 de 200": [
+    "166 of 200",
+    "166 de 200"
+  ],
+  "MODERADA · médio 10%": [
+    "MODERATE · mid-sized 10%",
+    "MODERADA · mediano 10 %"
+  ],
+  "8 de 78": [
+    "8 of 78",
+    "8 de 78"
+  ],
+  "FRACA · \"terça responde\"": [
+    "WEAK · “Tuesday gets replies”",
+    "DÉBIL · «el martes responden»"
+  ],
+  "observado, não conclusivo": [
+    "observed, inconclusive",
+    "observado, no concluyente"
+  ],
+  "↑ segue para o Otimizador · ↓ fica na gaveta": [
+    "↑ moves to the Optimizer · ↓ stays in the drawer",
+    "↑ pasa al Optimizador · ↓ se queda en el cajón"
+  ],
+  "nenhuma seta \"solução\" sai daqui": [
+    "no “solution” arrow leaves here",
+    "de aquí no sale ninguna flecha de «solución»"
+  ],
+  "Aula 3.1 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 3.1 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 3.1 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "← trilha": [
+    "← track",
+    "← ruta"
+  ],
+  ". Pense em um funcionário que faz uma coisa e faz bem. Ele não decide o que o colega do lado deveria ter feito.": [
+    ". Think of an employee who does one thing and does it well. They do not decide what the colleague next to them should have done.",
+    ". Piensa en una persona que hace una sola cosa y la hace bien. No decide lo que debería haber hecho su compañero de al lado."
+  ],
+  ": forte, moderada ou fraca.": [
+    ": strong, moderate, or weak.",
+    ": sólida, moderada o débil."
+  ],
+  "No exemplo da clínica, a divergência entre o declarado (3%) e o observado (2,5%) só apareceu porque alguém contou antes de alguém opinar.": [
+    "In the clinic example, the discrepancy between the stated rate (3%) and the observed rate (2.5%) surfaced only because someone counted before anyone offered an opinion.",
+    "En el ejemplo de la clínica, la diferencia entre lo declarado (3 %) y lo observado (2,5 %) solo apareció porque alguien contó antes de que alguien opinara."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: pegue a resposta do Crítico e sublinhe só as afirmações marcadas forte. São elas que valem um teste. As fracas ficam guardadas.": [
+    "Over the next 15 minutes, in your actual work, take the Critic’s response and underline only the claims labeled strong. Those are worth testing. Keep the weak ones stored away.",
+    "Durante los próximos 15 minutos, en tu trabajo real, toma la respuesta del Crítico y subraya solo las afirmaciones marcadas como sólidas. Esas merecen una prueba. Guarda las débiles."
+  ],
+  "Aplicação: o corretor pede ao assistente que responde leads \"da próxima vez, responda melhor\". O que o Executor faz com esse pedido, e por quê?": [
+    "Application: the real estate agent tells the assistant replying to leads, “next time, reply better.” What does the Executor do with this request, and why?",
+    "Aplicación: el agente inmobiliario le pide al asistente que responde a los contactos: «la próxima vez, responde mejor». ¿Qué hace el Ejecutor con esta solicitud y por qué?"
+  ],
+  "Recusa. \"Melhor\" é um veredito, não uma instrução de roteiro — e veredito vem de outro assistente, depois de contar. O Executor segue a versão oficial e registra a linha.": [
+    "It refuses. “Better” is a verdict, not a script instruction—and verdicts come from another assistant after the count. The Executor follows the official version and records the row.",
+    "Se niega. «Mejor» es un veredicto, no una instrucción para el guion; los veredictos corresponden a otro asistente, después del recuento. El Ejecutor sigue la versión oficial y registra la fila."
+  ],
+  "Diagnóstico: o Observador devolveu \"o produto tem um defeito grave na tela de pagamento\". O que está errado nessa saída?": [
+    "Diagnosis: the Observer returned, “the product has a serious defect on the payment screen.” What is wrong with this output?",
+    "Diagnóstico: el Observador respondió: «el producto tiene un defecto grave en la pantalla de pago». ¿Qué falla en esa respuesta?"
+  ],
+  "Ele explicou a causa. Sua função é contar (ex.: 37% dos chamados sobre o mesmo problema); explicar é do Crítico, e propor é do Otimizador.": [
+    "It explained the cause. Its role is to count (e.g., 37% of tickets concern the same issue); explaining belongs to the Critic, and proposing belongs to the Optimizer.",
+    "Explicó la causa. Su función es contar (p. ej., el 37 % de los tickets trata del mismo problema); explicar corresponde al Crítico y proponer, al Optimizador."
+  ],
+  "Decisão: o Crítico viu que 4 de 12 propostas enviadas na terça fecharam. Em que gaveta essa afirmação vai, e o que acontece com ela?": [
+    "Decision: the Critic saw that 4 of 12 proposals sent on Tuesday converted. Which drawer does this claim go into, and what happens to it?",
+    "Decisión: el Crítico vio que se cerraron 4 de 12 propuestas enviadas el martes. ¿En qué cajón va esta afirmación y qué ocurre con ella?"
+  ],
+  "Gaveta \"observado, não conclusivo\" (força fraca — quantidade pequena). Ninguém propõe teste em cima dela; ela espera mais linhas para ser reexaminada.": [
+    "The “observed, inconclusive” drawer (weak evidence—small sample). No one proposes a test based on it; it waits for more rows to be reviewed again.",
+    "Al cajón «observado, no concluyente» (evidencia débil: muestra pequeña). Nadie propone una prueba basándose en ella; espera a que haya más filas para volver a examinarla."
+  ],
+  "Contraste: qual a diferença entre o que o Observador escreve e o que o Crítico escreve sobre as mesmas 200 propostas?": [
+    "Contrast: what is the difference between what the Observer writes and what the Critic writes about the same 200 proposals?",
+    "Contraste: ¿qué diferencia hay entre lo que escribe el Observador y lo que escribe el Crítico sobre las mismas 200 propuestas?"
+  ],
+  "O Observador escreve a contagem (34 responderam, 5 fecharam). O Crítico escreve o julgamento com força (\"83% sem resposta — forte; conversão abaixo do declarado — forte\") e onde há desperdício. Nenhum dos dois propõe.": [
+    "The Observer records the count (34 replied, 5 converted). The Critic gives the assessment and its strength (“83% no reply—strong; conversion below stated—strong”) and identifies waste. Neither proposes changes.",
+    "El Observador registra el recuento (34 respondieron, 5 cerraron). El Crítico expresa el juicio con su fuerza («83 % sin respuesta: sólido; conversión inferior a lo declarado: sólida») e identifica el desperdicio. Ninguno propone cambios."
+  ],
+  "Pergunta: por que o loop proíbe qualquer assistente de avaliar o próprio artefato?": [
+    "Question: why does the loop prohibit an assistant from evaluating its own deliverable?",
+    "Pregunta: ¿por qué el ciclo prohíbe que un asistente evalúe su propio entregable?"
+  ],
+  "Porque uma IA que julga o que ela mesma fez tende a achar que melhorou — sem número. A separação obriga a evidência a passar por quem não tem interesse no resultado.": [
+    "Because an AI judging its own work tends to think it improved—without a number. Separation requires evidence to pass through someone with no stake in the outcome.",
+    "Porque una IA que juzga su propio trabajo tiende a creer que mejoró, aunque no haya cifras. La separación obliga a que la evidencia pase por alguien sin interés en el resultado."
+  ],
+  "Você é o Crítico do processo \"<nome do seu processo, ex.: resposta a leads do portal>\". Sua função é diagnóstico. Você NÃO propõe solução, NÃO sugere melhoria, NÃO reescreve nada. Proposta/resposta que saiu (versão atual): <cole aqui o texto que a sua IA ou a sua equipe mandou> O que aconteceu depois (só o que você tem registrado): <ex.: 40 enviadas no mês, 7 responderam, 1 fechou, 0 reclamações> Responda em 3 blocos: 1. O que a versão atual faz bem — com o número que prova. 2. O que falha e onde há desperdício — com o número que prova. 3. Para cada afirmação, marque a força: FORTE (aconteceu muitas vezes), MODERADA (o mínimo) ou FRACA (poucas vezes). Afirmações FRACAS vão numa seção separada chamada \"Observado, não conclusivo\". Se eu não tiver dado um número para sustentar uma afirmação, escreva \"sem quantidade — não conclusivo\". Não proponha nada.": [
+    "You are the Critic for the process \"<name of your process, e.g., replying to portal leads>\". Your role is diagnosis. You do NOT propose a solution, suggest an improvement, or rewrite anything. Proposal/reply sent (current version): <paste here the text your AI or team sent> What happened afterward (only what you have recorded): <e.g., 40 sent this month, 7 replied, 1 sale, 0 complaints> Reply in 3 sections: 1. What the current version does well—with the number that proves it. 2. What fails and where there is waste—with the number that proves it. 3. Label the strength of each claim: STRONG (happened many times), MODERATE (the minimum), or WEAK (few times). Put WEAK claims in a separate section called \"Observed, inconclusive.\" If I did not give a number to support a claim, write \"no count—inconclusive.\" Do not propose anything.",
+    "Eres el Crítico del proceso \"<nombre de tu proceso, p. ej., responder a contactos del portal>\". Tu función es diagnosticar. NO propones soluciones, NO sugieres mejoras ni reescribes nada. Propuesta o respuesta enviada (versión actual): <pega aquí el texto que envió tu IA o tu equipo> Qué ocurrió después (solo lo que tienes registrado): <p. ej., 40 enviadas este mes, 7 respondieron, 1 compra, 0 quejas> Responde en 3 bloques: 1. Qué hace bien la versión actual, con la cifra que lo demuestra. 2. Qué falla y dónde hay desperdicio, con la cifra que lo demuestra. 3. Indica la fuerza de cada afirmación: SÓLIDA (ocurrió muchas veces), MODERADA (el mínimo) o DÉBIL (pocas veces). Pon las afirmaciones DÉBILES en una sección aparte llamada \"Observado, no concluyente\". Si no te di una cifra que sustente una afirmación, escribe \"sin recuento: no concluyente\". No propongas nada."
+  ],
+  "Executor": [
+    "Executor",
+    "Ejecutor"
+  ],
+  "Observador": [
+    "Observer",
+    "Observador"
+  ],
+  "Crítico": [
+    "Critic",
+    "Crítico"
+  ],
+  "força da evidência": [
+    "evidence strength",
+    "fuerza de la evidencia"
+  ],
+  "versão ": [
+    "version ",
+    "versión "
+  ],
+  "respostas": [
+    "replies",
+    "respuestas"
+  ],
+  "resposta": [
+    "reply",
+    "respuesta"
+  ],
+  "planilha": [
+    "spreadsheet",
+    "hoja de cálculo"
+  ],
+  "Um pedido de IA com uma função só, que lê certos registros e escreve um só resultado. Não opina fora da função.": [
+    "A single-purpose AI request that reads selected records and writes one result. It does not give opinions outside its role.",
+    "Una solicitud de IA con una sola función, que lee ciertos registros y produce un resultado. No opina fuera de su función."
+  ],
+  "O assistente que produz o artefato real (proposta, resposta, campanha) seguindo o roteiro da versão oficial, e registra uma linha na planilha.": [
+    "The assistant that produces the actual deliverable (proposal, reply, campaign) by following the official version’s script, and records one row in the log.",
+    "El asistente que produce el entregable real (propuesta, respuesta, campaña) siguiendo el guion de la versión oficial y registra una línea en el historial."
+  ],
+  "Pedir para o mesmo assistente melhorar é o erro da trilha 1: ele vai achar que melhorou, sem nenhuma evidência.": [
+    "Asking the same assistant to improve it is the mistake from track 1: it will think it improved, without any evidence.",
+    "Pedirle al mismo asistente que lo mejore es el error de la ruta 1: creerá que mejoró, sin ninguna evidencia."
+  ],
+  "Trocar o roteiro por impressão é exatamente o que o loop existe para impedir — nada vira versão oficial sem teste.": [
+    "Changing the script based on an impression is exactly what the loop is designed to prevent—nothing becomes official without a test.",
+    "Cambiar el guion por una impresión es precisamente lo que el ciclo busca impedir: nada se vuelve oficial sin una prueba."
+  ],
+  "Certo. A proposta sai como está, vira uma linha na planilha, e a fraqueza — se for real — aparece como número no Observador e como diagnóstico no Crítico.": [
+    "Correct. The proposal goes out as it is and becomes a row in the log. Any real weakness appears as a number in the Observer’s report and as a diagnosis from the Critic.",
+    "Correcto. La propuesta se envía tal como está y se convierte en una línea del registro. Cualquier debilidad real aparece como cifra en el informe del Observador y como diagnóstico del Crítico."
+  ],
+  "O assistente que lê a planilha de registro e devolve só números: quantas, de que tipo, em que grupo. Zero adjetivos.": [
+    "The assistant that reads the log and returns only numbers: how many, what type, and in which group. No adjectives.",
+    "El asistente que lee el registro y devuelve solo cifras: cuántas, de qué tipo y en qué grupo. Cero adjetivos."
+  ],
+  "O assistente que lê a evidência e diz o que a versão atual faz bem e o que falha, marcando a força de cada afirmação. Não propõe solução.": [
+    "The assistant that reads the evidence and says what the current version does well and where it fails, labeling the strength of each claim. It does not propose a solution.",
+    "El asistente que lee la evidencia y dice qué hace bien la versión actual y dónde falla, indicando la fuerza de cada afirmación. No propone soluciones."
+  ],
+  "Quantas vezes o fato aconteceu para poder afirmá-lo: FORTE (muitas), MODERADA (o mínimo) ou FRACA (poucas — vai para a gaveta 'observado, não conclusivo').": [
+    "How many times an event occurred, which determines whether a claim can be made: STRONG (many), MODERATE (the minimum), or WEAK (few—goes in the “observed, inconclusive” drawer).",
+    "Cuántas veces ocurrió un hecho para poder afirmarlo: SÓLIDA (muchas), MODERADA (el mínimo) o DÉBIL (pocas; va al cajón «observado, no concluyente»)."
+  ],
+  "<b>Fig. 1</b> — Um artefato passa por três caixas; cada uma só lê a de trás e só escreve a da frente. Nenhuma seta volta para a própria caixa.": [
+    "<b>Fig. 1</b> — A deliverable passes through three boxes; each reads only the one behind it and writes only to the one ahead. No arrow points back to its own box.",
+    "<b>Fig. 1</b> — Un entregable pasa por tres cajas; cada una solo lee la caja anterior y escribe en la siguiente. Ninguna flecha vuelve a la misma caja."
+  ],
+  "<b>Fig. 2</b> — O Executor lê o roteiro da versão oficial e a entrada, e escreve duas coisas: o artefato e uma linha na planilha. A seta para o roteiro é só de leitura.": [
+    "<b>Fig. 2</b> — The Executor reads the official version’s script and the input, then writes two things: the deliverable and one row in the log. The arrow to the script is read-only.",
+    "<b>Fig. 2</b> — El Ejecutor lee el guion de la versión oficial y la entrada, y escribe dos cosas: el entregable y una línea del registro. La flecha hacia el guion es solo de lectura."
+  ],
+  "<b>Fig. 3</b> — O Observador lê linhas e devolve uma tabela: contagens por grupo, cada uma com a quantidade que a sustenta. Se as linhas falham na conferência, ele para.": [
+    "<b>Fig. 3</b> — The Observer reads rows and returns a table: counts by group, each with its supporting sample size. If the rows fail validation, it stops.",
+    "<b>Fig. 3</b> — El Observador lee las líneas y devuelve una tabla: recuentos por grupo, cada uno con la cantidad que lo sustenta. Si las líneas no pasan la comprobación, se detiene."
+  ],
+  "<b>Fig. 4</b> — O Crítico devolve afirmações em três gavetas de força. As fracas ficam fora do caminho da próxima etapa: ninguém propõe em cima delas.": [
+    "<b>Fig. 4</b> — The Critic sorts claims into three evidence-strength drawers. Weak claims stay out of the next step: no one proposes changes based on them.",
+    "<b>Fig. 4</b> — El Crítico separa las afirmaciones en tres cajones según la fuerza de la evidencia. Las débiles no pasan a la siguiente etapa: nadie propone cambios basándose en ellas."
+  ]
+}

@@ -1,0 +1,506 @@
+{
+  "Trilha 04 · Aula 5": [
+    "Track 04 · Lesson 5",
+    "Ruta 04 · Clase 5"
+  ],
+  "O que o LOOP-R": [
+    "What LOOP-R",
+    "Lo que LOOP-R"
+  ],
+  "não garante": [
+    "does not guarantee",
+    "no garantiza"
+  ],
+  "Ao fim desta aula você consegue dizer, em uma frase cada, as quatro coisas que o loop garante por construção e as quatro que ele não garante — e reconhecer uma promessa falsa quando alguém vender uma.": [
+    "By the end of this lesson, you will be able to state, in one sentence each, the four things the loop guarantees by design and the four it does not—and recognize a false promise when someone sells one.",
+    "Al terminar esta clase, podrás decir, en una frase cada una, las cuatro cosas que el ciclo garantiza por diseño y las cuatro que no garantiza, y reconocer una promesa falsa cuando alguien la venda."
+  ],
+  "Esta trilha inteira pediu evidência. Seria estranho fechar prometendo algo sem ela. Então esta é a aula de honestidade: o que um loop de melhoria garante porque foi construído para isso, e o que depende do seu volume, do seu mercado e de sorte. Quem sabe a diferença não abandona o loop no terceiro mês por frustração — nem confia nele além do que ele aguenta.": [
+    "This entire track has asked for evidence. It would be strange to end by making a promise without any. So this is the honesty lesson: what an improvement loop guarantees because it was built to, and what depends on your volume, your market, and luck. Knowing the difference keeps you from abandoning the loop in month three out of frustration—and from trusting it beyond its limits.",
+    "Toda esta ruta pidió pruebas. Sería extraño terminar prometiendo algo sin ellas. Esta es, entonces, la clase de honestidad: qué garantiza un ciclo de mejora porque fue diseñado para ello y qué depende de tu volumen, tu mercado y la suerte. Saber distinguirlo evita que abandones el ciclo al tercer mes por frustración y que confíes en él más de lo que puede sostener."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "metáfora: o corrimão da escada da clínica — não sobe ninguém; impede de cair": [
+    "metaphor: the clinic stair handrail—it does not carry anyone up; it keeps them from falling",
+    "metáfora: el pasamanos de la clínica: no sube a nadie; evita que se caiga"
+  ],
+  "o corrimão não sobe a escada por você.": [
+    "the handrail does not climb the stairs for you.",
+    "el pasamanos no sube la escalera por ti."
+  ],
+  "ele garante que você não cai.": [
+    "it guarantees you will not fall.",
+    "garantiza que no te caigas."
+  ],
+  "Quatro garantias, e nenhuma delas é \"o número sobe\"": [
+    "Four guarantees, and none of them is “the number goes up”",
+    "Cuatro garantías, y ninguna es «la cifra sube»"
+  ],
+  "Nenhum loop de aprendizado garante que o número sobe. Nem este — e a dona da clínica de estética ouviu isso na primeira tela do produto, antes de preencher a ficha. O que o LOOP-R garante são quatro coisas, todas por construção — quer dizer, elas valem porque as regras das aulas anteriores existem, não porque alguém prometeu. Uma versão pior nunca substitui a atual por decisão do sistema. Toda mudança tem registro e volta atrás. O ciclo roda toda vez do mesmo jeito. O custo não passa do teto.": [
+    "No learning loop guarantees that a number will rise. Not even this one—the beauty clinic owner heard that on the product’s first screen, before filling in the worksheet. LOOP-R guarantees four things, all by design: they hold because the rules from earlier lessons exist, not because someone promised. A worse version never replaces the current one by system decision. Every change is recorded and reversible. The cycle always runs the same way. Cost never exceeds the ceiling.",
+    "Ningún ciclo de aprendizaje garantiza que la cifra suba. Ni siquiera este; la dueña de la clínica estética lo leyó en la primera pantalla del producto, antes de completar la ficha. LOOP-R garantiza cuatro cosas, todas por diseño: se cumplen porque existen las reglas de las clases anteriores, no porque alguien lo haya prometido. Una versión peor nunca sustituye a la actual por decisión del sistema. Todo cambio queda registrado y se puede revertir. El ciclo siempre se ejecuta igual. El costo no supera el límite."
+  ],
+  "Ao lado de cada garantia mora o que ela não cobre. Não substituir por uma pior não quer dizer que a próxima será melhor. Ter registro não quer dizer que o registro terá algo útil — pode ser \"sem evidência\" dez ciclos seguidos. Rodar sempre não quer dizer que cada ciclo produz uma hipótese boa. Ficar no teto não quer dizer que o custo compensa.": [
+    "Beside each guarantee is what it does not cover. Not replacing a version with a worse one does not mean the next will be better. Having a record does not mean it contains anything useful—it may say “no evidence” for ten cycles in a row. Always running does not mean every cycle produces a good hypothesis. Staying under the ceiling does not mean the cost is worthwhile.",
+    "Junto a cada garantía está lo que no cubre. No sustituir una versión por otra peor no significa que la siguiente será mejor. Tener un registro no significa que contenga algo útil: puede decir «sin evidencia» durante diez ciclos seguidos. Ejecutarse siempre no significa que cada ciclo produzca una buena hipótesis. Respetar el límite no significa que el costo compense."
+  ],
+  "A regra que este produto segue em todo texto: a palavra \"garantir\" só aparece acompanhada de": [
+    "The rule this product follows in every text: the word “guarantee” appears only alongside",
+    "La regla que este producto sigue en todos sus textos: la palabra «garantizar» solo aparece acompañada de"
+  ],
+  "não-regressão": [
+    "non-regression",
+    "no regresión"
+  ],
+  ", de registro com volta, ou de constância do ciclo. Se você ler \"garante mais vendas\" em qualquer material sobre loops de IA — inclusive sobre este — está lendo uma promessa que ninguém pode fazer.": [
+    ", a reversible record, or a consistent cycle. If you read “guarantees more sales” in any material about AI loops—including this one—you are reading a promise no one can make.",
+    ", un registro reversible o la constancia del ciclo. Si lees «garantiza más ventas» en cualquier material sobre ciclos de IA, incluso este, estás leyendo una promesa que nadie puede hacer."
+  ],
+  "Antes — a promessa que se vende": [
+    "Before—the promise being sold",
+    "Antes: la promesa que se vende"
+  ],
+  "\"A IA vai aprender com cada proposta e": [
+    "“The AI will learn from every proposal and",
+    "«La IA aprenderá de cada propuesta y"
+  ],
+  "melhorar suas vendas": [
+    "improve your sales",
+    "mejorará tus ventas"
+  ],
+  ".\" Nenhum número, nenhuma condição, nenhum prazo.": [
+    ".” No number, no condition, no timeline.",
+    ".» Ninguna cifra, condición ni plazo."
+  ],
+  "Depois — o que se garante": [
+    "After—what is guaranteed",
+    "Después: lo que sí se garantiza"
+  ],
+  "Para a clínica: nenhuma versão com resposta ou margem": [
+    "For the clinic: no version with worse replies or margin",
+    "Para la clínica: ninguna versión con peores respuestas o margen"
+  ],
+  "pior": [
+    "worse",
+    "peor"
+  ],
+  "vira oficial; toda mudança tem data, número e volta; o ciclo roda toda segunda; o gasto para em R$ 50.": [
+    "becomes official; every change has a date, metric, and rollback; the cycle runs every Monday; spending stops at R$ 50.",
+    "se vuelve oficial; cada cambio tiene fecha, cifra y opción de volver atrás; el ciclo se ejecuta cada lunes; el gasto se detiene en R$ 50."
+  ],
+  "Saldo:": [
+    "Takeaway:",
+    "Balance:"
+  ],
+  "quatro frases conferíveis no histórico, contra uma que não dá para conferir em lugar nenhum.": [
+    "four statements that can be checked in the history, instead of one that cannot be verified anywhere.",
+    "cuatro frases comprobables en el historial frente a una que no se puede comprobar en ninguna parte."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "O elo que ainda não foi provado: sinal → dinheiro": [
+    "The link still unproven: signal → revenue",
+    "El vínculo aún no demostrado: señal → dinero"
+  ],
+  "Na aula 2 você trocou o dinheiro pelo sinal como alvo do teste, porque o dinheiro demora demais. Isso tem um preço que precisa ser dito: subir o sinal não prova que o dinheiro sobe. É plausível — quem responde tem mais chance de comprar — mas plausível não é provado. Enquanto o volume não chega, o elo entre os dois é uma aposta declarada, não um resultado.": [
+    "In lesson 2, you replaced revenue with a signal as the test target because revenue takes too long. That has a cost worth stating: raising the signal does not prove that revenue rises. It is plausible—people who reply are more likely to buy—but plausible is not proven. Until the volume is there, the link between them is an explicit bet, not a result.",
+    "En la clase 2 sustituiste el dinero por una señal como objetivo de la prueba porque el dinero tarda demasiado. Eso tiene un costo que hay que decir: subir la señal no demuestra que suba el dinero. Es plausible —quien responde tiene más probabilidades de comprar—, pero lo plausible no está demostrado. Hasta que haya suficiente volumen, el vínculo entre ambos es una apuesta declarada, no un resultado."
+  ],
+  "O caso real da clínica mostra isso sem retoque. No ciclo 0004, a taxa de resposta subiu de 19,3% para 29,3% e a versão foi promovida com razão. A conversão em venda foi de 3,0% para 3,7% — um número que, com 300 propostas de cada lado, não distingue de sorte. O relatório do ciclo diz exatamente isso: \"o elo sinal → alvo segue não provado\". Dez pontos de resposta, e sobre vendas ainda não há nada a afirmar.": [
+    "The clinic’s real case shows this plainly. In cycle 0004, the reply rate rose from 19.3% to 29.3%, and the version was rightly promoted. Sales conversion went from 3.0% to 3.7%—a figure that, with 300 proposals on each side, cannot be distinguished from luck. The cycle report says exactly that: “the signal → target link remains unproven.” Ten points more replies, and still nothing to claim about sales.",
+    "El caso real de la clínica lo muestra con claridad. En el ciclo 0004, la tasa de respuesta subió del 19,3 % al 29,3 % y la versión se promovió con razón. La conversión en ventas pasó del 3,0 % al 3,7 %: con 300 propuestas por grupo, esa cifra no se distingue del azar. El informe del ciclo dice exactamente eso: «el vínculo señal → objetivo sigue sin demostrarse». Diez puntos más de respuestas, y todavía no se puede afirmar nada sobre las ventas."
+  ],
+  "O corretor de imóveis vive o mesmo elo com outros nomes: mais visitas agendadas não provaram, até agora, mais vendas fechadas. O loop dele otimiza o agendamento e vigia o fechamento. No dia em que houver 1.500 leads de cada lado, o fechamento pode virar alvo. Antes disso, dizer \"o loop aumentou as vendas\" seria a promessa do passo anterior.": [
+    "The real estate agent faces the same link under different names: more booked visits have not yet proved more closed sales. His loop optimizes bookings and monitors closings. Once there are 1,500 leads on each side, closings may become the target. Before then, saying “the loop increased sales” would be the same unsupported promise.",
+    "El agente inmobiliario enfrenta el mismo vínculo con otros nombres: más visitas concertadas todavía no han demostrado más ventas cerradas. Su ciclo optimiza las citas y vigila los cierres. Cuando haya 1.500 contactos por grupo, el cierre podrá convertirse en objetivo. Antes de eso, decir «el ciclo aumentó las ventas» sería repetir la promesa sin fundamento."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Ciclo 0004 da clínica: resposta 19,3% → 29,3% (N = 300 vs 300, significativo); conversão 3,0% → 3,7% (não significativo). O que dá para afirmar?": [
+    "Clinic cycle 0004: replies 19.3% → 29.3% (N = 300 vs. 300, significant); conversion 3.0% → 3.7% (not significant). What can you claim?",
+    "Ciclo 0004 de la clínica: respuesta 19,3 % → 29,3 % (N = 300 frente a 300, significativo); conversión 3,0 % → 3,7 % (no significativo). ¿Qué se puede afirmar?"
+  ],
+  "As vendas subiram 23% com a versão nova": [
+    "Sales rose 23% with the new version",
+    "Las ventas subieron un 23 % con la nueva versión"
+  ],
+  "A resposta subiu de verdade; sobre vendas ainda não há prova — e a versão pode ser promovida mesmo assim": [
+    "Replies truly rose; there is still no proof about sales—and the version can still be promoted",
+    "La respuesta sí subió; todavía no hay pruebas sobre las ventas, y aun así se puede promover la versión"
+  ],
+  "A hipótese falhou, porque o objetivo era vender mais": [
+    "The hypothesis failed because the goal was to sell more",
+    "La hipótesis falló porque el objetivo era vender más"
+  ],
+  "\"Sem evidência\" dez ciclos seguidos é um resultado possível": [
+    "“No evidence” for ten cycles in a row is a possible result",
+    "«Sin evidencia» durante diez ciclos seguidos es un resultado posible"
+  ],
+  "O loop garante que o ciclo roda toda semana. Não garante que a semana traga uma ideia boa. É possível — e, em negócio pequeno, comum — que o Crítico encontre só observações fracas por vários ciclos, que o Otimizador não tenha do que propor, e que o histórico acumule \"sem evidência suficiente\" linha após linha. Isso não é o loop quebrado. É o loop dizendo a verdade sobre o volume que tem.": [
+    "The loop guarantees that a cycle runs every week. It does not guarantee that the week brings a good idea. It is possible—and common in a small business—for the Critic to find only weak observations for several cycles, for the Optimizer to have nothing to propose, and for the history to accumulate “insufficient evidence” line after line. That does not mean the loop is broken. It is telling the truth about its volume.",
+    "El ciclo garantiza que se ejecute cada semana. No garantiza que la semana traiga una buena idea. Es posible —y común en un negocio pequeño— que el Crítico solo encuentre observaciones débiles durante varios ciclos, que el Optimizador no tenga propuestas y que el historial acumule «evidencia insuficiente» línea tras línea. Eso no significa que el ciclo esté roto. Está diciendo la verdad sobre el volumen disponible."
+  ],
+  "Duas coisas continuam valendo nessas semanas. A memória de hipóteses descartadas cresce, e ela vale tanto quanto a das promovidas: impede que a mesma ideia ruim seja testada duas vezes, por você ou por quem vier depois. E o Meta-agente, o assistente que só observa o loop e relata, conta o custo por hipótese promovida — se em cinco ciclos nada foi promovido, ele propõe rodar com menos frequência, não fingir progresso.": [
+    "Two things still matter during those weeks. The memory of discarded hypotheses grows and is as valuable as the memory of promoted ones: it prevents you or a future teammate from testing the same bad idea twice. The Meta-agent, which only observes and reports, tracks cost per promoted hypothesis. If nothing is promoted in five cycles, it suggests running less often instead of pretending to make progress.",
+    "Dos cosas siguen siendo valiosas durante esas semanas. La memoria de hipótesis descartadas crece y vale tanto como la de las promovidas: evita que tú u otra persona vuelva a probar la misma mala idea. El Meta-agente, que solo observa e informa, calcula el costo por hipótesis promovida. Si no se promueve nada en cinco ciclos, propone ejecutarlo con menos frecuencia en vez de fingir progreso."
+  ],
+  "A gestora de suporte passou por seis ciclos assim entre março e abril: chamados de menos por tipo para o Crítico afirmar qualquer padrão. Ela reduziu o loop para quinzenal, seguindo a proposta do Meta-agente, e deixou a planilha de registro acumulando. Em junho, com 30 chamados no tipo mais comum, veio a primeira hipótese moderada. O histórico dela tem seis linhas de \"sem evidência\" — e ela considera as seis honestas.": [
+    "The support manager went through six such cycles between March and April: too few tickets per type for the Critic to identify a pattern. Following the Meta-agent’s suggestion, she reduced the loop to every two weeks and let the log spreadsheet accumulate data. In June, with 30 tickets in the most common category, the first moderate hypothesis appeared. Her history has six “no evidence” entries—and she considers all six honest.",
+    "La responsable de soporte pasó por seis ciclos así entre marzo y abril: había muy pocos casos por tipo para que el Crítico identificara un patrón. Siguiendo la propuesta del Meta-agente, redujo la frecuencia a quincenal y dejó que la hoja de registro acumulara datos. En junio, con 30 casos del tipo más común, apareció la primera hipótesis moderada. Su historial tiene seis registros de «sin evidencia» y considera honestos los seis."
+  ],
+  "O que ainda é pesquisa, e o que é gargalo": [
+    "What is still research, and what is the bottleneck",
+    "Qué sigue siendo investigación y qué es el cuello de botella"
+  ],
+  "Há uma parte da ideia do LOOP-R que ainda não está pronta para negócio nenhum: o loop redesenhar a si mesmo — o nível L3, o Meta-agente propondo trocar assistentes, mudar a ordem do ciclo, reescrever as próprias regras. Isso é pesquisa. No produto que este curso ensina, o Meta-agente só relata: custo, hipóteses geradas contra promovidas, quem mais leva veto do Guardião, se o juiz está calibrado. Zero ação. Quem prometer um sistema que \"melhora o próprio sistema\" sozinho está vendendo o que ainda não existe de forma segura.": [
+    "One part of the LOOP-R idea is not ready for any business: the loop redesigning itself—level L3, where the Meta-agent proposes replacing assistants, changing the cycle order, or rewriting its own rules. That is research. In the product taught in this course, the Meta-agent only reports: cost, hypotheses generated versus promoted, who gets the most Guardian vetoes, and whether the judge is calibrated. No action. Anyone promising a system that “improves itself” is selling something that does not yet exist safely.",
+    "Una parte de la idea de LOOP-R aún no está lista para ningún negocio: que el ciclo se rediseñe a sí mismo, el nivel L3, donde el Meta-agente propone cambiar asistentes, alterar el orden del ciclo o reescribir sus propias reglas. Eso es investigación. En el producto que enseña este curso, el Meta-agente solo informa: costos, hipótesis generadas frente a promovidas, quién recibe más vetos del Guardián y si el juez está calibrado. No ejecuta acciones. Quien prometa un sistema que «se mejora a sí mismo» está vendiendo algo que todavía no existe de forma segura."
+  ],
+  "E há o gargalo que nenhum assistente resolve: a planilha de registro. Sem evidência, o resto é teatro — e a evidência do seu negócio está no WhatsApp, no caderno da recepção, na cabeça do vendedor. O produto conecta com uma coisa: uma planilha com colunas definidas na ficha. Quem quiser usar, preenche ou exporta. Ligações diretas com outros sistemas são cada uma um projeto próprio, e nenhuma vem de graça com as cinco respostas.": [
+    "And there is a bottleneck no assistant can solve: the log spreadsheet. Without evidence, everything else is theater—and your business’s evidence is in WhatsApp, the reception notebook, or the salesperson’s head. The product connects to one thing: a spreadsheet with columns defined in the worksheet. You fill it in or export data. Each direct connection to another system is its own project; none comes free with the five answers.",
+    "Y está el cuello de botella que ningún asistente resuelve: la hoja de registro. Sin pruebas, lo demás es teatro; los datos de tu negocio están en WhatsApp, en el cuaderno de recepción o en la cabeza del vendedor. El producto se conecta a una sola cosa: una hoja con columnas definidas en la ficha. Tú la completas o exportas los datos. Cada integración directa con otro sistema es un proyecto aparte; ninguna viene incluida con las cinco respuestas."
+  ],
+  "Para a clínica e para o corretor, a conclusão é a mesma frase, que serve de teste para qualquer promessa: o LOOP-R como disciplina de processo — registro, teste com quantidade que prova, não-regressão — vale sozinho hoje. O LOOP-R como \"sistema que aprende sozinho\" depende de um volume de dados que a maioria das empresas pequenas não tem. Um produto honesto diz isso na primeira tela.": [
+    "For both the clinic and the real estate agent, the conclusion is the same—and it tests any promise: LOOP-R as a process discipline—logging, tests with sufficient sample sizes, and non-regression—has value on its own today. LOOP-R as a “self-learning system” depends on a volume of data most small businesses do not have. An honest product says so on its first screen.",
+    "Para la clínica y el agente inmobiliario, la conclusión es la misma y sirve para evaluar cualquier promesa: LOOP-R como disciplina de proceso —registro, pruebas con muestras suficientes y no regresión— ya tiene valor por sí sola. LOOP-R como «sistema que aprende solo» depende de un volumen de datos que la mayoría de los pequeños negocios no tiene. Un producto honesto lo dice desde la primera pantalla."
+  ],
+  "O loop não promete que o número sobe. Promete que ele não cai por decisão do sistema.": [
+    "The loop does not promise the number will rise. It promises it will not fall because of a system decision.",
+    "El ciclo no promete que la cifra suba. Promete que no bajará por decisión del sistema."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/3 feito": [
+    "0/3 complete",
+    "0/3 completados"
+  ],
+  "Verdadeiro ou falso: oito afirmações sobre garantias": [
+    "True or false: eight claims about guarantees",
+    "Verdadero o falso: ocho afirmaciones sobre garantías"
+  ],
+  "Marque V ou F em cada afirmação e, nas falsas, escreva em uma linha qual garantia real ela está esticando. ~8 min. É análise porque não existe jeito de \"praticar\" uma garantia — ela se reconhece lendo, e é assim que você vai encontrá-la em propostas de venda.": [
+    "Mark each statement T or F. For false ones, write one line naming the real guarantee it stretches. About 8 minutes. This is analysis: you cannot “practice” a guarantee; you learn to recognize it when reading sales proposals.",
+    "Marca V o F en cada afirmación y, en las falsas, escribe en una línea qué garantía real está exagerando. Unos 8 min. Es un ejercicio de análisis: no se puede «practicar» una garantía; se aprende a reconocerla al leer propuestas de venta."
+  ],
+  "Nada muda no seu negócio até você aprovar: isto é leitura e marcação. Errar aqui é útil — cada F que você marcou como V é uma promessa que alguém ainda vai tentar te vender.": [
+    "Nothing changes in your business until you approve it: this is reading and marking. Mistakes help—every false statement you mark true is a promise someone may try to sell you.",
+    "Nada cambia en tu negocio hasta que lo apruebes: aquí solo lees y marcas. Equivocarte es útil; cada afirmación falsa que marques como verdadera es una promesa que alguien podría intentar venderte."
+  ],
+  "1": [
+    "1",
+    "1"
+  ],
+  "2": [
+    "2",
+    "2"
+  ],
+  "3": [
+    "3",
+    "3"
+  ],
+  "4": [
+    "4",
+    "4"
+  ],
+  "5": [
+    "5",
+    "5"
+  ],
+  "6": [
+    "6",
+    "6"
+  ],
+  "7": [
+    "7",
+    "7"
+  ],
+  "8": [
+    "8",
+    "8"
+  ],
+  "Depois de quatro ciclos, a taxa de resposta obrigatoriamente subiu.": [
+    "After four cycles, the reply rate must have risen.",
+    "Después de cuatro ciclos, la tasa de respuesta necesariamente habrá subido."
+  ],
+  "Uma versão pior nunca substitui a atual por decisão do sistema.": [
+    "A worse version never replaces the current one by system decision.",
+    "Una versión peor nunca sustituye a la actual por decisión del sistema."
+  ],
+  "Toda mudança pode ser desfeita, e fica registrado quando, com que números e por quê.": [
+    "Every change can be reversed, and the history records when, with which numbers, and why.",
+    "Todo cambio se puede revertir, y queda registrado cuándo, con qué cifras y por qué."
+  ],
+  "Se o cartão não for respondido no prazo, o sistema promove por padrão, para não travar o loop.": [
+    "If the card is not answered by the deadline, the system promotes by default so the loop does not stall.",
+    "Si no se responde la tarjeta a tiempo, el sistema promueve por defecto para que el ciclo no se detenga."
+  ],
+  "O custo de um ciclo nunca passa do teto que você escreveu na ficha.": [
+    "A cycle’s cost never exceeds the ceiling you wrote on the worksheet.",
+    "El costo de un ciclo nunca supera el límite que anotaste en la ficha."
+  ],
+  "Se o custo ficou dentro do teto, o loop compensou.": [
+    "If the cost stayed under the ceiling, the loop was worthwhile.",
+    "Si el costo quedó dentro del límite, el ciclo compensó."
+  ],
+  "Dez ciclos seguidos com \"sem evidência\" significam que o loop quebrou.": [
+    "Ten cycles in a row with “no evidence” mean the loop is broken.",
+    "Diez ciclos seguidos con «sin evidencia» significan que el ciclo se rompió."
+  ],
+  "O ciclo roda toda semana do mesmo jeito, mesmo que ninguém tenha uma hipótese boa.": [
+    "The cycle runs the same way every week, even if no one has a good hypothesis.",
+    "El ciclo se ejecuta igual cada semana, aunque nadie tenga una buena hipótesis."
+  ],
+  "Marquei V ou F nas oito afirmações antes de abrir o gabarito.": [
+    "I marked all eight statements T or F before opening the answer key.",
+    "Marqué V o F en las ocho afirmaciones antes de abrir la clave."
+  ],
+  "Nas que marquei F, escrevi em uma linha qual garantia real ela estica.": [
+    "For those I marked false, I wrote one line naming the real guarantee each one stretches.",
+    "En las que marqué F, escribí en una línea qué garantía real exagera cada una."
+  ],
+  "Comparei com o gabarito e conferi as quatro garantias e as quatro não-garantias.": [
+    "I compared my answers with the key and checked the four guarantees and four non-guarantees.",
+    "Comparé mis respuestas con la clave y verifiqué las cuatro garantías y las cuatro cosas que no se garantizan."
+  ],
+  "Gabarito comentado": [
+    "Annotated answer key",
+    "Clave comentada"
+  ],
+  "1 — F.": [
+    "1 — F.",
+    "1 — F."
+  ],
+  "2 — V.": [
+    "2 — T.",
+    "2 — V."
+  ],
+  "3 — V.": [
+    "3 — T.",
+    "3 — V."
+  ],
+  "4 — F.": [
+    "4 — F.",
+    "4 — F."
+  ],
+  "5 — V.": [
+    "5 — T.",
+    "5 — V."
+  ],
+  "6 — F.": [
+    "6 — F.",
+    "6 — F."
+  ],
+  "7 — F.": [
+    "7 — F.",
+    "7 — F."
+  ],
+  "8 — V.": [
+    "8 — T.",
+    "8 — V."
+  ],
+  "Estica a não-regressão: o loop garante que o número não cai por decisão dele, não que sobe.": [
+    "It stretches non-regression: the loop guarantees the number will not fall by its decision, not that it will rise.",
+    "Exagera la no regresión: el ciclo garantiza que la cifra no caiga por decisión suya, no que suba."
+  ],
+  "É a garantia central: o Avaliador só promove com margem e vigiados intactos; sem isso, \"A segue\".": [
+    "This is the core guarantee: the Evaluator promotes only when margin and guardrails remain intact; otherwise, “A stays.”",
+    "Es la garantía central: el Evaluador solo promueve si el margen y los indicadores se mantienen intactos; de lo contrario, «A sigue»."
+  ],
+  "Registro com botão de voltar. Cada promoção e cada volta ficam no histórico com data, números e motivo.": [
+    "A record with a rollback button. Every promotion and rollback appears in the history with its date, numbers, and reason.",
+    "Registro con botón para volver atrás. Cada promoción y reversión queda en el historial con fecha, cifras y motivo."
+  ],
+  "Estica a constância do ciclo: o loop continua rodando, mas o padrão sem resposta é não promover e registrar \"pendente\".": [
+    "It stretches the cycle’s consistency: the loop keeps running, but the default when there is no answer is not to promote and to record “pending.”",
+    "Exagera la constancia del ciclo: sigue ejecutándose, pero si no hay respuesta, lo normal es no promover y registrar «pendiente»."
+  ],
+  "O Guardião interrompe o ciclo ao atingir o teto.": [
+    "The Guardian stops the cycle when it reaches the ceiling.",
+    "El Guardián detiene el ciclo al alcanzar el límite."
+  ],
+  "Estica o teto: ficar dentro do limite garante o gasto, não o retorno. Custo por hipótese promovida é outra conta, e o Meta-agente é quem a relata.": [
+    "It stretches the ceiling: staying within the limit guarantees the spend, not the return. Cost per promoted hypothesis is a separate calculation, reported by the Meta-agent.",
+    "Exagera el límite: respetarlo garantiza el gasto, no el retorno. El costo por hipótesis promovida es otro cálculo, que informa el Meta-agente."
+  ],
+  "Estica a constância: rodar sempre é garantido; produzir hipótese boa toda semana, não. Dez \"sem evidência\" são um resultado honesto, e as ideias descartadas ficaram na memória.": [
+    "It stretches consistency: running every week is guaranteed; producing a good hypothesis each week is not. Ten “no evidence” results are honest, and discarded ideas remain in memory.",
+    "Exagera la constancia: se garantiza que el ciclo se ejecute, no que produzca una buena hipótesis cada semana. Diez resultados de «sin evidencia» son honestos, y las ideas descartadas quedan en la memoria."
+  ],
+  "Constância do ciclo. É a garantia mais barata e a que mais protege contra \"a gente parou de fazer no mês 3\".": [
+    "Cycle consistency. It is the cheapest guarantee and the best protection against “we stopped doing it in month 3.”",
+    "Constancia del ciclo. Es la garantía más sencilla y la que más protege frente a «dejamos de hacerlo en el tercer mes»."
+  ],
+  "Você acabou de separar, afirmação por afirmação, o que o loop sustenta do que ninguém pode sustentar — a mesma leitura que vai fazer diante da próxima promessa que aparecer.": [
+    "You have just separated, claim by claim, what the loop can support from what no one can support—the same reading you will apply to the next promise you hear.",
+    "Acabas de separar, afirmación por afirmación, lo que el ciclo puede respaldar de lo que nadie puede respaldar; es la misma lectura que aplicarás a la próxima promesa que aparezca."
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "O loop garante quatro coisas por construção: uma versão pior não entra por decisão dele, tudo tem registro e volta, o ciclo roda sempre igual, o custo fica no teto.": [
+    "By design, the loop guarantees four things: it does not select a worse version, everything is recorded and reversible, the cycle always runs the same way, and cost stays under the ceiling.",
+    "Por diseño, el ciclo garantiza cuatro cosas: no elige una versión peor, todo queda registrado y se puede revertir, el ciclo se ejecuta siempre igual y el costo respeta el límite."
+  ],
+  "Cada garantia tem um limite gêmeo: nada diz que a próxima versão será melhor, que o registro terá algo útil, que cada ciclo traz uma ideia boa, ou que o custo compensa.": [
+    "Each guarantee has a matching limit: none says the next version will be better, that the record will be useful, that each cycle brings a good idea, or that the cost is worthwhile.",
+    "Cada garantía tiene un límite asociado: ninguna asegura que la próxima versión será mejor, que el registro será útil, que cada ciclo traerá una buena idea o que el costo compensará."
+  ],
+  "Subir o sinal não prova que o dinheiro sobe; no caso real, dez pontos de resposta e uma conversão que ainda não se distingue de sorte.": [
+    "A higher signal does not prove higher revenue; in the real case, replies rose by ten points while conversion remains indistinguishable from luck.",
+    "Que suba la señal no demuestra que suba el dinero: en el caso real, la respuesta aumentó diez puntos, pero la conversión aún no se distingue del azar."
+  ],
+  "O loop que redesenha a si mesmo é pesquisa, e a planilha de registro é o gargalo que nenhum assistente resolve por você.": [
+    "A loop that redesigns itself is still research, and the log spreadsheet is the bottleneck no assistant can solve for you.",
+    "El ciclo que se rediseña a sí mismo sigue siendo investigación, y la hoja de registro es el cuello de botella que ningún asistente puede resolver por ti."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de conseguir olhar para uma promessa sobre IA e dizer, com a tabela na cabeça, qual das quatro garantias ela está esticando.": [
+    "You can now look at an AI promise and identify, using the table, which of the four guarantees it stretches.",
+    "Ahora puedes analizar una promesa sobre IA y decir, con la tabla en mente, cuál de las cuatro garantías está exagerando."
+  ],
+  "Nos próximos 15 minutos: releia a ficha do loop que você montou nas trilhas anteriores e risque qualquer frase que prometa subida de número. Troque por uma das quatro garantias, com o número da sua ficha (\"não cai abaixo de 20% de resposta por decisão do sistema\").": [
+    "Over the next 15 minutes: reread the loop worksheet you built in earlier tracks and cross out any sentence promising a higher number. Replace it with one of the four guarantees and a number from your worksheet (“the system will not let the reply rate fall below 20%”).",
+    "Durante los próximos 15 minutos: relee la ficha del ciclo que preparaste en las rutas anteriores y tacha cualquier frase que prometa que una cifra subirá. Sustitúyela por una de las cuatro garantías, con una cifra de tu ficha («el sistema no dejará que la respuesta baje del 20 %»)."
+  ],
+  "Na Trilha 5 você acompanha os quatro ciclos reais da clínica do começo ao fim, prevê o quinto — e entrega a sua ficha completa, com o primeiro cartão de decisão preenchido.": [
+    "In Track 5, you will follow the clinic’s four real cycles from start to finish, predict the fifth, and submit your completed worksheet with the first decision card filled in.",
+    "En la Ruta 5 seguirás de principio a fin los cuatro ciclos reales de la clínica, anticiparás el quinto y entregarás la ficha completa con la primera tarjeta de decisión rellenada."
+  ],
+  "← aula anterior": [
+    "← previous lesson",
+    "← clase anterior"
+  ],
+  "concluir a trilha →": [
+    "complete the track →",
+    "terminar la ruta →"
+  ],
+  "Aula 5 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 5 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 5 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "pior não entra": [
+    "worse versions stay out",
+    "no entra una versión peor"
+  ],
+  "lista: sim/não": [
+    "checklist: yes/no",
+    "lista: sí/no"
+  ],
+  "não provado": [
+    "unproven",
+    "no demostrado"
+  ],
+  "seis linhas honestas, uma promoção": [
+    "six honest entries, one promotion",
+    "seis registros honestos, una promoción"
+  ],
+  "A garantia de que uma versão pior não vira oficial por decisão do sistema. É a única garantia forte de um loop: o número pode não subir, mas não cai por conta do loop.": [
+    "The guarantee that a worse version will not become official by system decision. It is the only strong guarantee of a loop: the number may not rise, but it will not fall because of the loop.",
+    "La garantía de que una versión peor no se vuelva oficial por decisión del sistema. Es la única garantía sólida de un ciclo: la cifra quizá no suba, pero no bajará por causa del ciclo."
+  ],
+  "Esse número existe na planilha, mas com 300 de cada lado ele não se distingue do acaso. Afirmar '23% a mais de vendas' é exatamente a promessa que a aula manda desconfiar.": [
+    "That number is in the spreadsheet, but with 300 on each side it cannot be distinguished from chance. Claiming “23% more sales” is exactly the promise this lesson says to question.",
+    "Esa cifra está en la hoja, pero con 300 por grupo no se distingue del azar. Afirmar «un 23 % más de ventas» es precisamente la promesa de la que esta clase recomienda desconfiar."
+  ],
+  "Correto. O alvo do teste (resposta) subiu e foi provado; o dinheiro era vigiado, não piorou, e ainda não há volume para dizer que subiu. As duas frases cabem juntas.": [
+    "Correct. The test target (replies) rose and was proven; revenue was monitored, did not worsen, and still lacks the volume needed to claim it rose. Both statements can be true.",
+    "Correcto. El objetivo de la prueba (respuestas) subió y quedó demostrado; el dinero se vigiló, no empeoró y aún no hay volumen para afirmar que subió. Ambas frases pueden ser ciertas."
+  ],
+  "Falhar seria a resposta cair ou um vigiado piorar. Nada disso aconteceu. A hipótese fez o que se propôs (subir o sinal); o que falta é o elo com o dinheiro, e isso é outra pergunta.": [
+    "Failure would mean replies fell or a guardrail worsened. Neither happened. The hypothesis did what it set out to do (raise the signal); what is missing is the link to revenue, a separate question.",
+    "Habría fallado si las respuestas hubieran bajado o empeorado un indicador. No ocurrió ninguna de las dos cosas. La hipótesis cumplió su objetivo (subir la señal); falta el vínculo con el dinero, que es otra pregunta."
+  ],
+  "<b>Fig. 1</b> Duas colunas: à esquerda o que vale por construção (cheio), à direita o que fica de fora (tracejado). Cada linha da esquerda tem um par à direita.": [
+    "<b>Fig. 1</b> Two columns: what holds by design on the left (solid), and what remains outside on the right (dashed). Each left-hand item has a matching limit on the right.",
+    "<b>Fig. 1</b> Dos columnas: a la izquierda, lo que se cumple por diseño (línea continua); a la derecha, lo que queda fuera (discontinua). Cada punto de la izquierda tiene su límite correspondiente a la derecha."
+  ],
+  "<b>Fig. 2</b> A corrente de três elos: texto → resposta → venda. Os dois primeiros estão soldados pelos testes; o último ainda é tracejado — plausível, não provado.": [
+    "<b>Fig. 2</b> The three-link chain: text → reply → sale. Tests connect the first two; the last link is still dashed—plausible, not proven.",
+    "<b>Fig. 2</b> La cadena de tres eslabones: texto → respuesta → venta. Las pruebas unen los dos primeros; el último sigue discontinuo: es plausible, pero no está demostrado."
+  ],
+  "<b>Fig. 3</b> O histórico ao longo de meses: muitas linhas iguais de 'sem evidência' e uma promoção. A memória de descartadas (à direita) cresce mesmo nas semanas vazias.": [
+    "<b>Fig. 3</b> The history over several months: many “no evidence” entries and one promotion. The discarded-hypothesis memory (right) grows even in quiet weeks.",
+    "<b>Fig. 3</b> El historial durante varios meses: muchas entradas de «sin evidencia» y una promoción. La memoria de hipótesis descartadas (a la derecha) crece incluso en semanas vacías."
+  ],
+  "<b>Fig. 4</b> O que está dentro do produto hoje (cheio), o que é pesquisa (tracejado) e onde fica o gargalo: a planilha, antes de qualquer assistente.": [
+    "<b>Fig. 4</b> What is in the product today (solid), what remains research (dashed), and the bottleneck: the spreadsheet, before any assistant.",
+    "<b>Fig. 4</b> Lo que incluye hoy el producto (línea continua), lo que sigue en investigación (discontinua) y el cuello de botella: la hoja de cálculo, antes de cualquier asistente."
+  ],
+  "Diagnóstico: um material diz 'o loop garante mais vendas em 90 dias'. Qual das quatro garantias reais está sendo esticada, e para o quê?": [
+    "Diagnosis: a brochure says “the loop guarantees more sales in 90 days.” Which real guarantee is being stretched, and into what claim?",
+    "Diagnóstico: un material afirma que «el ciclo garantiza más ventas en 90 días». ¿Qué garantía real se está exagerando y en qué promesa se convierte?"
+  ],
+  "A não-regressão (o número não cai por decisão do sistema) esticada para 'o número sobe'. Nenhum loop garante subida.": [
+    "Non-regression (the number does not fall by system decision) is stretched into “the number rises.” No loop guarantees an increase.",
+    "Se exagera la no regresión (la cifra no cae por decisión del sistema) hasta afirmar que «la cifra sube». Ningún ciclo garantiza un aumento."
+  ],
+  "Decisão: o histórico do seu loop tem oito ciclos seguidos de 'sem evidência'. Você desliga o loop, mantém como está, ou muda algo? O quê?": [
+    "Decision: your loop has eight cycles in a row with “no evidence.” Turn it off, keep it running, or change something? What?",
+    "Decisión: tu ciclo tiene ocho ejecuciones seguidas con «sin evidencia». ¿Lo apagas, lo mantienes o cambias algo? ¿Qué?"
+  ],
+  "Mantém rodando e reduz a frequência (proposta do Meta-agente), deixando a planilha acumular. Não é defeito: é o volume que você tem.": [
+    "Keep it running less often (the Meta-agent’s suggestion) and let the spreadsheet accumulate data. This is not a defect; it reflects your volume.",
+    "Déjalo en marcha con menos frecuencia (propuesta del Meta-agente) y permite que la hoja acumule datos. No es un defecto: refleja el volumen disponible."
+  ],
+  "Contraste: o que separa 'garante registro e volta' de 'garante que o registro será útil'?": [
+    "Contrast: what is the difference between “guarantees a record and rollback” and “guarantees the record will be useful”?",
+    "Contraste: ¿qué diferencia hay entre «garantiza un registro y la posibilidad de volver atrás» y «garantiza que el registro será útil»?"
+  ],
+  "O primeiro é construção: toda mudança fica anotada e reversível. O segundo depende de haver evidência — o registro pode ser só 'sem evidência' por meses.": [
+    "The first is built in: every change is recorded and reversible. The second depends on evidence—the record may say “no evidence” for months.",
+    "Lo primero está integrado: todo cambio queda anotado y se puede revertir. Lo segundo depende de que haya pruebas; durante meses, el registro podría decir solo «sin evidencia»."
+  ],
+  "Aplicação: alguém te oferece um loop em que 'o sistema redesenha os próprios assistentes sozinho'. O que você responde e por quê?": [
+    "Application: someone offers a loop where “the system redesigns its own assistants.” What do you say, and why?",
+    "Aplicación: alguien ofrece un ciclo donde «el sistema rediseña sus propios asistentes». ¿Qué respondes y por qué?"
+  ],
+  "Que isso é L3, ainda pesquisa. No produto, o Meta-agente só relata (custo, vetos, calibração do juiz) — zero ação sobre o próprio loop.": [
+    "That is L3, still research. In this product, the Meta-agent only reports (cost, vetoes, judge calibration)—it takes no action on the loop itself.",
+    "Eso es L3 y sigue en investigación. En este producto, el Meta-agente solo informa (costos, vetos y calibración del juez); no actúa sobre el ciclo."
+  ],
+  "Por que a planilha de registro é chamada de gargalo, se existem nove assistentes?": [
+    "Why is the log spreadsheet called a bottleneck if there are nine assistants?",
+    "¿Por qué se llama cuello de botella a la hoja de registro si hay nueve asistentes?"
+  ],
+  "Porque sem evidência preenchida os assistentes não têm o que ler; o produto conecta só com a planilha, e cada ligação direta a outro sistema é um projeto próprio.": [
+    "Without recorded evidence, the assistants have nothing to read. The product connects only to the spreadsheet, and each direct connection to another system is a separate project.",
+    "Sin pruebas registradas, los asistentes no tienen qué leer. El producto solo se conecta con la hoja y cada integración directa con otro sistema es un proyecto aparte."
+  ],
+  "próxima é melhor": [
+    "next one is better",
+    "la siguiente es mejor"
+  ],
+  "registro útil": [
+    "useful record",
+    "registro provechoso"
+  ],
+  "hipótese boa": [
+    "good hypothesis",
+    "buena hipótesis"
+  ],
+  "custo compensa": [
+    "cost is worthwhile",
+    "el costo compensa"
+  ]
+}

@@ -1,0 +1,570 @@
+{
+  "Trilha 02 · Aula 4 · P de Propor": [
+    "Track 02 · Lesson 4 · P for Propose",
+    "Ruta 02 · Clase 4 · P de Proponer"
+  ],
+  "Da evidência": [
+    "From evidence",
+    "De la evidencia"
+  ],
+  "à hipótese": [
+    "to a hypothesis",
+    "a la hipótesis"
+  ],
+  "Ao fim desta aula você consegue escrever 3 hipóteses no formato SE / ENTÃO / PORQUE, cada uma apontando para um número da sua planilha, e dizer qual das três tem a evidência mais forte.": [
+    "By the end of this lesson, you’ll be able to write 3 hypotheses in the IF / THEN / BECAUSE format, each tied to a number in your spreadsheet, and say which one has the strongest evidence.",
+    "Al terminar esta clase, podrás escribir 3 hipótesis con el formato SI / ENTONCES / PORQUE, cada una vinculada a un número de tu hoja, e indicar cuál tiene la evidencia más sólida."
+  ],
+  "Você já tem ideias de sobra para melhorar o processo — o problema é que são ideias, não hipóteses. \"Deixar a proposta mais curta\" não pode ser testada nem reprovada. Uma hipótese diz o que muda, quanto espera mudar e por que — e é a única coisa que o loop aceita levar para o teste.": [
+    "You already have plenty of ideas to improve the process—the problem is that they’re ideas, not hypotheses. “Make the proposal shorter” can’t be tested or disproved. A hypothesis says what will change, by how much, and why—and it’s the only thing the loop will take into a test.",
+    "Ya tienes muchas ideas para mejorar el proceso; el problema es que son ideas, no hipótesis. «Haz la propuesta más corta» no se puede probar ni refutar. Una hipótesis indica qué cambia, cuánto se espera cambiar y por qué; es lo único que el loop acepta llevar a una prueba."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "SE": [
+    "IF",
+    "SI"
+  ],
+  "≤ 80 palavras": [
+    "≤ 80 words",
+    "≤ 80 palabras"
+  ],
+  "ENTÃO": [
+    "THEN",
+    "ENTONCES"
+  ],
+  "17% → 22%": [
+    "17% → 22%",
+    "17 % → 22 %"
+  ],
+  "PORQUE": [
+    "BECAUSE",
+    "PORQUE"
+  ],
+  "166/200 sem resp.": [
+    "166/200 no reply",
+    "166/200 sin respuesta"
+  ],
+  "01": [
+    "01",
+    "01"
+  ],
+  "A crítica vem antes da ideia": [
+    "Critique comes before the idea",
+    "La crítica va antes que la idea"
+  ],
+  "A quarta letra é": [
+    "The fourth letter is",
+    "La cuarta letra es"
+  ],
+  "Propor": [
+    "Propose",
+    "Proponer"
+  ],
+  ". Mas propor não começa com criatividade; começa com uma leitura fria do que a planilha mostrou. No loop, essa leitura tem dono: o": [
+    ". But proposing doesn’t start with creativity; it starts with a cool-headed reading of what the spreadsheet showed. In the loop, that reading has an owner: the",
+    ". Pero proponer no empieza con la creatividad, sino con una lectura objetiva de lo que muestra la hoja. En el loop, esa lectura tiene responsable: el"
+  ],
+  "Crítico": [
+    "Critic",
+    "Crítico"
+  ],
+  ", um assistente com uma função só, que olha a evidência e diz o que funcionou, o que falhou e com que força a evidência sustenta cada afirmação. Ele não sugere solução. Só diagnostica.": [
+    ", a single-purpose assistant that examines the evidence and says what worked, what failed, and how strongly the evidence supports each claim. It doesn’t suggest a solution. It only diagnoses.",
+    ", un asistente con una sola función: revisar la evidencia y decir qué funcionó, qué falló y con qué solidez respalda cada afirmación. No sugiere soluciones; solo diagnostica."
+  ],
+  "Sobre as 200 propostas da clínica da Dra. Renata, o Crítico apontou: 166 das 200 não tiveram resposta em 48 horas (83%); o custo e o tempo por proposta eram estáveis (cerca de 5 minutos e meio cada); e a versão 1 terminava com \"à disposição para dúvidas\" — sem pedir nada à cliente. Três frases, três números. Nenhuma sugestão. Só depois disso alguém propõe.": [
+    "Looking at the clinic’s 200 proposals, the Critic noted: 166 of 200 got no reply within 48 hours (83%); the cost and time per proposal were steady (about five and a half minutes each); and version 1 ended with “let me know if you have any questions”—without asking the client to do anything. Three statements, three numbers. No suggestions. Only then does someone propose an idea.",
+    "Al revisar las 200 propuestas de la clínica, el Crítico señaló: 166 de 200 no recibieron respuesta en 48 horas (83 %); el costo y el tiempo por propuesta eran estables (unos cinco minutos y medio cada una); y la versión 1 terminaba con «estoy a tu disposición para cualquier duda», sin pedir nada a la clienta. Tres afirmaciones, tres cifras. Ninguna sugerencia. Solo después alguien propone."
+  ],
+  "É a ordem do mecânico: primeiro o diagnóstico (\"o barulho vem da suspensão dianteira\"), depois o orçamento. Quem propõe antes de diagnosticar troca peça boa.": [
+    "It’s the mechanic’s order of operations: diagnosis first (“the noise is coming from the front suspension”), then the estimate. Anyone who proposes a fix before diagnosing may replace a good part.",
+    "Es el orden del mecánico: primero el diagnóstico («el ruido viene de la suspensión delantera») y luego el presupuesto. Quien propone antes de diagnosticar puede cambiar una pieza que funciona."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "02": [
+    "02",
+    "02"
+  ],
+  "SE, ENTÃO, PORQUE — o formato que pode ser reprovado": [
+    "IF, THEN, BECAUSE—the format that can be disproved",
+    "SI, ENTONCES, PORQUE: el formato que se puede refutar"
+  ],
+  "Uma hipótese no LOOP-R tem três partes obrigatórias.": [
+    "A LOOP-R hypothesis has three required parts.",
+    "Una hipótesis LOOP-R tiene tres partes obligatorias."
+  ],
+  ": o que muda no roteiro, de forma concreta.": [
+    ": what changes in the script, concretely.",
+    ": qué cambia concretamente en el guion."
+  ],
+  ": qual número muda, de quanto para quanto.": [
+    ": which number changes, and from what to what.",
+    ": qué número cambia y de cuánto a cuánto."
+  ],
+  ": qual evidência da planilha sustenta a aposta. E uma quarta, prática: a": [
+    ": what evidence in the spreadsheet supports the bet. And a fourth practical part: the",
+    ": qué evidencia de la hoja respalda la apuesta. Y una cuarta parte práctica: la"
+  ],
+  "MUDANÇA": [
+    "CHANGE",
+    "CAMBIO"
+  ],
+  "— a alteração exata no texto da versão atual, para que o Executor consiga seguir.": [
+    "—the exact edit to the current version’s text, so the Executor can follow it.",
+    "—la modificación exacta del texto de la versión actual para que el Ejecutor pueda aplicarla."
+  ],
+  "Aqui está a segunda hipótese real do loop da clínica, como o Otimizador a escreveu:": [
+    "Here is the loop’s second real hypothesis from the clinic, as written by the Optimizer:",
+    "Esta es la segunda hipótesis real del loop de la clínica, tal como la escribió el Optimizador:"
+  ],
+  "for acrescentada em Regras a exigência de no máximo 80 palavras no total,": [
+    "we add a rule requiring no more than 80 words in total,",
+    "añadimos en Reglas un máximo de 80 palabras en total,"
+  ],
+  "a taxa de resposta deve ir de 17% (200 propostas) para pelo menos 22%,": [
+    "the response rate should rise from 17% (200 proposals) to at least 22%,",
+    "la tasa de respuesta debería subir del 17 % (200 propuestas) al menos al 22 %,"
+  ],
+  "83% das propostas não geram resposta e a estrutura em 5 blocos produz uma mensagem longa para WhatsApp; encurtar reduz o custo de leitura antes do preço.": [
+    "83% of proposals get no reply and the 5-part structure makes for a long WhatsApp message; shortening it reduces the reading cost before the price.",
+    "el 83 % de las propuestas no recibe respuesta y la estructura de 5 bloques produce un mensaje largo para WhatsApp; acortarlo reduce el esfuerzo de lectura antes del precio."
+  ],
+  ": em \"Regras\", acrescentar a linha \"máximo de 80 palavras no total da mensagem\".": [
+    ": under “Rules,” add the line “maximum 80 words in the full message.”",
+    ": en «Reglas», añade la línea «máximo de 80 palabras en todo el mensaje»."
+  ],
+  "Antes": [
+    "Before",
+    "Antes"
+  ],
+  "\"IA, deixe a proposta mais curta e melhor.\" Não diz quanto é curta, o que é melhor, nem por quê. Se der certo ou errado, ninguém saberá.": [
+    "“AI, make the proposal shorter and better.” It doesn’t say how short, what better means, or why. If it succeeds or fails, no one will know.",
+    "«IA, haz la propuesta más corta y mejor». No dice cuánto acortarla, qué significa «mejor» ni por qué. Si funciona o falla, nadie lo sabrá."
+  ],
+  "Depois": [
+    "After",
+    "Después"
+  ],
+  "\"SE máximo de 80 palavras, ENTÃO resposta de 17% para ≥22%, PORQUE 166 de 200 não respondem e a mensagem é longa.\" Pode ser testada, pode perder.": [
+    "“IF no more than 80 words, THEN response rises from 17% to ≥22%, BECAUSE 166 of 200 don’t reply and the message is long.” It can be tested, and it can lose.",
+    "«SI máximo 80 palabras, ENTONCES la respuesta sube del 17 % a ≥22 %, PORQUE 166 de 200 no responden y el mensaje es largo». Se puede probar y puede fallar."
+  ],
+  "Saldo: a hipótese de baixo": [
+    "The low version",
+    "La hipótesis de abajo"
+  ],
+  "pode ser reprovada": [
+    "can be disproved",
+    "se puede refutar"
+  ],
+  "por 300 linhas da planilha. A de cima não pode nem estar errada — e por isso nunca melhora nada.": [
+    "by 300 spreadsheet rows. The one above can’t even be wrong—and that’s why it never improves anything.",
+    "con 300 filas de la hoja. La de arriba ni siquiera puede estar equivocada; por eso nunca mejora nada."
+  ],
+  "03": [
+    "03",
+    "03"
+  ],
+  "Toda hipótese carrega a força da evidência": [
+    "Every hypothesis carries the strength of its evidence",
+    "Cada hipótesis lleva la solidez de su evidencia"
+  ],
+  "Nem toda hipótese nasce igual. O Crítico rotula cada afirmação:": [
+    "Not every hypothesis starts out equal. The Critic labels each claim:",
+    "No todas las hipótesis empiezan igual. El Crítico etiqueta cada afirmación:"
+  ],
+  "forte": [
+    "strong",
+    "sólida"
+  ],
+  "quando se apoia em 90 ou mais linhas do mesmo tipo;": [
+    "when backed by 90 or more rows of the same type;",
+    "cuando se apoya en 90 filas o más del mismo tipo;"
+  ],
+  "moderada": [
+    "moderate",
+    "moderada"
+  ],
+  "a partir de 30;": [
+    "starting at 30;",
+    "a partir de 30;"
+  ],
+  "fraca": [
+    "weak",
+    "débil"
+  ],
+  "abaixo disso. A força decide a fila: hipóteses fortes vão para o teste primeiro; as fracas ficam na lista \"observado, não testado\" até a planilha crescer. Você só pode testar uma coisa de cada vez — a força diz qual.": [
+    "below that. Strength determines the queue: strong hypotheses go to testing first; weak ones stay on the “observed, not tested” list until the spreadsheet grows. You can only test one thing at a time—the evidence strength tells you which one.",
+    "por debajo de esa cifra. La solidez determina el orden: las hipótesis sólidas se prueban primero; las débiles esperan en «observado, no probado» hasta que haya más datos. Solo puedes probar una cosa a la vez; la solidez indica cuál."
+  ],
+  "Marcos tinha duas ideias. A primeira: \"leads que pedem o valor na primeira mensagem fecham menos visita\" — vinha de 25 leads, força fraca; foi para a lista de espera. A segunda: \"a resposta atual não termina pedindo nada\" — vinha das 130 linhas registradas até ali, 101 sem resposta em 24 horas; força forte. A hipótese que foi para o teste foi a segunda: SE a primeira resposta terminar com uma pergunta única (\"prefere visitar esta semana ou na próxima?\"), ENTÃO a taxa de resposta em 24h deve ir de 22% para pelo menos 28%, PORQUE 101 de 130 leads não respondem e o texto atual não pede resposta.": [
+    "Marcos had two ideas. The first—“leads who ask for the price in their first message book fewer visits”—came from 25 leads, so its evidence was weak; it went on the waiting list. The second—“the current reply doesn’t end with a question”—came from the 130 rows recorded so far, 101 with no reply within 24 hours; its evidence was strong. The second went to testing: IF the first reply ends with one clear question (“Would you rather visit this week or next?”), THEN the 24-hour response rate should rise from 22% to at least 28%, BECAUSE 101 of 130 leads don’t reply and the current text doesn’t ask for a response.",
+    "Marcos tenía dos ideas. La primera —«los leads que preguntan el precio en el primer mensaje concretan menos visitas»— venía de 25 leads, así que su evidencia era débil y quedó en espera. La segunda —«la respuesta actual no termina con una pregunta»— se basaba en las 130 filas registradas hasta entonces; 101 no tuvieron respuesta en 24 horas. Su evidencia era sólida. Esa pasó a prueba: SI la primera respuesta termina con una única pregunta clara («¿prefieres visitar esta semana o la próxima?»), ENTONCES la respuesta en 24 h debería subir del 22 % al menos al 28 %, PORQUE 101 de 130 leads no responden y el texto actual no pide respuesta."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Dra. Renata tem uma hipótese forte (166 de 200 sem resposta) e uma ideia que ela adora, vinda de 9 clientes que elogiaram o tom \"mais íntimo\". O que o loop faz com a segunda?": [
+    "Dr. Renata has a strong hypothesis (166 of 200 got no reply) and an idea she loves, based on 9 customers who praised the “more personal” tone. What does the loop do with the second idea?",
+    "La Dra. Renata tiene una hipótesis sólida (166 de 200 sin respuesta) y una idea que le encanta, basada en 9 clientes que elogiaron el tono «más cercano». ¿Qué hace el loop con la segunda idea?"
+  ],
+  "Testar duas coisas ao mesmo tempo impede saber qual delas causou a diferença — e 9 casos não sustentam nem a fila.": [
+    "Testing two things at once makes it impossible to know which caused the difference—and 9 cases don’t even qualify for the queue.",
+    "Probar dos cosas a la vez impide saber cuál causó la diferencia, y 9 casos ni siquiera bastan para entrar en la lista de pruebas."
+  ],
+  "testa as duas juntas, para aproveitar o ciclo": [
+    "tests both together to make the most of the cycle",
+    "prueba ambas juntas para aprovechar el ciclo"
+  ],
+  "Nove casos é força fraca. A ideia vai para 'observado, não testado' e volta quando houver 30 linhas do mesmo tipo — a hipótese forte testa primeiro.": [
+    "Nine cases make the evidence weak. The idea goes to “observed, not tested” and returns when there are 30 rows of the same type—the strong hypothesis goes first.",
+    "Nueve casos aportan evidencia débil. La idea pasa a «observado, no probado» y se retoma al reunir 30 filas del mismo tipo; primero se prueba la hipótesis sólida."
+  ],
+  "guarda em \"observado, não testado\" e testa a forte": [
+    "saves it under “observed, not tested” and tests the strong one",
+    "la guarda en «observado, no probado» y prueba la sólida"
+  ],
+  "Descartar apaga uma observação que pode virar hipótese depois. O loop guarda; não descarta o que ainda não foi testado.": [
+    "Discarding erases an observation that could become a hypothesis later. The loop keeps it; it doesn’t discard what hasn’t been tested yet.",
+    "Descartar borra una observación que podría convertirse en hipótesis más adelante. El loop la guarda; no descarta lo que aún no se ha probado."
+  ],
+  "descarta, porque 9 é pouco": [
+    "discards it because 9 is too few",
+    "la descarta porque 9 es muy poco"
+  ],
+  "04": [
+    "04",
+    "04"
+  ],
+  "Uma hipótese ainda não é regra": [
+    "A hypothesis is not a rule yet",
+    "Una hipótesis todavía no es una regla"
+  ],
+  "Escrever a hipótese é o fim desta letra, não do loop. Ela ainda vai passar por duas portas. A primeira é o": [
+    "Writing the hypothesis ends this letter, not the loop. It still has to pass through two gates. The first is the",
+    "Escribir la hipótesis termina esta letra, no el loop. Aún debe pasar por dos puertas. La primera es el"
+  ],
+  "Guardião": [
+    "Guardian",
+    "Guardián"
+  ],
+  ": um assistente que confere se a mudança toca em algo que nunca pode mudar sozinho ou pressiona um \"sem piorar\". Se tocar, ele veta — e o veto é final. A segunda porta é o teste da próxima aula. Só o que passa pelas duas vira versão oficial.": [
+    ": an assistant that checks whether a change touches something that must never change on its own or puts a “no harm” metric at risk. If it does, the Guardian vetoes it—and that veto is final. The second gate is next lesson’s test. Only what passes both becomes the official version.",
+    ": un asistente que comprueba si el cambio toca algo que nunca puede cambiar por sí solo o pone en riesgo una métrica de «sin empeorar». Si ocurre, lo veta y el veto es definitivo. La segunda puerta es la prueba de la próxima clase. Solo lo que supera ambas se convierte en versión oficial."
+  ],
+  "No suporte de Cláudio, 37% dos chamados de um mês eram sobre o mesmo problema: a tela de pagamento que não carregava. A hipótese foi limpa: SE a primeira resposta a esse tipo de chamado trouxer os três passos que resolvem em 80% dos casos, ENTÃO a resolução no primeiro contato deve ir de 58% para pelo menos 65%, PORQUE 112 de 300 chamados são esse problema e hoje a resposta padrão só pede mais informações. Passou pelo Guardião. Já na clínica, a primeira hipótese do ciclo — encerrar a proposta com uma única pergunta de fechamento, do tipo \"prefere começar esta semana ou na próxima?\" — foi vetada antes de qualquer teste. A mesma ideia que passou para Marcos parou ali: a ficha da Dra. Renata tinha tolerância zero para reclamações, e uma escolha forçada na mensagem pressiona exatamente esse número. O Guardião lê a ficha de cada loop, não uma regra geral.": [
+    "In Cláudio’s support team, 37% of the month’s tickets involved the same issue: the payment screen wouldn’t load. The hypothesis was clear: IF the first reply to this kind of ticket includes the three steps that solve 80% of cases, THEN first-contact resolution should rise from 58% to at least 65%, BECAUSE 112 of 300 tickets are about this issue and the standard reply only asks for more information. The Guardian approved it. At the clinic, though, the cycle’s first hypothesis—ending the proposal with one closing question such as “Would you rather start this week or next?”—was vetoed before any test. The same idea Marcos was allowed to test stopped there: Dr. Renata’s worksheet had zero tolerance for complaints, and a forced choice puts pressure on exactly that metric. The Guardian reads each loop’s worksheet, not a general rule.",
+    "En el equipo de soporte de Cláudio, el 37 % de los tickets de un mes trataba el mismo problema: la pantalla de pago no cargaba. La hipótesis quedó clara: SI la primera respuesta a ese tipo de ticket incluye los tres pasos que resuelven el 80 % de los casos, ENTONCES la resolución en el primer contacto debería subir del 58 % al menos al 65 %, PORQUE 112 de 300 tickets son sobre ese problema y la respuesta habitual solo pide más información. El Guardián la aprobó. En la clínica, en cambio, vetó antes de la prueba la primera hipótesis del ciclo —terminar la propuesta con una pregunta de cierre como «¿prefieres empezar esta semana o la próxima?»—. La misma idea que Marcos pudo probar se detuvo allí: la ficha de la Dra. Renata no toleraba ninguna reclamación, y una elección forzada presiona justo esa métrica. El Guardián lee la ficha de cada loop; no aplica una regla general."
+  ],
+  "Uma hipótese que parece ótima e é vetada não é fracasso. É o loop dizendo que a ficha foi levada a sério.": [
+    "A hypothesis that seems great but gets vetoed isn’t a failure. It’s the loop showing that the worksheet was taken seriously.",
+    "Que veten una hipótesis que parece excelente no es un fracaso. Significa que el loop tomó en serio la ficha."
+  ],
+  "Uma ideia que não pode ser reprovada também não pode melhorar nada.": [
+    "An idea that can’t be disproved can’t improve anything.",
+    "Una idea que no se puede refutar tampoco puede mejorar nada."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/4 feito": [
+    "0/4 done",
+    "0/4 hecho"
+  ],
+  "Peça 3 hipóteses ao seu chat de IA — no formato, a partir das suas 10 linhas": [
+    "Ask your AI chat for 3 hypotheses—in the required format, based on your 10 rows",
+    "Pídele a tu chat de IA 3 hipótesis con el formato indicado y basadas en tus 10 filas"
+  ],
+  "Sair com 3 hipóteses no formato SE / ENTÃO / PORQUE / MUDANÇA, cada uma com força marcada, escritas a partir da sua planilha da aula 3 — cerca de 10 min.": [
+    "Leave with 3 hypotheses in IF / THEN / BECAUSE / CHANGE format, each labeled with its evidence strength and based on your lesson 3 spreadsheet—about 10 minutes.",
+    "Termina con 3 hipótesis en formato SI / ENTONCES / PORQUE / CAMBIO, cada una con su nivel de solidez y basada en la hoja de la clase 3: unos 10 minutos."
+  ],
+  "Nada muda no seu negócio até você aprovar: uma hipótese é uma frase num bloco de notas. Nenhuma delas altera o roteiro, nenhuma vai para teste sem passar pelo Guardião e por você. Se a IA sugerir algo que toca no que nunca muda, risque e peça outra.": [
+    "Nothing changes in your business until you approve it: a hypothesis is just a sentence in a notes app. None changes the script, and none goes to testing without the Guardian and your approval. If the AI suggests something that touches a no-change rule, cross it out and ask for another option.",
+    "Nada cambia en tu negocio hasta que lo apruebes: una hipótesis es solo una frase en una nota. Ninguna cambia el guion ni pasa a prueba sin el Guardián y tu aprobación. Si la IA propone algo que toca una regla inalterable, táchalo y pídele otra opción."
+  ],
+  "O texto abaixo é um": [
+    "The text below is a",
+    "El texto de abajo es un"
+  ],
+  "A instrução que você cola no chat de IA. Aqui, ela faz a IA agir como o Otimizador: só propõe hipóteses no formato, a partir dos números que você der.": [
+    "The instruction you paste into your AI chat. Here, it makes the AI act as the Optimizer: it only proposes hypotheses in the required format, based on the numbers you provide.",
+    "La instrucción que pegas en el chat de IA. Aquí hace que la IA actúe como Optimizador: solo propone hipótesis con el formato indicado y a partir de los números que le des."
+  ],
+  "prompt": [
+    "prompt",
+    "prompt"
+  ],
+  "— uma instrução pronta para colar no chat de IA que você já usa. Ele parece longo porque faz o papel do Otimizador: dá o formato, os números e as regras. Você só troca o que está entre < > pelos seus dados; o resto fica como está.": [
+    "—a ready-to-paste instruction for the AI chat you already use. It looks long because it does the Optimizer’s job: it provides the format, numbers, and rules. Replace only what’s inside < > with your data; leave the rest as is.",
+    "—una instrucción lista para pegar en el chat de IA que ya usas. Parece larga porque hace el trabajo del Optimizador: indica el formato, los números y las reglas. Sustituye solo lo que está entre < > por tus datos; deja lo demás tal cual."
+  ],
+  "copiar": [
+    "copy",
+    "copiar"
+  ],
+  "Você é o Otimizador de um loop de melhoria. Só propõe hipóteses; não executa, não avalia. Processo: <responder o primeiro contato de lead de portal> Versão atual (roteiro, 6 linhas): <cole aqui as 6 linhas da sua versão 1> Evidência (minhas últimas linhas registradas): - linhas registradas: <10> - número rápido: <respondeu em 24h> = <2 de 10> - número de dinheiro: <visita marcada> = <1 de 10> - sem piorar: <pediu para parar> = <0 de 10> - o que eu observei: <7 dos 8 que não responderam receberam texto sem pergunta no fim> Regras: 1. Escreva exatamente 3 hipóteses, cada uma com SE / ENTÃO / PORQUE / MUDANÇA. 2. ENTÃO precisa citar o número rápido, de quanto para quanto. 3. PORQUE só pode usar a evidência acima. Se a evidência for de menos de 30 linhas, marque FORÇA: fraca. 4. MUDANÇA é o texto exato a alterar na versão atual, em uma linha. 5. Nenhuma hipótese pode tocar em: <desconto acima de 10% · prometer prazo>.": [
+    "You are the Optimizer in an improvement loop. Only propose hypotheses; do not execute or evaluate them. Process: <reply to the first message from a portal lead> Current version (script, 6 lines): <paste the 6 lines of your version 1 here> Evidence (my latest recorded rows): - rows recorded: <10> - quick metric: <replied within 24h> = <2 of 10> - money metric: <visit booked> = <1 of 10> - no-harm metric: <asked us to stop> = <0 of 10> - what I observed: <7 of the 8 who didn’t reply got a text with no question at the end> Rules: 1. Write exactly 3 hypotheses, each with IF / THEN / BECAUSE / CHANGE. 2. THEN must name the quick metric and its current and target values. 3. BECAUSE can only use the evidence above. If there are fewer than 30 rows, label STRENGTH: weak. 4. CHANGE is the exact text to edit in the current version, in one line. 5. No hypothesis may touch: <discounts over 10% · promising a deadline>.",
+    "Eres el Optimizador de un loop de mejora. Propón hipótesis únicamente; no las ejecutes ni evalúes. Proceso: <responder al primer contacto de un lead del portal> Versión actual (guion, 6 líneas): <pega aquí las 6 líneas de tu versión 1> Evidencia (mis últimas filas registradas): - filas registradas: <10> - métrica rápida: <respondió en 24 h> = <2 de 10> - métrica económica: <visita agendada> = <1 de 10> - métrica de no empeorar: <pidió que dejáramos de escribirle> = <0 de 10> - observación: <7 de los 8 que no respondieron recibieron un texto sin pregunta al final> Reglas: 1. Escribe exactamente 3 hipótesis, cada una con SI / ENTONCES / PORQUE / CAMBIO. 2. ENTONCES debe indicar la métrica rápida y sus valores actual y objetivo. 3. PORQUE solo puede usar la evidencia anterior. Si hay menos de 30 filas, marca SOLIDEZ: débil. 4. CAMBIO es el texto exacto que debes modificar en la versión actual, en una línea. 5. Ninguna hipótesis puede tocar: <descuento superior al 10 % · prometer un plazo>"
+  ],
+  "Troque tudo o que está entre < > pelos seus dados da aula 3 e cole no chat de IA.": [
+    "Replace everything inside < > with your lesson 3 data and paste it into your AI chat.",
+    "Sustituye todo lo que está entre < > por tus datos de la clase 3 y pégalo en tu chat de IA."
+  ],
+  "Confira cada hipótese: tem SE, ENTÃO com número, PORQUE apontando para a sua evidência, e MUDANÇA em uma linha? Se faltar algo, peça de novo só aquela parte.": [
+    "Check each hypothesis: does it have IF, THEN with a number, BECAUSE pointing to your evidence, and CHANGE in one line? If anything is missing, ask again for only that part.",
+    "Revisa cada hipótesis: ¿incluye SI, ENTONCES con una cifra, PORQUE con referencia a tu evidencia y CAMBIO en una línea? Si falta algo, pide solo esa parte de nuevo."
+  ],
+  "Marque a força de cada uma: com 10 linhas, todas são fracas — e está certo. Ficou pronto quando as três têm \"FORÇA: fraca\" e você sabe por quê.": [
+    "Label each one’s strength: with 10 rows, all three are weak—and that’s correct. You’re done when all three say “STRENGTH: weak” and you know why.",
+    "Indica la solidez de cada una: con 10 filas, las tres son débiles, y está bien. Termina cuando las tres indiquen «SOLIDEZ: débil» y sepas por qué."
+  ],
+  "Faça o papel do Guardião: alguma das três toca no que nunca muda ou pressiona o seu \"sem piorar\"? Risque essa e anote o motivo.": [
+    "Play the Guardian: does any of the three touch a no-change rule or put your “no harm” metric at risk? Cross it out and note why.",
+    "Haz de Guardián: ¿alguna de las tres toca una regla inalterable o pone en riesgo tu métrica de «sin empeorar»? Táchala y anota el motivo."
+  ],
+  "Você acabou de escrever três hipóteses que podem ser reprovadas — o que separa uma ideia de um experimento. Quando a planilha passar de 30 linhas, a força delas muda e a primeira vai para o teste.": [
+    "You’ve just written three hypotheses that can be disproved—the difference between an idea and an experiment. When the spreadsheet passes 30 rows, their strength changes and the first one can go to testing.",
+    "Acabas de escribir tres hipótesis que se pueden refutar: eso distingue una idea de un experimento. Cuando la hoja supere las 30 filas, cambiará su solidez y la primera podrá pasar a prueba."
+  ],
+  "<b>Fig. 1</b> A evidência passa pelo Crítico antes de virar proposta. O Crítico só diz o que funcionou e o que falhou — a seta para 'solução' não sai dele.": [
+    "<b>Fig. 1</b> Evidence goes through the Critic before becoming a proposal. The Critic only says what worked and what failed—the arrow to “solution” doesn’t come from it.",
+    "<b>Fig. 1</b> La evidencia pasa por el Crítico antes de convertirse en propuesta. El Crítico solo indica qué funcionó y qué falló; de él no sale ninguna flecha hacia «solución»."
+  ],
+  "planilha": [
+    "spreadsheet",
+    "hoja"
+  ],
+  "diagnostica": [
+    "diagnoses",
+    "diagnostica"
+  ],
+  "166/200": [
+    "166/200",
+    "166/200"
+  ],
+  "sem resp.": [
+    "no reply",
+    "sin respuesta"
+  ],
+  "5,5 min": [
+    "5.5 min",
+    "5,5 min"
+  ],
+  "estável": [
+    "stable",
+    "estable"
+  ],
+  "o que falhou": [
+    "what failed",
+    "qué falló"
+  ],
+  "não sugere": [
+    "doesn’t suggest",
+    "no sugiere"
+  ],
+  "<b>Fig. 2</b> Os três encaixes da hipótese, mais a mudança. Cada um responde uma pergunta — e o ENTÃO é o que o teste vai conferir.": [
+    "<b>Fig. 2</b> The three parts of a hypothesis, plus the change. Each answers a question—and THEN is what the test will check.",
+    "<b>Fig. 2</b> Las tres partes de la hipótesis y el cambio. Cada una responde una pregunta; ENTONCES es lo que comprobará la prueba."
+  ],
+  "o que muda no roteiro": [
+    "what changes in the script",
+    "qué cambia en el guion"
+  ],
+  "qual número, de quanto para quanto": [
+    "which number, from what to what",
+    "qué número, de cuánto a cuánto"
+  ],
+  "qual linha da planilha sustenta": [
+    "which spreadsheet row supports it",
+    "qué fila de la hoja lo respalda"
+  ],
+  "o texto exato a alterar": [
+    "the exact text to edit",
+    "el texto exacto que se modifica"
+  ],
+  "← o teste confere isto": [
+    "← the test checks this",
+    "← esto comprueba la prueba"
+  ],
+  "<b>Fig. 3</b> A força vem do número de linhas que sustentam a hipótese. Forte vai para o teste; fraca espera na lista 'observado, não testado'.": [
+    "<b>Fig. 3</b> Evidence strength comes from the number of rows supporting the hypothesis. Strong hypotheses go to testing; weak ones wait on the “observed, not tested” list.",
+    "<b>Fig. 3</b> La solidez depende de cuántas filas respaldan la hipótesis. Las sólidas pasan a prueba; las débiles esperan en «observado, no probado»."
+  ],
+  "\"pede valor → fecha menos\"": [
+    "“asks the price → books fewer visits”",
+    "«pregunta el precio → concreta menos visitas»"
+  ],
+  "25 linhas · fraca": [
+    "25 rows · weak",
+    "25 filas · débil"
+  ],
+  "lista de": [
+    "waiting",
+    "espera"
+  ],
+  "espera": [
+    "list",
+    "lista"
+  ],
+  "\"não pede resposta no fim\"": [
+    "“doesn’t ask for a reply at the end”",
+    "«no pide respuesta al final»"
+  ],
+  "130 linhas · forte": [
+    "130 rows · strong",
+    "130 filas · sólida"
+  ],
+  "teste": [
+    "test",
+    "prueba"
+  ],
+  "fraca < 30 · moderada ≥ 30 · forte ≥ 90 linhas": [
+    "weak < 30 · moderate ≥ 30 · strong ≥ 90 rows",
+    "débil < 30 · moderada ≥ 30 · sólida ≥ 90 filas"
+  ],
+  "<b>Fig. 4</b> Entre a hipótese e a versão oficial há duas portas: o Guardião (veta o que toca o que nunca muda) e o teste. Só o que passa pelas duas entra.": [
+    "<b>Fig. 4</b> There are two gates between a hypothesis and the official version: the Guardian (which vetoes anything touching a no-change rule) and the test. Only what passes both gets in.",
+    "<b>Fig. 4</b> Entre la hipótesis y la versión oficial hay dos puertas: el Guardián (veta lo que toca una regla inalterable) y la prueba. Solo entra lo que supera ambas."
+  ],
+  "hipótese": [
+    "hypothesis",
+    "hipótesis"
+  ],
+  "versão": [
+    "version",
+    "versión"
+  ],
+  "oficial": [
+    "official",
+    "oficial"
+  ],
+  "veto: volta": [
+    "veto: goes back",
+    "veto: vuelve atrás"
+  ],
+  "\"pergunta de fechamento\" parou na 1ª porta (tolerância zero)": [
+    "“closing question” stopped at gate 1 (zero tolerance)",
+    "«pregunta de cierre» se detuvo en la primera puerta (tolerancia cero)"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "Propor começa com o Crítico lendo a planilha e dizendo o que falhou, com números — sem sugerir nada. A ideia vem depois do diagnóstico.": [
+    "Proposing starts with the Critic reading the spreadsheet and stating what failed, with numbers—without suggesting anything. Ideas come after the diagnosis.",
+    "Proponer empieza con el Crítico leyendo la hoja y señalando con cifras qué falló, sin sugerir nada. La idea viene después del diagnóstico."
+  ],
+  "A hipótese tem três encaixes fixos, SE / ENTÃO / PORQUE, mais a MUDANÇA exata no roteiro. O formato existe para que ela possa perder no teste.": [
+    "A hypothesis has three fixed parts—IF / THEN / BECAUSE—plus the exact CHANGE to the script. The format exists so it can fail a test.",
+    "La hipótesis tiene tres partes fijas —SI / ENTONCES / PORQUE— y el CAMBIO exacto en el guion. El formato permite que la prueba la refute."
+  ],
+  "Cada hipótese carrega a força da evidência: forte testa primeiro; fraca espera na lista \"observado, não testado\" até a planilha crescer.": [
+    "Each hypothesis carries the strength of its evidence: strong ones are tested first; weak ones wait on the “observed, not tested” list until the spreadsheet grows.",
+    "Cada hipótesis lleva la solidez de su evidencia: las sólidas se prueban primero; las débiles esperan en «observado, no probado» hasta que haya más datos."
+  ],
+  "Hipótese ainda não é regra. Antes de virar versão oficial ela passa pelo Guardião, que veta o que toca no que nunca muda, e pelo teste da próxima aula.": [
+    "A hypothesis is not a rule yet. Before becoming the official version, it passes the Guardian, who vetoes anything touching a no-change rule, and the next lesson’s test.",
+    "Una hipótesis aún no es una regla. Antes de convertirse en versión oficial, pasa por el Guardián —que veta lo que toque una regla inalterable— y por la prueba de la próxima clase."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de conseguir transformar uma ideia em uma hipótese que pode ser reprovada — com número, com evidência e com a mudança exata.": [
+    "You’ve just turned an idea into a hypothesis that can be disproved—with a number, evidence, and the exact change.",
+    "Acabas de convertir una idea en una hipótesis que se puede refutar, con una cifra, evidencia y el cambio exacto."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: leia as suas 3 hipóteses para a pessoa que executa o processo e pergunte só uma coisa: \"a MUDANÇA está clara o bastante para você seguir sem me perguntar nada?\". Reescreva a que não estiver.": [
+    "In the next 15 minutes, at your actual job, read your 3 hypotheses to the person who runs the process and ask one question: “Is the CHANGE clear enough for you to follow without asking me anything?” Rewrite any that isn’t.",
+    "En los próximos 15 minutos, en tu trabajo real, lee tus 3 hipótesis a quien ejecuta el proceso y haz una sola pregunta: «¿El CAMBIO está lo bastante claro para seguirlo sin preguntarme nada?». Reescribe la que no lo esté."
+  ],
+  "Na próxima aula, você resolve a pergunta que todo mundo responde errado: a versão nova ganhou? Você vai ler um resultado real — 19,3% contra 29,7% — e descobrir por que a resposta não é a que parece.": [
+    "In the next lesson, you’ll answer the question everyone gets wrong: did the new version win? You’ll read a real result—19.3% versus 29.7%—and find out why the answer isn’t what it seems.",
+    "En la próxima clase responderás la pregunta que todos contestan mal: ¿ganó la nueva versión? Leerás un resultado real —19,3 % frente a 29,7 %— y descubrirás por qué la respuesta no es la que parece."
+  ],
+  "← aula 3": [
+    "← lesson 3",
+    "← clase 3"
+  ],
+  "aula 5 →": [
+    "lesson 5 →",
+    "clase 5 →"
+  ],
+  "Aula 4 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 4 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 4 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "Qual é a diferença entre uma hipótese forte e uma fraca no LOOP-R — e o que acontece com a fraca?": [
+    "What is the difference between a strong and a weak LOOP-R hypothesis—and what happens to the weak one?",
+    "¿Qué diferencia hay entre una hipótesis sólida y una débil en LOOP-R, y qué ocurre con la débil?"
+  ],
+  "A força vem do número de linhas do mesmo tipo: forte a partir de 90, moderada a partir de 30, fraca abaixo disso. A fraca vai para \"observado, não testado\" até haver linhas suficientes.": [
+    "Strength comes from the number of rows of the same type: strong at 90 or more, moderate from 30, weak below that. A weak hypothesis goes on the “observed, not tested” list until there are enough rows.",
+    "La solidez depende del número de filas del mismo tipo: sólida desde 90, moderada desde 30 y débil por debajo. La hipótesis débil pasa a «observado, no probado» hasta que haya suficientes filas."
+  ],
+  "O que o Guardião verifica antes de liberar uma hipótese para teste?": [
+    "What does the Guardian check before clearing a hypothesis for testing?",
+    "¿Qué comprueba el Guardián antes de autorizar una hipótesis para probarla?"
+  ],
+  "Verifica se a mudança toca algo que nunca pode mudar ou pressiona o \"sem piorar\". Se tocar, veta — e o veto é final.": [
+    "It checks whether the change touches something that must never change or puts a “no harm” metric at risk. If it does, it vetoes it—and the veto is final.",
+    "Comprueba si el cambio toca algo que nunca debe cambiar o pone en riesgo la métrica de «sin empeorar». Si es así, la veta de forma definitiva."
+  ],
+  "Por que \"deixe a proposta mais curta\" não é uma hipótese válida?": [
+    "Why isn’t “make the proposal shorter” a valid hypothesis?",
+    "¿Por qué «haz la propuesta más corta» no es una hipótesis válida?"
+  ],
+  "Não diz o que muda concretamente, qual número deve mudar, de quanto para quanto, nem qual evidência sustenta a aposta. Sem isso, não há como reprovar a ideia num teste.": [
+    "It doesn’t say what changes, which number should change or by how much, or what evidence supports the bet. Without that, there’s no way to disprove the idea in a test.",
+    "No indica qué cambia, qué número debería cambiar ni de cuánto a cuánto, ni qué evidencia respalda la apuesta. Sin eso, no hay forma de refutar la idea en una prueba."
+  ],
+  "Marcos escreve: 'SE a resposta for mais simpática, ENTÃO mais leads vão responder.' O que está faltando para isso ser uma hipótese do loop?": [
+    "Marcos writes: “IF the reply is friendlier, THEN more leads will respond.” What’s missing for this to be a loop hypothesis?",
+    "Marcos escribe: «SI la respuesta es más amable, ENTONCES responderán más leads». ¿Qué falta para que sea una hipótesis del loop?"
+  ],
+  "Tudo o que a torna reprovável: SE concreto (o que muda no texto), ENTÃO com número (de 22% para ≥28%), PORQUE apontando para linhas da planilha, e a MUDANÇA exata no roteiro.": [
+    "Everything that makes it falsifiable: a concrete IF (what changes in the text), a THEN with a number (from 22% to ≥28%), a BECAUSE tied to spreadsheet rows, and the exact CHANGE to the script.",
+    "Todo lo que permite refutarla: un SI concreto (qué cambia en el texto), un ENTONCES con cifras (del 22 % a ≥28 %), un PORQUE basado en filas de la hoja y el CAMBIO exacto en el guion."
+  ],
+  "Duas hipóteses da Dra. Renata: uma sustentada por 166 de 200 linhas, outra por 9 elogios. Qual vai para o teste primeiro e o que acontece com a outra?": [
+    "Dr. Renata has two hypotheses: one backed by 166 of 200 rows, the other by 9 compliments. Which goes to testing first, and what happens to the other?",
+    "La Dra. Renata tiene dos hipótesis: una respaldada por 166 de 200 filas y otra por 9 elogios. ¿Cuál se prueba primero y qué ocurre con la otra?"
+  ],
+  "A de 200 linhas (força forte) testa primeiro. A de 9 vai para 'observado, não testado' e é reexaminada quando houver pelo menos 30 linhas do mesmo tipo.": [
+    "The one backed by 200 rows (strong evidence) is tested first. The one based on 9 goes on the “observed, not tested” list and is revisited when there are at least 30 rows of the same type.",
+    "Primero se prueba la respaldada por 200 filas (evidencia sólida). La de 9 pasa a «observado, no probado» y se revisa cuando haya al menos 30 filas del mismo tipo."
+  ],
+  "O Guardião vetou a hipótese preferida de Cláudio antes de qualquer teste. Isso é sinal de que o loop está funcionando ou falhando?": [
+    "The Guardian vetoed Cláudio’s preferred hypothesis before any test. Is that a sign that the loop is working or failing?",
+    "El Guardián vetó la hipótesis favorita de Cláudio antes de cualquier prueba. ¿Es señal de que el loop funciona o falla?"
+  ],
+  "Funcionando: o Guardião existe para barrar mudanças que encostam nas invariáveis da ficha ou pressionam um 'sem piorar'. Um veto antes do teste economiza um ciclo inteiro e prova que a ficha está sendo respeitada.": [
+    "Working: the Guardian exists to block changes that touch worksheet invariants or put a “no harm” metric at risk. A veto before testing saves a whole cycle and shows the worksheet is being respected.",
+    "Funciona: el Guardián bloquea cambios que tocan las invariantes de la ficha o ponen en riesgo una métrica de «sin empeorar». Vetar antes de probar ahorra un ciclo entero y demuestra que se respeta la ficha."
+  ],
+  "Qual é a diferença entre o que o Crítico entrega e o que o Otimizador entrega?": [
+    "What is the difference between what the Critic delivers and what the Optimizer delivers?",
+    "¿Qué diferencia hay entre lo que entrega el Crítico y lo que entrega el Optimizador?"
+  ],
+  "O Crítico entrega o diagnóstico: o que funcionou, o que falhou, com que força — sem solução. O Otimizador entrega as hipóteses no formato SE / ENTÃO / PORQUE / MUDANÇA, a partir desse diagnóstico.": [
+    "The Critic delivers the diagnosis: what worked, what failed, and how strong the evidence is—without a solution. The Optimizer uses that diagnosis to deliver hypotheses in the IF / THEN / BECAUSE / CHANGE format.",
+    "El Crítico entrega el diagnóstico: qué funcionó, qué falló y con qué solidez, sin proponer soluciones. A partir de ese diagnóstico, el Optimizador presenta hipótesis en formato SI / ENTONCES / PORQUE / CAMBIO."
+  ]
+}

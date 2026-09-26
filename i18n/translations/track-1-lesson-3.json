@@ -1,0 +1,582 @@
+{
+  "Trilha 01 · Aula 3 · fundamento": [
+    "Track 01 · Lesson 3 · foundation",
+    "Ruta 01 · Clase 3 · fundamento"
+  ],
+  "Os cinco níveis: de \"responde\"": [
+    "The five levels: from “responds” to",
+    "Los cinco niveles: de «responde» a la"
+  ],
+  "empresa que aprende": [
+    "a learning company",
+    "empresa que aprende"
+  ],
+  "Ao fim desta aula você consegue marcar, por sinais observáveis e não por impressão, em qual dos cinco níveis de maturidade seu negócio está hoje — e qual é o único nível seguinte que faz sentido.": [
+    "By the end of this lesson, you’ll be able to identify which of the five maturity levels your business is at today using observable signs, not impressions—and the only next level that makes sense.",
+    "Al terminar esta clase, podrás identificar en cuál de los cinco niveles de madurez está hoy tu negocio, con señales observables y no impresiones, y cuál es el único nivel siguiente que tiene sentido."
+  ],
+  "Todo mundo que usa IA acha que está \"avançado\" — e quase todo mundo está no nível 1. Sem uma régua, você compra ferramenta de nível 4 para resolver um problema de nível 1 e paga por um teatro. A régua desta aula existe para evitar esse dinheiro jogado fora.": [
+    "Everyone who uses AI thinks they’re “advanced”—and almost everyone is at level 1. Without a yardstick, you buy a level-4 tool to solve a level-1 problem and pay for theater. This lesson’s yardstick is here to keep you from wasting that money.",
+    "Todo el mundo que usa IA cree que está «avanzado», y casi todos están en el nivel 1. Sin una escala, compras una herramienta de nivel 4 para resolver un problema de nivel 1 y pagas por una puesta en escena. La escala de esta clase evita que tires ese dinero."
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "4 e 5: ainda longe": [
+    "4 and 5: still far away",
+    "4 y 5: todavía lejos"
+  ],
+  "o degrau seguinte é o único que importa": [
+    "the next step is the only one that matters",
+    "el siguiente nivel es el único que importa"
+  ],
+  "Nível 1 — Responde: você pede, ela entrega, você confere": [
+    "Level 1 — Responds: you ask, it delivers, you check",
+    "Nivel 1 — Responde: tú pides, la IA entrega y tú revisas"
+  ],
+  "O nível 1 é onde quase todo negócio está, e não há nada de errado nisso. É a IA que responde a um pedido. Você escreve, ela entrega um texto, você confere e usa. A inteligência do processo mora inteira na sua cabeça: o que pedir, o que ajustar, o que mandar.": [
+    "Level 1 is where almost every business is, and there’s nothing wrong with that. It’s AI answering a request. You write, it delivers text, you check and use it. All the process intelligence lives in your head: what to ask, what to adjust, what to send.",
+    "El nivel 1 es donde está casi todo negocio, y no tiene nada de malo. La IA responde a una solicitud. Tú escribes, la IA entrega un texto, tú lo revisas y lo usas. Toda la inteligencia del proceso vive en tu cabeza: qué pedir, qué ajustar y qué enviar."
+  ],
+  "Regina, da clínica, está no nível 1 puro. Os sinais são fáceis de reconhecer: cada uso começa com ela escrevendo; o resultado de cada proposta vive na memória dela, não em lugar nenhum; se ela sair de férias, a IA \"esquece\" a clínica — porque nunca soube nada além do que estava no pedido do dia.": [
+    "Regina, at the clinic, is a pure level 1. The signs are easy to spot: each use starts with her writing; the result of each proposal lives in her memory, nowhere else; if she goes on vacation, the AI “forgets” the clinic—because it never knew anything beyond that day’s request.",
+    "Regina, de la clínica, está en el nivel 1 puro. Las señales son fáciles de reconocer: cada uso empieza con ella escribiendo; el resultado de cada propuesta vive en su memoria y en ningún otro sitio; si se va de vacaciones, la IA «olvida» la clínica, porque nunca supo nada más que lo incluido en la solicitud del día."
+  ],
+  "Nível 1 não é ruim. Responder bem mil vezes já poupa muitas horas. Só não confunda com aprender: mil respostas boas continuam sendo mil primeiras vezes.": [
+    "Level 1 isn’t bad. Getting a good answer a thousand times already saves many hours. Just don’t confuse that with learning: a thousand good answers are still a thousand first times.",
+    "El nivel 1 no es malo. Obtener mil buenas respuestas ya ahorra muchas horas. Solo no lo confundas con aprender: mil buenas respuestas siguen siendo mil primeras veces."
+  ],
+  "Responder bem mil vezes é nível 1. Nível 1 não é atraso; é o ponto de partida de quase todo mundo.": [
+    "Giving a good answer a thousand times is level 1. Level 1 isn’t a delay; it’s where almost everyone starts.",
+    "Responder bien mil veces es nivel 1. El nivel 1 no es un atraso; es el punto de partida de casi todos."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leída"
+  ],
+  "Nível 2 — Executa um objetivo: o assistente com uma função só": [
+    "Level 2 — Executes a goal: the single-purpose assistant",
+    "Nivel 2 — Ejecuta un objetivo: el asistente con una sola función"
+  ],
+  "No nível 2 entra o que quem trabalha com isso chama de agente — neste curso,": [
+    "At level 2 comes what practitioners call an agent—in this course, a",
+    "En el nivel 2 aparece lo que quienes trabajan en el área llaman agente; en este curso,"
+  ],
+  "assistente com uma função só": [
+    "single-purpose assistant",
+    "asistente con una sola función"
+  ],
+  ". Você não dita mais cada passo; dá um objetivo. Ele planeja, usa uma ferramenta (uma agenda, uma planilha, o WhatsApp) e entrega o resultado.": [
+    ". You no longer dictate each step; you give it a goal. It plans, uses a tool (a calendar, a spreadsheet, WhatsApp), and delivers the result.",
+    ". Ya no dictas cada paso: le das un objetivo. Planifica, usa una herramienta (una agenda, una hoja de cálculo o WhatsApp) y entrega el resultado."
+  ],
+  "Marcos, o corretor, tem um desses: o assistente lê o lead que chegou pelo portal, procura o imóvel na planilha dele, escreve a resposta e propõe dois horários de visita. Marcos só confere e aprova. É mais do que responder — é executar um objetivo de ponta a ponta.": [
+    "Marcos, the real estate agent, has one: the assistant reads the lead that came through the listing site, finds the property in his spreadsheet, writes a reply, and suggests two times for a viewing. Marcos just checks and approves. It does more than reply—it executes a goal from start to finish.",
+    "Marcos, el agente inmobiliario, tiene uno: el asistente lee el contacto que llegó por el portal, busca la propiedad en su hoja de cálculo, redacta la respuesta y propone dos horarios para una visita. Marcos solo revisa y aprueba. Es más que responder: ejecuta un objetivo de principio a fin."
+  ],
+  "O detalhe que engana: o assistente faz mais coisas e aprende exatamente o mesmo tanto que no nível 1 — nada. Ninguém anota se a visita aconteceu. O nível 2 aumenta o alcance; não fecha o círculo.": [
+    "Here’s the catch: the assistant does more things and learns exactly as much as at level 1—nothing. Nobody records whether the viewing happened. Level 2 expands reach; it doesn’t close the loop.",
+    "El detalle engañoso: el asistente hace más cosas y aprende exactamente lo mismo que en el nivel 1: nada. Nadie anota si se realizó la visita. El nivel 2 amplía el alcance; no cierra el ciclo."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Um assistente de suporte lê o chamado, procura a resposta pronta certa e responde sozinho — sem ninguém anotar se o cliente voltou. Que nível é esse?": [
+    "A support assistant reads a ticket, finds the right saved reply, and answers on its own—without anyone noting whether the customer came back. What level is this?",
+    "Un asistente de soporte lee una consulta, busca la respuesta guardada adecuada y responde por su cuenta, sin que nadie anote si el cliente volvió. ¿Qué nivel es?"
+  ],
+  "Nível 3, porque age sozinho": [
+    "Level 3, because it acts on its own",
+    "Nivel 3, porque actúa por su cuenta"
+  ],
+  "Nível 2: executa um objetivo, mas não mede nem muda": [
+    "Level 2: executes a goal but doesn’t measure or change",
+    "Nivel 2: ejecuta un objetivo, pero no mide ni cambia"
+  ],
+  "Nível 4, porque usa ferramentas": [
+    "Level 4, because it uses tools",
+    "Nivel 4, porque usa herramientas"
+  ],
+  "Nível 3 — O loop: executa, mede, avalia, melhora, executa de novo": [
+    "Level 3 — The loop: execute, measure, evaluate, improve, execute again",
+    "Nivel 3 — El ciclo: ejecutar, medir, evaluar, mejorar y volver a ejecutar"
+  ],
+  "O nível 3 é o primeiro em que a empresa aprende. Cada execução vira uma linha; a cada semana, alguém (ou um assistente com essa função) olha as linhas, propõe uma hipótese, testa a versão nova contra a atual e decide pelo número. Se ganhou com prova, vira a versão oficial. Se não, fica registrado que não deu — para ninguém tentar de novo sem saber.": [
+    "Level 3 is the first one where the company learns. Each execution becomes a row; every week, someone (or an assistant with that role) reviews the rows, proposes a hypothesis, tests the new version against the current one, and decides based on the numbers. If it wins with proof, it becomes the official version. If not, the result is recorded so no one unknowingly tries it again.",
+    "El nivel 3 es el primero en el que la empresa aprende. Cada ejecución se convierte en una fila; cada semana, alguien (o un asistente con esa función) revisa las filas, propone una hipótesis, prueba la nueva versión frente a la actual y decide según las cifras. Si gana con pruebas, se convierte en la versión oficial. Si no, se registra el resultado para que nadie vuelva a probarla sin saberlo."
+  ],
+  "No exemplo de referência do LOOP-R (uma clínica fictícia, dados simulados), o loop rodou quatro ciclos entre fevereiro e julho. Uma hipótese — \"abrir citando a avaliação que a cliente deixou\" — foi testada com 300 propostas de cada lado: resposta de 19,3% para 29,3%, sem piorar nada do que era vigiado (reclamações, desconto), aprovada no cartão e promovida — virou a versão oficial. Outra, \"até 80 palavras\", subiu quase o mesmo e foi descartada, por regra. As duas estão na memória.": [
+    "In LOOP-R’s reference example (a fictional clinic with simulated data), the loop ran four cycles between February and July. One hypothesis—“open by mentioning the review the client left”—was tested with 300 proposals on each side: response rate went from 19.3% to 29.3%, without worsening anything being monitored (complaints, discount); it was approved on the card and promoted to the official version. Another, “up to 80 words,” rose by almost as much and was discarded by rule. Both remain in memory.",
+    "En el ejemplo de referencia de LOOP-R (una clínica ficticia con datos simulados), el ciclo completó cuatro rondas entre febrero y julio. Una hipótesis —«empezar mencionando la reseña que dejó la clienta»— se probó con 300 propuestas por versión: la respuesta pasó del 19,3 % al 29,3 %, sin empeorar ninguna métrica vigilada (quejas, descuento); se aprobó en la tarjeta y se convirtió en la versión oficial. Otra, «hasta 80 palabras», subió casi lo mismo y se descartó según la regla. Ambas quedan en el historial."
+  ],
+  "Dentro do nível 3 há três graus de autonomia.": [
+    "Within level 3 there are three degrees of autonomy.",
+    "Dentro del nivel 3 hay tres grados de autonomía."
+  ],
+  ": o loop só sugere; você faz tudo.": [
+    "the loop only suggests; you do everything.",
+    "el ciclo solo sugiere; tú haces todo."
+  ],
+  ": você aprova cada mudança num cartão de cinco linhas, uma vez por semana no máximo.": [
+    "you approve every change on a five-line card, at most once a week.",
+    "apruebas cada cambio en una tarjeta de cinco líneas, como máximo una vez por semana."
+  ],
+  ": ele promove sozinho, avisa e mantém o botão de voltar — e só se desbloqueia depois de cinco aprovações corretas suas em L1. O curso monta o seu em L1.": [
+    "it promotes on its own, alerts you, and keeps the rollback button—and unlocks only after you correctly approve five changes at L1. This course sets yours up at L1.",
+    "promueve por su cuenta, te avisa y mantiene el botón para volver atrás; solo se habilita después de que apruebes correctamente cinco cambios en L1. El curso configura el tuyo en L1."
+  ],
+  "Nível 1 — Regina hoje": [
+    "Level 1 — Regina today",
+    "Nivel 1 — Regina hoy"
+  ],
+  "200 propostas por mês. \"A IA melhorou?\" — ninguém sabe, e a pergunta nem tem como ser respondida.": [
+    "200 proposals a month. “Did the AI improve?” Nobody knows, and there’s no way to answer the question.",
+    "200 propuestas al mes. «¿La IA mejoró?». Nadie lo sabe y ni siquiera hay forma de responder."
+  ],
+  "Nível 3 — com o loop": [
+    "Level 3 — with the loop",
+    "Nivel 3 — con el ciclo"
+  ],
+  "As 200 propostas viram 200 linhas. A cada ciclo, uma hipótese testada em duas versões e um cartão para Regina decidir.": [
+    "The 200 proposals become 200 rows. Each cycle, one hypothesis is tested in two versions, and Regina gets a card to decide.",
+    "Las 200 propuestas se convierten en 200 filas. En cada ciclo se prueba una hipótesis en dos versiones y Regina recibe una tarjeta para decidir."
+  ],
+  "Saldo no exemplo de referência:": [
+    "Reference example result:",
+    "Resultado del ejemplo de referencia:"
+  ],
+  "em 4 ciclos, 2 hipóteses testadas com 300 envios por versão, 1 aprovada e promovida, 1 descartada — e nenhuma mudança entrou sem cartão aprovado.": [
+    "over 4 cycles, 2 hypotheses tested with 300 sends per version, 1 approved and promoted, 1 discarded—and no change went live without an approved card.",
+    "en 4 ciclos, 2 hipótesis probadas con 300 envíos por versión, 1 aprobada y promovida, 1 descartada, y ningún cambio entró sin una tarjeta aprobada."
+  ],
+  "Níveis 4 e 5 — e por que o seu único próximo degrau é o 3": [
+    "Levels 4 and 5—and why your only next step is level 3",
+    "Niveles 4 y 5, y por qué tu único siguiente nivel es el 3"
+  ],
+  "O nível 4 é o sistema que observa o próprio sistema de melhoria: quanto custa cada ciclo, quantas hipóteses viraram versão, qual assistente mais leva veto. Parece mágica, e é aqui que a honestidade importa: hoje, no produto, esse nível": [
+    "Level 4 is the system that observes its own improvement system: the cost of each cycle, how many hypotheses became versions, which assistant gets vetoed most. It sounds like magic, and honesty matters here: today, in the product, this level",
+    "El nivel 4 es el sistema que observa su propio sistema de mejora: cuánto cuesta cada ciclo, cuántas hipótesis se convirtieron en versiones y qué asistente recibe más vetos. Parece magia, y aquí importa ser honestos: hoy, en el producto, este nivel"
+  ],
+  "só relata": [
+    "only reports",
+    "solo informa"
+  ],
+  ". Ele não redesenha nada sozinho. Um sistema que muda a si mesmo com poucos dados multiplica cada erro dos níveis de baixo — por isso, redesenho autônomo continua sendo pesquisa, não produto.": [
+    ". It doesn’t redesign anything on its own. A system that changes itself with little data multiplies every error from the levels below—which is why autonomous redesign remains research, not a product.",
+    ". No rediseña nada por su cuenta. Un sistema que se modifica con pocos datos multiplica cada error de los niveles inferiores; por eso, el rediseño autónomo sigue siendo investigación, no un producto."
+  ],
+  "O nível 5 é a empresa inteira: cada área com seu loop e um loop acima cruzando os aprendizados. O suporte de Paulo mostra o caminho: chamados registrados → causa encontrada (a tela de senha) → resposta nova testada contra a antiga → texto de ajuda atualizado → mudança sugerida ao produto. O atendimento deixa de só responder e passa a melhorar o produto. Mas isso só existe porque, lá embaixo, cada chamado virou uma linha.": [
+    "Level 5 is the whole company: every department has its loop, with another loop above them connecting the lessons. Paulo’s support team shows the path: tickets logged → cause found (the password screen) → new reply tested against the old one → help text updated → product change suggested. Support stops just answering and starts improving the product. But that only works because, underneath, every ticket became a row.",
+    "El nivel 5 abarca toda la empresa: cada área tiene su ciclo y otro ciclo superior conecta lo aprendido. El soporte de Paulo muestra el camino: consultas registradas → causa encontrada (la pantalla de contraseña) → respuesta nueva comparada con la anterior → texto de ayuda actualizado → cambio sugerido al producto. La atención deja de limitarse a responder y empieza a mejorar el producto. Pero eso solo existe porque, en la base, cada consulta se convirtió en una fila."
+  ],
+  "Daí a regra:": [
+    "That leads to the rule:",
+    "De ahí la regla:"
+  ],
+  "não se pula degrau.": [
+    "you don’t skip a step.",
+    "no se salta ningún nivel."
+  ],
+  "Quem está no 1 e compra \"nível 5\" compra teatro, porque o loop de cima não tem evidência nenhuma para aprender. Do 1 e do 2, o único próximo degrau útil é o 3 — e o 3 começa com uma coluna a mais na planilha e um teste com número.": [
+    "Someone at level 1 who buys “level 5” is buying theater, because the loop above has no evidence to learn from. From levels 1 and 2, the only useful next step is level 3—and level 3 starts with one more column in the spreadsheet and a test with numbers.",
+    "Quien está en el nivel 1 y compra «nivel 5» compra teatro, porque el ciclo superior no tiene evidencia de la que aprender. Desde los niveles 1 y 2, el único siguiente nivel útil es el 3, que empieza con una columna más en la hoja de cálculo y una prueba con cifras."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/3 feito": [
+    "0/3 done",
+    "0/3 completado"
+  ],
+  "Autoavaliação de maturidade: marque o nível de três negócios — e depois o seu": [
+    "Maturity self-check: identify the level of three businesses—and then your own",
+    "Autoevaluación de madurez: identifica el nivel de tres negocios y luego el tuyo"
+  ],
+  "Ler o caso, marcar o nível de cada pessoa, conferir no gabarito e então marcar os sinais que valem para o seu negócio e ler o seu nível. ~12 min.": [
+    "Read the case, mark each person’s level, check the answer key, then mark the signs that apply to your business and find your level. ~12 min.",
+    "Lee el caso, marca el nivel de cada persona, consulta las respuestas y luego marca las señales que corresponden a tu negocio para identificar tu nivel. ~12 min."
+  ],
+  "É diagnóstico no papel — nada muda no seu negócio até você aprovar, e ninguém precisa saber o resultado. Se ficar em dúvida entre dois níveis, marque o mais baixo: o degrau seguinte é o mesmo, e errar para baixo não custa nada.": [
+    "This is a paper diagnosis—nothing in your business changes until you approve it, and nobody needs to know the result. If you’re unsure between two levels, choose the lower one: the next step is the same, and being conservative costs nothing.",
+    "Es un diagnóstico en papel: nada cambia en tu negocio hasta que lo apruebes y nadie tiene que conocer el resultado. Si dudas entre dos niveles, marca el más bajo: el siguiente paso es el mismo y equivocarte por abajo no cuesta nada."
+  ],
+  "O caso.": [
+    "The case.",
+    "El caso."
+  ],
+  "Regina pede cada proposta à IA e ajusta na mão; o resultado fica na cabeça dela. Marcos tem um assistente que lê o lead, consulta a planilha de imóveis e propõe visita sozinho; ninguém anota se a visita aconteceu. Paulo registra cada chamado com assunto e \"resolvido no primeiro contato?\", testa uma resposta nova contra a antiga a cada mês e decide num cartão. Os três dizem estar \"bem avançados em IA\".": [
+    "Regina asks AI for each proposal and edits it by hand; the outcome stays in her head. Marcos has an assistant that reads the lead, checks the property spreadsheet, and suggests a viewing on its own; nobody records whether the viewing happened. Paulo logs each ticket with its topic and “resolved on first contact?”, tests a new reply against the old one every month, and decides on a card. All three say they’re “pretty advanced with AI.”",
+    "Regina le pide cada propuesta a la IA y la ajusta a mano; el resultado queda en su cabeza. Marcos tiene un asistente que lee el contacto, consulta la hoja de inmuebles y propone una visita por su cuenta; nadie anota si la visita ocurrió. Paulo registra cada consulta con el tema y «¿resuelta en el primer contacto?», prueba una respuesta nueva frente a la anterior cada mes y decide con una tarjeta. Los tres dicen estar «muy avanzados en IA»."
+  ],
+  "Responda:": [
+    "Answer:",
+    "Responde:"
+  ],
+  "Em que nível está cada um dos três?": [
+    "What level is each of the three at?",
+    "¿En qué nivel está cada uno?"
+  ],
+  "Qual dos três tem o próximo passo mais barato — e qual é esse passo?": [
+    "Which one has the cheapest next step—and what is it?",
+    "¿Cuál de los tres tiene el siguiente paso más barato y cuál es?"
+  ],
+  "Agora o seu negócio: marque, na lista abaixo, os sinais que valem hoje — e leia o seu nível no gabarito.": [
+    "Now your business: mark the signs below that apply today—and find your level in the answer key.",
+    "Ahora piensa en tu negocio: marca las señales que se cumplen hoy y consulta tu nivel en las respuestas."
+  ],
+  "Cada uso da IA começa com alguém escrevendo o pedido, e o resultado fica na cabeça de quem pediu.": [
+    "Every AI use starts with someone writing the request, and the result stays in that person’s head.",
+    "Cada uso de la IA empieza con alguien que escribe la solicitud, y el resultado queda en su cabeza."
+  ],
+  "Um assistente executa um objetivo de ponta a ponta e usa uma ferramenta (agenda, planilha, WhatsApp) sozinho.": [
+    "An assistant carries out a goal end to end and uses a tool (calendar, spreadsheet, WhatsApp) on its own.",
+    "Un asistente ejecuta un objetivo de principio a fin y usa por su cuenta una herramienta (agenda, hoja de cálculo o WhatsApp)."
+  ],
+  "Existe uma linha por execução com uma coluna \"o que aconteceu depois\".": [
+    "There is one row per execution, with a column for “what happened next.”",
+    "Hay una fila por ejecución, con una columna «qué ocurrió después»."
+  ],
+  "Alguma versão nova já foi testada contra a antiga com um número, nos dois lados.": [
+    "A new version has been tested against the old one using a number on both sides.",
+    "Ya se probó una versión nueva frente a la anterior con cifras para ambas."
+  ],
+  "Existe uma decisão registrada de aprovar ou rejeitar uma mudança, com o motivo.": [
+    "There is a recorded decision to approve or reject a change, with a reason.",
+    "Hay una decisión registrada de aprobar o rechazar un cambio, con su motivo."
+  ],
+  "Alguém olha, por ciclo, quanto custou e quantas hipóteses viraram versão.": [
+    "Someone reviews the cost per cycle and how many hypotheses became versions.",
+    "Alguien revisa cuánto costó cada ciclo y cuántas hipótesis se convirtieron en versiones."
+  ],
+  "Mais de uma área tem loop, e o que uma aprende chega à outra.": [
+    "More than one department has a loop, and what one learns reaches the others.",
+    "Más de un área tiene un ciclo y lo que aprende una llega a las demás."
+  ],
+  "Gabarito comentado (abra só depois de marcar)": [
+    "Annotated answer key (open only after marking)",
+    "Respuestas comentadas (ábrelo después de marcar)"
+  ],
+  "Regina: nível 1 (responde). Marcos: nível 2 (executa um objetivo; nenhuma medida). Paulo: nível 3 (linha por execução, teste com número, decisão registrada).": [
+    "Regina: level 1 (responds). Marcos: level 2 (executes a goal; no measurement). Paulo: level 3 (one row per execution, a test with numbers, recorded decision).",
+    "Regina: nivel 1 (responde). Marcos: nivel 2 (ejecuta un objetivo; no mide). Paulo: nivel 3 (una fila por ejecución, una prueba con cifras y una decisión registrada)."
+  ],
+  "Regina e Marcos empatam no custo: os dois precisam do mesmo passo — uma coluna de resultado por execução (\"respondeu?\", \"a visita aconteceu?\"). Marcos tem uma vantagem: o assistente dele já produz a execução de forma padronizada, então a linha é mais fácil de preencher. Para Paulo, o próximo passo é outro: manter o ciclo constante e vigiar custo por hipótese promovida.": [
+    "Regina and Marcos tie on cost: both need the same step—a result column for each execution (“did they reply?”, “did the viewing happen?”). Marcos has one advantage: his assistant already produces a standardized execution, so the row is easier to fill in. Paulo’s next step is different: keep the cycle consistent and monitor cost per promoted hypothesis.",
+    "Regina y Marcos empatan en costo: ambos necesitan el mismo paso, una columna de resultado por ejecución («¿respondió?», «¿se realizó la visita?»). Marcos tiene una ventaja: su asistente ya produce ejecuciones estandarizadas, así que la fila es más fácil de completar. Para Paulo el siguiente paso es otro: mantener el ciclo constante y vigilar el costo por hipótesis promovida."
+  ],
+  "3. Leitura dos sinais.": [
+    "3. Reading the signs.",
+    "3. Cómo interpretar las señales."
+  ],
+  "Só A:": [
+    "Only A:",
+    "Solo A:"
+  ],
+  "nível 1": [
+    "level 1",
+    "nivel 1"
+  ],
+  ". B sem C:": [
+    ". B without C:",
+    ". B sin C:"
+  ],
+  "nível 2": [
+    "level 2",
+    "nivel 2"
+  ],
+  ". C + D + E:": [
+    ". C + D + E:",
+    ". C + D + E:"
+  ],
+  "nível 3": [
+    "level 3",
+    "nivel 3"
+  ],
+  ". F por cima de C-D-E:": [
+    ". F on top of C-D-E:",
+    ". F además de C-D-E:"
+  ],
+  "nível 4 (relatar)": [
+    "level 4 (reporting)",
+    "nivel 4 (informar)"
+  ],
+  ". G:": [
+    ". G:",
+    ". G:"
+  ],
+  "nível 5": [
+    "level 5",
+    "nivel 5"
+  ],
+  ". Se marcou C sem D: você está entre o 2 e o 3 — tem evidência, falta experimento; é a posição mais comum de quem começou a registrar. Se marcou B e G sem C: desconfie — sem linha por execução, o \"loop entre áreas\" é impressão.": [
+    ". If you marked C without D, you’re between levels 2 and 3—you have evidence but lack an experiment; this is the most common position for someone who started logging. If you marked B and G without C, be skeptical: without one row per execution, the “cross-department loop” is just an impression.",
+    ". Si marcaste C sin D, estás entre los niveles 2 y 3: tienes evidencia, pero falta experimentar. Es la situación más común de quienes empezaron a registrar. Si marcaste B y G sin C, desconfía: sin una fila por ejecución, el «ciclo entre áreas» es solo una impresión."
+  ],
+  "Respondi 1 e 2 antes de abrir o gabarito.": [
+    "I answered questions 1 and 2 before opening the answer key.",
+    "Respondí las preguntas 1 y 2 antes de abrir las respuestas."
+  ],
+  "Marquei os sinais do meu negócio e li o meu nível no gabarito.": [
+    "I marked the signs that apply to my business and found my level in the answer key.",
+    "Marqué las señales de mi negocio y consulté mi nivel en las respuestas."
+  ],
+  "Escrevi a frase: \"Estou no nível [N] porque [sinal]. O próximo passo é [uma coluna de resultado / um teste com número / manter o ciclo]\".": [
+    "I wrote: “I’m at level [N] because [sign]. The next step is [a result column / a test with numbers / maintaining the cycle].”",
+    "Escribí: «Estoy en el nivel [N] porque [señal]. El siguiente paso es [una columna de resultados / una prueba con cifras / mantener el ciclo]»."
+  ],
+  "Você acabou de conseguir dar um número ao seu nível, com sinais que qualquer pessoa da equipe pode conferir — e apontar o único degrau seguinte.": [
+    "You’ve just put a number on your level using signs anyone on the team can check—and identified the only next step.",
+    "Acabas de ponerle un número a tu nivel con señales que cualquier persona del equipo puede comprobar, y señalaste el único nivel siguiente."
+  ],
+  "NÍVEL 1 · responde": [
+    "LEVEL 1 · responds",
+    "NIVEL 1 · responde"
+  ],
+  "humano": [
+    "human",
+    "persona"
+  ],
+  "IA": [
+    "AI",
+    "IA"
+  ],
+  "resultado": [
+    "result",
+    "resultado"
+  ],
+  "toda a inteligência": [
+    "all the intelligence",
+    "toda la inteligencia"
+  ],
+  "mora aqui": [
+    "lives here",
+    "vive aquí"
+  ],
+  "nada volta": [
+    "nothing comes back",
+    "nada vuelve"
+  ],
+  "sinal: cada uso começa com você escrevendo": [
+    "sign: every use starts with you writing",
+    "señal: cada uso empieza contigo escribiendo"
+  ],
+  "NÍVEL 2 · executa um objetivo": [
+    "LEVEL 2 · executes a goal",
+    "NIVEL 2 · ejecuta un objetivo"
+  ],
+  "objetivo": [
+    "goal",
+    "objetivo"
+  ],
+  "plano": [
+    "plan",
+    "plan"
+  ],
+  "ferramenta": [
+    "tool",
+    "herramienta"
+  ],
+  "execução": [
+    "execution",
+    "ejecución"
+  ],
+  "agenda · planilha · WhatsApp": [
+    "calendar · spreadsheet · WhatsApp",
+    "agenda · hoja de cálculo · WhatsApp"
+  ],
+  "alcance maior; aprendizado igual: zero": [
+    "greater reach; same learning: zero",
+    "más alcance; el mismo aprendizaje: cero"
+  ],
+  "NÍVEL 3 · o loop": [
+    "LEVEL 3 · the loop",
+    "NIVEL 3 · el ciclo"
+  ],
+  "executar": [
+    "execute",
+    "ejecutar"
+  ],
+  "medir": [
+    "measure",
+    "medir"
+  ],
+  "avaliar": [
+    "evaluate",
+    "evaluar"
+  ],
+  "melhorar": [
+    "improve",
+    "mejorar"
+  ],
+  "de novo": [
+    "again",
+    "de nuevo"
+  ],
+  "cartão": [
+    "card",
+    "tarjeta"
+  ],
+  "L0 sugere · L1 você aprova · L2 promove e avisa": [
+    "L0 suggests · L1 you approve · L2 promotes and alerts",
+    "L0 sugiere · L1 tú apruebas · L2 promueve y avisa"
+  ],
+  "(L2 só depois de 5 aprovações certas em L1)": [
+    "(L2 only after 5 correct L1 approvals)",
+    "(L2 solo después de 5 aprobaciones correctas en L1)"
+  ],
+  "1 res": [
+    "1 responds",
+    "1 responde"
+  ],
+  "2 exe": [
+    "2 executes",
+    "2 ejecuta"
+  ],
+  "3 loop": [
+    "3 loop",
+    "3 ciclo"
+  ],
+  "4 meta": [
+    "4 meta",
+    "4 meta"
+  ],
+  "5 emp": [
+    "5 company",
+    "5 empresa"
+  ],
+  "(custo, vetos)": [
+    "(cost, vetoes)",
+    "(costo, vetos)"
+  ],
+  "não se pula degrau: sem o 3 não há o que o 4 ler": [
+    "don’t skip a step: without 3 there’s nothing for 4 to read",
+    "no saltes niveles: sin el 3, el 4 no tiene nada que leer"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Recap",
+    "Resumen"
+  ],
+  "Nível 1 responde; nível 2 executa um objetivo; nível 3 fecha o círculo com medida e teste; 4 e 5 ainda são, em boa parte, pesquisa.": [
+    "Level 1 responds; level 2 executes a goal; level 3 closes the loop with measurement and testing; levels 4 and 5 are still largely research.",
+    "El nivel 1 responde; el nivel 2 ejecuta un objetivo; el nivel 3 cierra el ciclo con mediciones y pruebas; los niveles 4 y 5 siguen siendo, en gran parte, investigación."
+  ],
+  "O nível se lê por sinais que qualquer um confere — existe linha por execução? houve teste com número? há decisão registrada? — nunca pela sensação de \"estamos avançados\".": [
+    "You identify the level by signs anyone can verify—is there one row per execution? Was there a test with numbers? Is there a recorded decision?—never by the feeling that “we’re advanced.”",
+    "El nivel se identifica por señales que cualquiera puede comprobar: ¿hay una fila por ejecución?, ¿se probó con cifras?, ¿hay una decisión registrada? Nunca por la sensación de que «estamos avanzados»."
+  ],
+  "Quase todo negócio pequeno está no 1 ou no 2, e esse é o ponto de partida normal, não um atraso.": [
+    "Almost every small business is at level 1 or 2, and that’s the normal starting point, not a delay.",
+    "Casi todos los pequeños negocios están en el nivel 1 o 2, y ese es el punto de partida normal, no un atraso."
+  ],
+  "O degrau seguinte útil é sempre o 3, começando em L1: você aprova cada mudança num cartão.": [
+    "The useful next step is always level 3, starting at L1: you approve every change on a card.",
+    "El siguiente nivel útil siempre es el 3, empezando en L1: tú apruebas cada cambio en una tarjeta."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu próximo paso"
+  ],
+  "Você acabou de conseguir dar um número ao seu nível e apontar o único degrau seguinte — com sinais, não com impressão.": [
+    "You’ve just identified your level and the only next step—with signs, not impressions.",
+    "Acabas de identificar tu nivel y el único siguiente paso con señales, no impresiones."
+  ],
+  "Nos próximos 15 minutos, mande para o seu sócio (ou para você mesmo): \"Estamos no nível N porque [sinal]. O próximo passo é [uma coluna de resultado / um teste com número].\" Uma mensagem, três linhas.": [
+    "In the next 15 minutes, message your business partner (or yourself): “We’re at level N because [sign]. The next step is [a result column / a test with numbers].” One message, three lines.",
+    "En los próximos 15 minutos, envíale a tu socio (o a ti mismo) este mensaje: «Estamos en el nivel N porque [señal]. El siguiente paso es [una columna de resultados / una prueba con cifras]». Un mensaje, tres líneas."
+  ],
+  "Na próxima aula, você vê o erro mais comum de quem tenta subir para o 3 — escrever \"IA, fique melhor\" — e aprende a trocar isso por uma instrução que dá para medir.": [
+    "In the next lesson, you’ll see the most common mistake when trying to reach level 3—writing “AI, get better”—and learn to replace it with an instruction you can measure.",
+    "En la próxima clase verás el error más común al intentar llegar al nivel 3 —escribir «IA, mejora»— y aprenderás a cambiarlo por una instrucción que puedas medir."
+  ],
+  "← aula 2": [
+    "← lesson 2",
+    "← clase 2"
+  ],
+  "próxima: \"IA, fique melhor\" →": [
+    "next: “AI, get better” →",
+    "siguiente: «IA, mejora» →"
+  ],
+  "Aula 3 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 3 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 3 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "O que a área chama de agente: um assistente de IA que recebe um objetivo, planeja os passos, usa ferramentas (agenda, planilha, WhatsApp) e entrega, sem você ditar cada passo. Como um funcionário que faz uma coisa só, e faz bem.": [
+    "What practitioners call an agent: an AI assistant that receives a goal, plans the steps, uses tools (calendar, spreadsheet, WhatsApp), and delivers without you dictating every step. Like an employee who does one thing—and does it well.",
+    "Lo que el área llama agente: un asistente de IA que recibe un objetivo, planifica los pasos, usa herramientas (agenda, hoja de cálculo, WhatsApp) y entrega sin que le dictes cada paso. Como un empleado que hace una sola cosa, y la hace bien."
+  ],
+  "<b>Fig. 1</b> Nível 1 em três caixas: humano, IA, resultado. Nada volta — a inteligência do processo fica inteira na primeira caixa.": [
+    "<b>Fig. 1</b> Level 1 in three boxes: human, AI, result. Nothing comes back—the process intelligence stays entirely in the first box.",
+    "<b>Fig. 1</b> Nivel 1 en tres cajas: persona, IA y resultado. Nada vuelve: toda la inteligencia del proceso se queda en la primera caja."
+  ],
+  "<b>Fig. 2</b> Nível 2: o objetivo entra, o assistente planeja, usa uma ferramenta e entrega. A linha é mais longa que no nível 1 — mas continua sendo uma linha, sem volta.": [
+    "<b>Fig. 2</b> Level 2: the goal comes in, the assistant plans, uses a tool, and delivers. The path is longer than at level 1—but it is still a straight line, with no return.",
+    "<b>Fig. 2</b> Nivel 2: entra el objetivo, el asistente planifica, usa una herramienta y entrega. El recorrido es más largo que en el nivel 1, pero sigue siendo una línea sin retorno."
+  ],
+  "<b>Fig. 3</b> Nível 3: o círculo fecha. A seta de volta, destacada, é a diferença inteira entre os níveis 1–2 e o 3. O cartão fica na mão de quem aprova (L1).": [
+    "<b>Fig. 3</b> Level 3: the loop closes. The highlighted return arrow is the entire difference between levels 1–2 and level 3. The card stays with the approver (L1).",
+    "<b>Fig. 3</b> Nivel 3: se cierra el ciclo. La flecha de retorno resaltada es toda la diferencia entre los niveles 1–2 y el 3. La tarjeta queda en manos de quien aprueba (L1)."
+  ],
+  "<b>Fig. 4</b> A escada inteira. Os degraus 4 e 5 existem, mas em pontilhado: hoje o 4 só relata. A seta cheia, do 1–2 para o 3, é o único movimento que o curso pede.": [
+    "<b>Fig. 4</b> The whole staircase. Levels 4 and 5 exist, but are dotted: today, level 4 only reports. The solid arrow from 1–2 to 3 is the only move this course asks you to make.",
+    "<b>Fig. 4</b> La escalera completa. Los niveles 4 y 5 existen, pero aparecen punteados: hoy el 4 solo informa. La flecha continua del 1–2 al 3 es el único avance que propone el curso."
+  ],
+  "Um assistente responde chamados sozinho, consulta a base e fecha o chamado. O dono diz \"temos um loop\". Que dois sinais você procura para confirmar ou negar?": [
+    "An assistant answers tickets on its own, checks the knowledge base, and closes the ticket. The owner says, “We have a loop.” What two signs would you look for to confirm or reject that?",
+    "Un asistente responde consultas por su cuenta, consulta la base y las cierra. El dueño dice: «Tenemos un ciclo». ¿Qué dos señales buscarías para confirmarlo o negarlo?"
+  ],
+  "Uma linha por chamado com resultado e um teste A contra B com número. Sem os dois, é nível 2: executa, não aprende.": [
+    "One row per ticket with an outcome, and a numbered A/B test. Without both, it’s level 2: it executes but doesn’t learn.",
+    "Una fila por consulta con el resultado y una prueba A/B con cifras. Sin ambas, es nivel 2: ejecuta, pero no aprende."
+  ],
+  "Sua clínica está no nível 1 e um fornecedor oferece \"IA que melhora o negócio inteiro\" (nível 5). Aceita?": [
+    "Your clinic is at level 1 and a vendor offers “AI that improves the whole business” (level 5). Do you accept?",
+    "Tu clínica está en el nivel 1 y un proveedor ofrece «IA que mejora todo el negocio» (nivel 5). ¿Aceptas?"
+  ],
+  "Não. Sem registro por execução, o loop de cima não tem o que aprender — é teatro caro. O degrau útil é o 3: uma coluna de resultado e um teste.": [
+    "No. Without a record for each execution, the loop above has nothing to learn from—it’s expensive theater. The useful next step is level 3: an outcome column and a test.",
+    "No. Sin un registro por ejecución, el ciclo superior no tiene de qué aprender: es una puesta en escena costosa. El nivel útil es el 3: una columna de resultados y una prueba."
+  ],
+  "O que separa L1 de L2 dentro do nível 3 — e o que destrava o L2?": [
+    "What separates L1 from L2 within level 3—and what unlocks L2?",
+    "¿Qué diferencia L1 de L2 dentro del nivel 3 y qué habilita L2?"
+  ],
+  "Em L1 você aprova cada mudança no cartão; em L2 o loop promove sozinho, avisa e mantém o botão de voltar. L2 só se destrava depois de cinco aprovações corretas em L1.": [
+    "At L1 you approve every change on the card; at L2 the loop promotes on its own, alerts you, and keeps the rollback button. L2 unlocks only after five correct approvals at L1.",
+    "En L1 apruebas cada cambio en la tarjeta; en L2 el ciclo promueve por su cuenta, te avisa y mantiene el botón para volver atrás. L2 solo se habilita después de cinco aprobaciones correctas en L1."
+  ],
+  "Um corretor registra cada lead com \"agendou visita? sim/não\" há três meses, mas nunca testou duas respostas diferentes. Em que nível está e qual é o próximo passo?": [
+    "An agent has logged each lead with “booked a viewing? yes/no” for three months but has never tested two different replies. What level are they at, and what’s next?",
+    "Un agente lleva tres meses registrando cada contacto con «¿agendó una visita? sí/no», pero nunca probó dos respuestas distintas. ¿En qué nivel está y cuál es el siguiente paso?"
+  ],
+  "Entre o 2 e o 3: tem evidência, falta experimento. Próximo passo: uma versão B contra a A, com casos suficientes para não ser sorte, e uma decisão registrada.": [
+    "Between levels 2 and 3: there’s evidence, but no experiment. Next step: test version B against A with enough cases to rule out chance, and record the decision.",
+    "Entre el 2 y el 3: hay evidencia, pero falta experimentar. El siguiente paso es probar la versión B frente a la A con suficientes casos para descartar el azar y registrar la decisión."
+  ],
+  "O que o nível 4 faz no produto hoje — e o que ele não faz?": [
+    "What does level 4 do in the product today—and what doesn’t it do?",
+    "¿Qué hace hoy el nivel 4 en el producto y qué no hace?"
+  ],
+  "Relata: custo por ciclo, hipóteses geradas contra promovidas, qual assistente mais leva veto. Não redesenha nada sozinho — isso ainda é pesquisa.": [
+    "It reports cost per cycle, hypotheses generated versus promoted, and which assistant is vetoed most. It doesn’t redesign anything on its own—that’s still research.",
+    "Informa el costo por ciclo, las hipótesis generadas frente a las promovidas y qué asistente recibe más vetos. No rediseña nada por su cuenta; eso aún es investigación."
+  ],
+  "Agir sozinho não é loop. Loop exige medir e comparar versões; aqui ninguém mede nada.": [
+    "Acting on its own isn’t a loop. A loop requires measuring and comparing versions; nobody measures anything here.",
+    "Actuar por su cuenta no es un ciclo. Un ciclo exige medir y comparar versiones; aquí nadie mide nada."
+  ],
+  "Isso. Ele executa um objetivo com ferramenta, mas não mede resultado nem muda a partir dele — alcance maior, aprendizado zero.": [
+    "Exactly. It executes a goal with a tool but doesn’t measure the outcome or change based on it—greater reach, zero learning.",
+    "Exacto. Ejecuta un objetivo con una herramienta, pero no mide el resultado ni cambia a partir de él: más alcance, cero aprendizaje."
+  ],
+  "Nível 4 é o sistema que observa o próprio sistema de melhoria. Aqui não há sequer o sistema de melhoria.": [
+    "Level 4 is the system that observes its own improvement system. There isn’t even an improvement system here.",
+    "El nivel 4 es el sistema que observa su propio sistema de mejora. Aquí ni siquiera existe ese sistema de mejora."
+  ]
+}

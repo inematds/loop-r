@@ -1,0 +1,714 @@
+{
+  "Trilha 05 · Aula 1 · ferramenta": [
+    "Track 05 · Lesson 1 · tool",
+    "Ruta 05 · Lección 1 · herramienta"
+  ],
+  "Um loop de vendas,": [
+    "A sales loop,",
+    "Un loop de ventas,"
+  ],
+  "do começo ao fim": [
+    "from start to finish",
+    "de principio a fin"
+  ],
+  "Ao fim desta aula você consegue ler os quatro ciclos do loop da clínica, dizer por que cada ideia foi vetada, descartada ou promovida, e apontar o que o quinto ciclo deveria testar.": [
+    "By the end of this lesson, you can read the clinic loop’s four cycles, explain why each idea was vetoed, discarded, or promoted, and identify what the fifth cycle should test.",
+    "Al terminar esta lección podrás leer los cuatro ciclos del loop de la clínica, explicar por qué se vetó, descartó o promovió cada idea e indicar qué debería probar el quinto ciclo."
+  ],
+  "Você já viu cada peça do loop separada: ficha, planilha, guarda-corpo, cartão. Falta ver as peças rodando juntas, com números de verdade — inclusive um ganho de dez pontos que foi descartado. É assim que o loop vai se comportar no seu negócio.": [
+    "You have already seen each part of the loop separately: worksheet, spreadsheet, guardrail, card. Now you’ll see them working together with real numbers—including a ten-point gain that was discarded. This is how the loop will behave in your business.",
+    "Ya viste cada pieza del loop por separado: ficha, hoja de cálculo, guarda-corpo y tarjeta. Ahora verás cómo funcionan juntas, con números reales, incluso una mejora de diez puntos que se descartó. Así se comportará el loop en tu negocio."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "propostas · WhatsApp": [
+    "proposals · WhatsApp",
+    "propuestas · WhatsApp"
+  ],
+  "v2": [
+    "v2",
+    "v2"
+  ],
+  "roteiro da equipe": [
+    "team script",
+    "guion del equipo"
+  ],
+  "01": [
+    "01",
+    "01"
+  ],
+  "Tudo começou com cinco respostas": [
+    "It all started with five answers",
+    "Todo empezó con cinco respuestas"
+  ],
+  "O caso desta aula é o exemplo de referência do LOOP-R: uma clínica de estética que manda propostas por WhatsApp. Antes dos números, a honestidade. Os nove assistentes rodaram de verdade: cada veto, cada veredito e cada relatório é a saída deles, sem edição. Mas as propostas e as respostas das clientes são simuladas, geradas para refletir um efeito real. O caso mostra como o loop se comporta diante de uma melhoria verdadeira — não descobriu a melhoria sozinho.": [
+    "This lesson’s case is LOOP-R’s reference example: a beauty clinic that sends proposals over WhatsApp. First, a note about the numbers. The nine assistants ran for real: every veto, verdict, and report is their unedited output. The proposals and client responses, however, are simulated to reflect a real effect. This case shows how the loop responds to a genuine improvement—it did not discover the improvement by itself.",
+    "El caso de esta lección es el ejemplo de referencia de LOOP-R: una clínica de estética que envía propuestas por WhatsApp. Antes de ver los números, una aclaración. Los nueve asistentes se ejecutaron de verdad: cada veto, veredicto e informe es su resultado sin editar. Sin embargo, las propuestas y respuestas de las clientas son simuladas y se generaron para reflejar un efecto real. El caso muestra cómo responde el loop ante una mejora verdadera; no la descubrió por sí solo."
+  ],
+  "A dona da clínica — vamos chamá-la de Renata — respondeu as cinco perguntas da ficha do loop. Objetivo com número: conversão de propostas em pacote pago, de 3% para 5%. Onde nasce a evidência: a planilha de registro, uma linha por proposta, cerca de 50 por semana. O que nunca muda sozinho: desconto acima de 10%, prometer resultado ou prazo, contatar quem pediu para sair, citar concorrente pelo nome. Teto: R$ 50 por ciclo, ciclo semanal, até três ideias por vez, um teste de cada vez. Quem aprova: ela mesma, com sete dias para responder.": [
+    "The clinic owner—let’s call her Renata—answered the five questions on the loop worksheet. Measurable goal: convert proposals into paid packages, from 3% to 5%. Source of evidence: the tracking spreadsheet, one row per proposal, about 50 per week. What never changes on its own: discounts above 10%, promises about results or timing, contacting anyone who asked to opt out, or naming a competitor. Limit: R$ 50 per cycle, weekly cycles, up to three ideas at a time, one test at a time. Approver: Renata herself, with seven days to respond.",
+    "La dueña de la clínica —la llamaremos Renata— respondió las cinco preguntas de la ficha del loop. Objetivo medible: conversión de propuestas en paquetes pagados, del 3% al 5%. Fuente de evidencia: la hoja de registro, una fila por propuesta, unas 50 por semana. Lo que nunca cambia por sí solo: descuentos superiores al 10%, prometer resultados o plazos, contactar a quien pidió dejar de recibir mensajes o mencionar por nombre a un competidor. Límite: R$ 50 por ciclo, ciclos semanales, hasta tres ideas a la vez y una prueba por vez. Quién aprueba: ella misma, con siete días para responder."
+  ],
+  "O sistema devolveu uma proposta que ela só confirmou: testar primeiro a": [
+    "The system returned a proposal she only had to confirm: first test the",
+    "El sistema presentó una propuesta que ella solo tuvo que confirmar: probar primero la"
+  ],
+  "métrica-sinal": [
+    "signal metric",
+    "métrica señal"
+  ],
+  "— taxa de resposta, de 20% para 30% — e vigiar a conversão de longe. Motivo: provar 3% contra 5% pede cerca de 1.500 propostas por versão; com 50 por semana, seriam 60 semanas. Resposta, 20% contra 30%, pede cerca de 300. Junto vieram três": [
+    "—response rate, from 20% to 30%—and monitor conversion from a distance. Reason: proving 3% versus 5% takes about 1,500 proposals per version; at 50 per week, that would take 60 weeks. Response, 20% versus 30%, takes about 300. It also came with three",
+    "—la tasa de respuesta, del 20% al 30%—y vigilar la conversión a distancia. Motivo: demostrar 3% frente a 5% requiere unas 1.500 propuestas por versión; a razón de 50 por semana, serían 60 semanas. La respuesta, del 20% al 30%, requiere unas 300. También definió tres"
+  ],
+  "guarda-corpos": [
+    "guardrails",
+    "guardarraíles"
+  ],
+  ": margem média, reclamações e pedidos para não receber mais mensagens.": [
+    ": average margin, complaints, and opt-out requests.",
+    ": margen promedio, quejas y solicitudes para dejar de recibir mensajes."
+  ],
+  "Como ler um ciclo em quatro linhas": [
+    "How to read a cycle in four lines",
+    "Cómo leer un ciclo en cuatro líneas"
+  ],
+  "Evidência:": [
+    "Evidence:",
+    "Evidencia:"
+  ],
+  "o que a planilha disse, com quantidade — nunca \"parece que\".": [
+    "what the spreadsheet says, with counts—never “it seems like.”",
+    "lo que indica la hoja de cálculo, con cantidades; nunca «parece que»."
+  ],
+  "Ideias e veto:": [
+    "Ideas and veto:",
+    "Ideas y veto:"
+  ],
+  "o que o Otimizador propôs no formato SE… ENTÃO… PORQUE, e o que o Guardião barrou antes de qualquer teste.": [
+    "what the Optimizer proposed in IF… THEN… BECAUSE format, and what the Guardian blocked before any test.",
+    "lo que propuso el Optimizador en el formato SI… ENTONCES… PORQUE y lo que el Guardián bloqueó antes de cualquier prueba."
+  ],
+  "Teste e veredito:": [
+    "Test and verdict:",
+    "Prueba y veredicto:"
+  ],
+  "A contra B, quantas de cada lado, e uma de três respostas — B ganhou, A segue, ou ainda não dá para saber.": [
+    "A versus B, how many on each side, and one of three answers—B won, A stays, or there isn’t enough evidence yet.",
+    "A frente a B, cuántos casos hubo en cada lado y una de tres respuestas: ganó B, sigue A o todavía no se puede saber."
+  ],
+  "Decisão e memória:": [
+    "Decision and memory:",
+    "Decisión y memoria:"
+  ],
+  "o que a pessoa decidiu no cartão, e o que ficou registrado para ninguém repetir.": [
+    "what the person decided on the card, and what was recorded so no one repeats it.",
+    "lo que decidió la persona en la tarjeta y lo que quedó registrado para que nadie lo repita."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "02": [
+    "02",
+    "02"
+  ],
+  "Ciclo 1: três ideias, um veto e uma conta que assustou": [
+    "Cycle 1: three ideas, one veto, and a sobering calculation",
+    "Ciclo 1: tres ideas, un veto y un cálculo que asustó"
+  ],
+  "O Observador leu 200 propostas. O Crítico viu o que doía: 166 delas, 83%, não receberam resposta em 48 horas. E viu uma divergência: a ficha dizia conversão de 3%, a planilha mostrava 2,5%. Ele apontou, como deve — a ficha registra o que a pessoa acredita; a planilha registra o que aconteceu.": [
+    "The Observer reviewed 200 proposals. The Critic spotted the pain point: 166 of them, 83%, received no response within 48 hours. It also found a discrepancy: the worksheet said conversion was 3%, while the spreadsheet showed 2.5%. It flagged this as it should—the worksheet records what the person believes; the spreadsheet records what happened.",
+    "El Observador revisó 200 propuestas. El Crítico detectó el problema: 166, el 83%, no recibieron respuesta en 48 horas. También encontró una discrepancia: la ficha indicaba una conversión del 3%, mientras que la hoja de cálculo mostraba un 2,5%. Lo señaló, como debía: la ficha registra lo que la persona cree; la hoja de cálculo registra lo que ocurrió."
+  ],
+  "O Otimizador escreveu três ideias. A primeira: fechar a proposta com uma pergunta de escolha forçada, do tipo \"prefere começar esta semana ou na próxima?\". A segunda: teto de 80 palavras na mensagem. A terceira: abrir citando algo específico da avaliação daquela cliente, em vez da saudação igual para todas. O Guardião vetou a primeira antes de qualquer teste: escolha forçada presume a compra e fixa prazo, pressão previsível sobre reclamações e pedidos de saída. Veto é final; ele não sugere alternativa.": [
+    "The Optimizer wrote down three ideas. First: close the proposal with a forced-choice question such as “would you rather start this week or next?” Second: cap the message at 80 words. Third: open by mentioning something specific from that client’s review instead of using the same greeting for everyone. The Guardian vetoed the first idea before any test: a forced choice assumes the purchase and sets a deadline, creating predictable pressure that can lead to complaints and opt-outs. A veto is final; the Guardian does not suggest an alternative.",
+    "El Optimizador anotó tres ideas. La primera: cerrar la propuesta con una pregunta de elección forzada, por ejemplo: «¿prefieres empezar esta semana o la próxima?». La segunda: limitar el mensaje a 80 palabras. La tercera: empezar mencionando algo específico de la reseña de esa clienta, en vez de usar el mismo saludo para todas. El Guardián vetó la primera antes de cualquier prueba: la elección forzada presupone la compra y fija un plazo, lo que genera una presión que previsiblemente puede provocar quejas y solicitudes para dejar de recibir mensajes. El veto es definitivo; el Guardián no propone alternativas."
+  ],
+  "Aí veio a conta. O Otimizador esperava subir a resposta de 17% para 22%. O Experimentador calculou: para provar essa diferença, o teste levaria 40 semanas. Renata redimensionou pelo alvo da ficha, 30%, e o teste caiu para 166 propostas por versão — sete semanas. Um teste por vez: a ideia das 80 palavras entrou, a da abertura ficou na fila. Se você é corretor de imóveis, a mesma cena vale: \"quer visitar sábado ou domingo?\" levaria o mesmo veto, e \"responder em 24 horas\" é a sua métrica-sinal, não a venda.": [
+    "Then came the calculation. The Optimizer expected response to rise from 17% to 22%. The Experimenter calculated that proving this difference would take 40 weeks. Renata resized the test around the worksheet target of 30%; the test then required 166 proposals per version—seven weeks. One test at a time: the 80-word idea went in, while the opening idea stayed in the queue. If you’re a real estate agent, the same logic applies: “would you like to visit Saturday or Sunday?” would get the same veto, and “reply within 24 hours” is your signal metric, not the sale.",
+    "Entonces llegó el cálculo. El Optimizador esperaba aumentar la respuesta del 17% al 22%. El Experimentador calculó que demostrar esa diferencia llevaría 40 semanas. Renata ajustó la prueba al objetivo de la ficha, el 30%, y así bastaban 166 propuestas por versión: siete semanas. Una prueba a la vez: entró la idea de las 80 palabras y la de la apertura quedó en espera. Si eres agente inmobiliario, se aplica la misma lógica: «¿quieres visitar la propiedad el sábado o el domingo?» recibiría el mismo veto, y «responder en 24 horas» es tu métrica señal, no la venta."
+  ],
+  "03": [
+    "03",
+    "03"
+  ],
+  "Ciclo 2: subiu dez pontos e foi descartada": [
+    "Cycle 2: it rose ten points and was discarded",
+    "Ciclo 2: subió diez puntos y se descartó"
+  ],
+  "Doze semanas depois, 300 propostas de cada lado. Versão A, o roteiro de sempre: 19,3% de resposta. Versão B, com até 80 palavras: 29,7%. A chance de isso ser sorte é de 3 em mil. Qualquer pessoa olhando esses dois números promoveria na hora.": [
+    "Twelve weeks later: 300 proposals on each side. Version A, the usual script: a 19.3% response rate. Version B, with up to 80 words: 29.7%. The odds of this being due to chance are 3 in 1,000. Anyone looking at these two numbers would promote B immediately.",
+    "Doce semanas después: 300 propuestas por lado. Versión A, el guion habitual: 19,3% de respuesta. Versión B, con hasta 80 palabras: 29,7%. La probabilidad de que se deba al azar es de 3 entre 1.000. Cualquiera que mirara estas cifras promovería B de inmediato."
+  ],
+  "O Avaliador não promoveu. Reclamações: 6 na versão B contra 1 na A, e a tolerância da ficha era zero. Veredito: A SEGUE. A regra foi aplicada como estava escrita — e a regra estava errada. Seis contra um em 300 é ruído de evento raro, não diferença. Renata aceitou o veredito, ajustou a tolerância de reclamações para 0,01 nos próximos testes, e a ideia das 80 palavras ficou na memória como testada e descartada, com os números, para ninguém retestar por engano.": [
+    "The Evaluator did not promote it. Complaints: 6 for version B versus 1 for A, while the worksheet’s tolerance was zero. Verdict: A STAYS. The rule was applied as written—and the rule was wrong. Six versus one out of 300 is noise from a rare event, not a real difference. Renata accepted the verdict, adjusted the complaint tolerance to 0.01 for future tests, and logged the 80-word idea as tested and discarded, with the numbers, so no one would accidentally test it again.",
+    "El Evaluador no la promovió. Quejas: 6 en la versión B frente a 1 en la A, y la tolerancia de la ficha era cero. Veredicto: SIGUE A. Se aplicó la regla tal como estaba escrita, pero la regla era incorrecta. Seis frente a una de 300 es ruido de un evento poco frecuente, no una diferencia. Renata aceptó el veredicto, ajustó la tolerancia de quejas a 0,01 para las próximas pruebas y registró la idea de las 80 palabras como probada y descartada, con las cifras, para que nadie volviera a probarla por error."
+  ],
+  "Repare no que o loop garantiu aqui: uma versão não entrou por parecer melhor, tudo ficou registrado, e o erro estava na ficha, não no sistema. Um gestor de suporte que colocar \"reabertura em 7 dias\" com tolerância zero vai descartar uma resposta boa por causa de dois chamados. A tolerância é uma conta, não um desejo.": [
+    "Notice what the loop ensured here: a version was not adopted just because it looked better, everything was recorded, and the error was in the worksheet, not the system. A support manager who sets “reopened within 7 days” to zero tolerance will discard a good response because of two tickets. Tolerance is a calculation, not a wish.",
+    "Fíjate en lo que garantizó el loop: no se adoptó una versión solo porque parecía mejor, todo quedó registrado y el error estaba en la ficha, no en el sistema. Un responsable de soporte que establezca tolerancia cero para «reapertura en 7 días» descartará una buena respuesta por dos tickets. La tolerancia es un cálculo, no un deseo."
+  ],
+  "Erro comum": [
+    "Common mistake",
+    "Error frecuente"
+  ],
+  "Tolerância zero em evento raro.": [
+    "Zero tolerance for a rare event.",
+    "Tolerancia cero para un evento poco frecuente."
+  ],
+  "Reclamação e pedido de saída acontecem em 1% ou menos dos casos. Com 300 de cada lado, 6 contra 1 é ruído — e tolerância zero descarta ideias boas por acaso. Use a conta do produto: a tolerância vale cerca de dois erros-padrão da taxa-base, o que a 1% e 300 por lado dá 0,01.": [
+    "Complaints and opt-out requests occur in 1% or fewer cases. With 300 on each side, 6 versus 1 is noise—and zero tolerance discards good ideas by chance. Use the product calculation: tolerance is about two standard errors of the baseline rate, which at 1% and 300 per side is 0.01.",
+    "Las quejas y solicitudes para dejar de recibir mensajes ocurren en el 1% o menos de los casos. Con 300 por lado, seis frente a una es ruido, y la tolerancia cero descarta buenas ideas por azar. Usa el cálculo del producto: la tolerancia equivale aproximadamente a dos errores estándar de la tasa base; con un 1% y 300 por lado, da 0,01."
+  ],
+  "04": [
+    "04",
+    "04"
+  ],
+  "Ciclos 3 e 4: a segunda ideia entra e vira a versão oficial": [
+    "Cycles 3 and 4: the second idea enters and becomes the official version",
+    "Ciclos 3 y 4: entra la segunda idea y se convierte en la versión oficial"
+  ],
+  "No ciclo 3, a ideia que esperava na fila foi reapresentada: abrir a mensagem citando um ponto específico da avaliação daquela cliente. O Experimentador recalculou com o número real de resposta, 18,4% para 30%: 212 propostas por versão, cerca de nove semanas. Uma ideia nova, antecipar o valor para logo depois da saudação, foi vetada — piora previsível nos pedidos de saída, risco que a própria hipótese admitia.": [
+    "In cycle 3, the idea waiting in the queue was brought back: open the message by mentioning a specific point from that client’s review. The Experimenter recalculated using the actual response rate, from 18.4% to 30%: 212 proposals per version, about nine weeks. A new idea—to mention the price right after the greeting—was vetoed because it could predictably increase opt-outs, a risk admitted by the hypothesis itself.",
+    "En el ciclo 3 se retomó la idea que esperaba en la cola: empezar el mensaje mencionando un punto específico de la reseña de esa clienta. El Experimentador recalculó con la tasa de respuesta real, del 18,4% al 30%: 212 propuestas por versión, unas nueve semanas. Se vetó una idea nueva —adelantar el precio para ponerlo justo después del saludo— porque podía aumentar previsiblemente las solicitudes para dejar de recibir mensajes, un riesgo que la propia hipótesis reconocía."
+  ],
+  "Doze semanas depois, ciclo 4: 300 de cada lado. Resposta 19,3% na A, 29,3% na B; chance de sorte, 4 em mil. Guarda-corpos: margem subiu 0,7 ponto; reclamações 4 contra 2, dentro da tolerância nova de 0,01; pedidos de saída 1 contra 3, melhorou. Veredito: B GANHOU. O cartão chegou para Renata com cinco linhas e custo de cerca de R$ 45, de um teto de R$ 50. Ela aprovou. O roteiro com a abertura específica virou a versão oficial, a v2. A v1 ficou no histórico com botão de voltar. Se no primeiro ciclo depois da promoção a resposta ou qualquer vigiada cair além da tolerância, o sistema avisa e pede para voltar.": [
+    "Twelve weeks later, cycle 4: 300 on each side. Response was 19.3% for A and 29.3% for B; odds of chance, 4 in 1,000. Guardrails: margin rose 0.7 points; complaints were 4 versus 2, within the new 0.01 tolerance; opt-outs were 1 versus 3, an improvement. Verdict: B WON. Renata received a five-line card costing about R$ 45, within the R$ 50 limit. She approved it. The script with the specific opening became the official version, v2. Version 1 remained in the history with a rollback button. If, in the first cycle after promotion, response or any monitored metric falls beyond tolerance, the system alerts her and asks to roll back.",
+    "Doce semanas después, ciclo 4: 300 por lado. La respuesta fue del 19,3% en A y del 29,3% en B; probabilidad de azar: 4 entre 1.000. Guardarraíles: el margen subió 0,7 puntos; hubo 4 quejas frente a 2, dentro de la nueva tolerancia de 0,01; las solicitudes para dejar de recibir mensajes fueron 1 frente a 3, una mejora. Veredicto: GANÓ B. Renata recibió una tarjeta de cinco líneas que costó unos R$ 45, dentro del límite de R$ 50. La aprobó. El guion con la apertura específica se convirtió en la versión oficial, v2. La v1 quedó en el historial con un botón para volver. Si en el primer ciclo después de la promoción la respuesta o cualquier métrica vigilada cae más allá de la tolerancia, el sistema avisa y pide volver a la versión anterior."
+  ],
+  "Uma linha do veredito merece atenção: a conversão, o número que Renata queria de fato, foi de 3,0% para 3,7% — e nesse tamanho de amostra isso não prova nada. Guarde esse detalhe. Na clínica de estética ou na imobiliária, o que o loop provou até aqui é que mais gente responde. Não que mais gente compra.": [
+    "One line in the verdict deserves attention: conversion, the number Renata actually cared about, rose from 3.0% to 3.7%—and with this sample size, that proves nothing. Remember this detail. At the beauty clinic or real estate agency, what the loop has proved so far is that more people reply, not that more people buy.",
+    "Hay una línea del veredicto que merece atención: la conversión, el dato que de verdad le importaba a Renata, pasó del 3,0% al 3,7%; con este tamaño de muestra, eso no demuestra nada. Recuerda este detalle. En la clínica de estética o en la inmobiliaria, lo que el loop ha demostrado hasta ahora es que responde más gente, no que compre más gente."
+  ],
+  "05": [
+    "05",
+    "05"
+  ],
+  "O que o meta-agente viu de cima": [
+    "What the meta-agent saw from above",
+    "Lo que vio el metaagente desde arriba"
+  ],
+  "O": [
+    "The",
+    "El"
+  ],
+  "meta-agente": [
+    "meta-agent",
+    "metaagente"
+  ],
+  "não olha a proposta nem a cliente. Olha o loop. Depois do ciclo 4, o relatório dele dizia quatro coisas. Custo: os quatro ciclos consumiram cerca de 1,6 milhão de": [
+    "doesn’t look at the proposal or the client. It looks at the loop. After cycle 4, its report had four findings. Cost: the four cycles used about 1.6 million",
+    "no observa la propuesta ni a la clienta. Observa el loop. Después del ciclo 4, su informe destacaba cuatro cosas. Costo: los cuatro ciclos consumieron alrededor de 1,6 millones de"
+  ],
+  "tokens": [
+    "tokens",
+    "tokens"
+  ],
+  "para uma única promoção. O ciclo 4 ficou em 90% do teto de R$ 50 — alerta. Vetos: de quatro ideias distintas, duas foram vetadas, taxa de 0,5 — alerta, porque o Otimizador está propondo coisas que batem nos guarda-corpos. Cadência: a ficha prometia ciclo semanal; os intervalos reais foram 12, 1 e 12 semanas. O Crítico apontou isso três vezes seguidas. Promoções: uma em quatro ciclos.": [
+    "for a single promotion. Cycle 4 used 90% of the R$ 50 limit—an alert. Vetoes: of four distinct ideas, two were vetoed, a rate of 0.5—an alert because the Optimizer is proposing things that conflict with the guardrails. Cadence: the worksheet promised weekly cycles; the actual intervals were 12, 1, and 12 weeks. The Critic flagged this three times in a row. Promotions: one in four cycles.",
+    "para una sola promoción. El ciclo 4 alcanzó el 90% del límite de R$ 50: una alerta. Vetos: de cuatro ideas distintas, se vetaron dos, una tasa de 0,5; es una alerta porque el Optimizador propone cosas que chocan con los guardarraíles. Ritmo: la ficha prometía ciclos semanales; los intervalos reales fueron de 12, 1 y 12 semanas. El Crítico lo señaló tres veces seguidas. Promociones: una en cuatro ciclos."
+  ],
+  "E uma observação que ele repetiu com números: duas ideias diferentes subiram a taxa de resposta em dez pontos cada uma — e nenhuma das duas moveu a conversão. Duas observações contra, zero a favor. A versão oficial de hoje foi aprovada só pelo sinal. O que ele sugeriu a partir disso fica para a prática — é a sua vez de chegar lá.": [
+    "It also repeated one observation with numbers: two different ideas each raised the response rate by ten points—and neither moved conversion. Two observations against, none in favor. Today’s official version was approved based only on the signal. What it suggested from this will come in the practice—you get to figure it out.",
+    "También repitió una observación con cifras: dos ideas distintas aumentaron diez puntos la tasa de respuesta cada una, pero ninguna movió la conversión. Dos observaciones en contra, ninguna a favor. La versión oficial actual se aprobó basándose solo en la señal. Lo que sugirió a partir de esto queda para la práctica: te toca descubrirlo."
+  ],
+  "Um gestor de suporte lendo o relatório do próprio loop faz a mesma leitura: taxa de veto alta significa que as invariáveis estão mal explicadas para quem propõe; custo perto do teto significa que a memória carregada a cada ciclo cresceu demais; cadência quebrada significa que ninguém está registrando na planilha toda semana. O meta-agente não conserta nada disso. Ele mostra, e você decide.": [
+    "A support manager reading their own loop’s report would draw the same conclusions: a high veto rate means invariants are poorly explained to whoever proposes ideas; costs near the limit mean too much memory is being loaded each cycle; broken cadence means no one is updating the spreadsheet every week. The meta-agent fixes none of this. It shows you, and you decide.",
+    "Un responsable de soporte que lea el informe de su propio loop llegaría a las mismas conclusiones: una tasa alta de vetos significa que las invariantes no están bien explicadas a quien propone ideas; un costo cercano al límite significa que se carga demasiada memoria en cada ciclo; un ritmo irregular significa que nadie actualiza la hoja de cálculo cada semana. El metaagente no corrige nada. Lo muestra y tú decides."
+  ],
+  "Antes · v1": [
+    "Before · v1",
+    "Antes · v1"
+  ],
+  "Saudação igual para todas as clientes, agradecimento pela visita, cinco blocos de texto. Taxa de resposta: 19,3%.": [
+    "Same greeting for every client, a thank-you for the visit, five blocks of text. Response rate: 19.3%.",
+    "El mismo saludo para todas las clientas, agradecimiento por la visita y cinco bloques de texto. Tasa de respuesta: 19,3%."
+  ],
+  "Depois · v2": [
+    "After · v2",
+    "Después · v2"
+  ],
+  "A primeira frase cita a queixa ou a região avaliada daquela cliente. Taxa de resposta: 29,3%.": [
+    "The first sentence mentions that client’s concern or the area assessed. Response rate: 29.3%.",
+    "La primera frase menciona la preocupación o la zona evaluada de esa clienta. Tasa de respuesta: 29,3%."
+  ],
+  "Saldo:": [
+    "Result:",
+    "Resultado:"
+  ],
+  "+10 pontos de resposta": [
+    "+10 response points",
+    "+10 puntos de respuesta"
+  ],
+  ", com 300 propostas de cada lado e nenhum guarda-corpo fora da tolerância. Conversão: 3,0% → 3,7%, ainda não provada.": [
+    ", with 300 proposals on each side and no guardrail outside tolerance. Conversion: 3.0% → 3.7%, still unproven.",
+    ", con 300 propuestas por lado y ningún guardarraíl fuera de tolerancia. Conversión: 3,0% → 3,7%, aún sin demostrar."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/3 feito": [
+    "0/3 done",
+    "0/3 completado"
+  ],
+  "Preveja o quinto ciclo da clínica": [
+    "Predict the clinic’s fifth cycle",
+    "Predice el quinto ciclo de la clínica"
+  ],
+  "Ler o caso, responder três perguntas por escrito e comparar com o gabarito — cerca de 10 min.": [
+    "Read the case, answer three questions in writing, and compare with the answer key—about 10 min.",
+    "Lee el caso, responde por escrito tres preguntas y compara tus respuestas con la guía comentada: unos 10 min."
+  ],
+  "Nada muda no seu negócio até você aprovar: aqui você só lê e decide sobre o loop da clínica. Se a sua resposta divergir do gabarito, leia o porquê — a divergência é justamente o que a aula quer fixar.": [
+    "Nothing changes in your business until you approve it: here, you only read and make decisions about the clinic’s loop. If your answer differs from the key, read why—that difference is exactly what this lesson aims to teach.",
+    "Nada cambia en tu negocio hasta que lo apruebes: aquí solo lees y decides sobre el loop de la clínica. Si tu respuesta difiere de la guía, lee el motivo: esa diferencia es precisamente lo que la lección quiere fijar."
+  ],
+  "Renata abre o relatório do ciclo 4 numa segunda-feira. O roteiro v2 já é o oficial há uma semana. Ela tem R$ 50 para o próximo ciclo e três ideias na fila do Otimizador: uma nova saudação, mandar a proposta em áudio, e uma sugestão do meta-agente que ela ainda não leu com calma. A planilha continua recebendo 50 propostas por semana.": [
+    "Renata opens the cycle 4 report on a Monday. Script v2 has been official for one week. She has R$ 50 for the next cycle and three ideas in the Optimizer’s queue: a new greeting, sending the proposal as audio, and a meta-agent suggestion she has not yet read carefully. The spreadsheet continues to receive 50 proposals a week.",
+    "Renata abre el informe del ciclo 4 un lunes. El guion v2 lleva una semana como versión oficial. Tiene R$ 50 para el próximo ciclo y tres ideas en la cola del Optimizador: un saludo nuevo, enviar la propuesta en audio y una sugerencia del metaagente que aún no ha leído con calma. La hoja de cálculo sigue recibiendo 50 propuestas por semana."
+  ],
+  "Pergunta 1.": [
+    "Question 1.",
+    "Pregunta 1."
+  ],
+  "Por que a ideia das 80 palavras foi descartada no ciclo 2, mesmo subindo dez pontos — e o que mudou na ficha por causa disso? Escreva em duas frases.": [
+    "Why was the 80-word idea discarded in cycle 2 despite rising ten points—and what changed in the worksheet as a result? Write two sentences.",
+    "¿Por qué se descartó la idea de las 80 palabras en el ciclo 2, aunque subió diez puntos, y qué cambió en la ficha por eso? Responde en dos frases."
+  ],
+  "Pergunta 2.": [
+    "Question 2.",
+    "Pregunta 2."
+  ],
+  "Quais foram as três condições que autorizaram a promoção no ciclo 4? Liste as três.": [
+    "What three conditions authorized promotion in cycle 4? List them.",
+    "¿Cuáles fueron las tres condiciones que autorizaron la promoción en el ciclo 4? Enuméralas."
+  ],
+  "Pergunta 3.": [
+    "Question 3.",
+    "Pregunta 3."
+  ],
+  "O que o quinto ciclo deveria testar — uma ideia nova sobre o texto, ou outra coisa? Justifique com um número do relatório do meta-agente.": [
+    "What should the fifth cycle test—a new idea about the copy, or something else? Justify your answer with a number from the meta-agent’s report.",
+    "¿Qué debería probar el quinto ciclo: una idea nueva sobre el texto u otra cosa? Justifica tu respuesta con una cifra del informe del metaagente."
+  ],
+  "Gabarito comentado": [
+    "Answer key with explanations",
+    "Guía de respuestas comentada"
+  ],
+  "1.": [
+    "1.",
+    "1."
+  ],
+  "Foi descartada porque piorou um guarda-corpo além da tolerância: reclamações 6 contra 1, com tolerância zero. O Avaliador não escolhe \"o que parece melhor\" — se uma vigiada cai fora da tolerância, A segue, mesmo com a métrica do teste subindo. A ficha mudou: a tolerância de reclamações passou de zero para 0,01, porque tolerância zero em evento raro descarta ideias boas por ruído. A ideia ficou na memória como testada e descartada, com os números.": [
+    "It was discarded because it worsened a guardrail beyond tolerance: 6 complaints versus 1, with zero tolerance. The Evaluator does not choose “what looks better”—if a monitored metric falls outside tolerance, A stays, even when the test metric rises. The worksheet changed: complaint tolerance went from zero to 0.01, because zero tolerance for a rare event discards good ideas due to noise. The idea remained in memory as tested and discarded, with the numbers.",
+    "Se descartó porque empeoró un guardarraíl más allá de la tolerancia: 6 quejas frente a 1, con tolerancia cero. El Evaluador no elige «lo que parece mejor»: si una métrica vigilada queda fuera de tolerancia, sigue A, aunque suba la métrica de prueba. La ficha cambió: la tolerancia de quejas pasó de cero a 0,01, porque la tolerancia cero en un evento poco frecuente descarta buenas ideas por ruido. La idea quedó registrada como probada y descartada, con las cifras."
+  ],
+  "Três condições, todas necessárias: a diferença foi significativa (19,3% contra 29,3%, chance de sorte de 4 em mil); a quantidade que prova foi atingida (300 de cada lado, mínimo 212); nenhum guarda-corpo saiu da tolerância (margem, reclamações, pedidos de saída, todos dentro). Depois disso, a aprovação humana no cartão, dentro do prazo de sete dias.": [
+    "Three conditions, all required: the difference was significant (19.3% versus 29.3%, odds of chance 4 in 1,000); the required sample size was reached (300 on each side, minimum 212); and no guardrail went outside tolerance (margin, complaints, and opt-outs all stayed within limits). After that came human approval on the card, within seven days.",
+    "Tres condiciones, todas necesarias: la diferencia fue significativa (19,3% frente a 29,3%, probabilidad de azar de 4 entre 1.000); se alcanzó el tamaño de muestra requerido (300 por lado, mínimo 212); y ningún guardarraíl quedó fuera de tolerancia (margen, quejas y solicitudes para dejar de recibir mensajes se mantuvieron dentro). Después se requería la aprobación humana en la tarjeta, dentro de los siete días."
+  ],
+  "Nem a saudação nova nem o áudio. O quinto ciclo deveria trocar ou complementar a métrica-sinal por algo mais próximo do fechamento — por exemplo, \"respondeu e pediu agendamento ou valor\". O número que sustenta isso está no relatório do meta-agente: duas ideias diferentes subiram a taxa de resposta em dez pontos e nenhuma moveu a conversão (3,0% contra 3,7%, sem prova). Continuar otimizando resposta é continuar otimizando um sinal que já mostrou duas vezes não puxar o alvo. Se você respondeu \"testar a saudação\", note o padrão: é a terceira ideia sobre o texto, quando a evidência aponta para a métrica.": [
+    "Neither the new greeting nor audio. The fifth cycle should replace or supplement the signal metric with something closer to closing—for example, “replied and asked about booking or price.” The meta-agent report supports this: two different ideas raised response by ten points, and neither moved conversion (3.0% versus 3.7%, unproven). Continuing to optimize replies means continuing to optimize a signal that has twice failed to move the goal. If you answered “test the greeting,” notice the pattern: it’s the third copy idea, while the evidence points to the metric.",
+    "Ni el saludo nuevo ni el audio. El quinto ciclo debería cambiar o complementar la métrica señal con algo más cercano al cierre; por ejemplo: «respondió y pidió agendar o conocer el precio». El informe del metaagente lo respalda: dos ideas distintas aumentaron diez puntos la tasa de respuesta y ninguna movió la conversión (3,0% frente a 3,7%, sin demostrar). Seguir optimizando las respuestas es seguir optimizando una señal que ya ha demostrado dos veces que no mueve el objetivo. Si respondiste «probar el saludo», fíjate en el patrón: es la tercera idea sobre el texto, cuando la evidencia apunta a la métrica."
+  ],
+  "Você acabou de ler um loop inteiro e prever o próximo ciclo pela evidência, não pelo gosto — a mesma leitura que vai fazer sobre o seu.": [
+    "You just read an entire loop and predicted its next cycle from evidence, not taste—the same reading you’ll do for your own.",
+    "Acabas de leer un loop completo y predecir el siguiente ciclo basándote en evidencia, no en gustos: harás la misma lectura con el tuyo."
+  ],
+  "1 objetivo 3%→5%": [
+    "1 goal 3%→5%",
+    "1 objetivo 3%→5%"
+  ],
+  "2 planilha 50/sem": [
+    "2 spreadsheet 50/wk",
+    "2 hoja de cálculo 50/sem"
+  ],
+  "3 nunca muda ×4": [
+    "3 never changes ×4",
+    "3 nunca cambia ×4"
+  ],
+  "4 teto R$ 50": [
+    "4 limit R$ 50",
+    "4 límite R$ 50"
+  ],
+  "5 aprova: Renata": [
+    "5 approved by: Renata",
+    "5 aprueba: Renata"
+  ],
+  "operar": [
+    "operate",
+    "operar"
+  ],
+  "observar": [
+    "observe",
+    "observar"
+  ],
+  "propor": [
+    "propose",
+    "proponer"
+  ],
+  "testar": [
+    "test",
+    "probar"
+  ],
+  "sinal: resposta 20→30%": [
+    "signal: response 20→30%",
+    "señal: respuesta 20→30%"
+  ],
+  "vigia: conversão": [
+    "monitor: conversion",
+    "vigilar: conversión"
+  ],
+  "Crítico: 83% sem resposta": [
+    "Critic: 83% unanswered",
+    "Crítico: 83% sin respuesta"
+  ],
+  "H1 escolha": [
+    "H1 forced",
+    "H1 elección"
+  ],
+  "forçada": [
+    "choice",
+    "forzada"
+  ],
+  "H2 ≤ 80": [
+    "H2 ≤ 80",
+    "H2 ≤ 80"
+  ],
+  "palavras": [
+    "words",
+    "palabras"
+  ],
+  "H3 abrir": [
+    "H3 open",
+    "H3 empezar"
+  ],
+  "pela avaliação": [
+    "with the review",
+    "con la reseña"
+  ],
+  "Guardião: veto": [
+    "Guardian: veto",
+    "Guardián: veto"
+  ],
+  "teste A × B": [
+    "A × B test",
+    "prueba A × B"
+  ],
+  "fila: espera": [
+    "queue: waiting",
+    "cola: en espera"
+  ],
+  "Experimentador: 40 sem → 7 sem": [
+    "Experimenter: 40 wk → 7 wk",
+    "Experimentador: 40 sem → 7 sem"
+  ],
+  "(alvo redimensionado: 166 por versão)": [
+    "(resized target: 166 per version)",
+    "(objetivo ajustado: 166 por versión)"
+  ],
+  "taxa de resposta": [
+    "response rate",
+    "tasa de respuesta"
+  ],
+  "A 19,3%": [
+    "A 19.3%",
+    "A 19,3%"
+  ],
+  "B 29,7%": [
+    "B 29.7%",
+    "B 29,7%"
+  ],
+  "300 de cada lado": [
+    "300 on each side",
+    "300 por lado"
+  ],
+  "reclamações": [
+    "complaints",
+    "quejas"
+  ],
+  "A: 1": [
+    "A: 1",
+    "A: 1"
+  ],
+  "B: 6": [
+    "B: 6",
+    "B: 6"
+  ],
+  "tolerância: 0 → fora": [
+    "tolerance: 0 → outside",
+    "tolerancia: 0 → fuera"
+  ],
+  "veredito: A SEGUE": [
+    "verdict: A STAYS",
+    "veredicto: SIGUE A"
+  ],
+  "c1 · fev": [
+    "c1 · Feb",
+    "c1 · feb"
+  ],
+  "veto H1": [
+    "H1 vetoed",
+    "veto H1"
+  ],
+  "teste H2": [
+    "H2 tested",
+    "prueba H2"
+  ],
+  "c2 · abr": [
+    "c2 · Apr",
+    "c2 · abr"
+  ],
+  "A segue": [
+    "A stays",
+    "sigue A"
+  ],
+  "tol. 0→0,01": [
+    "tol. 0→0.01",
+    "tol. 0→0,01"
+  ],
+  "c3 · mai": [
+    "c3 · May",
+    "c3 · may"
+  ],
+  "veto H4": [
+    "H4 vetoed",
+    "veto H4"
+  ],
+  "teste H3": [
+    "H3 tested",
+    "prueba H3"
+  ],
+  "c4 · jul": [
+    "c4 · Jul",
+    "c4 · jul"
+  ],
+  "B ganhou": [
+    "B won",
+    "ganó B"
+  ],
+  "promovida": [
+    "promoted",
+    "promovida"
+  ],
+  "oficial: v2 (29,3%)": [
+    "official: v2 (29.3%)",
+    "oficial: v2 (29,3%)"
+  ],
+  "histórico: v1 ← voltar": [
+    "history: v1 ← rollback",
+    "historial: v1 ← volver"
+  ],
+  "conversão:": [
+    "conversion:",
+    "conversión:"
+  ],
+  "3,0% → 3,7%": [
+    "3.0% → 3.7%",
+    "3,0% → 3,7%"
+  ],
+  "não provada": [
+    "unproven",
+    "sin demostrar"
+  ],
+  "custo do ciclo": [
+    "cycle cost",
+    "costo del ciclo"
+  ],
+  "R$ 45 / 50": [
+    "R$ 45 / 50",
+    "R$ 45 / 50"
+  ],
+  "90% · alerta": [
+    "90% · alert",
+    "90% · alerta"
+  ],
+  "taxa de veto": [
+    "veto rate",
+    "tasa de veto"
+  ],
+  "2 de 4 = 0,5": [
+    "2 of 4 = 0.5",
+    "2 de 4 = 0,5"
+  ],
+  "alerta": [
+    "alert",
+    "alerta"
+  ],
+  "cadência real": [
+    "actual cadence",
+    "ritmo real"
+  ],
+  "12 · 1 · 12 sem": [
+    "12 · 1 · 12 wk",
+    "12 · 1 · 12 sem"
+  ],
+  "prometido: 1": [
+    "promised: 1",
+    "prometido: 1"
+  ],
+  "promoções": [
+    "promotions",
+    "promociones"
+  ],
+  "1 em 4 ciclos": [
+    "1 in 4 cycles",
+    "1 de 4 ciclos"
+  ],
+  "sem alerta": [
+    "no alert",
+    "sin alerta"
+  ],
+  "sinal → alvo: não provado": [
+    "signal → goal: unproven",
+    "señal → objetivo: sin demostrar"
+  ],
+  "resposta +10 pp (2×)": [
+    "response +10 pp (2×)",
+    "respuesta +10 pp (2×)"
+  ],
+  "conversão: 0 vezes": [
+    "conversion: 0 times",
+    "conversión: 0 veces"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "Cinco respostas viraram um loop que rodou quatro ciclos com assistentes reais sobre dados simulados — o caso mostra o comportamento do loop, não uma descoberta.": [
+    "Five answers became a loop that ran four cycles with real assistants on simulated data—the case demonstrates how the loop behaves, not a discovery.",
+    "Cinco respuestas se convirtieron en un loop que ejecutó cuatro ciclos con asistentes reales sobre datos simulados: el caso muestra cómo se comporta el loop, no un descubrimiento."
+  ],
+  "O Guardião vetou duas ideias antes de qualquer teste; o Avaliador descartou uma que subiu dez pontos porque um guarda-corpo saiu da tolerância.": [
+    "The Guardian vetoed two ideas before any test; the Evaluator discarded one that rose ten points because a guardrail went outside tolerance.",
+    "El Guardián vetó dos ideas antes de cualquier prueba; el Evaluador descartó una que subió diez puntos porque un guardarraíl quedó fuera de tolerancia."
+  ],
+  "A tolerância errada estava na ficha, não no sistema: o loop registrou, a dona ajustou, e a ideia descartada ficou na memória com números.": [
+    "The incorrect tolerance was in the worksheet, not the system: the loop recorded it, the owner adjusted it, and the discarded idea remained in memory with its numbers.",
+    "La tolerancia incorrecta estaba en la ficha, no en el sistema: el loop la registró, la dueña la ajustó y la idea descartada quedó guardada con sus cifras."
+  ],
+  "A promoção do ciclo 4 exigiu três coisas ao mesmo tempo: diferença significativa, quantidade que prova e vigiadas dentro — e depois a assinatura no cartão.": [
+    "Promotion in cycle 4 required three things at once: a significant difference, a sufficient sample size, and monitored metrics within limits—followed by a signature on the card.",
+    "La promoción en el ciclo 4 exigió tres condiciones a la vez: diferencia significativa, muestra suficiente y métricas vigiladas dentro de los límites; después, la firma en la tarjeta."
+  ],
+  "O meta-agente relata custo, vetos, cadência e uma dúvida honesta: a resposta subiu duas vezes e a conversão não se mexeu.": [
+    "The meta-agent reports cost, vetoes, cadence, and an honest question: response rose twice, but conversion did not move.",
+    "El metaagente informa sobre costos, vetos, ritmo y una duda honesta: la respuesta subió dos veces y la conversión no se movió."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de conseguir ler um ciclo inteiro pela evidência e prever o seguinte sem depender de opinião.": [
+    "You have just learned to read a full cycle from evidence and predict the next one without relying on opinion.",
+    "Acabas de aprender a leer un ciclo completo a partir de evidencia y predecir el siguiente sin depender de opiniones."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: abra a planilha do processo que você escolheu na trilha 2 e escreva uma linha — qual número subiu nas últimas semanas e qual resultado final ficou parado apesar disso.": [
+    "In the next 15 minutes, in your real work: open the spreadsheet for the process you chose in Track 2 and write one line—which number rose over the last few weeks, and which final outcome stayed flat despite it.",
+    "En los próximos 15 minutos, en tu trabajo real: abre la hoja de cálculo del proceso que elegiste en la Ruta 2 y escribe una línea: qué cifra subió en las últimas semanas y qué resultado final se mantuvo igual a pesar de ello."
+  ],
+  "Na próxima aula, o loop sai de vendas e entra no atendimento: 10.000 chamados fechados e esquecidos viram uma resposta melhor, uma documentação melhor e um pedido de mudança no produto.": [
+    "In the next lesson, the loop moves from sales to customer support: 10,000 closed and forgotten tickets become a better answer, better documentation, and a product change request.",
+    "En la próxima lección, el loop pasa de las ventas a la atención al cliente: 10.000 tickets cerrados y olvidados se convierten en una mejor respuesta, mejor documentación y una solicitud de cambio del producto."
+  ],
+  "← trilha": [
+    "← track",
+    "← ruta"
+  ],
+  "aula 2 →": [
+    "lesson 2 →",
+    "lección 2 →"
+  ],
+  "Trilha 5 · Aula 1 · INEMA.CLUB PRO": [
+    "Track 5 · Lesson 1 · INEMA.CLUB PRO",
+    "Ruta 5 · Lección 1 · INEMA.CLUB PRO"
+  ],
+  "A métrica que responde rápido e tem relação plausível com o dinheiro. Aqui: cliente respondeu em 48 horas com algo que não seja recusa.": [
+    "A metric that responds quickly and has a plausible link to revenue. Here: the client replied within 48 hours with something other than a refusal.",
+    "Una métrica que responde rápido y tiene una relación plausible con los ingresos. Aquí: la clienta respondió en 48 horas con algo que no sea un rechazo."
+  ],
+  "Métrica que a versão nova não pode piorar além de uma tolerância, mesmo que a métrica do teste suba. Se piorar, a versão antiga segue.": [
+    "A metric that the new version must not worsen beyond a set tolerance, even if the test metric rises. If it does, the old version stays.",
+    "Métrica que la nueva versión no puede empeorar más allá de una tolerancia, aunque suba la métrica de prueba. Si empeora, se mantiene la versión anterior."
+  ],
+  "O assistente que observa o loop, não o problema: custo, quantas ideias viraram teste, quantas foram vetadas. No produto de hoje ele só relata — nunca muda nada sozinho.": [
+    "The assistant that observes the loop, not the problem: cost, how many ideas became tests, and how many were vetoed. In today’s product, it only reports—it never changes anything on its own.",
+    "El asistente que observa el loop, no el problema: costo, cuántas ideas se probaron y cuántas se vetaron. En el producto actual solo informa; nunca cambia nada por sí solo."
+  ],
+  "A unidade que a IA cobra — pedaços de palavra. Mil tokens dão cerca de 750 palavras em português.": [
+    "The unit AI charges for—pieces of words. One thousand tokens are about 750 words in Portuguese.",
+    "La unidad por la que cobra la IA: fragmentos de palabras. Mil tokens equivalen aproximadamente a 750 palabras en portugués."
+  ],
+  "<b>Fig. 1</b> As cinco respostas da ficha entram à esquerda; o sistema propõe a métrica-sinal e os guarda-corpos (âmbar) e o ciclo gira à direita. Repare que o alvo de dinheiro fica de fora do teste — vigiado, não otimizado.": [
+    "<b>Fig. 1</b> The five worksheet answers enter on the left; the system proposes the signal metric and guardrails (amber), and the cycle runs on the right. Notice that the revenue goal stays out of the test—it is monitored, not optimized.",
+    "<b>Fig. 1</b> Las cinco respuestas de la ficha entran por la izquierda; el sistema propone la métrica señal y los guardarraíles (en ámbar), y el ciclo gira a la derecha. Observa que el objetivo de ingresos queda fuera de la prueba: se vigila, no se optimiza."
+  ],
+  "<b>Fig. 2</b> Três ideias saem do Crítico. O Guardião barra uma (âmbar) antes de qualquer teste; a regra de um teste por vez leva a segunda ao experimento e deixa a terceira na fila. Veto não tem recurso.": [
+    "<b>Fig. 2</b> Three ideas come from the Critic. The Guardian blocks one (amber) before any test; the one-test-at-a-time rule sends the second to experiment and leaves the third in the queue. A veto cannot be appealed.",
+    "<b>Fig. 2</b> Del Crítico salen tres ideas. El Guardián bloquea una (en ámbar) antes de cualquier prueba; la regla de una prueba a la vez lleva la segunda al experimento y deja la tercera en cola. No se puede apelar un veto."
+  ],
+  "<b>Fig. 3</b> A métrica do teste subiu dez pontos (barras da esquerda), mas o guarda-corpo de reclamações saiu da tolerância zero (marcador âmbar). Uma vigiada fora basta para A seguir — a barra alta não compensa.": [
+    "<b>Fig. 3</b> The test metric rose ten points (bars on the left), but the complaint guardrail exceeded its zero tolerance (amber marker). One monitored metric outside limits is enough for A to stay—the high bar does not compensate.",
+    "<b>Fig. 3</b> La métrica de prueba subió diez puntos (barras de la izquierda), pero el guardarraíl de quejas superó la tolerancia cero (marcador ámbar). Basta con que una métrica vigilada quede fuera para que siga A; la barra alta no compensa."
+  ],
+  "<b>Fig. 4</b> Linha do tempo dos quatro ciclos: cada ponto é um ciclo, cada rótulo é o que saiu dele. Só o último termina em promoção — e a v1 fica guardada abaixo, com o botão de voltar.": [
+    "<b>Fig. 4</b> Timeline of the four cycles: each point is a cycle, and each label shows its outcome. Only the last ends in promotion—and v1 is stored below, with a rollback button.",
+    "<b>Fig. 4</b> Cronología de los cuatro ciclos: cada punto representa un ciclo y cada etiqueta indica su resultado. Solo el último termina en promoción, y la v1 queda guardada debajo con el botón para volver."
+  ],
+  "<b>Fig. 5</b> O painel do meta-agente: quatro medidores sobre o loop, não sobre a cliente. Dois estão em alerta (âmbar). O medidor de baixo é a observação que vale a prática — o sinal subiu duas vezes, o alvo não se moveu.": [
+    "<b>Fig. 5</b> The meta-agent dashboard: four gauges about the loop, not the client. Two are in alert (amber). The bottom gauge shows the observation used in the exercise—the signal rose twice, while the goal did not move.",
+    "<b>Fig. 5</b> El panel del metaagente: cuatro indicadores sobre el loop, no sobre la clienta. Dos están en alerta (ámbar). El indicador inferior presenta la observación que se usa en la práctica: la señal subió dos veces, pero el objetivo no se movió."
+  ],
+  "Decisão: a versão B subiu a taxa de resposta de 19% para 30% com 300 de cada lado, mas o pedido de saída ficou 0,8 ponto acima da tolerância. Você promove, descarta ou espera?": [
+    "Decision: version B raised the response rate from 19% to 30% with 300 on each side, but opt-outs were 0.8 points above tolerance. Do you promote, discard, or wait?",
+    "Decisión: la versión B subió la tasa de respuesta del 19% al 30%, con 300 por lado, pero las solicitudes para dejar de recibir mensajes quedaron 0,8 puntos por encima de la tolerancia. ¿Promueves, descartas o esperas?"
+  ],
+  "Descarta (A segue). Uma vigiada fora da tolerância basta, por maior que seja o ganho na métrica do teste. A ideia vai para a memória como testada, com os números.": [
+    "Discard (A stays). One monitored metric outside tolerance is enough, no matter how large the gain in the test metric. The idea goes into memory as tested, with the numbers.",
+    "Descarta (sigue A). Basta con que una métrica vigilada quede fuera de tolerancia, por grande que sea la mejora en la métrica de prueba. La idea se guarda como probada, con las cifras."
+  ],
+  "Diagnóstico: o Guardião vetou 2 das 4 ideias distintas do seu loop. O que isso diz sobre a sua ficha, e não sobre o Otimizador?": [
+    "Diagnosis: the Guardian vetoed 2 of your loop’s 4 distinct ideas. What does this say about your worksheet, rather than the Optimizer?",
+    "Diagnóstico: el Guardián vetó 2 de las 4 ideas distintas de tu loop. ¿Qué dice eso sobre tu ficha y no sobre el Optimizador?"
+  ],
+  "Que as invariáveis e os guarda-corpos estão mal explicados para quem propõe — o Otimizador segue propondo coisas que batem neles. Reescreva as invariáveis com exemplos concretos antes do próximo ciclo.": [
+    "The invariants and guardrails are poorly explained to the person proposing ideas—the Optimizer keeps suggesting things that conflict with them. Rewrite the invariants with concrete examples before the next cycle.",
+    "Que las invariantes y los guardarraíles están mal explicados a quien propone ideas: el Optimizador sigue sugiriendo cosas que chocan con ellos. Reescribe las invariantes con ejemplos concretos antes del próximo ciclo."
+  ],
+  "Aplicação: você é corretor e a taxa de resposta dos leads subiu de 25% para 35% em dois testes seguidos, mas as visitas agendadas não se moveram. O que o quinto ciclo deveria mudar?": [
+    "Application: you’re an agent, and lead response rose from 25% to 35% in two consecutive tests, but scheduled visits did not move. What should the fifth cycle change?",
+    "Aplicación: eres agente inmobiliario y la tasa de respuesta de los leads subió del 25% al 35% en dos pruebas seguidas, pero las visitas agendadas no cambiaron. ¿Qué debería cambiar el quinto ciclo?"
+  ],
+  "A métrica-sinal, não o texto: trocar ou complementar por algo mais perto do fechamento (ex.: respondeu e pediu visita). Dois sinais que sobem sem mover o alvo são evidência contra o elo sinal→alvo.": [
+    "The signal metric, not the copy: replace or supplement it with something closer to closing (e.g., replied and asked for a visit). Two rising signals that do not move the goal are evidence against the signal→goal link.",
+    "La métrica señal, no el texto: sustitúyela o complétala con algo más cercano al cierre (por ejemplo, respondió y pidió una visita). Dos señales que suben sin mover el objetivo son evidencia en contra del vínculo señal→objetivo."
+  ],
+  "Contraste: qual a diferença entre a tolerância de um guarda-corpo contínuo, como margem, e a de um evento raro, como reclamação?": [
+    "Contrast: what is the difference between the tolerance for a continuous guardrail, such as margin, and for a rare event, such as a complaint?",
+    "Contraste: ¿qué diferencia hay entre la tolerancia de un guardarraíl continuo, como el margen, y la de un evento poco frecuente, como una queja?"
+  ],
+  "Na margem, tolerância pequena e fixa funciona porque há muitas observações. Em evento raro (~1%), 6 contra 1 em 300 é ruído — a tolerância precisa ser uma conta (≈ dois erros-padrão), senão descarta ideias boas por acaso.": [
+    "For margin, a small fixed tolerance works because there are many observations. For a rare event (~1%), 6 versus 1 out of 300 is noise—the tolerance must be calculated (≈ two standard errors), or good ideas will be discarded by chance.",
+    "Para el margen funciona una tolerancia pequeña y fija porque hay muchas observaciones. En un evento poco frecuente (~1%), seis frente a una de 300 es ruido: la tolerancia debe calcularse (≈ dos errores estándar), o se descartarán buenas ideas por azar."
+  ],
+  "2.": [
+    "2.",
+    "2."
+  ],
+  "3.": [
+    "3.",
+    "3."
+  ]
+}

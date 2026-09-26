@@ -1,0 +1,574 @@
+{
+  "Trilha 02 · Aula 3 · O de Observar": [
+    "Track 02 · Lesson 3 · O for Observe",
+    "Ruta 02 · Clase 3 · O de Observar"
+  ],
+  "Onde nasce": [
+    "Where",
+    "Dónde nace"
+  ],
+  "a evidência": [
+    "evidence begins",
+    "la evidencia"
+  ],
+  "Ao fim desta aula você consegue preencher 10 linhas da planilha de registro do seu processo — uma linha por execução, com a coluna que responde ao seu número — e apontar de onde cada linha vem. Essa planilha é a resposta 2 da ficha do loop.": [
+    "By the end of this lesson, you’ll be able to fill in 10 rows in your process log—one row per run, with the column that answers your metric—and identify where each row comes from. This spreadsheet is answer 2 on the loop worksheet.",
+    "Al terminar esta clase, podrás completar 10 filas en el registro de tu proceso —una por ejecución, con la columna que responde a tu métrica— e indicar de dónde viene cada fila. Esta hoja de cálculo es la respuesta 2 de la ficha del loop."
+  ],
+  "Sua empresa executa centenas de vezes por mês e não guarda quase nada disso. O resultado de cada proposta está no WhatsApp, na cabeça de quem mandou, no \"acho que fechou\". Tudo o que o loop vai aprender depende deste passo — e é o passo que ninguém acha importante até faltar.": [
+    "Your company runs this process hundreds of times a month and keeps almost none of the data. The outcome of each proposal is in WhatsApp, in the sender’s memory, or in “I think it closed.” Everything the loop can learn depends on this step—and it’s the step no one thinks matters until it’s missing.",
+    "Tu empresa ejecuta el proceso cientos de veces al mes y casi no guarda nada de ello. El resultado de cada propuesta está en WhatsApp, en la memoria de quien la envió o en «creo que se cerró». Todo lo que el loop puede aprender depende de este paso, al que nadie da importancia hasta que falta."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "caderno de propostas": [
+    "proposal log",
+    "registro de propuestas"
+  ],
+  "seg · Ana · pacote 3 sessões": [
+    "Mon · Ana · 3-session package",
+    "lun · Ana · paquete de 3 sesiones"
+  ],
+  "seg · Carla · pacote 5 sessões": [
+    "Mon · Carla · 5-session package",
+    "lun · Carla · paquete de 5 sesiones"
+  ],
+  "ter · Beatriz · avaliação": [
+    "Tue · Beatriz · assessment",
+    "mar · Beatriz · evaluación"
+  ],
+  "ter · Dulce · pacote 3 sessões": [
+    "Tue · Dulce · 3-session package",
+    "mar · Dulce · paquete de 3 sesiones"
+  ],
+  "resp.": [
+    "replies",
+    "resp."
+  ],
+  "Evidência não é opinião: é uma linha por execução": [
+    "Evidence is not an opinion: one row per run",
+    "La evidencia no es una opinión: una fila por ejecución"
+  ],
+  "A terceira letra é": [
+    "The third letter is",
+    "La tercera letra es"
+  ],
+  "Observar": [
+    "Observe",
+    "Observar"
+  ],
+  ". É aqui que começa a inteligência do loop — e é um passo sem glamour: cada execução vira uma linha, com o resultado anotado. Nada de \"acho que as propostas curtas funcionam melhor\". A pergunta é:": [
+    ". This is where the loop’s intelligence begins—and it’s an unglamorous step: every run becomes a row, with its outcome recorded. No “I think shorter proposals work better.” The question is:",
+    ". Aquí empieza la inteligencia del loop; es un paso poco vistoso: cada ejecución se convierte en una fila con el resultado anotado. Nada de «creo que las propuestas cortas funcionan mejor». La pregunta es:"
+  ],
+  "quantas": [
+    "how many",
+    "cuántas"
+  ],
+  "foram curtas, e": [
+    "were short, and",
+    "fueron cortas, y"
+  ],
+  "dessas tiveram resposta?": [
+    "of those got a reply?",
+    "de esas recibieron respuesta?"
+  ],
+  "Na clínica da Dra. Renata, as primeiras 200 propostas da versão 1 viraram 200 linhas. Somando a coluna \"respondeu em 48h\", deu 34. Ou seja: 17% de resposta. A ficha dizia 20% — era o número que ela \"achava\". A diferença de 3 pontos não é grande, mas é a primeira vez que o número saiu da cabeça dela e foi para o papel. Tudo o que o loop propuser a partir daí parte de 17%, não de 20%.": [
+    "At Dr. Renata’s clinic, the first 200 proposals using version 1 became 200 rows. The “replied within 48 hours” column added up to 34: a 17% response rate. Her worksheet said 20%—the number she “thought” was right. A 3-point difference isn’t huge, but it’s the first time the number left her head and made it onto paper. From then on, everything the loop proposes starts from 17%, not 20%.",
+    "En la clínica de la Dra. Renata, las primeras 200 propuestas de la versión 1 se convirtieron en 200 filas. La columna «respondió en 48 h» sumó 34: una tasa de respuesta del 17 %. La ficha decía 20 %: el número que ella «creía» correcto. Una diferencia de 3 puntos no es grande, pero es la primera vez que el dato sale de su cabeza y queda por escrito. Desde entonces, todo lo que proponga el loop parte del 17 %, no del 20 %."
+  ],
+  "Pense no que uma clínica faz com a pressão arterial: não pergunta \"você se sente pressionado?\"; mede, anota, compara com a última medição. Evidência é a medição anotada. Opinião é o \"me sinto\".": [
+    "Think of how a clinic handles blood pressure: it doesn’t ask “do you feel pressure?”; it measures, records, and compares with the last reading. Evidence is the recorded measurement. Opinion is “I feel.”",
+    "Piensa en cómo mide la presión arterial una clínica: no pregunta «¿sientes presión?», sino que mide, anota y compara con la última lectura. La evidencia es la medición registrada. La opinión es «me siento…»."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "As colunas da planilha de registro": [
+    "The columns in the process log",
+    "Las columnas del registro del proceso"
+  ],
+  "A": [
+    "A",
+    "A"
+  ],
+  "A planilha onde cada execução do processo vira uma linha: quando foi, qual versão do roteiro seguiu, e o que aconteceu. É a única fonte de evidência do loop no começo.": [
+    "The spreadsheet where each process run becomes a row: when it happened, which script version was followed, and what happened. At the beginning, it is the loop’s only source of evidence.",
+    "La hoja donde cada ejecución del proceso se convierte en una fila: cuándo ocurrió, qué versión del guion se siguió y qué pasó. Al principio, es la única fuente de evidencia del loop."
+  ],
+  "planilha de registro": [
+    "process log",
+    "registro del proceso"
+  ],
+  "é uma planilha comum — a que você já usa serve. O que muda é a disciplina: uma linha por execução, sempre as mesmas colunas. Ela é a resposta 2 da ficha do loop: \"onde nasce a evidência\".": [
+    "is an ordinary spreadsheet—the one you already use will do. What changes is the discipline: one row per run, always with the same columns. It is answer 2 on the loop worksheet: “where the evidence begins.”",
+    "es una hoja de cálculo común; sirve la que ya usas. Lo que cambia es la disciplina: una fila por ejecución, siempre con las mismas columnas. Es la respuesta 2 de la ficha del loop: «dónde nace la evidencia»."
+  ],
+  "Você vai ver abaixo o cabeçalho da planilha. Parece uma tabela de contador — e funciona como o caderno da recepção: cada coluna é uma pergunta que se responde uma vez por linha. As três primeiras dizem": [
+    "Below you’ll see the spreadsheet header. It looks like an accountant’s table, but works like the reception desk’s logbook: each column is a question answered once per row. The first three say",
+    "A continuación verás el encabezado de la hoja. Parece una tabla de contabilidad, pero funciona como el registro de recepción: cada columna es una pregunta que se responde una vez por fila. Las tres primeras indican"
+  ],
+  "o quê": [
+    "what",
+    "qué"
+  ],
+  "e": [
+    "and",
+    "y"
+  ],
+  "quando": [
+    "when",
+    "cuándo"
+  ],
+  "; as do meio dizem": [
+    "; the middle ones say",
+    "; las del medio indican"
+  ],
+  "qual versão": [
+    "which version",
+    "qué versión"
+  ],
+  "; as últimas dizem": [
+    "; the last ones say",
+    "; las últimas indican"
+  ],
+  "o que aconteceu": [
+    "what happened",
+    "qué pasó"
+  ],
+  ". Você só preenche; os nomes das colunas não mudam.": [
+    ". You only fill it in; the column names never change.",
+    ". Tú solo completas los datos; los nombres de las columnas no cambian."
+  ],
+  "copiar": [
+    "copy",
+    "copiar"
+  ],
+  "id data versão variante respondeu resultado reclamou observação L0041 2026-09-02 v1 A sim não não lead do portal, apto 2 quartos L0042 2026-09-02 v1 A não não não L0043 2026-09-03 v1 A sim sim não visita marcada para sábado": [
+    "id date version variant replied outcome complained notes L0041 2026-09-02 v1 A yes no no portal lead, 2-bedroom apartment L0042 2026-09-02 v1 A no no no L0043 2026-09-03 v1 A yes yes no visit scheduled for Saturday",
+    "id fecha versión variante respondió resultado reclamó observación L0041 2026-09-02 v1 A sí no no lead del portal, piso de 2 habitaciones L0042 2026-09-02 v1 A no no no L0043 2026-09-03 v1 A sí sí no visita programada para el sábado"
+  ],
+  "Marcos usa exatamente essas colunas. \"id\" é um código qualquer que ele inventa (L0041, L0042…); \"versão\" é o roteiro que ele seguiu (v1, por enquanto); \"variante\" fica \"A\" até existir um teste; \"respondeu\" é o número rápido dele; \"resultado\" é o número de dinheiro (fechou visita ou não); \"reclamou\" é o \"sem piorar\". A \"observação\" é livre — e é onde ele escreve \"fora do roteiro\" quando improvisa.": [
+    "Marcos uses exactly these columns. “id” is any code he makes up (L0041, L0042…); “version” is the script he followed (v1 for now); “variant” stays “A” until there’s a test; “replied” is his quick metric; “outcome” is his money metric (did the visit close or not); “complained” is the “no harm” metric. “Notes” is free-form—and where he writes “off script” when he improvises.",
+    "Marcos usa exactamente estas columnas. «id» es un código cualquiera que inventa (L0041, L0042…); «versión» es el guion que siguió (v1, por ahora); «variante» queda en «A» hasta que haya una prueba; «respondió» es su métrica rápida; «resultado» es la métrica económica (si se concretó la visita); «reclamó» es la métrica de «sin empeorar». «Observación» es libre y ahí escribe «fuera del guion» cuando improvisa."
+  ],
+  "Como preencher uma linha (30 segundos cada)": [
+    "How to fill in a row (30 seconds each)",
+    "Cómo completar una fila (30 segundos cada una)"
+  ],
+  "Crie o id": [
+    "Create the id",
+    "Crea el id"
+  ],
+  "na hora em que executa — antes de saber o resultado. Uma letra e um número bastam.": [
+    "when you run the process—before you know the outcome. One letter and one number are enough.",
+    "al ejecutar el proceso, antes de conocer el resultado. Basta con una letra y un número."
+  ],
+  "Anote a versão": [
+    "Record the version",
+    "Anota la versión"
+  ],
+  "que seguiu (v1). Se saiu do roteiro, escreva \"fora do roteiro\" na observação.": [
+    "you followed (v1). If you went off script, write “off script” in the notes.",
+    "que seguiste (v1). Si te saliste del guion, escribe «fuera del guion» en observaciones."
+  ],
+  "Deixe as colunas de resultado em branco": [
+    "Leave the outcome columns blank",
+    "Deja vacías las columnas de resultado"
+  ],
+  "e volte quando o prazo passar (48h para resposta, 15 dias para fechar).": [
+    "and come back when the time window has passed (48 hours for a reply, 15 days to close).",
+    "y vuelve cuando haya pasado el plazo (48 h para responder, 15 días para cerrar)."
+  ],
+  "Responda sim ou não": [
+    "Answer yes or no",
+    "Responde sí o no"
+  ],
+  "— nunca \"mais ou menos\". Se a definição não cabe em sim/não, a coluna está mal definida.": [
+    "—never “more or less.” If the definition doesn’t fit yes/no, the column is poorly defined.",
+    "—nunca «más o menos». Si la definición no cabe en sí/no, la columna está mal definida."
+  ],
+  "A fonte é o gargalo — e a definição da coluna também": [
+    "The source is the bottleneck—and so is the column definition",
+    "La fuente es el cuello de botella, y también lo es la definición de la columna"
+  ],
+  "Os assistentes do loop são a parte fácil. A parte difícil é que a evidência mora em lugares diferentes: no WhatsApp da clínica, na caixa de mensagens do portal, no sistema de chamados, na planilha do sócio, na cabeça do vendedor.": [
+    "The loop assistants are the easy part. The hard part is that the evidence lives in different places: the clinic’s WhatsApp, the portal inbox, the ticketing system, a partner’s spreadsheet, the salesperson’s memory.",
+    "Los asistentes del loop son la parte fácil. Lo difícil es que la evidencia está en distintos lugares: el WhatsApp de la clínica, la bandeja del portal, el sistema de tickets, la hoja de un socio o la memoria del vendedor."
+  ],
+  "Onde nasce a evidência": [
+    "Where the evidence begins",
+    "Dónde nace la evidencia"
+  ],
+  "é a pergunta 2 da ficha justamente porque ninguém a responde sozinho. Nenhum assistente vai buscar os dados no seu WhatsApp; alguém — você, a recepcionista, o próprio Executor quando ele escreve o artefato — tem que levar cada resultado até a linha.": [
+    "is question 2 on the worksheet precisely because no one can answer it alone. No assistant will fetch data from your WhatsApp; someone—you, the receptionist, or the Executor when they write the artifact—has to bring each outcome to the row.",
+    "es la pregunta 2 de la ficha precisamente porque nadie puede responderla por su cuenta. Ningún asistente buscará datos en tu WhatsApp: alguien —tú, la recepcionista o el propio Ejecutor al escribir el artefacto— tiene que llevar cada resultado a la fila."
+  ],
+  "E cada coluna precisa de uma definição que caiba em sim ou não. No suporte de Cláudio, \"resolvido\" parecia óbvio — até aparecerem os chamados fechados pelo atendente sem o cliente concordar. A definição virou: \"resolvido = o cliente não reabriu em 7 dias\". Na clínica, \"respondeu\" virou \"respondeu em 48h com algo que não seja recusa\": um \"não, obrigada\" conta como resposta? Pela definição, não. Sem essa frase, a versão que provoca mais \"não, obrigada\" pareceria vencedora.": [
+    "And every column needs a definition that fits yes or no. In Cláudio’s support team, “resolved” seemed obvious—until agents closed tickets without the customer agreeing. The definition became: “resolved = the customer did not reopen it within 7 days.” At the clinic, “replied” became “replied within 48 hours with something other than a refusal”: does “no, thank you” count as a reply? By this definition, no. Without that sentence, the version that gets more “no, thank you” replies would look like the winner.",
+    "Cada columna también necesita una definición que quepa en sí o no. En el equipo de soporte de Cláudio, «resuelto» parecía obvio, hasta que aparecieron tickets cerrados por el agente sin que el cliente estuviera de acuerdo. La definición pasó a ser: «resuelto = el cliente no lo reabrió en 7 días». En la clínica, «respondió» pasó a ser «respondió en 48 h con algo que no sea un rechazo»: ¿«no, gracias» cuenta como respuesta? Según la definición, no. Sin esa frase, parecería ganar la versión que provoca más «no, gracias»."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Marcos definiu a coluna \"respondeu\" como \"o lead mandou qualquer mensagem de volta\". Qual é o risco dessa definição?": [
+    "Marcos defined the “replied” column as “the lead sent any message back.” What is the risk of this definition?",
+    "Marcos definió la columna «respondió» como «el lead envió cualquier mensaje de vuelta». ¿Qué riesgo tiene esta definición?"
+  ],
+  "Uma versão mais insistente gera mais 'pare de me mandar mensagem' — e cada uma conta como resposta. O número sobe enquanto o negócio piora.": [
+    "A more persistent version gets more “stop messaging me” replies—and each one counts as a response. The number rises while the business gets worse.",
+    "Una versión más insistente provoca más respuestas de «deja de escribirme», y cada una cuenta como respuesta. El número sube mientras el negocio empeora."
+  ],
+  "\"pare de me mandar mensagem\" conta como resposta": [
+    "“stop messaging me” counts as a response",
+    "«deja de escribirme» cuenta como respuesta"
+  ],
+  "Volume de mensagens é a mesma coisa nas duas definições; o problema não é quantidade, é o que se conta.": [
+    "Message volume is the same under both definitions; the problem isn’t the quantity, it’s what counts.",
+    "El volumen de mensajes es igual con ambas definiciones; el problema no es la cantidad, sino qué se cuenta."
+  ],
+  "ele vai receber mensagens demais": [
+    "he’ll get too many messages",
+    "recibirá demasiados mensajes"
+  ],
+  "A coluna continua sim/não — o problema não está no formato, está no que 'sim' significa.": [
+    "The column is still yes/no—the problem isn’t the format, but what “yes” means.",
+    "La columna sigue siendo sí/no; el problema no está en el formato, sino en lo que significa «sí»."
+  ],
+  "a coluna deixa de ser sim/não": [
+    "the column is no longer yes/no",
+    "la columna deja de ser sí/no"
+  ],
+  "Quantas linhas até a planilha dizer alguma coisa": [
+    "How many rows until the spreadsheet tells you something",
+    "Cuántas filas hacen falta para que la hoja diga algo"
+  ],
+  "Dez linhas servem para aprender a preencher. Não servem para concluir nada. O loop só aceita afirmar um padrão com pelo menos": [
+    "Ten rows teach you how to fill it in. They don’t support conclusions. The loop only accepts a pattern with at least",
+    "Diez filas sirven para aprender a completar la hoja. No permiten sacar conclusiones. El loop solo acepta un patrón con al menos"
+  ],
+  "30 linhas do mesmo tipo": [
+    "30 rows of the same type",
+    "30 filas del mismo tipo"
+  ],
+  "— e trata como forte a partir de 90. Abaixo disso, o que parece padrão é quase sempre acaso, e a planilha guarda a observação numa lista separada, \"observado, não testado\", para reexaminar quando houver mais linhas.": [
+    "—and treats it as strong starting at 90. Below that, what looks like a pattern is almost always chance, so the spreadsheet saves the observation in a separate “observed, not tested” list to revisit when there are more rows.",
+    "—y lo considera sólido a partir de 90. Por debajo, lo que parece un patrón casi siempre es casualidad; la hoja guarda la observación en una lista aparte, «observado, no probado», para revisarla cuando haya más filas."
+  ],
+  "Marcos, com 12 leads registrados, notou que \"os de terça-feira respondem mais\". Três dos quatro de terça responderam; dos outros oito, só dois. Parece um padrão. Com 12 linhas, não é nada: basta um lead trocar de dia para a \"descoberta\" desaparecer. A anotação ficou na lista de observados. Oito semanas depois, com 160 linhas, terça-feira não era diferente de nenhum outro dia.": [
+    "With 12 leads recorded, Marcos noticed that “Tuesday leads reply more.” Three of the four Tuesday leads replied; only two of the other eight did. It looks like a pattern. With 12 rows, it’s nothing: one lead changing days would make the “discovery” disappear. The note stayed on the observations list. Eight weeks later, with 160 rows, Tuesday was no different from any other day.",
+    "Con 12 leads registrados, Marcos notó que «los del martes responden más». Respondieron tres de los cuatro del martes y solo dos de los otros ocho. Parece un patrón. Con 12 filas no significa nada: basta con que un lead cambie de día para que el «descubrimiento» desaparezca. La nota quedó en la lista de observaciones. Ocho semanas después, con 160 filas, el martes no se diferenciaba de ningún otro día."
+  ],
+  "Erro comum": [
+    "Common mistake",
+    "Error común"
+  ],
+  "Doze propostas viraram regra.": [
+    "Twelve proposals became a rule.",
+    "Doce propuestas se convirtieron en una regla."
+  ],
+  "Acontece porque as primeiras linhas são as mais empolgantes — pela primeira vez há um número, e ele parece dizer algo. Como evitar: nenhuma afirmação com menos de 30 linhas do mesmo tipo; abaixo disso, a observação vai para \"observado, não testado\" e espera. O loop faz essa contagem por você; a sua parte é não pular na frente dele.": [
+    "It happens because the first rows are exciting: for the first time there’s a number, and it seems to say something. How to avoid it: make no claims with fewer than 30 rows of the same type; below that, the observation goes in “observed, not tested” and waits. The loop counts for you; your job is not to jump ahead.",
+    "Ocurre porque las primeras filas emocionan: por primera vez hay un número y parece decir algo. Cómo evitarlo: no afirmes nada con menos de 30 filas del mismo tipo; por debajo, la observación va a «observado, no probado» y espera. El loop lleva la cuenta; tu tarea es no adelantarte."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/4 feito": [
+    "0/4 done",
+    "0/4 hecho"
+  ],
+  "Preencha as 10 primeiras linhas da sua planilha de registro": [
+    "Fill in the first 10 rows of your process log",
+    "Completa las primeras 10 filas del registro de tu proceso"
+  ],
+  "Sair com uma planilha (a que você já usa) com o cabeçalho abaixo e 10 linhas das últimas 10 execuções do seu processo — cerca de 12 min.": [
+    "Leave with a spreadsheet (the one you already use) with the header below and 10 rows from your last 10 process runs—about 12 minutes.",
+    "Termina con una hoja de cálculo (la que ya usas), el encabezado de abajo y 10 filas de las últimas 10 ejecuciones de tu proceso: unos 12 minutos."
+  ],
+  "Nada muda no seu negócio até você aprovar: a planilha só descreve o que já aconteceu. Se errar uma linha, apague e refaça; se descobrir que uma coluna não cabe em sim/não, é sinal de que a definição precisa de uma frase a mais — não de que você fez errado.": [
+    "Nothing changes in your business until you approve it: the spreadsheet only describes what already happened. If you get a row wrong, delete it and try again; if a column won’t fit yes/no, that means its definition needs another sentence—not that you did it wrong.",
+    "Nada cambia en tu negocio hasta que lo apruebes: la hoja solo describe lo que ya ocurrió. Si te equivocas en una fila, bórrala y vuelve a hacerla; si una columna no cabe en sí/no, su definición necesita una frase más; no significa que lo hayas hecho mal."
+  ],
+  "Copie o cabeçalho abaixo para a primeira linha da sua planilha. Cada palavra vira uma coluna; a coluna \"respondeu\" recebe o nome do seu número rápido, e \"resultado\" o do seu número de dinheiro. Depois preencha uma linha por execução, começando pela mais recente.": [
+    "Copy the header below into the first row of your spreadsheet. Each word becomes a column; the “replied” column gets the name of your quick metric, and “outcome” gets the name of your money metric. Then add one row per run, starting with the most recent.",
+    "Copia el encabezado de abajo en la primera fila de la hoja. Cada palabra se convierte en una columna; «respondió» lleva el nombre de tu métrica rápida y «resultado», el de tu métrica económica. Después completa una fila por ejecución, empezando por la más reciente."
+  ],
+  "id data versão variante <seu número rápido: respondeu> <seu número de dinheiro: resultado> <seu sem piorar: reclamou> observação": [
+    "id date version variant <your quick metric: replied> <your money metric: outcome> <your no-harm metric: complained> notes",
+    "id fecha versión variante <tu métrica rápida: respondió> <tu métrica económica: resultado> <tu métrica de no empeorar: reclamó> observación"
+  ],
+  "Cole o cabeçalho e escreva, numa linha à parte, a definição em sim/não de cada coluna de resultado (\"respondeu = mandou mensagem em 48h que não seja recusa\").": [
+    "Paste the header and, on a separate line, write the yes/no definition for each outcome column (“replied = sent a message within 48 hours that wasn’t a refusal”).",
+    "Pega el encabezado y, en una línea aparte, escribe la definición de sí/no de cada columna de resultado («respondió = envió un mensaje en 48 h que no fuera un rechazo»)."
+  ],
+  "Pegue as últimas 10 execuções (as 10 últimas propostas, os 10 últimos leads, os 10 últimos chamados) e preencha id, data e versão (v1) de cada uma.": [
+    "Take the last 10 runs (your last 10 proposals, leads, or tickets) and fill in the id, date, and version (v1) for each.",
+    "Toma las últimas 10 ejecuciones (las últimas 10 propuestas, leads o tickets) y completa el id, la fecha y la versión (v1) de cada una."
+  ],
+  "Preencha as colunas de resultado conferindo na fonte (WhatsApp, portal, sistema de chamados) — não de memória. Ficou pronto quando as 10 linhas têm sim ou não em todas as colunas de resultado.": [
+    "Fill in the outcome columns by checking the source (WhatsApp, portal, ticketing system)—not from memory. You’re done when all 10 rows have yes or no in every outcome column.",
+    "Completa las columnas de resultado consultando la fuente (WhatsApp, portal o sistema de tickets), no de memoria. Termina cuando las 10 filas tengan sí o no en cada columna de resultado."
+  ],
+  "Escreva, embaixo da planilha, de onde cada resultado veio (\"respondeu: conferido no WhatsApp\"). Essa frase é a resposta 2 da ficha.": [
+    "Under the spreadsheet, write where each outcome came from (“replied: checked in WhatsApp”). That sentence is answer 2 on the worksheet.",
+    "Debajo de la hoja, escribe de dónde vino cada resultado («respondió: comprobado en WhatsApp»). Esa frase es la respuesta 2 de la ficha."
+  ],
+  "Você acabou de criar a fonte de evidência do seu loop: 10 linhas conferidas na origem, com definições que cabem em sim ou não. A partir daqui, cada execução nova é só mais uma linha.": [
+    "You’ve just created the source of evidence for your loop: 10 rows checked at the source, with definitions that fit yes or no. From now on, each new run is just one more row.",
+    "Acabas de crear la fuente de evidencia de tu loop: 10 filas comprobadas en origen y definiciones que caben en sí/no. Desde ahora, cada nueva ejecución es una fila más."
+  ],
+  "<b>Fig. 1</b> Execuções viram linhas; linhas viram uma contagem; a contagem vira um número. O 'acho que' fica de fora do caminho.": [
+    "<b>Fig. 1</b> Executions become rows; rows become a count; the count becomes a number. “I think” stays out of the process.",
+    "<b>Fig. 1</b> Las ejecuciones se convierten en filas; las filas, en un recuento; y el recuento, en un número. El «creo que» queda fuera."
+  ],
+  "200 linhas": [
+    "200 rows",
+    "200 filas"
+  ],
+  "soma": [
+    "sum",
+    "suma"
+  ],
+  "34 sim": [
+    "34 yes",
+    "34 sí"
+  ],
+  "17%": [
+    "17%",
+    "17%"
+  ],
+  "não 20%": [
+    "not 20%",
+    "no 20%"
+  ],
+  "\"acho que…\" não passa aqui": [
+    "“I think…” doesn’t count here",
+    "Aquí no vale «creo que…»"
+  ],
+  "<b>Fig. 2</b> As colunas se dividem em três grupos: o quê e quando · qual versão · o que aconteceu. As do último grupo respondem só sim ou não.": [
+    "<b>Fig. 2</b> The columns fall into three groups: what and when · which version · what happened. The last group only takes yes or no.",
+    "<b>Fig. 2</b> Las columnas se dividen en tres grupos: qué y cuándo · qué versión · qué pasó. Las del último grupo solo admiten sí o no."
+  ],
+  "o quê · quando": [
+    "what · when",
+    "qué · cuándo"
+  ],
+  "versão": [
+    "version",
+    "versión"
+  ],
+  "id · data": [
+    "id · date",
+    "id · fecha"
+  ],
+  "v1 · A": [
+    "v1 · A",
+    "v1 · A"
+  ],
+  "resp · result · recl": [
+    "reply · outcome · complaint",
+    "resp. · resultado · reclamación"
+  ],
+  "L0041 09-02": [
+    "L0041 09-02",
+    "L0041 09-02"
+  ],
+  "L0042 09-02": [
+    "L0042 09-02",
+    "L0042 09-02"
+  ],
+  "L0043 09-03": [
+    "L0043 09-03",
+    "L0043 09-03"
+  ],
+  "v1 A": [
+    "v1 A",
+    "v1 A"
+  ],
+  "sim": [
+    "yes",
+    "sí"
+  ],
+  "não": [
+    "no",
+    "no"
+  ],
+  "uma linha por execução · sim ou não, nunca \"mais ou menos\"": [
+    "one row per run · yes or no, never “more or less”",
+    "una fila por ejecución · sí o no, nunca «más o menos»"
+  ],
+  "<b>Fig. 3</b> A evidência nasce em lugares diferentes e alguém tem que levá-la até a planilha. No caminho, cada resultado passa por uma definição em sim/não.": [
+    "<b>Fig. 3</b> Evidence starts in different places, and someone has to bring it to the spreadsheet. Along the way, every outcome needs a yes/no definition.",
+    "<b>Fig. 3</b> La evidencia nace en distintos lugares y alguien tiene que llevarla a la hoja. Por el camino, cada resultado necesita una definición de sí/no."
+  ],
+  "WhatsApp": [
+    "WhatsApp",
+    "WhatsApp"
+  ],
+  "portal": [
+    "portal",
+    "portal"
+  ],
+  "chamados": [
+    "tickets",
+    "tickets"
+  ],
+  "memória": [
+    "memory",
+    "memoria"
+  ],
+  "definição": [
+    "definition",
+    "definición"
+  ],
+  "sim/não": [
+    "yes/no",
+    "sí/no"
+  ],
+  "<b>Fig. 4</b> Com 12 linhas, qualquer coisa parece padrão. O loop só afirma a partir de 30, e só chama de forte a partir de 90. Abaixo disso: 'observado, não testado'.": [
+    "<b>Fig. 4</b> With 12 rows, anything can look like a pattern. The loop only makes a claim from 30, and calls it strong only from 90. Below that: “observed, not tested.”",
+    "<b>Fig. 4</b> Con 12 filas, cualquier cosa puede parecer un patrón. El loop solo afirma algo a partir de 30 y solo lo considera sólido desde 90. Por debajo: «observado, no probado»."
+  ],
+  "12": [
+    "12",
+    "12"
+  ],
+  "acaso": [
+    "chance",
+    "azar"
+  ],
+  "30": [
+    "30",
+    "30"
+  ],
+  "moderada": [
+    "moderate",
+    "moderado"
+  ],
+  "90": [
+    "90",
+    "90"
+  ],
+  "forte": [
+    "strong",
+    "sólido"
+  ],
+  "linhas do mesmo tipo": [
+    "rows of the same type",
+    "filas del mismo tipo"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "Observar é transformar cada execução em uma linha com resultado anotado. É o passo menos glamouroso do loop e o que sustenta todos os outros.": [
+    "Observe means turning every run into a row with its outcome recorded. It’s the least glamorous step of the loop and the one that supports all the others.",
+    "Observar significa convertir cada ejecución en una fila con el resultado anotado. Es el paso menos vistoso del loop y el que sostiene todos los demás."
+  ],
+  "A planilha de registro é uma planilha comum, com colunas fixas: o quê e quando, qual versão, o que aconteceu — e as colunas de resultado só aceitam sim ou não.": [
+    "The process log is an ordinary spreadsheet with fixed columns: what and when, which version, what happened—and outcome columns that only accept yes or no.",
+    "El registro del proceso es una hoja común con columnas fijas: qué y cuándo, qué versión y qué pasó; las columnas de resultado solo admiten sí o no."
+  ],
+  "A evidência mora em lugares diferentes e alguém tem que levá-la até a linha; a definição de cada coluna decide o que conta e o que não conta.": [
+    "Evidence lives in different places, and someone has to bring it to the row; each column’s definition determines what counts and what doesn’t.",
+    "La evidencia está en distintos lugares y alguien tiene que llevarla a la fila; la definición de cada columna determina qué cuenta y qué no."
+  ],
+  "Dez linhas ensinam a preencher; só a partir de 30 do mesmo tipo o loop aceita afirmar um padrão. Antes disso, a observação espera.": [
+    "Ten rows teach you how to fill it in; the loop only accepts a pattern from 30 rows of the same type. Until then, the observation waits.",
+    "Diez filas enseñan a completar el registro; el loop solo acepta un patrón a partir de 30 filas del mismo tipo. Hasta entonces, la observación espera."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de conseguir tirar o resultado do seu processo da cabeça e colocar em 10 linhas conferidas na fonte.": [
+    "You’ve just moved your process outcome out of your head and into 10 rows checked at the source.",
+    "Acabas de sacar el resultado de tu proceso de la cabeza y ponerlo en 10 filas comprobadas en origen."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: combine com quem executa o processo quem preenche a linha e em que momento (\"a recepcionista, na hora em que manda a proposta\"). Sem dono e sem momento, a planilha para na linha 11.": [
+    "In the next 15 minutes, at your actual job, agree with the person who runs the process who fills in the row and when (“the receptionist, when she sends the proposal”). Without an owner and a time, the spreadsheet stops at row 11.",
+    "En los próximos 15 minutos, en tu trabajo real, acuerda con quien ejecuta el proceso quién completa la fila y cuándo («la recepcionista, al enviar la propuesta»). Sin responsable ni momento, la hoja se queda en la fila 11."
+  ],
+  "Na próxima aula, você resolve o que vem depois das linhas: transformar \"83% não respondem\" numa hipótese que pode ser testada — no formato SE, ENTÃO, PORQUE.": [
+    "In the next lesson, you’ll handle what comes after the rows: turning “83% don’t reply” into a testable hypothesis in the IF, THEN, BECAUSE format.",
+    "En la próxima clase resolverás qué viene después de las filas: convertir «el 83 % no responde» en una hipótesis comprobable con el formato SI, ENTONCES, PORQUE."
+  ],
+  "← aula 2": [
+    "← lesson 2",
+    "← clase 2"
+  ],
+  "aula 4 →": [
+    "lesson 4 →",
+    "clase 4 →"
+  ],
+  "Aula 3 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 3 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 3 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "Dra. Renata tem certeza de que sua taxa de resposta é 20%. As 200 linhas da planilha dizem 17%. Qual número o loop usa como ponto de partida, e por quê?": [
+    "Dr. Renata is sure her response rate is 20%. The spreadsheet’s 200 rows say 17%. Which number does the loop use as its starting point, and why?",
+    "La Dra. Renata está segura de que su tasa de respuesta es del 20 %. Las 200 filas de la hoja indican 17 %. ¿Qué número usa el loop como punto de partida y por qué?"
+  ],
+  "17%. O loop parte do que foi contado, não do que se acredita. A diferença pequena importa menos que o fato: o número saiu da cabeça e foi para a linha.": [
+    "17%. The loop starts from what was counted, not what someone believes. The small difference matters less than this: the number moved from someone’s head to a row.",
+    "17 %. El loop parte de lo que se contó, no de lo que se cree. La pequeña diferencia importa menos que esto: el dato salió de la cabeza y llegó a una fila."
+  ],
+  "Cláudio quer uma coluna 'satisfação do cliente' com nota de 1 a 10 na planilha de registro. O que está errado, e como corrigir?": [
+    "Cláudio wants a “customer satisfaction” column rated from 1 to 10 in the process log. What’s wrong, and how can he fix it?",
+    "Cláudio quiere una columna de «satisfacción del cliente» con una nota del 1 al 10 en el registro. ¿Qué está mal y cómo se corrige?"
+  ],
+  "Coluna de resultado precisa caber em sim/não. Corrigir: 'cliente respondeu à pesquisa com 9 ou 10?' ou 'cliente não reabriu em 7 dias?' — uma definição que dê sim ou não.": [
+    "An outcome column must fit yes/no. Rewrite it as “did the customer rate the survey 9 or 10?” or “did the customer not reopen within 7 days?”—a definition that yields yes or no.",
+    "Una columna de resultado debe poder responderse con sí/no. Corrígela así: «¿el cliente respondió la encuesta con un 9 o un 10?» o «¿el cliente no reabrió el caso en 7 días?»: una definición que dé sí o no."
+  ],
+  "Marcos, com 12 leads registrados, quer mudar o roteiro porque 'terça-feira responde mais'. O que a planilha faz com essa observação?": [
+    "Marcos has 12 leads recorded and wants to change the script because “Tuesday gets more replies.” What does the spreadsheet do with this observation?",
+    "Marcos tiene 12 leads registrados y quiere cambiar el guion porque «los martes responden más». ¿Qué hace la hoja con esta observación?"
+  ],
+  "Guarda em 'observado, não testado'. Com menos de 30 linhas do mesmo tipo, é acaso; a observação é reexaminada quando houver linhas suficientes — no caso dele, com 160 linhas o padrão sumiu.": [
+    "It saves it under “observed, not tested.” With fewer than 30 rows of the same type, it may be chance; revisit the observation when there are enough rows—in his case, the pattern disappeared at 160 rows.",
+    "La guarda en «observado, no probado». Con menos de 30 filas del mismo tipo, puede ser casualidad; se revisa cuando haya suficientes filas. En su caso, el patrón desapareció al llegar a 160."
+  ],
+  "Qual é a diferença entre a coluna 'id' e a coluna 'observação' — e qual das duas você preenche antes de saber o resultado?": [
+    "What is the difference between the “id” and “notes” columns—and which one do you fill in before you know the outcome?",
+    "¿Qué diferencia hay entre las columnas «id» y «observación» y cuál completas antes de conocer el resultado?"
+  ],
+  "O id é criado na hora da execução, antes de qualquer resultado, para que nenhuma linha se perca. A observação é livre e recebe coisas como 'fora do roteiro' — pode vir depois.": [
+    "Create the id when the process runs, before any outcome, so no row is lost. Notes are free-form and can include things like “off script”—they can be added later.",
+    "El id se crea al ejecutar el proceso, antes de conocer el resultado, para no perder ninguna fila. La observación es libre y puede incluir «fuera del guion»; se añade después."
+  ],
+  "—": [
+    "—",
+    "—"
+  ],
+  "01": [
+    "01",
+    "01"
+  ],
+  "02": [
+    "02",
+    "02"
+  ],
+  "03": [
+    "03",
+    "03"
+  ],
+  "04": [
+    "04",
+    "04"
+  ]
+}

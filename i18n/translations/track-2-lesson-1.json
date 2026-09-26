@@ -1,0 +1,554 @@
+{
+  "Trilha 02 · Aula 1 · L de Localizar": [
+    "Track 02 · Lesson 1 · L for Locate",
+    "Ruta 02 · Clase 1 · L de Localizar"
+  ],
+  "Um processo,": [
+    "One process,",
+    "Un proceso,"
+  ],
+  "um número": [
+    "one number",
+    "una cifra"
+  ],
+  "Ao fim desta aula você consegue escrever, em uma frase, o objetivo do seu loop com número — \"levar [número] de X para Y sem piorar Z\" — e essa frase é a resposta 1 da ficha do loop.": [
+    "By the end of this lesson, you’ll be able to write your loop’s numeric goal in one sentence—“move [number] from X to Y without worsening Z”—and that sentence is answer 1 on the loop worksheet.",
+    "Al terminar esta clase, podrás escribir en una frase el objetivo numérico de tu ciclo: «llevar [cifra] de X a Y sin empeorar Z». Esa frase es la respuesta 1 de la ficha del ciclo."
+  ],
+  "Você já pede coisas à IA todos os dias: propostas, respostas a leads, textos de suporte. Mas quando alguém pergunta \"melhorou?\", a resposta é uma impressão. Sem um processo escolhido e um número que já existe hoje, não há o que comparar — e o loop nem começa.": [
+    "You already ask AI for things every day: proposals, replies to leads, support messages. But when someone asks “did it improve?”, the answer is an impression. Without a chosen process and a number that exists today, there’s nothing to compare—and the loop can’t even start.",
+    "Ya le pides cosas a la IA todos los días: propuestas, respuestas a contactos y textos de soporte. Pero cuando alguien pregunta «¿mejoró?», la respuesta es una impresión. Sin elegir un proceso y una cifra que ya exista hoy, no hay con qué comparar y el ciclo ni siquiera empieza."
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "ficha do loop": [
+    "loop worksheet",
+    "ficha del ciclo"
+  ],
+  "1 · objetivo com número": [
+    "1 · numeric goal",
+    "1 · objetivo numérico"
+  ],
+  "2 · onde nasce a evidência": [
+    "2 · where evidence begins",
+    "2 · dónde nace la evidencia"
+  ],
+  "3 · o que nunca muda sozinho": [
+    "3 · what never changes on its own",
+    "3 · qué nunca cambia por su cuenta"
+  ],
+  "4 · teto de custo e tempo": [
+    "4 · cost and time ceiling",
+    "4 · límite de costo y tiempo"
+  ],
+  "5 · quem aprova": [
+    "5 · who approves",
+    "5 · quién aprueba"
+  ],
+  "Escolha um processo só — e um que se repete": [
+    "Choose just one process—and one that repeats",
+    "Elige un solo proceso, y uno que se repita"
+  ],
+  "O LOOP-R não melhora \"a empresa\". Ele melhora": [
+    "LOOP-R doesn’t improve “the company.” It improves",
+    "LOOP-R no mejora «la empresa». Mejora"
+  ],
+  "um processo de cada vez": [
+    "one process at a time",
+    "un proceso a la vez"
+  ],
+  ". Processo, aqui, é uma tarefa que acontece muitas vezes, do mesmo jeito, e termina com um resultado que dá para ver. Três critérios ajudam a escolher: acontece pelo menos dezenas de vezes por mês; tem começo e fim claros; e o resultado é observável por quem faz.": [
+    ". Here, a process is a task that happens often, in the same way, and ends with an observable outcome. Three criteria help you choose: it happens at least dozens of times a month; it has a clear beginning and end; and the person doing it can observe the result.",
+    ". Aquí, un proceso es una tarea que ocurre muchas veces, de la misma manera, y termina con un resultado observable. Tres criterios ayudan a elegirlo: ocurre al menos decenas de veces al mes; tiene un comienzo y un final claros; y quien la realiza puede observar el resultado."
+  ],
+  "Marcos, corretor de imóveis, recebe cerca de 80 contatos por mês vindos dos portais de anúncio.": [
+    "Marcos, a real estate agent, receives about 80 contacts a month from listing sites.",
+    "Marcos, agente inmobiliario, recibe unos 80 contactos al mes desde portales de anuncios."
+  ],
+  "Responder o primeiro contato": [
+    "Replying to the first contact",
+    "Responder al primer contacto"
+  ],
+  "é um processo: começa quando o lead chega, termina quando o lead responde (ou não) em 24 horas. Anunciar imóveis, negociar comissão e acompanhar visitas também são processos — mas ficam para outros loops. Se ele tentar melhorar tudo ao mesmo tempo, não vai conseguir dizer o que causou o quê.": [
+    "is a process: it starts when a lead arrives and ends when the lead replies (or doesn’t) within 24 hours. Listing properties, negotiating fees, and coordinating viewings are processes too—but they belong to other loops. If he tries to improve everything at once, he won’t know what caused what.",
+    "es un proceso: empieza cuando llega el contacto y termina cuando responde (o no) en 24 horas. Publicar inmuebles, negociar comisiones y coordinar visitas también son procesos, pero pertenecen a otros ciclos. Si intenta mejorarlo todo a la vez, no sabrá qué causó qué."
+  ],
+  "Pense em uma reforma feita cômodo por cômodo: você não pinta a casa inteira num sábado. Escolhe a sala, termina, e só então passa para a cozinha. O loop funciona assim — e o primeiro cômodo tem que ser o que mais se repete, porque é onde a evidência se acumula mais rápido.": [
+    "Think of a renovation done room by room: you don’t paint the whole house on a Saturday. You choose the living room, finish it, and only then move to the kitchen. The loop works the same way—and the first room should be the one that repeats most, because that’s where evidence accumulates fastest.",
+    "Piensa en una reforma habitación por habitación: no pintas toda la casa un sábado. Eliges la sala, la terminas y luego pasas a la cocina. El ciclo funciona igual, y la primera habitación debe ser la que más se repite, porque ahí la evidencia se acumula más rápido."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leída"
+  ],
+  "\"De X para Y\" — e sem piorar o quê": [
+    "“From X to Y”—and without worsening what?",
+    "«De X a Y» y sin empeorar qué"
+  ],
+  "O objetivo do loop tem uma forma fixa:": [
+    "The loop’s goal has a fixed form:",
+    "El objetivo del ciclo tiene una estructura fija:"
+  ],
+  "levar [um número] de X para Y sem piorar Z": [
+    "move [a number] from X to Y without worsening Z",
+    "llevar [una cifra] de X a Y sin empeorar Z"
+  ],
+  ". Cada pedaço faz um trabalho. \"Um número\" diz o que se mede. \"De X\" é onde você está hoje. \"Para Y\" é um alvo que você aceitaria comemorar. E \"sem piorar Z\" é a parte que quase todo mundo esquece — e a que protege o negócio.": [
+    ". Each part has a job. “A number” says what you measure. “From X” is where you are today. “To Y” is a target you’d be glad to reach. And “without worsening Z” is the part almost everyone forgets—and the part that protects the business.",
+    ". Cada parte cumple una función. «Una cifra» indica qué medir. «De X» señala dónde estás hoy. «A Y» es una meta que te alegraría alcanzar. Y «sin empeorar Z» es lo que casi todos olvidan y lo que protege el negocio."
+  ],
+  "Dra. Renata é dona de uma clínica de estética e manda propostas por WhatsApp depois da avaliação. De cada 100 propostas, 3 viram pacote pago. O objetivo dela ficou assim: \"levar a conversão de 3% para 5%": [
+    "Dr. Renata owns an aesthetics clinic and sends proposals over WhatsApp after consultations. Out of every 100 proposals, 3 become paid packages. Her goal became: “move conversion from 3% to 5%",
+    "La Dra. Renata es dueña de una clínica estética y envía propuestas por WhatsApp después de la consulta. De cada 100 propuestas, 3 se convierten en paquetes pagados. Su objetivo quedó así: «llevar la conversión del 3 % al 5 %"
+  ],
+  "sem piorar a margem média e sem aumentar reclamações": [
+    "without worsening average margin or increasing complaints",
+    "sin empeorar el margen medio ni aumentar las quejas"
+  ],
+  "\". Por que a segunda metade importa? Porque um número sozinho vira alvo — e um sistema que persegue um alvo aprende a trapacear. Se o pedido fosse só \"mais propostas fechadas\", a versão que dá 20% de desconto ganharia toda vez.": [
+    "”. Why does the second half matter? Because a number by itself becomes a target—and a system that chases a target learns to cheat. If the request were only “close more proposals,” the version offering a 20% discount would win every time.",
+    "». ¿Por qué importa la segunda mitad? Porque una cifra aislada se convierte en una meta, y un sistema que la persigue aprende a hacer trampa. Si la solicitud fuera solo «cerrar más propuestas», ganaría siempre la versión que ofrece un 20 % de descuento."
+  ],
+  "No suporte a mesma armadilha tem outra cara. Cláudio gerencia o atendimento de uma empresa de software pequena e pediu \"reduzir o tempo de atendimento\". Sem um \"sem piorar\", a versão que encerra o chamado em dois minutos, sem resolver nada, é a campeã. O \"sem piorar\" dele foi:": [
+    "In support, the same trap looks different. Cláudio manages customer service at a small software company and asked to “reduce service time.” Without a “without worsening” condition, the winning version would close a ticket in two minutes without solving anything. His condition was:",
+    "En soporte, la misma trampa tiene otra cara. Cláudio dirige la atención al cliente en una pequeña empresa de software y pidió «reducir el tiempo de atención». Sin una condición de «sin empeorar», ganaría la versión que cierra la consulta en dos minutos sin resolver nada. Su condición fue:"
+  ],
+  "sem aumentar os chamados reabertos em 7 dias": [
+    "without increasing tickets reopened within 7 days",
+    "sin aumentar las consultas reabiertas en 7 días"
+  ],
+  "Erro comum": [
+    "Common mistake",
+    "Error frecuente"
+  ],
+  "Escrever a meta sem \"sem piorar\".": [
+    "Writing a goal without “without worsening.”",
+    "Escribir la meta sin un «sin empeorar»."
+  ],
+  "Parece um objetivo limpo — \"aumentar a taxa de resposta\" — mas é uma porta aberta: a mensagem que provoca \"pare de me mandar isso\" também conta como resposta. Antes de qualquer teste, escreva pelo menos um número que não pode cair. Sem isso, o loop otimiza contra você.": [
+    "It looks like a clean goal—“increase reply rate”—but it leaves a door wide open: a message that prompts “stop sending me this” also counts as a reply. Before any test, write at least one number that must not fall. Without it, the loop optimizes against you.",
+    "Parece una meta clara —«aumentar la tasa de respuesta»—, pero deja una puerta abierta: un mensaje que provoca «deja de enviarme esto» también cuenta como respuesta. Antes de cualquier prueba, escribe al menos una cifra que no pueda bajar. Sin ella, el ciclo optimiza en tu contra."
+  ],
+  "O número precisa existir hoje — e ser rápido de medir": [
+    "The number must exist today—and be quick to measure",
+    "La cifra debe existir hoy y poder medirse rápido"
+  ],
+  "\"De X\" é o número que você": [
+    "“From X” is a number you",
+    "«De X» es una cifra que"
+  ],
+  "tem": [
+    "have",
+    "tienes"
+  ],
+  ", não o que gostaria de ter. Se ninguém conta hoje, a primeira tarefa do loop é contar (é o que a aula 3 faz). E há uma segunda exigência: o número precisa responder rápido. Existem três velocidades. Números de": [
+    ", not the number you wish you had. If nobody tracks it today, the loop’s first task is to count it (that’s what lesson 3 does). There’s a second requirement: the number must respond quickly. There are three speeds. Metrics for",
+    ", no una que te gustaría tener. Si nadie la cuenta hoy, la primera tarea del ciclo es contarla (eso se hace en la clase 3). Hay un segundo requisito: la cifra debe dar resultados pronto. Hay tres velocidades. Las cifras de"
+  ],
+  "dinheiro": [
+    "money",
+    "dinero"
+  ],
+  "(conversão, ticket, margem) demoram semanas para aparecer. Números de": [
+    "(conversion, ticket size, margin) take weeks to show up. Metrics for",
+    "(conversión, importe medio, margen) tardan semanas en aparecer. Las cifras de"
+  ],
+  "sinal": [
+    "signal",
+    "señal"
+  ],
+  "(cliente respondeu, visita agendada) aparecem em horas. Números de": [
+    "(customer replied, viewing booked) appear in hours. Metrics for",
+    "(respondió el cliente, se agendó una visita) aparecen en horas. Las cifras de"
+  ],
+  "artefato": [
+    "artifact",
+    "artefacto"
+  ],
+  "(a proposta cumpre a lista de conferência?) aparecem em minutos.": [
+    "(does the proposal meet the checklist?) appear in minutes.",
+    "(¿la propuesta cumple la lista de verificación?) aparecen en minutos."
+  ],
+  "A diferença muda tudo por causa da": [
+    "The difference changes everything because of the",
+    "La diferencia lo cambia todo por la"
+  ],
+  "quantidade que prova": [
+    "sample size that proves it",
+    "cantidad necesaria para demostrarlo"
+  ],
+  ". Para provar que uma versão converte 5% contra 3% da atual, precisa de cerca de": [
+    ". To prove a version converts 5% versus the current 3%, you need about",
+    ". Para demostrar que una versión convierte al 5 % frente al 3 % actual, necesitas unas"
+  ],
+  "1.500 propostas por versão": [
+    "1,500 proposals per version",
+    "1.500 propuestas por versión"
+  ],
+  ". A Dra. Renata manda 50 por semana — levaria mais de um ano para fechar um único teste. Já para provar que a taxa de resposta foi de 20% para 30%, bastam cerca de 300 por versão: 12 semanas no ritmo dela. Por isso o loop da clínica": [
+    ". Dr. Renata sends 50 a week—it would take more than a year to complete a single test. But to prove the reply rate moved from 20% to 30%, about 300 per version is enough: 12 weeks at her pace. That’s why the clinic’s loop",
+    ". La Dra. Renata envía 50 por semana: tardaría más de un año en completar una sola prueba. En cambio, demostrar que la tasa de respuesta subió del 20 % al 30 % exige unas 300 por versión: 12 semanas a ese ritmo. Por eso el ciclo de la clínica"
+  ],
+  "testa a taxa de resposta em 48 horas": [
+    "tests reply rate within 48 hours",
+    "prueba la tasa de respuesta en 48 horas"
+  ],
+  "e apenas vigia a conversão.": [
+    "and only monitors conversion.",
+    "y solo vigila la conversión."
+  ],
+  "Marcos fez a mesma troca. Ele queria \"mais imóveis vendidos\" (2 por mês — impossível de testar). O número que o loop dele persegue é": [
+    "Marcos made the same switch. He wanted “more properties sold” (2 a month—impossible to test). The number his loop pursues is",
+    "Marcos hizo el mismo cambio. Quería «vender más inmuebles» (2 al mes: imposible de probar). La cifra que persigue su ciclo es"
+  ],
+  "leads que respondem em 24 horas ao primeiro contato": [
+    "leads who reply within 24 hours of the first contact",
+    "los contactos que responden en las 24 horas posteriores al primer mensaje"
+  ],
+  ": hoje 22 em cada 100. Vendas continuam sendo o que ele quer; só não é o que ele mede toda semana.": [
+    ": 22 out of every 100 today. Sales are still what he wants; they’re just not what he measures every week.",
+    ": hoy son 22 de cada 100. Las ventas siguen siendo su objetivo; simplemente no son lo que mide cada semana."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Cláudio, do suporte, quer \"menos clientes cancelando a assinatura\" (hoje 4% ao mês). Qual número o loop dele deve testar primeiro?": [
+    "Cláudio from support wants “fewer customers canceling their subscription” (currently 4% a month). Which number should his loop test first?",
+    "Cláudio, de soporte, quiere «menos cancelaciones de clientes» (hoy, un 4 % al mes). ¿Qué cifra debería probar primero su ciclo?"
+  ],
+  "cancelamentos por mês": [
+    "cancellations per month",
+    "cancelaciones al mes"
+  ],
+  "chamados resolvidos no primeiro contato": [
+    "tickets resolved on first contact",
+    "consultas resueltas en el primer contacto"
+  ],
+  "chamados abertos por semana": [
+    "tickets opened per week",
+    "consultas abiertas por semana"
+  ],
+  "A pergunta 1 da ficha do loop": [
+    "Question 1 on the loop worksheet",
+    "La pregunta 1 de la ficha del ciclo"
+  ],
+  "é a única coisa que você preenche. São cinco perguntas — como a ficha de anamnese que a clínica pede na primeira consulta: você responde uma vez, e todo profissional que atender depois lê dali. Os assistentes do loop leem a ficha do mesmo jeito, a cada ciclo. A resposta 1 é exatamente a frase que você montou nos passos anteriores.": [
+    "is the only thing you fill in. There are five questions—like the intake form a clinic asks for at a first appointment: you answer once, and every professional who sees you later reads it. The loop’s assistants read the worksheet the same way at every cycle. Answer 1 is exactly the sentence you built in the previous steps.",
+    "es lo único que completas. Son cinco preguntas, como el formulario de admisión que una clínica te pide en la primera consulta: respondes una vez y cada profesional que te atienda después lo lee. Los asistentes del ciclo consultan la ficha de la misma manera en cada ciclo. La respuesta 1 es exactamente la frase que construiste en los pasos anteriores."
+  ],
+  "Você vai ver abaixo um trecho da ficha. Parece uma tela de cadastro — e é isso mesmo: cada linha é uma pergunta que você responde uma vez, e o resto do loop se apoia nela. Você só mexe nas respostas; os rótulos à esquerda ficam como estão.": [
+    "You’ll see an excerpt from the worksheet below. It looks like a registration form—and that’s exactly what it is: each row is a question you answer once, and the rest of the loop relies on it. You only edit the answers; the labels on the left stay as they are.",
+    "Abajo verás un fragmento de la ficha. Parece un formulario, y eso es: cada fila es una pregunta que respondes una vez, y el resto del ciclo se apoya en ella. Solo modificas las respuestas; las etiquetas de la izquierda quedan tal como están."
+  ],
+  "copiar": [
+    "copy",
+    "copiar"
+  ],
+  "PERGUNTA 1 — objetivo (exemplo: clínica da Dra. Renata)\n  processo:       proposta comercial por WhatsApp\n  número:         conversão — virou pacote pago em até 15 dias\n  hoje:           3%\n  alvo:           5%\n  número rápido:  taxa de resposta em 48h — hoje 20%, alvo 30%\n  sem piorar:     margem média · reclamações · pedidos de parar": [
+    "QUESTION 1 — goal (example: Dr. Renata’s clinic)\n  process:       WhatsApp sales proposal\n  number:         conversion — became a paid package within 15 days\n  today:           3%\n  target:          5%\n  fast metric:  reply rate within 48h — now 20%, target 30%\n  without worsening: average margin · complaints · requests to stop",
+    "PREGUNTA 1 — objetivo (ejemplo: clínica de la Dra. Renata)\n  proceso:        propuesta comercial por WhatsApp\n  cifra:          conversión — se convirtió en un paquete pagado en un máximo de 15 días\n  hoy:            3 %\n  meta:           5 %\n  cifra rápida:   tasa de respuesta en 48 h — hoy 20 %, meta 30 %\n  sin empeorar:   margen medio · quejas · solicitudes para dejar de recibir mensajes"
+  ],
+  "Repare no que a ficha": [
+    "Notice what the worksheet",
+    "Observa que la ficha"
+  ],
+  "não": [
+    "doesn’t",
+    "no"
+  ],
+  "promete: que a conversão vai chegar a 5%. O que ela garante é outra coisa — nenhuma versão que piore a margem ou aumente as reclamações vira a versão oficial, tudo fica registrado, e o ciclo roda toda semana do mesmo jeito. Se o número subir, ótimo; se não subir, você não perdeu o que tinha.": [
+    "promise: that conversion will reach 5%. What it guarantees is something else—no version that hurts margin or increases complaints becomes official, everything is recorded, and the cycle runs the same way every week. If the number rises, great; if it doesn’t, you haven’t lost what you had.",
+    "promete que la conversión llegará al 5 %. Garantiza otra cosa: ninguna versión que reduzca el margen o aumente las quejas se vuelve oficial; todo queda registrado y el ciclo se repite igual cada semana. Si la cifra sube, perfecto; si no, no perdiste lo que tenías."
+  ],
+  "Como escrever a sua resposta 1": [
+    "How to write your answer 1",
+    "Cómo escribir tu respuesta 1"
+  ],
+  "Nomeie o processo": [
+    "Name the process",
+    "Nombra el proceso"
+  ],
+  "em no máximo 8 palavras (\"responder o primeiro contato de lead de portal\").": [
+    "in 8 words or fewer (“reply to the first contact from a listing portal lead”).",
+    "en un máximo de 8 palabras («responder al primer contacto de un portal inmobiliario»)."
+  ],
+  "Escreva o número de hoje.": [
+    "Write today’s number.",
+    "Escribe la cifra de hoy."
+  ],
+  "Se não sabe, escreva \"não sei — contar primeiro\" (é uma resposta válida).": [
+    "If you don’t know it, write “I don’t know—count first” (that’s a valid answer).",
+    "Si no la sabes, escribe «no lo sé: primero hay que contar» (es una respuesta válida)."
+  ],
+  "Escolha o número rápido": [
+    "Choose the fast metric",
+    "Elige la cifra rápida"
+  ],
+  "que tem a ver com o de dinheiro: resposta, agendamento, visita.": [
+    "that’s related to the money metric: reply, booking, viewing.",
+    "relacionada con la cifra económica: respuesta, cita o visita."
+  ],
+  "Coloque um alvo realista": [
+    "Set a realistic target",
+    "Fija una meta realista"
+  ],
+  "— de 20% para 30% se prova em semanas; de 3% para 5%, em anos.": [
+    "—from 20% to 30% if you can prove it in weeks; from 3% to 5%, in years.",
+    ": pasar del 20 % al 30 % puede demostrarse en semanas; del 3 % al 5 %, en años."
+  ],
+  "Acrescente pelo menos um \"sem piorar\"": [
+    "Add at least one “without worsening”",
+    "Añade al menos un «sin empeorar»"
+  ],
+  "e leia a frase inteira em voz alta.": [
+    "and read the whole sentence aloud.",
+    "y lee la frase completa en voz alta."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/4 feito": [
+    "0/4 done",
+    "0/4 completado"
+  ],
+  "Escreva a resposta 1 da sua ficha do loop": [
+    "Write answer 1 on your loop worksheet",
+    "Escribe la respuesta 1 de tu ficha del ciclo"
+  ],
+  "Sair com uma frase no formato \"levar [número] de X para Y sem piorar Z\", escrita e guardada onde você a encontre de novo — cerca de 10 min.": [
+    "Leave with a written sentence in the format “move [number] from X to Y without worsening Z,” saved somewhere you can find again—about 10 min.",
+    "Termina con una frase escrita en el formato «llevar [cifra] de X a Y sin empeorar Z», guardada en un lugar donde puedas encontrarla: unos 10 min."
+  ],
+  "Nada muda no seu negócio até você aprovar: esta frase é só o ponto de partida do loop, nenhum teste começa por causa dela. Se amanhã achar que escolheu o processo errado, apague e escreva outra.": [
+    "Nothing in your business changes until you approve it: this sentence is only the loop’s starting point; no test begins because of it. If you realize tomorrow that you chose the wrong process, delete it and write another.",
+    "Nada cambia en tu negocio hasta que lo apruebes: esta frase es solo el punto de partida del ciclo; no inicia ninguna prueba. Si mañana descubres que elegiste el proceso equivocado, bórrala y escribe otra."
+  ],
+  "Copie o molde abaixo para o seu bloco de notas ou para o chat de IA que você já usa, e troque o que está entre < > pelo seu caso. O exemplo preenchido é o do Marcos.": [
+    "Copy the template below into your notes or the AI chat you already use, and replace what’s between &lt; &gt; with your situation. The filled-in example is Marcos’s.",
+    "Copia el modelo de abajo en tus notas o en el chat de IA que ya utilizas, y reemplaza lo que está entre &lt; &gt; por tu caso. El ejemplo completado es el de Marcos."
+  ],
+  "Processo:        <responder o primeiro contato de lead de portal>\nNúmero de hoje:  <22% dos leads respondem em 24h>\nAlvo:            <30%>\nSem piorar:      <visitas agendadas> · <leads que pedem para parar de receber>\n\nFrase: levar <a taxa de resposta em 24h> de <22%> para <30%>\n       sem piorar <visitas agendadas> nem <pedidos de parar>.": [
+    "Process:        &lt;reply to the first contact from a listing portal lead&gt;\nCurrent number: &lt;22% of leads reply within 24h&gt;\nTarget:         &lt;30%&gt;\nWithout worsening:&lt;viewings booked&gt; · &lt;leads who ask to stop receiving messages&gt;\n\nSentence: move &lt;the 24-hour reply rate&gt; from &lt;22%&gt; to &lt;30%&gt;\n          without worsening &lt;viewings booked&gt; or &lt;stop requests&gt;.",
+    "Proceso:        &lt;responder al primer contacto de un portal inmobiliario&gt;\nCifra actual:   &lt;22 % de los contactos responden en 24 h&gt;\nMeta:           &lt;30 %&gt;\nSin empeorar:   &lt;visitas agendadas&gt; · &lt;contactos que piden dejar de recibir mensajes&gt;\n\nFrase: llevar &lt;la tasa de respuesta en 24 h&gt; del &lt;22 %&gt; al &lt;30 %&gt;\n       sin empeorar &lt;las visitas agendadas&gt; ni &lt;las solicitudes para dejar de recibir mensajes&gt;."
+  ],
+  "Liste 3 processos do seu negócio que se repetem pelo menos 30 vezes por mês. Escolha 1 — o que mais se repete.": [
+    "I listed 3 processes in my business that repeat at least 30 times a month. I chose 1—the one that repeats most.",
+    "Anoté 3 procesos de mi negocio que se repiten al menos 30 veces al mes. Elegí 1: el que más se repite."
+  ],
+  "Escreva o número de hoje. Se não sabe, escreva \"contar primeiro\" — a aula 3 resolve isso.": [
+    "I wrote today’s number. If I don’t know it, I wrote “count first”—lesson 3 will take care of that.",
+    "Escribí la cifra de hoy. Si no la sé, anoté «primero hay que contar»; la clase 3 se encarga de eso."
+  ],
+  "Escreva o alvo e pelo menos um \"sem piorar\". Ficou pronto quando a frase tem os quatro pedaços: número, hoje, alvo, sem piorar.": [
+    "I wrote the target and at least one “without worsening.” It’s ready when the sentence has all four pieces: number, today, target, without worsening.",
+    "Escribí la meta y al menos un «sin empeorar». Está lista cuando la frase tiene sus cuatro partes: cifra, hoy, meta y sin empeorar."
+  ],
+  "Leia a frase em voz alta. Se passou de 25 palavras, corte até caber — a ficha lê frases curtas.": [
+    "I read the sentence aloud. If it was longer than 25 words, I cut it down—the worksheet reads short sentences.",
+    "Leí la frase en voz alta. Si tenía más de 25 palabras, la acorté: la ficha usa frases breves."
+  ],
+  "Você acabou de escrever a resposta 1 da ficha do loop: o objetivo com número. Tudo o que vem nas próximas quatro aulas se apoia nesta frase.": [
+    "You’ve just written answer 1 on the loop worksheet: the numeric goal. Everything in the next four lessons builds on this sentence.",
+    "Acabas de escribir la respuesta 1 de la ficha del ciclo: el objetivo numérico. Las próximas cuatro clases se apoyan en esta frase."
+  ],
+  "anunciar imóvel": [
+    "list a property",
+    "publicar un inmueble"
+  ],
+  "negociar": [
+    "negotiate",
+    "negociar"
+  ],
+  "visitas": [
+    "viewings",
+    "visitas"
+  ],
+  "documentos": [
+    "documents",
+    "documentos"
+  ],
+  "responder 1º contato": [
+    "reply to first contact",
+    "responder al primer contacto"
+  ],
+  "80× / mês": [
+    "80× / month",
+    "80 veces/mes"
+  ],
+  "SUBIR": [
+    "RAISE",
+    "SUBIR"
+  ],
+  "resposta 20→30%": [
+    "reply rate 20→30%",
+    "tasa de respuesta 20→30 %"
+  ],
+  "SEM PIORAR": [
+    "WITHOUT WORSENING",
+    "SIN EMPEORAR"
+  ],
+  "margem": [
+    "margin",
+    "margen"
+  ],
+  "reclamações": [
+    "complaints",
+    "quejas"
+  ],
+  "levar X de A para B sem piorar Z": [
+    "move X from A to B without worsening Z",
+    "llevar X de A a B sin empeorar Z"
+  ],
+  "minutos · 20–50 casos": [
+    "minutes · 20–50 cases",
+    "minutos · 20–50 casos"
+  ],
+  "dias · ~300": [
+    "days · ~300",
+    "días · ~300"
+  ],
+  "meses · ~1.500 por versão": [
+    "months · ~1,500 per version",
+    "meses · ~1.500 por versión"
+  ],
+  "testa": [
+    "test",
+    "prueba"
+  ],
+  "vigia": [
+    "monitor",
+    "vigila"
+  ],
+  "1 · objetivo": [
+    "1 · goal",
+    "1 · objetivo"
+  ],
+  "de 20% para 30% sem piorar…": [
+    "from 20% to 30% without worsening…",
+    "del 20 % al 30 % sin empeorar…"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Recap",
+    "Resumen"
+  ],
+  "O loop trabalha um processo de cada vez — o que mais se repete, porque é onde a evidência se acumula mais rápido.": [
+    "The loop works on one process at a time—the one that repeats most, because that’s where evidence accumulates fastest.",
+    "El ciclo trabaja con un proceso a la vez: el que más se repite, porque ahí la evidencia se acumula más rápido."
+  ],
+  "O objetivo tem forma fixa: levar um número de X para Y sem piorar Z. A parte do \"sem piorar\" é o que impede o sistema de aprender a trapacear.": [
+    "The goal has a fixed form: move a number from X to Y without worsening Z. The “without worsening” part keeps the system from learning to cheat.",
+    "El objetivo tiene una estructura fija: llevar una cifra de X a Y sin empeorar Z. La parte «sin empeorar» impide que el sistema aprenda a hacer trampa."
+  ],
+  "O número testado é o rápido (resposta, agendamento); o de dinheiro fica vigiado, porque precisa de uma quantidade que a maioria das empresas pequenas não tem.": [
+    "The number you test is the fast one (reply, booking); the money metric stays under watch because it needs a sample size most small businesses don’t have.",
+    "La cifra que se prueba es la rápida (respuesta, cita); la económica se vigila, porque exige una cantidad de casos que la mayoría de los pequeños negocios no tiene."
+  ],
+  "A ficha não promete que o número sobe. Promete que nenhuma versão pior vira oficial, que tudo fica registrado e que o ciclo roda toda semana.": [
+    "The worksheet doesn’t promise the number will rise. It promises no worse version becomes official, everything is recorded, and the cycle runs every week.",
+    "La ficha no promete que la cifra suba. Promete que ninguna versión peor se hará oficial, que todo quedará registrado y que el ciclo se repetirá cada semana."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu próximo paso"
+  ],
+  "Você acabou de transformar uma vontade (\"melhorar as propostas\") em um objetivo que pode ser medido e comparado.": [
+    "You’ve just turned a wish (“improve the proposals”) into a goal you can measure and compare.",
+    "Acabas de convertir un deseo («mejorar las propuestas») en un objetivo que puedes medir y comparar."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: mostre a frase para uma pessoa que executa o processo e pergunte \"o número de hoje está certo?\". Se ela hesitar, anote \"contar primeiro\".": [
+    "In the next 15 minutes, at your real workplace, show the sentence to someone who does the process and ask, “Is today’s number right?” If they hesitate, write “count first.”",
+    "En los próximos 15 minutos, en tu trabajo real, enséñale la frase a alguien que realiza el proceso y pregúntale: «¿La cifra de hoy es correcta?». Si duda, anota «primero hay que contar»."
+  ],
+  "Na próxima aula, você resolve o que trava logo depois disso: o processo é executado de um jeito diferente a cada vez — e sem uma versão atual escrita, não existe com o que comparar.": [
+    "In the next lesson, you’ll solve what gets in the way right after this: the process is done differently every time—and without a written current version, there’s nothing to compare against.",
+    "En la próxima clase resolverás el obstáculo que viene enseguida: el proceso se ejecuta de forma distinta cada vez, y sin una versión actual escrita no hay con qué comparar."
+  ],
+  "← trilha": [
+    "← track",
+    "← ruta"
+  ],
+  "aula 2 →": [
+    "lesson 2 →",
+    "clase 2 →"
+  ],
+  "Aula 1 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 1 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 1 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "Quantas execuções são necessárias, em cada versão, para uma diferença não ser sorte. Para 20% contra 30%, cerca de 300 por versão; para 3% contra 5%, cerca de 1.500 por versão.": [
+    "How many executions per version are needed to show that a difference isn’t due to chance. For 20% versus 30%, about 300 per version; for 3% versus 5%, about 1,500 per version.",
+    "Cuántas ejecuciones se necesitan por versión para que una diferencia no sea azar. Para 20 % frente a 30 %, unas 300 por versión; para 3 % frente a 5 %, unas 1.500 por versión."
+  ],
+  "O único documento que você preenche no LOOP-R: cinco perguntas respondidas uma vez, lidas pelo loop a cada ciclo. Esta aula produz a resposta 1.": [
+    "The only document you fill in for LOOP-R: five questions answered once and read by the loop at each cycle. This lesson produces answer 1.",
+    "El único documento que completas en LOOP-R: cinco preguntas que respondes una vez y que el ciclo lee en cada ronda. Esta clase produce la respuesta 1."
+  ],
+  "<b>Fig. 1</b> Entre os processos que se repetem, o loop pega um só (em destaque) — o de maior volume. Os outros esperam.": [
+    "<b>Fig. 1</b> Of all the repeating processes, the loop takes just one (highlighted)—the highest-volume one. The others can wait.",
+    "<b>Fig. 1</b> De todos los procesos que se repiten, el ciclo elige uno (resaltado): el de mayor volumen. Los demás esperan."
+  ],
+  "<b>Fig. 2</b> O objetivo é uma balança: de um lado o número a subir; do outro, os que não podem cair. Sem o lado direito, a balança tomba.": [
+    "<b>Fig. 2</b> The goal is a balance scale: the number to raise on one side, the numbers that must not fall on the other. Without the right-hand side, the scale tips.",
+    "<b>Fig. 2</b> El objetivo es una balanza: a un lado, la cifra que debe subir; al otro, las que no pueden bajar. Sin el lado derecho, la balanza se inclina."
+  ],
+  "<b>Fig. 3</b> Três velocidades de número. Quanto mais rápido o número responde, menos execuções ele pede para provar algo — o loop testa o rápido e vigia o lento.": [
+    "<b>Fig. 3</b> Three speeds for metrics. The faster a metric responds, the fewer executions it needs to prove something—the loop tests the fast one and monitors the slow one.",
+    "<b>Fig. 3</b> Tres velocidades de las cifras. Cuanto más rápido responde una cifra, menos ejecuciones hacen falta para demostrar algo: el ciclo prueba la rápida y vigila la lenta."
+  ],
+  "<b>Fig. 4</b> A ficha do loop tem cinco perguntas; a de cima é a que esta aula responde. O loop lê a ficha a cada ciclo — você a escreve uma vez.": [
+    "<b>Fig. 4</b> The loop worksheet has five questions; the top one is answered in this lesson. The loop reads the worksheet every cycle—you write it once.",
+    "<b>Fig. 4</b> La ficha del ciclo tiene cinco preguntas; esta clase responde la de arriba. El ciclo la lee en cada ronda; tú la escribes una vez."
+  ],
+  "Cancelamento é número de dinheiro: leva meses para provar uma diferença de 4% para 3%. Fica como número vigiado, não como o que se testa.": [
+    "Cancellation is a money metric: it takes months to prove a difference from 4% to 3%. Keep it as a monitored metric, not the one you test.",
+    "Las cancelaciones son una cifra económica: se tarda meses en demostrar una diferencia del 4 % al 3 %. Déjala como métrica vigilada, no como la que se prueba."
+  ],
+  "Resolução no primeiro contato é sinal: responde em dias, tem relação plausível com cancelamento e chega à quantidade que prova em semanas.": [
+    "First-contact resolution is a signal metric: it responds in days, is plausibly related to cancellations, and reaches the required sample size in weeks.",
+    "La resolución en el primer contacto es una señal: responde en días, tiene una relación plausible con las cancelaciones y alcanza la cantidad necesaria en semanas."
+  ],
+  "Chamados abertos por semana não dependem da qualidade do atendimento — é volume, não resultado.": [
+    "Tickets opened per week don’t depend on service quality—it’s volume, not outcome.",
+    "Las consultas abiertas por semana no dependen de la calidad de la atención: es volumen, no resultado."
+  ],
+  "Marcos quer 'vender mais imóveis' (2 por mês). Por que o loop dele não deve testar esse número — e o que ele testa no lugar?": [
+    "Marcos wants to “sell more properties” (2 a month). Why shouldn’t his loop test that number—and what does it test instead?",
+    "Marcos quiere «vender más inmuebles» (2 al mes). ¿Por qué su ciclo no debería probar esa cifra y qué prueba en su lugar?"
+  ],
+  "Vendas é número de dinheiro: 2 por mês nunca chega à quantidade que prova. Ele testa leads que respondem em 24h ao primeiro contato (22 em 100) e vigia as vendas.": [
+    "Sales are a money metric: 2 a month never reaches the required sample size. He tests leads replying within 24 hours of first contact (22 out of 100) and monitors sales.",
+    "Las ventas son una cifra económica: 2 al mes nunca alcanza la cantidad necesaria. Prueba cuántos contactos responden en las 24 horas posteriores al primer mensaje (22 de cada 100) y vigila las ventas."
+  ],
+  "Uma versão nova de proposta aumentou a taxa de resposta em 10 pontos, mas o objetivo foi escrito só como 'aumentar respostas'. Que pergunta falta fazer antes de comemorar?": [
+    "A new proposal version raised the reply rate by 10 points, but the goal only said “increase replies.” What question is missing before celebrating?",
+    "Una nueva versión de la propuesta elevó 10 puntos la tasa de respuesta, pero el objetivo solo decía «aumentar las respuestas». ¿Qué pregunta falta antes de celebrar?"
+  ],
+  "O que piorou? Sem um 'sem piorar' (margem, reclamações, pedidos de parar), respostas do tipo 'pare de me mandar isso' contam como sucesso.": [
+    "What got worse? Without a “without worsening” condition (margin, complaints, stop requests), replies like “stop sending me this” count as success.",
+    "¿Qué empeoró? Sin un «sin empeorar» (margen, quejas, solicitudes para dejar de recibir mensajes), respuestas como «deja de enviarme esto» cuentan como éxito."
+  ],
+  "Qual é a diferença entre o que a ficha do loop garante e o que ela não garante?": [
+    "What is the difference between what the loop worksheet guarantees and what it doesn’t?",
+    "¿Qué diferencia hay entre lo que garantiza la ficha del ciclo y lo que no garantiza?"
+  ],
+  "Não garante que o número suba. Garante três coisas: uma versão pior não substitui a atual por decisão do sistema; toda mudança tem registro e caminho de volta; o ciclo roda sempre igual.": [
+    "It doesn’t guarantee the number will rise. It guarantees three things: the system won’t replace the current version with a worse one; every change is recorded and can be rolled back; the cycle always runs the same way.",
+    "No garantiza que la cifra suba. Garantiza tres cosas: el sistema no sustituye la versión actual por una peor; todo cambio queda registrado y se puede revertir; el ciclo siempre sigue el mismo proceso."
+  ],
+  "Dra. Renata manda 50 propostas por semana. Ela quer provar 3% → 5% de conversão. Em quanto tempo o teste fecha, e o que ela deveria fazer?": [
+    "Dr. Renata sends 50 proposals a week. She wants to prove conversion went from 3% to 5%. How long would the test take, and what should she do?",
+    "La Dra. Renata envía 50 propuestas por semana. Quiere demostrar que la conversión pasa del 3 % al 5 %. ¿Cuánto tardaría la prueba y qué debería hacer?"
+  ],
+  "Cerca de 1.500 por versão: mais de um ano. Trocar para taxa de resposta (20% → 30%): ~300 por versão, 12 semanas — e vigiar a conversão.": [
+    "About 1,500 per version: more than a year. Switch to reply rate (20% → 30%): about 300 per version, 12 weeks—and monitor conversion.",
+    "Unas 1.500 por versión: más de un año. Cambiar a la tasa de respuesta (20 % → 30 %): unas 300 por versión, 12 semanas, y vigilar la conversión."
+  ]
+}

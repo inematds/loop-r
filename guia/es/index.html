@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOOP-R — la empresa que aprende con cada ejecución</title>
+<meta name="description" content="LOOP-R: marco y ejecutor para convertir un proceso de tu negocio en un ciclo de mejora continua con IA: evidencia, hipótesis, experimentos, promoción y vuelta atrás.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:760px){nav .links a.sec{display:none}}
+  @media(max-width:540px){nav .wrap{gap:8px}nav .links{gap:8px;font-size:.8rem}nav .links .btn{display:none}nav .links a[lang]{font-size:.78rem}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;display:block}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .grid>*{min-width:0}.card{min-width:0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{max-width:100%;background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:26px}
+  .step>div{min-width:0}.step pre{max-width:100%}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.ex{grid-template-columns:1fr}}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;display:block}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .links .langs{display:inline-flex;gap:7px}
+  .links .langs a{color:var(--mut);font-size:.85rem}
+  .links .langs a.on{color:var(--amb);font-weight:700}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
+  table.gar{width:100%;border-collapse:collapse;margin-top:8px;font-size:.92rem}
+  table.gar th,table.gar td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.gar th{font-family:Sora;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+  table.gar td:first-child{color:var(--txt)} table.gar td:last-child{color:var(--mut)}
+  .quote{border-left:3px solid var(--amb);padding:6px 18px;margin:18px 0 0;color:var(--txt);font-family:Sora;font-size:1.05rem;line-height:1.5}
+</style>
+<link rel="alternate" hreflang="pt-BR" href="../index.html"><link rel="alternate" hreflang="en" href="../en/index.html"><link rel="alternate" hreflang="es" href="index.html"><link rel="alternate" hreflang="x-default" href="../index.html"><link rel="canonical" href="https://inematds.github.io/loop-r/guia/es/index.html"><style id="language-navigation-style">
+.language-links,.languages{display:inline-flex;align-items:center;gap:.5rem;font:12px system-ui;white-space:nowrap}.language-links a,.languages a{color:inherit;text-decoration:none}.language-links [aria-current=page],.languages [aria-current=page]{font-weight:700;text-decoration:underline}.language-links{padding:.5rem 1rem}.links>a[lang]{font:12px system-ui}.bar-inner{flex-wrap:wrap}.bar .languages{pointer-events:auto}header.top .wrap{flex-wrap:wrap}
+@media(max-width:760px){nav>.wrap{height:auto;min-height:60px;flex-wrap:wrap;gap:12px;padding-block:10px}nav .links{gap:10px;flex-wrap:wrap}}
+</style></head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="emoji">🔁</span> LOOP-R</a>
+  <span class="sep">|</span>
+  <span class="clubpro">
+    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <span class="sep">-</span>
+    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+  </span>
+  <div class="links">
+    <a class="sec" href="#oque">Qué es</a>
+    <a class="sec" href="#fluxo">Cómo funciona</a>
+    <a class="sec" href="#guia">Guía de uso</a>
+    <a class="sec" href="#exemplos">Ejemplo ejecutado</a>
+    <a class="sec" href="#roadmap">Hoja de ruta</a>
+    <a class="sec" href="../../curso/es/">Curso</a>
+
+    <span class="languages"><a lang="pt-BR" href="../index.html">PT</a> · <a lang="en" href="../en/index.html">EN</a> · <a lang="es" href="index.html">ES</a></span><button class="tgl" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+    <a class="btn" href="https://github.com/inematds/loop-r" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <span class="chip">Marco · Sistemas y empresas que se mejoran</span>
+      <h1>Tu empresa realiza mil tareas con IA. <span class="amb">¿Por qué todo sigue igual?</span></h1>
+      <p class="lead">LOOP-R convierte un proceso de tu negocio en un ciclo: ejecuta, mide, critica, propone y prueba; solo lo comprobado se convierte en la nueva versión. Todo queda registrado y puedes volver atrás.</p>
+      <div class="cta">
+        <a class="btn" href="#guia">Empezar la guía</a>
+        <a class="btn ghost" href="../../curso/es/">Hacer el curso</a>
+        <a class="btn ghost" href="https://github.com/inematds/loop-r" target="_blank" rel="noopener">Ver en GitHub</a>
+      </div>
+    </div>
+    <figure><img src="../assets/hero.jpg" alt="LOOP-R — ciclo de mejora continua con IA"></figure>
+  </div>
+</header>
+
+<section id="oque"><div class="wrap">
+  <span class="chip">Qué es</span>
+  <h2>No es un mejor prompt. Es un sistema que aprende con cada ejecución.</h2>
+  <p class="sub">Hoy la IA funciona así: solicitud → respuesta → fin. La siguiente propuesta empieza desde cero. LOOP-R cierra el ciclo: cada tarea realizada alimenta la siguiente versión de la forma de trabajar.</p>
+  <div class="grid g3">
+    <div class="card"><h3>🧪 Evidencia, no opinión</h3><p>Cada ejecución se convierte en una fila de la hoja de cálculo. El sistema solo afirma lo que demuestran los números y avisa cuando aún no hay datos suficientes para concluir.</p></div>
+    <div class="card"><h3>👥 Nueve asistentes, una función cada uno</h3><p>Ejecutor, Observador, Crítico, Optimizador, Guardián, Experimentador, Evaluador, Memoria y Metaagente. Ninguno evalúa su propio trabajo: esta separación evita que el sistema se convenza a sí mismo.</p></div>
+    <div class="card"><h3>↩️ Botón para volver atrás</h3><p>Cada versión del proceso queda en el historial. Promover es un comando; volver atrás es otro. El sistema nunca sustituye la versión actual por otra peor.</p></div>
+  </div>
+  <p class="quote">No le pidas a la IA que mejore. Haz que cada ejecución produzca evidencia, que cada evidencia genere una hipótesis y que cada hipótesis se convierta en un experimento; solo lo comprobado entra en la siguiente versión.</p>
+</div></section>
+
+<section id="fluxo"><div class="wrap">
+  <span class="chip">Cómo funciona</span>
+  <h2>Cinco etapas que forman un ciclo</h2>
+  <p class="sub">Localizar qué mejorar, operar, observar el resultado, proponer una hipótesis y reforzar lo que ganó. Después, repetir. Por dentro hay un ciclo de ocho pasos, cada uno a cargo de un asistente.</p>
+  <div class="flow">
+    <span>Locate</span><span class="arr">→</span>
+    <span>Operate</span><span class="arr">→</span>
+    <span>Observe</span><span class="arr">→</span>
+    <span>Propose</span><span class="arr">→</span>
+    <span>Reinforce</span><span class="arr">→</span>
+    <span>↻</span>
+  </div>
+  <div class="grid g4" style="margin-top:28px">
+    <div class="card"><span class="num">1</span><h3>Observador y Crítico</h3><p>Leen y cuentan las filas de la hoja de cálculo, y explican qué funcionó y qué falló, con la solidez de la evidencia marcada como alta, moderada o baja.</p></div>
+    <div class="card"><span class="num">2</span><h3>Optimizador y Guardián</h3><p>Uno redacta hipótesis comprobables (SI… ENTONCES… PORQUE…). El otro veta lo que incumple aquello que definiste como intocable. El veto es definitivo.</p></div>
+    <div class="card"><span class="num">3</span><h3>Experimentador y Evaluador</h3><p>Diseñan la prueba A/B con el tamaño de muestra necesario y responden una de tres cosas: ganó B, sigue A o la muestra es insuficiente.</p></div>
+    <div class="card"><span class="num">4</span><h3>Memoria y Metaagente</h3><p>Registran todo —también lo que perdió, para no volver a probarlo— y vigilan el costo del propio ciclo.</p></div>
+  </div>
+  <h3 style="margin-top:36px;font-size:1.1rem">Qué garantiza y qué no</h3>
+  <table class="gar">
+    <tr><th>Garantiza</th><th>No garantiza</th></tr>
+    <tr><td><strong>Sin regresiones</strong> — una versión peor nunca entra en producción</td><td>que el número aumente</td></tr>
+    <tr><td><strong>Auditabilidad</strong> — toda versión, prueba y decisión queda registrada; basta un comando para volver atrás</td><td>que cada ciclo produzca una buena hipótesis</td></tr>
+    <tr><td><strong>Constancia</strong> — el ciclo se ejecuta igual cada vez</td><td>que el costo compense sin que lo revises</td></tr>
+    <tr><td><strong>Límite de costo</strong> — se detiene cuando lo alcanza</td><td>—</td></tr>
+  </table>
+</div></section>
+
+<section id="pre"><div class="wrap">
+  <span class="chip">Requisitos previos</span>
+  <h2>Una hoja de cálculo y Claude Code</h2>
+  <p class="sub">En la versión 0.1, el ciclo se ejecuta en Claude Code y los datos llegan desde una hoja de cálculo exportada a CSV: una fila por ejecución. Sin servidor, base de datos ni integración.</p>
+  <div class="grid g3">
+    <div class="card"><h3>Claude Code</h3><p>El ejecutor es una skill y los nueve asistentes son archivos de texto. Si tienes Claude Code, clona el repositorio y ejecútalo.</p><pre><span class="c"># instalar / comprobar</span>
+<span class="k">claude</span> --version</pre></div>
+    <div class="card"><h3>Git</h3><p>Es el historial con botón para volver: cada versión del proceso es un commit; promocionar y revertir son operaciones de Git.</p><pre><span class="k">git</span> --version</pre></div>
+    <div class="card"><h3>Una hoja de cálculo del proceso</h3><p>Donde ya registras el resultado de cada propuesta, ticket de soporte o publicación. Ejecuta el comando <code>iniciar</code> para generar las columnas para que las rellenes o exportes.</p><pre><span class="c"># uma linha por execução</span>
+id,data,versao,variante,resposta,resultado,...</pre></div>
+  </div>
+</div></section>
+
+<section id="guia"><div class="wrap">
+  <span class="chip">Guía de uso · paso a paso</span>
+  <h2>De cero al primer ciclo</h2>
+  <p class="sub">Cinco respuestas en lenguaje natural configuran todo el ciclo. Después, un comando por semana.</p>
+
+  <div class="step"><div class="b">1</div><div>
+    <h3>Clona y abre el proyecto en Claude Code</h3>
+    <p>El repositorio ya incluye el ejecutor, los nueve asistentes y un ejemplo completo que se ejecutó de verdad.</p>
+<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/loop-r</span> <span class="k">&amp;&amp; cd</span> loop-r
+<span class="k">claude</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">2</div><div>
+    <h3>Responde las cinco preguntas</h3>
+    <p>Son las únicas cosas que ningún sistema puede deducir de forma segura. LOOP-R propone el resto y tú lo confirmas.</p>
+<pre><span class="k">/loop-r iniciar</span>
+<span class="c"># 1. ¿Qué proceso y qué número quieres mover, de qué valor a cuál?</span>
+<span class="c"># 2. ¿Dónde se registra el resultado de cada ejecución?</span>
+<span class="c"># 3. ¿Qué no puede cambiar nunca la IA por su cuenta? ¿Qué no debe empeorar?</span>
+<span class="c"># 4. ¿Cuánto puede gastar cada ciclo? ¿Por semana o por mes?</span>
+<span class="c"># 5. ¿Apruebas cada cambio (L1) o solo quieres ver propuestas (L0)?</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">3</div><div>
+    <h3>Lee la estimación honesta y confirma</h3>
+    <p>Antes de crear nada, el sistema calcula cuántas ejecuciones necesita la prueba y te dice si conviene optimizar primero una métrica más rápida.</p>
+<pre><span class="c">"Con 50 propuestas por semana, demostrar el cambio del 3 % al 5 % lleva unas 60 semanas.</span>
+<span class="c"> Primero optimizaré la TASA DE RESPUESTA (~12 semanas) y vigilaré la conversión. ¿Confirmas?"</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">4</div><div>
+    <h3>Completa la hoja y ejecuta un ciclo</h3>
+    <p>Los nueve asistentes se ejecutan en secuencia y dejan un manifiesto de lo que cada uno leyó, decidió y por qué. Un ciclo sin manifiesto completo no cuenta.</p>
+<pre><span class="k">/loop-r ciclo</span>     <span class="c"># → ciclos/0001/ (evidencia, crítica, hipótesis, veto, experimento, veredicto)</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">5</div><div>
+    <h3>Decide con la tarjeta de cinco líneas</h3>
+    <p>Cuando la versión B gana con margen y sin empeorar lo que vigilas, recibes una tarjeta. Si no respondes en siete días, la opción predeterminada es no promocionar.</p>
+<pre>CICLO 0004 — hipótesis: «abrir con algo concreto de la reseña»
+Resultado:   tasa de respuesta 19,3 % → 29,3 %  (N = 300 frente a 300)
+Vigilado:    margen ok · quejas ok · baja de mensajes ok
+Costo:       ~R$ 45 este ciclo (límite R$ 50)
+Decisión:    aprobar / rechazar / esperar más datos
+
+<span class="k">/loop-r decidir</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">6</div><div>
+    <h3>Promociona o vuelve atrás</h3>
+    <p>Promocionar crea una versión nueva y dirige la producción hacia ella mediante un commit. Revertir vuelve a la anterior. La versión vieja nunca se borra: forma parte de la memoria.</p>
+<pre><span class="k">/loop-r promover</span>   <span class="c"># versoes/v2 pasa a ser la oficial · commit «promote v2»</span>
+<span class="k">/loop-r reverter</span>   <span class="c"># vuelve a v1 · entrada en el ledger con el motivo</span>
+<span class="k">/loop-r status</span></pre>
+  </div></div>
+</div></section>
+
+<section id="exemplos"><div class="wrap">
+  <span class="chip">Ejemplo ejecutado</span>
+  <h2>Cuatro ciclos ejecutados por los asistentes con datos sintéticos</h2>
+  <p class="sub">Clínica estética, propuestas por WhatsApp, 1.500 ejecuciones sintéticas. Los asistentes sí se ejecutaron; los datos no: se generaron para reflejar un efecto real, y el <code>README</code> del ejemplo explica qué es real y qué es simulado. Lo ocurrido enseña más que un caso perfecto.</p>
+  <div class="grid g2">
+    <div class="card"><h3>Ciclo 0001 — el Guardián vetó la primera idea</h3><p>El Optimizador propuso cerrar con «¿prefieres empezar esta semana o la próxima?». El Guardián lo vetó: una elección forzada puede generar presión y quejas. La segunda hipótesis (un mensaje de hasta 80 palabras) pasó a prueba, después de que el Experimentador calculó que la prueba original tardaría 40 semanas.</p></div>
+    <div class="card"><h3>Ciclo 0002 — ganó en la métrica, falló la barrera</h3><p>La tasa de respuesta subió del 19 % al 30 % (N=300/300). Pero hubo 6 quejas frente a 1 con tolerancia cero, así que el Evaluador respondió <strong>sigue A</strong>. La regla era incorrecta (6 frente a 1 de 300 es ruido), no el sistema: una persona ajustó la tolerancia para las siguientes pruebas y la hipótesis quedó registrada como descartada.</p></div>
+    <div class="card"><h3>Ciclo 0003 — la hipótesis que esperaba</h3><p>Una hipótesis aprobada en el primer ciclo esperó trece semanas en la cola; solo se puede probar una a la vez. El Metaagente señaló el costo de la espera y propuso un activador automático. Se añadió a la hoja de ruta.</p></div>
+    <div class="card"><h3>Ciclo 0004 — promoción</h3><p>Abrir la propuesta con un detalle específico de la reseña de la clienta: la respuesta subió del 19,3 % al 29,3 %, con las barreras dentro de la tolerancia. Tarjeta de decisión, aprobación, <code>versoes/v2</code>. El primer aprendizaje comprobado del ciclo.</p></div>
+  </div>
+  <pre style="margin-top:18px"><span class="c"># memoria/ledger.md — fragmento (una línea por evento, nunca se borra)</span>
+| 2026-02-02 | ciclo 0001 | H1 (fechar com pergunta de escolha forçada) | — | — | — | VETADA |
+| 2026-04-27 | ciclo 0002 | H2 (teto de 80 palavras, E0001) | A_SEGUE — resposta A=0,1933 vs B=0,2967, p=0,0033 | reclamacoes Δ+0,0167 tol 0,0 → FALHA | aceito | DESCARTADA |
+| 2026-05-04 | ciclo 0003 | H4 (valor logo após a saudação) | — | — | — | VETADA |
+| 2026-05-04 | ciclo 0003 | H3 (abrir citando a avaliação, E0002) | AMOSTRA_INSUFICIENTE — N=0/212 | — | — | EM TESTE |
+| 2026-07-27 | ciclo 0004 | H3 (abrir citando a avaliação, E0002) | B_GANHOU — resposta A=0,1933 vs B=0,2933, p=0,0043 | todas OK | aprovado | PROMOVIDA v2 |</pre>
+</div></section>
+
+<section id="roadmap"><div class="wrap">
+  <span class="chip">Hoja de ruta</span>
+  <h2>Empieza por los datos, no por los agentes</h2>
+  <p class="sub">Sin evidencia, lo demás es teatro. Cada fase entrega algo que funciona por sí solo y la siguiente no empieza hasta que un usuario real tenga tres ciclos en el historial.</p>
+  <div class="phase"><div class="tag">v0.1</div><div class="d"><strong>Un ciclo, una hoja de cálculo, un ciclo — listo</strong><span>Cinco preguntas → ficha del ciclo → nueve asistentes → ciclo con CSV e historial en Git. El Metaagente solo informa. Ejemplo ejecutado.</span></div></div>
+  <div class="phase"><div class="tag">v0.2</div><div class="d"><strong>Medir de verdad</strong><span>Lista de verificación sí/no para el artefacto, juez con pares mezclados, calibración con 15 ejemplos evaluados por ti. Curso completo (5 rutas).</span></div></div>
+  <div class="phase"><div class="tag">v1</div><div class="d"><strong>Funciona sin ti</strong><span>Ejecutor independiente de Claude Code, programación, activador al alcanzar la muestra mínima, conectores de Google Sheets y WhatsApp, y promoción automática con reversión (L2) después de cinco promociones correctas.</span></div></div>
+  <div class="phase"><div class="tag">v2</div><div class="d"><strong>Varios ciclos</strong><span>Ventas, atención al cliente y contenido en el mismo repositorio; un metaciclo lee todos los historiales. Investigación: depende de meses de datos reales.</span></div></div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <div class="pill">Claude Code</div><div class="pill">Markdown + YAML</div><div class="pill">Git</div><div class="pill">CSV</div>
+    <p style="margin-top:18px">LOOP-R · Marco para sistemas y empresas que se mejoran · v0.1.0 ·
+      <a href="https://github.com/inematds/loop-r">inematds/loop-r</a> ·
+      <a href="https://inema.club">INEMA.CLUB</a></p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var KEY='loop-r-theme';
+    var b=document.body, t=document.getElementById('themeToggle');
+    if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='☀️'; }
+    t.addEventListener('click',function(){
+      var light=b.classList.toggle('light');
+      t.textContent=light?'☀️':'🌙';
+      localStorage.setItem(KEY, light?'light':'dark');
+    });
+  })();
+</script>
+<script id="language-navigation-script">(()=>{const update=()=>{document.querySelectorAll('a').forEach(a=>{if(!['PT','EN','ES'].includes(a.textContent.trim()))return;if(!a.dataset.languageBase)a.dataset.languageBase=a.getAttribute('href');const u=new URL(a.dataset.languageBase,location.href);u.search=location.search;u.hash=location.hash;a.href=u.href;const current=(document.documentElement.lang||'pt').slice(0,2).toUpperCase();if(a.textContent.trim()===current)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});};update();addEventListener('hashchange',update);})();</script></body>
+</html>

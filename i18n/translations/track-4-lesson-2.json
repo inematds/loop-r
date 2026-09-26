@@ -1,0 +1,510 @@
+{
+  "Trilha 04 · Aula 2": [
+    "Track 04 · Lesson 2",
+    "Ruta 04 · Clase 2"
+  ],
+  "A quantidade": [
+    "The sample size",
+    "La cantidad"
+  ],
+  "que": [
+    "that",
+    "que"
+  ],
+  "prova": [
+    "proves it",
+    "lo demuestra"
+  ],
+  "Ao fim desta aula você consegue olhar uma meta como \"de 20% para 30%\" e dizer quantas execuções o teste precisa por versão e quantas semanas isso leva no ritmo do seu negócio — antes de começar.": [
+    "By the end of this lesson, you will be able to look at a target like “from 20% to 30%” and say how many runs the test needs per version and how many weeks it will take at your business’s pace—before you start.",
+    "Al terminar esta clase, podrás mirar una meta como «del 20 % al 30 %» y decir cuántas ejecuciones necesita la prueba por versión y cuántas semanas tomará al ritmo de tu negocio, antes de empezar."
+  ],
+  "A maioria dos loops morre aqui: alguém compara 12 propostas novas com 12 antigas, vê \"o dobro\" e muda a regra da equipe. Três semanas depois o número voltou ao normal e ninguém sabe por quê. Sorte com número pequeno parece padrão. Existe uma conta que separa os dois — e ela cabe numa tabela de cinco linhas.": [
+    "Most loops die here: someone compares 12 new proposals with 12 old ones, sees “double,” and changes the team’s rule. Three weeks later, the number is back to normal and no one knows why. Luck with a small sample looks like a pattern. There is a calculation that separates the two—and it fits in a five-row table.",
+    "La mayoría de los ciclos muere aquí: alguien compara 12 propuestas nuevas con 12 anteriores, ve «el doble» y cambia la regla del equipo. Tres semanas después la cifra vuelve a la normalidad y nadie sabe por qué. El azar con pocos datos parece un patrón. Hay un cálculo que los distingue y cabe en una tabla de cinco filas."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "oito caras em doze jogadas.": [
+    "eight heads in twelve flips.",
+    "ocho caras en doce lanzamientos."
+  ],
+  "acontece uma vez a cada cinco. sem truque nenhum.": [
+    "happens once in five tries. No trick.",
+    "ocurre una vez de cada cinco. Sin truco."
+  ],
+  "Com doze, a sorte se disfarça de padrão": [
+    "With twelve, luck disguises itself as a pattern",
+    "Con doce, el azar se disfraza de patrón"
+  ],
+  "Jogue uma moeda doze vezes. Oito ou mais caras acontecem em quase uma de cada cinco tentativas — sem moeda viciada, sem truque. Agora troque \"cara\" por \"cliente que agendou\" e \"coroa\" por \"cliente que não respondeu\": com doze clientes, uma mensagem nova \"ganhar\" da antiga é o que se espera do acaso, não uma prova de que ela é melhor.": [
+    "Flip a coin twelve times. Getting eight or more heads happens in nearly one out of five tries—with a fair coin, no trick. Now replace “heads” with “customer who booked” and “tails” with “customer who did not reply”: with twelve customers, a new message “beating” the old one is what chance predicts, not proof that it is better.",
+    "Lanza una moneda doce veces. Obtener ocho caras o más ocurre en casi uno de cada cinco intentos, sin moneda trucada. Ahora cambia «cara» por «cliente que reservó» y «cruz» por «cliente que no respondió»: con doce clientes, que un mensaje nuevo «gane» al anterior es algo esperable por azar, no una prueba de que sea mejor."
+  ],
+  "É por isso que \"eu testei e funcionou\" quase nunca é verdade com número pequeno. Não é que a pessoa esteja errada sobre o que viu. É que o que ela viu acontece também quando não há diferença nenhuma.": [
+    "That is why “I tested it and it worked” is rarely true with a small sample. The person is not wrong about what they saw; the same thing can happen when there is no difference at all.",
+    "Por eso «lo probé y funcionó» casi nunca es cierto con pocos datos. La persona no se equivoca sobre lo que vio; eso también ocurre cuando no hay ninguna diferencia."
+  ],
+  "Um corretor de imóveis muda a primeira mensagem que manda aos leads do portal. Nos 12 leads seguintes, 4 agendam visita. Com a mensagem antiga, nos 12 anteriores, foram 2. \"Dobrou\", ele conta na reunião de segunda, e a mensagem nova vira a mensagem de todo mundo. Em três semanas a taxa está onde sempre esteve — e agora ninguém sabe se a nova é melhor, pior ou igual.": [
+    "A real estate agent changes the first message sent to portal leads. Of the next 12 leads, 4 book a visit. With the old message, 2 of the previous 12 did. “It doubled,” he says at Monday’s meeting, and everyone switches to the new message. Three weeks later, the rate is back where it always was—and no one knows whether the new message is better, worse, or the same.",
+    "Un agente inmobiliario cambia el primer mensaje que envía a los contactos del portal. De los siguientes 12, 4 reservan una visita. Con el mensaje anterior, lo hicieron 2 de los 12 previos. «Se duplicó», dice en la reunión del lunes, y todos adoptan el mensaje nuevo. Tres semanas después, la tasa vuelve a donde siempre estuvo y nadie sabe si el mensaje nuevo es mejor, peor o igual."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "A tabela da quantidade que prova": [
+    "The sample-size table",
+    "La tabla de la cantidad necesaria"
+  ],
+  "A": [
+    "The",
+    "La"
+  ],
+  "quantidade que prova": [
+    "sample size needed for proof",
+    "cantidad necesaria para demostrarlo"
+  ],
+  "é uma conta padrão, e o Experimentador — o assistente que desenha o teste — faz essa conta e mostra para você antes de o teste começar. Você não precisa saber a fórmula. Precisa saber ler a tabela.": [
+    "is a standard calculation. The Experimenter—the assistant that designs the test—works it out and shows you before the test starts. You do not need to know the formula; you need to know how to read the table.",
+    "es un cálculo estándar. El Experimentador —el asistente que diseña la prueba— lo hace y te lo muestra antes de empezar. No necesitas conocer la fórmula, sino saber leer la tabla."
+  ],
+  "de → para": [
+    "from → to",
+    "de → a"
+  ],
+  "por versão": [
+    "per version",
+    "por versión"
+  ],
+  "total": [
+    "total",
+    "total"
+  ],
+  "a 50/semana": [
+    "at 50/week",
+    "a 50/semana"
+  ],
+  "a 200/semana": [
+    "at 200/week",
+    "a 200/semana"
+  ],
+  "Leia duas coisas. Primeira: quanto mais baixo o número de partida, mais execuções ele exige — 3% é quase impossível de provar numa empresa pequena. Segunda: quanto maior o salto que você espera, menos execuções precisa — mas o salto tem que acontecer de verdade, não ser um desejo.": [
+    "Notice two things. First: the lower the starting number, the more runs it requires—3% is almost impossible to prove in a small business. Second: the bigger the lift you expect, the fewer runs you need—but the lift must be real, not wishful thinking.",
+    "Observa dos cosas. Primero: cuanto más baja la cifra inicial, más ejecuciones exige; demostrar un 3 % es casi imposible en una empresa pequeña. Segundo: cuanto mayor sea el aumento esperado, menos ejecuciones hacen falta, pero el aumento debe ser real, no un deseo."
+  ],
+  "A dona da clínica manda 50 propostas por semana e quer subir a conversão em venda de 3% para 5%. Pela tabela, são 1.500 propostas com cada versão: 60 semanas para um único teste. Mais de um ano para responder uma pergunta. Não é que o loop não funcione — é que essa pergunta, nesse ritmo, não dá para responder.": [
+    "The clinic owner sends 50 proposals a week and wants to raise sales conversion from 3% to 5%. The table calls for 1,500 proposals per version: 60 weeks for one test. More than a year to answer one question. The loop is not broken; that question cannot be answered at that pace.",
+    "La dueña de la clínica envía 50 propuestas por semana y quiere subir la conversión de ventas del 3 % al 5 %. Según la tabla, hacen falta 1.500 propuestas por versión: 60 semanas para una sola prueba. Más de un año para responder una pregunta. El ciclo sí funciona; lo que no se puede responder es esa pregunta a ese ritmo."
+  ],
+  "Três tipos de número, três velocidades": [
+    "Three kinds of metrics, three speeds",
+    "Tres tipos de cifra, tres velocidades"
+  ],
+  "A saída para a clínica não é desistir de medir — é medir um número mais rápido que ainda tenha relação com o dinheiro. O LOOP-R separa os números em três tipos.": [
+    "The clinic’s answer is not to give up measuring; it is to measure a faster number that still relates to revenue. LOOP-R separates metrics into three types.",
+    "La solución para la clínica no es dejar de medir, sino medir una cifra más rápida que siga relacionada con el dinero. LOOP-R divide las métricas en tres tipos."
+  ],
+  "Dinheiro": [
+    "Revenue",
+    "Dinero"
+  ],
+  ": conversão, ticket, margem — quem responde é o cliente, semanas depois; leva meses para provar.": [
+    ": conversion, order value, margin—the customer determines these weeks later; proving them takes months.",
+    ": conversión, importe, margen: el cliente responde semanas después y demostrarlo lleva meses."
+  ],
+  "Sinal": [
+    "Signal",
+    "Señal"
+  ],
+  ": taxa de resposta, agendamento, clique útil — o cliente responde em horas ou dias; leva semanas.": [
+    ": reply rate, bookings, useful clicks—the customer responds in hours or days; proof takes weeks.",
+    ": tasa de respuesta, reservas, clics útiles: el cliente responde en horas o días; demostrarlo toma semanas."
+  ],
+  "Artefato": [
+    "Deliverable",
+    "Entregable"
+  ],
+  ": a proposta cumpre a lista de conferência? tem erro? tom certo? — responde-se olhando o texto, em minutos.": [
+    ": does the proposal meet the checklist? Is there an error? Is the tone right? You can answer by reading the text, in minutes.",
+    ": ¿la propuesta cumple la lista de comprobación?, ¿tiene errores?, ¿el tono es adecuado? Se responde mirando el texto, en minutos."
+  ],
+  "A regra do loop: o teste roda sobre o número mais rápido que ainda tem uma ligação plausível com o dinheiro. O dinheiro não some — vira vigiado (\"sem piorar a conversão\") enquanto não há volume para testá-lo direto.": [
+    "The loop’s rule: test the fastest metric that still has a plausible link to revenue. Revenue does not disappear; it becomes a guardrail (“without worsening conversion”) until there is enough volume to test it directly.",
+    "La regla del ciclo: probar la cifra más rápida que aún tenga una relación plausible con el dinero. El dinero no desaparece: pasa a ser un indicador («sin empeorar la conversión») mientras no haya volumen para probarlo directamente."
+  ],
+  "Na empresa de software, a gestora de suporte tem os três: dinheiro é a renovação do contrato (meses); sinal é \"resolvido no primeiro contato\" (dias); artefato é \"a resposta cumpre a lista de conferência\" (minutos). O loop dela gira toda semana sobre o artefato e o sinal, e vigia a renovação.": [
+    "At the software company, the support manager has all three: revenue is contract renewal (months); the signal is “resolved on first contact” (days); the deliverable is “does the reply meet the checklist?” (minutes). Her loop runs weekly on the deliverable and signal, while monitoring renewals.",
+    "En la empresa de software, la responsable de soporte tiene las tres: dinero es la renovación del contrato (meses); señal es «resuelto en el primer contacto» (días); entregable es «¿la respuesta cumple la lista?» (minutos). Su ciclo gira cada semana con el entregable y la señal, y vigila las renovaciones."
+  ],
+  "Antes — medir o dinheiro": [
+    "Before—measuring revenue",
+    "Antes: medir el dinero"
+  ],
+  "Clínica, 50 propostas/semana. Meta: conversão em venda de 3% para 5%. Quantidade que prova: 1.500 por versão.": [
+    "Clinic, 50 proposals/week. Target: sales conversion from 3% to 5%. Required sample: 1,500 per version.",
+    "Clínica, 50 propuestas/semana. Meta: conversión de ventas del 3 % al 5 %. Cantidad necesaria: 1.500 por versión."
+  ],
+  "até a primeira resposta.": [
+    "until the first reliable result.",
+    "hasta la primera respuesta fiable."
+  ],
+  "Depois — medir o sinal, vigiar o dinheiro": [
+    "After—measuring the signal, monitoring revenue",
+    "Después: medir la señal y vigilar el dinero"
+  ],
+  "Mesma clínica, mesmo ritmo. Meta: taxa de resposta de 20% para 30%, sem piorar a conversão. Quantidade que prova: 300 por versão.": [
+    "Same clinic, same pace. Target: reply rate from 20% to 30%, without worsening conversion. Required sample: 300 per version.",
+    "La misma clínica, el mismo ritmo. Meta: tasa de respuesta del 20 % al 30 %, sin empeorar la conversión. Cantidad necesaria: 300 por versión."
+  ],
+  "Saldo:": [
+    "Takeaway:",
+    "Balance:"
+  ],
+  "48 semanas a menos para a primeira resposta confiável — sem tirar o dinheiro de vista, só do lugar de alvo.": [
+    "48 fewer weeks to a reliable first answer—revenue stays in view, just no longer as the target.",
+    "48 semanas menos para obtener una primera respuesta fiable: el dinero sigue vigilado, pero deja de ser la meta."
+  ],
+  "\"Amostra insuficiente\" é a resposta mais comum — e tem que ser aceitável": [
+    "“Insufficient sample” is the most common answer—and it must be acceptable",
+    "«Muestra insuficiente» es la respuesta más habitual y hay que aceptarla"
+  ],
+  "O Avaliador, o assistente que julga o teste, só sabe dar três respostas:": [
+    "The Evaluator, the assistant that judges the test, can give only three answers:",
+    "El Evaluador, el asistente que juzga la prueba, solo puede dar tres respuestas:"
+  ],
+  "B ganhou com margem": [
+    "B won by a margin",
+    "B ganó con margen"
+  ],
+  ",": [
+    ",",
+    ","
+  ],
+  "A segue": [
+    "A stays",
+    "A sigue"
+  ],
+  "ou": [
+    "or",
+    "o"
+  ],
+  "amostra insuficiente — continue o teste": [
+    "insufficient sample—continue the test",
+    "muestra insuficiente: continúa la prueba"
+  ],
+  ". Se o número de execuções ainda não chegou à quantidade que prova, a resposta é a terceira. Sempre. Não existe \"mas está ganhando\".": [
+    ". If the number of runs has not reached the required sample size, the answer is the third one. Always. There is no “but it is winning.”",
+    ". Si la cantidad de ejecuciones aún no alcanza el tamaño de muestra necesario, la respuesta siempre es la tercera. No existe «pero va ganando»."
+  ],
+  "Parar cedo porque está ganhando é a forma mais comum de virar regra uma coisa que era ruído. A tabela do passo anterior diz quando o teste termina; a vontade de ver o resultado, não. A única parada antecipada permitida é por vigiado caindo — aí o teste para porque está fazendo estrago, não porque está indo bem.": [
+    "Stopping early because it is winning is the most common way to turn noise into a rule. The previous step’s table says when a test ends—not impatience to see the result. The only allowed early stop is a falling guardrail: the test stops because it is causing harm, not because it is going well.",
+    "Detenerse antes porque va ganando es la forma más común de convertir ruido en regla. La tabla anterior indica cuándo termina la prueba; las ganas de ver el resultado, no. Solo se permite detenerla antes si cae un indicador: se para porque está causando daño, no porque vaya bien."
+  ],
+  "No caso real da clínica de estética que este curso acompanha, o primeiro ciclo quase começou errado: o Otimizador esperava um efeito pequeno, e o Experimentador avisou que, com aquela expectativa, o teste levaria 40 semanas. A dona redimensionou o teste pelo alvo que estava na ficha (20% para 30%): 300 propostas por versão. O teste passou a caber no calendário antes de mandar a primeira mensagem.": [
+    "In the real beauty-clinic case followed by this course, the first cycle nearly started on the wrong foot: the Optimizer expected a small effect, and the Experimenter warned that the test would take 40 weeks. The owner resized it around the target on the worksheet (20% to 30%): 300 proposals per version. The test fit the calendar before the first message was sent.",
+    "En el caso real de la clínica estética que acompaña este curso, el primer ciclo casi empezó mal: el Optimizador esperaba un efecto pequeño y el Experimentador avisó que la prueba tomaría 40 semanas. La dueña la dimensionó según la meta de la ficha (del 20 % al 30 %): 300 propuestas por versión. La prueba cupo en el calendario antes de enviar el primer mensaje."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Semana 5 de um teste de 12 semanas no corretor: a mensagem B está com 31% de agendamento contra 22% da A, com 140 leads de cada lado. A quantidade que prova é 300 por versão. O que fazer?": [
+    "Week 5 of a 12-week test for the real estate agent: message B has 31% booked visits versus 22% for A, with 140 leads per side. The required sample is 300 per version. What should you do?",
+    "Semana 5 de una prueba de 12 semanas del agente inmobiliario: el mensaje B tiene un 31 % de reservas frente al 22 % de A, con 140 contactos por grupo. La cantidad necesaria es 300 por versión. ¿Qué hacer?"
+  ],
+  "Promover B — 9 pontos de vantagem é muito": [
+    "Promote B—9 points is a big advantage",
+    "Promover B: 9 puntos de ventaja es mucho"
+  ],
+  "Continuar até 300 por versão — a resposta hoje é \"amostra insuficiente\"": [
+    "Continue until 300 per version—the answer today is “insufficient sample”",
+    "Continuar hasta 300 por versión: hoy la respuesta es «muestra insuficiente»"
+  ],
+  "Parar e trocar a hipótese por uma mais forte": [
+    "Stop and replace the hypothesis with a stronger one",
+    "Detenerse y cambiar la hipótesis por otra más fuerte"
+  ],
+  "Fatiar exige trinta por fatia": [
+    "Segmenting requires thirty per segment",
+    "Segmentar exige treinta por segmento"
+  ],
+  "Depois que o loop conta, o Crítico — o assistente que diz o que funcionou e o que falhou — vai querer fatiar: por tipo de cliente, por canal, por dia da semana. Toda fatia obedece à mesma lei do número pequeno. \"Terça converte mais\" com 12 propostas não existe. O Crítico só pode chamar algo de padrão com pelo menos 30 execuções na fatia.": [
+    "After the loop counts, the Critic—the assistant that says what worked and failed—will want to segment by customer type, channel, or day of the week. Every segment obeys the same small-sample rule. “Tuesdays convert better” based on 12 proposals is not a pattern. The Critic can call something a pattern only with at least 30 runs in that segment.",
+    "Después de contar, el Crítico —el asistente que identifica qué funcionó y qué falló— querrá segmentar por tipo de cliente, canal o día de la semana. Cada segmento obedece la misma regla de pocos datos. «Los martes convierten más», con 12 propuestas, no es un patrón. El Crítico solo puede identificar un patrón con al menos 30 ejecuciones en el segmento."
+  ],
+  "Por isso toda afirmação dele sai com um rótulo de força.": [
+    "That is why every claim it makes has a strength label.",
+    "Por eso cada afirmación suya lleva una etiqueta de fuerza."
+  ],
+  "Forte": [
+    "Strong",
+    "Sólida"
+  ],
+  ": 90 ou mais execuções — vira hipótese prioritária.": [
+    ": 90 or more runs—becomes a priority hypothesis.",
+    " : 90 ejecuciones o más: se convierte en una hipótesis prioritaria."
+  ],
+  "Moderada": [
+    "Moderate",
+    "Moderada"
+  ],
+  ": de 30 a 89 — vira hipótese.": [
+    ": 30 to 89—becomes a hypothesis.",
+    " : de 30 a 89: se convierte en hipótesis."
+  ],
+  "Fraca": [
+    "Weak",
+    "Débil"
+  ],
+  ": menos de 30 — vai para a memória como \"observado, não testado\", e volta a ser olhada quando o número crescer. Nada se perde; nada vira regra cedo demais.": [
+    ": fewer than 30—goes into memory as “observed, untested” and is reviewed when the sample grows. Nothing is lost; nothing becomes a rule too early.",
+    " : menos de 30: pasa a la memoria como «observado, no probado» y se revisa cuando aumenten los datos. Nada se pierde ni se convierte en regla antes de tiempo."
+  ],
+  "Na clínica, o Crítico notou que clientes de procedimento facial respondiam mais que clientes de procedimento corporal. Eram 14 de um lado e 11 do outro. Rótulo: fraca. A observação ficou guardada, e três meses depois, com 60 de cada, virou uma hipótese moderada para testar. Se tivesse virado regra no primeiro mês, teria sido uma regra sobre 25 pessoas.": [
+    "At the clinic, the Critic noticed that facial-treatment customers replied more often than body-treatment customers: 14 on one side and 11 on the other. Label: weak. The observation was stored; three months later, with 60 on each side, it became a moderate hypothesis to test. If it had become a rule in the first month, it would have been a rule based on 25 people.",
+    "En la clínica, el Crítico observó que respondían más los clientes de tratamientos faciales que los de tratamientos corporales: 14 frente a 11. Etiqueta: débil. La observación quedó guardada y, tres meses después, con 60 en cada grupo, se convirtió en una hipótesis moderada para probar. Si se hubiera vuelto regla el primer mes, habría sido una regla basada en 25 personas."
+  ],
+  "Doze propostas não dizem nada. Trezentas começam a falar.": [
+    "Twelve proposals say nothing. Three hundred start to speak.",
+    "Doce propuestas no dicen nada. Trescientas empiezan a hablar."
+  ],
+  "Escolha a métrica que dá para provar": [
+    "Choose the metric you can prove",
+    "Elige la métrica que puedes demostrar"
+  ],
+  "Para cada negócio abaixo, escolha a métrica realista, diga quantas execuções por versão o teste precisa (use a tabela do passo 02) e quantas semanas leva no ritmo dado. ~10 min. É análise porque um teste real leva semanas — aqui você faz a conta que o Experimentador faria, em minutos.": [
+    "For each business below, choose a realistic metric, state the number of runs per version (use the table in step 02), and calculate how many weeks it takes at the stated pace. About 10 minutes. This is analysis: a real test takes weeks, but here you do the Experimenter’s calculation in minutes.",
+    "Para cada negocio, elige una métrica realista, indica cuántas ejecuciones necesita cada versión (usa la tabla del paso 02) y cuántas semanas tomará al ritmo indicado. Unos 10 minutos. Es un análisis: una prueba real lleva semanas; aquí haces en minutos el cálculo del Experimentador."
+  ],
+  "Nada muda no seu negócio até você aprovar: você está só fazendo contas num papel. Se o seu número não bater com o gabarito, veja se você leu a linha certa da tabela — o erro mais comum é olhar \"total\" em vez de \"por versão\".": [
+    "Nothing in your business changes until you approve it: you are only doing calculations on paper. If your number differs from the key, check that you read the right table row—the most common mistake is using “total” instead of “per version.”",
+    "Nada cambia en tu negocio hasta que lo apruebes: solo haces cálculos en papel. Si tu cifra no coincide con la clave, comprueba que leíste la fila correcta; el error más común es mirar «total» en vez de «por versión»."
+  ],
+  "Caso 1 — Renata, clínica de estética.": [
+    "Case 1—Renata, beauty clinic.",
+    "Caso 1: Renata, clínica estética."
+  ],
+  "50 propostas por semana. Hoje: 20% respondem, 3% fecham. Ela quer \"vender mais.\"": [
+    "50 proposals per week. Today: 20% reply, 3% convert. She wants to “sell more.”",
+    "50 propuestas por semana. Hoy: responde el 20 % y cierra el 3 %. Quiere «vender más»."
+  ],
+  "Caso 2 — Marcos, corretor.": [
+    "Case 2—Marcos, real estate agent.",
+    "Caso 2: Marcos, agente inmobiliario."
+  ],
+  "200 leads por semana vindos do portal. Hoje 20% agendam visita; ele acha que a mensagem nova leva a 35%.": [
+    "200 portal leads per week. Today, 20% book a visit; he thinks the new message will raise it to 35%.",
+    "200 contactos semanales del portal. Hoy, el 20 % reserva una visita; cree que el mensaje nuevo lo elevará al 35 %."
+  ],
+  "Caso 3 — Paula, suporte.": [
+    "Case 3—Paula, support.",
+    "Caso 3: Paula, soporte."
+  ],
+  "400 chamados por semana. Hoje 50% são resolvidos no primeiro contato; a meta é 65%.": [
+    "400 tickets per week. Today, 50% are resolved on first contact; the target is 65%.",
+    "400 tickets por semana. Hoy, el 50 % se resuelve en el primer contacto; la meta es el 65 %."
+  ],
+  "Caso 1: escrevi a métrica, o \"por versão\" e as semanas.": [
+    "Case 1: I wrote the metric, sample per version, and number of weeks.",
+    "Caso 1: anoté la métrica, la cantidad por versión y las semanas."
+  ],
+  "Caso 2: escrevi a métrica, o \"por versão\" e as semanas.": [
+    "Case 2: I wrote the metric, sample per version, and number of weeks.",
+    "Caso 2: anoté la métrica, la cantidad por versión y las semanas."
+  ],
+  "Caso 3: escrevi a métrica, o \"por versão\" e as semanas.": [
+    "Case 3: I wrote the metric, sample per version, and number of weeks.",
+    "Caso 3: anoté la métrica, la cantidad por versión y las semanas."
+  ],
+  "Comparei com o gabarito e entendi onde diferiu.": [
+    "I compared my work with the answer key and understood the difference.",
+    "Comparé con la clave y entendí dónde difería."
+  ],
+  "Gabarito comentado": [
+    "Annotated answer key",
+    "Clave comentada"
+  ],
+  "Caso 1.": [
+    "Case 1.",
+    "Caso 1."
+  ],
+  "\"Vender mais\" é dinheiro (3% → 5%): 1.500 por versão, 60 semanas a 50/semana. Inviável. Métrica realista: taxa de resposta 20% → 30%, com a conversão como vigiada. 300 por versão, 600 no total, 12 semanas.": [
+    "“Sell more” is a revenue metric (3% → 5%): 1,500 per version, 60 weeks at 50/week. Not feasible. A realistic metric is reply rate, 20% → 30%, with conversion as a guardrail: 300 per version, 600 total, 12 weeks.",
+    "«Vender más» es una métrica de dinero (3 % → 5 %): 1.500 por versión, 60 semanas a 50 por semana. No es viable. Una métrica realista es la tasa de respuesta, del 20 % al 30 %, con la conversión como indicador: 300 por versión, 600 en total, 12 semanas."
+  ],
+  "Caso 2.": [
+    "Case 2.",
+    "Caso 2."
+  ],
+  "Agendamento é sinal, e ele já tem volume: 20% → 35% pede 140 por versão, 280 no total. A 200/semana: uma semana e meia. Se o efeito real for menor que ele imagina (só 30%), a conta sobe para 300 por versão e 3 semanas — o Experimentador desenha pelo alvo da ficha, não pela esperança.": [
+    "Booking is a signal, and he has enough volume: 20% → 35% requires 140 per version, 280 total. At 200/week: a week and a half. If the real effect is smaller than he expects (only 30%), the requirement rises to 300 per version and 3 weeks—the Experimenter designs for the worksheet target, not for hope.",
+    "La reserva es una señal y ya tiene volumen: del 20 % al 35 % requiere 140 por versión, 280 en total. A 200 por semana: una semana y media. Si el efecto real es menor de lo que espera (solo 30 %), hacen falta 300 por versión y 3 semanas. El Experimentador diseña según la meta de la ficha, no según la esperanza."
+  ],
+  "Caso 3.": [
+    "Case 3.",
+    "Caso 3."
+  ],
+  "Resolvido no primeiro contato é sinal; 50% → 65% pede 170 por versão, 340 no total. A 400/semana: menos de uma semana. Vigiados: reabertura em 7 dias e satisfação, senão \"resolvido\" vira \"encerrado\".": [
+    "Resolved on first contact is a signal; 50% → 65% requires 170 per version, 340 total. At 400/week: less than a week. Guardrails: 7-day reopenings and satisfaction, or “resolved” becomes “closed.”",
+    "Resuelto en el primer contacto es una señal: del 50 % al 65 % requiere 170 por versión, 340 en total. A 400 por semana: menos de una semana. Indicadores: reaperturas a 7 días y satisfacción; si no, «resuelto» se convierte en «cerrado»."
+  ],
+  "Você acabou de fazer a conta que separa sorte de padrão — para três ritmos diferentes de negócio.": [
+    "You have just done the calculation that separates luck from a pattern—for three different business paces.",
+    "Acabas de hacer el cálculo que distingue el azar de un patrón para tres ritmos de negocio distintos."
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "Com número pequeno, o acaso produz \"vitórias\" o tempo todo — oito caras em doze moedas acontece uma vez em cinco.": [
+    "With a small sample, chance produces “wins” all the time—eight heads in twelve coin flips happens once in five tries.",
+    "Con pocos datos, el azar produce «victorias» continuamente: ocho caras en doce lanzamientos ocurre una de cada cinco veces."
+  ],
+  "A quantidade que prova é uma conta que o Experimentador faz e mostra antes: 3% para 5% custa 1.500 por versão; 20% para 30% custa 300.": [
+    "The required sample size is calculated and shown in advance by the Experimenter: 3% to 5% costs 1,500 per version; 20% to 30% costs 300.",
+    "El Experimentador calcula y muestra de antemano la cantidad necesaria: del 3 % al 5 % cuesta 1.500 por versión; del 20 % al 30 %, 300."
+  ],
+  "Quando o dinheiro é lento demais para testar, o loop testa o sinal mais rápido ligado a ele e vigia o dinheiro como cerca.": [
+    "When revenue takes too long to test, the loop tests a faster signal linked to it and monitors revenue as a guardrail.",
+    "Cuando el dinero tarda demasiado en medirse, el ciclo prueba una señal más rápida relacionada y vigila el dinero como indicador."
+  ],
+  "Antes da linha de chegada só existe \"amostra insuficiente\"; a única parada antecipada é por vigiado caindo, nunca por vantagem.": [
+    "Before the finish line, the only answer is “insufficient sample”; the only early stop is a falling guardrail, never an advantage.",
+    "Antes de la meta, solo existe «muestra insuficiente»; la única parada anticipada es por la caída de un indicador, nunca por ir ganando."
+  ],
+  "Fatiar por segmento pede 30 por fatia; abaixo disso a observação fica guardada como \"observado, não testado\".": [
+    "Segmenting requires 30 per segment; below that, the observation stays stored as “observed, untested.”",
+    "Segmentar requiere 30 por segmento; por debajo, la observación queda guardada como «observado, no probado»."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de conseguir dizer, com a tabela na mão, se um teste cabe no calendário do seu negócio.": [
+    "You can now use the table to say whether a test fits your business calendar.",
+    "Ahora puedes usar la tabla para saber si una prueba cabe en el calendario de tu negocio."
+  ],
+  "Nos próximos 15 minutos: conte quantas execuções do seu processo acontecem por semana (propostas, leads, chamados) e ache na tabela a linha da sua meta. Escreva \"N por versão, X semanas\" ao lado da meta que você mandou para o WhatsApp na aula passada.": [
+    "Over the next 15 minutes: count how many runs your process gets per week (proposals, leads, tickets) and find your target’s row in the table. Write “N per version, X weeks” beside the target you sent yourself on WhatsApp in the previous lesson.",
+    "Durante los próximos 15 minutos: cuenta cuántas ejecuciones tiene tu proceso por semana (propuestas, contactos, tickets) y busca en la tabla la fila de tu meta. Escribe «N por versión, X semanas» junto a la meta que te enviaste por WhatsApp en la clase anterior."
+  ],
+  "Na próxima aula você aprende a medir o que não depende do cliente responder: a lista de conferência de sim ou não, que gira em minutos — e é onde o loop trabalha toda semana.": [
+    "In the next lesson, you will learn to measure what does not depend on a customer reply: the yes/no checklist, which runs in minutes—and is where the loop works every week.",
+    "En la próxima clase aprenderás a medir algo que no depende de que responda el cliente: la lista de comprobación de sí o no, que se completa en minutos y donde trabaja el ciclo cada semana."
+  ],
+  "← aula anterior": [
+    "← previous lesson",
+    "← clase anterior"
+  ],
+  "próxima aula →": [
+    "next lesson →",
+    "siguiente clase →"
+  ],
+  "Aula 2 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 2 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 2 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "a 50 execuções por semana": [
+    "at 50 runs per week",
+    "a 50 ejecuciones por semana"
+  ],
+  "Quantas execuções por versão um teste A contra B precisa para que a diferença observada não seja explicável por sorte (95% de confiança, 80% de poder). O Experimentador calcula e mostra antes de começar.": [
+    "How many runs per version an A/B test needs so the observed difference is unlikely to be due to chance (95% confidence, 80% power). The Experimenter calculates and shows this before the test starts.",
+    "Cuántas ejecuciones por versión necesita una prueba A/B para que la diferencia observada difícilmente se deba al azar (95 % de confianza, 80 % de potencia). El Experimentador lo calcula y lo muestra antes de empezar."
+  ],
+  "Está ganhando com 140 — e 140 é menos da metade da quantidade que prova. Parar aqui é exatamente 'promover ruído': a vantagem pode desaparecer com os próximos 160 leads, e você nunca vai saber.": [
+    "You are ahead with 140—but 140 is less than half the sample needed for proof. Stopping here is “promoting noise”: the advantage may disappear over the next 160 leads, and you will never know.",
+    "Vas ganando con 140, pero 140 es menos de la mitad de la muestra necesaria para demostrarlo. Detenerse aquí es «promover ruido»: la ventaja puede desaparecer en los próximos 160 contactos y nunca lo sabrás."
+  ],
+  "Correto. N menor que o mínimo é 'amostra insuficiente', sem 'mas está ganhando'. O teste segue até 300 por versão. A única exceção seria um vigiado caindo — e aí o teste para por estrago, não por vantagem.": [
+    "Correct. N below the minimum means “insufficient sample,” with no “but it is winning.” The test continues to 300 per version. The only exception is a falling guardrail—and then the test stops because of harm, not an advantage.",
+    "Correcto. Un N inferior al mínimo significa «muestra insuficiente», sin «pero va ganando». La prueba continúa hasta 300 por versión. La única excepción es que empeore un indicador; entonces se detiene por el daño, no por la ventaja."
+  ],
+  "Trocar a hipótese no meio joga fora 280 leads de evidência. Não há motivo para parar: nenhum vigiado caiu, e o teste está dentro do prazo desenhado.": [
+    "Changing the hypothesis midway throws away evidence from 280 leads. There is no reason to stop: no guardrail fell, and the test is within its planned timeline.",
+    "Cambiar la hipótesis a mitad de camino desperdicia la evidencia de 280 contactos. No hay razón para detenerse: ningún indicador empeoró y la prueba sigue dentro del plazo previsto."
+  ],
+  "<b>Fig. 2</b> Semanas por teste a 50 execuções/semana. Barra longa: 3% → 5%. Barra curta: 20% → 30%. Mesma empresa, mesma equipe.": [
+    "<b>Fig. 2</b> Weeks per test at 50 runs/week. Long bar: 3% → 5%. Short bar: 20% → 30%. Same company, same team.",
+    "<b>Fig. 2</b> Semanas por prueba a 50 ejecuciones/semana. Barra larga: 3 % → 5 %. Barra corta: 20 % → 30 %. La misma empresa y el mismo equipo."
+  ],
+  "<b>Fig. 5</b> A escada de força: abaixo de 30 a observação fica guardada; de 30 vira hipótese; de 90 vira prioridade.": [
+    "<b>Fig. 5</b> The evidence ladder: below 30, an observation is stored; at 30, it becomes a hypothesis; at 90, it becomes a priority.",
+    "<b>Fig. 5</b> La escala de evidencia: por debajo de 30, la observación se guarda; a partir de 30, se convierte en hipótesis; con 90, pasa a ser prioritaria."
+  ],
+  "Aplicação: sua clínica manda 50 propostas por semana e você quer provar que uma mensagem nova leva a resposta de 20% para 30%. Quantas propostas por versão e quantas semanas?": [
+    "Application: your clinic sends 50 proposals a week and you want to prove a new message raises replies from 20% to 30%. How many proposals per version, and how many weeks?",
+    "Aplicación: tu clínica envía 50 propuestas por semana y quieres demostrar que un mensaje nuevo aumenta las respuestas del 20 % al 30 %. ¿Cuántas propuestas por versión y cuántas semanas?"
+  ],
+  "~300 por versão (600 no total). A 50 por semana, 12 semanas.": [
+    "About 300 per version (600 total). At 50 per week, 12 weeks.",
+    "Unas 300 por versión (600 en total). A 50 por semana, 12 semanas."
+  ],
+  "Diagnóstico: o corretor testou uma mensagem em 12 leads, teve 4 agendamentos contra 2 da antiga, e a adotou. Três semanas depois a taxa voltou ao normal. O que aconteceu?": [
+    "Diagnosis: an agent tested a message on 12 leads, got 4 bookings versus 2 with the old one, and adopted it. Three weeks later, the rate returned to normal. What happened?",
+    "Diagnóstico: un agente probó un mensaje con 12 contactos, obtuvo 4 citas frente a 2 con el anterior y lo adoptó. Tres semanas después, la tasa volvió a la normalidad. ¿Qué pasó?"
+  ],
+  "Sorte com número pequeno: 4 contra 2 em 12 é o que o acaso produz. A quantidade que prova para esse salto era ~140 por versão.": [
+    "Small-sample luck: 4 versus 2 out of 12 is what chance can produce. The sample size needed to prove that increase was about 140 per version.",
+    "Azar con una muestra pequeña: 4 frente a 2 de 12 es algo que puede producir el azar. Para demostrar ese aumento hacían falta unas 140 por versión."
+  ],
+  "Decisão: semana 6 de um teste de 12, B na frente com 150 execuções de cada lado, mínimo 300, nenhum vigiado caiu. Promove, continua ou para?": [
+    "Decision: week 6 of a 12-week test; B is ahead with 150 runs per side, the minimum is 300, and no guardrail fell. Promote, continue, or stop?",
+    "Decisión: semana 6 de una prueba de 12; B va por delante con 150 ejecuciones por grupo, el mínimo es 300 y ningún indicador empeoró. ¿Promueves, continúas o paras?"
+  ],
+  "Continua. N abaixo do mínimo é 'amostra insuficiente', sem 'mas está ganhando'. Só um vigiado caindo justificaria parar.": [
+    "Continue. N below the minimum means “insufficient sample,” not “but it is winning.” Only a falling guardrail would justify stopping.",
+    "Continúa. Un N inferior al mínimo significa «muestra insuficiente», no «pero va ganando». Solo un indicador que empeore justificaría detenerse."
+  ],
+  "Contraste: qual a diferença entre uma métrica de sinal e uma de dinheiro, e quem faz o que no teste?": [
+    "Contrast: what is the difference between a signal metric and a revenue metric, and what role does each play in the test?",
+    "Contraste: ¿qué diferencia hay entre una métrica de señal y una de dinero, y qué función cumple cada una en la prueba?"
+  ],
+  "Sinal responde em dias (resposta, agendamento) e é o alvo do teste; dinheiro responde em meses (conversão, margem) e fica como vigiado enquanto não há volume.": [
+    "A signal responds in days (replies, bookings) and is the test target; revenue takes months (conversion, margin) and stays as a guardrail until there is enough volume.",
+    "Una señal se mide en días (respuestas, citas) y es el objetivo de la prueba; el dinero tarda meses (conversión, margen) y se vigila mientras no haya suficiente volumen."
+  ],
+  "O Crítico diz: 'clientes de procedimento facial respondem mais' com 14 contra 11. Que rótulo essa afirmação recebe e para onde ela vai?": [
+    "The Critic says “facial-treatment customers reply more,” based on 14 versus 11. What label does this claim get, and where does it go?",
+    "El Crítico dice que «los clientes de tratamientos faciales responden más», con 14 frente a 11. ¿Qué etiqueta recibe la afirmación y adónde va?"
+  ],
+  "Fraca (menos de 30 por fatia). Vai para a memória como 'observado, não testado' e é reexaminada quando o número crescer.": [
+    "Weak (fewer than 30 per segment). It goes into memory as “observed, not tested” and is revisited when the sample grows.",
+    "Débil (menos de 30 por segmento). Se guarda como «observado, no probado» y se revisa cuando aumente la muestra."
+  ],
+  "Sua meta é subir a conversão de 3% para 5% e você faz 50 execuções por semana. O que você muda antes de começar o teste?": [
+    "Your target is to raise conversion from 3% to 5%, and you get 50 runs a week. What do you change before starting the test?",
+    "Tu meta es subir la conversión del 3 % al 5 % y tienes 50 ejecuciones por semana. ¿Qué cambias antes de iniciar la prueba?"
+  ],
+  "A métrica: troca o dinheiro (60 semanas) por um sinal ligado a ele, como taxa de resposta 20% → 30% (12 semanas), e mantém a conversão como vigiada.": [
+    "The metric: replace revenue (60 weeks) with a related signal, such as reply rate 20% → 30% (12 weeks), and keep conversion as a guardrail.",
+    "La métrica: sustituye el dinero (60 semanas) por una señal vinculada, como la tasa de respuesta del 20 % → 30 % (12 semanas), y mantén la conversión como indicador vigilado."
+  ],
+  " 50 propostas por semana. Hoje: 20% respondem, 3% fecham. Ela quer \"vender mais\".": [
+    "50 proposals a week. Today, 20% reply and 3% buy. She wants to “sell more.”",
+    "50 propuestas por semana. Hoy responden el 20 % y compra el 3 %. Ella quiere «vender más»."
+  ],
+  "<b>Fig. 1</b> Dois resultados com 12 cada: 4 contra 2. As faixas claras mostram onde o número verdadeiro pode estar — e elas se sobrepõem quase inteiras.": [
+    "<b>Fig. 1</b> Two results with 12 each: 4 versus 2. The light bands show where the true number could be—and they overlap almost completely.",
+    "<b>Fig. 1</b> Dos resultados con 12 casos: 4 frente a 2. Las franjas claras muestran dónde podría estar la cifra real y se superponen casi por completo."
+  ],
+  "<b>Fig. 3</b> Três números em fila, do mais rápido ao mais lento. O teste roda no mais rápido que ainda liga ao dinheiro; o dinheiro vira cerca.": [
+    "<b>Fig. 3</b> Three metrics in order, from fastest to slowest. The test uses the fastest one still linked to revenue; revenue becomes a guardrail.",
+    "<b>Fig. 3</b> Tres cifras en fila, de la más rápida a la más lenta. La prueba usa la más rápida que aún se vincula con el dinero; el dinero queda como indicador."
+  ],
+  "<b>Fig. 4</b> O teste tem uma linha de chegada fixa (300). Antes dela, a única resposta é 'insuficiente' — mesmo com B na frente.": [
+    "<b>Fig. 4</b> The test has a fixed finish line (300). Before it, the only answer is “insufficient”—even when B is ahead.",
+    "<b>Fig. 4</b> La prueba tiene una meta fija (300). Antes de alcanzarla, la única respuesta es «insuficiente», aunque B vaya por delante."
+  ]
+}

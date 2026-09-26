@@ -1,4 +1,5 @@
 # 🔁 LOOP-R — Framework para Sistemas e Empresas Autoaperfeiçoáveis
+**🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
 > Não peça para a IA melhorar. Faça cada execução produzir evidência, cada evidência gerar uma hipótese, cada hipótese virar um experimento — e só o que for comprovado entrar na próxima versão.
 

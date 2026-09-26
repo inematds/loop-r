@@ -1,0 +1,522 @@
+{
+  "Trilha 02 · Aula 2 · O de Operar": [
+    "Track 02 · Lesson 2 · O for Operate",
+    "Ruta 02 · Clase 2 · O de Operar"
+  ],
+  "Não existe aprendizado": [
+    "No learning happens",
+    "No hay aprendizaje"
+  ],
+  "sem execução": [
+    "without execution",
+    "sin ejecución"
+  ],
+  "Ao fim desta aula você consegue escrever a versão atual do seu processo em até 6 linhas — o roteiro que é seguido hoje, do mesmo jeito, em toda execução — e reconhecer, num caso real, o que varia de uma vez para outra.": [
+    "By the end of this lesson, you’ll be able to write the current version of your process in up to 6 lines—the script followed today, the same way, in every execution—and recognize, in a real case, what varies from one time to the next.",
+    "Al terminar esta clase, podrás escribir la versión actual de tu proceso en un máximo de 6 líneas —el guion que se sigue hoy, de la misma manera, en cada ejecución— y reconocer, en un caso real, qué varía de una ocasión a otra."
+  ],
+  "Todo mundo executa. O problema é que cada execução é feita \"do jeito que deu\": uma proposta mais longa, outra mais curta, uma com desconto, outra sem. No fim do mês existem 200 propostas e nenhuma comparável com a outra. Sem uma versão atual escrita, a IA não tem o que melhorar — só tem o que repetir.": [
+    "Everyone executes. The problem is that each execution is done “however it works out”: one proposal is longer, another shorter, one includes a discount, another doesn’t. At the end of the month there are 200 proposals and none can be compared with another. Without a written current version, AI has nothing to improve—only something to repeat.",
+    "Todo el mundo ejecuta. El problema es que cada ejecución se hace «como salga»: una propuesta es más larga, otra más corta, una incluye descuento y otra no. Al final del mes hay 200 propuestas y ninguna se puede comparar con otra. Sin una versión actual escrita, la IA no tiene nada que mejorar, solo algo que repetir."
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "roteiro · versão 1": [
+    "script · version 1",
+    "guion · versión 1"
+  ],
+  "1. saudação pelo nome": [
+    "1. greet them by name",
+    "1. saludar por su nombre"
+  ],
+  "2. o que ela procura": [
+    "2. what they’re looking for",
+    "2. qué busca"
+  ],
+  "3. imóvel que encaixa": [
+    "3. a suitable property",
+    "3. inmueble adecuado"
+  ],
+  "4. uma pergunta no fim": [
+    "4. one question at the end",
+    "4. una pregunta al final"
+  ],
+  "O loop só aprende com o que foi feito": [
+    "The loop only learns from what was done",
+    "El ciclo solo aprende de lo que se hizo"
+  ],
+  "A segunda letra do LOOP-R é": [
+    "The second letter in LOOP-R is",
+    "La segunda letra de LOOP-R es"
+  ],
+  "Operar": [
+    "Operate",
+    "Operar"
+  ],
+  ": executar o trabalho de verdade. Parece óbvio, mas é onde muita gente tenta pular. Não dá para melhorar uma proposta que nunca foi enviada, nem um atendimento que só existe no papel. Cada execução real é uma chance de aprender — e cada execução que não acontece é uma chance perdida.": [
+    ": do the actual work. It sounds obvious, but this is where many people try to skip ahead. You can’t improve a proposal that was never sent or a support exchange that exists only on paper. Every real execution is a chance to learn—and every execution that never happens is a missed chance.",
+    ": hacer el trabajo real. Parece obvio, pero aquí es donde mucha gente intenta saltarse pasos. No se puede mejorar una propuesta que nunca se envió ni una atención que solo existe en el papel. Cada ejecución real es una oportunidad para aprender, y cada ejecución que no ocurre es una oportunidad perdida."
+  ],
+  "Marcos, o corretor, respondia os leads do portal de cabeça. Segunda-feira, com tempo, escrevia três parágrafos e mandava foto do imóvel. Quinta, no trânsito, mandava \"oi, tem interesse?\". Ele executou 80 vezes no mês — mas foram 80 execuções de 80 coisas diferentes. Quando perguntou à IA \"como melhorar minha resposta?\", a IA não tinha como responder: qual delas?": [
+    "Marcos, the real estate agent, replied to portal leads from memory. On Monday, with time to spare, he wrote three paragraphs and sent a property photo. On Thursday, in traffic, he sent “hi, interested?”. He executed 80 times that month—but they were 80 executions of 80 different things. When he asked AI “how can I improve my reply?”, AI had no way to answer: which one?",
+    "Marcos, el agente inmobiliario, respondía de memoria a los contactos del portal. El lunes, con tiempo, escribía tres párrafos y enviaba una foto del inmueble. El jueves, en medio del tráfico, mandaba «hola, ¿te interesa?». Ejecutó 80 veces ese mes, pero fueron 80 ejecuciones de 80 cosas distintas. Cuando preguntó a la IA «¿cómo mejoro mi respuesta?», la IA no podía contestar: ¿cuál de todas?"
+  ],
+  "É como a diferença entre uma receita e \"cozinhar como a vó\". A vó acerta, mas ninguém consegue repetir nem melhorar, porque cada dia a mão pesa diferente. A receita escrita pode estar errada — e é justamente por isso que pode ser corrigida.": [
+    "It’s like the difference between a recipe and “cooking like Grandma.” Grandma gets it right, but nobody can repeat or improve it, because her hand weighs things differently every day. A written recipe may be wrong—and that’s exactly why it can be corrected.",
+    "Es como la diferencia entre una receta y «cocinar como la abuela». La abuela acierta, pero nadie puede repetir ni mejorar el resultado, porque cada día calcula las cantidades de otra manera. Una receta escrita puede estar mal, y precisamente por eso se puede corregir."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leída"
+  ],
+  "A versão atual precisa estar escrita": [
+    "The current version needs to be written down",
+    "La versión actual debe estar por escrito"
+  ],
+  "Antes do primeiro ciclo, o processo ganha uma": [
+    "Before the first cycle, the process gets a",
+    "Antes del primer ciclo, el proceso necesita una"
+  ],
+  "versão atual": [
+    "current version",
+    "versión actual"
+  ],
+  ": um roteiro curto, escrito, que descreve como a execução é feita hoje. Não precisa ser bom. Precisa ser": [
+    ": a short written script that describes how the work is done today. It doesn’t need to be good. It needs to be",
+    ": un guion breve y escrito que describa cómo se hace el trabajo hoy. No hace falta que sea bueno. Debe ser"
+  ],
+  "o mesmo": [
+    "the same",
+    "el mismo"
+  ],
+  "em toda execução, para que 200 propostas virem 200 casos comparáveis — e não 200 opiniões.": [
+    "in every execution, so 200 proposals become 200 comparable cases—not 200 opinions.",
+    "en cada ejecución, para que 200 propuestas se conviertan en 200 casos comparables, no en 200 opiniones."
+  ],
+  "A versão 1 da clínica da Dra. Renata tinha cinco blocos: saudação pelo nome e agradecimento pela visita; resumo do que foi observado na avaliação, em duas ou três frases; explicação do pacote indicado; valor e formas de pagamento; encerramento cordial, \"à disposição para dúvidas\". Cabe em seis linhas. Foi esse roteiro que gerou as primeiras 200 propostas registradas — e foi sobre ele que apareceu o primeiro achado: 166 das 200 não tiveram resposta em 48 horas.": [
+    "Dr. Renata’s clinic version 1 had five blocks: greeting by name and thanking the client for the visit; a summary of what was observed during the assessment, in two or three sentences; an explanation of the recommended package; price and payment options; a friendly close, “available for any questions.” It fits in six lines. That script generated the first 200 logged proposals—and revealed the first finding: 166 out of 200 got no reply within 48 hours.",
+    "La versión 1 de la clínica de la Dra. Renata tenía cinco partes: saludo por el nombre y agradecimiento por la visita; resumen de lo observado durante la evaluación, en dos o tres frases; explicación del paquete recomendado; precio y formas de pago; despedida cordial, «quedo a tu disposición para cualquier consulta». Cabe en seis líneas. Ese guion generó las primeras 200 propuestas registradas y permitió el primer hallazgo: 166 de las 200 no recibieron respuesta en 48 horas."
+  ],
+  "Antes": [
+    "Before",
+    "Antes"
+  ],
+  "Cada proposta escrita de cabeça, do jeito que deu naquele dia. Ao fim do mês: 200 mensagens, nenhuma parecida com a outra, nenhuma comparável.": [
+    "Every proposal written from memory, however it came out that day. At month’s end: 200 messages, none alike, none comparable.",
+    "Cada propuesta se redactaba de memoria, como saliera ese día. Al final del mes: 200 mensajes, ninguno parecido a otro y ninguno comparable."
+  ],
+  "Depois": [
+    "After",
+    "Después"
+  ],
+  "Roteiro versão 1 escrito em 6 linhas, seguido em toda proposta. Ao fim de 4 semanas: 200 propostas com a mesma estrutura, registradas.": [
+    "Written version 1 script in 6 lines, followed for every proposal. After 4 weeks: 200 proposals with the same structure, all logged.",
+    "Guion de la versión 1 escrito en 6 líneas y seguido en cada propuesta. Al cabo de 4 semanas: 200 propuestas con la misma estructura y registradas."
+  ],
+  "Saldo:": [
+    "Result:",
+    "Resultado:"
+  ],
+  "200 casos comparáveis em 4 semanas": [
+    "200 comparable cases in 4 weeks",
+    "200 casos comparables en 4 semanas"
+  ],
+  "— o suficiente para o primeiro achado (166 sem resposta). Sem o roteiro escrito, o mesmo mês produz zero.": [
+    "—enough for the first finding (166 without a reply). Without the written script, the same month produces zero.",
+    "—suficientes para el primer hallazgo (166 sin respuesta). Sin el guion escrito, ese mismo mes produce cero."
+  ],
+  "Executar do mesmo jeito é o que torna as coisas comparáveis": [
+    "Doing it the same way is what makes things comparable",
+    "Hacerlo siempre igual permite comparar"
+  ],
+  "Seguir a versão atual à risca parece rígido. É o contrário: é o que permite mudar com segurança depois. Se duas execuções diferem em cinco coisas ao mesmo tempo, e uma foi melhor, você não sabe qual das cinco fez diferença. Se diferem em": [
+    "Following the current version to the letter may seem rigid. It’s the opposite: it’s what lets you make changes safely later. If two executions differ in five things at once and one does better, you don’t know which of the five made the difference. If they differ in",
+    "Seguir al pie de la letra la versión actual puede parecer rígido. Es lo contrario: permite cambiar las cosas con seguridad más adelante. Si dos ejecuciones difieren en cinco aspectos a la vez y una funciona mejor, no sabrás cuál marcó la diferencia. Si difieren en"
+  ],
+  "uma": [
+    "one",
+    "una"
+  ],
+  "coisa, você sabe. O roteiro fixo é o que deixa a próxima aula mudar uma coisa de cada vez.": [
+    "thing, you know. The fixed script is what lets the next lesson change one thing at a time.",
+    "cosa, sí lo sabrás. El guion fijo permite que en la próxima clase se cambie una sola cosa a la vez."
+  ],
+  "No suporte de Cláudio, dois atendentes respondiam o mesmo tipo de chamado de jeitos opostos: um mandava um passo a passo com imagens, o outro pedia acesso remoto de cara. Os números do mês diziam que 61% dos chamados eram resolvidos no primeiro contato. Mas 61% de quê? De uma mistura. Quando os dois passaram a seguir a mesma versão 1 (passo a passo primeiro, acesso remoto só se falhar), o número caiu para 58% — e pela primeira vez significou alguma coisa.": [
+    "At Cláudio’s support team, two agents replied to the same type of ticket in opposite ways: one sent step-by-step instructions with images, the other asked for remote access right away. The month’s numbers said 61% of tickets were resolved on first contact. But 61% of what? A mixture. When both agents started following the same version 1 (steps first, remote access only if that failed), the number fell to 58%—and for the first time it meant something.",
+    "En el equipo de soporte de Cláudio, dos agentes respondían de maneras opuestas al mismo tipo de consulta: uno enviaba instrucciones paso a paso con imágenes; el otro pedía acceso remoto de inmediato. Las cifras del mes decían que el 61 % se resolvía en el primer contacto. Pero ¿el 61 % de qué? De una mezcla. Cuando ambos empezaron a seguir la misma versión 1 (primero los pasos, acceso remoto solo si fallaban), la cifra bajó al 58 %, y por primera vez significaba algo."
+  ],
+  "Isso não significa que ninguém pode improvisar. Significa que improviso não entra na conta. Quem sai do roteiro anota \"fora do roteiro\" na linha daquela execução — e essa linha fica de fora da comparação.": [
+    "This doesn’t mean nobody can improvise. It means improvisation doesn’t count. Anyone who goes off script writes “off script” on that execution’s row—and that row stays out of the comparison.",
+    "Esto no significa que nadie pueda improvisar. Significa que la improvisación no cuenta. Quien se salga del guion anota «fuera del guion» en la fila de esa ejecución, y esa fila queda fuera de la comparación."
+  ],
+  "Teste-se": [
+    "Test yourself",
+    "Ponte a prueba"
+  ],
+  "Marcos seguiu o roteiro versão 1 em 70 leads e improvisou em 10. Na hora de comparar com a versão 2, o que ele faz com os 10?": [
+    "Marcos followed version 1 for 70 leads and improvised on 10. When comparing with version 2, what should he do with the 10?",
+    "Marcos siguió la versión 1 con 70 contactos e improvisó con 10. Al comparar con la versión 2, ¿qué hace con esos 10?"
+  ],
+  "conta os 80 juntos — execução é execução": [
+    "count all 80 together—an execution is an execution",
+    "contar los 80 juntos: toda ejecución cuenta"
+  ],
+  "apaga os 10 da planilha": [
+    "delete the 10 from the spreadsheet",
+    "borrar los 10 de la hoja de cálculo"
+  ],
+  "marca os 10 como \"fora do roteiro\" e compara com os 70": [
+    "mark the 10 “off script” and compare with the 70",
+    "marcar los 10 como «fuera del guion» y comparar los otros 70"
+  ],
+  "Quem executa não julga: o Executor": [
+    "The Executor: the person who executes doesn’t judge",
+    "El Executor: quien ejecuta no juzga"
+  ],
+  "No LOOP-R, quem executa é um": [
+    "In LOOP-R, the one who executes is a",
+    "En LOOP-R, quien ejecuta es un"
+  ],
+  "assistente com uma função só": [
+    "single-purpose assistant",
+    "asistente con una sola función"
+  ],
+  "chamado": [
+    "called",
+    "llamado"
+  ],
+  "Executor": [
+    "Executor",
+    "Executor"
+  ],
+  ". Ele recebe a versão atual e os dados daquele caso, produz o artefato (a proposta, a resposta ao lead, o texto do chamado) e registra uma linha. Só isso. Ele não opina se ficou bom, não sugere mudança, não \"melhora\" por conta própria.": [
+    ". It gets the current version and the case data, produces the artifact (proposal, reply to a lead, ticket response), and logs one row. That’s all. It doesn’t judge whether the result is good, suggest changes, or “improve” anything on its own.",
+    ". Recibe la versión actual y los datos del caso, produce el artefacto (la propuesta, la respuesta al contacto o el texto para la consulta) y registra una fila. Nada más. No opina sobre la calidad, no sugiere cambios ni «mejora» nada por su cuenta."
+  ],
+  "Para Marcos, o Executor é o assistente que recebe o roteiro versão 1 mais os dados do lead (nome, imóvel que ele clicou, bairro) e devolve a primeira resposta pronta para colar no WhatsApp. Se o roteiro pede \"uma pergunta no fim\", vai uma pergunta no fim — mesmo que naquele caso parecesse melhor mandar duas. A vontade de \"melhorar na hora\" é exatamente o que ele não faz, porque uma melhoria na hora é invisível: ninguém registrou, ninguém comparou.": [
+    "For Marcos, the Executor is the assistant that receives version 1 of the script plus the lead’s details (name, property clicked, neighborhood) and returns the first reply ready to paste into WhatsApp. If the script says “one question at the end,” it includes one question at the end—even if two might seem better in that case. The urge to “improve it on the fly” is exactly what it doesn’t do, because an on-the-fly improvement is invisible: nobody recorded it, nobody compared it.",
+    "Para Marcos, el Executor es el asistente que recibe el guion de la versión 1 junto con los datos del contacto (nombre, inmueble que consultó, barrio) y devuelve la primera respuesta lista para pegar en WhatsApp. Si el guion pide «una pregunta al final», incluye una pregunta al final, aunque en ese caso dos parezcan mejor. No cede al impulso de «mejorar sobre la marcha», porque una mejora sobre la marcha es invisible: nadie la registró ni la comparó."
+  ],
+  "A separação é a mesma da linha de montagem: quem monta não é quem inspeciona. Não por desconfiança — por método. O olhar de quem fez nunca é o olhar de quem confere.": [
+    "It’s the same separation as on an assembly line: the person who assembles isn’t the inspector. Not because of distrust, but because of method. The person who did the work never sees it the way the person checking it does.",
+    "Es la misma separación que en una cadena de montaje: quien ensambla no es quien inspecciona. No por desconfianza, sino por método. Quien hizo el trabajo nunca lo ve como quien lo revisa."
+  ],
+  "Uma melhoria feita na hora, sem registro, não é melhoria. É sorte que ninguém vai conseguir repetir.": [
+    "An unrecorded, on-the-spot improvement isn’t an improvement. It’s luck nobody will be able to repeat.",
+    "Una mejora hecha sobre la marcha y sin registro no es una mejora. Es suerte que nadie podrá repetir."
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "0/3 feito": [
+    "0/3 done",
+    "0/3 completado"
+  ],
+  "Escreva a versão 1 do caso do Marcos — e depois a sua": [
+    "Write version 1 for Marcos’s case—and then your own",
+    "Escribe la versión 1 del caso de Marcos y luego la tuya"
+  ],
+  "Ler o caso, escrever a versão atual em até 6 linhas e comparar com o gabarito — cerca de 10 min.": [
+    "Read the case, write the current version in up to 6 lines, and compare it with the answer key—about 10 min.",
+    "Lee el caso, escribe la versión actual en un máximo de 6 líneas y compárala con las respuestas: unos 10 min."
+  ],
+  "Nada muda no seu negócio até você aprovar: escrever a versão atual é só descrever o que já acontece. Se a descrição sair errada, ninguém executa nada por causa dela — você corrige e pronto.": [
+    "Nothing in your business changes until you approve it: writing the current version only describes what already happens. If the description is wrong, nobody acts on it—you correct it, and that’s it.",
+    "Nada cambia en tu negocio hasta que lo apruebes: escribir la versión actual solo describe lo que ya ocurre. Si la descripción está mal, nadie actuará basándose en ella; la corriges y listo."
+  ],
+  "Marcos, corretor há 12 anos, descreve como responde um lead de portal: \"Depende. Se o imóvel é bom, eu já mando foto e valor. Se o lead parece curioso, pergunto o que ele procura antes. Geralmente cumprimento pelo nome, porque o portal manda. Às vezes ofereço visita no fim, às vezes esqueço. Se é fim de semana, respondo mais curto.\" Ele mandou 80 respostas no mês passado.": [
+    "Marcos, a real estate agent for 12 years, describes how he replies to a listing-site lead: “It depends. If the property is good, I send a photo and price right away. If the lead seems curious, I ask what they’re looking for first. I usually greet them by name because the portal sends it. Sometimes I offer a viewing at the end; sometimes I forget. On weekends, I reply more briefly.” He sent 80 replies last month.",
+    "Marcos, agente inmobiliario desde hace 12 años, describe cómo responde a un contacto del portal: «Depende. Si el inmueble es bueno, envío una foto y el precio de inmediato. Si el contacto parece curioso, primero pregunto qué busca. Por lo general, lo saludo por su nombre porque el portal me lo indica. A veces ofrezco una visita al final; otras, se me olvida. Los fines de semana respondo más brevemente». El mes pasado envió 80 respuestas."
+  ],
+  "Liste, do relato, o que Marcos faz": [
+    "List what Marcos",
+    "Anota qué hace Marcos"
+  ],
+  "sempre": [
+    "always",
+    "siempre"
+  ],
+  "e o que faz": [
+    "and what he does",
+    "y qué hace"
+  ],
+  "às vezes": [
+    "sometimes",
+    "a veces"
+  ],
+  ". Ficou pronto quando tem duas colunas.": [
+    ". You’re done when you have two columns.",
+    ". Termina cuando tengas dos columnas."
+  ],
+  "Escreva a versão 1 dele em até 6 linhas numeradas, escolhendo": [
+    "Write his version 1 in up to 6 numbered lines, choosing",
+    "Escribe su versión 1 en un máximo de 6 líneas numeradas, eligiendo"
+  ],
+  "opção para cada \"às vezes\" (não importa qual — importa que seja sempre a mesma).": [
+    "one option for each “sometimes” (it doesn’t matter which—what matters is always choosing the same one).",
+    "una opción para cada «a veces» (no importa cuál; importa que siempre sea la misma)."
+  ],
+  "Abra o gabarito e compare. Depois, faça o mesmo com o seu processo da aula 1: 6 linhas, uma decisão por \"depende\".": [
+    "Open the answer key and compare. Then do the same with your process from lesson 1: 6 lines, one decision for each “it depends.”",
+    "Abre las respuestas y compara. Después, haz lo mismo con tu proceso de la clase 1: 6 líneas y una decisión por cada «depende»."
+  ],
+  "Gabarito comentado": [
+    "Annotated answer key",
+    "Respuestas comentadas"
+  ],
+  "Sempre:": [
+    "Always:",
+    "Siempre:"
+  ],
+  "cumprimenta pelo nome.": [
+    "greets them by name.",
+    "saluda por su nombre."
+  ],
+  "Às vezes:": [
+    "Sometimes:",
+    "A veces:"
+  ],
+  "manda foto e valor de cara ou pergunta antes; oferece visita ou esquece; encurta no fim de semana. Cada \"às vezes\" é uma variação que impede a comparação.": [
+    "sends a photo and price right away or asks first; offers a viewing or forgets; shortens the reply on weekends. Each “sometimes” is a variation that prevents comparison.",
+    "envía foto y precio de inmediato o pregunta antes; ofrece una visita o se olvida; acorta la respuesta el fin de semana. Cada «a veces» es una variación que impide comparar."
+  ],
+  "Uma versão 1 possível:": [
+    "One possible version 1:",
+    "Una versión 1 posible:"
+  ],
+  "1) Saudação pelo nome. 2) Cita o imóvel que o lead clicou. 3) Pergunta o que ele procura (quartos, bairro, prazo) antes de mandar valor. 4) Informa que tem fotos e a faixa de valor, sem enviar ainda. 5) Encerra dizendo que fica à disposição para dúvidas. 6) Mesmo texto em qualquer dia da semana.": [
+    "1) Greet them by name. 2) Mention the property they clicked. 3) Ask what they’re looking for (bedrooms, neighborhood, timeline) before sending a price. 4) Say you have photos and a price range, without sending them yet. 5) Close by saying you’re available for questions. 6) Use the same text every day of the week.",
+    "1) Saludo por su nombre. 2) Menciono el inmueble que consultó. 3) Pregunto qué busca (habitaciones, barrio, plazo) antes de enviar el precio. 4) Le digo que tengo fotos y un rango de precios, sin enviarlos todavía. 5) Me despido diciendo que estoy a su disposición. 6) Uso el mismo texto cualquier día de la semana."
+  ],
+  "Se a sua versão escolheu \"mandar foto e valor de cara\" em vez de perguntar antes, está igualmente certa. A versão 1 não precisa ser a melhor — precisa ser uma só. Descobrir qual é melhor é trabalho das aulas 4 e 5, não deste passo.": [
+    "If your version chose “send the photo and price right away” instead of asking first, that’s equally valid. Version 1 doesn’t need to be the best—it needs to be one consistent version. Finding out which one is better is the work of lessons 4 and 5, not this step.",
+    "Si tu versión eligió «enviar la foto y el precio de inmediato» en vez de preguntar primero, también es válida. La versión 1 no tiene que ser la mejor; tiene que ser una sola y consistente. Descubrir cuál es mejor corresponde a las clases 4 y 5, no a este paso."
+  ],
+  "Você acabou de escrever uma versão atual: um roteiro que transforma \"depende\" em uma decisão fixa por vez. É contra ele que toda versão nova vai ser comparada.": [
+    "You’ve just written a current version: a script that turns “it depends” into one fixed decision at a time. Every new version will be compared against it.",
+    "Acabas de escribir una versión actual: un guion que convierte «depende» en una decisión fija cada vez. Todas las versiones nuevas se compararán con él."
+  ],
+  "L · localizar": [
+    "L · locate",
+    "L · localizar"
+  ],
+  "O · operar": [
+    "O · operate",
+    "O · operar"
+  ],
+  "O · observar": [
+    "O · observe",
+    "O · observar"
+  ],
+  "P · propor": [
+    "P · propose",
+    "P · proponer"
+  ],
+  "gera dados": [
+    "generates data",
+    "genera datos"
+  ],
+  "versão 1": [
+    "version 1",
+    "versión 1"
+  ],
+  "1 saudação": [
+    "1 greeting",
+    "1 saludo"
+  ],
+  "2 resumo": [
+    "2 summary",
+    "2 resumen"
+  ],
+  "3 pacote": [
+    "3 package",
+    "3 paquete"
+  ],
+  "4 valor": [
+    "4 price",
+    "4 precio"
+  ],
+  "5 encerramento": [
+    "5 closing",
+    "5 cierre"
+  ],
+  "200 linhas": [
+    "200 rows",
+    "200 filas"
+  ],
+  "comparáveis": [
+    "comparable",
+    "comparables"
+  ],
+  "sem roteiro": [
+    "no script",
+    "sin guion"
+  ],
+  "61% de quê?": [
+    "61% of what?",
+    "¿61 % de qué?"
+  ],
+  "com roteiro versão 1": [
+    "with version 1 script",
+    "con el guion versión 1"
+  ],
+  "58% — comparável": [
+    "58% — comparable",
+    "58 % — comparable"
+  ],
+  "dados do caso": [
+    "case data",
+    "datos del caso"
+  ],
+  "art.": [
+    "artifact",
+    "artefacto"
+  ],
+  "+1 linha registrada": [
+    "+1 logged row",
+    "+1 fila registrada"
+  ],
+  "não \"melhora\"": [
+    "doesn’t “improve”",
+    "no «mejora»"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Recap",
+    "Resumen"
+  ],
+  "Operar é a única letra do loop que produz alguma coisa. O aprendizado vem depois — mas sem execução real não há de onde vir.": [
+    "Operate is the only letter in the loop that produces something. Learning comes later—but without real execution, it has nowhere to come from.",
+    "Operar es la única letra del ciclo que produce algo. El aprendizaje viene después, pero sin ejecuciones reales no tiene de dónde surgir."
+  ],
+  "A versão atual é um roteiro curto, escrito, seguido igual em toda execução. Não precisa ser bom; precisa ser um só, para que as execuções virem casos comparáveis.": [
+    "The current version is a short written script, followed the same way in every execution. It doesn’t need to be good; it needs to be one consistent version, so executions become comparable cases.",
+    "La versión actual es un guion breve y escrito que se sigue igual en cada ejecución. No hace falta que sea bueno; debe ser una sola versión consistente para que las ejecuciones se conviertan en casos comparables."
+  ],
+  "Quem sai do roteiro anota \"fora do roteiro\" e fica de fora da conta. Improvisar não é proibido — só não entra na comparação.": [
+    "Anyone who goes off script marks “off script” and stays out of the count. Improvising isn’t forbidden—it just doesn’t go into the comparison.",
+    "Quien se sale del guion marca «fuera del guion» y queda fuera del conteo. Improvisar no está prohibido; simplemente no entra en la comparación."
+  ],
+  "O Executor faz e registra; nunca julga nem melhora na hora. A separação entre quem faz e quem confere é método, não desconfiança.": [
+    "The Executor does the work and records it; it never judges or improves on the fly. Separating the person who does from the person who checks is method, not distrust.",
+    "El Executor ejecuta y registra; nunca juzga ni mejora sobre la marcha. Separar a quien hace el trabajo de quien lo revisa es método, no desconfianza."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu próximo paso"
+  ],
+  "Você acabou de conseguir transformar \"depende\" em uma versão atual escrita — o ponto de comparação de tudo o que vem depois.": [
+    "You’ve just turned “it depends” into a written current version—the point of comparison for everything that follows.",
+    "Acabas de convertir «depende» en una versión actual por escrito: el punto de comparación para todo lo que sigue."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: pegue a última execução do seu processo (a última proposta, a última resposta a lead, o último chamado) e marque, linha a linha, o que seguiu as 6 linhas da sua versão 1 e o que foi improviso.": [
+    "In the next 15 minutes, at your real workplace, take the latest execution of your process (the latest proposal, lead reply, or support ticket) and mark, line by line, what followed the 6 lines of version 1 and what was improvised.",
+    "En los próximos 15 minutos, en tu trabajo real, toma la última ejecución de tu proceso (la última propuesta, respuesta a un contacto o consulta) y marca línea por línea qué siguió las 6 líneas de la versión 1 y qué fue improvisado."
+  ],
+  "Na próxima aula, você resolve o que trava logo depois: executar 200 vezes não vira evidência sozinho. Cada execução precisa virar uma linha numa planilha — e você vai preencher as 10 primeiras.": [
+    "In the next lesson, you’ll solve what gets in the way right after this: 200 executions don’t become evidence on their own. Each execution needs to become a row in a spreadsheet—and you’ll fill in the first 10.",
+    "En la próxima clase resolverás el siguiente obstáculo: 200 ejecuciones no se convierten en evidencia por sí solas. Cada ejecución debe convertirse en una fila de una hoja de cálculo, y completarás las primeras 10."
+  ],
+  "← aula 1": [
+    "← lesson 1",
+    "← clase 1"
+  ],
+  "aula 3 →": [
+    "lesson 3 →",
+    "clase 3 →"
+  ],
+  "Aula 2 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 2 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 2 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "O roteiro que descreve, em até 6 linhas, como uma execução é feita hoje. Não é a versão ideal nem a versão futura — é só o que acontece agora, sempre do mesmo jeito.": [
+    "A script of up to 6 lines describing how an execution is done today. It isn’t the ideal or future version—just what happens now, the same way each time.",
+    "Un guion de hasta 6 líneas que describe cómo se realiza hoy una ejecución. No es la versión ideal ni la futura: solo lo que ocurre ahora, siempre de la misma manera."
+  ],
+  "<b>Fig. 1</b> O L produz uma versão escrita da tarefa; o O que vem em seguida observa o que essa versão fez. Sem roteiro, não há o que comparar.": [
+    "<b>Fig. 1</b> L produces a written version of the task; the next O observes what that version did. Without a script, there is nothing to compare.",
+    "<b>Fig. 1</b> L produce una versión escrita de la tarea; la siguiente O observa qué hizo esa versión. Sin guion, no hay con qué comparar."
+  ],
+  "<b>Fig. 2</b> Antes: 200 mensagens diferentes. Depois: 200 casos seguindo o mesmo roteiro — a diferença não é trabalhar mais, é conseguir comparar.": [
+    "<b>Fig. 2</b> Before: 200 different messages. After: 200 cases following the same script—the difference isn’t more work, it’s the ability to compare.",
+    "<b>Fig. 2</b> Antes: 200 mensajes distintos. Después: 200 casos que siguen el mismo guion. La diferencia no es trabajar más, sino poder comparar."
+  ],
+  "<b>Fig. 3</b> Com os dois atendentes seguindo o mesmo roteiro, 61% deixa de ser uma mistura. 58% é o primeiro número que descreve uma versão só.": [
+    "<b>Fig. 3</b> Once both agents follow the same script, 61% stops being a mixture. 58% is the first number that describes just one version.",
+    "<b>Fig. 3</b> Cuando ambos agentes siguen el mismo guion, el 61 % deja de ser una mezcla. El 58 % es la primera cifra que describe una sola versión."
+  ],
+  "<b>Fig. 4</b> O Executor recebe dados do caso + versão atual; devolve o artefato + 1 linha. Avaliar e propor mudança é trabalho de outra função.": [
+    "<b>Fig. 4</b> The Executor receives case data + current version; returns the artifact + 1 row. Evaluation and change proposals belong to another role.",
+    "<b>Fig. 4</b> El Executor recibe los datos del caso y la versión actual; devuelve el artefacto y una fila. Evaluar y proponer cambios es tarea de otra función."
+  ],
+  "Cláudio viu o número de resolução no primeiro contato cair de 61% para 58% depois que os dois atendentes passaram a seguir o mesmo roteiro. Isso foi piora?": [
+    "Cláudio saw first-contact resolution fall from 61% to 58% after both agents began following the same script. Was that a decline?",
+    "Cláudio vio que la resolución en el primer contacto bajó del 61 % al 58 % después de que ambos agentes empezaron a seguir el mismo guion. ¿Fue un empeoramiento?"
+  ],
+  "Não dá para dizer que foi piora: 61% era a média de duas maneiras diferentes de atender, que não mede nada. 58% é o primeiro número que descreve uma versão só — é o ponto de partida real.": [
+    "You can’t call it a decline: 61% was an average of two different service methods, so it measured nothing. 58% is the first number describing one version alone—it’s the real starting point.",
+    "No se puede decir que empeoró: el 61 % era el promedio de dos maneras distintas de atender y no medía nada. El 58 % es la primera cifra que describe una sola versión: el punto de partida real."
+  ],
+  "Dra. Renata percebe, no meio de uma proposta, um jeito claramente melhor de escrever o encerramento. O que ela faz naquela proposta — e o que faz com a ideia?": [
+    "Dr. Renata realizes halfway through a proposal that there’s a clearly better way to write the closing. What does she do in that proposal—and what does she do with the idea?",
+    "La Dra. Renata se da cuenta, mientras redacta una propuesta, de que hay una forma claramente mejor de escribir el cierre. ¿Qué hace con esa propuesta y qué hace con la idea?"
+  ],
+  "Segue a versão atual naquela proposta (ou marca 'fora do roteiro'). A ideia vai para a lista de hipóteses da aula 4, para ser testada contra a versão 1 — não aplicada na hora, onde ninguém compara.": [
+    "She follows the current version in that proposal (or marks it “off script”). The idea goes on lesson 4’s hypothesis list to be tested against version 1—not applied on the spot, where nobody compares.",
+    "Sigue la versión actual en esa propuesta (o la marca «fuera del guion»). La idea va a la lista de hipótesis de la clase 4 para probarla frente a la versión 1; no se aplica de inmediato, porque nadie la compararía."
+  ],
+  "O que o Executor recebe, o que ele entrega, e o que ele nunca faz?": [
+    "What does the Executor receive, what does it deliver, and what does it never do?",
+    "¿Qué recibe el Executor, qué entrega y qué nunca hace?"
+  ],
+  "Recebe a versão atual e os dados do caso. Entrega o artefato e uma linha registrada. Nunca avalia o próprio trabalho nem altera o roteiro por conta própria.": [
+    "It receives the current version and case data. It delivers the artifact and one logged row. It never evaluates its own work or changes the script on its own.",
+    "Recibe la versión actual y los datos del caso. Entrega el artefacto y una fila registrada. Nunca evalúa su propio trabajo ni cambia el guion por su cuenta."
+  ],
+  "Marcos diz que o roteiro 'engessa' e prefere adaptar cada resposta. Que argumento você daria em 2 frases?": [
+    "Marcos says the script “boxes him in” and prefers to adapt every reply. What two-sentence argument would you give him?",
+    "Marcos dice que el guion «lo encorseta» y prefiere adaptar cada respuesta. ¿Qué argumento le darías en 2 frases?"
+  ],
+  "Adaptar tudo ao mesmo tempo impede saber o que funcionou: 80 respostas diferentes são 80 amostras de tamanho 1. Seguir uma versão por algumas semanas é o que permite mudar uma coisa e ver se fez diferença.": [
+    "Changing everything at once makes it impossible to know what worked: 80 different replies are 80 samples of size one. Following one version for a few weeks lets you change one thing and see if it made a difference.",
+    "Cambiarlo todo a la vez impide saber qué funcionó: 80 respuestas distintas son 80 muestras de tamaño 1. Seguir una versión durante unas semanas permite cambiar una cosa y comprobar si marcó la diferencia."
+  ],
+  "Misturar 10 improvisos com 70 execuções do roteiro contamina a conta: você não sabe mais o que está medindo.": [
+    "Mixing 10 improvised executions with 70 scripted ones contaminates the count: you no longer know what you’re measuring.",
+    "Mezclar 10 ejecuciones improvisadas con 70 que siguieron el guion contamina el conteo: ya no sabes qué estás midiendo."
+  ],
+  "Apagar é pior que separar: a linha existe, o lead existiu, e o registro precisa ser completo — só não entra na comparação.": [
+    "Deleting is worse than separating: the row exists, the lead existed, and the record must be complete—it just doesn’t go into the comparison.",
+    "Borrarlos es peor que separarlos: la fila existe, el contacto existió y el registro debe estar completo; simplemente no entra en la comparación."
+  ],
+  "A linha fica, marcada como 'fora do roteiro'. A comparação usa os 70; os 10 continuam registrados e podem virar uma observação depois.": [
+    "Keep the row and mark it “off script.” Compare the 70; the 10 remain recorded and may become an observation later.",
+    "La fila se conserva y se marca «fuera del guion». La comparación usa los 70; los 10 siguen registrados y después pueden convertirse en una observación."
+  ],
+  "Um assistente de IA com uma responsabilidade só — como um funcionário que faz uma coisa e faz bem. O Executor produz o artefato seguindo a versão atual; nunca avalia o próprio trabalho.": [
+    "An AI assistant with a single responsibility—like an employee who does one thing well. The Executor produces the artifact by following the current version; it never evaluates its own work.",
+    "Un asistente de IA con una sola responsabilidad, como un empleado que hace bien una cosa. El Executor produce el artefacto siguiendo la versión actual; nunca evalúa su propio trabajo."
+  ],
+  "<b>Fig. 1</b> As cinco letras do loop. Operar é a segunda — e a única que produz alguma coisa. Sem ela, as outras quatro não têm sobre o que trabalhar.": [
+    "<b>Fig. 1</b> The loop’s five letters. Operate is the second—and the only one that produces something. Without it, the other four have nothing to work on.",
+    "<b>Fig. 1</b> Las cinco letras del ciclo. Operar es la segunda y la única que produce algo. Sin ella, las otras cuatro no tienen sobre qué trabajar."
+  ],
+  "<b>Fig. 2</b> A versão atual é um roteiro numerado. Cada execução segue os mesmos blocos, e por isso as linhas registradas podem ser somadas.": [
+    "<b>Fig. 2</b> The current version is a numbered script. Each execution follows the same blocks, so the logged rows can be combined.",
+    "<b>Fig. 2</b> La versión actual es un guion numerado. Cada ejecución sigue los mismos bloques, por lo que se pueden sumar las filas registradas."
+  ],
+  "<b>Fig. 3</b> Em cima, execuções que variam em várias coisas: o número final não diz nada. Embaixo, execuções iguais: a diferença de uma para a outra passa a ter significado.": [
+    "<b>Fig. 3</b> Top: executions vary in many ways, so the final number means nothing. Bottom: identical executions make the difference between them meaningful.",
+    "<b>Fig. 3</b> Arriba, ejecuciones que varían en muchos aspectos: la cifra final no dice nada. Abajo, ejecuciones iguales: la diferencia entre una y otra empieza a tener significado."
+  ],
+  "<b>Fig. 4</b> O Executor lê a versão atual e os dados do caso, produz o artefato e registra uma linha. A seta que não existe é a que voltaria para 'melhorar' — esse é o ponto.": [
+    "<b>Fig. 4</b> The Executor reads the current version and case data, produces the artifact, and logs one row. The missing arrow is the one that would go back to “improve”—that’s the point.",
+    "<b>Fig. 4</b> El Executor lee la versión actual y los datos del caso, produce el artefacto y registra una fila. La flecha que no existe es la que volvería para «mejorar»: esa es la idea."
+  ]
+}

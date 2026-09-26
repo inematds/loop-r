@@ -1,0 +1,570 @@
+{
+  "Trilha 03 · Aula 3": [
+    "Track 03 · Lesson 3",
+    "Ruta 03 · Clase 3"
+  ],
+  "O Guardião:": [
+    "The Guardian:",
+    "El Guardián:"
+  ],
+  "o que nunca muda sozinho": [
+    "what never changes on its own",
+    "lo que nunca cambia por su cuenta"
+  ],
+  "Ao fim desta aula você tem a resposta 3 da ficha escrita: 3 coisas que nunca mudam sem você, 2 números que nada pode piorar.": [
+    "By the end of this lesson, you will have written answer 3 on the worksheet: 3 things that never change without you and 2 metrics that must not get worse.",
+    "Al terminar esta clase, habrás escrito la respuesta 3 de la ficha: 3 cosas que nunca cambian sin ti y 2 cifras que no pueden empeorar."
+  ],
+  "Todo loop aprende a trapacear a meta se ninguém disser o que é proibido. \"Mais respostas\" vira mensagem que irrita; \"atendimento mais rápido\" vira chamado encerrado sem resolver. O Guardião existe para que a IA melhore o número certo pelo caminho certo. E ele só funciona se você escrever o que ele deve vigiar.": [
+    "Any loop learns to game its target unless someone states what is forbidden. “More replies” can become an irritating message; “faster support” can become a ticket closed without a solution. The Guardian exists to make AI improve the right metric in the right way. It works only if you write down what it must watch.",
+    "Todo ciclo aprende a hacer trampa con la meta si nadie indica qué está prohibido. «Más respuestas» puede convertirse en un mensaje molesto; «atención más rápida», en un ticket cerrado sin resolver. El Guardián existe para que la IA mejore la cifra correcta por el camino correcto. Solo funciona si escribes qué debe vigilar."
+  ],
+  "↓": [
+    "↓",
+    "↓"
+  ],
+  "role para estudar": [
+    "scroll to study",
+    "desplázate para estudiar"
+  ],
+  "NUNCA · SEM PIORAR": [
+    "NEVER · WITHOUT GETTING WORSE",
+    "NUNCA · SIN EMPEORAR"
+  ],
+  "a escada pode subir — o corrimão não sai do lugar": [
+    "the stairs can rise—the handrail stays in place",
+    "la escalera puede subir; el pasamanos no se mueve"
+  ],
+  "O veto é final — e ninguém negocia com ele": [
+    "A veto is final—and no one negotiates with it",
+    "El veto es definitivo y nadie negocia con él"
+  ],
+  "Guardião": [
+    "Guardian",
+    "Guardián"
+  ],
+  "lê as hipóteses do Otimizador antes de qualquer teste. Para cada uma, responde uma palavra: aprovada ou vetada. É o único assistente cuja decisão ninguém revisa dentro do ciclo. Ele não é convencido por argumento, não aprova \"com ressalva\", não sugere alternativa. Em dúvida, veta.": [
+    "reads the Optimizer’s hypotheses before any test. For each one, it gives a one-word answer: approved or vetoed. It is the only assistant whose decision is not reviewed within the cycle. Arguments do not persuade it; it does not approve “with reservations” or suggest alternatives. When in doubt, it vetoes.",
+    "lee las hipótesis del Optimizador antes de cualquier prueba. Para cada una responde con una palabra: aprobada o vetada. Es el único asistente cuya decisión nadie revisa dentro del ciclo. No se deja convencer con argumentos, no aprueba «con reservas» ni sugiere alternativas. Ante la duda, veta."
+  ],
+  "Isso soa duro porque é. O Guardião não está lá para ter bom senso — está lá para aplicar, sem variação, a lista que você escreveu. O bom senso é seu, na hora de escrever a lista. Depois disso, ele só confere.": [
+    "It sounds strict because it is. The Guardian is not there to exercise common sense; it is there to apply the list you wrote, consistently. Common sense is yours when you write the list. After that, the Guardian only checks.",
+    "Suena estricto porque lo es. El Guardián no está para aplicar el sentido común, sino para hacer cumplir sin variaciones la lista que escribiste. El sentido común es tuyo al redactarla. Después, el Guardián solo comprueba."
+  ],
+  "Exemplo aplicado: o corretor e o gestor de suporte escrevem listas diferentes, e o Guardião de cada um vigia coisas diferentes — mas do mesmo jeito.": [
+    "Applied example: the real estate agent and support manager write different lists, and each Guardian watches different things—but applies the rules in the same way.",
+    "Ejemplo aplicado: el agente inmobiliario y el responsable de soporte escriben listas distintas, y el Guardián de cada uno vigila cosas diferentes, pero actúa de la misma manera."
+  ],
+  "Na sua profissão": [
+    "In your profession",
+    "En tu profesión"
+  ],
+  "Corretor de imóveis:": [
+    "Real estate agent:",
+    "Agente inmobiliario:"
+  ],
+  "o Guardião veta qualquer hipótese em que a resposta ao lead prometa aprovação de financiamento ou informe condomínio sem conferir. Mesmo que a hipótese prometa dobrar a taxa de resposta.": [
+    "the Guardian vetoes any hypothesis whose reply to a lead promises loan approval or gives an unverified condo fee—even if it promises to double the response rate.",
+    "el Guardián veta cualquier hipótesis cuya respuesta prometa la aprobación de un préstamo o indique una cuota de comunidad sin verificarla, aunque prometa duplicar la tasa de respuesta."
+  ],
+  "Gestor de suporte:": [
+    "Support manager:",
+    "Responsable de soporte:"
+  ],
+  "o Guardião veta qualquer hipótese que encerre o chamado antes de o cliente confirmar que resolveu. Mesmo que o tempo médio de atendimento caísse pela metade.": [
+    "the Guardian vetoes any hypothesis that closes a ticket before the customer confirms it is resolved—even if average handling time would be cut in half.",
+    "el Guardián veta cualquier hipótesis que cierre un ticket antes de que el cliente confirme que se resolvió, aunque el tiempo medio de atención se redujera a la mitad."
+  ],
+  "Dona de clínica:": [
+    "Clinic owner:",
+    "Dueña de la clínica:"
+  ],
+  "o Guardião veta qualquer hipótese que prometa resultado ou prazo de resultado numa proposta — mesmo que a conversão subisse.": [
+    "the Guardian vetoes any hypothesis that promises a result or a timeline in a proposal—even if conversion would rise.",
+    "el Guardián veta cualquier hipótesis que prometa un resultado o un plazo en una propuesta, aunque aumente la conversión."
+  ],
+  "marcar como lido": [
+    "mark as read",
+    "marcar como leído"
+  ],
+  "Invariáveis: o que nunca muda sem você": [
+    "Invariants: what never changes without you",
+    "Invariantes: lo que nunca cambia sin ti"
+  ],
+  "A primeira lista do Guardião são as": [
+    "The Guardian’s first list is the set of",
+    "La primera lista del Guardián son las"
+  ],
+  "invariáveis": [
+    "invariants",
+    "invariantes"
+  ],
+  ": o que nenhuma hipótese pode tocar, em nenhuma circunstância. Não são metas — são limites. Segurança, lei, promessas que a empresa não faz, pessoas que pediram para não ser contatadas.": [
+    ": things no hypothesis may touch under any circumstances. They are not targets; they are boundaries: safety, law, promises the company does not make, and people who asked not to be contacted.",
+    " : aquello que ninguna hipótesis puede tocar bajo ninguna circunstancia. No son metas, sino límites: seguridad, ley, promesas que la empresa no hace y personas que pidieron que no las contacten."
+  ],
+  "Uma boa invariável é curta, concreta e começa com \"nunca\". Se você precisa de duas frases para explicá-la, ela ainda é uma opinião — não um limite. E ela é escrita por você, uma vez, na ficha do loop. O Guardião não inventa invariáveis. Só aplica.": [
+    "A good invariant is short, concrete, and starts with “never.” If it takes two sentences to explain, it is still an opinion—not a boundary. You write it once on the loop worksheet. The Guardian does not invent invariants; it only applies them.",
+    "Una buena invariante es breve, concreta y empieza con «nunca». Si necesitas dos frases para explicarla, todavía es una opinión, no un límite. Tú la escribes una sola vez en la ficha del ciclo. El Guardián no inventa invariantes: solo las aplica."
+  ],
+  "Antes de ver o modelo: o que vem a seguir é a parte da ficha da clínica do exemplo. Leia como uma lista de \"regras da casa\" pregada na parede da recepção. Você vai escrever a sua no fim desta aula.": [
+    "Before looking at the template: what follows is the clinic’s section of the worksheet. Read it like a list of “house rules” posted at reception. You will write your own at the end of this lesson.",
+    "Antes de ver el modelo: lo que sigue es la parte de la ficha de la clínica del ejemplo. Léela como una lista de «reglas de la casa» colgada en recepción. Escribirás la tuya al final de esta clase."
+  ],
+  "Exemplo aplicado: o corretor escreve três linhas na ficha. \"Nunca prometer aprovação de financiamento\". \"Nunca informar valor de condomínio ou IPTU sem conferir na matrícula\". \"Nunca contatar quem pediu para não receber mensagens\". A hipótese \"responder já com uma simulação de financiamento aprovada\" nem chega ao teste — o Guardião veta na leitura, porque toca a primeira invariável. Para comparação, a clínica do exemplo tem quatro. Nunca desconto acima de 10%. Nunca prometer resultado clínico ou prazo de resultado. Nunca contatar quem pediu para não receber mensagens. Nunca citar concorrentes pelo nome.": [
+    "Applied example: the real estate agent writes three lines on the worksheet: “Never promise loan approval.” “Never quote condo fees or property tax without checking the property record.” “Never contact anyone who asked not to receive messages.” The hypothesis “reply immediately with an approved loan simulation” never reaches the test—the Guardian vetoes it on review because it violates the first invariant. For comparison, the clinic has four: never discount more than 10%; never promise a clinical result or timeline; never contact anyone who asked not to receive messages; and never name competitors.",
+    "Ejemplo aplicado: el agente inmobiliario escribe tres reglas en la ficha: «Nunca prometer la aprobación de un préstamo». «Nunca indicar gastos de comunidad o impuesto inmobiliario sin comprobar el registro». «Nunca contactar a quien pidió no recibir mensajes». La hipótesis «responder de inmediato con una simulación de préstamo aprobada» ni siquiera llega a la prueba: el Guardián la veta al revisarla porque infringe la primera invariante. Como referencia, la clínica tiene cuatro: nunca descontar más del 10 %; nunca prometer un resultado clínico o un plazo; nunca contactar a quien pidió no recibir mensajes; nunca nombrar a competidores."
+  ],
+  "\"Sem piorar\": a meta sempre anda com escolta": [
+    "“Without getting worse”: the target always has an escort",
+    "«Sin empeorar»: la meta siempre va escoltada"
+  ],
+  "A segunda lista são os": [
+    "The second list is the set of",
+    "La segunda lista son los"
+  ],
+  "\"sem piorar\"": [
+    "“without getting worse”",
+    "«sin empeorar»"
+  ],
+  ". Toda meta no loop tem a forma \"aumentar X sem piorar Y e Z\". Sem essa escolta, o loop aprende a trapacear: sobe X pelo caminho mais barato, que quase sempre é o que estraga Y.": [
+    ". Every target in the loop takes the form “increase X without worsening Y and Z.” Without that escort, the loop learns to game the target: it raises X by the cheapest route, which usually damages Y.",
+    ". Toda meta del ciclo tiene la forma «aumentar X sin empeorar Y ni Z». Sin esa escolta, el ciclo aprende a hacer trampa: eleva X por el camino más barato, que casi siempre perjudica Y."
+  ],
+  "O Guardião usa essa lista de dois jeitos. Antes do teste, veta hipóteses que pioram Y \"de forma previsível\". Depois do teste, o Avaliador reprova B se Y caiu além da tolerância — mesmo com X lá em cima, como você viu na aula anterior.": [
+    "The Guardian uses this list in two ways. Before the test, it vetoes hypotheses that “predictably” worsen Y. After the test, the Evaluator rejects B if Y falls beyond the tolerance—even if X is way up, as you saw in the previous lesson.",
+    "El Guardián usa esta lista de dos maneras. Antes de la prueba, veta las hipótesis que empeoran Y «de forma previsible». Después, el Evaluador rechaza B si Y cae más allá de la tolerancia, aunque X haya subido mucho, como viste en la clase anterior."
+  ],
+  "Exemplo aplicado: no primeiro ciclo da clínica, o Otimizador propôs fechar a proposta com uma pergunta única de escolha. A pergunta: \"Prefere começar ainda esta semana ou na próxima?\". A hipótese tinha evidência forte (83% das propostas sem resposta) e prometia levar a resposta de 17% para 25%. O Guardião vetou. Motivo, em uma linha: a pergunta presume a compra e fixa prazo. Isso é pressão previsível sobre reclamações e sobre pedidos para parar de receber mensagens — os dois \"sem piorar\" da ficha. Não negociou, não sugeriu uma pergunta mais suave. Vetou e o Otimizador seguiu para a próxima.": [
+    "Applied example: in the clinic’s first cycle, the Optimizer proposed ending the proposal with a single-choice question: “Would you rather start this week or next?” The hypothesis had strong evidence (83% of proposals got no reply) and promised to raise replies from 17% to 25%. The Guardian vetoed it. The one-line reason: the question presumes a purchase and sets a deadline. That creates a predictable risk of complaints and requests to stop receiving messages—the two “without getting worse” measures on the worksheet. It did not negotiate or suggest a softer question. It vetoed the idea, and the Optimizer moved on.",
+    "Ejemplo aplicado: en el primer ciclo de la clínica, el Optimizador propuso cerrar la propuesta con una pregunta de elección única: «¿Prefieres empezar esta semana o la próxima?». La hipótesis tenía evidencia sólida (el 83 % de las propuestas no recibía respuesta) y prometía elevar la respuesta del 17 % al 25 %. El Guardián la vetó. Motivo en una línea: la pregunta da por hecha la compra y fija un plazo. Eso supone un riesgo previsible de quejas y solicitudes para dejar de recibir mensajes, los dos indicadores de «sin empeorar» de la ficha. No negoció ni sugirió una pregunta más suave. Vetó la idea y el Optimizador pasó a la siguiente."
+  ],
+  "Erro comum": [
+    "Common mistake",
+    "Error frecuente"
+  ],
+  "Meta sem \"sem piorar\".": [
+    "A target without “without getting worse.”",
+    "Una meta sin «sin empeorar»."
+  ],
+  "\"Aumentar a taxa de resposta\" sozinha é um convite: a mensagem mais irritante do mundo gera resposta (\"pare de me mandar isso\" conta como resposta). Acontece porque a meta parece óbvia e a escolta parece detalhe. Como evitar: nunca escreva a meta sem pelo menos dois \"sem piorar\" ao lado — e defina o que conta como resposta antes de contar.": [
+    "“Increase the response rate” by itself is an invitation: the most irritating message in the world gets a response (“stop sending me this” counts as a reply). This happens because the target seems obvious and the escort seems like a detail. Avoid it by never writing a target without at least two “without getting worse” measures beside it—and define what counts as a response before counting.",
+    "«Aumentar la tasa de respuesta» por sí sola es una invitación: el mensaje más irritante del mundo consigue una respuesta («deja de escribirme» también cuenta). Ocurre porque la meta parece obvia y la escolta parece un detalle. Para evitarlo, nunca escribas la meta sin al menos dos indicadores de «sin empeorar» y define qué cuenta como respuesta antes de empezar a contar."
+  ],
+  "Tolerância: quanto de piora ainda é ruído": [
+    "Tolerance: how much worsening is still noise",
+    "Tolerancia: cuánto empeoramiento sigue siendo ruido"
+  ],
+  "Cada \"sem piorar\" leva um número ao lado: a": [
+    "Each “without getting worse” measure has a number beside it: the",
+    "Cada indicador de «sin empeorar» lleva una cifra al lado: la"
+  ],
+  "tolerância": [
+    "tolerance",
+    "tolerancia"
+  ],
+  ". Zero parece o mais seguro. Quase sempre é o mais errado, porque eventos raros oscilam por acaso: 1 reclamação num mês, 6 no outro, sem que nada tenha mudado.": [
+    ". Zero seems safest. Almost always, it is the wrong choice, because rare events fluctuate by chance: 1 complaint one month, 6 the next, even though nothing changed.",
+    ". El cero parece lo más seguro. Casi siempre es lo más equivocado, porque los eventos raros fluctúan por azar: 1 queja un mes, 6 al siguiente, aunque nada haya cambiado."
+  ],
+  "A regra prática: a tolerância de um evento raro precisa ser maior que a oscilação normal dele na quantidade do teste. Para algo que acontece 1% das vezes, com 300 de cada lado, a oscilação normal é por volta de 1 ponto. Então a tolerância vira 0,01, não zero.": [
+    "Rule of thumb: tolerance for a rare event must be greater than its normal fluctuation at the test’s sample size. For something that happens 1% of the time, with 300 on each side, normal fluctuation is about 1 percentage point. So tolerance should be 0.01, not zero.",
+    "Regla práctica: la tolerancia de un evento raro debe ser mayor que su fluctuación normal con el tamaño de muestra de la prueba. Para algo que ocurre el 1 % de las veces, con 300 por grupo, la fluctuación normal ronda 1 punto. Por eso la tolerancia debe ser 0,01, no cero."
+  ],
+  "Exemplo aplicado: foi exatamente isso que a clínica aprendeu no segundo ciclo. B subiu a resposta de 19,3% para 29,7%, e caiu por 6 reclamações contra 1, com tolerância zero. Seis contra um em 300 não é diferença — é ruído. A dona não reabriu o veredito (a regra escrita foi aplicada, e o registro ficou). Mudou a tolerância para 0,01 nos próximos testes. E no ciclo seguinte, mesmo com a tolerância nova, o Guardião vetou \"colocar o preço e as formas de pagamento logo após a saudação\". Antecipar o valor antes de qualquer explicação é piora previsível de pedidos para sair e de reclamações. A própria hipótese admitia o risco. Tolerância não é permissão. É só a régua do acaso.": [
+    "Applied example: this is exactly what the clinic learned in cycle two. B raised replies from 19.3% to 29.7%, but failed because of 6 complaints versus 1, with zero tolerance. Six versus one out of 300 is not a difference; it is noise. The owner did not reopen the verdict (the written rule had been applied, and the record remained). She changed tolerance to 0.01 for future tests. In the next cycle, even with the new tolerance, the Guardian vetoed “putting the price and payment methods right after the greeting.” Introducing the price before any explanation predictably risks opt-outs and complaints. The hypothesis itself acknowledged the risk. Tolerance is not permission; it is only a gauge for chance variation.",
+    "Ejemplo aplicado: eso fue exactamente lo que aprendió la clínica en el segundo ciclo. B elevó la respuesta del 19,3 % al 29,7 %, pero perdió por 6 quejas frente a 1, con tolerancia cero. Seis frente a una de 300 no es una diferencia: es ruido. La dueña no reabrió el veredicto (se aplicó la regla escrita y se conservó el registro). Cambió la tolerancia a 0,01 para las siguientes pruebas. En el ciclo siguiente, incluso con la tolerancia nueva, el Guardián vetó «poner el precio y las formas de pago justo después del saludo». Presentar el precio antes de cualquier explicación crea un riesgo previsible de bajas y quejas. La propia hipótesis admitía el riesgo. La tolerancia no es permiso: es solo una medida de la variación aleatoria."
+  ],
+  "O teto: quanto o loop pode gastar por ciclo": [
+    "The ceiling: how much the loop can spend per cycle",
+    "El límite: cuánto puede gastar el ciclo por ronda"
+  ],
+  "A terceira coisa que o Guardião vigia é o teto: o custo de IA por ciclo e o número de testes ao mesmo tempo. Quando o custo do ciclo passa do teto, ele não aprova mais nada — nem a hipótese perfeita. Quando já há um teste rodando e o máximo é um, a segunda hipótese aprovada espera na fila.": [
+    "The third thing the Guardian watches is the ceiling: AI cost per cycle and the number of simultaneous tests. When the cycle’s cost exceeds the ceiling, it approves nothing else—not even a perfect hypothesis. If one test is already running and the limit is one, the next approved hypothesis waits in line.",
+    "La tercera cosa que vigila el Guardián es el límite: el costo de IA por ciclo y la cantidad de pruebas simultáneas. Si el costo supera el límite, no aprueba nada más, ni siquiera una hipótesis perfecta. Si ya hay una prueba en curso y el máximo es una, la siguiente hipótesis aprobada espera en la fila."
+  ],
+  "O teto é a resposta 4 da ficha e você vai escrevê-lo na trilha 4. Aqui basta saber que ele existe e que o Guardião o aplica com a mesma frieza das invariáveis. No exemplo da clínica, o teto era R$ 50 por ciclo semanal e um teste de cada vez. Por isso a terceira hipótese aprovada no primeiro ciclo ficou aguardando o teste anterior terminar.": [
+    "The ceiling is answer 4 on the worksheet, which you will write in track 4. For now, just know it exists and that the Guardian applies it as strictly as the invariants. In the clinic example, the ceiling was R$ 50 per weekly cycle and one test at a time. That is why the third approved hypothesis in the first cycle waited for the previous test to finish.",
+    "El límite es la respuesta 4 de la ficha y la escribirás en la ruta 4. Por ahora, basta con saber que existe y que el Guardián lo aplica con la misma firmeza que las invariantes. En el ejemplo de la clínica, el límite era de R$ 50 por ciclo semanal y una prueba a la vez. Por eso la tercera hipótesis aprobada en el primer ciclo esperó a que terminara la prueba anterior."
+  ],
+  "Exemplo aplicado: o gestor de suporte tem 6 atendentes e 800 chamados por mês. Se o loop pudesse rodar três testes ao mesmo tempo, cada um teria 130 chamados por lado — e nenhum chegaria à quantidade que prova. Com o teto \"um teste por vez\", cada teste recebe todos os chamados e fecha em semanas, não em meses. O teto não limita a melhoria; limita o desperdício.": [
+    "Applied example: the support manager has 6 agents and 800 tickets per month. If the loop ran three tests at once, each would get 130 tickets per side, and none would reach the sample size needed for proof. With a ceiling of “one test at a time,” each test gets all the tickets and finishes in weeks, not months. The ceiling limits waste, not improvement.",
+    "Ejemplo aplicado: el responsable de soporte tiene 6 agentes y 800 tickets al mes. Si el ciclo ejecutara tres pruebas al mismo tiempo, cada una tendría 130 tickets por grupo y ninguna alcanzaría la cantidad necesaria para demostrar nada. Con un límite de «una prueba a la vez», cada prueba recibe todos los tickets y termina en semanas, no meses. El límite reduce el desperdicio, no la mejora."
+  ],
+  "Como escrever a resposta 3 da ficha": [
+    "How to write answer 3 on the worksheet",
+    "Cómo escribir la respuesta 3 de la ficha"
+  ],
+  "Invariáveis (3):": [
+    "Invariants (3):",
+    "Invariantes (3):"
+  ],
+  "comece cada uma com \"nunca\". Uma frase. Concreta o bastante para um funcionário novo conferir sem perguntar.": [
+    "start each one with “never.” One sentence. Concrete enough for a new employee to check without asking.",
+    "empieza cada una con «nunca». Una frase, lo bastante concreta para que una persona nueva pueda comprobarla sin preguntar."
+  ],
+  "\"Sem piorar\" (2):": [
+    "“Without getting worse” (2):",
+    "«Sin empeorar» (2):"
+  ],
+  "cada um é um número que você já registra ou pode registrar por linha (reclamações, margem, reabertura, pedidos para sair).": [
+    "each is a number you already record or can record on each row (complaints, margin, reopenings, opt-outs).",
+    "cada uno es una cifra que ya registras o puedes registrar por fila (quejas, margen, reaperturas, solicitudes de baja)."
+  ],
+  "Tolerância:": [
+    "Tolerance:",
+    "Tolerancia:"
+  ],
+  "para evento raro (abaixo de 5%), nunca zero — use 0,01 como ponto de partida e ajuste com a quantidade do teste.": [
+    "for a rare event (below 5%), never use zero—start at 0.01 and adjust based on the test sample size.",
+    "para un evento raro (menos del 5 %), nunca uses cero: empieza con 0,01 y ajusta según el tamaño de muestra."
+  ],
+  "Teste do Guardião:": [
+    "Guardian test:",
+    "Prueba del Guardián:"
+  ],
+  "pegue a última ideia de melhoria que surgiu na sua empresa e confira contra a lista. Se ela passa, mas você sente que não deveria, falta uma invariável.": [
+    "take the latest improvement idea from your company and check it against the list. If it passes but you feel it should not, an invariant is missing.",
+    "toma la última idea de mejora que surgió en tu empresa y compárala con la lista. Si pasa, pero sientes que no debería, falta una invariante."
+  ],
+  "Escreva a resposta 3 da sua ficha do loop": [
+    "Write answer 3 on your loop worksheet",
+    "Escribe la respuesta 3 de tu ficha del ciclo"
+  ],
+  "0/4 feito": [
+    "0/4 complete",
+    "0/4 completados"
+  ],
+  "Meta: em ~12 minutos, ter no papel 3 invariáveis e 2 \"sem piorar\" com tolerância, do processo que você escolheu na trilha 2.": [
+    "Goal: in about 12 minutes, write down 3 invariants and 2 “without getting worse” measures with tolerances for the process you chose in track 2.",
+    "Meta: en unos 12 minutos, dejar por escrito 3 invariantes y 2 indicadores de «sin empeorar» con tolerancia para el proceso que elegiste en la ruta 2."
+  ],
+  "É seguro: você está escrevendo uma lista, não ligando nada — nada muda no seu negócio até você aprovar. Se uma invariável parecer exagerada, deixe: é muito mais barato afrouxar uma regra depois do que descobrir que faltava uma no meio de um teste.": [
+    "This is safe: you are writing a list, not switching anything on—nothing changes in your business until you approve it. If an invariant seems excessive, keep it for now: loosening a rule later is far cheaper than discovering one was missing mid-test.",
+    "Es seguro: estás escribiendo una lista, no activando nada; nada cambia en tu negocio hasta que lo apruebes. Si una invariante parece exagerada, déjala: es mucho más barato flexibilizar una regla después que descubrir durante una prueba que faltaba una."
+  ],
+  "Exemplo de resultado aceitável": [
+    "Example of an acceptable result",
+    "Ejemplo de resultado aceptable"
+  ],
+  "(a ficha da clínica do exemplo, traduzida):": [
+    "(the example clinic’s worksheet, translated):",
+    "(la ficha de la clínica del ejemplo, traducida):"
+  ],
+  "Nunca desconto acima de 10%. Nunca prometer resultado clínico ou prazo de resultado. Nunca contatar quem pediu para não receber mensagens. Sem piorar: margem média (tolerância 0,01) · reclamações (tolerância 0,01) · pedidos para parar de receber mensagens (tolerância 0,005).": [
+    "Never discount more than 10%. Never promise a clinical result or timeline. Never contact anyone who asked not to receive messages. Without getting worse: average margin (tolerance 0.01) · complaints (tolerance 0.01) · requests to stop receiving messages (tolerance 0.005).",
+    "Nunca descontar más del 10 %. Nunca prometer resultados clínicos ni plazos. Nunca contactar a quien pidió no recibir mensajes. Sin empeorar: margen medio (tolerancia 0,01) · quejas (tolerancia 0,01) · solicitudes para dejar de recibir mensajes (tolerancia 0,005)."
+  ],
+  "Escrevi 3 invariáveis, cada uma numa frase começando com \"nunca\", sobre o processo da minha ficha (proposta, resposta a lead, resposta a chamado).": [
+    "I wrote 3 invariants, each in one sentence starting with “never,” for the process on my worksheet (proposal, lead reply, or support reply).",
+    "Escribí 3 invariantes, cada una en una frase que empieza con «nunca», sobre el proceso de mi ficha (propuesta, respuesta a un contacto o respuesta a un ticket)."
+  ],
+  "Escrevi 2 \"sem piorar\" que são números — e para cada um sei dizer em que coluna da planilha de registro ele vai aparecer.": [
+    "I wrote 2 “without getting worse” measures as numbers—and know which log column will contain each one.",
+    "Escribí 2 indicadores de «sin empeorar» como cifras y sé en qué columna del registro aparecerá cada uno."
+  ],
+  "Coloquei uma tolerância ao lado de cada \"sem piorar\" — e nenhuma é zero para evento raro.": [
+    "I put a tolerance next to each “without getting worse” measure—and none is zero for a rare event.",
+    "Anoté una tolerancia junto a cada indicador de «sin empeorar» y ninguna es cero para un evento raro."
+  ],
+  "Testei a lista contra a última ideia de melhoria que apareceu na minha empresa: consegui dizer \"aprovada\" ou \"vetada\" em uma linha, com o motivo.": [
+    "I checked the list against the latest improvement idea at my company and could write “approved” or “vetoed” in one line, with the reason.",
+    "Probé la lista con la última idea de mejora de mi empresa y pude escribir «aprobada» o «vetada» en una línea, con el motivo."
+  ],
+  "Você acabou de escrever a resposta 3 da ficha do loop — a lista que o Guardião vai aplicar, sem variação, a toda hipótese que aparecer. Está pronta quando você conseguiu vetar ou aprovar uma ideia real com ela.": [
+    "You have just written answer 3 on the loop worksheet—the list the Guardian will apply consistently to every hypothesis. It is ready when you have used it to veto or approve a real idea.",
+    "Acabas de escribir la respuesta 3 de la ficha del ciclo: la lista que el Guardián aplicará sin variaciones a cada hipótesis. Está lista cuando hayas podido vetar o aprobar con ella una idea real."
+  ],
+  "VETADA: motivo em 1 linha, sem alternativa": [
+    "VETOED: one-line reason, no alternative",
+    "VETADA: motivo en una línea, sin alternativa"
+  ],
+  "as versões andam dentro; a cerca só muda por decisão sua": [
+    "versions move inside it; only you can move the fence",
+    "las versiones avanzan dentro; solo tú puedes mover la cerca"
+  ],
+  "\"esta semana ou na próxima?\" — vetada antes do teste": [
+    "“this week or next?”—vetoed before the test",
+    "«¿esta semana o la próxima?»: vetada antes de la prueba"
+  ],
+  "6 contra 1 caiu dentro da faixa: ruído, não efeito": [
+    "6 versus 1 fell within the range: noise, not an effect",
+    "6 frente a 1 quedó dentro del rango: ruido, no un efecto"
+  ],
+  "Grife qualquer trecho para virar um cartão de revisão.": [
+    "Highlight any passage to turn it into a review card.",
+    "Resalta cualquier fragmento para convertirlo en una tarjeta de repaso."
+  ],
+  "Resumo": [
+    "Summary",
+    "Resumen"
+  ],
+  "O Guardião aplica, sem negociar, três listas que você escreveu. Invariáveis: o que nunca muda. \"Sem piorar\": a escolta da meta, com tolerância. Teto: custo e testes por vez.": [
+    "The Guardian applies three lists you wrote, without negotiation. Invariants: what never changes. “Without getting worse”: the target’s escort, with tolerance. Ceiling: cost and tests at a time.",
+    "El Guardián aplica sin negociar tres listas que escribiste. Invariantes: lo que nunca cambia. «Sin empeorar»: la escolta de la meta, con tolerancia. Límite: costo y pruebas simultáneas."
+  ],
+  "Ele veta antes do teste o que é piora previsível; o Avaliador reprova depois o que piorou de fato. Os dois usam a mesma ficha.": [
+    "It vetoes predictable harm before the test; the Evaluator rejects actual harm after it. Both use the same worksheet.",
+    "Veta antes de la prueba lo que previsiblemente empeorará; el Evaluador rechaza después lo que realmente empeoró. Ambos usan la misma ficha."
+  ],
+  "Tolerância zero em evento raro descarta hipóteses boas por acaso. A régua precisa ficar acima do ruído, e ajustá-la é trabalho seu, não do loop.": [
+    "Zero tolerance for a rare event discards good hypotheses by chance. The threshold must sit above the noise, and adjusting it is your job, not the loop’s.",
+    "La tolerancia cero para un evento raro descarta buenas hipótesis por azar. El umbral debe superar el ruido; ajustarlo es tu trabajo, no el del ciclo."
+  ],
+  "A qualidade do Guardião é a qualidade da sua lista: ele não tem bom senso, tem a sua ficha.": [
+    "The Guardian is only as good as your list: it does not have common sense; it has your worksheet.",
+    "La calidad del Guardián depende de tu lista: no tiene sentido común, tiene tu ficha."
+  ],
+  "Seu próximo passo": [
+    "Your next step",
+    "Tu siguiente paso"
+  ],
+  "Você acabou de escrever a resposta 3 da sua ficha do loop — o que nunca muda sem você.": [
+    "You have just written answer 3 on your loop worksheet—what never changes without you.",
+    "Acabas de escribir la respuesta 3 de la ficha del ciclo: lo que nunca cambia sin ti."
+  ],
+  "Nos próximos 15 minutos, no seu trabalho de verdade: mostre as 3 invariáveis para alguém da equipe. Pergunte: \"você conseguiria conferir isso numa proposta sem me perguntar nada?\". Se a resposta for não, reescreva a frase até ser sim.": [
+    "Over the next 15 minutes, in your actual work, show the 3 invariants to a teammate. Ask: “Could you check this in a proposal without asking me anything?” If the answer is no, rewrite it until it is yes.",
+    "Durante los próximos 15 minutos, en tu trabajo real, muestra las 3 invariantes a alguien del equipo. Pregunta: «¿Podrías comprobar esto en una propuesta sin preguntarme nada?». Si la respuesta es no, reescribe la frase hasta que sea sí."
+  ],
+  "Na próxima aula, você resolve o problema de descobrir a mesma coisa duas vezes: a Memória, o assistente que nunca apaga. E escreve a primeira linha do histórico do seu loop.": [
+    "In the next lesson, you will solve the problem of discovering the same thing twice: the Memory, the assistant that never deletes anything. You will also write the first line in your loop’s history.",
+    "En la próxima clase resolverás el problema de descubrir lo mismo dos veces: la Memoria, el asistente que nunca borra nada. También escribirás la primera línea del historial del ciclo."
+  ],
+  "← anterior: Otimizador, Experimentador, Avaliador": [
+    "← previous: Optimizer, Experimenter, Evaluator",
+    "← anterior: Optimizador, Experimentador, Evaluador"
+  ],
+  "próxima: a Memória →": [
+    "next: the Memory →",
+    "siguiente: la Memoria →"
+  ],
+  "Aula 3.3 · LOOP-R · INEMA.CLUB PRO": [
+    "Lesson 3.3 · LOOP-R · INEMA.CLUB PRO",
+    "Clase 3.3 · LOOP-R · INEMA.CLUB PRO"
+  ],
+  "Pratique agora": [
+    "Practice now",
+    "Practica ahora"
+  ],
+  "Fig. 1": [
+    "Fig. 1",
+    "Fig. 1"
+  ],
+  "Fig. 2": [
+    "Fig. 2",
+    "Fig. 2"
+  ],
+  "Fig. 3": [
+    "Fig. 3",
+    "Fig. 3"
+  ],
+  "Fig. 4": [
+    "Fig. 4",
+    "Fig. 4"
+  ],
+  "Fig. 5": [
+    "Fig. 5",
+    "Fig. 5"
+  ],
+  "H1": [
+    "H1",
+    "H1"
+  ],
+  "H2": [
+    "H2",
+    "H2"
+  ],
+  "H3": [
+    "H3",
+    "H3"
+  ],
+  "TESTE": [
+    "TEST",
+    "PRUEBA"
+  ],
+  "A × B": [
+    "A × B",
+    "A × B"
+  ],
+  "GUARDIÃO": [
+    "GUARDIAN",
+    "GUARDIÁN"
+  ],
+  "toca invariável?": [
+    "touches an invariant?",
+    "¿toca una invariante?"
+  ],
+  "piora previsível?": [
+    "predictable harm?",
+    "¿empeora de forma previsible?"
+  ],
+  "passou do teto?": [
+    "over the ceiling?",
+    "¿supera el límite?"
+  ],
+  "em dúvida: veta": [
+    "when in doubt: veto",
+    "en caso de duda: veta"
+  ],
+  "nunca desconto > 10%": [
+    "never discount > 10%",
+    "nunca descontar > 10 %"
+  ],
+  "nunca prometer resultado": [
+    "never promise a result",
+    "nunca prometer resultados"
+  ],
+  "nunca contatar quem saiu": [
+    "never contact anyone who opted out",
+    "nunca contactar a quien pidió la baja"
+  ],
+  "nunca citar concorrente": [
+    "never name a competitor",
+    "nunca nombrar a competidores"
+  ],
+  "v1": [
+    "v1",
+    "v1"
+  ],
+  "v2": [
+    "v2",
+    "v2"
+  ],
+  "v3…": [
+    "v3…",
+    "v3…"
+  ],
+  "resposta 17% → 25%": [
+    "replies 17% → 25%",
+    "respuestas 17 % → 25 %"
+  ],
+  "reclamações ↓": [
+    "complaints ↓",
+    "quejas ↓"
+  ],
+  "pedidos para sair ↓": [
+    "opt-outs ↓",
+    "solicitudes de baja ↓"
+  ],
+  "ruído esperado (1% em 300)": [
+    "expected noise (1% in 300)",
+    "ruido esperado (1 % en 300)"
+  ],
+  "tol. 0": [
+    "tol. 0",
+    "tol. 0"
+  ],
+  "tol. 0,01": [
+    "tol. 0.01",
+    "tol. 0,01"
+  ],
+  "A · 1 em 300": [
+    "A · 1 in 300",
+    "A · 1 de 300"
+  ],
+  "B · 6 em 300": [
+    "B · 6 in 300",
+    "B · 6 de 300"
+  ],
+  "piora real": [
+    "real deterioration",
+    "empeoramiento real"
+  ],
+  "teto R$ 50": [
+    "R$ 50 ceiling",
+    "límite R$ 50"
+  ],
+  "custo do ciclo": [
+    "cycle cost",
+    "costo del ciclo"
+  ],
+  "H2 · em teste": [
+    "H2 · testing",
+    "H2 · en prueba"
+  ],
+  "H3 · aguardando": [
+    "H3 · waiting",
+    "H3 · en espera"
+  ],
+  "máx. 1 teste por vez": [
+    "max. 1 test at a time",
+    "máx. 1 prueba a la vez"
+  ],
+  "Decisão: o Otimizador do corretor propõe \"responder ao lead já com simulação de financiamento aprovada\", com evidência forte. A ficha diz \"nunca prometer aprovação de financiamento\". O que o Guardião responde?": [
+    "Decision: the real estate agent’s Optimizer proposes “reply to the lead with a pre-approved loan simulation,” supported by strong evidence. The worksheet says “never promise loan approval.” What does the Guardian answer?",
+    "Decisión: el Optimizador del agente inmobiliario propone «responder al contacto con una simulación de préstamo aprobada», con evidencia sólida. La ficha indica «nunca prometer la aprobación de un préstamo». ¿Qué responde el Guardián?"
+  ],
+  "Vetada, em uma linha, sem sugerir versão mais suave. Evidência forte não compensa tocar uma invariável — a lista é limite, não meta.": [
+    "Vetoed, in one line, without suggesting a softer version. Strong evidence does not override an invariant—the list is a boundary, not a target.",
+    "Vetada, en una línea y sin sugerir una versión más suave. La evidencia sólida no permite infringir una invariante: la lista es un límite, no una meta."
+  ],
+  "Diagnóstico: um loop de suporte com a meta \"reduzir o tempo médio de atendimento\" começou a encerrar chamados sem resolver. O que faltou na ficha?": [
+    "Diagnosis: a support loop aimed at “reducing average handling time” began closing tickets without resolving them. What was missing from the worksheet?",
+    "Diagnóstico: un ciclo de soporte con la meta de «reducir el tiempo medio de atención» empezó a cerrar tickets sin resolverlos. ¿Qué faltaba en la ficha?"
+  ],
+  "Os \"sem piorar\" — reabertura em 7 dias e satisfação, com tolerância. Meta sem escolta ensina o loop a subir o número pelo caminho mais barato.": [
+    "The “without getting worse” measures—7-day reopenings and satisfaction—with tolerances. A target without an escort teaches the loop to raise its number by the cheapest route.",
+    "Los indicadores de «sin empeorar»: reaperturas a 7 días y satisfacción, con tolerancia. Una meta sin escolta enseña al ciclo a elevar la cifra por el camino más barato."
+  ],
+  "Aplicação: você registra 1 reclamação a cada 100 propostas e vai testar com 300 de cada lado. Que tolerância coloca em \"reclamações\", e por quê?": [
+    "Application: you record 1 complaint per 100 proposals and plan a test with 300 on each side. What tolerance do you set for “complaints,” and why?",
+    "Aplicación: registras 1 queja por cada 100 propuestas y harás una prueba con 300 por grupo. ¿Qué tolerancia asignas a «quejas» y por qué?"
+  ],
+  "Por volta de 0,01, não zero. Um evento de 1% oscila cerca de 1 ponto por acaso nessa quantidade; tolerância zero reprovaria uma versão boa por ruído — como aconteceu no ciclo 2 da clínica (6 contra 1).": [
+    "Around 0.01, not zero. A 1% event fluctuates by about 1 point by chance at this sample size; zero tolerance would reject a good version because of noise—as happened in the clinic’s cycle 2 (6 versus 1).",
+    "Alrededor de 0,01, no cero. Un evento del 1 % fluctúa cerca de 1 punto por azar con esta cantidad; una tolerancia cero rechazaría una buena versión por ruido, como ocurrió en el ciclo 2 de la clínica (6 frente a 1)."
+  ],
+  "Contraste: qual a diferença entre o Guardião vetar \"o preço logo após a saudação\" e o Avaliador reprovar \"até 80 palavras\"?": [
+    "Contrast: what is the difference between the Guardian vetoing “price right after the greeting” and the Evaluator rejecting “up to 80 words”?",
+    "Contraste: ¿qué diferencia hay entre que el Guardián vete «el precio justo después del saludo» y que el Evaluador rechace «hasta 80 palabras»?"
+  ],
+  "O Guardião vetou antes do teste, por piora previsível de um \"sem piorar\" (a hipótese admitia o risco). O Avaliador reprovou depois do teste, porque um \"sem piorar\" caiu além da tolerância nos números. Mesma ficha, momentos diferentes.": [
+    "The Guardian vetoed before the test because a “without getting worse” measure was predictably at risk (the hypothesis acknowledged it). The Evaluator rejected the idea after the test because a measure crossed its tolerance in the data. Same worksheet, different moments.",
+    "El Guardián vetó antes de la prueba por un riesgo previsible para un indicador de «sin empeorar» (la hipótesis reconocía el riesgo). El Evaluador rechazó después de la prueba porque una cifra superó la tolerancia. La misma ficha, en momentos distintos."
+  ],
+  "Pergunta: por que o Guardião não pode ser convencido por argumento?": [
+    "Question: why can’t an argument persuade the Guardian?",
+    "Pregunta: ¿por qué no se puede convencer al Guardián con argumentos?"
+  ],
+  "Porque o argumento vem de quem quer que a hipótese passe. Se ele aceitasse \"com ressalva\", a lista deixaria de ser limite e viraria negociação — e a escolta da meta cairia no primeiro ciclo em que o ganho parecesse grande.": [
+    "Because the argument comes from someone who wants the hypothesis approved. If it accepted “with reservations,” the list would stop being a boundary and become a negotiation—and the target’s escort would disappear in the first cycle with a big-looking gain.",
+    "Porque el argumento viene de quien quiere que se apruebe la hipótesis. Si aceptara «con reservas», la lista dejaría de ser un límite y se volvería una negociación; la escolta de la meta desaparecería en el primer ciclo en que la ganancia pareciera grande."
+  ],
+  "O assistente que lê cada hipótese antes do teste e responde APROVADA ou VETADA. Confere contra o que nunca muda, o que não pode piorar e o teto. Veto é final.": [
+    "The assistant that reads each hypothesis before testing and answers APPROVED or VETOED. It checks what must never change, what must not get worse, and the ceiling. A veto is final.",
+    "El asistente que lee cada hipótesis antes de la prueba y responde APROBADA o VETADA. Comprueba lo que nunca cambia, lo que no puede empeorar y el límite. El veto es definitivo."
+  ],
+  "Regras que nenhuma hipótese pode tocar, em nenhuma circunstância: segurança, lei, política da empresa. Mudam só por decisão sua, fora do loop.": [
+    "Rules no hypothesis may touch under any circumstances: safety, law, and company policy. They change only by your decision, outside the loop.",
+    "Reglas que ninguna hipótesis puede tocar bajo ninguna circunstancia: seguridad, ley y política de la empresa. Solo cambian por decisión tuya, fuera del ciclo."
+  ],
+  "Números que acompanham a meta e não podem cair além de uma tolerância enquanto a meta sobe. Ex.: reclamações, margem, pedidos para parar de receber mensagens.": [
+    "Metrics that accompany the target and must not fall beyond a tolerance while the target rises. Examples: complaints, margin, requests to stop receiving messages.",
+    "Cifras que acompañan la meta y no pueden caer más allá de una tolerancia mientras la meta sube. Por ejemplo: quejas, margen y solicitudes para dejar de recibir mensajes."
+  ],
+  "Quanto um 'sem piorar' pode cair sem que isso conte como piora. Deve ser maior que o ruído esperado na quantidade do teste — senão descarta hipóteses boas por acaso.": [
+    "How much a guardrail can fall without counting as deterioration. It must be greater than the expected noise at the test sample size—or good hypotheses will be discarded by chance.",
+    "Cuánto puede caer un indicador de «sin empeorar» sin que cuente como deterioro. Debe superar el ruido esperado para el tamaño de muestra; de lo contrario, se descartarán buenas hipótesis por azar."
+  ],
+  "<b>Fig. 1</b> — O Guardião fica entre as hipóteses e o teste. Cada hipótese passa por três conferências e sai com uma palavra; a seta 'negociar' não existe.": [
+    "<b>Fig. 1</b> — The Guardian sits between hypotheses and the test. Each hypothesis passes three checks and gets one verdict; there is no “negotiate” arrow.",
+    "<b>Fig. 1</b> — El Guardián está entre las hipótesis y la prueba. Cada hipótesis pasa por tres comprobaciones y sale con una palabra; no existe la flecha de «negociar»."
+  ],
+  "<b>Fig. 2</b> — Invariáveis são a cerca fixa em volta do campo onde o loop pode se mover. A cerca não é meta nem tolerância: nenhuma hipótese chega perto dela.": [
+    "<b>Fig. 2</b> — Invariants are the fixed fence around the field where the loop can move. The fence is neither a target nor a tolerance; no hypothesis may cross it.",
+    "<b>Fig. 2</b> — Las invariantes son la cerca fija alrededor del campo donde puede moverse el ciclo. La cerca no es una meta ni una tolerancia: ninguna hipótesis puede cruzarla."
+  ],
+  "<b>Fig. 3</b> — A meta sobe puxada por B, mas está amarrada a dois 'sem piorar'. Se um deles cai além da linha de tolerância, a meta não conta — o Guardião veta antes, o Avaliador reprova depois.": [
+    "<b>Fig. 3</b> — B pulls the target upward, but it is tied to two guardrails. If either falls beyond its tolerance line, the target does not count—the Guardian vetoes beforehand, and the Evaluator rejects afterward.",
+    "<b>Fig. 3</b> — B impulsa la meta hacia arriba, pero está sujeta a dos indicadores de seguridad. Si alguno cae más allá de la tolerancia, la meta no cuenta: el Guardián veta antes y el Evaluador rechaza después."
+  ],
+  "<b>Fig. 4</b> — A faixa cinza é a oscilação normal de um evento raro em 300 execuções. Tolerância zero (linha de cima) cai dentro do ruído; 0,01 fica logo acima dele. O que passa da faixa é piora de verdade.": [
+    "<b>Fig. 4</b> — The gray band is the normal fluctuation of a rare event across 300 runs. Zero tolerance (top line) falls within the noise; 0.01 sits just above it. Anything beyond the band is real deterioration.",
+    "<b>Fig. 4</b> — La franja gris representa la fluctuación normal de un evento raro en 300 ejecuciones. La tolerancia cero (línea superior) cae dentro del ruido; 0,01 queda justo por encima. Lo que supera la franja es un empeoramiento real."
+  ],
+  "<b>Fig. 5</b> — O teto é um medidor e uma fila. O custo do ciclo enche até a marca; acima dela, nada é aprovado. Ao lado, um teste por vez: a hipótese aprovada seguinte espera.": [
+    "<b>Fig. 5</b> — The ceiling is a meter and a queue. Cycle cost fills up to the mark; above it, nothing is approved. Beside it, one test at a time: the next approved hypothesis waits.",
+    "<b>Fig. 5</b> — El límite es un medidor y una fila. El costo del ciclo llega hasta la marca; por encima, no se aprueba nada. Al lado, una prueba a la vez: la siguiente hipótesis aprobada espera."
+  ]
+}
