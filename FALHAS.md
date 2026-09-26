@@ -3,6 +3,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-09-26 | Checagem staged detectou espaços em linhas vazias de guias novos, fora do diff rastreado anterior | Limpar linhas vazias e validar também git diff --cached --check | infra |
 | 2026-09-26 | Link de idioma na barra fixa não recebia clique porque herdava pointer-events:none | Habilitar pointer-events somente no seletor de idiomas | infra |
 | 2026-09-26 | Trilha 4 EN/ES referenciava aula.css ausente e guia PT excedia largura móvel | Apontar CSS compartilhado e aplicar min-width:0 nas células do guia | infra |
 | 2026-09-26 | Verificador de tradução não detectava feedbacks, legendas e cartões de revisão literais em PT nos catálogos | Incluir esses campos pelos textos exatos da fonte e reaplicar cada aula; auditar todos os campos JSON/atributos | infra |
