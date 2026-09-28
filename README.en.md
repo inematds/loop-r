@@ -81,3 +81,7 @@ docs/                   overview, critique, architecture, spec, agents, measurem
 ---
 
 INEMA · [inema.club](https://inema.club) · [inema.pro](https://inema.pro)
+
+## Videos
+
+[Watch the 5 tracks on video](https://inematds.github.io/loop-r/videos/en.html) (PT/EN/ES), with chapters and subtitles.

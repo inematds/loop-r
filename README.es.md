@@ -81,3 +81,7 @@ docs/                   visión, crítica, arquitectura, especificación, agente
 ---
 
 INEMA · [inema.club](https://inema.club) · [inema.pro](https://inema.pro)
+
+## Videos
+
+[Mira las 5 rutas en video](https://inematds.github.io/loop-r/videos/es.html) (PT/EN/ES), con capítulos y subtítulos.

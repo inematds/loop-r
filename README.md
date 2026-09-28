@@ -80,3 +80,7 @@ docs/                visão, crítica, arquitetura, spec, agentes, medição, ro
 ---
 
 INEMA · [inema.club](https://inema.club) · [inema.pro](https://inema.pro)
+
+## Vídeos
+
+[Assistir às 5 trilhas em vídeo](https://inematds.github.io/loop-r/videos/) (PT/EN/ES), com capítulos e legendas. Produzido com [Explicavideos](https://inematds.github.io/explicavideos/guia/).

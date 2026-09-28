@@ -1,0 +1,22 @@
+{
+  "t2": {
+    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t2-pt.mp4",
+    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t2-pt.srt",
+    "duration": 1022.701016
+  },
+  "t3": {
+    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t3-pt.mp4",
+    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t3-pt.srt",
+    "duration": 1040.861333
+  },
+  "t4": {
+    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t4-pt.mp4",
+    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t4-pt.srt",
+    "duration": 1016.821016
+  },
+  "t5": {
+    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-pt.mp4",
+    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-pt.srt",
+    "duration": 1023.541333
+  }
+}
