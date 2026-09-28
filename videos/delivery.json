@@ -19,6 +19,11 @@
     "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t4-pt.srt",
     "duration": 1016.821016
   },
+  "t5-en": {
+    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-en.mp4",
+    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-en.srt",
+    "duration": 1031.381016
+  },
   "t5": {
     "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-pt.mp4",
     "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-pt.srt",
