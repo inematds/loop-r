@@ -1,4 +1,9 @@
 {
+  "t1-en": {
+    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t1-en-en.mp4",
+    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t1-en-en.srt",
+    "duration": 1103.701333
+  },
   "t1-es": {
     "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t1-es-es.mp4",
     "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t1-es-es.srt",

@@ -1,0 +1,2469 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.580
+Hi, I'm Nei Maldaner,
+
+2
+00:00:01.580 --> 00:00:03.900
+and this is track one of the
+
+3
+00:00:03.900 --> 00:00:05.740
+LOOP-R course.
+
+4
+00:00:05.840 --> 00:00:07.640
+This track is a diagnosis:
+
+5
+00:00:07.640 --> 00:00:09.560
+why does your business use AI every
+
+6
+00:00:09.560 --> 00:00:11.200
+day and still not improve?
+
+7
+00:00:11.200 --> 00:00:12.520
+You will identify,
+
+8
+00:00:12.520 --> 00:00:13.740
+in your own business,
+
+9
+00:00:13.740 --> 00:00:16.300
+where AI does work but learns nothing.
+
+10
+00:00:16.300 --> 00:00:18.080
+There are four lessons.
+
+11
+00:00:18.080 --> 00:00:19.080
+In the first,
+
+12
+00:00:19.080 --> 00:00:20.200
+you name the problem.
+
+13
+00:00:20.200 --> 00:00:21.100
+In the second,
+
+14
+00:00:21.100 --> 00:00:22.680
+you count the rework.
+
+15
+00:00:22.680 --> 00:00:23.680
+In the third,
+
+16
+00:00:23.680 --> 00:00:25.320
+you mark your maturity level,
+
+17
+00:00:25.320 --> 00:00:26.540
+from one to five.
+
+18
+00:00:26.540 --> 00:00:27.600
+In the fourth,
+
+19
+00:00:27.600 --> 00:00:30.000
+you rewrite a vague instruction
+
+20
+00:00:30.000 --> 00:00:31.620
+so its result can be measured.
+
+21
+00:00:31.620 --> 00:00:33.800
+We will follow three people:
+
+22
+00:00:34.520 --> 00:00:36.980
+Regina, who owns an aesthetics clinic;
+
+23
+00:00:36.980 --> 00:00:39.240
+Marcos, a real estate agent;
+
+24
+00:00:39.240 --> 00:00:41.680
+and Paulo, a support manager.
+
+25
+00:00:41.680 --> 00:00:43.920
+Each lesson has a short practice.
+
+26
+00:00:43.920 --> 00:00:44.960
+When I ask,
+
+27
+00:00:44.960 --> 00:00:46.860
+pause the video and do it right
+
+28
+00:00:46.860 --> 00:00:48.540
+then, using your own business.
+
+29
+00:00:48.540 --> 00:00:50.360
+Today, in most businesses,
+
+30
+00:00:50.360 --> 00:00:52.740
+AI works in a straight line.
+
+31
+00:00:52.740 --> 00:00:54.380
+Someone writes a request,
+
+32
+00:00:54.380 --> 00:00:56.520
+what people often call a prompt,
+
+33
+00:00:56.520 --> 00:00:58.840
+AI replies, the
+
+34
+00:00:58.840 --> 00:01:00.860
+person adjusts it and sends it.
+
+35
+00:01:00.860 --> 00:01:01.500
+Done.
+
+36
+00:01:01.500 --> 00:01:02.700
+Look at Regina.
+
+37
+00:01:02.700 --> 00:01:04.960
+She sends about two hundred proposals a
+
+38
+00:01:04.960 --> 00:01:06.100
+month over WhatsApp.
+
+39
+00:01:06.100 --> 00:01:08.520
+She asks AI for a package proposal,
+
+40
+00:01:08.520 --> 00:01:09.740
+changes two sentences,
+
+41
+00:01:09.740 --> 00:01:11.340
+and sends it.
+
+42
+00:01:11.340 --> 00:01:14.640
+The customer replies or disappears.
+
+43
+00:01:15.160 --> 00:01:17.220
+Proposal number two hundred and one starts
+
+44
+00:01:17.220 --> 00:01:19.200
+knowing nothing about the previous two hundred:
+
+45
+00:01:19.200 --> 00:01:20.500
+not which got replies,
+
+46
+00:01:20.500 --> 00:01:22.040
+or which led to a sale.
+
+47
+00:01:22.040 --> 00:01:23.040
+Notice:
+
+48
+00:01:23.040 --> 00:01:25.040
+every proposal was good.
+
+49
+00:01:25.040 --> 00:01:26.660
+Quality is not the problem.
+
+50
+00:01:26.660 --> 00:01:28.900
+The path has four stops and no
+
+51
+00:01:28.900 --> 00:01:29.760
+way back.
+
+52
+00:01:29.760 --> 00:01:30.780
+With a loop,
+
+53
+00:01:30.780 --> 00:01:33.260
+those same two hundred proposals each become
+
+54
+00:01:33.260 --> 00:01:34.380
+a row in a log,
+
+55
+00:01:34.380 --> 00:01:36.320
+and one decision comes out each week
+
+56
+00:01:36.320 --> 00:01:37.560
+on a five-line card.
+
+57
+00:01:37.560 --> 00:01:39.080
+And that is not a flaw in
+
+58
+00:01:39.080 --> 00:01:39.580
+AI.
+
+59
+00:01:39.520 --> 00:01:41.820
+An AI chat is like an excellent
+
+60
+00:01:41.820 --> 00:01:45.040
+temporary assistant who arrives new every shift.
+
+61
+00:01:45.040 --> 00:01:46.440
+It writes very well,
+
+62
+00:01:46.440 --> 00:01:47.840
+but it was not here yesterday.
+
+63
+00:01:47.840 --> 00:01:50.880
+Everything that happens after the reply stays
+
+64
+00:01:50.880 --> 00:01:52.760
+outside the conversation.
+
+65
+00:01:52.760 --> 00:01:54.360
+Marcos, the real estate agent,
+
+66
+00:01:54.360 --> 00:01:56.480
+gets about forty leads a week through
+
+67
+00:01:56.480 --> 00:01:57.860
+the listing portal.
+
+68
+00:01:57.860 --> 00:01:59.180
+A lead is someone who asked for
+
+69
+00:01:59.180 --> 00:02:01.160
+information and has not decided yet.
+
+70
+00:02:01.160 --> 00:02:02.920
+When a lead responds well because he
+
+71
+00:02:02.920 --> 00:02:04.440
+mentioned the balcony’s square footage,
+
+72
+00:02:04.440 --> 00:02:05.740
+that taught him something,
+
+73
+00:02:05.740 --> 00:02:07.400
+if he noticed.
+
+74
+00:02:07.400 --> 00:02:09.680
+To AI, the next lead is the
+
+75
+00:02:09.680 --> 00:02:10.960
+first one it has ever seen.
+
+76
+00:02:10.960 --> 00:02:12.400
+That is why using it a lot
+
+77
+00:02:12.400 --> 00:02:13.620
+does not become learning.
+
+78
+00:02:13.620 --> 00:02:15.832
+If Marcos used AI one hundred and
+
+79
+00:02:15.832 --> 00:02:17.560
+sixty times this month,
+
+80
+00:02:17.560 --> 00:02:18.760
+it
+
+81
+00:02:18.840 --> 00:02:21.940
+knows nothing about what worked unless someone
+
+82
+00:02:21.940 --> 00:02:24.840
+records the result and carries it forward.
+
+83
+00:02:24.840 --> 00:02:27.180
+Real improvement does not come from asking
+
+84
+00:02:27.180 --> 00:02:27.680
+better.
+
+85
+00:02:27.640 --> 00:02:30.160
+It comes from six ingredients connected in
+
+86
+00:02:30.160 --> 00:02:31.440
+a loop.
+
+87
+00:02:31.540 --> 00:02:33.360
+Evidence: what happened,
+
+88
+00:02:33.360 --> 00:02:34.680
+written down.
+
+89
+00:02:34.680 --> 00:02:37.280
+Metric: a number that says whether it
+
+90
+00:02:37.280 --> 00:02:37.960
+worked.
+
+91
+00:02:37.960 --> 00:02:41.120
+Memory: where past attempts are kept.
+
+92
+00:02:41.120 --> 00:02:42.940
+Hypothesis: an idea for a change,
+
+93
+00:02:42.940 --> 00:02:44.180
+with a reason.
+
+94
+00:02:44.180 --> 00:02:45.100
+Experiment:
+
+95
+00:02:45.100 --> 00:02:47.660
+the idea tested against the current version.
+
+96
+00:02:47.660 --> 00:02:51.460
+And evaluation: someone says which one won,
+
+97
+00:02:51.500 --> 00:02:53.180
+based on the number.
+
+98
+00:02:53.180 --> 00:02:55.680
+Paulo handles ten thousand support tickets a
+
+99
+00:02:55.680 --> 00:02:56.180
+year.
+
+100
+00:02:56.180 --> 00:02:58.520
+For him, the metric is resolved on
+
+101
+00:02:58.520 --> 00:03:00.680
+first contact, yes or no.
+
+102
+00:03:00.680 --> 00:03:03.700
+The hypothesis: if the password reply includes
+
+103
+00:03:03.700 --> 00:03:04.800
+a direct link,
+
+104
+00:03:04.800 --> 00:03:07.080
+fewer people will come back.
+
+105
+00:03:07.180 --> 00:03:09.780
+The test: half the tickets get the
+
+106
+00:03:09.780 --> 00:03:11.920
+new reply, half the old one.
+
+107
+00:03:11.920 --> 00:03:14.240
+None of these six means asking more
+
+108
+00:03:14.240 --> 00:03:15.120
+forcefully.
+
+109
+00:03:15.120 --> 00:03:16.240
+If one is missing,
+
+110
+00:03:16.240 --> 00:03:17.760
+the loop opens:
+
+111
+00:03:17.760 --> 00:03:20.600
+a hypothesis without an experiment
+
+112
+00:03:20.600 --> 00:03:21.540
+is a guess.
+
+113
+00:03:21.540 --> 00:03:22.880
+Now, the anti-promise.
+
+114
+00:03:22.880 --> 00:03:24.580
+No loop guarantees that the number will
+
+115
+00:03:24.580 --> 00:03:25.080
+go up.
+
+116
+00:03:25.020 --> 00:03:27.980
+The loop guarantees something more modest:
+
+117
+00:03:27.980 --> 00:03:30.640
+a worse version does not replace the
+
+118
+00:03:30.640 --> 00:03:32.420
+current one on its own.
+
+119
+00:03:32.420 --> 00:03:34.640
+Every change is recorded and has a
+
+120
+00:03:34.640 --> 00:03:35.660
+rollback button.
+
+121
+00:03:35.660 --> 00:03:37.780
+The cycle runs every week.
+
+122
+00:03:37.780 --> 00:03:40.120
+And the cost does not exceed the
+
+123
+00:03:40.120 --> 00:03:40.620
+limit.
+
+124
+00:03:40.600 --> 00:03:41.740
+This is process,
+
+125
+00:03:41.740 --> 00:03:43.440
+not results.
+
+126
+00:03:43.480 --> 00:03:45.600
+In the course reference example,
+
+127
+00:03:45.600 --> 00:03:48.640
+a fictional clinic with simulated data,
+
+128
+00:03:48.640 --> 00:03:51.170
+the proposal response rate went from nineteen
+
+129
+00:03:51.170 --> 00:03:53.660
+point three to twenty-nine point three percent,
+
+130
+00:03:53.660 --> 00:03:54.695
+with
+
+131
+00:03:54.695 --> 00:03:56.300
+three hundred sends on each side.
+
+132
+00:03:56.300 --> 00:03:58.075
+Sales conversion did not move:
+
+133
+00:03:58.075 --> 00:03:59.840
+three point seven versus three percent,
+
+134
+00:03:59.840 --> 00:04:01.560
+a difference that could be chance.
+
+135
+00:04:01.560 --> 00:04:03.560
+The loop did not hide it.
+
+136
+00:04:03.560 --> 00:04:04.640
+It recorded it,
+
+137
+00:04:04.640 --> 00:04:06.360
+and the person decided with the numbers
+
+138
+00:04:06.360 --> 00:04:07.367
+in front of them.
+
+139
+00:04:07.400 --> 00:04:09.080
+Time to practice,
+
+140
+00:04:09.280 --> 00:04:10.960
+about ten minutes.
+
+141
+00:04:10.960 --> 00:04:13.560
+Regina uses AI for five things:
+
+142
+00:04:13.560 --> 00:04:14.880
+proposals over WhatsApp,
+
+143
+00:04:14.880 --> 00:04:16.780
+answering prices on Instagram,
+
+144
+00:04:16.780 --> 00:04:19.320
+post captions, summaries of Google reviews,
+
+145
+00:04:19.320 --> 00:04:21.080
+and appointment reminders.
+
+146
+00:04:21.080 --> 00:04:22.920
+None records what happened afterward.
+
+147
+00:04:22.920 --> 00:04:24.800
+And she thinks summarizing
+
+148
+00:04:24.800 --> 00:04:27.580
+reviews already counts as learning.
+
+149
+00:04:27.580 --> 00:04:29.100
+Pause the video and answer.
+
+150
+00:04:29.100 --> 00:04:30.920
+Which of the five end there?
+
+151
+00:04:30.920 --> 00:04:32.280
+Is task four a loop?
+
+152
+00:04:32.280 --> 00:04:34.320
+Which would you choose to start tracking?
+
+153
+00:04:34.320 --> 00:04:36.480
+According to the course answer key,
+
+154
+00:04:36.480 --> 00:04:37.920
+all five end there.
+
+155
+00:04:37.920 --> 00:04:39.820
+Reading reviews is not a loop,
+
+156
+00:04:39.820 --> 00:04:41.020
+because
+
+157
+00:04:41.360 --> 00:04:43.020
+reading is not learning;
+
+158
+00:04:43.020 --> 00:04:45.720
+changing based on evidence is.
+
+159
+00:04:45.720 --> 00:04:47.700
+The best choice is the proposal:
+
+160
+00:04:47.700 --> 00:04:48.980
+it is the most frequent,
+
+161
+00:04:48.980 --> 00:04:51.500
+and replies arrive within hours.
+
+162
+00:04:51.500 --> 00:04:54.040
+Then write down five tasks in your
+
+163
+00:04:54.040 --> 00:04:55.600
+business using this phrase:
+
+164
+00:04:55.600 --> 00:04:58.560
+it ends there because nobody records such
+
+165
+00:04:58.560 --> 00:04:59.220
+and such.
+
+166
+00:04:59.220 --> 00:05:00.440
+Second lesson.
+
+167
+00:05:00.440 --> 00:05:02.667
+Volume creates a feeling of experience.
+
+168
+00:05:02.667 --> 00:05:05.040
+Ten thousand tickets sound like ten thousand
+
+169
+00:05:05.040 --> 00:05:05.560
+lessons.
+
+170
+00:05:05.560 --> 00:05:07.500
+But if nobody wrote down what they
+
+171
+00:05:07.500 --> 00:05:09.700
+were about, those ten thousand are worth
+
+172
+00:05:09.700 --> 00:05:11.680
+as much as the first one.
+
+173
+00:05:11.680 --> 00:05:13.360
+Paulo ends the year with ten thousand
+
+174
+00:05:13.360 --> 00:05:14.880
+tickets, each resolved well.
+
+175
+00:05:14.880 --> 00:05:16.920
+And nobody knows that thirty-seven percent of
+
+176
+00:05:16.920 --> 00:05:18.560
+them, three thousand seven hundred,
+
+177
+00:05:18.560 --> 00:05:20.320
+concern the same problem:
+
+178
+00:05:20.320 --> 00:05:23.760
+a password screen that confuses everyone.
+
+179
+00:05:23.760 --> 00:05:25.340
+Why did nobody notice?
+
+180
+00:05:25.340 --> 00:05:26.780
+From inside one ticket,
+
+181
+00:05:26.780 --> 00:05:27.980
+you cannot see the pile.
+
+182
+00:05:27.980 --> 00:05:29.760
+Only someone looking at the whole set,
+
+183
+00:05:29.760 --> 00:05:31.500
+with a topic column filled in,
+
+184
+00:05:31.500 --> 00:05:33.360
+sees that one in three points to
+
+185
+00:05:33.360 --> 00:05:34.860
+the same thing.
+
+186
+00:05:35.140 --> 00:05:36.060
+Those
+
+187
+00:05:36.060 --> 00:05:38.840
+ten thousand produced zero product changes.
+
+188
+00:05:38.840 --> 00:05:41.020
+One fix to that screen would have
+
+189
+00:05:41.020 --> 00:05:43.760
+prevented three thousand seven hundred conversations.
+
+190
+00:05:44.520 --> 00:05:47.260
+Starting from scratch has a cost that
+
+191
+00:05:47.260 --> 00:05:49.400
+does not appear on the invoice.
+
+192
+00:05:49.400 --> 00:05:51.676
+Marcos replies to about one hundred and
+
+193
+00:05:51.676 --> 00:05:53.000
+sixty leads a month.
+
+194
+00:05:53.000 --> 00:05:55.080
+Each reply takes about six minutes to
+
+195
+00:05:55.080 --> 00:05:57.440
+request, adjust, and send.
+
+196
+00:05:57.440 --> 00:05:59.960
+That is sixteen hours a month.
+
+197
+00:05:59.960 --> 00:06:02.240
+And next month’s hours will buy the
+
+198
+00:06:02.240 --> 00:06:04.480
+same thing: one hundred and sixty isolated
+
+199
+00:06:04.480 --> 00:06:05.620
+replies.
+
+200
+00:06:05.620 --> 00:06:06.700
+Now compare.
+
+201
+00:06:06.700 --> 00:06:07.680
+The same time,
+
+202
+00:06:07.680 --> 00:06:08.700
+the
+
+203
+00:06:08.700 --> 00:06:11.500
+same replies, but each leaves a row:
+
+204
+00:06:11.500 --> 00:06:13.320
+date, property type,
+
+205
+00:06:13.320 --> 00:06:16.040
+opening used, whether the lead replied,
+
+206
+00:06:16.040 --> 00:06:17.700
+whether they booked a viewing.
+
+207
+00:06:17.700 --> 00:06:19.340
+The effort is the same.
+
+208
+00:06:19.340 --> 00:06:20.860
+The difference is the trail.
+
+209
+00:06:20.860 --> 00:06:21.980
+In one case,
+
+210
+00:06:21.980 --> 00:06:23.820
+all that remains is fatigue.
+
+211
+00:06:23.820 --> 00:06:24.780
+In the other,
+
+212
+00:06:24.780 --> 00:06:26.560
+there is material for a question Marcos
+
+213
+00:06:26.560 --> 00:06:28.040
+cannot answer today:
+
+214
+00:06:28.040 --> 00:06:30.940
+which opening gets more people to book?
+
+215
+00:06:30.940 --> 00:06:33.440
+Today everyone has access to the same
+
+216
+00:06:33.440 --> 00:06:34.380
+AI,
+
+217
+00:06:34.380 --> 00:06:35.620
+equally capable.
+
+218
+00:06:35.620 --> 00:06:39.160
+Think of two real estate agencies with
+
+219
+00:06:39.580 --> 00:06:40.420
+the same chat,
+
+220
+00:06:40.420 --> 00:06:41.620
+the same portals,
+
+221
+00:06:41.620 --> 00:06:43.280
+and the same neighborhood.
+
+222
+00:06:43.280 --> 00:06:44.920
+What separates them?
+
+223
+00:06:44.920 --> 00:06:46.810
+It is not the
+
+224
+00:06:46.810 --> 00:06:47.460
+better-written request.
+
+225
+00:06:47.460 --> 00:06:48.400
+That
+
+226
+00:06:48.400 --> 00:06:49.740
+can be copied in a day.
+
+227
+00:06:49.740 --> 00:06:52.200
+What cannot be copied is the history.
+
+228
+00:06:52.200 --> 00:06:54.400
+One records, for
+
+229
+00:06:54.840 --> 00:06:56.720
+each lead, the channel,
+
+230
+00:06:56.720 --> 00:06:59.200
+property type, reply sent,
+
+231
+00:06:59.200 --> 00:07:00.740
+and what happened.
+
+232
+00:07:00.740 --> 00:07:02.100
+After six months,
+
+233
+00:07:02.100 --> 00:07:03.820
+it has about a thousand rows to
+
+234
+00:07:03.820 --> 00:07:05.800
+consult before changing anything.
+
+235
+00:07:05.800 --> 00:07:08.200
+The other has a thousand lost conversations
+
+236
+00:07:08.200 --> 00:07:09.920
+in each agent’s WhatsApp.
+
+237
+00:07:09.920 --> 00:07:11.700
+A competitor can copy the text.
+
+238
+00:07:11.700 --> 00:07:13.460
+They cannot copy six months of what
+
+239
+00:07:13.460 --> 00:07:15.460
+we tested and how it went.
+
+240
+00:07:15.460 --> 00:07:18.100
+That accumulated history is the asset,
+
+241
+00:07:18.100 --> 00:07:19.920
+and it begins with one row per
+
+242
+00:07:19.920 --> 00:07:20.960
+run, every day.
+
+243
+00:07:20.960 --> 00:07:21.920
+The
+
+244
+00:07:21.920 --> 00:07:24.160
+whole loop depends on one humble step:
+
+245
+00:07:24.160 --> 00:07:24.860
+logging.
+
+246
+00:07:24.860 --> 00:07:26.740
+The place is the logging spreadsheet:
+
+247
+00:07:26.740 --> 00:07:29.040
+one row per run and a column
+
+248
+00:07:29.040 --> 00:07:30.140
+most people forget,
+
+249
+00:07:30.140 --> 00:07:32.080
+what happened afterward.
+
+250
+00:07:32.080 --> 00:07:34.000
+Without it, you have a file of
+
+251
+00:07:34.000 --> 00:07:35.820
+texts, not evidence.
+
+252
+00:07:35.820 --> 00:07:37.100
+In Paulo’s support team,
+
+253
+00:07:37.100 --> 00:07:39.060
+there are five columns:
+
+254
+00:07:39.060 --> 00:07:40.940
+date, ticket
+
+255
+00:07:40.940 --> 00:07:43.080
+topic, saved reply used,
+
+256
+00:07:43.080 --> 00:07:44.420
+resolved on first contact,
+
+257
+00:07:44.420 --> 00:07:45.360
+and
+
+258
+00:07:45.360 --> 00:07:47.300
+came back within seven days.
+
+259
+00:07:47.300 --> 00:07:49.360
+The question about what people complain about
+
+260
+00:07:49.360 --> 00:07:51.400
+most, which took a week of reading,
+
+261
+00:07:51.400 --> 00:07:52.880
+becomes a two-minute count.
+
+262
+00:07:52.880 --> 00:07:54.960
+Two honest points about the method.
+
+263
+00:07:54.960 --> 00:07:56.940
+The evidence source is the bottleneck,
+
+264
+00:07:56.940 --> 00:07:59.040
+not AI: if the data live in
+
+265
+00:07:59.040 --> 00:08:00.080
+the salesperson’s head,
+
+266
+00:08:00.080 --> 00:08:02.160
+the loop becomes theater.
+
+267
+00:08:02.160 --> 00:08:04.160
+And twelve rows do not make a
+
+268
+00:08:04.160 --> 00:08:04.660
+pattern.
+
+269
+00:08:04.600 --> 00:08:06.100
+The loop’s rule is to claim a
+
+270
+00:08:06.100 --> 00:08:08.040
+pattern only with thirty or more per
+
+271
+00:08:08.040 --> 00:08:08.600
+group.
+
+272
+00:08:08.600 --> 00:08:09.660
+Now the practice,
+
+273
+00:08:09.660 --> 00:08:11.460
+about ten minutes.
+
+274
+00:08:11.460 --> 00:08:12.800
+This is just counting;
+
+275
+00:08:12.800 --> 00:08:14.760
+nothing changes in your business.
+
+276
+00:08:14.760 --> 00:08:15.900
+Pause the video.
+
+277
+00:08:15.900 --> 00:08:17.820
+Choose a task AI does for you
+
+278
+00:08:17.820 --> 00:08:18.540
+every week.
+
+279
+00:08:18.540 --> 00:08:20.360
+Open WhatsApp, email,
+
+280
+00:08:20.360 --> 00:08:22.320
+or the system from last month and
+
+281
+00:08:22.320 --> 00:08:23.800
+count how many times it happened.
+
+282
+00:08:23.800 --> 00:08:25.640
+If counting all of them feels like
+
+283
+00:08:25.640 --> 00:08:28.340
+too much, estimate one week and multiply
+
+284
+00:08:28.340 --> 00:08:29.320
+by four.
+
+285
+00:08:29.320 --> 00:08:30.400
+For each one,
+
+286
+00:08:30.400 --> 00:08:31.380
+ask:
+
+287
+00:08:31.380 --> 00:08:33.800
+do I know what happened afterward?
+
+288
+00:08:33.800 --> 00:08:35.700
+Count the ones where the answer is
+
+289
+00:08:35.700 --> 00:08:36.300
+no.
+
+290
+00:08:36.300 --> 00:08:38.700
+Then write a sentence with two numbers.
+
+291
+00:08:38.700 --> 00:08:41.516
+For example: replies to portal leads,
+
+292
+00:08:41.516 --> 00:08:43.516
+one hundred and sixty times a month,
+
+293
+00:08:43.516 --> 00:08:45.280
+one hundred and sixty without
+
+294
+00:08:45.280 --> 00:08:46.480
+a record.
+
+295
+00:08:46.480 --> 00:08:48.500
+Then, in the next fifteen minutes,
+
+296
+00:08:48.500 --> 00:08:50.640
+create a spreadsheet with five columns:
+
+297
+00:08:50.640 --> 00:08:52.140
+date, what was sent,
+
+298
+00:08:52.140 --> 00:08:53.520
+to whom, what happened,
+
+299
+00:08:53.520 --> 00:08:54.360
+and notes.
+
+300
+00:08:54.360 --> 00:08:57.360
+Fill in the last three times.
+
+301
+00:08:57.840 --> 00:08:58.940
+Third lesson.
+
+302
+00:08:58.940 --> 00:09:01.280
+Everyone who uses AI thinks they are
+
+303
+00:09:01.280 --> 00:09:03.870
+advanced, and almost everyone is at level
+
+304
+00:09:03.870 --> 00:09:04.370
+one.
+
+305
+00:09:04.020 --> 00:09:05.760
+Without a yardstick,
+
+306
+00:09:05.760 --> 00:09:07.840
+you buy a level-four tool for a
+
+307
+00:09:07.840 --> 00:09:08.700
+level-one problem.
+
+308
+00:09:08.700 --> 00:09:09.540
+At level one,
+
+309
+00:09:09.540 --> 00:09:10.960
+AI responds:
+
+310
+00:09:11.200 --> 00:09:13.200
+you write, it delivers,
+
+311
+00:09:13.200 --> 00:09:15.060
+you check and use it.
+
+312
+00:09:15.060 --> 00:09:17.260
+The intelligence lives in your head.
+
+313
+00:09:17.260 --> 00:09:18.640
+Regina is here.
+
+314
+00:09:18.640 --> 00:09:19.980
+Level one is not bad:
+
+315
+00:09:19.980 --> 00:09:21.800
+getting a good reply a thousand times
+
+316
+00:09:21.800 --> 00:09:23.000
+saves many hours.
+
+317
+00:09:23.000 --> 00:09:24.300
+It just is not learning.
+
+318
+00:09:24.300 --> 00:09:25.320
+At level two,
+
+319
+00:09:25.320 --> 00:09:27.380
+an assistant with one job comes in.
+
+320
+00:09:27.380 --> 00:09:28.580
+You give it a goal,
+
+321
+00:09:28.580 --> 00:09:30.300
+it plans, uses a tool,
+
+322
+00:09:30.300 --> 00:09:31.840
+and delivers.
+
+323
+00:09:31.910 --> 00:09:32.920
+Marcos’s
+
+324
+00:09:32.920 --> 00:09:34.440
+assistant reads the lead,
+
+325
+00:09:34.440 --> 00:09:36.340
+finds the property in the spreadsheet,
+
+326
+00:09:36.340 --> 00:09:37.160
+writes the reply,
+
+327
+00:09:37.160 --> 00:09:39.580
+and suggests two viewing times.
+
+328
+00:09:39.580 --> 00:09:40.360
+It does more,
+
+329
+00:09:40.360 --> 00:09:41.460
+and
+
+330
+00:09:41.460 --> 00:09:42.700
+learns just as much:
+
+331
+00:09:42.700 --> 00:09:43.380
+nothing.
+
+332
+00:09:43.380 --> 00:09:46.520
+Nobody records whether the viewing happened.
+
+333
+00:09:46.520 --> 00:09:47.660
+At level three,
+
+334
+00:09:47.660 --> 00:09:49.180
+the business learns.
+
+335
+00:09:49.180 --> 00:09:50.820
+Each run becomes a row,
+
+336
+00:09:50.820 --> 00:09:53.420
+and every week someone proposes a hypothesis,
+
+337
+00:09:53.420 --> 00:09:55.440
+tests the new version against the current
+
+338
+00:09:55.440 --> 00:09:57.240
+one, and decides by the number.
+
+339
+00:09:57.240 --> 00:09:59.340
+In the course reference example,
+
+340
+00:09:59.340 --> 00:10:01.060
+using simulated data,
+
+341
+00:10:01.060 --> 00:10:02.540
+the loop ran four cycles.
+
+342
+00:10:02.540 --> 00:10:06.160
+The hypothesis to open by mentioning the
+
+343
+00:10:06.280 --> 00:10:09.280
+customer’s review, tested with three hundred proposals
+
+344
+00:10:09.280 --> 00:10:10.440
+on each side,
+
+345
+00:10:10.440 --> 00:10:13.596
+raised replies from nineteen point three to
+
+346
+00:10:13.596 --> 00:10:14.620
+twenty-nine point three percent,
+
+347
+00:10:14.620 --> 00:10:17.700
+without worsening what was being monitored,
+
+348
+00:10:17.700 --> 00:10:18.960
+so it was promoted.
+
+349
+00:10:18.960 --> 00:10:21.460
+Another version, up to eighty words,
+
+350
+00:10:21.460 --> 00:10:23.700
+rose almost as much and was rejected
+
+351
+00:10:23.700 --> 00:10:24.780
+by a rule.
+
+352
+00:10:24.780 --> 00:10:26.593
+There are three degrees of autonomy.
+
+353
+00:10:26.593 --> 00:10:28.673
+L zero only suggests.
+
+354
+00:10:28.673 --> 00:10:31.620
+L one: you approve each change on
+
+355
+00:10:31.620 --> 00:10:32.780
+a five-line card.
+
+356
+00:10:32.780 --> 00:10:35.370
+L two promotes on its own after
+
+357
+00:10:35.370 --> 00:10:37.220
+five correct approvals from you.
+
+358
+00:10:37.220 --> 00:10:39.467
+The course builds yours at
+
+359
+00:10:39.467 --> 00:10:40.520
+L one.
+
+360
+00:10:40.520 --> 00:10:42.920
+Level four is a system that observes
+
+361
+00:10:42.920 --> 00:10:44.380
+its own improvement system:
+
+362
+00:10:44.380 --> 00:10:46.000
+how much each cycle costs,
+
+363
+00:10:46.000 --> 00:10:48.480
+and how many hypotheses became versions.
+
+364
+00:10:48.480 --> 00:10:49.660
+In the product today,
+
+365
+00:10:49.660 --> 00:10:51.560
+this level only reports.
+
+366
+00:10:51.560 --> 00:10:53.940
+It does not redesign anything on its
+
+367
+00:10:53.940 --> 00:10:56.520
+own, because a system that changes itself
+
+368
+00:10:56.520 --> 00:10:58.660
+with little data multiplies
+
+369
+00:10:58.680 --> 00:11:00.120
+every error.
+
+370
+00:11:00.120 --> 00:11:01.600
+This is still research.
+
+371
+00:11:01.600 --> 00:11:03.340
+Level five is the whole business,
+
+372
+00:11:03.340 --> 00:11:05.580
+every department with its own loop.
+
+373
+00:11:05.580 --> 00:11:07.020
+In Paulo’s support team:
+
+374
+00:11:07.020 --> 00:11:08.580
+tickets are logged,
+
+375
+00:11:08.580 --> 00:11:09.780
+the cause is found in the password
+
+376
+00:11:09.780 --> 00:11:11.860
+screen, a new reply is tested,
+
+377
+00:11:11.860 --> 00:11:13.440
+and a change is suggested to the
+
+378
+00:11:13.440 --> 00:11:13.960
+product.
+
+379
+00:11:13.960 --> 00:11:16.080
+But that only exists because every ticket
+
+380
+00:11:16.080 --> 00:11:17.000
+became a row.
+
+381
+00:11:17.000 --> 00:11:18.220
+So here is the rule:
+
+382
+00:11:18.220 --> 00:11:19.540
+you cannot skip a level.
+
+383
+00:11:19.540 --> 00:11:20.440
+If
+
+384
+00:11:20.440 --> 00:11:22.040
+you are at one and buy level
+
+385
+00:11:22.040 --> 00:11:23.400
+five, you are buying theater.
+
+386
+00:11:23.400 --> 00:11:26.080
+The useful next step is level three,
+
+387
+00:11:26.080 --> 00:11:28.520
+starting with one more column and a
+
+388
+00:11:28.520 --> 00:11:29.940
+test with a number.
+
+389
+00:11:30.000 --> 00:11:32.460
+Lesson practice, about twelve minutes.
+
+390
+00:11:32.460 --> 00:11:35.380
+Pause and mark each person’s level.
+
+391
+00:11:35.640 --> 00:11:38.260
+Regina requests each proposal and edits it
+
+392
+00:11:38.260 --> 00:11:39.340
+by hand.
+
+393
+00:11:39.340 --> 00:11:41.440
+Marcos has an assistant that suggests a
+
+394
+00:11:41.440 --> 00:11:42.360
+viewing on its own,
+
+395
+00:11:42.360 --> 00:11:44.960
+without anyone recording whether it happened.
+
+396
+00:11:44.960 --> 00:11:46.420
+Paulo logs each ticket,
+
+397
+00:11:46.420 --> 00:11:48.260
+tests a new reply against the old
+
+398
+00:11:48.260 --> 00:11:49.160
+one every month,
+
+399
+00:11:49.160 --> 00:11:51.160
+and decides on a card.
+
+400
+00:11:51.160 --> 00:11:53.210
+According to the answer key:
+
+401
+00:11:53.210 --> 00:11:54.900
+Regina, level one.
+
+402
+00:11:54.900 --> 00:11:56.500
+Marcos, level two.
+
+403
+00:11:56.500 --> 00:11:57.880
+Paulo, level three.
+
+404
+00:11:57.880 --> 00:11:58.860
+Regina
+
+405
+00:11:58.860 --> 00:12:00.400
+and Marcos need the same step:
+
+406
+00:12:00.400 --> 00:12:01.940
+a results column.
+
+407
+00:12:01.940 --> 00:12:03.720
+Now look
+
+408
+00:12:03.740 --> 00:12:04.560
+at your business.
+
+409
+00:12:04.560 --> 00:12:06.500
+Is there a row for every run?
+
+410
+00:12:06.500 --> 00:12:08.820
+Has there been a test with numbers?
+
+411
+00:12:08.820 --> 00:12:10.660
+Is a decision recorded?
+
+412
+00:12:10.660 --> 00:12:13.080
+If you are unsure between two levels,
+
+413
+00:12:13.080 --> 00:12:14.750
+mark the lower one.
+
+414
+00:12:14.750 --> 00:12:17.100
+Write: I am at this level because
+
+415
+00:12:17.100 --> 00:12:17.880
+of this sign,
+
+416
+00:12:17.880 --> 00:12:20.060
+and my next step is this.
+
+417
+00:12:20.060 --> 00:12:22.280
+Send that three-line message to your business
+
+418
+00:12:22.280 --> 00:12:23.340
+partner.
+
+419
+00:12:23.340 --> 00:12:26.840
+Fourth lesson: the mistake that sounds smart.
+
+420
+00:12:26.840 --> 00:12:29.820
+Paulo wrote this in the support assistant:
+
+421
+00:12:29.820 --> 00:12:32.100
+analyze your replies and keep improving.
+
+422
+00:12:32.100 --> 00:12:33.120
+A month later,
+
+423
+00:12:33.120 --> 00:12:34.560
+the assistant said yes,
+
+424
+00:12:34.560 --> 00:12:35.600
+it had improved.
+
+425
+00:12:35.600 --> 00:12:37.280
+And there
+
+426
+00:12:37.360 --> 00:12:38.730
+was no way to know.
+
+427
+00:12:38.730 --> 00:12:41.380
+The sentence creates the feeling of improvement
+
+428
+00:12:41.380 --> 00:12:43.960
+without producing improvement.
+
+429
+00:12:43.960 --> 00:12:45.620
+Three questions are missing.
+
+430
+00:12:45.620 --> 00:12:47.980
+Improve compared with what?
+
+431
+00:12:47.980 --> 00:12:49.100
+Measured by whom?
+
+432
+00:12:49.100 --> 00:12:51.280
+Compared how, against what,
+
+433
+00:12:51.280 --> 00:12:53.080
+and across how many cases?
+
+434
+00:12:53.080 --> 00:12:54.900
+This is not an AI limitation;
+
+435
+00:12:54.900 --> 00:12:56.960
+it is a problem with the request.
+
+436
+00:12:56.960 --> 00:12:58.960
+That is why the course has an
+
+437
+00:12:58.960 --> 00:13:01.080
+anchor sentence: do not ask AI to
+
+438
+00:13:01.080 --> 00:13:01.640
+improve.
+
+439
+00:13:01.640 --> 00:13:03.760
+Make every run produce evidence,
+
+440
+00:13:03.760 --> 00:13:06.560
+every piece of evidence generate a hypothesis,
+
+441
+00:13:06.560 --> 00:13:08.820
+every hypothesis become an experiment,
+
+442
+00:13:08.820 --> 00:13:10.920
+and only what is proven enters the
+
+443
+00:13:10.920 --> 00:13:11.640
+next version.
+
+444
+00:13:11.640 --> 00:13:13.640
+The first change is to replace “improve”
+
+445
+00:13:13.640 --> 00:13:15.040
+with “from X to Y,
+
+446
+00:13:15.040 --> 00:13:17.600
+without worsening Z.” For Regina:
+
+447
+00:13:17.600 --> 00:13:20.560
+proposal response rate from twenty to thirty
+
+448
+00:13:20.560 --> 00:13:24.700
+percent, without worsening complaints or average discount.
+
+449
+00:13:24.760 --> 00:13:27.000
+“Without worsening” has a name:
+
+450
+00:13:27.000 --> 00:13:28.240
+a guardrail.
+
+451
+00:13:28.240 --> 00:13:30.740
+Without it, every goal becomes a target,
+
+452
+00:13:30.740 --> 00:13:32.940
+and the assistant learns to cheat.
+
+453
+00:13:32.940 --> 00:13:35.640
+Ask for less time per ticket and
+
+454
+00:13:35.700 --> 00:13:37.960
+the team closes it without resolving it.
+
+455
+00:13:37.960 --> 00:13:39.860
+The number goes up and the business
+
+456
+00:13:39.860 --> 00:13:40.720
+gets worse.
+
+457
+00:13:40.720 --> 00:13:41.840
+Two cautions.
+
+458
+00:13:41.840 --> 00:13:43.140
+Choose a fast metric,
+
+459
+00:13:43.140 --> 00:13:44.360
+such as replies,
+
+460
+00:13:44.360 --> 00:13:46.060
+and watch the money metric as a
+
+461
+00:13:46.060 --> 00:13:46.620
+guardrail.
+
+462
+00:13:46.620 --> 00:13:48.840
+And avoid goals near
+
+463
+00:13:49.313 --> 00:13:49.820
+three percent.
+
+464
+00:13:49.820 --> 00:13:50.880
+Proving
+
+465
+00:13:50.880 --> 00:13:53.000
+a change from three to five takes
+
+466
+00:13:53.000 --> 00:13:55.180
+about one thousand five hundred runs on
+
+467
+00:13:55.180 --> 00:13:57.490
+each side: at two hundred a month,
+
+468
+00:13:57.490 --> 00:13:58.500
+fifteen months.
+
+469
+00:13:58.500 --> 00:14:01.660
+From twenty to thirty takes about three
+
+470
+00:14:01.660 --> 00:14:02.160
+hundred.
+
+471
+00:14:01.960 --> 00:14:03.620
+Start where you can prove it.
+
+472
+00:14:03.620 --> 00:14:05.780
+The second change is
+
+473
+00:14:05.820 --> 00:14:08.000
+to turn an idea into a hypothesis
+
+474
+00:14:08.000 --> 00:14:09.520
+with a fixed form:
+
+475
+00:14:09.520 --> 00:14:11.080
+if one change,
+
+476
+00:14:11.080 --> 00:14:13.120
+then an effect on the goal,
+
+477
+00:14:13.120 --> 00:14:14.580
+because of one reason.
+
+478
+00:14:14.580 --> 00:14:15.780
+Regina would write:
+
+479
+00:14:15.780 --> 00:14:18.040
+if the proposal opens by mentioning the
+
+480
+00:14:18.040 --> 00:14:19.620
+review the customer left,
+
+481
+00:14:19.620 --> 00:14:21.960
+then more customers will reply,
+
+482
+00:14:21.960 --> 00:14:24.900
+because they recognize the message was written
+
+483
+00:14:24.900 --> 00:14:25.680
+for them.
+
+484
+00:14:25.680 --> 00:14:27.720
+And make one change only.
+
+485
+00:14:27.720 --> 00:14:29.620
+Marcos wants to shorten the text,
+
+486
+00:14:29.620 --> 00:14:30.560
+change the tone,
+
+487
+00:14:30.560 --> 00:14:32.200
+and send it in the morning,
+
+488
+00:14:32.200 --> 00:14:33.340
+all at once.
+
+489
+00:14:33.340 --> 00:14:34.420
+If it works,
+
+490
+00:14:34.420 --> 00:14:35.800
+he will not know which of the
+
+491
+00:14:35.800 --> 00:14:36.600
+three worked.
+
+492
+00:14:36.600 --> 00:14:39.520
+Look at Paulo’s request after the changes.
+
+493
+00:14:39.520 --> 00:14:40.720
+Goal:
+
+494
+00:14:40.820 --> 00:14:43.500
+resolved on first contact from fifty to
+
+495
+00:14:43.500 --> 00:14:47.540
+sixty-five percent, without worsening seven-day reopenings.
+
+496
+00:14:47.780 --> 00:14:50.340
+Hypothesis: a direct link in the password
+
+497
+00:14:50.340 --> 00:14:51.340
+reply.
+
+498
+00:14:51.340 --> 00:14:52.300
+Test:
+
+499
+00:14:52.300 --> 00:14:53.800
+half get each version,
+
+500
+00:14:53.800 --> 00:14:56.180
+about one hundred and seventy per version.
+
+501
+00:14:56.280 --> 00:14:58.280
+The third change is to separate the
+
+502
+00:14:58.280 --> 00:15:00.500
+person who proposes from the person who
+
+503
+00:15:00.500 --> 00:15:01.320
+judges.
+
+504
+00:15:01.320 --> 00:15:04.020
+The judge has only three answers.
+
+505
+00:15:04.340 --> 00:15:06.120
+B won by a margin.
+
+506
+00:15:06.120 --> 00:15:07.980
+A stays.
+
+507
+00:15:08.100 --> 00:15:09.900
+Or not enough data:
+
+508
+00:15:09.900 --> 00:15:11.400
+continue the test.
+
+509
+00:15:11.400 --> 00:15:12.860
+That is the most common answer,
+
+510
+00:15:12.860 --> 00:15:14.453
+and it has to be acceptable.
+
+511
+00:15:14.453 --> 00:15:16.620
+Three hundred on each side is the
+
+512
+00:15:16.620 --> 00:15:17.740
+amount needed for proof,
+
+513
+00:15:17.740 --> 00:15:19.660
+calculated before the test.
+
+514
+00:15:19.660 --> 00:15:21.560
+Here is the second quiet mistake:
+
+515
+00:15:21.560 --> 00:15:23.980
+stopping the test halfway because the new
+
+516
+00:15:23.980 --> 00:15:25.150
+version is ahead.
+
+517
+00:15:25.150 --> 00:15:26.980
+Marcos, with forty leads a week,
+
+518
+00:15:26.980 --> 00:15:28.180
+needs
+
+519
+00:15:28.180 --> 00:15:30.460
+about fifteen weeks to reach three hundred
+
+520
+00:15:30.460 --> 00:15:31.700
+per version.
+
+521
+00:15:31.700 --> 00:15:32.840
+In week two,
+
+522
+00:15:32.840 --> 00:15:34.780
+the new one has twelve replies out
+
+523
+00:15:34.780 --> 00:15:37.380
+of forty, versus seven out of forty
+
+524
+00:15:37.380 --> 00:15:38.560
+for the old one.
+
+525
+00:15:38.560 --> 00:15:39.920
+He wants to promote it.
+
+526
+00:15:39.920 --> 00:15:42.060
+But that can appear and disappear on
+
+527
+00:15:42.060 --> 00:15:42.760
+its own.
+
+528
+00:15:42.760 --> 00:15:45.480
+The right answer is not enough data.
+
+529
+00:15:45.480 --> 00:15:47.760
+Only a falling guardrail justifies
+
+530
+00:15:47.760 --> 00:15:48.560
+stopping early.
+
+531
+00:15:48.560 --> 00:15:50.300
+Back to the reference example.
+
+532
+00:15:50.300 --> 00:15:51.180
+In cycle two,
+
+533
+00:15:51.180 --> 00:15:53.460
+the hypothesis of up to eighty words
+
+534
+00:15:53.460 --> 00:15:56.337
+raised replies from nineteen point three to
+
+535
+00:15:56.337 --> 00:15:57.763
+twenty-nine point seven percent.
+
+536
+00:15:57.763 --> 00:15:59.900
+Ten points, with enough cases to prove
+
+537
+00:15:59.900 --> 00:16:00.500
+it.
+
+538
+00:16:00.500 --> 00:16:02.140
+And it was not promoted.
+
+539
+00:16:02.140 --> 00:16:05.200
+The complaints guardrail showed six versus one,
+
+540
+00:16:05.200 --> 00:16:07.400
+and the agreed tolerance was zero.
+
+541
+00:16:07.400 --> 00:16:08.960
+The rule was applied.
+
+542
+00:16:08.960 --> 00:16:11.370
+But it was poorly calibrated:
+
+543
+00:16:11.370 --> 00:16:13.020
+six versus one out of three hundred
+
+544
+00:16:13.020 --> 00:16:14.060
+is noise.
+
+545
+00:16:14.060 --> 00:16:16.387
+The person adjusted the tolerance to one
+
+546
+00:16:16.387 --> 00:16:17.660
+percent in later tests,
+
+547
+00:16:17.660 --> 00:16:19.900
+and the hypothesis stayed in memory with
+
+548
+00:16:19.900 --> 00:16:20.540
+the reason.
+
+549
+00:16:20.540 --> 00:16:21.600
+In cycle four,
+
+550
+00:16:21.600 --> 00:16:24.270
+mentioning the review raised replies to twenty-nine
+
+551
+00:16:24.270 --> 00:16:26.800
+point three, the guardrails stayed within bounds,
+
+552
+00:16:26.800 --> 00:16:28.460
+and it became official.
+
+553
+00:16:28.460 --> 00:16:31.120
+The common mistake is promoting it because
+
+554
+00:16:31.120 --> 00:16:32.300
+it looks better.
+
+555
+00:16:32.300 --> 00:16:32.980
+At L one,
+
+556
+00:16:32.980 --> 00:16:34.740
+you are the one who approves it,
+
+557
+00:16:34.740 --> 00:16:36.440
+on the card.
+
+558
+00:16:36.740 --> 00:16:38.940
+Last practice, about ten minutes,
+
+559
+00:16:38.940 --> 00:16:40.460
+in any AI chat.
+
+560
+00:16:40.460 --> 00:16:42.920
+The course provides a ready-made request to
+
+561
+00:16:42.920 --> 00:16:43.820
+paste.
+
+562
+00:16:43.820 --> 00:16:45.200
+You replace three parts:
+
+563
+00:16:45.200 --> 00:16:47.280
+the task, the
+
+564
+00:16:47.280 --> 00:16:49.560
+vague instruction, and the current number,
+
+565
+00:16:49.560 --> 00:16:52.340
+or “I don’t know.” The request asks
+
+566
+00:16:52.340 --> 00:16:53.340
+for four parts,
+
+567
+00:16:53.340 --> 00:16:55.660
+without inventing numbers.
+
+568
+00:16:55.660 --> 00:16:57.200
+Evidence: what to record,
+
+569
+00:16:57.200 --> 00:16:58.940
+in up to five columns,
+
+570
+00:16:58.940 --> 00:17:01.020
+one of them what happened afterward.
+
+571
+00:17:01.020 --> 00:17:03.620
+Goal: from X to
+
+572
+00:17:03.620 --> 00:17:06.000
+Y, without worsening Z.
+
+573
+00:17:06.000 --> 00:17:08.020
+Hypothesis: if, then,
+
+574
+00:17:08.020 --> 00:17:10.300
+because, with one change only.
+
+575
+00:17:10.300 --> 00:17:12.800
+Test: two versions and how many runs
+
+576
+00:17:12.800 --> 00:17:13.540
+per version.
+
+577
+00:17:13.540 --> 00:17:14.560
+And at the end,
+
+578
+00:17:14.560 --> 00:17:16.860
+what cannot change without your approval.
+
+579
+00:17:16.860 --> 00:17:18.160
+Pause and do it.
+
+580
+00:17:18.160 --> 00:17:20.920
+If the hypothesis includes several changes,
+
+581
+00:17:20.920 --> 00:17:22.480
+ask to separate them.
+
+582
+00:17:22.480 --> 00:17:23.800
+Save the text:
+
+583
+00:17:23.800 --> 00:17:25.760
+it is the first draft of your
+
+584
+00:17:25.760 --> 00:17:26.540
+loop worksheet.
+
+585
+00:17:26.540 --> 00:17:28.980
+Then check the goal by counting the
+
+586
+00:17:28.980 --> 00:17:30.300
+last twenty runs.
+
+587
+00:17:30.300 --> 00:17:31.980
+Let’s bring it all together.
+
+588
+00:17:31.980 --> 00:17:34.180
+Today, AI works in a straight line:
+
+589
+00:17:34.180 --> 00:17:36.220
+someone asks, it replies,
+
+590
+00:17:36.220 --> 00:17:37.000
+done.
+
+591
+00:17:37.000 --> 00:17:38.300
+That is not its flaw;
+
+592
+00:17:38.300 --> 00:17:39.880
+what is missing is a record of
+
+593
+00:17:39.880 --> 00:17:41.020
+what happened afterward.
+
+594
+00:17:41.020 --> 00:17:43.820
+Volume without records is not experience,
+
+595
+00:17:43.820 --> 00:17:46.060
+and with the same AI available to
+
+596
+00:17:46.060 --> 00:17:48.660
+everyone, history is what cannot be copied.
+
+597
+00:17:48.660 --> 00:17:50.680
+You marked your level using signs;
+
+598
+00:17:50.680 --> 00:17:52.660
+the useful next step is level three,
+
+599
+00:17:52.660 --> 00:17:53.600
+at L one.
+
+600
+00:17:53.600 --> 00:17:56.400
+And you replaced “get better” with evidence,
+
+601
+00:17:56.400 --> 00:17:58.700
+a goal with “without worsening,”
+
+602
+00:17:58.840 --> 00:18:00.040
+a
+
+603
+00:18:00.420 --> 00:18:02.620
+hypothesis with one change only,
+
+604
+00:18:02.620 --> 00:18:04.920
+and a test with enough cases to
+
+605
+00:18:04.920 --> 00:18:05.440
+prove it.
+
+606
+00:18:05.440 --> 00:18:08.020
+The loop does not guarantee the number
+
+607
+00:18:08.020 --> 00:18:09.240
+will go up;
+
+608
+00:18:09.240 --> 00:18:11.620
+it guarantees that a worse version does
+
+609
+00:18:11.620 --> 00:18:13.160
+not enter on its own.
+
+610
+00:18:13.160 --> 00:18:14.040
+In track two,
+
+611
+00:18:14.040 --> 00:18:15.200
+you will build L,
+
+612
+00:18:15.200 --> 00:18:17.300
+O, O, P,
+
+613
+00:18:17.300 --> 00:18:19.260
+R step by step,
+
+614
+00:18:19.260 --> 00:18:20.540
+starting with L,
+
+615
+00:18:20.540 --> 00:18:22.120
+Locate: one process,
+
+616
+00:18:22.120 --> 00:18:22.840
+one number.
+
+617
+00:18:22.840 --> 00:18:23.680
+See you then.
