@@ -1,7 +1,7 @@
 {
   "t1-es": {
-    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t1-es.mp4",
-    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t1-es.srt",
+    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t1-es-es.mp4",
+    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t1-es-es.srt",
     "duration": 976.141333
   },
   "t1": {
@@ -10,8 +10,8 @@
     "duration": 1070.261333
   },
   "t2-es": {
-    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t2-es.mp4",
-    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t2-es.srt",
+    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t2-es-es.mp4",
+    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t2-es-es.srt",
     "duration": 943.941333
   },
   "t2": {
@@ -20,8 +20,8 @@
     "duration": 1022.701016
   },
   "t3-es": {
-    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t3-es.mp4",
-    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t3-es.srt",
+    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t3-es-es.mp4",
+    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t3-es-es.srt",
     "duration": 939.901016
   },
   "t3": {
@@ -35,13 +35,13 @@
     "duration": 1016.821016
   },
   "t5-en": {
-    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-en.mp4",
-    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-en.srt",
+    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-en-en.mp4",
+    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-en-en.srt",
     "duration": 1031.381016
   },
   "t5-es": {
-    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-es.mp4",
-    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-es.srt",
+    "url": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-es-es.mp4",
+    "srt": "https://github.com/inematds/loop-r/releases/download/video-v2.0.0/loop-r-t5-es-es.srt",
     "duration": 911.381016
   },
   "t5": {
