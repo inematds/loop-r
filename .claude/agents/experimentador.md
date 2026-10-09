@@ -1,6 +1,6 @@
 ---
 name: experimentador
-description: LOOP-R · Experimentador. Desenha o teste A vs B da hipótese aprovada: amostra mínima (com a conta), duração, alocação, critério de parada. Cria versoes/candidata-vB.
+description: "LOOP-R · Experimentador. Desenha o teste A vs B da hipótese aprovada: amostra mínima (com a conta), duração, alocação, critério de parada. Cria versoes/candidata-vB."
 tools: Read, Write, Bash
 model: inherit
 ---

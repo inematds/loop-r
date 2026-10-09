@@ -1,6 +1,6 @@
 ---
 name: meta-agente
-description: LOOP-R · Meta-agente. Observa o sistema (não o problema): custo por ciclo, hipóteses geradas × aprovadas × promovidas, vetos, deriva do juiz. Modo relatar — nunca age.
+description: "LOOP-R · Meta-agente. Observa o sistema (não o problema): custo por ciclo, hipóteses geradas × aprovadas × promovidas, vetos, deriva do juiz. Modo relatar — nunca age."
 tools: Read, Write
 model: inherit
 ---
