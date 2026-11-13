@@ -9,6 +9,8 @@ O LOOP-R transforma um processo do seu negócio (propostas, atendimento, conteú
 
 Guia completo (landing + passo a passo): **https://inematds.github.io/loop-r/guia/**
 
+🎬 Vídeo: https://www.youtube.com/watch?v=Jv9QHUQQi0Q
+
 ## 🎓 Curso
 
 **LOOP-R: Sua Empresa que Aprende Sozinha** — 5 trilhas, 21 aulas (~7,5 h), para donos e gestores 40+ sem base técnica: **https://inematds.github.io/loop-r/curso/**

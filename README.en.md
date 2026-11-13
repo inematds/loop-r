@@ -10,6 +10,8 @@ LOOP-R turns a business process (proposals, customer support, content…) into a
 
 Full guide (overview + step-by-step): **https://inematds.github.io/loop-r/guia/en/**
 
+🎬 Video: https://www.youtube.com/watch?v=Jv9QHUQQi0Q
+
 ## 🎓 Course
 
 **LOOP-R: The Business That Learns on Its Own** — 5 tracks, 21 lessons (~7.5 h), for non-technical owners and managers aged 40+: **https://inematds.github.io/loop-r/curso/en/**

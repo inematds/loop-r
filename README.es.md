@@ -10,6 +10,8 @@ LOOP-R convierte un proceso de tu negocio (propuestas, atención al cliente, con
 
 Guía completa (presentación + paso a paso): **https://inematds.github.io/loop-r/guia/es/**
 
+🎬 Video: https://www.youtube.com/watch?v=Jv9QHUQQi0Q
+
 ## 🎓 Curso
 
 **LOOP-R: Tu empresa aprende por sí sola** — 5 rutas, 21 clases (~7,5 h), para propietarios y gestores de 40 años o más sin conocimientos técnicos: **https://inematds.github.io/loop-r/curso/es/**
